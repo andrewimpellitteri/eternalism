@@ -161,3 +161,26 @@ for the owning session:
   sketches unaudited. Ten attributed claims were spot-checked against abstracts and
   none was misattributed; Fine, Braddon-Mitchell, Prior, Perry and Maudlin claims were
   not checked.
+
+## kb-ico-qrf and theory-map acceptance (2026-10-19)
+
+Both lanes finished ("Task complete") and exited 1, so the runner marked them `failed`;
+the board was corrected by hand with `review` then `accept`. Reports were moved into
+each lane's owned directory (the accept scope check allows only `owns` paths).
+
+theory-map: IDs resolve, scope ok, stale copies of four foundations records replaced by
+the corrected canonical versions, all 19 connections status-tagged, five contracts.
+See `knowledge/defeat-search/contracts-crosswalk.md` for missing closest predecessors.
+
+kb-ico-qrf: 18 records. All five DOI records and the Quantum 9, 1616 (2025) and Nat.
+Commun. 3, 1092 (2012) citations match Crossref. Four claims on arXiv 2603.08845 (frame-
+change map preserves probabilities, Eq. 25 constraint, footnote 3 on the thermodynamic
+arrow, the Discussion statement that clocks "do not disagree that the order of operations
+is indefinite") were checked against the paper's HTML and match. The worker's "frame-
+invariant" phrasing is its own gloss and is labeled as such. The lane re-records three
+frontier IDs (2211.15685, 2603.08845, 2607.03417) at full-text depth where the frontier
+lane has discovery or abstract; the deeper ico-qrf record supersedes them. The anchor E
+numbers (separable bound 3/4, quantum value (2+sqrt2)/4) are correct.
+
+Runner note: after a relaunch, `result.json` from the first attempt persists and makes a
+live worker display as `failed`; check the process, not the status column.
