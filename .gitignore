@@ -5,3 +5,4 @@ __pycache__/
 .lake/
 .DS_Store
 
+tmp/

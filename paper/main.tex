@@ -1,0 +1,451 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype,booktabs}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{proposition}{Proposition}
+\newcommand{\Real}{\mathcal{R}}
+\newcommand{\Obs}{\mathcal{E}}
+\title{What Would It Take for Physics to Favor a Theory of Time?\\
+\large Bridge Premises, Records, and Conditional Constraints}
+\author{Working manuscript}
+\date{19 October 2026 --- provisional argument draft}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Physical theories constrain temporal metaphysics, but the target of a constraint
+must be specified. Presentism, eternalism, and accounts of becoming do not, by
+their labels alone, determine experimental probabilities. This draft argues
+for a contrast-sensitive burden of proof: an inference from physics to a
+temporal ontology should identify an admissible physical realization, the
+bridge premises connecting its structures to existence or passage, and the
+alternative that the evidence or argument discriminates against. We distinguish
+physical incompatibility, empirical discrimination, and representation
+equivalence. Special-relativistic simultaneity and relational quantum clocks
+illustrate why these inferential forms cannot substitute for one another.
+An elementary finite-history example makes record preservation precise while
+exposing its limits. The position is neither that physics is irrelevant to
+metaphysics nor that empirical equivalence makes ontologies identical.
+The proposed framework and examples are expository and argumentative; no
+mathematical or philosophical priority, new physical prediction, or preferred
+temporal ontology is established here.
+\end{abstract}
+
+\noindent\textbf{Draft status.} Citations vary in reading depth; the companion
+\texttt{SOURCE\_AUDIT.md} records those limits. The manuscript does not report
+a completed systematic review, a proof-assistant verification, or an original
+result that has passed the project's independent novelty audit.
+
+\section{The question is contrastive}
+
+What would it mean for physics to favor eternalism over presentism, or local
+becoming over a moving spotlight? At least three answers are possible. A view
+might contradict a well-supported physical structure. A realized model might
+predict observations more successfully than a rival. Or the physical theory
+might provide an explanation whose ontological commitments are better
+understood in one way than another. These are serious routes to philosophical
+justification, but they have different premises and different conclusions.
+
+The danger is not merely an insufficient number of citations. It is an
+inference in which a result answering one question is taken to answer another:
+the absence of a distinguished simultaneity relation becomes the nonexistence
+of passage; the representation of an entire history becomes determinism; or
+an equivalence of relational dynamics becomes the elimination of fundamental
+time. A dense catalogue of physical theories cannot repair that inferential
+gap without identifying the premises that cross it.
+
+Our methodological starting point is physics-constrained but non-reductive.
+Empirical adequacy matters greatly, while meaningful claims about grounding,
+existence, and explanation are not defined away because they lack a direct
+meter reading. This starting point is itself a philosophical commitment,
+not a theorem of physics. The breadth of the field is usefully represented by
+\citet{Callender2011}; the contrasting programs of \citet{Callender2017} and
+\citet{Maudlin2007} warn against treating one account of passage as the neutral
+interpretation of scientific practice.
+
+Our thesis is therefore a burden-of-proof claim:
+\begin{quote}
+An argument that physics favors a temporal ontology must identify the
+realization and bridge premises under which the physical result bears on that
+ontology, and specify the contrast that the result actually supports.
+\end{quote}
+This does not require every philosophical argument to predict a new
+measurement. It requires an argument to say whether its force is empirical,
+logical, explanatory, or a combination, and to preserve that scope at its
+conclusion.
+
+\section{What is being compared?}
+
+\subsection{Independent questions}
+
+For this draft, presentism restricts unrestricted concrete existence to what
+is present; eternalism admits past and future entities as well as present
+ones. Growing-block views retain the past and present while rejecting future
+entities; moving-spotlight accounts combine a complete temporal ontology with
+objectively distinguished presentness. These are schematic families, not
+complete theories. Direct defenses differ substantially: compare
+\citet{Bourne2006}, \citet{CorreiaRosenkranz2018}, and \citet{Cameron2015}.
+Their detailed replies have not yet been fully audited for this manuscript.
+
+Several further questions must remain separate. Are tensed facts irreducible?
+Does something objectively become present, existent, or definite? Do laws
+and complete appropriate data select one history? How do objects persist?
+Is time fundamental? Which asymmetries need explanation? An eternalist can
+accept indeterministic laws. A four-dimensional spacetime does not by itself
+make ordinary objects temporal worms. Knowing that an event is now is not
+automatically knowing an extra objective spotlight property.
+
+These distinctions are not concessions invented to protect a preferred
+position. McTaggart's argument already differentiates temporal order,
+change, and A-determinations \citep{McTaggart1908}; its contested premises
+cannot be replaced by the phrase ``time is an illusion.'' Likewise,
+\citet{Skow2015} distinguishes robust from less demanding senses of passage.
+No result about clock rates alone establishes which sense is physically real.
+
+\subsection{Realizations, not bare labels}
+
+Represent a comparison target schematically as
+\[
+ M=(P,O,B,A,S;\Obs),
+\]
+where $P$ specifies a physical model and dynamics, $O$ an ontological
+interpretation, $B$ the bridge premises connecting physical structure to
+ontological claims, $A$ auxiliary and boundary assumptions, $S$ semantic
+conventions, and $\Obs$ the allowed preparations, observations, and
+interventions. The tuple is bookkeeping rather than a new physical formalism;
+its components need not be independent.
+
+An ontology may have several proposed realizations. Write $\Real(O)$ for the
+specified admissible class, where admissibility must be defended independently
+of rescuing a view after each objection. An empirical likelihood is supplied
+by a realized package and an experimental protocol, not simply by its label.
+This observation does not make ontological hypotheses impossible to assess:
+one may compare independently justified realization classes or marginalize
+over auxiliaries with explicit priors. It blocks only the unannounced move
+from a result for one realization to a verdict on every realization.
+
+\paragraph{Constraining admissibility without settling the dispute by fiat.}
+Before inspecting a proposed discriminator, register at least four conditions:
+(i) mathematical consistency and empirical adequacy in the declared regime;
+(ii) fidelity to the ontology's explicitly stated constitutive commitments,
+rather than merely retaining its name; (iii) a specified dynamics, probability
+model and operational interface, including proposed auxiliaries; and (iv) an
+independent motivation for additional structure, assessed against the same
+standards used for rivals. The first conditions constrain which models enter
+the comparison. Simplicity, explanatory contribution and costs of primitive
+structure then help rank the survivors; they are not covert empirical vetoes.
+
+The proponent bears the burden of describing a realization and defending its
+bridges; the exclusion advocate bears the stronger burden of defending the
+scope of the excluded class. Neither party may change those standards silently
+after a counterexample. Where reasonable standards disagree, report conditional
+verdicts under both rather than call one class uniquely admissible. This does
+not mechanically settle abduction, but it makes auxiliary rescue and asymmetric
+demands on rivals inspectable.
+
+\section{Three different inferential burdens}
+
+\subsection{Exclusion}
+
+A physical incompatibility argument has a form such as
+\[
+ O\land B\land A\ \Longrightarrow\ F,
+ \qquad P\ \Longrightarrow\ \neg F.
+\]
+It follows that $P$ excludes the conjunction $O\land B\land A$.
+Concluding $\neg O$ requires independent support for the indispensable bridge
+and auxiliary premises, or an argument that every admissible realization
+of $O$ encounters the conflict. Otherwise the result identifies a conditional
+cost: retain the ontology only by revising the disputed structure or bridge.
+
+This is not the claim that a bare ontology can always be rescued. A bridge
+may be constitutive of a precisely defined view, or its removal may destroy
+the explanation that made the view attractive. That stronger argument should
+be made rather than hidden in a generic ontology label.
+
+\subsection{Empirical discrimination}
+
+Empirical discrimination requires different probability assignments to a
+common experimental question. At fixed realized packages, if
+\[
+ p(D\mid M_1,e)=p(D\mid M_2,e)
+\]
+for every outcome event $D$ and protocol $e\in\Obs$, those observations cannot
+discriminate the packages by their likelihoods. This statement is restricted
+to the declared protocol class, not all conceivable future observations.
+
+For composite hypotheses, pointwise equivalence at matched parameter values
+is insufficient for equal Bayesian evidence. The marginalized likelihoods
+must also agree. For example,
+\[
+ p(D\mid O_i,e)=\int p(D\mid \theta_i,O_i,e)
+                   \,\pi_i(d\theta_i\mid O_i,e)
+\]
+can differ because the realization or parameter priors differ. Equal
+prior-predictive distributions give a Bayes factor of one wherever the common
+likelihood is nonzero; equal predictions at selected parameter settings need
+not. Prior preference remains possible, but must not be redescribed as an
+empirical likelihood advantage.
+
+\subsection{Representation equivalence}
+
+A structure- or probability-preserving map can establish equivalence for its
+specified domain. It does not automatically establish identical metaphysical
+interpretations, gauge redundancy, or equal explanatory value. Nor does a
+mathematically invertible reparameterization necessarily preserve which
+operations an observer can perform. An equivalence argument must state the
+common state space, physical inner product when relevant, observable map, and
+access restrictions. A failure of such an equivalence can be physically
+important without immediately deciding an ontology.
+
+\section{Case I: what a relativistic present would require}
+
+The elementary simultaneity result is exact within its standard domain. A
+boost along one spatial axis gives
+\[
+ t'=\gamma(t-vx/c^2),\qquad
+ \gamma=(1-v^2/c^2)^{-1/2},\qquad |v|<c.
+\]
+An event $(0,L)$ with $L\ne0$ is simultaneous with the origin in one frame but
+has $t'=-\gamma vL/c^2\ne0$ for a nonzero boost. Thus that simultaneity
+hyperplane is not invariant under all boosts fixing the origin. This is
+standard kinematics, not a new result or a proof that nothing changes.
+
+To obtain an ontological conclusion one must say why presentness must be that
+kind of hyperplane and respect the relevant symmetries. Putnam's argument
+invokes an observer-neutral reality-transfer principle; its broader closure
+argument includes further assumptions about observers \citep{Putnam1967}.
+Stein's event-relative approach supplies a different account of definite
+past structure \citep{Stein1991}. The present draft does not reproduce Stein's
+characterization theorem: the local audit found an isolated OCR statement
+too weak, while the original printed formulation remains unverified.
+
+One response adds a preferred foliation. That is a substantive extra structure,
+not a free conclusion of SR. But observability also requires care. Appending
+a structure without changing old dynamics, probability assignments, or
+accessible operations need not change the old predictions. This conditional
+observation does not establish that any particular preferred-foliation theory
+is admissible or empirically equivalent; a coupling can make the structure
+observable. Nor does mere covariance of a notation establish absence of a
+physical preferred structure.
+
+Another response disputes that simultaneity must provide the unity of what
+exists. Brading develops such a presentist program \citep{Brading2013}.
+Selected passages were inspected, but no quantitative discriminator has been
+established in this manuscript. That is enough to identify a premise needing
+argument, not enough to vindicate the whole program.
+
+There are real philosophical costs on both sides. A preferred structure may
+be explanatorily idle; a local becoming relation may do no more than restate
+causal order; and a block account owes an account of the phenomena motivating
+passage. The point is to locate these costs accurately. A geometrical
+constraint on one global-present realization is not a completed comparison
+of all these packages.
+
+The strongest schematic foliation reply is not that the structure must be
+detectable. It is that a primitive foliation constitutes which entities exist
+together, even if it changes no measured quantity. A critic can question its
+motivation or its explanatory return; merely noting observational redundancy
+does not answer a constitutive claim. The same standard applies to a local
+becoming bridge: it could be defended as specifying definiteness rather than
+causing a new detector response, but must explain what motivates that role
+instead of simply assigning a temporal name to the causal past. These are
+deliberately schematic rival arguments, not fully audited reconstructions of
+a particular defender. The comparative explanatory judgment remains open.
+
+\section{Case II: relational dynamics without an ontological shortcut}
+
+Relational clock constructions expose a second inference risk. A constrained
+global description can admit conditional evolution relative to a chosen
+clock. The relational-trinity work relates Dirac-observable, conditional
+Schrodinger, and reduced Heisenberg descriptions under specified hypotheses
+\citep{HoehnSmithLock2019}. Its noninteracting setup and clock conditions
+matter. Interaction treatments already exist, including the kernel equation
+studied by \citet{SmithAhmadi2019}; ``add interactions'' is not a generic
+unoccupied research gap.
+
+Two implications should be resisted. First, a stationary constraint equation
+does not by itself mean that subsystems cannot change: correlations can support
+conditional dynamics. Second, successful conditional dynamics does not by
+itself establish that correlations exhaust temporal reality. A reductionist
+argument needs a defensible sufficiency principle identifying all relevant
+temporal roles and showing that the construction realizes them. A primitive
+passage advocate cannot dismiss the construction, but may dispute that
+exhaustiveness premise.
+
+The inverse mistake is equally important. An interaction-dependent or
+nonunitary conditioned evolution does not establish objective passage or
+an open future. One must specify the physical state space, clock instrument,
+normalization, accessible measurements, and what the proposed ontology would
+predict differently. A transformation that changes access restrictions
+cannot be treated as experimentally neutral merely because it is invertible
+on an enlarged mathematical space.
+
+This leaves a substantive research task rather than universal agnosticism:
+find the precise boundary of a published equivalence under fixed operational
+conditions, then examine which philosophical bridge is strengthened or
+weakened. The boundary must first be checked against the interacting,
+periodic-clock, and quantum-reference-frame literature. No such new boundary
+is claimed in the present draft.
+
+\section{A finite record example and its exact limits}
+
+The following elementary construction makes one possible equivalence burden
+explicit. It is an expository application of ordinary probability, not a
+novel theorem about becoming.
+
+\begin{proposition}[Record-preserving translation]
+Let $(X,\mu)$ and $(Y,\nu)$ be probability spaces, and let $F:X\to Y$ be
+measurable with $F_*\mu=\nu$. The outcome kernels share one measurable outcome
+space. For each allowed complete observation protocol $e$, suppose
+$K_X^e(x,D)=K_Y^e(F(x),D)$ for $\mu$-almost every $x$, for every outcome
+event $D$. Then the two packages assign the same probabilities to those
+protocols.
+\end{proposition}
+\begin{proof}
+For any declared $e,D$, the probability in $X$ is
+\[
+ \int_X K_X^e(x,D)\,d\mu(x)
+ =\int_X K_Y^e(F(x),D)\,d\mu(x)
+ =\int_Y K_Y^e(y,D)\,d\nu(y),
+\]
+which is the probability in $Y$. The result assumes rather than derives
+the measure and kernel preservation.
+\end{proof}
+
+For a finite horizon $T$ and finite state space $S$, let
+\[
+ \mu(x_0,\ldots,x_T)=
+ \pi(x_0)\prod_{t=0}^{T-1}P_t(x_{t+1}\mid x_t).
+\]
+One implementation samples an initial state and then successive transitions;
+another samples an entire path with this law and releases its entries in
+order. Any common protocol restricted to the revealed prefixes, whose auxiliary
+randomness has the same conditional law given those prefixes and no access to
+the unrevealed path, yields the same record distribution.
+Adaptive choices of which revealed data to read can be included in the complete
+kernel. Operations modifying future transitions are not included unless their
+conditional dynamics are separately matched.
+
+\paragraph{An exact numerical illustration.}
+Take $S=\{0,1\}$, $T=2$, a fair initial state, and at each step a probability
+$3/4$ of staying in the same state. The path $000$ has probability
+$(1/2)(3/4)(3/4)=9/32$; $010$ has probability $1/32$.
+Both implementations assign these same probabilities and the same prefix
+marginals. A companion standard-library check enumerates all paths using
+exact fractions. It verifies this example, not the general measure-theoretic
+argument or a theory of time.
+
+Several limits are decisive. A sequential generator is not thereby the growing
+block theory; a sampled path is not thereby eternalism. The observer-access
+condition, the measure, and the identification of records do the operational
+work. If a different package gives access to unrevealed entries, or responds
+differently to interventions, the stated equivalence need not apply. Such
+extra access is a changed model assumption, not something entailed by one
+ontology label.
+
+Observational agreement also falls short of interventional agreement. Consider
+a fair latent bit $Z$. In model A set $X=Z$ and $Y=X$; in model B set $X=Z$
+and $Y=Z$. Both observational distributions have $X=Y$ with a fair marginal.
+Under an intervention replacing the assignment for $X$ by $X:=0$, model A
+has $Y=0$, whereas model B retains a fair $Y$. This familiar type of causal
+example shows why accessible interventions must be specified. It does not
+attribute either causal model to a temporal ontology.
+
+The philosophical payoff is limited but useful: records cannot favor one
+implementation when measure and complete allowed response kernels are matched.
+To turn that into an argument about becoming requires a separately defended
+interpretation and a nontrivial comparison with prior work on histories and
+covariant growth. Calling the implementations two ontologies would skip
+exactly the premise the paper asks us to inspect.
+
+\section{Objections and replies}
+
+\paragraph{Bridge premises are unavoidable; your test is too demanding.}
+Correct: every interpretation uses bridges. Their presence is not a defect.
+The demand is that the bridge be visible, defensible, and relevant to the
+contrast. A bridge can be constitutive of a view or supported by explanatory
+arguments. We reject the inference ``extra premise, therefore arbitrary,''
+as firmly as ``physical equation, therefore metaphysical conclusion.''
+
+\paragraph{This makes every view compatible with physics.}
+Only if admissibility is unconstrained, which the framework rejects. A
+view that discards its defining commitments, adds ad hoc structure, or fails
+empirical adequacy is not rescued by renaming the remainder. Conversely,
+showing one admissible realization establishes compatibility, not equal
+plausibility. A full exclusion claim has a stronger quantifier burden than a
+counterexample to one proposed proof of exclusion.
+
+\paragraph{Relativity and parsimony already favor the block.}
+They may favor a specified block package over a competitor with unjustified
+structure. The paper's demand is to articulate that explanatory comparison:
+which structure is avoided, whether the rival needs it, and what explanatory
+work competing packages perform. An inference to the best explanation is not
+discredited by being philosophical rather than a direct detector reading.
+It is also not rendered deductively compulsory by the success of SR.
+
+\paragraph{Phenomenology supplies evidence for passage.}
+It supplies phenomena a satisfactory account should explain. It does not
+automatically choose among explanations. The advocate of primitive passage
+must show why experience supports that cause over alternatives; the critic
+must explain the experience rather than simply call it illusory.
+The accounts discussed by \citet{Callender2017} and \citet{Skow2015} are
+relevant comparators, not settled answers inherited by this draft.
+
+\paragraph{An inaccessible ontology is physically meaningless.}
+That conclusion needs a verificationist or other semantic argument which we
+have not assumed. Empirical equivalence can coexist with differences in
+grounding, explanation, simplicity, or modal commitment. The narrower
+conclusion is that matched observational likelihoods do not themselves select
+between the packages. Physics can still contribute through structural
+constraints and explanatory considerations.
+
+\paragraph{Your record example is trivial and deliberately restrictive.}
+The mathematics is elementary and the restrictions are deliberate. It is
+not offered as the novel contribution. Its purpose is to distinguish a
+proved conditional equivalence from an unsupported claim about all ontologies.
+A publishable extension would need a nontrivial physical class, a justified
+access model, and a result not already provided by the nearest predecessors.
+
+\section{What would turn this into a research contribution?}
+
+The present argument supplies a way of auditing claims, not a discovery that
+underdetermination exists. At least three developments could make it more
+than an organized restatement of familiar cautions:
+\begin{enumerate}
+\item A source-faithful reconstruction showing that a widely used inference
+      requires a neglected bridge, and that the strongest published defenses
+      and replies do not already establish the same point.
+\item A nontrivial classification of when specified physical realizations
+      preserve records and interventions, with explicit counterexamples at
+      the boundary and a comparison to known equivalence results.
+\item A substantive defense of one bridge principle that survives alternative
+      temporal interpretations and explains why the resulting constraint is
+      not merely a preference built into a definition.
+\end{enumerate}
+The independent novelty gate is unmet. Neither the elementary proposition nor
+the use of agents, Python, or a future Lean proof supplies priority. Source
+audits, model reproductions, and the strongest contrary philosophical arguments
+are still needed. General relativity and cosmological time also require a
+separate extension: the existence of Cauchy slicings under global hyperbolicity
+\citep{BernalSanchez2005} is not uniqueness of a metaphysical present.
+
+\section{Provisional conclusion}
+
+Physics can make temporal metaphysics harder, more precise, and sometimes
+empirically vulnerable. It does not follow that every temporal distinction
+is physically idle; nor does a successful mathematical representation settle
+all questions of existence and passage. The appropriate unit of comparison
+is a defended ontology--physics--bridge package with explicit access conditions.
+An argument should state whether it excludes such a package, discriminates
+its predictions, or establishes a representation equivalence. Keeping those
+conclusions distinct is a precondition for discovering, rather than assuming,
+what physics tells us about time.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

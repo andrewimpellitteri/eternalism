@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "note": "Axes for the idea grid. Items name model families and argument pressures already mapped in knowledge/; 'lanes' points workers at the relevant knowledge directories. Adding an item is fine; renumbering is not, because cell IDs are built from item IDs.",
+  "physics": [
+    {"id": "P01", "key": "sr-minkowski", "label": "Special relativity: Minkowski causal structure, simultaneity conventions, Malament/Stein definability", "lanes": ["foundations", "axiomatic-relativity"]},
+    {"id": "P02", "key": "gr-global", "label": "General relativity with global hyperbolicity: time functions, foliations, cosmological time", "lanes": ["gr-qg"]},
+    {"id": "P03", "key": "gr-ctc", "label": "Spacetimes with closed timelike curves: Godel, chronology violation, consistency conditions", "lanes": ["gr-qg"]},
+    {"id": "P04", "key": "causal-set-growth", "label": "Causal sets: classical sequential growth, covariance, embedding and reconstruction", "lanes": ["causal-sets", "frontier"]},
+    {"id": "P05", "key": "pw-relational", "label": "Page-Wootters and the relational trinity: constrained states, clock POVMs, conditioning", "lanes": ["frontier", "pw-critiques", "relational-markov-audit"]},
+    {"id": "P06", "key": "qrf-temporal", "label": "Quantum reference frames, including temporal and non-tensor-factor frames", "lanes": ["ico-qrf", "frontier"]},
+    {"id": "P07", "key": "process-matrix", "label": "Process matrices and indefinite causal order", "lanes": ["ico-qrf"]},
+    {"id": "P08", "key": "thermal-time", "label": "Thermal time and modular flow on algebra/state pairs", "lanes": ["thermal-records"]},
+    {"id": "P09", "key": "aqft-locality", "label": "Algebraic and locally covariant QFT: Haag-Kastler axioms, Reeh-Schlieder, Bisognano-Wichmann", "lanes": ["aqft-locality"]},
+    {"id": "P10", "key": "stochastic-paths", "label": "Stochastic dynamics: Markov processes versus their path-space measures, filtrations", "lanes": ["novelty-prepass-a"]},
+    {"id": "P11", "key": "preferred-foliation", "label": "Theories with a preferred foliation: Bohmian mechanics, relativistic GRW, Tomonaga-Schwinger", "lanes": ["preferred-foliation"]},
+    {"id": "P12", "key": "everett", "label": "Everettian branching and decoherent histories", "lanes": ["time-interpretations"]},
+    {"id": "P13", "key": "two-time", "label": "Two-state vector and retrocausal formulations", "lanes": ["time-interpretations"]},
+    {"id": "P14", "key": "canonical-qg", "label": "Canonical quantum gravity and the problem of time: Wheeler-DeWitt, Dirac constraints", "lanes": ["gr-qg"]},
+    {"id": "P15", "key": "past-hypothesis", "label": "Statistical mechanics with low-entropy boundary conditions: records and the Past Hypothesis", "lanes": ["arrow-cosmology", "thermal-records"]}
+  ],
+  "bridges": [
+    {"id": "B01", "key": "invariance-reality", "label": "Only structure invariant under the theory's symmetries is real (e.g. SR eliminates a global present)"},
+    {"id": "B02", "key": "definability-privilege", "label": "A relation uniquely definable from the physical structure is ontologically privileged"},
+    {"id": "B03", "key": "history-determinism", "label": "A complete existing history entails determinism or a fixed future"},
+    {"id": "B04", "key": "experience-flow", "label": "Temporal experience is evidence of objective passage"},
+    {"id": "B05", "key": "truthmaker", "label": "Truths about the past require present or existing truthmakers"},
+    {"id": "B06", "key": "self-location", "label": "Self-location: an observer cannot know it is at the growing edge"},
+    {"id": "B07", "key": "clock-reduction", "label": "A relational clock construction exhausts the role of fundamental time"},
+    {"id": "B08", "key": "entropy-ontology", "label": "The entropic or record arrow settles which temporal ontology is true"},
+    {"id": "B09", "key": "detectability", "label": "Extra temporal structure is excluded unless it is empirically detectable"},
+    {"id": "B10", "key": "growth-history-equivalence", "label": "A growth process and its completed history are equivalent descriptions"},
+    {"id": "B11", "key": "openness-indeterminism", "label": "The future is open if and only if the dynamics is indeterministic"},
+    {"id": "B12", "key": "local-becoming", "label": "Definiteness is the causal past of an event (Stein-style local becoming)"}
+  ],
+  "ontologies": [
+    {"id": "O1", "key": "presentism", "label": "Presentism"},
+    {"id": "O2", "key": "eternalism", "label": "Eternalism"},
+    {"id": "O3", "key": "growing-block", "label": "Growing block / no-futurism"},
+    {"id": "O4", "key": "moving-spotlight", "label": "Moving spotlight"},
+    {"id": "O5", "key": "local-becoming", "label": "Local or relativistic becoming"},
+    {"id": "O6", "key": "fragmentalism", "label": "Fragmentalism"},
+    {"id": "O7", "key": "primitive-passage", "label": "Minimal or primitive passage"},
+    {"id": "O8", "key": "process", "label": "Process or event ontology"},
+    {"id": "O9", "key": "eliminativism", "label": "Temporal anti-realism or eliminativism"}
+  ],
+  "moves": [
+    {"id": "M1", "key": "equivalence-boundary", "label": "Construct an observable-preserving map and locate exactly where it fails"},
+    {"id": "M2", "key": "no-go", "label": "Prove a package inconsistent with the framework under named assumptions"},
+    {"id": "M3", "key": "countermodel", "label": "Build a model satisfying the framework in which the bridge premise fails"},
+    {"id": "M4", "key": "transfer", "label": "Import a theorem or technique from one framework to settle a question in another"},
+    {"id": "M5", "key": "discriminator", "label": "Derive an observable or likelihood difference within a stated access regime"},
+    {"id": "M6", "key": "formalization-gap", "label": "Find a hypothesis that published proofs leave implicit, by formalizing them"}
+  ]
+}
