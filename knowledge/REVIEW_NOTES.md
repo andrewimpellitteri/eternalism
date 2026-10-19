@@ -197,3 +197,16 @@ already flagged as unverified:
   DOI 10.1063/1.522898 (the 1975 paper "...for a Hermitian scalar field" is 10.1063/1.522605,
   J. Math. Phys. 16, 985-1007). Left unedited: it belongs to the Codex session's lane.
 Substance of these lanes (full-text claims) not reviewed here.
+
+## kb-time-interpretations acceptance (2026-10-19)
+
+29 records, no wrong DOIs (12 matched to Crossref), arXiv IDs and titles match; the
+lane's `time-zampeli-2026` label is the journal-publication year of a 2022 preprint
+(arXiv 2205.15893). Checked by hand: the ABL probability rule is stated correctly, and the
+Hartle "Physics of Now" quote ("Past, present, and future are not properties of four-
+dimensional spacetime but notions describing how individual IGUSes process information")
+appears verbatim in the arXiv abstract. The lane keeps determinism, passage, causal order,
+clock time and the memory arrow separate and flags "future is fixed" as ambiguous between
+boundary condition, deterministic dynamics and block reality. The eight full-text anchors
+were not individually re-read by the coordinator; the 1964 ABL original was not obtained
+(APS 403), which the lane records.
