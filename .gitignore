@@ -1,0 +1,7 @@
+.agent-runtime/
+.worktrees/
+__pycache__/
+.venv/
+.lake/
+.DS_Store
+

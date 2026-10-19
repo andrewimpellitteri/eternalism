@@ -1,0 +1,136 @@
+"""Checks for coordination failures that would let workers collide or skip gates."""
+import argparse
+import importlib.util
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+import tempfile
+import unittest
+from unittest.mock import patch
+
+PROJECT = Path(__file__).resolve().parents[1]
+spec = importlib.util.spec_from_file_location("agents", PROJECT / "scripts/agents.py")
+agents = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(agents)
+
+
+class WorkboardTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = Path(self.temp.name)
+        self.patch = patch.object(agents, "ROOT", self.root)
+        self.patch.start()
+        (self.root / "scripts").mkdir()
+        shutil.copyfile(PROJECT / "scripts/agents.py", self.root / "scripts/agents.py")
+        self.book = [self.row("first", "knowledge/first/"),
+                     self.row("second", "knowledge/second/", ["first"]),
+                     self.row("collision", "knowledge/first/detail/")]
+        self.write_book()
+
+    def tearDown(self):
+        self.patch.stop()
+        self.temp.cleanup()
+
+    def row(self, tid, owns, deps=None):
+        return {"id": tid, "title": tid, "priority": 10, "blocked_by": deps or [],
+                "owns": [owns], "brief": "A bounded task.", "done_when": ["output reviewed"]}
+
+    def write_book(self):
+        (self.root / "WORKBOARD.jsonl").write_text(
+            "".join(json.dumps(row) + "\n" for row in self.book))
+
+    def test_dependency_waits_for_acceptance_not_submission(self):
+        agents.transition("claim", "first", "one")
+        agents.transition("review", "first", "one")
+        with self.assertRaisesRegex(ValueError, "blocked"):
+            agents.transition("claim", "second", "two")
+        agents.transition("accept", "first", "one", "Independently reviewed and integrated.")
+        agents.transition("claim", "second", "two")
+        self.assertEqual(agents.snapshot()["second"]["status"], "claimed")
+
+    def test_owner_and_file_overlap_enforced_through_review(self):
+        agents.transition("claim", "first", "one")
+        with self.assertRaisesRegex(ValueError, "another agent"):
+            agents.transition("release", "first", "two", "Attempt to steal")
+        agents.transition("review", "first", "one")
+        with self.assertRaisesRegex(ValueError, "overlaps"):
+            agents.transition("claim", "collision", "two")
+        agents.transition("release", "first", "one", "Stopped and outputs preserved.")
+        agents.transition("claim", "collision", "two")
+
+    def test_concurrent_claims_have_one_winner(self):
+        processes = [subprocess.Popen(
+            [sys.executable, str(self.root / "scripts/agents.py"), "claim", "first",
+             "--agent", f"worker-{index}"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            for index in range(2)]
+        codes = []
+        for process in processes:
+            process.communicate(timeout=15)
+            codes.append(process.returncode)
+        self.assertEqual(sorted(codes), [0, agents.REFUSED])
+        self.assertEqual(agents.snapshot()["first"]["status"], "claimed")
+
+    def test_concurrent_overlapping_tasks_have_one_winner(self):
+        processes = [subprocess.Popen(
+            [sys.executable, str(self.root / "scripts/agents.py"), "claim", tid,
+             "--agent", tid], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            for tid in ("first", "collision")]
+        codes = []
+        for process in processes:
+            process.communicate(timeout=15)
+            codes.append(process.returncode)
+        self.assertEqual(sorted(codes), [0, agents.REFUSED])
+
+    def test_invalid_graph_and_unsafe_path_rejected(self):
+        self.book[0]["blocked_by"] = ["second"]
+        self.write_book()
+        with self.assertRaisesRegex(ValueError, "cycle"):
+            agents.tasks()
+        self.book[0]["blocked_by"] = []
+        self.book[0]["owns"] = ["../outside"]
+        self.write_book()
+        with self.assertRaisesRegex(ValueError, "unsafe"):
+            agents.tasks()
+
+    def test_dry_run_does_not_claim_or_create_runtime(self):
+        agents.launch(argparse.Namespace(tasks=["first"], dry_run=True, model=agents.DEFAULT_MODEL))
+        self.assertFalse((self.root / ".agent-runtime").exists())
+        self.assertFalse((self.root / ".worktrees").exists())
+
+    def test_main_and_worktree_share_claim_store(self):
+        def run_git(*args):
+            return subprocess.run(["git", *args], cwd=self.root, check=True,
+                                  capture_output=True, text=True)
+        run_git("init", "-b", "main")
+        run_git("add", "WORKBOARD.jsonl", "scripts/agents.py")
+        run_git("-c", "user.name=Test", "-c", "user.email=test@example.invalid",
+                "commit", "-m", "Fixture")
+        wt = self.root / "worker"
+        run_git("worktree", "add", "-b", "worker", str(wt))
+        agents.transition("claim", "first", "one")
+        with patch.object(agents, "ROOT", wt):
+            self.assertEqual(agents.snapshot()["first"]["agent"], "one")
+            with self.assertRaisesRegex(ValueError, "claimed"):
+                agents.transition("claim", "first", "two")
+
+
+class ProjectContractTests(unittest.TestCase):
+    def test_live_task_graph_and_seed_contract(self):
+        self.assertEqual(len(agents.tasks()), 11)
+        records = [json.loads(line) for line in
+                   (PROJECT / "knowledge/seed-sources.jsonl").read_text().splitlines()]
+        self.assertEqual(len(records), len({row["id"] for row in records}))
+        for row in records:
+            self.assertTrue(row["url"].startswith("https://"))
+            self.assertIn(row["read_depth"], {"discovery", "abstract", "full-text",
+                                             "reproduced", "code-audited"})
+            self.assertTrue(row["limits"])
+        config = json.loads((PROJECT / "scripts/agents/opencode-agent.json").read_text())
+        self.assertNotIn("mcp", config)  # Do not disable the user's search MCP.
+        self.assertEqual(config["permission"]["webfetch"], "allow")
+
+
+if __name__ == "__main__":
+    unittest.main()
