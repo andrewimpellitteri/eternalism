@@ -6,6 +6,10 @@ found relevant existing work; it does not establish that any proposed gap is new
 
 ## Files
 
+- `PHILOSOPHY_OF_TIME.md`: dense, source-linked map of ontology, tense, passage,
+  persistence, openness, physical constraints, experience, arguments and gaps.
+- `philosophy/sources.jsonl`: added philosophical/historical/physics reading
+  register; mostly discovery/abstract depth, not a completed deep audit.
 - `seed-sources.jsonl`: primary-source leads already checked at the stated depth.
 - `SEARCH_LOG.md`: search coverage, queries, and missing areas.
 - `NOVELTY.md`: candidate contributions, nearest predecessors, and rejection gates.
