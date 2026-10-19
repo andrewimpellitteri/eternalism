@@ -52,9 +52,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
 | done | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
 | done | `creative-clock-memory` — Find an operational intervention boundary between clock memory and system memory | 10 | novelty-audit | luna-creative-memory |
-| open | `ctp-priority-audit` — Audit forward citations and priority of the doubly-principal extension theorem | 10 | creative-covariant-stopping | — |
-| open | `ctp-fresh-proof-audit` — Try to falsify the extension theorem from a fresh derivation | 10 | creative-covariant-stopping | — |
-| open | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | — |
+| done | `ctp-priority-audit` — Audit forward citations and priority of the doubly-principal extension theorem | 10 | creative-covariant-stopping | luna-ctp-priority |
+| done | `ctp-fresh-proof-audit` — Try to falsify the extension theorem from a fresh derivation | 10 | creative-covariant-stopping | luna-ctp-proof |
+| done | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | luna-ctp-covariant |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

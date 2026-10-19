@@ -147,3 +147,58 @@ offline. The initial sandboxed online check had 8 unreachable endpoint warnings;
 the coordinator reran with network access and obtained 0 errors and 0 warnings
 (6 arXiv IDs and 2 DOIs). Primary arXiv pages were inspected separately. The pre-existing
 live-board test-count failure remains tracked, and runner edits remain untouched.
+
+## Focused continuation: shorter proof and conditional covariant boundary
+
+On the user's request to continue, opened three isolated native tasks for a
+fresh proof audit, a forward-citation priority audit and the covariant-event
+boundary. No existing claims were reassigned. The current brief/board has
+48 tasks. Pre-existing runner edits remain outside these research commits.
+
+The coordinator simplified the original obstruction twice. The final argument
+uses every doubly-principal n-order, uniquely an arbitrary (n-2)-order capped
+twice. Writing a=|p|, b=|1-p|, t=a+b and s=b/t gives the direct estimate
+V_n >= a t^(n-2) product_j(1-s^j). It diverges for every p outside [0,1].
+Neither block repetition nor Harris association is needed. The fresh reviewer
+checked the algebra correspondence and independently enumerated exact sums;
+the original amplifier remains a valid alternative certificate. The complete
+current claim contract is `research/creative/CLAIM_CONTRACT.md`.
+
+The covariant follow-up is explicitly conditional. Define D_H by an intrinsic
+post's finite inclusive past shape H, intersected with infinitely-many-post
+histories. If a finite complex measure has unit mass on those histories and
+one common factor kappa with nu(D_H)=kappa N(H)A_p(H) for **all principal H**,
+existence is equivalent to 0<p<=1. Nonzero kappa gives variation |kappa|V_n;
+zero kappa is excluded by the laminar all-principal family covering the cyclic
+histories. The p=0 endpoint is separately excluded by larger post ranks. The
+classical converse uses established percolation post probabilities, not a new
+result. See `research/creative/COVARIANT_RESULT.md` and the fresh proof audit.
+
+The all-principal scope is necessary. An infinite ordinal sum of two-element
+antichains capped by individual posts gives a normalized Dirac measure with
+no doubly-principal inclusive post past. It satisfies the weaker
+doubly-principal-only rule with zero factor for any numerical p. Thus there
+is still no unconditional obstruction to arbitrary covariant measures.
+
+Priority coverage improved: INSPIRE returned four direct citing works for the
+2023 target paper, independently reproduced by the coordinator; OpenAlex
+returned three of them. The audit screened those works, nearby citations,
+reviews, a thesis and recent arXiv work at recorded depths. No matching proof
+was located. Some indexes were unavailable, and many nearby citations remain
+abstract/context depth only. The possible novelty is an elementary estimate
+closing a named extension problem, not new general probability or measure
+theory. The conditional result has a separate later targeted check. Global
+priority and external mathematical review remain outstanding.
+
+Coordinator corrections included the generated HTML date versus the actual
+2023 arXiv v2 date, a misnamed citing review, Surya–Zalel's title and a DJS
+author attribution. Source records pass offline and online checks after these
+repairs. The final online check covers 24 creative-pass records, 14 distinct
+arXiv IDs and 3 DOIs, with 0 errors and 0 warnings. The coordinator also
+corrected a mistaken attribution of post-specific discussion to DJS 2010:
+its discussion concerns general convergence and the originary event; Sorkin
+2011 supplies the post-specific event comparison. The independent exact proof
+script passes, and all current theorem/contract links resolve. These are research
+artifact checks, not a claim that the known live-board unit-test failure has
+been fixed. Accepting the artifacts does not automatically pass the existing
+ontology/theory selection gate or authorize unrelated implementation.

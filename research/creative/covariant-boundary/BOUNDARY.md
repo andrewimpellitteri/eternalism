@@ -233,13 +233,13 @@ covariant-only extension problem.
   labelled reduced-tree criterion; they do not prescribe values for a
   covariant-only complex measure.
 - Dowker, Johnston & Surya, *On extending the Quantum Measure*,
-  arXiv:1007.2725v1, Sec. 4 (especially Eqs. (45)–(48) and the discussion of
-  covariant observables near the end of that section). **Targeted full-text
-  read.** Their bounded-variation obstruction is on the labelled cylinder
-  algebra; their discussion says the post event needs a separate, cumbersome
-  conditional-convergence prescription. This supports the distinction
-  between the cylinder theorem and an extra event-value rule, not proposition
-  (P) itself.
+  arXiv:1007.2725v1, Sec. 4 and Sec. 5, especially the discussion after
+  Eq. (58) and Eq. (59). **Targeted full-text read; coordinator corrected the
+  discussion locator against the primary text.** Their obstruction concerns
+  labelled cylinders. Sec. 5 proposes general conditional-convergence and
+  probability-first complexification approaches, illustrating the latter with
+  the originary event. It does not discuss a post-tail prescription. This is
+  adjacent motivation for a separate event-value rule, not a proof of (P).
 - Surya & Zalel, *A Criterion for Covariance in Complex Sequential Growth
   Models*, arXiv:2003.11311v1, Secs. 1–3. **Targeted full-text read** of the
   labelled/covariant algebra setup, bounded-variation criterion, and complex

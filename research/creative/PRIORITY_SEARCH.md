@@ -1,4 +1,4 @@
-# Priority check: limited and incomplete
+# Initial priority check: limited and incomplete
 
 Checked 2026-10-19. This records discovery coverage, not a certificate of novelty.
 
@@ -36,8 +36,18 @@ not establish completeness. A repository search for `doubly.principal`,
 `doubly.reduced`, `Harris`, and `2212.01149` found no earlier matching project
 result outside the creative pass.
 
-Outstanding: a systematic forward-citation audit of the direct predecessor,
-author bibliographies and later theses/preprints, including proofs under other
-terminology. A proof of the same prescribed-value extension classification
-would defeat priority even if it uses a different method. No authors have
-been contacted and no publication claim is made.
+This first pass left forward citations, author bibliographies and later
+theses/preprints for follow-up. The subsequent
+[independent audit](priority-audit/PRIORITY.md) used INSPIRE and OpenAlex,
+screened their direct citing works and recorded a thesis/review/recent-paper
+search. The coordinator independently reproduced INSPIRE's four direct citing
+records and checked the primary metadata of the closest sources.
+
+Outstanding: inaccessible citation indexes, non-indexed work, additional
+terminology, and deeper proof reading of sources screened only at abstract or
+reference-context depth. A proof of the same prescribed-value extension
+classification would defeat priority even if it uses a different method.
+The conditional covariant follow-up was derived after the main audit and now
+has its own [bounded priority check](priority-audit/POST_TAIL_PRIORITY.md).
+That search also found no matching theorem at the recorded depths, with its
+limits explicit. No authors have been contacted and no publication claim is made.

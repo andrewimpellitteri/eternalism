@@ -177,8 +177,8 @@ The direct disjoint-cylinder variation argument above avoids that issue.
 `verify_small.py` enumerates all forward-edge masks and distinct induced
 orders for `k=0,...,4`, with exact `Fraction`s. For `(r,s)=(2/5,3/5)` and
 the symmetric normalized point `(1/2,1/2)`, it checks the all-order sum
-`Z_k(r,s)=F_k(s)`, the bijection from all `k`-orders to all doubly-principal
-orders of size `k+2`, and the exact finite level sums at `p=(1+i)/2` in
+`Z_k(r,s)=F_k(s)`, the two-cap endpoints' defining predicates and exponents,
+and the exact finite level sums at `p=(1+i)/2` in
 `Q(√2)`. It also checks the older principal-only Harris inequality for
 `n=2,...,5` and the finite post-future precursor sum through three births.
 All checks pass. They are finite consistency checks; the all-`k` proof is the

@@ -32,93 +32,78 @@ It also rules out extension with these prescribed values on the larger
 principal-cylinder algebra \(\widetilde{\mathcal R}_b\): restricting any
 such measure would contradict the theorem.
 
-## Proof
+## Proof and quantitative bound
 
-For a principal \(k\)-element naturally labelled block \(G\), let \(m(G)\)
-count its minimal elements and set
+Write \(a=|p|\), \(b=|1-p|\). When \(p\notin[0,1]\),
+\(a,b>0\) and \(t=a+b>1\). Put \(r=a/t\), \(s=b/t\), so
+\(r,s\in(0,1)\), \(r+s=1\), and
 \[
-u(G)=L(G)+m(G),\qquad
-v(G)=\binom{k}{2}-R(G),\qquad
-Z_k(a,b)=\sum_G a^{u(G)}b^{v(G)}.
+c_s=\prod_{j=1}^{\infty}(1-s^j)>0.
 \]
-Every nonminimal element has at least one incoming cover, so \(u(G)\ge k\);
-also \(v(G)\ge0\).
+Positivity follows from \(\sum_j s^j<\infty\); use
+\(\log(1-x)\ge-2x\) on the sufficiently small tail terms.
 
-Suppose \(p\notin[0,1]\). Then \(a=|p|>0\), \(b=|q|>0\), and
-\(t=a+b>1\), by the strict case of the triangle inequality. Set
-\(r=a/t\), \(s=b/t\). These are real numbers strictly between zero and one,
-with \(r+s=1\). Termwise,
+Every doubly-principal causet on \(k+2\) labels is uniquely
 \[
-Z_k(a,b)\ge t^k Z_k(r,s).
+C_G=G\oplus\{u\}\oplus\{v\},
+\]
+where \(G\) is an **arbitrary** naturally labelled \(k\)-element causet and
+\(\oplus\) is ordinal sum. Indeed, the last element is a unique maximum,
+and the penultimate element is the unique maximum after deleting the last.
+Conversely, both universal caps make every such \(G\) doubly principal.
+
+Let \(M(G)\) count maxima and define
+\[
+w(G)=L(G)+M(G),\qquad h(G)=\binom{k}{2}-R(G).
+\]
+Each nonmaximal element has an outgoing cover, so \(w(G)\ge k\).
+The two caps add \(M(G)+1\) covers and no incomparable pairs. Consequently,
+for the sum over **all** doubly-principal cylinders at level \(k+2\),
+\[
+\begin{aligned}
+V_{k+2}(p)
+&:=\sum_{C\text{ doubly principal},\ |C|=k+2}|A_p(C)|\\
+&=a\sum_G a^{w(G)}b^{h(G)}\\
+&=a\sum_G t^{w(G)+h(G)}r^{w(G)}s^{h(G)}\\
+&\ge a t^k\sum_G r^{w(G)}s^{h(G)}.
+\end{aligned}
 \]
 
-To bound the last factor, consider independent Bernoulli-\(r\) directed edges
-on the ordered vertices \(0,\ldots,k\), followed by transitive closure.
-The resulting order \(C\) has probability
+The final sum has a simple real-probability interpretation. On vertices
+\(0,\ldots,k\), independently include each forward edge with probability
+\(r\), then take transitive closure. An order \(C\) has probability
 \(r^{L(C)}s^{\binom{k+1}{2}-R(C)}\): cover edges must occur,
-incomparable pairs must have no edge, and redundant comparable edges can be
-summed out.
+incomparable pairs must have no edge, and redundant comparable edges sum out.
+The event that the final vertex is above every earlier vertex consists
+exactly of the orders \(G\oplus\{u\}\). Its probability is therefore
+\(\sum_G r^{w(G)}s^{h(G)}\).
 
-Let \(E_k\) be the event that \(0\) precedes every other vertex, and \(F_k\)
-the event that every other vertex precedes \(k\). Their intersection consists
-exactly of orders \(\{0\}\oplus G\) with \(G\) principal. Cross-boundary
-covers are precisely the edges from \(0\) to the minima of \(G\).
-Consequently
+Reverse the vertex order and arrows. The same event becomes the event that
+the first vertex reaches all later vertices. Conditional on reaching all
+\(j\) existing vertices, the next vertex is reached iff at least one of its
+\(j\) incoming edges occurs. Independent exposure gives
 \[
-Z_k(r,s)=\Pr(E_k\cap F_k).
+\sum_G r^{w(G)}s^{h(G)}
+=F_k(s):=\prod_{j=1}^{k}(1-s^j)\ge c_s.
 \]
-Sequential exposure gives
-\(\Pr(E_k)=\prod_{j=1}^k(1-s^j)\): conditional on all earlier vertices being
-reachable from \(0\), the next vertex is reachable exactly when it has an
-incoming edge from one of those \(j\) vertices. Reversing the vertex order
-gives the same probability for \(F_k\).
-
-Both events are increasing functions of independent edge bits. Harris's
-inequality therefore gives
+Thus the explicit bound is
 \[
-Z_k(r,s)\ge
-\left[\prod_{j=1}^k(1-s^j)\right]^2\ge c_s^2>0,
-\qquad c_s=\prod_{j=1}^{\infty}(1-s^j).
+\boxed{V_{k+2}(p)\ge |p|\,(|p|+|1-p|)^k\,c_s\longrightarrow\infty.}
 \]
-The infinite product is positive because \(0<s<1\) and
-\(\sum_j s^j<\infty\). Thus \(Z_k(a,b)\ge t^k c_s^2\).
+Distinct naturally labelled endpoints of a fixed size have disjoint
+cylinders, and every cylinder counted here belongs to
+\(\widetilde{\mathcal R}_p\). A finite-valued countably additive complex
+measure has finite total variation, which bounds all these finite disjoint
+sums uniformly. Their divergence is a contradiction.
 
-For completeness, the finite-product association inequality used here follows
-by induction on edge bits. Conditional covariance is nonnegative by induction.
-The covariance of the two conditional means is
-\(r(1-r)(f_1-f_0)(g_1-g_0)\ge0\), because both functions are increasing.
-This is an established elementary lemma, not the claimed novelty.
+For \(p\in[0,1]\), ordinary transitive percolation gives a probability
+measure on the full labelled-history sigma-algebra. Its restriction gives
+the required measure, including the deterministic endpoint cases.
 
-Cap each \(G\) with a new universal maximum, producing a
-doubly-principal block \(H=G\oplus\{\ast\}\) of size \(k+1\).
-The cap adds one cover and \(k\) relations, leaves the number of minima
-unchanged, and leaves the count of incomparable pairs unchanged.
-The seam-inclusive block weight
-\[
-B_p(H)=p^{m(H)}A_p(H)
-\]
-therefore satisfies
-\[
-\sum_H |B_p(H)|=a Z_k(a,b)\ge a t^k c_s^2.
-\]
-Choose a finite \(k\) making this quantity \(W>1\).
-
-Starting from one vertex, concatenate any \(\ell\) of these blocks by
-ordinal sum. Each endpoint is doubly principal. At a seam every old vertex
-precedes every new vertex, so no new incomparable pair is created; the only
-new covers join the old unique maximum to the new minima. Hence endpoint
-amplitudes factor as \(\prod_{j=1}^{\ell} B_p(H_j)\).
-Different block tuples give different naturally labelled endpoints, recoverable
-by restriction to their fixed label intervals. Their cylinders all have the
-same size and are disjoint. The sum of their absolute prescribed amplitudes is
-therefore \(W^\ell\).
-
-Any finite complex measure agreeing on these generators would have total
-variation at least \(W^\ell\) for every \(\ell\), which is impossible.
-This proves nonexistence for \(p\notin[0,1]\).
-For \(p\in[0,1]\), ordinary transitive percolation defines a probability
-measure on the full labelled-history sigma-algebra; restricting it gives the
-required measure. This includes the deterministic endpoint cases.
+This two-cap proof supersedes the longer repeated-block/Harris proof used
+in the first draft. It needs one endpoint-connectivity product and no
+positive-association theorem. The earlier argument remains valid and its
+finite amplifier is an additional check, not a prerequisite for this proof.
 
 ## Finite certificate and independent checks
 
@@ -139,14 +124,23 @@ verified the endpoint-probability identity and positive-association bound.
 See the [finite certificate script](covariant-stopping/reduced_poscau_obstruction.py),
 [first general proof review](clock-certificates/addendum-general-p.md), and
 [second general proof review](clock-memory/all-nonclassical-parameters-review.md).
+The subsequent [fresh audit](proof-audit/AUDIT.md) checks the shorter two-cap
+proof and supplies an [exact independent script](proof-audit/verify_small.py).
+At the same complex parameter, it gives
+\(V_5=3/4+3\sqrt2/16\) and \(V_6=31/32+55\sqrt2/64\).
+These finite values are consistency checks; divergence follows from the
+all-level bound, not from any single sum exceeding one.
 
 ## Prior work and novelty boundary
 
 The nearest direct problem statement is [Dowker–Zalel,
 arXiv:2212.01149v2](https://arxiv.org/html/2212.01149v2), Sec. V,
 Eqs. (29)–(31). Their doubly-reduced extension criteria are inconclusive.
-The proposed delta is the repeated-block lower bound, made general by comparison
-with real random graph orders and positive association.
+The proposed delta is a direct lower bound for the doubly-principal cylinder
+variation, obtained by normalizing modulus weights into a real random graph
+order and using its endpoint-connectivity probability. The elementary
+normalization argument, rather than a new probability lemma, is the proposed
+contribution.
 The larger-algebra corollary also settles the extension question posed in
 Sec. III.4, without proving their particular numerical conjecture about
 minimum local transition variation.
@@ -154,14 +148,33 @@ minimum local transition variation.
 [Dowker–Johnston–Surya, arXiv:1007.2725](https://arxiv.org/abs/1007.2725)
 and [Surya–Zalel, arXiv:2003.11311v1](https://arxiv.org/html/2003.11311v1)
 already supply full-algebra nonextension and bounded-variation foundations.
-Those results and Harris's inequality are prior work, not new results here.
+Those foundations and real random-graph post probabilities are prior work.
+The initial draft also used the established Harris inequality; the shorter
+proof no longer needs it.
 
 Targeted searches did not locate this smaller-algebra classification or this
 proof. They are insufficient to establish global priority. A later proof for
 the same prescribed cylinder algebra would defeat the novelty claim without
-invalidating this derivation. See the [limited priority-search log](PRIORITY_SEARCH.md).
+invalidating this derivation. A subsequent [forward-citation audit](priority-audit/PRIORITY.md)
+screened the four direct citing works returned by INSPIRE and three returned
+by OpenAlex, plus related reviews, a thesis and recent papers. No matching
+proof was located at the recorded read depths. Some indexes were unavailable,
+and the search does not certify priority. The result is an elementary
+strengthening of the direct predecessor's criterion, not a new probability
+method. See also the [initial priority-search log](PRIORITY_SEARCH.md).
 
 No conclusion follows about temporal ontology, objective passage, quantum
 gravity in general, or whether measures defined only on a covariant algebra
 exist. The choice of event algebra and scalar complex-measure framework
 remains part of the model.
+
+## Conditional covariant follow-up
+
+A separate [covariant theorem draft](COVARIANT_RESULT.md) adds an explicit
+common-factor rule for amplitudes of **all principal** post-past shapes and
+requires unit measure on infinitely-many-post histories. Under that additional
+rule, existence is classified by \(0<p\le1\), even on the smaller covariant
+algebra. Its proof uses the same variation bound and a laminar-family argument
+that excludes a zero tail factor. A counterexample shows why weakening the
+rule to doubly-principal pasts fails. This conditional statement does not
+change the bare labelled theorem's scope.
