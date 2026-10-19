@@ -184,3 +184,16 @@ numbers (separable bound 3/4, quantum value (2+sqrt2)/4) are correct.
 
 Runner note: after a relaunch, `result.json` from the first attempt persists and makes a
 live worker display as `failed`; check the process, not the status column.
+
+## Read-only identifier check of the Codex lanes in review (2026-10-19)
+
+kb-aqft-locality (9 records), kb-arrow-cosmology (10), kb-discriminators (11): all 30
+records parse; 29 of 30 DOI-bearing records match Crossref titles (arXiv items not
+re-checked, the arXiv API being rate-limited). One failure, in the lane's own words
+already flagged as unverified:
+- `aqft-bisognano-wichmann-1976`: DOI 10.1063/1.522676 resolves to an unrelated paper,
+  and the title "On the duality condition for a Hermitian scalar field. II" is wrong. The
+  1976 paper is "On the duality condition for quantum fields", J. Math. Phys. 17, 303-321,
+  DOI 10.1063/1.522898 (the 1975 paper "...for a Hermitian scalar field" is 10.1063/1.522605,
+  J. Math. Phys. 16, 985-1007). Left unedited: it belongs to the Codex session's lane.
+Substance of these lanes (full-text claims) not reviewed here.
