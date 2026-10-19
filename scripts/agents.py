@@ -15,10 +15,17 @@ import signal
 import subprocess
 import sys
 import tempfile
+import time
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MODEL = "zai-coding-plan/glm-5.3-flash"
 REFUSED = 3
+# About a dozen simultaneous GLM workers hit z.ai 429 (code 1302) on 2026-10-19.
+DEFAULT_MAX_CONCURRENT = 6
+RATE_LIMIT_ATTEMPTS = 4
+RESUME_NOTE = ("\n\n## Resumed run\n\nYour previous attempt was interrupted by a provider "
+               "rate limit. Inspect `git status`, `git log` and your output paths first; keep "
+               "and continue existing work rather than starting over.\n")
 
 
 def git(*args, cwd=None, check=True):
@@ -235,25 +242,101 @@ def worker(args):
     env.update(OPENCODE_CONFIG=str(root / "scripts/agents/opencode-agent.json"),
                GIT_SSH_COMMAND="false", GH_TOKEN="invalid", GITHUB_TOKEN="invalid",
                AWS_SHARED_CREDENTIALS_FILE="/dev/null", AWS_CONFIG_FILE="/dev/null")
-    command = ["opencode", "run", "--standalone", "--auto", "--model", args.model,
-               "--title", f"time-{tid}", "--format", "json", prompt]
-    with (run / "events.jsonl").open("w") as out, (run / "stderr.log").open("w") as err:
-        process = subprocess.Popen(command, cwd=wt, env=env, stdin=subprocess.DEVNULL,
-                                   stdout=out, stderr=err)
-        # The supervisor and OpenCode share a process group for explicit stop.
-        while True:
-            try:
-                code = process.wait(timeout=60)
-                break
-            except subprocess.TimeoutExpired:
-                transition("heartbeat", tid, f"glm-{tid}")
+    events = run / "events.jsonl"
+    slot = acquire_slot(root, tid)
+    session, code, limited = None, None, False
+    for attempt in range(1, RATE_LIMIT_ATTEMPTS + 1):
+        message = prompt if attempt == 1 else prompt + RESUME_NOTE
+        command = ["opencode", "run", "--standalone", "--auto", "--model", args.model,
+                   "--title", f"time-{tid}", "--format", "json",
+                   *(["--session", session] if session else []), message]
+        start = events.stat().st_size if events.exists() else 0
+        with events.open("a") as out, (run / "stderr.log").open("a") as err:
+            out.write(json.dumps({"type": "runner", "attempt": attempt,
+                                  "session": session, "at": timestamp()}) + "\n")
+            out.flush()
+            process = subprocess.Popen(command, cwd=wt, env=env, stdin=subprocess.DEVNULL,
+                                       stdout=out, stderr=err)
+            # The supervisor and OpenCode share a process group for explicit stop.
+            while True:
+                try:
+                    code = process.wait(timeout=60)
+                    break
+                except subprocess.TimeoutExpired:
+                    transition("heartbeat", tid, f"glm-{tid}")
+        session, limited = scan_events(events, start, session)
+        if code == 0 or not limited or attempt == RATE_LIMIT_ATTEMPTS:
+            break
+        delay = 90 * 2 ** (attempt - 1)
+        print(f"{tid}: provider rate limit; retry {attempt + 1} in {delay}s "
+              f"(session {session})", flush=True)
+        for _ in range(delay // 30):
+            transition("heartbeat", tid, f"glm-{tid}")
+            time.sleep(30)
+    slot.close()
     report = wt / "AGENT_REPORT.md"
-    outcome = "review" if code == 0 and report.is_file() else "failed"
-    atomic_json(run / "result.json", {"exit_code": code, "outcome": outcome,
-                                      "finished_at": timestamp()})
+    delivered = report.is_file() and committed_and_clean(wt, "AGENT_REPORT.md")
+    if code == 0 and report.is_file():
+        outcome, reason = "review", "exit 0 with report"
+    elif delivered:
+        outcome, reason = "review", f"exit {code} after a committed report and clean tree"
+    else:
+        outcome = "failed"
+        reason = "provider rate limit, retries exhausted" if limited else f"exit {code}"
+    atomic_json(run / "result.json", {"exit_code": code, "outcome": outcome, "reason": reason,
+                                      "attempts": attempt, "finished_at": timestamp()})
     if outcome == "review":
-        transition("review", tid, f"glm-{tid}", notes=f"Inspect {report}; not yet accepted.")
-    print(f"{tid}: {outcome} (exit {code})", flush=True)
+        transition("review", tid, f"glm-{tid}",
+                   notes=f"Inspect {report}; {reason}; not yet accepted.")
+    print(f"{tid}: {outcome} ({reason})", flush=True)
+
+
+def acquire_slot(root, tid):
+    """Hold one of AGENT_MAX_CONCURRENT lock files so the provider is not flooded."""
+    limit = int(os.environ.get("AGENT_MAX_CONCURRENT", DEFAULT_MAX_CONCURRENT))
+    slots = root / ".agent-runtime" / "slots"
+    slots.mkdir(parents=True, exist_ok=True)
+    waited = False
+    while True:
+        for i in range(limit):
+            handle = (slots / f"{i}.lock").open("w")
+            try:
+                fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError:
+                handle.close()
+                continue
+            handle.write(f"{tid} {os.getpid()} {timestamp()}\n")
+            handle.flush()
+            return handle
+        if not waited:
+            print(f"{tid}: all {limit} worker slots busy; queued", flush=True)
+            waited = True
+        transition("heartbeat", tid, f"glm-{tid}")
+        time.sleep(30)
+
+
+def scan_events(path, start, session):
+    """Session ID and whether a provider rate limit appeared since byte offset start."""
+    limited = False
+    with path.open() as f:
+        f.seek(start)
+        for line in f:
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            session = event.get("sessionID") or session
+            error = event.get("error") or {}
+            if event.get("type") == "error" and (
+                    error.get("type") == "provider.rate-limit" or error.get("status") == 429):
+                limited = True
+    return session, limited
+
+
+def committed_and_clean(wt, name):
+    tracked = git("ls-files", "--error-unmatch", name, cwd=wt, check=False).returncode == 0
+    dirty = git("status", "--porcelain", cwd=wt, check=False).stdout.strip()
+    return tracked and not dirty
 
 
 def status():

@@ -8,7 +8,8 @@ example's `--pure`. Coordination uses only Python's standard library.
 
 Run from the main checkout with an initial commit and a clean working tree.
 The default model is `zai-coding-plan/glm-5.3-flash`. Existing OpenCode login
-and global MCP settings are inherited, including enabled `web-search-prime`.
+and global MCP settings are inherited when OpenCode registers them; see the
+search note below.
 The local override does not disable MCP. No keys are copied into this repo.
 
 ```sh
@@ -28,6 +29,21 @@ Do not run `git clean -fdx`: it would destroy these untracked work products.
 Dry-run checks task dependencies, active ownership, IDs, and target paths without
 creating claims, worktrees, processes or model calls. Actual launch also checks
 OpenCode installation, a committed baseline, and a clean main checkout.
+
+**Search is currently unavailable to workers (checked 2026-10-19).** OpenCode
+2.0.32 reports `No MCP servers configured`: the global `web-search-prime` entry
+uses the pre-2.0 config shape and is not registered, and every built-in
+`websearch` call returned `Web search cancelled`. Workers fell back to direct
+`webfetch` of arXiv pages. Re-register the server (see below) and confirm with
+`opencode mcp list` before relying on search-heavy lanes.
+
+**Rate limits.** About a dozen simultaneous GLM workers hit z.ai `429` (code
+1302) at once. Workers now hold one of `AGENT_MAX_CONCURRENT` slot locks
+(default 6) under `.agent-runtime/slots/`; extra workers queue with heartbeats.
+A run that hits a rate limit backs off and resumes the same OpenCode session,
+up to four attempts. A nonzero exit after a committed `AGENT_REPORT.md` and a
+clean tree enters review with the exit code noted, since OpenCode sometimes
+exits 1 after completing. `result.json` records the reason and attempt count.
 
 Workers use `opencode run --standalone --auto --format json`. Each writes a
 capability check for its MCP search access, research files, and AGENT_REPORT.md.
