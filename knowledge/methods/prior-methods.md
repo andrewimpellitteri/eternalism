@@ -11,9 +11,9 @@ our design inference.
 
 | Workflow (source) | Shape | Verification model | Primary failure surface (authors' own reports) |
 |---|---|---|---|
-| Single LLM + CAS runtime on novel perturbation-theory problems; Claude Opus 4-6 driving a Maple REPL with expert-built contexts (meth-cas-agents-2026) | One agent, iterative REPL loop, 100-turn cap | Expert stage-wise pass/fail on 9 problems with known answers | Convention misreading ("flat background" ≠ Minkowski); abandoned "too trivial" solutions; order reduction without constraints; unflagged conditional equivalences; silent branch choice; instruction-only contexts cause decision paralysis |
-| Multi-agent autoformalization: six specialized roles around a Lean blueprint, persistent memory, human strategic review (meth-tensor-agents-2026, meth-tnlean-repo) | Orchestrator + proof-writer + scout + simplifier + blueprint-sync + automated reviewer; parallel dispatch on disjoint files; scout-then-prove; review-repair capped at 5 cycles | Lean kernel for proofs; blueprint-vs-Lean and literature-vs-Lean semantic checks by reviewer agents; six human blueprint-review rounds | Weakened statements (extra "doubly stochastic" hypothesis); finite statement replaced by asymptotic one; vacuous hypotheses; D=0/N=0 edge cases; blueprint-code drift; heartbeat and context limits. Stated bottleneck: "enforcing mathematical intent" |
-| Named-postulate codification of a non-rigorous physics argument in Lean, with oracle and adversarial review (meth-sw-lean-2026) | Physics as predicates H0–H7 in theorem types; math-only `axiom` keyword; single dictionary from physical concepts to mathematical objects | `#print axioms` dependency report; numerical oracle (278 checks, 30–40 digits, separate engine); cross-model statement-level review; four-part transcription validation; independent-route cross-check ("physicist's triangle") | Vacuous hypotheses (true by fiat); unsatisfiable hypotheses (R-symmetry order at rank 1); family-dependence traps (free coefficients fit anything at one scale); adversarial review found 3 statement-level gaps after 62 numerical checks passed; the oracle itself erred twice |
+| Single LLM + CAS runtime on novel perturbation-theory problems; Claude Opus 4-6 driving a Maple REPL with expert-built contexts (meth-cas-agents-2026) | One agent, iterative REPL loop, 100-turn cap | Expert stage-wise pass/fail on 9 problems with known answers | Convention handling ("flat background" for cosmological evolution; the paper's exact wording on a Minkowski misreading was not confirmed); abandoned "too trivial" solutions; order reduction after forgetting Lagrange-multiplier constraints; an equivalence valid only if f″(χ)≠0; branch selection (branching noticed in all problems but one; the more complicated branch usually chosen, the simpler σ=0 branch once); instruction-only contexts cause decision paralysis |
+| Multi-agent autoformalization: six specialized roles around a Lean blueprint, persistent memory, human strategic review (meth-tensor-agents-2026, meth-tnlean-repo) | Orchestrator + proof-writer + scout + simplifier + blueprint-sync + automated reviewer; parallel dispatch on disjoint files; scout-then-prove; review-repair capped at 5 cycles | Lean kernel for proofs; blueprint-vs-Lean and literature-vs-Lean semantic checks by reviewer agents (the paper does not report whether the automated reviewer flagged the two main incidents); six human blueprint-review rounds | Weakened statements (extra "doubly stochastic" hypothesis); finite statement replaced by asymptotic one; vacuous proofs from never-satisfied hypotheses named as a risk the reviewer checks for (no concrete incident reported); statements assuming structural data the intended theorem should derive (App. E.2); artificial D=0/N=0 cases excluded by adding D≥1, N≥1 (edge-case handling cost, not an error caught); blueprint-code drift; Lean heartbeat budget and model context limits. Stated bottleneck: "enforcing mathematical intent" |
+| Named-postulate codification of a non-rigorous physics argument in Lean, with oracle and adversarial review (meth-sw-lean-2026) | Physics as predicates H0–H7 in theorem types; math-only `axiom` keyword; single dictionary from physical concepts to mathematical objects | `#print axioms` dependency report; numerical oracle (278 checks, 30–40 digits, separate engine); cross-model statement-level review; four-part transcription validation; independent physics routes to the prepotential agreeing (the paper's "physicist's triangle": weak-coupling perturbation theory, instanton expansion, exact curve periods) | Vacuous hypotheses (true by fiat); unsatisfiable hypotheses (R-symmetry order at rank 1); family-dependence traps (free coefficients fit anything at one scale); adversarial review found 3 statement-level gaps after 62 numerical checks passed; the oracle itself erred twice |
 | Kernel-graded proof-synthesis benchmark over Nielsen–Chuang (meth-axqm-2026; see also form-axqm) | 1,019 finite-dimensional QM tasks; public statements, private solutions | Deterministic Lean kernel: compiles, no `sorry` in closure, no new axioms | By design does not grade statement-level correspondence to the textbook item — exactly the gap between "it compiles" and "it says what the source says" |
 | Scaffolded autonomous hypothesis generation for particle theory (meth-fermiacc-2026) | Abstract-level lead | Claimed quantitative validation at scale; mechanism not audited | Unknown — flagged for full-text audit, not characterized here |
 | Tool-constrained symbolic computation in HEP (meth-diagrammatica-2026) | Agent emits compact human-auditable diagram specs; trusted backend computes exactly; two paths (NDA, exact FeynCalc) | Known-answer exhaustive catalog (all tree-level 1→2 single-vertex widths with limits) | Names the core problem directly: "correctness is governed by implicit mathematical conventions that are not encoded in a form that can be easily checked in the computational backend" |
@@ -44,8 +44,8 @@ Douglas repository internals, and the TNLean build itself.
    descriptions of time may silently hold only for ideal clocks or one frame
    family.
 2. **F2 Vacuous or unsatisfiable hypotheses.** Witnesses trivially exist or cannot
-   exist. Evidence: Douglas H3/H5/H6 hardening; TNLean "hypotheses never
-   satisfied". Consequence: an assumption map can look satisfied while carrying
+   exist. Evidence: Douglas H3/H5/H6 hardening. TNLean names vacuous
+   proofs as a risk its reviewer checks for but reports no instance. Consequence: an assumption map can look satisfied while carrying
    no physics.
 3. **F3 Nearby-statement substitution (finite/asymptotic).** Proving a related
    statement instead of the intended one. Evidence: TNLean asymptotic swap.
@@ -59,20 +59,22 @@ Douglas repository internals, and the TNLean build itself.
    Lagrange multipliers. Consequence: Page–Wootters-style conditionalizations
    that drop the constraint Hamiltonian.
 6. **F6 Silent branch selection.** Evidence: Hell–Thiele multiple background
-   branches. Consequence: choosing one simultaneity convention or one growth
+   branches (noticed in nearly all problems, so "silent" is our gloss). Consequence: choosing one simultaneity convention or one growth
    order without flagging alternatives.
 7. **F7 Conditional equivalence used unconditionally.** Evidence: Hell–Thiele
-   f″(χ)≠0 subtlety. Consequence: equivalence theorems (e.g., relational
+   f″(χ)≠0 subtlety (the paper states the condition; "used unconditionally"
+   is our gloss of the risk). Consequence: equivalence theorems (e.g., relational
    dynamics trinity results) whose hypotheses carry sector or clock-class
    restrictions.
 8. **F8 Untraceable premises.** Equations or assumptions without provenance.
    Evidence: Douglas names hallucinated assumptions as AI's characteristic
    physics error; Hell–Thiele saw training-set knowledge enter uninvited.
-9. **F9 Edge cases outside the physical domain.** Evidence: TNLean D=0, N=0.
+9. **F9 Edge cases outside the physical domain.** Evidence: TNLean adds D≥1, N≥1 to exclude artificial Lean cases (App. B.5
+    reports about 2,000 lines of Lean on them); a handling cost, not a caught error.
 10. **F10 Review-loop pathologies.** Endless review on revision; self-review
     agreement as false confidence. Evidence: TNLean's 5-cycle cap and its
-    incident where formally correct statements passed self-review and needed
-    human intent review; Douglas's separation of "is it proved?" from "does it
+    incidents where the human supervisor flagged unintended versions of the
+    statement (the paper does not report what the automated reviewer did); Douglas's separation of "is it proved?" from "does it
     say what the source says?" from "can the intended theorems be derived?".
 
 ### Documented evidence that agreement is not correctness
@@ -80,10 +82,11 @@ Douglas repository internals, and the TNLean build itself.
 - Douglas: an axiom set passed 62 numerical checks and was still rejected by
   adversarial statement review (three gaps invisible to sampling). Two engines
   agreeing on values did not make the statement fit for purpose.
-- TNLean: the agent team's own review did not catch the weakened DS-gauge
-  theorem or the asymptotic substitution; human strategic review did.
-- Hell–Thiele: enabling thinking tokens and longer contexts did not remove
-  failure classes; a single-model judge would share the misreading ("flat
+- TNLean: the human supervisor flagged the weakened DS-gauge theorem and the
+  asymptotic substitution; the paper does not report whether the automated
+  reviewer had flagged either.
+- Hell–Thiele: a 1024-token thinking budget gave very little improvement, and
+  a smaller representative example set beat a larger one; a single-model judge would share the misreading ("flat
   background").
 - These are also the project's stated position (knowledge/NOVELTY.md): same-model
   agents share failure modes; different prompts do not create independent
