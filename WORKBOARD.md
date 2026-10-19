@@ -7,11 +7,11 @@ First milestone: prior work → theory map → independent novelty audit.
 
 | State | Task | Priority | Depends on | Owner |
 |---|---|---|---|---|
-| review | `kb-foundations` — Map the strongest time arguments and their physical assumptions | 10 | — | luna-foundations |
-| review | `kb-formalization` — Inventory reusable relativity and quantum formalizations | 10 | — | luna-formalization |
-| review | `kb-frontier` — Screen recent physics of time and identify tractable extension targets | 10 | — | luna-frontier |
-| open | `kb-agent-methods` — Audit AI-assisted physics and design evidence-preserving synthesis | 9 | — | — |
-| blocked | `theory-map` — Synthesize a broad assumption and observable map without erasing disagreements | 9 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | — |
+| done | `kb-foundations` — Map the strongest time arguments and their physical assumptions | 10 | — | luna-foundations |
+| done | `kb-formalization` — Inventory reusable relativity and quantum formalizations | 10 | — | luna-formalization |
+| done | `kb-frontier` — Screen recent physics of time and identify tractable extension targets | 10 | — | luna-frontier |
+| done | `kb-agent-methods` — Audit AI-assisted physics and design evidence-preserving synthesis | 9 | — | glm-kb-agent-methods |
+| open | `theory-map` — Synthesize a broad assumption and observable map without erasing disagreements | 9 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | — |
 | blocked | `novelty-audit` — Independently challenge proposed contributions against closest prior work | 10 | theory-map | — |
 | blocked | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit | — |
 | blocked | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | — |
