@@ -119,3 +119,16 @@ foundations records carried a wrong DOI, venue or pages. Treat worker-supplied
 bibliographic fields as untrusted until checked: run the arXiv-title and Crossref-title
 checks on every new lane before acceptance. The arXiv check covers only arXiv URLs;
 books and JSTOR items without DOIs remain unchecked.
+
+## theory-map early check (2026-10-19, worker still running)
+
+First file: `research/theory-map/sources.jsonl`, 62 records (59 re-copied lane
+records plus 3 new `map-*`), all parse, no duplicate IDs, required fields present,
+no read depths raised. The worker branched before commit 23241bb, so its copies of
+`found-stein-1968`, `found-malament-1977` and `found-deasy-2015` carry the old
+wrong DOIs, and `found-prior-2009` still lacks the unverified flag.
+
+Acceptance rule for this and every lane that re-copies records: the canonical
+version of a lane record is the one in `knowledge/<lane>/sources.jsonl` on `main`.
+Take the worker's version only for new IDs, and compare identifiers for the 3
+`map-*` records (all abstract depth) with arXiv and Crossref before merging.
