@@ -45,8 +45,9 @@ entries and an AGENT_REPORT.md per current practice.
 
 ### 2.2 Translator (model-to-model or paper-to-model)
 
-- Input: exactly two extraction records (or one extraction record + one target
-  formal system, e.g., a Lean signature). Never raw recollection; never
+- Input: exactly two extraction records, or one extraction record plus one
+  explicit target (a formal system such as a Lean signature, or a stated
+  convention sheet and target notation for a single-source restatement). Never raw recollection; never
   another agent's summary in place of the extraction record.
 - Output: a translation map with required sections:
   1. Dictionary table: each physical concept → mathematical object → source
@@ -68,8 +69,10 @@ entries and an AGENT_REPORT.md per current practice.
 
 ### 2.3 Counterexample agent (adversarial)
 
-- Input: the translation map artifact only (per R4), plus the pinned sources if
-  it needs to check a citation. It does not receive the translator's reasoning.
+- Input: a redacted view of the translation map (per R4) with `statement`,
+  `failed_attempts`, `divergences`, `open_questions` and each assumption's
+  `falsifier` removed, plus the pinned sources if it needs to check a citation.
+  It does not receive the translator's reasoning.
 - Mandate: defeat the map by construction. Required probes, each producing
   either a concrete counterexample or a signed "no finding" entry:
   1. Vacuity probe (Douglas heuristic): for every existentially quantified
@@ -156,6 +159,18 @@ Contract rules:
   actually ran, with its command and result recorded in the lane report.
 - C5 Any unresolvable provenance (equation the extractor cannot locate) is kept
   and flagged, never silently dropped (anti-F8).
+- C7 Findings (in counterexample reports and audit verdicts) cite the artifact
+  item they concern, or for a missing item the expected locus, plus the source
+  locator where it is used or required. Each finding carries a severity
+  (`minor | major | blocking`).
+- C8 Per-kind field subsets: `extraction` omits `equations.target_side` and
+  `observables`; `translation-map` uses the full schema; `counterexample-report`
+  adds `findings` (C7) and `domain_bound`; `audit-verdict` adds `statuses` (one
+  per §2.4 question: `ok | defect | not-checked`), `remaining_risks`, and
+  `not_checked`. A verdict is reduced to a flag when any status is `defect` at
+  severity `major` or higher.
+- C9 `provenance_flag` (`resolved | unresolved`) accompanies each equation and
+  assumption; C5's "kept and flagged" means `unresolved`, not a missing field.
 - C6 Handoffs never contain credentials, private repository content, or
   unrelated personal data (AGENTS.md).
 

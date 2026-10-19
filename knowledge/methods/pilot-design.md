@@ -50,129 +50,189 @@ preconditions for adversarial evaluation.
 
 For each family, the pilot builds:
 
-- E: one extraction record per source (role: extractor), full provenance.
-- T0: one correct translation map (the known-answer artifact), produced from E
-  following `handoff-contract.md` §2.2.
-- D1..D8, three instances per class (different loci, e.g. different equations
-  or assumptions): defective variants of T0, each injecting exactly one ground-
-  truth defect. Family A has seven classes (D2 in its Family A form), Family B
-  eight. Instances of one class are independent samples; repeated runs of one
-  artifact are not. Labels live in a separate manifest (`labels.jsonl`, produced by
-  the defect injector role and not given to the auditor).
+- E: one extraction record per source (role: extractor), full provenance. The
+  extractor lists the assumptions the source actually uses, including implicit
+  ones it can locate; defects may only remove or alter items present in E.
+- T0: one translation map produced from E per `handoff-contract.md` §2.2, then
+  **verified clean before the run** (symbolic check of equations plus sign-off by
+  a second reader from a different model family or the coordinator). A flag on a
+  verified-clean T0 is a false accusation; a flag on an unverified T0 would be
+  ambiguous, so T0 is not used until verified.
+- Defective variants, three instances per class at different loci, each
+  injecting exactly one ground-truth defect. The three instances share one T0,
+  one injector, and one model family, so they are **not independent samples**;
+  they reduce locus-specific luck, not model-level correlation.
+- Clean items, about two per defective item pair (target ratio ≥ 1:2 clean to
+  defective, so a flag-everything auditor is exposed):
+  - T0 itself;
+  - edited-but-clean variants: cosmetic edits at the same loci by the same
+    injector (rewording, renaming, reordering), so edit footprints are not a
+    label;
+  - a true bridge-premise control: an explicitly ontological premise (for
+    example, eternalism or a privileged foliation) correctly typed
+    `bridge-premise` and not used as derived (must not be flagged).
+- Labels live in a separate manifest (`labels.jsonl`). Each defect has a
+  written justification, source locator, and second-reader sign-off before the
+  blind run; the injector's own description of its edit is not the authority.
+- All artifacts pass through one formatter and are audited in a fresh, isolated
+  context each, with no shared context that would let an auditor diff variants.
+- Injector and auditor are from different model families wherever both families
+  are available (AGENTS.md authorizes OpenCode GLM and native Luna runs); some
+  injections are scripted or manual. Same-family runs are labeled as such in
+  every report.
 
-The same translator prompt produces T0 and all D-variants; the injector applies
-defects by editing the artifact text (equations, assumption entries,
-convention sheet), so translation-quality variance does not confound the
-defect signal.
+## 4. Defect suite
 
-## 4. Defect suite (each anchored to the taxonomy in prior-methods.md §3)
+Classes are tagged with the taxonomy of `prior-methods.md` §3 where one applies.
+Class F1′ (overclaim: a claim stronger than its derivation) is introduced here
+and is not in that taxonomy; it is a proposed extension, not an anchored class.
 
-| ID | Injected defect | Taxonomy | Manifest label |
+### Tier 1 — generic translation defects
+
+| ID | Injected defect (respecified) | Taxonomy | Label |
 |---|---|---|---|
-| D1 | Sign flip in the boost parameter (or in ω for Family B), convention sheet left unchanged | F4 | `defect:sign-convention` |
-| D2 | Missing assumption. Family A: omit the isotropy/reciprocity assumption from the clock-synchronization prescription while still using it downstream. Family B: drop the constraint (H_S+H_C)|Ψ⟩=0 from the conditioning prescription | F5 | `defect:missing-assumption` |
-| D3 | Overclaim: A4 stated for all inertial frames, derived only for standard-configuration boosts along one axis (claim stronger than derivation; the inverse of F1's weakened formal statement, so tagged F1′) | F1′ | `defect:overclaimed-scope` |
-| D4 | Vacuous hypothesis: "synchronized" defined by a condition any two clocks satisfy (e.g., an existential with no constraint) | F2 | `defect:vacuous-hypothesis` |
-| D5 | First-order-in-v/c expansion presented as exact time dilation | F3 | `defect:approximation-as-exact` |
-| D6 | Silent branch: take the positive root of the quadratic where two branches exist, alternatives unrecorded | F6 | `defect:silent-branch` |
-| D7 | Edge case: claim stated for all relative speeds 0≤v without excluding v=c degenerate handling | F9 | `defect:edge-case` |
-| D8 | Untraceable equation: one equation inserted with no source_id/locator (a plausible but non-cited form) | F8 | `defect:untraceable` |
+| D1 | Convention-sheet inconsistency: the boost-direction convention is declared in the sheet but the equations use the opposite one. A consistent global sign flip is a relabeling, not a defect, and is a clean control. | F4 (as sheet-versus-equation inconsistency) | `defect:convention-inconsistency` |
+| D2 | Missing assumption: remove an assumption that E lists (Family A: isotropy or reciprocity of the one-way light speed, only if E lists it; Family B: the constraint (H_S+H_C)\|Ψ⟩=0) while it is still used downstream | F5 | `defect:missing-assumption` |
+| D3 | Overclaim: a lemma stated for all inertial frames but derived only for standard configuration. Valid only if the pinned derivation really is narrow; the lemma may be true more generally, so the defect is the derivation gap, not falsity | F1′ | `defect:overclaimed-scope` |
+| D4 | Vacuous hypothesis: "synchronized" defined by a condition any two clocks satisfy | F2 | `defect:vacuous-hypothesis` |
+| D5 | Truncation presented as exact: time dilation stated as γ ≈ 1 + v²/(2c²) with the O(v⁴/c⁴) remainder dropped and the result called exact. (A "first order in v/c" version is ill-defined, since γ's first-order term is 1.) | F3 | `defect:truncation-as-exact` |
+| D6 | Silent branch, only where a branch exists in the pinned source or in a derivation step the translator must carry out (for example a root choice). If the pinned Family A source has none, drop D6 for Family A | F6 | `defect:silent-branch` |
+| D7 | Edge case: claim stated for 0 ≤ v without handling v = c | F9 | `defect:edge-case` |
+| D8 | Untraceable item: an equation inserted with no source ID or locator | F8 | `defect:untraceable` |
 
-Two clean controls round out the set: T0 itself, and T0 with one assumption
-correctly re-classified from `physical-premise` to `bridge-premise` with the
-same content (a legitimate editorial change that must not be flagged).
+### Tier 2 — time-specific defects (none of these is a mechanical check)
+
+| ID | Injected defect | Why it matters here |
+|---|---|---|
+| D9 | A bridge premise presented as physical or derived (for example, "relativity of simultaneity implies all events are equally real" stated as a consequence) | AGENTS.md: a definition assuming eternalism cannot establish it; contract C2 |
+| D10 | Causal order conflated with temporal ontology or objective passage | AGENTS.md distinction |
+| D11 | Hidden global foliation or preferred frame ("the present") inside the synchronization prescription | The standard hidden premise in Rietdijk–Putnam-style arguments |
+| D12 | Coordinate time swapped for proper time (t ↔ τ) in the dilation statement | Clock time vs coordinate time |
+| D13 | A synchronization convention treated as a physical fact | Conventionality of simultaneity |
+| D14 | An observable-preserving map restated as "ontologically equivalent" or "gauge" | AGENTS.md: a representation transformation is not automatically an ontological equivalence |
+| D15 | A premise typed with the wrong `kind` (for example a bridge premise labeled physical) | Contract R1/C2. This replaces the earlier "reclassified control", which would have been a defect, not a clean item |
+
+D10–D15 depend on a source passage that supports them; a class is dropped for a
+family if its pinned source gives no honest locus. Disguised notation (nonstandard
+symbols, c ≠ 1, rapidity) is a representation change: it never changes an item's
+label, and "preserves observables" is never scored as ontological equivalence.
+
+**Minimum viable pilot (Family A):** D1, D2, D3, D4, D5, D7, D8 plus D9, D11,
+D14 (and D6 if the source supports it) = 10 classes, 30 defective artifacts,
+at least 15 clean artifacts, about 45 total. Preconditions, each to be pinned
+with a locator before the run: that the lemmas A1–A4 appear in the cited source
+(A4, the order-reversal statement, may be a modern-textbook lemma rather than a
+1905 passage; if so cite its actual source or drop it), and that each defect
+removes or alters something present in E.
 
 ## 5. Evaluation protocol
 
-1. Blind run: the audit pipeline (reviewer role per `handoff-contract.md` §4,
-   with the counterexample role on D-variants) processes the shuffled artifact
-   set. Labels withheld.
-2. Scoring against the manifest:
-   - Per-class detection recall: fraction of Dk artifacts flagged as defective,
-     by class. Report per class, not only aggregate.
-   - Localization accuracy: does the finding point at the defect's locus (the
-     exact equation/assumption/convention entry)?
-   - False-accusation rate on clean items (T0, re-classified T0): must be zero
-     for a passing pilot; any hit is reported as a finding against the
-     procedure, not buried.
-   - Provenance completeness: fraction of findings that cite artifact item +
-     source ID + locator.
-3. Baselines, each run identically and blind:
-   - B0 translator only (no audit): upper-bounds how many defects survive
-     without the pipeline.
-   - B1 single-model self-check (same model reviews its own artifact):
-     expected weak on D3/D4/D5 per primary-source evidence; measures the
-     uplift of role separation.
-   - B2 kernel/oracle-only where applicable: for Family A, a symbolic check of
-     the algebra. Hypothesis, not premise: it should pass D3 and D7 (the algebra
-     is fine, the claim's scope or domain is wrong) and may well catch D5, since
-     a first-order expansion differs from the exact formula. Report what it
-     actually catches; the point is that compile-or-compute success ≠
-     correspondence.
-4. Repetition: 3 runs per artifact (different seeds/orderings) to measure
-   stability. Per-class recall is computed over the three instances per class
-   (first-run verdicts), and run-to-run flips are reported separately as an
-   instability rate. Report ranges, not single numbers.
+1. Blind run: the audit pipeline (reviewer role, with the counterexample role,
+   per `handoff-contract.md` §4) processes the shuffled set, one artifact per
+   fresh context. Labels withheld.
+2. **Detection** is defined, not assumed: a finding of severity ≥ major whose
+   cited artifact item matches the manifest locus. A flag at the wrong locus is
+   a miss for that defect and, if the item is clean, a false accusation. The
+   verdict statuses of the contract (§4) map to "flagged" if any per-question
+   status is `defect` at severity ≥ major.
+3. Scoring: per-class instance recall; locus-match rate; false-accusation rate on
+   clean items with an exact 95% upper bound; finding provenance (below);
+   instability (verdict flips across the 3 runs).
+4. **Finding provenance** means each finding cites the artifact item it concerns
+   (or, for a missing item such as D2 and D8, the expected locus) plus the
+   source locator where it is used or required. This is separate from contract
+   C1/C5 (artifact-level provenance). For D2 and D8 the "source locator" is the
+   expected one and is not required to exist.
+5. Baselines, each run blind with identical scoring:
+   - Null-1: flag-everything. Null-2: random flagging at the defect base rate.
+     These bound what an uninformative auditor scores (flag-all gets full recall
+     and is exposed only by clean items, hence the ≥ 1:2 clean ratio).
+   - B1′: one model call, same checklist as the pipeline. B1″: same number of
+     calls as the pipeline, same model, no role separation. Together they isolate
+     role separation from checklist content and call count.
+   - B2: schema/lint plus symbolic algebra check, no model. Pre-stated prediction:
+     it catches D1 (sheet vs equations), D5, D7, D8 and nothing of D3, D4,
+     D9–D15. Report what it actually catches; the lint-only share of the
+     pipeline's detections is reported separately so the semantic contribution is
+     visible.
+   - No-extraction condition: the auditor sees the artifact without E. Its
+     detection of D1/D5/D12 measures detection from memorized physics, which
+     bounds contamination.
+6. Repetition: three runs per artifact to measure stability. A defect counts as
+   detected if flagged with locus match in at least 2 of the 3 runs.
 
-## 5.1 Pass criteria (decided before the run)
+## 5.1 Pass criteria (decided before the run; this is a smoke test)
 
-- Per-class recall ≥ 2/3 instances in at least 6 of the classes run (Family A:
-  6 of 7; both families: 6 of 8 classes), including at minimum
-  `missing-assumption` (D2) and `untraceable` (D8), the two classes that
-  motivate the whole design. Instability (verdict flips across runs) is
-  reported and counts against a class that is only intermittently detected.
-- Zero false accusations on both clean controls across all runs.
-- 100% provenance completeness on findings (C1/C5 of the contract).
-- Any class detected in < 2/3 instances is listed with a diagnosis (missing probe,
-  shared-model blindness, artifact ambiguity).
+The pilot can show gross failure or gross success on these classes. It cannot
+certify the pipeline: n is small, instances are correlated, and zero false
+accusations in about 15 clean items only bounds the rate below roughly 18% at
+95%. Reports use the word "smoke test", never "validation".
+
+- At least 7 of the 10 minimum-viable classes have ≥ 2 of 3 instances detected,
+  and every required class (D2, D8, D9, D11, D14) does.
+- No major false accusation on T0 or the true bridge-premise control in any
+  run; the overall clean false-accusation point rate is ≤ 1/15, reported with
+  its upper bound.
+- Pooled instance recall beats both B1′ and B1″ by at least 20 percentage
+  points. A pipeline that does no better than a single checklist call fails,
+  whatever its absolute recall.
+- Finding provenance as defined in §5 item 4: 100% of findings.
+- Any class below threshold is listed with a diagnosis (missing probe, shared-
+  model blindness, artifact ambiguity, ambiguous label).
 
 ## 5.2 Anti-goals
 
-- Agreement between roles/models is logged but never scored; a pipeline whose
-  findings correlate with reviewer-translator agreement rather than with
-  manifest labels has failed by this design.
+- Agreement between roles/models is logged but never scored. A pipeline whose
+  findings correlate with reviewer–translator agreement rather than manifest
+  labels has failed by this design.
 - No metric rewards verbosity, confidence, or number of review rounds.
+- No verdict of "ontologically equivalent" is ever scored as correct; D14 tests
+  that the auditor refuses it.
 
-## 6. Scale and cost bounds (for the coordinator's go/no-go)
+## 6. Scale, cost, and who drives it
 
-- Artifacts: Family A = 1 clean + 7 classes × 3 instances + 1 control = 23
-  artifacts; Family B = 26. Family A alone is the minimum viable pilot.
-- Model calls: per artifact per run ≈ 1 audit + 1 counterexample + 1 B1
-  self-check (B0 and B2 need no extra audit call). Family A: 23 × 3 runs × 3 ≈
-  210 calls; both families ≈ 450. Small context each, but the coordinator should
-  approve the actual number, not the earlier smaller estimate. No Lean build required for
-  Family A; Family B may use a ≤ 100-line numeric check (separate engine,
-  anchors per Douglas practice) instead of a kernel build.
-- Wall-clock: sized for one workboard task; no large runs, no dependency
-  installs (Python standard library numeric check only, consistent with repo
-  policy).
+- Artifacts: about 45 (Family A minimum viable set).
+- Model calls: pipeline ≈ 2 per artifact per run (audit + counterexample),
+  B1′ 1, B1″ matched to the pipeline, no-extraction condition 1. Full design:
+  45 artifacts × 3 runs × roughly 6 calls ≈ 800. A screening version (one run of
+  everything, repeats only for artifacts flagged or missed) is ≈ 270. The
+  coordinator chooses the version and the number before any launch.
+- No Lean build for Family A. A Family B numeric check, if used, is a short
+  standard-library Python script.
+- **Driver:** a coordinator-run, scripted standard-library driver issues the
+  role calls and records model IDs and seeds. A worker agent does not launch the
+  role agents itself (AGENTS.md: workers do not launch agents).
+- Claims are scoped to Family A. Family B is a stretch; its anchors are
+  abstract-depth and must be read in full before any Family B result is reported.
 
 ## 7. Known limitations of the design (stated up front)
 
 - Contamination: Einstein 1905 and the Lorentz transformation are in every
-  model's training data, so a model may reproduce the "known answer" from memory
-  and the pilot would then test recall rather than fidelity to the extraction
-  record. Mitigations to build in: auditors work only from the pinned extraction
-  and artifact (no recollection-based pass); Family A translations use
-  disguised notation and conventions (nonstandard symbols, c ≠ 1, rapidity
-  parametrization) so memorized forms do not match; and Family B, which is less
-  memorized, is not optional for any claim beyond "catches textbook defects".
-- Cross-model run: pre-register that a run with auditor and injector from
-  different model families is the intended follow-up; until then every report
-  states that roles share a model family.
+  model's training data, so a model may reproduce the "known answer" from memory.
+  Disguised notation helps but does not enforce extraction-only reasoning; the
+  no-extraction condition (§5) measures how much detection survives without E,
+  and that number is reported beside every result. Family A can only support
+  claims of the form "catches textbook-physics defects"; it says nothing about
+  less-memorized or interpretive material.
+- Cross-model injection and auditing is the primary design (§3), not a
+  follow-up. A run where both roles share a model family is labeled as such.
 
 - Injected defects are synthetic; real translation failures are noisier and
   may combine classes. The suite bounds what the pilot can show: behavior on
   these classes only.
-- Same-model roles share blind spots (NOVELTY.md; prior-methods §3): detection
-  of F1/F2-class defects may be inflated by the injector using the same model
-  family's blind spots as a template. Cross-model runs are desirable; if only
-  one model is authorized, the limitation is recorded in every report.
+- Same-model roles share blind spots (NOVELTY.md; prior-methods §3): an LLM
+  injector may produce defects shaped like what an LLM auditor already
+  recognizes. Cross-family injection and some scripted or manual injections are
+  the mitigation, not a cure.
+- Ground-truth labels are the weakest link: several defects (D1, D3, D5, D13)
+  are physically arguable unless pinned to a source locator and signed off by a
+  second reader. A disputed label is excluded and reported, not scored.
 - Family A is special relativity with unusually crisp known answers; passing
   there does not validate the pipeline on interpretive disputes (candidate A/D
   material), where "known answer" may not exist.
-- Three runs are enough to expose gross instability, not to estimate rates
-  precisely.
+- Three runs are enough to expose gross instability, not to estimate rates.
+  With 3 instances and a 2-of-3 threshold, a class whose true detection
+  probability is 0.5 passes half the time; results are reported as intervals.
 
 ## 8. Proposed workboard entry (for the coordinator; not edited by this task)
 
@@ -180,6 +240,6 @@ same content (a legitimate editorial change that must not be flagged).
 {"id":"pilot-semantic-audit","title":"Run the defect-injection pilot for the semantic-audit pipeline","priority":8,
  "blocked_by":["kb-agent-methods"],
  "owns":["research/pilot-semantic-audit/"],
- "brief":"Execute knowledge/methods/pilot-design.md on Family A (and Family B if time allows). Blind labels, baselines B0-B2, pass criteria as specified. No new dependencies.",
- "done_when":["Per-class detection table and confusion data committed","Clean-control false-accusation rate reported","Failures diagnosed per class","AGENT_REPORT.md records all runs, seeds, and model IDs"]}
+ "brief":"Execute knowledge/methods/pilot-design.md on Family A only: verify T0 and all labels first, then run the blind audit with null baselines, B1prime, B1double-prime, B2 and the no-extraction condition via a coordinator-run stdlib driver. Pass criteria as specified; report as a smoke test. No new dependencies.",
+ "done_when":["Per-class detection table and confusion data committed","Clean-item false-accusation rate with upper bound reported","Label justifications and second-reader sign-offs committed before the blind run","Failures diagnosed per class","AGENT_REPORT.md records all runs, seeds, and model IDs"]}
 ```
