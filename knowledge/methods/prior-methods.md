@@ -1,9 +1,9 @@
 # Prior methods: AI-assisted physics, CAS agents, multi-agent autoformalization, semantic audit
 
 Status: first-pass comparison, 2026-10-19. Evidence depths are in `sources.jsonl`
-(`meth-*` records). Two sources are full-text reads (meth-cas-agents-2026,
-meth-tensor-agents-2026, meth-sw-lean-2026), three are abstract reads, two are
-citation leads. Nothing here has been reproduced; every claim below is the
+(`meth-*` records). Three sources are full-text reads (meth-cas-agents-2026,
+meth-tensor-agents-2026, meth-sw-lean-2026), four are abstract reads, and three
+are discovery-depth (the TNLean repository README and two citation leads). Nothing here has been reproduced; every claim below is the
 source authors' claim at the stated depth, except where explicitly marked as
 our design inference.
 
@@ -109,7 +109,7 @@ Douglas repository internals, and the TNLean build itself.
    with stated bounds; statement-level adversarial review; human strategic
    review of intent. Agreement of any subset is recorded, never treated as
    proof of correspondence.
-6. Cost/scale reality check: TNLean reports ~$20k API cost for its library and
+6. Cost/scale reality check: TNLean's authors report $20,206 recorded model-API cost for their library (arXiv:2607.07857, verified by coordinator; a figure from their project, not ours) and
    six human review rounds for one theorem's blueprint. Our lanes must assume
    review effort, not just generation effort, and scope pilots accordingly.
 

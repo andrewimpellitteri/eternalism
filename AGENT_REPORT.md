@@ -6,8 +6,8 @@ This is a submission for independent review, not a final truth claim.
 
 ## Done / files changed
 
-- `knowledge/methods/sources.jsonl` — 10 source records (2 full-text reads,
-  4 abstract reads, 2 repository/benchmark discovery records, 2 citation
+- `knowledge/methods/sources.jsonl` — 10 source records (3 full-text reads,
+  4 abstract reads, 3 discovery-depth records: one repository and two citation
   leads), each with version, locator, limits, and cross-lane `related_source_ids`.
 - `knowledge/methods/prior-methods.md` — comparison of six public AI-assisted
   physics workflows; reusable-artifact inventory; consolidated failure-mode
@@ -106,7 +106,7 @@ python3 -c "import json;[json.loads(l) for l in open('knowledge/methods/sources.
   reusability claims rest on README/paper text at the stated depths. No commit
   SHAs captured (GitHub page views did not expose them), so every code reuse
   item is gated on pinning.
-- The two full-text reads of the method papers are authors' accounts of their
+- The three full-text reads of the method papers are authors' accounts of their
   own systems; no independent reproduction of any reported result.
 - The pilot is a design only; its defect suite is synthetic and its pass
   criteria are pre-registered but untested.

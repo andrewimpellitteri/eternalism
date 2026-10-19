@@ -53,8 +53,11 @@ For each family, the pilot builds:
 - E: one extraction record per source (role: extractor), full provenance.
 - T0: one correct translation map (the known-answer artifact), produced from E
   following `handoff-contract.md` §2.2.
-- D1..D8: eight defective variants of T0, each injecting exactly one ground-
-  truth defect. Labels live in a separate manifest (`labels.jsonl`, produced by
+- D1..D8, three instances per class (different loci, e.g. different equations
+  or assumptions): defective variants of T0, each injecting exactly one ground-
+  truth defect. Family A has seven classes (D2 in its Family A form), Family B
+  eight. Instances of one class are independent samples; repeated runs of one
+  artifact are not. Labels live in a separate manifest (`labels.jsonl`, produced by
   the defect injector role and not given to the auditor).
 
 The same translator prompt produces T0 and all D-variants; the injector applies
@@ -67,8 +70,8 @@ defect signal.
 | ID | Injected defect | Taxonomy | Manifest label |
 |---|---|---|---|
 | D1 | Sign flip in the boost parameter (or in ω for Family B), convention sheet left unchanged | F4 | `defect:sign-convention` |
-| D2 | Family B only: drop the constraint (H_S+H_C)|Ψ⟩=0 from the conditioning prescription — missing assumption | F5 | `defect:missing-assumption` |
-| D3 | Scope weakening: A4 stated for all inertial frames, proven/derived only for standard-configuration boosts along one axis | F1 | `defect:weakened-scope` |
+| D2 | Missing assumption. Family A: omit the isotropy/reciprocity assumption from the clock-synchronization prescription while still using it downstream. Family B: drop the constraint (H_S+H_C)|Ψ⟩=0 from the conditioning prescription | F5 | `defect:missing-assumption` |
+| D3 | Overclaim: A4 stated for all inertial frames, derived only for standard-configuration boosts along one axis (claim stronger than derivation; the inverse of F1's weakened formal statement, so tagged F1′) | F1′ | `defect:overclaimed-scope` |
 | D4 | Vacuous hypothesis: "synchronized" defined by a condition any two clocks satisfy (e.g., an existential with no constraint) | F2 | `defect:vacuous-hypothesis` |
 | D5 | First-order-in-v/c expansion presented as exact time dilation | F3 | `defect:approximation-as-exact` |
 | D6 | Silent branch: take the positive root of the quadratic where two branches exist, alternatives unrecorded | F6 | `defect:silent-branch` |
@@ -100,21 +103,27 @@ same content (a legitimate editorial change that must not be flagged).
    - B1 single-model self-check (same model reviews its own artifact):
      expected weak on D3/D4/D5 per primary-source evidence; measures the
      uplift of role separation.
-   - B2 kernel/oracle-only where applicable: for Family A, a symbolic
-     verification of the algebra passes D3/D5/D7 (they are algebraically
-     "true"), demonstrating that compile-or-compute success ≠ correspondence.
-4. Repetition: 3 runs per artifact minimum (different seeds/orderings), report
-   per-class detection as a range, not a single number; each run is one model
-   call per role — bounded cost.
+   - B2 kernel/oracle-only where applicable: for Family A, a symbolic check of
+     the algebra. Hypothesis, not premise: it should pass D3 and D7 (the algebra
+     is fine, the claim's scope or domain is wrong) and may well catch D5, since
+     a first-order expansion differs from the exact formula. Report what it
+     actually catches; the point is that compile-or-compute success ≠
+     correspondence.
+4. Repetition: 3 runs per artifact (different seeds/orderings) to measure
+   stability. Per-class recall is computed over the three instances per class
+   (first-run verdicts), and run-to-run flips are reported separately as an
+   instability rate. Report ranges, not single numbers.
 
 ## 5.1 Pass criteria (decided before the run)
 
-- Recall ≥ 6/8 defect classes with ≥ 2/3 runs each, including at minimum
-  `missing-assumption` (D2) and `untraceable` (D8) — the two classes that
-  motivate the whole design.
+- Per-class recall ≥ 2/3 instances in at least 6 of the classes run (Family A:
+  6 of 7; both families: 6 of 8 classes), including at minimum
+  `missing-assumption` (D2) and `untraceable` (D8), the two classes that
+  motivate the whole design. Instability (verdict flips across runs) is
+  reported and counts against a class that is only intermittently detected.
 - Zero false accusations on both clean controls across all runs.
 - 100% provenance completeness on findings (C1/C5 of the contract).
-- Any class detected < 2/3 runs is listed with a diagnosis (missing probe,
+- Any class detected in < 2/3 instances is listed with a diagnosis (missing probe,
   shared-model blindness, artifact ambiguity).
 
 ## 5.2 Anti-goals
@@ -126,10 +135,12 @@ same content (a legitimate editorial change that must not be flagged).
 
 ## 6. Scale and cost bounds (for the coordinator's go/no-go)
 
-- Artifacts: 2 families × (1 clean + 8 defect + 1 control) ≈ 20 artifacts at
-  full execution; Family A alone is 10 and is the minimum viable pilot.
-- Model calls: per artifact ≈ 1 audit + 1 counterexample + (baseline runs)
-  ≈ 3–4; total ≈ 60–80 calls of small context. No Lean build required for
+- Artifacts: Family A = 1 clean + 7 classes × 3 instances + 1 control = 23
+  artifacts; Family B = 26. Family A alone is the minimum viable pilot.
+- Model calls: per artifact per run ≈ 1 audit + 1 counterexample + 1 B1
+  self-check (B0 and B2 need no extra audit call). Family A: 23 × 3 runs × 3 ≈
+  210 calls; both families ≈ 450. Small context each, but the coordinator should
+  approve the actual number, not the earlier smaller estimate. No Lean build required for
   Family A; Family B may use a ≤ 100-line numeric check (separate engine,
   anchors per Douglas practice) instead of a kernel build.
 - Wall-clock: sized for one workboard task; no large runs, no dependency
@@ -137,6 +148,18 @@ same content (a legitimate editorial change that must not be flagged).
   policy).
 
 ## 7. Known limitations of the design (stated up front)
+
+- Contamination: Einstein 1905 and the Lorentz transformation are in every
+  model's training data, so a model may reproduce the "known answer" from memory
+  and the pilot would then test recall rather than fidelity to the extraction
+  record. Mitigations to build in: auditors work only from the pinned extraction
+  and artifact (no recollection-based pass); Family A translations use
+  disguised notation and conventions (nonstandard symbols, c ≠ 1, rapidity
+  parametrization) so memorized forms do not match; and Family B, which is less
+  memorized, is not optional for any claim beyond "catches textbook defects".
+- Cross-model run: pre-register that a run with auditor and injector from
+  different model families is the intended follow-up; until then every report
+  states that roles share a model family.
 
 - Injected defects are synthetic; real translation failures are noisier and
   may combine classes. The suite bounds what the pilot can show: behavior on
