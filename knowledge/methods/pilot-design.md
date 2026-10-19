@@ -25,12 +25,28 @@ Family A — 1905 kinematics (primary):
   the station/clock synchronization argument and the kinematics section are
   public and short. Current seed depth is `discovery`; the pilot's extractor
   must first raise it to `full-text` and record locators.
-- Known-answer lemmas: (A1) the Lorentz transformation for frames in standard
-  configuration; (A2) invariance of the interval / speed of light under (A1);
-  (A3) moving-clock time dilation with the standard convention; (A4) the
-  two-clock simultaneity argument (order reversal possible for spacelike
-  separation, preserved order for timelike).
-
+- Known-answer lemmas, with locators checked against the 1923 translation
+  (Part I, "Kinematical Part"; equations read from the page's image alt text,
+  the German original and the equation images not viewed):
+  - (A1) Lorentz transformation, standard configuration: Part I §3, final display
+    (τ = β(t − vx/c²), ξ = β(x − vt), η = y, ζ = z, β = 1/√(1 − v²/c²)). Derived
+    in the source from linearity ("homogeneity of space and time"), reciprocity
+    φ(v)φ(−v) = 1 and symmetry φ(v) = φ(−v). These are additional premises a
+    defect could target.
+  - (A2) Present only as light-cone (null wave) invariance: Part I §3, spherical
+    wave x²+y²+z² = c²t² ⇒ ξ²+η²+ζ² = c²τ², "after a simple calculation". The
+    general interval invariance for non-null separations is **not stated in
+    1905**; if the pilot needs it, it is a derived extension to be proved, not a
+    source lemma.
+  - (A3) Moving-clock dilation: Part I §4. The text gives the exact form
+    τ = t√(1−v²/c²), "slow by 1 − √(1−v²/c²) seconds per second", and then
+    "neglecting magnitudes of fourth and higher order" the approximation ½v²/c².
+  - (A4) Order reversal for spacelike and preservation for timelike pairs is
+    **not in the 1905 text** (no hits for spacelike, timelike, order, precede).
+    Relativity of simultaneity is stated in §2 only. A4 is a corollary of the §3
+    time equation Δτ = β(Δt − vΔx/c²). It is reclassified as a derived corollary
+    the pilot must prove; a baseline "reproduction" of A4 from this source is not
+    available, and no outside source for it has been verified here.
 Family B — Page–Wootters conditional dynamics (stretch; only if Family A
 concludes early):
 
@@ -92,12 +108,12 @@ and is not in that taxonomy; it is a proposed extension, not an anchored class.
 | ID | Injected defect (respecified) | Taxonomy | Label |
 |---|---|---|---|
 | D1 | Convention-sheet inconsistency: the boost-direction convention is declared in the sheet but the equations use the opposite one. A consistent global sign flip is a relabeling, not a defect, and is a clean control. | F4 (as sheet-versus-equation inconsistency) | `defect:convention-inconsistency` |
-| D2 | Missing assumption: remove an assumption that E lists (Family A: isotropy or reciprocity of the one-way light speed, only if E lists it; Family B: the constraint (H_S+H_C)\|Ψ⟩=0) while it is still used downstream | F5 | `defect:missing-assumption` |
+| D2 | Missing assumption: remove an assumption that E lists (Family A: Part I §1 states by definition that light takes equal time A→B and B→A, plus symmetry, transitivity and freedom from contradiction as assumptions, all of which E must list; note the §3 derivation uses speeds c−v and c+v in K, so removing isotropy changes the derivation, not only the definition. Family B: the constraint (H_S+H_C)\|Ψ⟩=0) while it is still used downstream | F5 | `defect:missing-assumption` |
 | D3 | Overclaim: a lemma stated for all inertial frames but derived only for standard configuration. Valid only if the pinned derivation really is narrow; the lemma may be true more generally, so the defect is the derivation gap, not falsity | F1′ | `defect:overclaimed-scope` |
 | D4 | Vacuous hypothesis: "synchronized" defined by a condition any two clocks satisfy | F2 | `defect:vacuous-hypothesis` |
-| D5 | Truncation presented as exact: time dilation stated as γ ≈ 1 + v²/(2c²) with the O(v⁴/c⁴) remainder dropped and the result called exact. (A "first order in v/c" version is ill-defined, since γ's first-order term is 1.) | F3 | `defect:truncation-as-exact` |
-| D6 | Silent branch, only where a branch exists in the pinned source or in a derivation step the translator must carry out (for example a root choice). If the pinned Family A source has none, drop D6 for Family A | F6 | `defect:silent-branch` |
-| D7 | Edge case: claim stated for 0 ≤ v without handling v = c | F9 | `defect:edge-case` |
+| D5 | Truncation presented as exact: the source's own labelled approximation (Part I §4, ½v²/c² "neglecting magnitudes of fourth and higher order") restated as the exact dilation. (A "first order in v/c" version is ill-defined, since γ's first-order term is 1.) | F3 | `defect:truncation-as-exact` |
+| D6 | Silent branch. The 1905 time-dilation derivation has no quadratic or two-branch choice. The only implicit selections are φ = +1 from φ² = 1 (§3, excluded without comment) and the positive root in β. D6 is available for Family A only if anchored at one of these and labeled implicit in the source; otherwise dropped | F6 | `defect:silent-branch` |
+| D7 | Edge case: claim stated for 0 ≤ v without handling v = c. The source addresses v = c only through the §4 contraction remark ("For v = c all moving objects ... shrivel up into plane figures"; speeds above c "meaningless") and the §5 and §10 limits; |v| < c is an inherited, implicit domain, not a stated exclusion | F9 | `defect:edge-case` |
 | D8 | Untraceable item: an equation inserted with no source ID or locator | F8 | `defect:untraceable` |
 
 ### Tier 2 — time-specific defects (none of these is a mechanical check)
@@ -120,9 +136,10 @@ label, and "preserves observables" is never scored as ontological equivalence.
 **Minimum viable pilot (Family A):** D1, D2, D3, D4, D5, D7, D8 plus D9, D11,
 D14 (and D6 if the source supports it) = 10 classes, 30 defective artifacts,
 at least 15 clean artifacts, about 45 total. Preconditions, each to be pinned
-with a locator before the run: that the lemmas A1–A4 appear in the cited source
-(A4, the order-reversal statement, may be a modern-textbook lemma rather than a
-1905 passage; if so cite its actual source or drop it), and that each defect
+with a locator before the run: A1 and A3 are source lemmas (§3, §4); A2 only as
+null-cone invariance; A4 is not a source lemma and is excluded from the
+known-answer set unless proved by the pilot or cited to a verified outside
+source; D6 needs an anchored implicit selection or is dropped; and each defect
 removes or alters something present in E.
 
 ## 5. Evaluation protocol
