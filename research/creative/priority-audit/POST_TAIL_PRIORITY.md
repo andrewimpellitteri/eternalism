@@ -1,0 +1,23 @@
+# Post-tail factorization: bounded priority follow-up
+
+Checked 2026-10-19. This is a separate follow-up to the labelled doubly-principal audit in `PRIORITY.md`; it does not retroactively expand that audit.
+
+The new target in `research/creative/COVARIANT_RESULT.md` concerns a normalized finite complex measure on the pure covariant algebra (R_p), with ν(Ω)=ν(P_\infty)=1, and the **additional axiom** that one common finite κ satisfies ν(D_H)=κ N(H)A_p(H) for every principal (H). Its claimed parameter classification is (0<p\leq1). This target differs both from the full labelled cylinder extension problem and from the smaller labelled doubly-principal algebra. The extra all-principal common-factor prescription is part of the theorem statement and must remain explicit in any novelty claim.
+
+The closest mathematical ingredients found are related but do not settle that target:
+
+- For real transitive percolation (0<p<1), Bombelli, Seggev, and Watson compute the probability that a fixed element is a post as λ\(_{k-1}\)(q)κ(q), with κ(q)=\(\prod_{j\ge1}(1-q^j)\), and show it approaches κ\(^2\) as the element index grows (arXiv:0809.2258v2, Sec. 2, Theorem 2.1 and Eqs. (1)–(2)). The future-post factor κ(q) and its Euler product are therefore standard in the **classical probability** setting. That paper does not complexify this factor into a covariant finite-complex-measure theorem or impose the target's common factor on every principal (H).
+- Dowker, Johnston, and Surya (arXiv:1007.2725v1) discuss conditional convergence as one possible approach after full labelled complex-percolation extension fails. They suggest a preferred ordering, perhaps by cardinality, and note that uniqueness of the ordering procedure is needed (Sec. 5, immediately after Eq. (58)). They also propose a separate probability-first/complexification option and give the Euler product for the originary event (Eq. (59)). This is a general proposal; it is not a post-tail assignment on (R_p), nor the all-principal common-κ condition.
+- Sorkin (arXiv:1104.0997v2) explicitly constructs the post event as a countable union of events expressed using principal stems (Sec. 3, Eqs. (4) and surrounding discussion), and notes that the event of infinitely many posts is a more elaborate event. His Sec. 7 introduces “evenly convergent” approximants and proves additivity for disjoint open events. The paper does not evaluate a complex-percolation post-event factor or prove the target finite countably additive measure and common-κ classification. This is the closest event-convergence discussion found, but its framework and stated result differ from the target.
+- Dowker–Zalel (arXiv:2212.01149v2) explicitly leaves a valency-one weighted sum over doubly-principal events for future computation (Sec. V). That is a distinct labelled algebra and a different extension question; it is background only, not a direct prior for the covariant (R_p) theorem.
+
+In this bounded search, I found the classical Euler factor and nearby general convergence frameworks, but no source stating the complex post-tail/common-factor result on the specified covariant algebra. Priority remains unresolved: the usual renewal/post probability calculation could make the factorization a short corollary once the relevant complex covariant measure and convergence hypotheses are justified, and I did not exhaust the literature under alternate terminology. No exhaustive priority certification is claimed.
+
+## Screened sources and depth
+
+- Bombelli–Seggev–Watson, “A Computation of the Expected Number of Posts in a Finite Random Graph Order,” arXiv:0809.2258v2: full text, Sec. 2 and Theorem 3.1/Eqs. (1)–(4) for the classical future/post factors; no complex extension claim. [Primary HTML](https://arxiv.org/html/0809.2258v2).
+- Dowker–Johnston–Surya, “On extending the Quantum Measure,” arXiv:1007.2725v1: full text, Sec. 5 and Eq. (59); not a post-specific treatment. [Primary HTML](https://arxiv.org/html/1007.2725v1).
+- Sorkin, “Toward a ‘fundamental theorem of quantal measure theory’,” arXiv:1104.0997v2: full text, Secs. 3 and 7; post event/principal-stem construction and event-approximation framework. [Primary HTML](https://arxiv.org/html/1104.0997v2).
+- Dowker–Zalel, “Observables for cyclic causal set cosmologies,” arXiv:2212.01149v2: see `PRIORITY.md`; Sec. V pertains to the different doubly-principal labelled setting.
+
+The search was targeted to post probabilities, Euler-product/future-tail factors, complex percolation, event convergence, and the principal-stem formulation. It did not exhaust citation graphs, books, theses, unpublished notes, non-English work, or every related terminology.
