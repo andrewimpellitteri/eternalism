@@ -87,3 +87,19 @@ Pilot design defects to fix before the pilot is built:
    audit, counterexample and baselines, roughly 300).
 7. Injector, translator and auditor are the same model family; the limitation is
    noted but the pilot should also pre-register what a cross-model run would add.
+
+### kb-agent-methods submission check (2026-10-19)
+
+Worker committed `d6f17ca` and wrote AGENT_REPORT.md, then `opencode` exited 1, so
+the runner recorded `failed`. Work is complete; moved to `review` by hand, not accepted.
+
+Figures now verified against arXiv HTML: TNLean $20,206 recorded API cost for the
+whole library (about $5,548 for the FT-MPS theorem), six blueprint review rounds,
+five-iteration review-repair cap, DS-gauge weakening and asymptotic-for-finite
+substitution (2607.07857); 278 oracle checks, 62 passing checks then three
+statement-level gaps, two oracle errors (2607.06379). The reworded "$20k" line
+should still say it is the TNLean authors' figure.
+
+Remaining: report says 2 full-text records but sources.jsonl has 3 (CAS, tensor,
+Seiberg-Witten); prior-methods.md header counts are inconsistent. The seven pilot
+design defects above are still open.
