@@ -210,3 +210,14 @@ clock time and the memory arrow separate and flags "future is fixed" as ambiguou
 boundary condition, deterministic dynamics and block reality. The eight full-text anchors
 were not individually re-read by the coordinator; the 1964 ABL original was not obtained
 (APS 403), which the lane records.
+
+## kb-preferred-foliation acceptance (2026-10-19)
+
+31 records (2 full-text, 12 abstract, 17 discovery). All 17 DOI records match Crossref;
+all 12 arXiv records match their abstract-page titles, including a days-old October 2026
+preprint (2610.10980). The report states search tooling status honestly (unavailable at
+start, restored mid-run, used for three rounds). The map keeps preferred frame, passage,
+determinism, causal order, clock time and the arrow separate, labels each claim as
+established, advocate claim or our note, and presents the neo-Lorentzian response to
+Rietdijk-Putnam as denial of a bridge premise, not a refutation. Two full-text anchors and
+the discovery-depth items were not re-read by the coordinator.
