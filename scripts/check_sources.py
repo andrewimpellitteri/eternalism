@@ -18,6 +18,7 @@ a source was read, that a locator is right, or that any extracted claim is true.
 
 import argparse
 import difflib
+import html
 import json
 import re
 import sys
@@ -244,7 +245,10 @@ class Net:
             hit = {"status": "ok", "title": " ".join(t.get("title", "") for t in attrs["titles"][:1]),
                    "year": attrs.get("publicationYear")}
             if base != i:
-                vstatus, _ = self.get(f"https://arxiv.org/abs/{i}", "arxiv", 1.0)
+                vstatus, vbody = self.get(f"https://arxiv.org/abs/{i}", "arxiv", 1.0)
+                m = re.search(rb'<meta name="citation_title" content="([^"]+)"', vbody or b"")
+                if m:  # Papers are retitled between versions; keep the cited one.
+                    hit["version_title"] = html.unescape(m.group(1).decode(errors="replace"))
                 if vstatus == 404:
                     hit = {"status": f"version {i[len(base):]} does not exist"}
                 elif vstatus != 200:
@@ -279,16 +283,20 @@ def check_online(records, rep, refresh):
         n_doi = 0
         for where, n, r in records:
             rid, loc, title = r.get("id", "-"), f"{where}:{n}", r.get("title", "")
+            # Each identifier's own titles; a mismatch is an error only when no other
+            # identifier in the record matches the recorded title either.
+            own, problems = {}, []
             for a in arxiv_ids(r):
                 hit = ax[a]
                 if hit["status"] != "ok":
                     rep.add("WARN" if hit.get("transient") else "ERROR", loc, rid,
                             f"arXiv {a}: {hit['status']}")
-                elif title_score(title, hit["title"]) < TITLE_MIN:
-                    rep.add("ERROR", loc, rid, f"arXiv {a} title is {hit['title']!r}")
+                    continue
+                own[f"arXiv {a}"] = [t for t in (hit.get("version_title"), hit["title"]) if t]
             ds = dois(r)
             if len(ds) > 1:
                 rep.add("WARN", loc, rid, "several DOIs in url/version: " + ", ".join(ds))
+            doi_hits = {}
             for d in ds:
                 n_doi += 1
                 hit = net.crossref(d)
@@ -296,8 +304,19 @@ def check_online(records, rep, refresh):
                     rep.add("ERROR" if hit["status"] == "not found" else "WARN", loc, rid,
                             f"DOI {d}: {hit['status']}")
                     continue
-                if title_score(title, hit["title"]) < TITLE_MIN:
-                    rep.add("ERROR", loc, rid, f"DOI {d} title is {hit['title']!r}")
+                doi_hits[d] = hit
+                own[f"DOI {d}"] = [hit["title"]]
+            matched = {k for k, ts in own.items() if any(title_score(title, t) >= TITLE_MIN for t in ts)}
+            for k, ts in own.items():
+                if k in matched:
+                    continue
+                generic = len(norm_title(ts[0]).split()) <= 3 or re.search(r"\brepl(y|ies)\b", ts[0], re.I)
+                if matched or generic:
+                    why = f"matches {', '.join(sorted(matched))}" if matched else "Crossref title is generic"
+                    rep.add("WARN", loc, rid, f"{k} title is {ts[0]!r}; record title {why}")
+                else:
+                    rep.add("ERROR", loc, rid, f"{k} title is {ts[0]!r}")
+            for d, hit in doi_hits.items():
                 ver = str(r.get("version", ""))
                 pm = PAGES_RE.search(ver)
                 if pm and hit.get("page"):
