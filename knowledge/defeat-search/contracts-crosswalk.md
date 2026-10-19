@@ -30,3 +30,22 @@ Gaussian dephasing exp(-t^2/2) (CP-divisible, not a homogeneous semigroup). All 
 2. Independent defeat searches for RC-3 and RC-5.
 3. Only then an independent reviewer challenges a one-page claim contract per surviving
    candidate (NOVELTY.md gate).
+
+## Update after the full-text reads and the RC-3 / RC-5 defeat searches (2026-10-19)
+
+Sources: fulltext-reads-clocks.md, fulltext-reads-causal-sets.md,
+rc3-and-clifton-czerniawski.md, rc5-memory-criteria.md. All are subagent reads of arXiv HTML
+or open-access PDF, not coordinator re-reads, and none is a novelty finding.
+
+| Contract | Status after the reads | Why |
+|---|---|---|
+| RC-1 | Sliver not closed by Ludescher et al. or Hausmann et al. Still unread: Rijavec, Smith-Ahmadi body, Garmier et al., Hoehn-Smith-Lock interaction passages | Ludescher's "interacting" result is one worked example with a commuting interaction and an ideal Z_n clock; its local-clock interacting case is outside its framework. Hausmann et al. compare two formulations (TO vs PM) on a continuous bounded-spectrum clock, not a Z_N clock and not three pictures. Lane `kb-clock-interactions` is reading the remaining neighbours |
+| RC-2 | Czerniawski does not contain the premise lattice; Clifton-Hogarth still unread (paywalled) | Czerniawski gives a deductive formalization and informal blocking checks, not subset analysis or countermodels, and shows transitivity is dispensable (p.107), which partly pre-empts one axis. Lane `kb-putnam-ablation-prior` tries to find a readable copy and other formal ablations |
+| RC-3 | Partly occupied; contract text needs a corrected Delta | 2007.00580 already says sector coherence is inaccessible to relational Dirac observables and equivalent to a mixture; 2604.00092 gives the normalization obstruction and sector-wise remedy in a free-particle case. The narrow remainder is non-twirled conditioning instruments with an explicit external phase reference. Lane `kb-sector-conditioning` reads 2604.00092 and related in full |
+| RC-4 | Part (a) retired as written; keep only the sliver | For fixed-covariance classical growth, the labelled outcome given the final unlabelled poset is uniform over natural labellings, independent of the growth parameters, so birth-order data are ancillary. This is the coordinator's short derivation from the stated path-independence property, finite stage only, needing independent checking. The open region is dynamics where path independence fails, quantum or complex-amplitude growth, and observer-access models. Lane `kb-csg-quantum-boundary` reads that region |
+| RC-5 | Partly occupied; Eq. (10) audit answered provisionally | 2606.08595 Eq. (10) is a perturbative time-convolutionless memory-kernel statement that tests none of the four criteria; general separations of the criteria are published. Remaining case: a qubit system with a finite clock under linear (unnormalized or fixed-reference) conditioning, computing divisibility, backflow and the process tensor exactly. Lane `kb-relational-markov-audit` is auditing 2606.08595 |
+
+Net: none of the five contracts is shown novel, none is shown dead outright, and three
+(RC-3, RC-4a, RC-5 as generic separation) shrink to narrow remainders. The honest next step
+is the independent `novelty-audit` (running), reading these notes as inputs, then a one-page
+claim contract per surviving remainder.
