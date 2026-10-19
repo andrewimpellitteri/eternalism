@@ -29,7 +29,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `kb-discriminators` — Collect proposed observational or experimental discriminators for time ontologies | 8 | — | luna-discriminators |
 | done | `kb-time-interpretations` — Map time in retrocausal, Everettian, two-time and block-history interpretations | 8 | — | glm-kb-time-interpretations |
 | claimed | `kb-bib-repair` — Repair and verify bibliographic records, including books and JSTOR items without DOIs | 9 | — | glm-kb-bib-repair |
-| claimed | `kb-axiomatic-relativity` — Extract the axiomatic and definability results behind simultaneity and relativity | 9 | — | glm-kb-axiomatic-relativity |
+| done | `kb-axiomatic-relativity` — Extract the axiomatic and definability results behind simultaneity and relativity | 9 | — | glm-kb-axiomatic-relativity |
 | claimed | `kb-relational-markov-audit` — Audit the derivations of the 2026 relational-Markovianity and clock-conditioning paper | 8 | — | glm-kb-relational-markov-audit |
 | done | `kb-preferred-foliation` — Map theories that add a preferred foliation or relativistic collapse structure | 8 | — | glm-kb-preferred-foliation |
 | claimed | `kb-pw-critiques` — Collect critiques and defenses of the Page-Wootters construction | 8 | — | glm-kb-pw-critiques |
@@ -39,6 +39,16 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
 | claimed | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
 | claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
+| open | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | — |
+| open | `rt-source-canonicalization` — Canonicalize duplicated source records and read-depth conflicts across lanes | 10 | — | — |
+| open | `rt-citation-gate-hardening` — Harden check_sources.py so full-text contract violations fail, not warn | 9 | — | — |
+| open | `rt-fulltext-claim-spotcheck` — Independently spot-check full-text claims and primary Stein/Malament sources | 10 | — | — |
+| blocked | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
+| open | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | — |
+| open | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | — |
+| open | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | — |
+| blocked | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | — |
+| blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
