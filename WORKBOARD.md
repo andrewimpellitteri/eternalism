@@ -49,9 +49,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | — |
 | blocked | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | — |
 | blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc | — |
-| claimed | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
-| claimed | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
-| claimed | `creative-clock-memory` — Find an operational intervention boundary between clock memory and system memory | 10 | novelty-audit | luna-creative-memory |
+| done | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
+| done | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
+| done | `creative-clock-memory` — Find an operational intervention boundary between clock memory and system memory | 10 | novelty-audit | luna-creative-memory |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

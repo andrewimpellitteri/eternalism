@@ -107,3 +107,43 @@ Validation: board paths/dependencies remain valid and acyclic. The existing
 test suite has 7/8 passing; the live-board test still hard-codes 11 tasks (now
 45), tracked by `rt-fix-live-contract-test`. Pre-existing uncommitted edits to
 `scripts/agents.py` are preserved and are not part of these research commits.
+
+## Creative pass: a candidate mathematical contribution (2026-10-19)
+
+The three isolated probes rejected the broad clock-autonomy, clock-memory,
+stopping-time and hidden-record novelty hypotheses against primary predecessors.
+The causal-set probe then pivoted, with coordinator authorization, to an exact
+question left inconclusive in Dowker–Zalel, arXiv:2212.01149v2, Sec. V.
+
+The resulting theorem draft classifies extension of prescribed complex
+transitive-percolation cylinder values to the labelled sigma-algebra generated
+by doubly-principal cylinders: extension exists exactly for real p in [0,1].
+The proof concatenates finite principal blocks with their seam factors included.
+For every other p, comparison of absolute amplitudes with real independent-edge
+orders and positive association supplies a block family with total weight W>1.
+Repeated disjoint endpoint cylinders force variation at least W^m, contradicting
+finite complex-measure variation. This also excludes extension to the larger
+principal-cylinder algebra. It does not settle the smaller covariant intersection.
+
+See `research/creative/RESULT.md` for the self-contained proof and precise
+scope. The two other workers independently checked the finite certificate and
+general proof. The coordinator corrected seam notation, checked the definitions
+and prescribed amplitudes directly against the primary paper, and independently
+enumerated the 40-block certificate by sequential down-set growth. Worker
+enumerations by two different forward-relation-mask constructions agree.
+At p=(1+i)/2 the capped block weight is 9/16+105/(128 sqrt(2))>71/64>1.
+
+Mathematical status: manually checked theorem draft. Global publication priority
+is unverified; searches were targeted, not a systematic forward-citation audit.
+The remaining priority audit must specifically seek the same prescribed-value
+extension problem on the doubly-principal algebra, rather than mistaking the
+known full-cylinder result for the new claim. No temporal-ontology conclusion
+or original-theory implementation is authorized by this result alone. The
+previous novelty audit's no-selection remains its historical outcome; the
+selection gate has not been automatically passed by accepting these artifacts.
+
+Research checks: the finite scripts pass, and the source schema checker is clean
+offline. The initial sandboxed online check had 8 unreachable endpoint warnings;
+the coordinator reran with network access and obtained 0 errors and 0 warnings
+(6 arXiv IDs and 2 DOIs). Primary arXiv pages were inspected separately. The pre-existing
+live-board test-count failure remains tracked, and runner edits remain untouched.
