@@ -30,12 +30,13 @@ Dry-run checks task dependencies, active ownership, IDs, and target paths withou
 creating claims, worktrees, processes or model calls. Actual launch also checks
 OpenCode installation, a committed baseline, and a clean main checkout.
 
-**Search is currently unavailable to workers (checked 2026-10-19).** OpenCode
-2.0.32 reports `No MCP servers configured`: the global `web-search-prime` entry
-uses the pre-2.0 config shape and is not registered, and every built-in
-`websearch` call returned `Web search cancelled`. Workers fell back to direct
-`webfetch` of arXiv pages. Re-register the server (see below) and confirm with
-`opencode mcp list` before relying on search-heavy lanes.
+**Search.** Runs before 16:30 on 2026-10-19 had no search: OpenCode 2.0.32 did
+not register the pre-2.0 global `web-search-prime` entry, its key had expired,
+and every built-in `websearch` call returned `Web search cancelled`. Those
+lanes used direct `webfetch` only, so their coverage is narrower than their
+briefs asked for. The entry was re-registered in the 2.0 `mcp.servers` shape;
+`opencode mcp list` under the worker environment now shows it connected. Check
+that before launching search-heavy lanes.
 
 **Rate limits.** About a dozen simultaneous GLM workers hit z.ai `429` (code
 1302) at once. Workers now hold one of `AGENT_MAX_CONCURRENT` slot locks
