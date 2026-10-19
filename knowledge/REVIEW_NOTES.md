@@ -103,3 +103,19 @@ should still say it is the TNLean authors' figure.
 Remaining: report says 2 full-text records but sources.jsonl has 3 (CAS, tensor,
 Seiberg-Witten); prior-methods.md header counts are inconsistent. The seven pilot
 design defects above are still open.
+
+## Repo-wide DOI check (2026-10-19)
+
+All 18 DOIs in every `sources.jsonl` were matched to Crossref titles. Four
+foundations records failed; three were corrected in `23241bb`:
+- `found-stein-1968`: 10.2307/2023910 returned 404; correct DOI 10.2307/2024512.
+- `found-malament-1977`: 10.1111/j.1933-1592.1977.tb01280.x returned 404; correct 10.2307/2214766.
+- `found-deasy-2015`: DOI resolved to an unrelated paper; the matching Deasy paper is
+  Phil. Studies 172 (2014) 2073-2089, 10.1007/s11098-014-0398-5.
+- `found-prior-2009`: left in place but flagged unverified; the DOI points elsewhere
+  and Crossref has no Hawley paper by that title.
+Together with the earlier Stein 1991 / Maxwell 1993 fixes, six of the 13 original
+foundations records carried a wrong DOI, venue or pages. Treat worker-supplied
+bibliographic fields as untrusted until checked: run the arXiv-title and Crossref-title
+checks on every new lane before acceptance. The arXiv check covers only arXiv URLs;
+books and JSTOR items without DOIs remain unchecked.
