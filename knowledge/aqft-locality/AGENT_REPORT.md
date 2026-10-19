@@ -23,3 +23,9 @@
 ## Task status
 
 Submitted for coordinator review; not accepted/integrated. No commits or board transitions performed.
+
+## Coordinator review follow-up: dependency fields
+
+Filled the mathematical `dependencies` field for each of the six full-text records with the stated framework premises and structures already covered in the assumptions/theorem map. These entries describe actual mathematical inputs, not newly researched papers. The Fewster–Verch curved-spacetime review retains its stable lane ID, but its `limits` now flags that the embedded `2012` is misleading: the source is arXiv:1504.00586v1 / a 2015 chapter.
+
+Ran `python3 scripts/check_sources.py knowledge/aqft-locality/sources.jsonl`: 9 records, 0 errors, 1 warning. The sole warning is the validator's `full-text record lacks: related_source_ids` check for Haag–Kastler. The list is intentionally empty because no lane source record is a mathematical input to that 1964 paper; this is documented in the record's `limits`. The validator only checks whether a field is nonempty, so this warning reflects its empty-list heuristic, not missing source content or a dependency claim to be filled with an unrelated ID.
