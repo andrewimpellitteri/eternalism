@@ -132,3 +132,32 @@ Acceptance rule for this and every lane that re-copies records: the canonical
 version of a lane record is the one in `knowledge/<lane>/sources.jsonl` on `main`.
 Take the worker's version only for new IDs, and compare identifiers for the 3
 `map-*` records (all abstract depth) with arXiv and Crossref before merging.
+
+## Audit of knowledge/philosophy/sources.jsonl (Codex session's register), 2026-10-19
+
+Independent Claude-subagent audit of all 36 records (Crossref for DOIs; arXiv abstract
+pages for arXiv items, since the arXiv API was rate-limited; catalog, Open Library, SEP
+and Gutenberg pages for books). Result: no WRONG identifier, author, title, year or
+venue; no fabricated citation; no record claims more than abstract depth. This contrasts
+with the foundations lane (6 of 13 records wrong). OUP, Springer, JSTOR, MIT Press and
+the PhilPapers survey site were bot-blocked, so book records were confirmed through
+Crossref chapter records and DOIs rather than publisher pages. Not mine to edit; items
+for the owning session:
+
+- `phil-survey`: the quoted PhilPapers 2020 figures (39.92% eternalism, 18.39%
+  presentism, 17.03% growing block, 734 answers) could not be verified. Check against the
+  survey results page before keeping them in PHILOSOPHY_OF_TIME.md section 1.
+- `phil-kant`: the limits field says A30-32/B46-49 were checked, but the Gutenberg
+  text (4280) has no A/B pagination. The pinpoint claim is unsupported by that edition.
+- `phil-fine`: title should be "Modality and Tense: Philosophical Papers"; the added
+  "especially Tense and Reality" is not part of the published title.
+- `phil-mellor`: the Routledge URL slug is a placeholder; use the canonical page.
+- `phil-lewis`: only reprints found by Crossref; the 1976 Am. Philos. Q. venue and pages
+  are not recorded and the JSTOR id was not confirmed. `phil-shoemaker`: the JSTOR link
+  was not fetched; the DOI 10.2307/2023892 is assumed to be the same item.
+- `phil-dainton`: 2000 first edition not confirmed by catalog (the record flags this).
+- PHILOSOPHY_OF_TIME.md cites some works by name with no register id (Rietdijk, the
+  hole argument, Bell-type constraints, section 16 sketches). Section 16 labels its
+  sketches unaudited. Ten attributed claims were spot-checked against abstracts and
+  none was misattributed; Fine, Braddon-Mitchell, Prior, Perry and Maudlin claims were
+  not checked.
