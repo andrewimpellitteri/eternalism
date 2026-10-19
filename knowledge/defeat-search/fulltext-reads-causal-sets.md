@@ -50,6 +50,20 @@ contract's own falsifier (iii) and the A defeat search. Limits: finite stage onl
 completed infinite case is not argued; this is the coordinator's short proof from the stated
 property, not a published theorem, and it needs an independent check.
 
+Finite check (coordinator, same day): `knowledge/defeat-search/csg_ancillarity_check.py`,
+exact rational arithmetic, standard library only, n <= 5. With the Rideout-Sorkin transition
+probabilities tau = lambda(w,m)/lambda(n,0) and two different coupling vectors, the 357
+naturally labelled causets on 5 elements (63 isomorphism classes, matching the known counts)
+each have a probability that is constant within its class; the statistic "element 3 is above
+element 1" has an unconditional probability that differs between the two couplings
+(0.754 vs 0.590) but a conditional law given the class that is identical on all 63 classes;
+the labelled 3-element prefix has an identical conditional law given the final class. A
+contrast law with label-dependent weights breaks path independence in 38 of 63 classes and
+makes the conditional law parameter-dependent in 34 of 63. This supports the ancillarity
+argument for the covariant family within that finite domain. It is not a proof for general n
+or for the completed infinite case, and it tests the argument's premise (path independence of
+the RS family) only numerically.
+
 ## What stays untouched by these papers
 
 Comparison of different dynamics (non-Markov, order-dependent, or quantum complex-amplitude
