@@ -9,6 +9,7 @@ found relevant existing work; it does not establish that any proposed gap is new
 - `seed-sources.jsonl`: primary-source leads already checked at the stated depth.
 - `SEARCH_LOG.md`: search coverage, queries, and missing areas.
 - `NOVELTY.md`: candidate contributions, nearest predecessors, and rejection gates.
+- `COORDINATOR_REVIEW.md`: cross-lane checks, unresolved issues, and acceptance limits.
 - Task-owned directories will contain source records, argument maps, theorem
   extractions, and reproducibility notes. Workers never append concurrently to
   the shared seed.

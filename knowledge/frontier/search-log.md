@@ -25,3 +25,20 @@ Excluded or deferred: generic quantum-clock metrology, symmetry-breaking bounds,
 ## Search failures and caveats
 
 The endpoint sometimes conflated publication/revision dates and returned results irrelevant to foundational time. The July 2026 hits were checked against the specified inclusive date boundary. Search snippets are not proof checks. No primary PDF was downloaded or locally reproduced; all physics claims below remain source claims as represented in abstracts/metadata.
+
+## Second-pass primary-text audit (2026-10-19)
+
+The coordinator reopened this lane for a bounded theorem/assumption pass. Versioned arXiv HTML was inspected for 1912.00033v3 (full relevant clock/trinity sections), 2007.00580v1 (quadratic-clock sectors and conditioning), 2607.24976v1 (Appendix B interaction and finite Abelian example), Smith–Ahmadi 1712.00081v3 (interaction kernel and conditional norm), and Rijavec 2204.11740v3 (interaction restrictions). Additional forward-citation searches from the Smith–Ahmadi journal record / QRF record identified:
+
+| Lead | Status in this pass | Consequence for novelty |
+|---|---|---|
+| Rijavec, arXiv:2204.11740v3 / PRD 108, 063507 (2023), “Robustness…” | Full HTML consulted; extracted restricted interaction assumptions `[H+ h,V]=0` and `[h,V]=0` (Sec. V.1, Eqs. 47–48), but not all interaction solution equations. | Defeats broad claim that PW with interactions is untreated. It does not on its own establish interacting Trinity equivalence. |
+| Chataignier, Höhn, Lock & Mele, arXiv:2409.06479 / NJP 28, 034504 (2026), “Relational dynamics with periodic clocks” | Abstract checked. Claims a periodic-clock relational trinity, partial group averaging and a revised PW conditional-probability rule for continuous-spectrum systems. | Strong falsifier for “periodic clocks lack trinity”; theorem details remain unread. |
+| Mendes, Brito & Soares-Pinto, arXiv:2107.11452 / Universe 11, 308 (2025), “Non-linear equation… interaction and quasi-ideal clocks” | Abstract checked only. | Explicit interaction + non-ideal/quasi-ideal clock lead; no abstract-level claim treated as theorem audit. |
+| De Vuyst, Höhn & Tsobanjan, arXiv:2507.14131 / Quantum 10, 2196 (2026), “On the relation between perspective-neutral, algebraic, and effective QRFs” | Abstract checked only. | Closely related to QRF-equivalence scope; limits any novelty claim about relating frame formalisms until full comparison. |
+
+The exact trinity paper explicitly handles covariant clock POVMs and nonorthogonal clock states but assumes no clock-system interaction. The relativistic extension handles a quadratic clock with two frequency sectors separately and normalization tied to sector localization; do not extrapolate to arbitrary degenerate spectra or coherent cross-sector superpositions. The 2026 paper’s finite example is one concrete interaction, not a classification of all interactions. See `theorem-matrix.md` for exact assumptions, equations and the bounded candidate/falsifier.
+
+Thermal-time/records leads were separately retained: Connes–Rovelli 1994 (state-dependent modular flow), Menicucci–Olson–Milburn 2011 (finite thermal clock and time scaling), Martinetti–Rovelli 2012 (bridge from modular flow to proper time), Chua 2024 (critical analysis of the modular-time interpretation), Milburn 2020 (thermodynamic model of clocks), and Hartle 2016 / Page 1993 (records and time-asymmetry interpretation). They are distinct lineages; none is evidence that records or modular flow establish objective passage. Some were only discovery/abstract and are labeled accordingly in the source records.
+
+Bounded forward check: the new leads above were discovered through the cited primary records and bibliographic/search results, not an exhaustive citation graph. No absence claim about unresolved cases is warranted. No seed, board, or files outside `knowledge/frontier/` were changed.

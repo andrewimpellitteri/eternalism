@@ -26,4 +26,8 @@ Checked 2026-10-19. This is a first-pass map, not a completeness or novelty clai
 
 ## Limits and next retrievals
 
-No public code was cloned or built; no dependency installation occurred. Current Physlib and AxQM branches were viewed but immutable commit identifiers were not recoverable in this inspection, so they must be pinned before reuse. The two Isabelle papers are full-text read at paper level, not code-audited. Before any new formalization, inspect current source files and licenses; then audit trinity paper hypotheses and map existing project declarations. This pass does not establish that any gap is novel.
+No public code was cloned or built; no dependency installation occurred. `MState.lean` is now pinned to an immutable Physlib SHA; POVM and MinkowskiMatrix remain mutable-master views. The Isabelle paper is full-text read and its AFP generated outline statically inspected, but neither AFP source/session nor Stannett–Németi code has been audited. Before implementation, inspect source dependencies and license details, audit trinity paper hypotheses, and map each intended result to declarations. This pass does not establish that any gap is novel.
+
+## Second-pass correction (2026-10-19)
+
+The table above records the first pass. Source inspection has now identified concrete Physlib declarations: finite density matrices, finite POVM readout and measurement channel, and the Minkowski signature matrix/dual. See [code-audit.md](code-audit.md) for declaration-level statements and version caveats. One file (`MState.lean`) is pinned to commit `67d742760382efce9419feefa348902aab797a07`; POVM and MinkowskiMatrix were inspected at mutable `master`. The AFP current generated outline exposes exact locale statements, but the underlying Isabelle source/session remains unaudited. None of these reads included a local build or kernel replay.

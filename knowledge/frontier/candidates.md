@@ -46,3 +46,9 @@ Screened records: 15 in `sources.jsonl`. These are follow-up targets, not novelt
 ## Selection status
 
 No target is recommended as a novel contribution yet. Target 1 is the clearest theorem-shaped question; target 2 is promising only if the new frame class changes operational predictions; target 3 is the sharpest route to disentangling clock-relative order from indefinite order. The next gate should be full-text extraction and backward/forward citation audit, especially of algebraic QRFs and causal-set embedding rigidity.
+
+## Second-pass correction (2026-10-19)
+
+The previous prioritization was made before full-text inspection and is superseded for the clock lane by [`theorem-matrix.md`](theorem-matrix.md). In particular, do not present generic non-ideal clocks, generic interacting PW evolution, or periodic-clock relational equivalence as gaps. The trinity paper already includes nonorthogonal covariant POVM clocks and bounded/one-sided spectral support; the relativistic extension handles its two frequency sectors separately; interaction predecessors include Smith–Ahmadi, Rijavec, 2607.24976v1, and abstract-level leads for 2025 quasi-ideal clocks and 2026 periodic clocks.
+
+No candidate is promoted to “novel.” The only surviving clock question is the unverified necessary/sufficient-condition classification stated in the theorem matrix (isometric, autonomous conditioned evolution under an interaction-dependent covariant instrument/non-local clock). Its falsifier is an equivalent characterization in the interaction, periodic-clock, or algebraic-QRF literature, or operational equivalence under all relevant accessible measurements. The original causal-set/QRF candidates remain abstract-level audits, not recommendations.
