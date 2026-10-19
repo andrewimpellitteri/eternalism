@@ -114,8 +114,10 @@ tenseless-theory comparator, not the adjudicated winner.
 
 ## 5. Existence, truthmakers, and persistence
 
-First settle what “exists” means: temporally present, unrestrictedly existent,
-possible, represented, or grounded. Otherwise “only present things exist now”
+First distinguish “exists at time t” / “is present” from unrestricted “exists
+simpliciter.” Possibility, representation and grounding are separate statuses
+or explanatory relations, not interchangeable senses of existence. Otherwise
+“only present things exist now”
 can be a triviality about location or a substantive denial of nonpresent
 entities. Distinguish objectual quantification from tense operators and actual
 past events from presently existing representations of them.
@@ -396,6 +398,9 @@ not merely a complaint about an unavailable clock reading.
 
 ## 16. History and alternative philosophical framings
 
+The Aristotle, Augustine, Newton and Leibniz sketches in this paragraph are
+historical orientation pending a dedicated original-text/translation audit;
+they are not newly audited arguments and carry no inferential weight here.
 Use original arguments rather than retrospectively labeling every author an
 A- or B-theorist. Aristotle relates time to motion and before/after without
 identifying time with motion; Augustine's *Confessions* XI develops problems
@@ -458,8 +463,10 @@ before elevating a computational exercise into a novelty claim.
 
 For packages `M1,M2`, posterior odds equal prior odds times a likelihood ratio,
 provided the hypotheses, data and background assumptions are well-defined.
-Empirical equivalence *for a specified data class and access regime* gives a
-Bayes factor of one for those data. It does not prove metaphysical equivalence,
+Equal prior-predictive distributions *for a specified data class and access
+regime* give a Bayes factor of one wherever the common likelihood is nonzero.
+Pointwise observational equivalence at matched parameter values is insufficient
+if parameter or auxiliary-model priors differ. This does not prove metaphysical equivalence,
 equal priors, equivalence for all future interventions, or no philosophical
 reasons to prefer a package. Avoid comparing maximized fit in one package with
 marginalized evidence in another, and record auxiliary-model priors.
