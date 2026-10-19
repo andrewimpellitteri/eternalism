@@ -221,3 +221,16 @@ determinism, causal order, clock time and the arrow separate, labels each claim 
 established, advocate claim or our note, and presents the neo-Lorentzian response to
 Rietdijk-Putnam as denial of a bridge premise, not a refutation. Two full-text anchors and
 the discovery-depth items were not re-read by the coordinator.
+
+## kb-axiomatic-relativity acceptance (2026-10-19)
+
+17 records; `scripts/check_sources.py --online` found one error, a wrong Goldblatt DOI
+(10.1007/978-1-4419-9075-8 not found; correct 10.1007/978-1-4684-6345-3, Springer US 1987,
+not a "2004 reprint"), fixed by the coordinator on the branch before merge; two warnings
+remain (full-text arXiv records for Giulini 2001 and Mamone-Capria 2012 lack exact versions).
+The lane's ablation tables (Malament line A1-A12, Budapest line B1-B7) agree with the
+independent candidate-C defeat search: the simultaneity-definability ladder is essentially
+already in the literature (Malament, Ben-Yami, Giulini, Hogarth, Besnard, Mamone-Capria);
+the lane marks candidate-C seams as observed, not claimed. The Budapest table reflects only a
+19-page introductory paper because the school's deeper corpus was not accessible. Theorem
+statements and locators were not individually re-read by the coordinator.
