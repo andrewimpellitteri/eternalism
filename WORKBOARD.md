@@ -20,7 +20,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | blocked | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | — |
 | blocked | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | lean-certificate | — |
 | blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review | — |
-| open | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
+| claimed | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | open | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
 | done | `kb-ico-qrf` — Compare indefinite causal order, process matrices and temporal quantum reference frames | 9 | — | glm-kb-ico-qrf |
 | open | `kb-gr-qg-time` — Map global spacetime structure and the problem of time in canonical quantum gravity | 9 | — | glm-kb-gr-qg-time |
