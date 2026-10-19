@@ -49,3 +49,41 @@ that rests on them as unaudited. Putnam (already marked partial) was not recheck
 Recommendation: do not accept `kb-foundations` until the two bibliographic
 fields are corrected and the page-level claims are confirmed from a copy a
 reviewer can open.
+
+## kb-agent-methods interim review (2026-10-19, worker still running)
+
+Reviewed `prior-methods.md`, `handoff-contract.md`, `pilot-design.md` in the
+worker's worktree. Not yet accepted; the worker has not submitted AGENT_REPORT.md.
+
+Verified: 9 arXiv IDs resolve to recorded titles; TNLean license (Apache-2.0),
+commit count (14,363), `docs/paper-gaps/` and the Douglas repo exist; AxQM
+(1,019 tasks) and TNLean ("enforcing mathematical intent") abstract claims match.
+Unverified (need full text): the ~$20k API cost, 278 oracle checks, "62 numerical
+checks passed, 3 gaps found", six human review rounds, Hell-Thiele failure list.
+"$20k" is the TNLean authors' reported cost, but is worded as if it were a
+project cost; reword and mark unverified.
+
+Handoff contract and audit procedure: sound and consistent with AGENTS.md
+(bridge-premise rule, no self-acceptance, capped loops, knowledge asymmetry for
+the counterexample role). No blocking problems found.
+
+Pilot design defects to fix before the pilot is built:
+1. Family A alone is called the minimum viable pilot, but D2 (missing assumption)
+   exists only in Family B, while the pass criteria require D2 and recall >= 6/8.
+   Family A has 7 classes, so it cannot pass as written.
+2. Contamination is unlisted. Einstein 1905 and the Lorentz transformation are in
+   every model's training data, so "known answers" may test recall, not
+   extraction fidelity. Needs a less memorized source or an explicit limitation.
+3. D3 is mislabeled F1. It states a claim for all frames while deriving it for
+   one family, so the statement is stronger than its derivation. F1 in the
+   taxonomy is a formal statement weaker than the source.
+4. B2 predicts a symbolic check would pass D5. A first-order expansion presented
+   as exact is algebraically false against the exact formula, so it would likely
+   be caught. State it as a hypothesis, not a premise.
+5. One instance per class run three times gives repeated measurements of one
+   artifact, not three independent samples. The 2/3-runs criterion measures model
+   stability on that artifact, not class recall. Add several instances per class.
+6. Call budget (60-80) is below the stated design (about 20 artifacts x 3 runs x
+   audit, counterexample and baselines, roughly 300).
+7. Injector, translator and auditor are the same model family; the limitation is
+   noted but the pilot should also pre-register what a cross-model run would add.
