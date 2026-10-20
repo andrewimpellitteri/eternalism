@@ -134,3 +134,11 @@ Section 8 of extraction.md lists the reads most likely to defeat each case.
   open.
 - Does a quantum covtree walk exist in the literature (1910.07292v2 Sec. 5 (v))? Not searched
   beyond author listings.
+
+## Coordinator review (2026-10-20)
+
+- Checked verbatim against arXiv HTML fetched 2026-10-20: Brightwell–Luczak 0901.0240v3 Sec. 1 ("…each linear extension of P is equally likely to have been the order in which the elements were generated. They called this property 'general covariance.'"); covtree 1910.07292v2 Lemma 4.9 discussion ("whether it satisfies Discrete General Covariance or not – there exists a covtree walk that produces the same measure"); Bento–Dowker–Zalel 2109.10749v1 Alternating Transitive Percolation definition.
+- Consequence for RC-4: the coordinator's finite-stage "birth order is ancillary" derivation (crosswalk, 2026-10-19) is Brightwell–Luczak's order-invariance property, already read as Rideout–Sorkin general covariance. Credit it to them.
+- Not verified: the hand construction in extraction Sec. 3.A (q-family of DGC walks with equal covariant measures and different labelled measures). It is the lane's derivation and needs an independent check before it is used.
+- Duplicate IDs `cs-surya-zalel-2020` and `cs-brightwell-2003-observables` now have records at two depths (discovery in causal-sets, full-text here); for rt-source-canonicalization.
+- `check_sources.py --online`: 23 records, 0 errors.
