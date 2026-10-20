@@ -1,0 +1,18 @@
+test_every_removed_live_archived_copy_has_exact_reference (test_reference_integrity.LiveCorpusReportingTest.test_every_removed_live_archived_copy_has_exact_reference) ... ok
+test_live_alias_provenance_integrity (test_reference_integrity.LiveCorpusReportingTest.test_live_alias_provenance_integrity) ... ok
+test_migrator_keeps_one_target_and_writes_pinned_reference (test_reference_integrity.MigrationFixtureTests.test_migrator_keeps_one_target_and_writes_pinned_reference) ... ok
+test_absent_alias_registry_fails (test_reference_integrity.ReferenceCheckerFixtureTests.test_absent_alias_registry_fails) ... ok
+test_broken_aliases_fail (test_reference_integrity.ReferenceCheckerFixtureTests.test_broken_aliases_fail) ... ok
+test_changed_seed_fails (test_reference_integrity.ReferenceCheckerFixtureTests.test_changed_seed_fails) ... ok
+test_cross_file_duplicate_is_reported_without_failing_reference_integrity (test_reference_integrity.ReferenceCheckerFixtureTests.test_cross_file_duplicate_is_reported_without_failing_reference_integrity) ... ok
+test_deleted_inherited_copy_requires_its_own_reference (test_reference_integrity.ReferenceCheckerFixtureTests.test_deleted_inherited_copy_requires_its_own_reference) ... ok
+test_prior_depth_version_hash_tampering_fail (test_reference_integrity.ReferenceCheckerFixtureTests.test_prior_depth_version_hash_tampering_fail) ... ok
+test_recomputed_snapshot_and_ref_hash_are_detected (test_reference_integrity.ReferenceCheckerFixtureTests.test_recomputed_snapshot_and_ref_hash_are_detected) ... ok
+test_same_file_duplicate_id_fails (test_reference_integrity.ReferenceCheckerFixtureTests.test_same_file_duplicate_id_fails) ... ok
+test_valid_target_provenance_and_alias_pass (test_reference_integrity.ReferenceCheckerFixtureTests.test_valid_target_provenance_and_alias_pass) ... ok
+test_wrong_target_and_lost_id_fail (test_reference_integrity.ReferenceCheckerFixtureTests.test_wrong_target_and_lost_id_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.070s
+
+OK

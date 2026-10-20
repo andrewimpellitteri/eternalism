@@ -1,0 +1,32 @@
+{
+  "revision_at_check": "bb055a2dd8917c82f8e799e23e832a5329e5df22",
+  "files": {
+    "knowledge/aqft-locality/sources.jsonl": "64c4d130c591819b55174899a8f073aa8b68b425f788945e147f3554d8fb35ac",
+    "knowledge/arrow-cosmology/sources.jsonl": "2f258762736419319b97adb8cf2581968be7a268252f61959d2f20f28115943b",
+    "knowledge/axiomatic-relativity/sources.jsonl": "e868d3b9e6ede3b6d1735adb9061b02063565994d6fc29bac63f21c69fc90427",
+    "knowledge/causal-sets/sources.jsonl": "10b241266f104c9738de056084f58e1789e179e0743226b3dc0bffd0a292c401",
+    "knowledge/clock-interactions/sources.jsonl": "639f1b9eaa1ceb38e69ac1f04ab468da731c88c2f3b49d9aab35b1be144ff610",
+    "knowledge/csg-quantum/sources.jsonl": "8211e5b9137e46b42e8f7117a200f5df9efee35fe4f3e495928ae6adf2c919e9",
+    "knowledge/discriminators/sources.jsonl": "fe88ed01506005770b1be800fe5dec53c22ae4d56ba356a0b106a30ec3c4f5c4",
+    "knowledge/formalization/sources.jsonl": "f3842791a6bf7913486cabaeae570843aff38d1a44c5f7545af41f04359e142d",
+    "knowledge/foundations/sources.jsonl": "525de88378fb037a4fa6bfd895f31e394423c6d9df790ea0a609c09a8ab5ea34",
+    "knowledge/frontier/sources.jsonl": "bc840469066c4cad8eec6ff7c905b86d4014109070efab2d29cfad584dcbef1a",
+    "knowledge/gr-qg/sources.jsonl": "23252429adca11ea7b87808d75b4b29c47bed8519d7394b9e71994743fb985a0",
+    "knowledge/ico-qrf/sources.jsonl": "c1f1048b4c9d858410ed190fa73a5b177bd3a905373229866f808e637393daac",
+    "knowledge/methods/sources.jsonl": "0d321dffa03aa80522b215d887c944d8bd6d54fab086dba3a334dda589191b4b",
+    "knowledge/novelty-prepass-a/sources.jsonl": "6cec563425d1c732da3b56c14bc2879880e364e7cc3eeaf61c601508d42334f7",
+    "knowledge/philosophy/sources.jsonl": "4287258639260fcb707a3d9b5e0aa09101c94a84d01f7b8f2066c9fdfd0ac459",
+    "knowledge/preferred-foliation/sources.jsonl": "c00ebb51dea54de6aab3cbf8083b2d5d71fcbd53e188f8c9fbfe678e607d383f",
+    "knowledge/relational-markov/sources.jsonl": "7146a935f175a3bacacff266aabcbd2fa0b971e425704f7317841579392510d4",
+    "knowledge/sector-conditioning/sources.jsonl": "b23ae75e6b05200e00767fdc7611e5bb67c80a38f44568a8c1b981763fb30c70",
+    "knowledge/seed-sources.jsonl": "b16c2e2ab71cfc76b18fc910e23a91cce1ca1e02bd9f1e3cdc776be16382d5a8",
+    "knowledge/thermal-records/sources.jsonl": "abf0d9fa45fe9b6f88bbd8e9e013514aea3b39ba130c61155b2279f8fb5977c9",
+    "knowledge/time-interpretations/sources.jsonl": "249abde28b1c2d6b28489c5414b8ec848a351481e564b892e2fad196d575e583",
+    "research/creative/covariant-boundary/sources.jsonl": "0959f9fe83eec073cc188005676a5a6d2ddea91e4d96615ed869cd433b36d5da",
+    "research/creative/covariant-stopping/sources.jsonl": "9447969e895f21127e26ec3b50dd4c3c1d7ad46cd6a7d8c708cc01fbd6a8a40b",
+    "research/creative/priority-audit/sources.jsonl": "c88015c0b72efdf351e8fd6cba44fcf1867bd8af1a755227c6b994ae7b2d554e",
+    "research/theory-map/sources.jsonl": "82ce5aade59d094e63e22f97c127d2306bce9897cea7bf7676f1430002b7f00c"
+  },
+  "records": 340,
+  "unique_ids": 336
+}

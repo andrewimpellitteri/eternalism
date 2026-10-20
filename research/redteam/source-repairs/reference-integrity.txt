@@ -1,0 +1,27 @@
+{
+  "reference_integrity_passed": true,
+  "errors": [],
+  "references": 63,
+  "alias_groups": 8,
+  "records": 340,
+  "unique_ids": 336,
+  "global_duplicate_ids": {
+    "cs-brightwell-2003-observables": [
+      "knowledge/causal-sets/sources.jsonl",
+      "knowledge/csg-quantum/sources.jsonl"
+    ],
+    "cs-surya-zalel-2020": [
+      "knowledge/causal-sets/sources.jsonl",
+      "knowledge/csg-quantum/sources.jsonl"
+    ],
+    "frontier-qrf-beyond-subsystems-2026": [
+      "knowledge/frontier/sources.jsonl",
+      "knowledge/sector-conditioning/sources.jsonl"
+    ],
+    "frontier-relativistic-trinity-2020v1": [
+      "knowledge/frontier/sources.jsonl",
+      "knowledge/sector-conditioning/sources.jsonl"
+    ]
+  },
+  "limits": "Explicit targets and preserved provenance checked; global duplicates are reported, not cleared. No semantic or primary-source verification."
+}

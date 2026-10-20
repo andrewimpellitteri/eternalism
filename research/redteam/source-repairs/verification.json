@@ -1,0 +1,97 @@
+{
+  "checks": {
+    "strict-repaired": {
+      "command": [
+        "python3",
+        "scripts/check_sources.py",
+        "--strict",
+        "knowledge/foundations/sources.jsonl",
+        "knowledge/frontier/sources.jsonl",
+        "knowledge/ico-qrf/sources.jsonl",
+        "knowledge/methods/sources.jsonl",
+        "knowledge/axiomatic-relativity/sources.jsonl",
+        "knowledge/arrow-cosmology/sources.jsonl",
+        "knowledge/causal-sets/sources.jsonl",
+        "knowledge/time-interpretations/sources.jsonl",
+        "knowledge/preferred-foliation/sources.jsonl",
+        "knowledge/discriminators/sources.jsonl",
+        "research/theory-map/sources.jsonl"
+      ],
+      "exit_code": 0,
+      "tail": "\n11 files, 171 records: 0 errors, 0 warnings, 0 info\n"
+    },
+    "strict-after": {
+      "command": [
+        "python3",
+        "scripts/check_sources.py",
+        "--strict",
+        "knowledge",
+        "research"
+      ],
+      "exit_code": 1,
+      "tail": "ERROR cs-brightwell-2003-observables  [knowledge/causal-sets/sources.jsonl:6, knowledge/csg-quantum/sources.jsonl:2]\n      duplicate id across files; keep one canonical source record and reference its id\nERROR cs-brightwell-2003-observables  [knowledge/causal-sets/sources.jsonl:6, knowledge/csg-quantum/sources.jsonl:2]\n      copied record diverges in read_depth: discovery, full-text\nERROR cs-surya-zalel-2020  [knowledge/causal-sets/sources.jsonl:7, knowledge/csg-quantum/sources.jsonl:1]\n      duplicate id across files; keep one canonical source record and reference its id\nERROR cs-surya-zalel-2020  [knowledge/causal-sets/sources.jsonl:7, knowledge/csg-quantum/sources.jsonl:1]\n      copied record diverges in read_depth: discovery, full-text\nERROR frontier-qrf-beyond-subsystems-2026  [knowledge/frontier/sources.jsonl:1, knowledge/sector-conditioning/sources.jsonl:5]\n      duplicate id across files; keep one canonical source record and reference its id\nERROR frontier-relativistic-trinity-2020v1  [knowledge/frontier/sources.jsonl:7, knowledge/sector-conditioning/sources.jsonl:2]\n      duplicate id across files; keep one canonical source record and reference its id\n\n25 files, 340 records: 6 errors, 0 warnings, 0 info\n"
+    },
+    "reference-integrity": {
+      "command": [
+        "python3",
+        "research/redteam/source-repairs/check_references.py"
+      ],
+      "exit_code": 0,
+      "tail": "{\n  \"reference_integrity_passed\": true,\n  \"errors\": [],\n  \"references\": 63,\n  \"alias_groups\": 8,\n  \"records\": 340,\n  \"unique_ids\": 336,\n  \"global_duplicate_ids\": {\n    \"cs-brightwell-2003-observables\": [\n      \"knowledge/causal-sets/sources.jsonl\",\n      \"knowledge/csg-quantum/sources.jsonl\"\n    ],\n    \"cs-surya-zalel-2020\": [\n      \"knowledge/causal-sets/sources.jsonl\",\n      \"knowledge/csg-quantum/sources.jsonl\"\n    ],\n    \"frontier-qrf-beyond-subsystems-2026\": [\n      \"knowledge/frontier/sources.jsonl\",\n      \"knowledge/sector-conditioning/sources.jsonl\"\n    ],\n    \"frontier-relativistic-trinity-2020v1\": [\n      \"knowledge/frontier/sources.jsonl\",\n      \"knowledge/sector-conditioning/sources.jsonl\"\n    ]\n  },\n  \"limits\": \"Explicit targets and preserved provenance checked; global duplicates are reported, not cleared. No semantic or primary-source verification.\"\n}\n"
+    },
+    "coordination-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_agents.py"
+      ],
+      "exit_code": 0,
+      "tail": "DRY RUN first: zai-coding-plan/glm-5.3-flash; branch agent/first; owns knowledge/first/\nDRY RUN first: zai-coding-plan/glm-5.3-flash; worktree /var/folders/k0/46qrmwrj74gcdwzmbtsxlbpm0000gn/T/tmpxq8fi81x/.worktrees/first\n............\n----------------------------------------------------------------------\nRan 12 tests in 0.765s\n\nOK\n"
+    },
+    "reference-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/redteam/source-repairs/review",
+        "-v"
+      ],
+      "exit_code": 0,
+      "summary": "13 tests passed; review/tests.txt"
+    }
+  },
+  "dispositions": {
+    "updated-with-reading-provenance": 17,
+    "replaced-by-reference": 63
+  },
+  "limitations": "Whole-project strict result includes concurrent out-of-scope lane integrations; reference pass is not global clearance.",
+  "artifact_files": [
+    "research/redteam/source-repairs/AGENT_REPORT.md",
+    "research/redteam/source-repairs/after-manifest.json",
+    "research/redteam/source-repairs/before-manifest.json",
+    "research/redteam/source-repairs/before-records.jsonl",
+    "research/redteam/source-repairs/check_references.py",
+    "research/redteam/source-repairs/coordination-tests.txt",
+    "research/redteam/source-repairs/dispositions.jsonl",
+    "research/redteam/source-repairs/foundations/AGENT_REPORT.md",
+    "research/redteam/source-repairs/integrate_references.py",
+    "research/redteam/source-repairs/methods/AGENT_REPORT.md",
+    "research/redteam/source-repairs/physics/AGENT_REPORT.md",
+    "research/redteam/source-repairs/reference-integrity.txt",
+    "research/redteam/source-repairs/review/AGENT_REPORT.md",
+    "research/redteam/source-repairs/review/test_reference_integrity.py",
+    "research/redteam/source-repairs/review/tests.txt",
+    "research/redteam/source-repairs/review-content/AGENT_REPORT.md",
+    "research/redteam/source-repairs/strict-after.txt",
+    "research/redteam/source-repairs/strict-before.txt",
+    "research/redteam/source-repairs/strict-repaired.txt",
+    "research/redteam/source-repairs/verification.json"
+  ]
+}
