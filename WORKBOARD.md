@@ -45,7 +45,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `rt-fulltext-claim-spotcheck` — Independently spot-check full-text claims and primary Stein/Malament sources | 10 | — | codex-fulltext-spotcheck |
 | blocked | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
 | open | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | — |
-| claimed | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
+| done | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
 | claimed | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | claude-coordinator |
 | done | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | claude-coordinator |
 | blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc | — |
