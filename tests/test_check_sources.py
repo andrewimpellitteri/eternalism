@@ -121,6 +121,40 @@ class SourceCheckerTests(unittest.TestCase):
         self.assertEqual(rep.count("ERROR"), 1)
         self.assertIn("9876.54321", rep.items[0][3])
 
+    def test_tool_version_is_not_a_paper_edition_in_strict_mode(self):
+        row = record(url="https://arxiv.org/abs/1234.56789",
+                     version="Paper edition not recorded; uses Lean v4")
+        self.assertEqual(self.offline(row, strict=False).count("WARN"), 0)
+        self.assertEqual(self.offline(row).count("ERROR"), 1)
+
+    def test_edition_only_field_is_attached_to_a_single_paper(self):
+        for edition in ("v3", "v3 (2011-09-21)", "Version v3"):
+            with self.subTest(edition=edition):
+                row = record(url="https://arxiv.org/abs/1234.56789", version=edition)
+                self.assertEqual(self.offline(row).count("ERROR"), 0)
+                self.assertEqual(checker.online_arxiv_ids(row, strict=True), ["1234.56789v3"])
+
+    def test_unversioned_link_to_same_pinned_paper_is_not_a_second_source(self):
+        row = record(text_url="https://arxiv.org/html/1234.56789",
+                     version="Published preprint")
+        self.assertEqual(self.offline(row).count("ERROR"), 0)
+
+    def test_disagreeing_url_and_version_field_editions_fail_strict(self):
+        rep = self.offline(record(version="arXiv:1234.56789v3"))
+        self.assertEqual(rep.count("ERROR"), 1)
+        self.assertIn("conflicting arXiv versions", rep.items[0][3])
+
+    def test_whitespace_evidence_and_list_items_are_missing(self):
+        for key in [*checker.REQUIRED, *checker.FULL_TEXT_EXTRA, "locator"]:
+            if key == "read_depth":
+                continue  # Invalid enum already has its own check.
+            with self.subTest(key=key):
+                row = record(**{key: " \t\n "})
+                self.assertGreater(self.offline(row).count("ERROR"), 0)
+        for key in ("authors", "dependencies", "related_source_ids", "open_questions"):
+            with self.subTest(list_key=key):
+                self.assertGreater(self.offline(record(**{key: [" "]})).count("ERROR"), 0)
+
     def test_reproduced_arxiv_record_also_requires_a_pinned_version(self):
         row = record(url="https://arxiv.org/abs/1234.56789", version="Unpinned",
                      read_depth="reproduced")
@@ -161,6 +195,24 @@ class SourceCheckerTests(unittest.TestCase):
         rows = checker.load([path], rep)
         self.assertEqual(rep.count("ERROR"), 2)
         self.assertEqual(len(rows), 1)
+
+    def test_invalid_id_types_are_diagnostics_and_do_not_stop_valid_records(self):
+        for value in ([], {}, None, False, 1, " "):
+            with self.subTest(value=value):
+                path = self.write("sources.jsonl", record(id=value), record())
+                rep = checker.Report()
+                rows = checker.load([path], rep)
+                checker.check_offline(rows, rep, strict=True)
+                self.assertEqual(rep.count("ERROR"), 1)
+                self.assertEqual(len(rows), 1)
+
+    def test_invalid_depth_type_does_not_crash_membership_checks(self):
+        for value in (["full-text"], {"depth": "full-text"}, [], {}):
+            with self.subTest(value=value):
+                self.assertGreater(self.offline(record(read_depth=value)).count("ERROR"), 0)
+
+    def test_invalid_title_type_is_a_diagnostic_even_across_copies(self):
+        self.assertEqual(self.copies(record(title=["invalid"]), True).count("ERROR"), 3)
 
     def test_required_base_field_and_unknown_depth_always_fail(self):
         self.assertEqual(self.offline(record(title="", read_depth="skimmed")).count("ERROR"), 2)
@@ -203,7 +255,8 @@ class SourceCheckerTests(unittest.TestCase):
 
     def test_matching_arxiv_does_not_mask_a_wrong_doi_in_strict_mode(self):
         row = record(doi="10.1063/1.522676")
-        ax = {"1234.56789v2": {"status": "ok", "title": row["title"]}}
+        ax = {"1234.56789v2": {"status": "ok", "title": row["title"],
+                               "version_title": row["title"]}}
         hit = {"status": "ok", "title": "An unrelated metadata title"}
         self.assertEqual(self.online(row, hit, ax, strict=False).count("WARN"), 1)
         self.assertEqual(self.online(row, hit, ax).count("ERROR"), 1)
@@ -218,6 +271,61 @@ class SourceCheckerTests(unittest.TestCase):
         row = record(url="https://doi.org/10.1063/1.522898", version="Published edition")
         rep = self.online(row, {"status": "ok", "title": row["title"]})
         self.assertEqual(rep.items, [])
+
+    def test_online_checks_exact_edition_in_version_field(self):
+        row = record(url="https://arxiv.org/abs/1234.56789",
+                     version="arXiv:1234.56789v999")
+        def metadata(ids):
+            return {aid: {"status": "version v999 does not exist"}
+                    if aid.endswith("v999") else {"status": "ok", "title": row["title"]}
+                    for aid in ids}
+        rep = checker.Report()
+        with patch.object(checker.Net, "arxiv", side_effect=metadata) as lookup:
+            checker.check_online([("fixture", 1, row)], rep, False, strict=True)
+        self.assertEqual(lookup.call_args.args[0], ["1234.56789v999"])
+        self.assertEqual(rep.count("ERROR"), 1)
+
+    def test_online_pins_legacy_ids_and_version_urls(self):
+        for edition in ("arXiv:gr-qc/9304027v2", "https://arxiv.org/html/gr-qc/9304027v2",
+                        "arXiv:gr-qc/9304027 (v2 paper)", "arXiv:gr-qc/9304027 (version v2)"):
+            with self.subTest(edition=edition):
+                row = record(url="https://arxiv.org/abs/gr-qc/9304027", version=edition)
+                self.assertEqual(checker.online_arxiv_ids(row, strict=True), ["gr-qc/9304027v2"])
+                self.assertEqual(self.offline(row).count("ERROR"), 0)
+
+    def test_online_checks_version_field_even_when_source_url_is_doi(self):
+        row = record(url="https://doi.org/10.1063/1.522898")
+        self.assertEqual(checker.online_arxiv_ids(row, strict=True), ["1234.56789v2"])
+
+    def test_latest_title_does_not_mask_cited_editions_different_title(self):
+        row = record()
+        ax = {"1234.56789v2": {"status": "ok", "title": row["title"],
+                               "version_title": "A different title on the cited edition"}}
+        self.assertEqual(self.online(row, {}, ax, strict=False).count("ERROR"), 0)
+        self.assertEqual(self.online(row, {}, ax).count("ERROR"), 1)
+
+    def test_missing_edition_title_cannot_pass_strict_online_cli(self):
+        row = record()
+        ax = {"1234.56789v2": {"status": "ok", "title": row["title"]}}
+        self.assertEqual(self.online(row, {}, ax, strict=False).items, [])
+        path = self.write("sources.jsonl", row)
+        with patch.object(checker.Net, "arxiv", return_value=ax):
+            code, output = self.cli(path, "--online", "--strict")
+        self.assertEqual(code, 1)
+        self.assertIn("exact-version title unavailable", output)
+
+    def test_verified_cited_edition_title_passes_strict_online_cli(self):
+        row = record()
+        ax = {"1234.56789v2": {"status": "ok", "title": "A different latest title",
+                               "version_title": row["title"]}}
+        path = self.write("sources.jsonl", row)
+        with patch.object(checker.Net, "arxiv", return_value=ax):
+            code, output = self.cli(path, "--online", "--strict")
+        self.assertEqual(code, 0, output)
+
+    def test_default_online_lookups_preserve_unversioned_url_behavior(self):
+        row = record(url="https://arxiv.org/abs/1234.56789")
+        self.assertEqual(checker.online_arxiv_ids(row), ["1234.56789"])
 
     def test_online_cli_passes_strict_flag_to_metadata_check(self):
         path = self.write("sources.jsonl", record())

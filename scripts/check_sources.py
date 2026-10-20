@@ -45,15 +45,21 @@ FULL_TEXT_EXTRA = ["authors", "version", "assumptions", "conclusion", "proof_sta
 LOCATOR_KEYS = ["locator", "section_locator", "locators"]
 EMPTY_LIST_OK = {"dependencies", "related_source_ids", "open_questions"}
 
+ARXIV_ID_PATTERN = r"(?:\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})"
 ARXIV_RE = re.compile(
-    r"arxiv\.org/(?:abs|html|pdf)/((?:\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})(?:v\d+)?)",
-    re.I)
+    r"arxiv\.org/(?:abs|html|pdf)/(" + ARXIV_ID_PATTERN + r"(?:v\d+)?)", re.I)
+VERSIONED_ARXIV_RE = re.compile(
+    r"(?<![\w./-])(" + ARXIV_ID_PATTERN + r"v\d+)\b", re.I)
+PAREN_ARXIV_VERSION_RE = re.compile(
+    r"(?<![\w./-])(" + ARXIV_ID_PATTERN + r")\s*\(\s*(?:version\s+)?(v\d+)\b", re.I)
 DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"'<>;,]+)", re.I)
 PAGES_RE = re.compile(r"pp?\.\s*(\d+)\s*[-–]\s*(\d+)")
 TITLE_MIN = 0.85
 
 
 def norm_title(s):
+    if not isinstance(s, str):
+        return ""
     s = unicodedata.normalize("NFKD", s or "")
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = re.sub(r"<[^>]+>", "", s)  # Crossref titles may carry MathML/JATS markup
@@ -130,6 +136,9 @@ def load(files, rep):
                 rep.add("ERROR", f"{where}:{n}", "-", "record is not an object")
                 continue
             rid = r.get("id", "-")
+            if not isinstance(rid, str) or not rid.strip():
+                rep.add("ERROR", f"{where}:{n}", "-", "id must be a nonempty string")
+                continue
             if rid in ids:
                 rep.add("ERROR", f"{where}:{n}", rid, "duplicate id within file")
             ids.add(rid)
@@ -137,28 +146,56 @@ def load(files, rep):
     return records
 
 
+def has_content(value):
+    if isinstance(value, str):
+        return bool(value.strip())
+    if isinstance(value, (list, dict)):
+        values = value.values() if isinstance(value, dict) else value
+        return any(has_content(item) for item in values)
+    return bool(value)
+
+
 def missing_full_text(r):
     # An explicitly empty list records "none"; an absent field records no audit.
-    return [k for k in FULL_TEXT_EXTRA if not r.get(k)
+    return [k for k in FULL_TEXT_EXTRA if not has_content(r.get(k))
             and not (k in EMPTY_LIST_OK and r.get(k) == [])]
 
 
-def unpinned_arxiv_ids(r):
-    ids = arxiv_ids(r)
+def arxiv_reference_groups(r):
+    """Group source links and explicit version-field IDs by paper identity."""
     version = str(r.get("version", ""))
-    missing = []
-    for aid in ids:
-        if re.search(r"v\d+$", aid):
-            continue
-        # A version often follows the identifier directly (1234.56789v2),
-        # where a word boundary before v does not exist.
-        pinned = re.search(r"(?<![\w./])" + re.escape(aid) + r"v\d+\b", version)
-        # Preserve support for a standalone version on a single-source record.
-        if not pinned and len(ids) == 1:
-            pinned = re.search(r"\bv\d+\b", version)
-        if not pinned:
-            missing.append(aid)
-    return missing
+    ids = set(arxiv_ids(r))
+    ids.update(m.group(1) for m in VERSIONED_ARXIV_RE.finditer(version))
+    ids.update(m.group(1) for m in ARXIV_RE.finditer(version))
+    ids.update(m.group(1) + m.group(2) for m in PAREN_ARXIV_VERSION_RE.finditer(version))
+    groups = {}
+    for aid in sorted(ids):
+        base = re.sub(r"v\d+$", "", aid)
+        pins = groups.setdefault(base, set())
+        if base != aid:
+            pins.add(aid)
+    # An edition-only field is unambiguous when exactly one paper is cited.
+    edition = re.fullmatch(r"\s*(?:version\s+)?(v\d+)(?:\s*\([^()\n]*\))?\s*", version, re.I)
+    if edition and len(groups) == 1:
+        base = next(iter(groups))
+        groups[base].add(base + edition.group(1).lower())
+    return groups
+
+
+def unpinned_arxiv_ids(r, strict=False):
+    groups = arxiv_reference_groups(r)
+    # Default mode preserves the legacy free-text vN shorthand. Strict mode
+    # requires an edition attached to the actual paper ID, never a tool version.
+    shorthand = (not strict and len(groups) == 1
+                 and re.search(r"\bv\d+\b", str(r.get("version", ""))))
+    return sorted(base for base, pins in groups.items() if not pins and not shorthand)
+
+
+def online_arxiv_ids(r, strict=False):
+    if not strict:
+        return arxiv_ids(r)
+    return sorted(aid for base, pins in arxiv_reference_groups(r).items()
+                  for aid in (pins or {base}))
 
 
 def check_offline(records, rep, strict=False):
@@ -166,15 +203,18 @@ def check_offline(records, rep, strict=False):
     for where, n, r in records:
         rid = r.get("id", "-")
         loc = f"{where}:{n}"
-        missing = [k for k in REQUIRED if not r.get(k)]
+        missing = [k for k in REQUIRED if not has_content(r.get(k))]
         if missing:
             rep.add("ERROR", loc, rid, "missing required: " + ", ".join(missing))
+        if r.get("title") is not None and not isinstance(r["title"], str):
+            rep.add("ERROR", loc, rid, "title must be a string")
         depth = r.get("read_depth")
-        if depth and depth not in DEPTHS:
+        if depth is not None and (not isinstance(depth, str) or depth not in DEPTHS):
             rep.add("ERROR", loc, rid, f"read_depth {depth!r} not in contract")
+            continue
         if depth == "full-text":
             gaps = missing_full_text(r)
-            if not any(r.get(k) for k in LOCATOR_KEYS):
+            if not any(has_content(r.get(k)) for k in LOCATOR_KEYS):
                 gaps.append("locator")
             if gaps:
                 rep.add("ERROR" if strict else "WARN", loc, rid,
@@ -184,11 +224,16 @@ def check_offline(records, rep, strict=False):
         url = str(r.get("url", ""))
         if url and not url.startswith(("http://", "https://")):
             rep.add("WARN", loc, rid, f"url is not http(s): {url!r}")
-        unpinned = unpinned_arxiv_ids(r) if depth in ("full-text", "reproduced") else []
+        unpinned = unpinned_arxiv_ids(r, strict=strict) if depth in ("full-text", "reproduced") else []
         if unpinned:
             rep.add("ERROR" if strict else "WARN", loc, rid,
                     "arXiv full-text record has no exact version: "
                     + ", ".join(unpinned))
+        if strict:
+            for base, pins in arxiv_reference_groups(r).items():
+                if len(pins) > 1:
+                    rep.add("ERROR", loc, rid,
+                            f"conflicting arXiv versions for {base}: " + ", ".join(sorted(pins)))
         by_id.setdefault(rid, []).append((loc, r))
     for rid, hits in by_id.items():
         files = {h[0].rsplit(":", 1)[0] for h in hits}
@@ -312,22 +357,29 @@ class Net:
 
 def check_online(records, rep, refresh, strict=False):
     net = Net(refresh)
-    all_arxiv = sorted({a for _, _, r in records for a in arxiv_ids(r)})
+    all_arxiv = sorted({a for _, _, r in records for a in online_arxiv_ids(r, strict=strict)})
     try:
         ax = net.arxiv(all_arxiv)
         n_doi = 0
         for where, n, r in records:
             rid, loc, title = r.get("id", "-"), f"{where}:{n}", r.get("title", "")
-            # Each identifier's own titles; a mismatch is an error only when no other
-            # identifier in the record matches the recorded title either.
-            own, problems = {}, []
-            for a in arxiv_ids(r):
+            # Strict checks retain each identifier's own mismatch even when a
+            # different identifier matches the record title.
+            own = {}
+            for a in online_arxiv_ids(r, strict=strict):
                 hit = ax[a]
                 if hit["status"] != "ok":
                     rep.add("WARN" if hit.get("transient") else "ERROR", loc, rid,
                             f"arXiv {a}: {hit['status']}")
                     continue
-                own[f"arXiv {a}"] = [t for t in (hit.get("version_title"), hit["title"]) if t]
+                if strict and re.search(r"v\d+$", a) and not hit.get("version_title"):
+                    rep.add("WARN", loc, rid,
+                            f"arXiv {a}: exact-version title unavailable; latest title cannot verify this edition")
+                    continue
+                titles = (hit.get("version_title"), hit["title"])
+                if strict and hit.get("version_title"):
+                    titles = (hit["version_title"],)
+                own[f"arXiv {a}"] = [t for t in titles if t]
             ds = dois(r)
             if len(ds) > 1:
                 rep.add("WARN", loc, rid, "several DOIs in url/version: " + ", ".join(ds))
