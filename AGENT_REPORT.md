@@ -1,101 +1,81 @@
-# Covariant value rules: local renewal upgrades the doubly-principal-only rule
+# Independent replication: edge-mask route to the two-cap result
 
-Status: 2026-10-20. Probe `covariant-value-rules`. This proves a boundary
-refinement of the conditional covariant theorem and an explicit `p=0`
-countermodel. It is not a new headline classification and does not select a
-temporal ontology.
+Status: 2026-10-20. Probe `independent-replication`. This is a second
+implementation of the finite combinatorics and the Dirac witness, deliberately
+not using the baseline's poset enumeration as the derivation. It does **not**
+re-prove the all-level analytic inequality; it checks the identities and values
+at finite levels and records that boundary.
 
-## Setting
+## Route
 
-`D_H` is the covariant event that a post has inclusive past `H` (principal,
-`n=|H|`); `N(H)` counts natural labelings; `A_p(H)=p^L(1-p)^{binom(n,2)-R}`;
-`ν` is a finite countably additive complex measure on `R_p` with
-`ν(P∞)=1`. `H⊕{x}` is the principal order obtained by adjoining a new universal
-maximum.
+Baseline (`experiments/baseline/poscau.py`): enumerate relation masks on
+`n` naturally labelled vertices, filter for transitivity, and sum amplitudes.
 
-## Theorem (local renewal + weakened rank rule)
-
-Assume `p≠0` and:
-
-**(A)** there are numbers `κ_n` such that for every **doubly-principal** `H` of
-size `n`, `ν(D_H)=κ_n N(H)A_p(H)`;
-
-**(B)** local renewal: for every principal `H`,
-`ν(D_{H⊕{x}})=p ν(D_H)`.
-
-Then `κ_n` is a constant `κ`, and `ν(D_H)=κ N(H)A_p(H)` for **every** principal
-`H`. Consequently, by the conditional all-principal theorem, `p∈(0,1]`.
-
-**Proof.** For principal `H` of size `n`, `J=H⊕{x}` is doubly principal
-(unique max; deleting it returns the principal `H`), with `N(J)=N(H)` and
-`A_p(J)=p A_p(H)`. By (A),
-`ν(D_J)=κ_{n+1}N(H)pA_p(H)`. By (B),
-`ν(D_H)=ν(D_J)/p=κ_{n+1}N(H)A_p(H)`. Thus the full formula holds for every
-principal `H`, with `κ_{n+1}`. If `H` is doubly principal, (A) also gives
-`ν(D_H)=κ_nN(H)A_p(H)`; comparing on a chain (where `N(H)A_p(H)=p^{n-1}≠0`)
-gives `κ_n=κ_{n+1}`. Hence `κ_n` is constant, and the all-principal theorem
-applies. ∎
-
-**Converse.** For `p∈(0,1]`, classical CTP restricted to `R_p` satisfies (A)
-and (B) with `κ=c(1-p)` (and `κ=1` at `p=1`).
-
-## The `p=0` boundary
-
-The division by `p` is essential. At `p=0`, the Dirac history
-`(A_2⊕{z_1})⊕(A_2⊕{z_2})⊕…` is a normalized covariant measure with no
-doubly-principal post past; the doubly-principal-only rule holds with
-`κ_n=0`, and local renewal holds trivially as `0=0·ν`. So (A)+(B) do **not**
-exclude `p=0`; the `p=0` exclusion in the all-principal theorem uses the
-all-principal factorization, not local renewal.
-
-This is the precise boundary: local renewal upgrades the weakened rule to the
-full rule for every `p≠0`, but at `p=0` the Dirac measure escapes both.
-
-## Rule table
-
-| Rule | Verdict |
-|---|---|
-| Doubly-principal-only, no local renewal | **No classification.** Dirac history with `κ=0` is normalized for every `p`; the weakened rule has no content. |
-| Doubly-principal-only + local renewal, `p≠0` | **Forces the all-principal common factor**, hence `p∈(0,1]`. |
-| Same, `p=0` | **Countermodel survives.** Dirac history is normalized and satisfies both rules with `κ_n=0`. |
-| All-principal common factor + normalization | `0<p≤1` (conditional theorem). |
-| Rank-only on all principal `H` | **Open.** Reduces to the convolution equation in `research/extensions/rank-factor/`; no construction or no-go. |
-| Shape-dependent factor | **Vacuous.** Any measure can be written as `κ_H N(H)A_p(H)` by division. |
-| Local renewal alone (no rank rule) | **Does not force rank-independence.** It only says `ν(D_H)/(N(H)A_p(H))` is constant along top-extension chains; shape-dependent assignments can satisfy it. |
-| Asymptotic/decaying rank factors | **Open** (same convolution problem). |
-
-## Relation to the existing source
-
-`research/creative/COVARIANT_RESULT.md` states that local renewal **together
-with rank-only on all principal H** forces `κ_{n+1}=κ_n`. The theorem above
-weakens the starting point: rank-only is assumed only on doubly-principal `H`,
-and local renewal extends it to all principal `H` for `p≠0`. The `p=0` Dirac
-exception is explicit. This is a boundary refinement, not a new headline
-classification.
+This replication: enumerate all **edge subsets** on `n` vertices, take the
+transitive closure, deduplicate by the resulting **labelled** relation set, and
+compute from the closures. The endpoint probability is computed directly from
+edge subsets with exact rational weights `r^e s^{binom(n,2)-e}`. The two-cap
+map and the Dirac history are re-implemented independently.
 
 ## Checks
 
-`check.py` verifies for `p=(1+i)/2` and principal `H` of sizes 1–4:
+1. **Endpoint identity.**
+   `P_k = Σ_{edge subsets on k+1 vertices} [last vertex above all earlier] r^e s^{binom(k+1,2)-e}`
+   equals `∏_{j=1}^k (1-s^j)` exactly, for `k=1..5` at
+   `r=1/2, 2/5, 1/3` (exact `Fraction` arithmetic). This is the identity used in
+   the two-cap bound, checked via the edge-subset route rather than the
+   baseline's poset amplitudes.
 
-- `H⊕{x}` is principal and its restriction is `H` (hence doubly principal);
-- `A_p(H⊕{x})=p A_p(H)` (max error 0);
-- at `p=0`, the Dirac history's post pasts are principal but not doubly
-  principal; the weakened rule with `κ_n=0` and local renewal `0=0·ν` hold;
-  the Dirac measure is normalized.
+2. **Two-cap decomposition.**
+   For `k=1..4`, the set of labelled two-caps `G⊕{u}⊕{v}` of all labelled
+   `k`-orders equals the set of labelled doubly-principal `(k+2)`-orders:
+   counts `1, 2, 7, 40` — PASS.
 
-Run: `python3 check.py`.
+3. **`V_5`, `V_6` at `p=(1+i)/2`.**
+   Summing `|A_p(C)|` over labelled doubly-principal orders from closures:
+   `V_5 = 1.015165042945`, `V_6 = 2.184089780164`, with `7` and `40` orders.
+   Matches the exact `Q(√2)` values `3/4+3√2/16` and `31/32+55√2/64`.
 
-## Verdict
+4. **Dirac history.**
+   Independent construction of `(A_2⊕{z_1})⊕(A_2⊕{z_2})⊕…` for `j=1..3`:
+   each post past is principal but not doubly principal; the history has
+   infinitely many posts. PASS.
 
-**Boundary theorem + explicit `p=0` countermodel.** This is a real refinement of
-the conditional theorem: local renewal is exactly what upgrades the weakened
-doubly-principal rule for `p≠0`, and `p=0` is a genuine exception. It should be
-a short section in the short note, not a standalone headline. No physical or
-ontological claim follows; the rules are measure-theoretic compatibility axioms.
+## Discrepancy found and corrected
+
+The first run canonicalized closures up to **unlabeled** isomorphism, which
+conflated different natural labelings (e.g. the three two-element chains) and
+gave `V_5=0.765165`, `5` doubly-principal orders instead of `7`. The paper's
+`V_n` sums over **naturally labelled** causets, each once; the fix is to
+deduplicate closures by the labelled relation set, not by isomorphism class.
+After the fix all values match. This is recorded because it is a plausible
+replication error, not a defect in the theorem.
+
+## What this does and does not establish
+
+- It independently reproduces the finite decomposition, the endpoint identity
+  at `k≤5`, the `V_5/V_6` values, and the Dirac countermodel.
+- It does **not** re-prove the all-level inequality
+  `V_{k+2} ≥ |p|(|p|+|1-p|)^k c_s` for every `k`; the analytic two-cap proof
+  and the infinite product remain the original argument, audited in
+  `research/creative/proof-audit/AUDIT.md`. Finite checks are not a quantifier
+  extension.
+- No priority, physical or ontological claim is made.
+
+## Known-result reduction
+
+- At `p=1/2` the endpoint weights are real probabilities; the identity reduces
+  to the classical post-probability product.
+- At `p=(1+i)/2` the finite amplitudes reproduce the selected certificate.
+- The scalar no-go's all-level step is still the analytic bound, not this
+  script.
 
 ## Files
 
-- `research/extensions/covariant-values/AGENT_REPORT.md` — this report.
-- `research/extensions/covariant-values/check.py` — finite checks.
+- `research/replication/replicate.py` — edge-mask enumeration, endpoint
+  probability, two-cap set check, `V_n`, Dirac witness.
+- `research/replication/AGENT_REPORT.md` — this report.
 
 Standard library only; no installs; no board edits.
+
+Run: `python3 replicate.py`.
