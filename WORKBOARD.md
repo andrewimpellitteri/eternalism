@@ -60,7 +60,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rt-clifton-hogarth-primary` — Read the user-supplied Clifton-Hogarth primary and resolve RC-2 secondary discrepancies | 10 | — | codex-clifton-primary |
 | done | `rt-new-lane-canonical-references` — Resolve inherited copies from the newly integrated sector and CSG lanes | 9 | rt-source-repair-integration, kb-sector-conditioning, kb-csg-quantum-boundary | codex-new-lane-refs |
 | done | `novelty-verdict-selected` — Decide whether the selected complex-percolation result is actually new | 10 | baseline-reproduction, extension-search, lean-certificate | opencode-coordinator |
-| open | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | — |
+| done | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | opencode-coordinator |
 | open | `vector-measure-boundary` — Test the no-go for Banach/Hilbert-valued measures | 9 | novelty-verdict-selected | — |
 | open | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | — |
 | open | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | — |
