@@ -1,0 +1,23 @@
+{
+  "source_revision": "82f1547",
+  "frame_full_text_ids": 72,
+  "seed": 20261020,
+  "sample_records": 22,
+  "existing_full_text_records": 20,
+  "required_primary_additions": 2,
+  "verdicts": {
+    "claim-overstated": 3,
+    "confirmed": 16,
+    "locator-wrong": 2,
+    "unreadable": 1
+  },
+  "all_sample_ids_covered_once": true,
+  "frame_reproduced_from_git": true,
+  "frozen_original_inputs_still_match": true,
+  "quote_words_max": 18,
+  "lanes": {
+    "clocks-methods": 7,
+    "foundations": 7,
+    "physics": 8
+  }
+}

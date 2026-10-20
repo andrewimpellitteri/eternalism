@@ -1,0 +1,1136 @@
+{
+  "seed": 20261020,
+  "source_revision": "82f1547",
+  "frame_rule": "Unique knowledge-register IDs claiming full-text, excluding audit outputs; all exact backtick contract IDs at full-text depth plus three explicit RC-4 same-paper aliases; eight fixed lane strata each contribute one seeded draw; Stein 1968 and Malament 1977 are additional required primaries. Twenty full-text records plus two required shallower primaries.",
+  "input_sha256": {
+    "knowledge/aqft-locality/sources.jsonl": "64c4d130c591819b55174899a8f073aa8b68b425f788945e147f3554d8fb35ac",
+    "knowledge/arrow-cosmology/sources.jsonl": "b3b9400c4bae64df0ecd8627799bb91bb2752e6b89083e372836e4e84206200c",
+    "knowledge/axiomatic-relativity/sources.jsonl": "8e705ffeec4199293202b79159956c48cde2205ca990e162bbf470204bbe4cc3",
+    "knowledge/causal-sets/sources.jsonl": "6dc61618dd420ef6dd4bef95554eff230999b533a82e8f7bb0c24a7223ce68dc",
+    "knowledge/discriminators/sources.jsonl": "a4185dc35f065dc108ce78a3c45eff7e49e67f8163b2ea14ff59b6d6f3b05e8c",
+    "knowledge/formalization/sources.jsonl": "f3842791a6bf7913486cabaeae570843aff38d1a44c5f7545af41f04359e142d",
+    "knowledge/foundations/sources.jsonl": "192cb2c29847ab9a174f39e99654a8d8a4f6ba0f89b143df54a253d324105d2f",
+    "knowledge/frontier/sources.jsonl": "3c2771bbbb698f68299e847b9ae0478cf1b8e3cbb5352511a5f9a0df75b70082",
+    "knowledge/gr-qg/sources.jsonl": "23252429adca11ea7b87808d75b4b29c47bed8519d7394b9e71994743fb985a0",
+    "knowledge/ico-qrf/sources.jsonl": "cb08a0b77366417509495f96313c478d0e8c158b487cda5d053e60706edfe77e",
+    "knowledge/methods/sources.jsonl": "5365cca23f31d8c6262fcf317a4c2eaff6f864db1026aee8a39329c5e402c8a0",
+    "knowledge/novelty-prepass-a/sources.jsonl": "6cec563425d1c732da3b56c14bc2879880e364e7cc3eeaf61c601508d42334f7",
+    "knowledge/philosophy/sources.jsonl": "4287258639260fcb707a3d9b5e0aa09101c94a84d01f7b8f2066c9fdfd0ac459",
+    "knowledge/preferred-foliation/sources.jsonl": "f2c9084db0c0e8b3ddfee6676cce432372561d254e5ed765b671637a5c390fa8",
+    "knowledge/seed-sources.jsonl": "b16c2e2ab71cfc76b18fc910e23a91cce1ca1e02bd9f1e3cdc776be16382d5a8",
+    "knowledge/thermal-records/sources.jsonl": "abf0d9fa45fe9b6f88bbd8e9e013514aea3b39ba130c61155b2279f8fb5977c9",
+    "knowledge/time-interpretations/sources.jsonl": "b61ecaf23bc9b70f1bc57e514de76b494a3af4ae798fc56bea3b775491754200",
+    "research/theory-map/research-contracts.md": "373f2902f08b5b5cc1aee7e38a42f42b813f7fbff6ede7b6074ba1097c201ecf"
+  },
+  "full_text_frame_ids": [
+    "aqft-bisognano-wichmann-1975",
+    "aqft-fewster-rejzner-2020v2",
+    "aqft-fewster-verch-2012-dynamical",
+    "aqft-fewster-verch-2012-kg",
+    "aqft-fewster-verch-2012-lcQFT",
+    "aqft-haag-kastler-1964",
+    "arrow-dks-boltzmann-brains-2002",
+    "arrow-goldstein-boltzmann-2001",
+    "arrow-gtz-no-ph-2016",
+    "arrow-lazarovici-reichert-2018",
+    "arrow-penrose-wch-1979",
+    "arrow-wallace-gravity-entropy-2009",
+    "axrel-giulini-2001",
+    "axrel-mamone-capria-2012",
+    "axrel-sep-bebecome-2021",
+    "axrel-sep-convensimul-2018",
+    "cs-madsen-2026-v1",
+    "cs-rideout-sorkin-2000-v3",
+    "cs-wuthrich-callender-2015-v1",
+    "disc-barontini-entropic-time-2026v2",
+    "disc-brading-empirical-2013-full",
+    "disc-lageos-prl-constraint-2026",
+    "disc-loriani-clock-interferometry-2019",
+    "disc-mewes-clockcompare-sme-2018",
+    "disc-sorci-proper-time-ionclock-2026",
+    "fol-dgtz-2014-can-bohmian",
+    "fol-tumulka-2006-grw-flash",
+    "form-isabelle-schutz",
+    "form-isabelle-special-relativity",
+    "found-maxwell-1993",
+    "found-putnam",
+    "found-sarkar-stachel-1999",
+    "found-sep-malament",
+    "found-stein-1991",
+    "frontier-emergence-time-qg-2012",
+    "frontier-page-wootters-measurements-2023",
+    "frontier-qrf-beyond-subsystems-2026",
+    "frontier-qrf-indefinite-order-2022v3",
+    "frontier-qrf-operational-meaning-2026",
+    "frontier-records-histories-2016",
+    "frontier-records-time-asymmetry-1993",
+    "frontier-relational-trinity-2019v3",
+    "frontier-relativistic-trinity-2020v1",
+    "frontier-smith-ahmadi-interacting-2019",
+    "frontier-thermal-clock-relational-2011",
+    "frontier-thermal-time-concept-2024",
+    "frontier-thermal-time-original-1994",
+    "frontier-thermodynamics-clocks-2020",
+    "frontier-time-delocalization-2026",
+    "gq-bs-2003-smooth-cauchy",
+    "gq-bs-2005-smooth-time",
+    "gq-godel-1949",
+    "ico-oreshkov-costa-brukner-2012",
+    "meth-ax-prover",
+    "meth-axqm-2026",
+    "meth-cas-agents-2026",
+    "meth-diagrammatica-2026",
+    "meth-fermiacc-2026",
+    "meth-language-agents-position-2026",
+    "meth-sw-lean-2026",
+    "meth-tensor-agents-2026",
+    "meth-tpbench",
+    "time-gmh-1994-timesym",
+    "time-hartle-2005-now",
+    "time-hossenfelder-palmer-2020",
+    "time-sep-ch-2024",
+    "time-sep-everett-2023",
+    "time-thooft-2016",
+    "time-tsvf-review-2007",
+    "time-wharton-argaman-2020",
+    "tr-connes-rovelli-1994",
+    "tr-hersent-2025"
+  ],
+  "contract_anchor_ids": [
+    "found-sarkar-stachel-1999",
+    "found-sep-malament",
+    "found-stein-1991",
+    "frontier-page-wootters-measurements-2023",
+    "frontier-qrf-beyond-subsystems-2026",
+    "frontier-relational-trinity-2019v3",
+    "frontier-relativistic-trinity-2020v1",
+    "frontier-smith-ahmadi-interacting-2019",
+    "meth-diagrammatica-2026",
+    "meth-sw-lean-2026"
+  ],
+  "contract_alias_ids": {
+    "cs-rideout-sorkin-2000-v3": "frontier-causal-growth-1999",
+    "cs-wuthrich-callender-2015-v1": "frontier-causal-becoming-2015",
+    "cs-madsen-2026-v1": "frontier-causal-embedding-2026"
+  },
+  "stratified_draws": [
+    {
+      "stratum": "aqft-locality",
+      "eligible_ids": [
+        "aqft-bisognano-wichmann-1975",
+        "aqft-fewster-rejzner-2020v2",
+        "aqft-fewster-verch-2012-dynamical",
+        "aqft-fewster-verch-2012-kg",
+        "aqft-fewster-verch-2012-lcQFT",
+        "aqft-haag-kastler-1964"
+      ],
+      "selected_id": "aqft-fewster-verch-2012-kg"
+    },
+    {
+      "stratum": "arrow-cosmology",
+      "eligible_ids": [
+        "arrow-dks-boltzmann-brains-2002",
+        "arrow-goldstein-boltzmann-2001",
+        "arrow-gtz-no-ph-2016",
+        "arrow-lazarovici-reichert-2018",
+        "arrow-penrose-wch-1979",
+        "arrow-wallace-gravity-entropy-2009"
+      ],
+      "selected_id": "arrow-wallace-gravity-entropy-2009"
+    },
+    {
+      "stratum": "axiomatic-relativity",
+      "eligible_ids": [
+        "axrel-giulini-2001",
+        "axrel-mamone-capria-2012",
+        "axrel-sep-bebecome-2021",
+        "axrel-sep-convensimul-2018"
+      ],
+      "selected_id": "axrel-sep-bebecome-2021"
+    },
+    {
+      "stratum": "causal-sets",
+      "eligible_ids": [
+        "cs-madsen-2026-v1",
+        "cs-rideout-sorkin-2000-v3",
+        "cs-wuthrich-callender-2015-v1"
+      ],
+      "selected_id": "cs-madsen-2026-v1"
+    },
+    {
+      "stratum": "gr-qg",
+      "eligible_ids": [
+        "gq-bs-2003-smooth-cauchy",
+        "gq-bs-2005-smooth-time",
+        "gq-godel-1949"
+      ],
+      "selected_id": "gq-bs-2005-smooth-time"
+    },
+    {
+      "stratum": "preferred-foliation",
+      "eligible_ids": [
+        "fol-dgtz-2014-can-bohmian",
+        "fol-tumulka-2006-grw-flash"
+      ],
+      "selected_id": "fol-dgtz-2014-can-bohmian"
+    },
+    {
+      "stratum": "thermal-records",
+      "eligible_ids": [
+        "tr-connes-rovelli-1994",
+        "tr-hersent-2025"
+      ],
+      "selected_id": "tr-hersent-2025"
+    },
+    {
+      "stratum": "time-interpretations",
+      "eligible_ids": [
+        "time-gmh-1994-timesym",
+        "time-hartle-2005-now",
+        "time-hossenfelder-palmer-2020",
+        "time-sep-ch-2024",
+        "time-sep-everett-2023",
+        "time-thooft-2016",
+        "time-tsvf-review-2007",
+        "time-wharton-argaman-2020"
+      ],
+      "selected_id": "time-hartle-2005-now"
+    }
+  ],
+  "sample": [
+    {
+      "id": "found-sarkar-stachel-1999",
+      "audit_lane": "foundations",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-2"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/foundations/sources.jsonl",
+          "line": 14,
+          "record": {
+            "id": "found-sarkar-stachel-1999",
+            "title": "Did Malament Prove the Non-Conventionality of Simultaneity in the Special Theory of Relativity?",
+            "authors": [
+              "Sahotra Sarkar",
+              "John Stachel"
+            ],
+            "url": "https://www.bu.edu/cphs/files/2015/04/1999_DidMalament.pdf",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-critical-paper",
+            "version": "Philosophy of Science 66 (1999), 208-220",
+            "relevance": "Primary critique that exposes temporal-reflection invariance in Malament's conditions and constructs forward/backward null-cone alternatives; constrains claims of unique simultaneity.",
+            "section_locator": "Section 2, 'Malament's Result'; abstract and discussion of Theorems 1-2.",
+            "assumptions": "Minkowski spacetime, causal connectibility, inertial observer worldline, candidate simultaneity definability and stated invariance/relational conditions.",
+            "conclusion": "They argue removing temporal-reflection invariance admits null-cone alternatives; Einstein synchrony remains unique if the relevant convention must be observer-position independent within a frame.",
+            "proof_status": "Authors' mathematical constructions read from primary source; not independently reproduced.",
+            "dependencies": [],
+            "related_source_ids": [
+              "found-malament-1977",
+              "found-sep-malament"
+            ],
+            "open_questions": "Does the full Malament proof formulation or later analysis answer the physical status of temporal-reflection invariance?",
+            "limits": "Primary criticism, not a substitute for primary Malament text; no proof reproduction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "found-sep-malament",
+      "audit_lane": "foundations",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-2"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/foundations/sources.jsonl",
+          "line": 4,
+          "record": {
+            "id": "found-sep-malament",
+            "title": "Conventionality of Simultaneity (archived SEP entry)",
+            "url": "https://plato.stanford.edu/archives/win2001/entries/spacetime-convensimul/",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "scholarly-secondary-source",
+            "relevance": "Precisely summarizes Malament's uniqueness theorem and premise conditions; used only to locate/qualify the primary result.",
+            "section_locator": "Section 'Malament's Theorem'.",
+            "assumptions": "Relation definable from symmetric causal connectibility and inertial observer worldline; equivalence relation, non-universal, with cross-worldline related points.",
+            "conclusion": "Under those conditions, standard synchrony is the unique relation.",
+            "proof_status": "Secondary exposition, not proof audit.",
+            "dependencies": [
+              "found-malament-1977"
+            ],
+            "related_source_ids": [],
+            "open_questions": "How does result change when observer structure, definability, or causal relation is expanded?",
+            "limits": "Secondary exposition only; primary proof not audited."
+          }
+        }
+      ]
+    },
+    {
+      "id": "found-stein-1991",
+      "audit_lane": "foundations",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-2"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/foundations/sources.jsonl",
+          "line": 2,
+          "record": {
+            "id": "found-stein-1991",
+            "title": "On Relativity Theory and Openness of the Future",
+            "authors": [
+              "Howard Stein"
+            ],
+            "url": "https://paperzz.com/doc/7354841/on-relativity-theory-and-openness-of-the-future",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "Philosophy of Science 58(2), 1991, pp.147-167; DOI 10.1086/289609",
+            "relevance": "Constructs a relativistically appropriate notion of becoming/open future and rebuts inference from absence of global present to determinism.",
+            "section_locator": "Opening abstract and pp. 147-167; especially p.159 text on absence of analogue to Einstein distant simultaneity in GR.",
+            "assumptions": "Special relativistic causal structure; event-relative causal past/future rather than global simultaneity; probabilistic indeterminacy is not defined by a universal present slice.",
+            "conclusion": "SR does not by itself exclude all indeterminateness/becoming; global present is not required for event-relative becoming.",
+            "proof_status": "Philosophical/physical argument, not a formal theorem audited here.",
+            "dependencies": [],
+            "related_source_ids": [
+              "found-rietdijk",
+              "found-putnam",
+              "found-maxwell-1993"
+            ],
+            "open_questions": "How exactly are local becoming relations generalized in curved spacetimes and stochastic dynamics?",
+            "limits": "Philosophical argument; no formal theorem audit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontier-page-wootters-measurements-2023",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-5"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/frontier/sources.jsonl",
+          "line": 12,
+          "record": {
+            "id": "frontier-page-wootters-measurements-2023",
+            "title": "Measurement events relative to temporal quantum reference frames",
+            "url": "https://arxiv.org/html/2308.10967v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "authors": [
+              "Vincent Baumann",
+              "Maximilian P. E. Lock"
+            ],
+            "version": "arXiv:2308.10967v1; submitted 2023-11-10",
+            "locators": "Sec. 2 clock model Eq. (2); Sec. 4.1-4.2 Eqs. (15)-(22); Sec. 4.2.3 Eqs. (21)-(22); Appendix E Eqs. (76)-(82); Sec. 5 discrete-time model",
+            "assumptions": "Clock C with Hilbert space L²[-E,E] and bounded clock energy; TO approach uses covariant/twirled observables and external measurement protocol; PM approach adds ancilla A and clock-triggered interaction K_SA(t) in the constraint. Distinguishes perfect orthogonal clock limit E→∞ from finite-spectrum nonideal clock; finite overlap of clock states causes memory kernel/nonlocality.",
+            "conclusion": "TO and PM approaches agree for multi-time predictions with ideal clocks but model different operational event notions. In nonideal PM, conditioned dynamics is generally time-nonlocal and may be nonunitary; measurement terms can contribute in both orders for disjoint supports. A finite/discrete-time construction can recover unitarity for general measurement interactions. This is an author/model claim, not evidence that fundamental time is discrete or physical causal order is indefinite.",
+            "proof_status": "Primary HTML full text inspected, equations and appendices located; perturbative solution and examples not reproduced.",
+            "dependencies": "Page-Wootters; Höhn et al. clock-neutral observables; Smith-Ahmadi interaction kernel; quantum measurement ancilla model.",
+            "related_source_ids": [
+              "frontier-relational-trinity-2019v3",
+              "frontier-relativistic-trinity-2020v1",
+              "frontier-smith-ahmadi-interacting-2019",
+              "frontier-qrf-beyond-subsystems-2026"
+            ],
+            "open_questions": "How do operational TO/PM differences map to the 2019 trinity's covariant POVM equivalence when interactions are explicit? What predictions remain invariant under an instrument-defined clock? Distinguish nonunitary reduced evolution from global constrained unitarity.",
+            "relevance": "A fully inspected nearby result shows clock nonideality plus clock-triggered interaction effects, sharpening any equivalence extension.",
+            "limits": "No independent reproduction; claims are model-specific; finite clock-spectrum effects do not establish fundamental temporal discreteness or ontological indeterminism."
+          }
+        },
+        {
+          "file": "knowledge/ico-qrf/sources.jsonl",
+          "line": 2,
+          "record": {
+            "id": "frontier-page-wootters-measurements-2023",
+            "title": "Measurement events relative to temporal quantum reference frames",
+            "url": "https://arxiv.org/abs/2308.10967",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "authors": [
+              "Ladina Hausmann",
+              "Alexander Schmidhuber",
+              "Esteban Castro-Ruiz"
+            ],
+            "version": "arXiv:2308.10967v1 (2023-08-21); published as Hausmann, Schmidhuber, Castro-Ruiz, Quantum 9, 1616 (2025), DOI 10.22331/q-2025-01-30-1616 (per ref [25] of arXiv:2603.08845v1)",
+            "locators": "Sec. II clock model Eqs. (2)-(6) (bounded spectrum sigma=[-E,E], covariant POVM |phi_t>, overlap sinc); Sec. III.1 twirled-observable (TO) approach Eqs. (7)-(11); Sec. III.2 purified-measurement (PM) approach Eqs. (12)-(14); Sec. IV.2.1 non-ideal constraint Eq. (15); Sec. IV.2.2 time-non-local evolution Eq. (16) and Dyson-type solution Eq. (17) with kernel F(t), non-unitarity footnote 2; Sec. IV.2.3 indefinite temporal order Eqs. (19)-(20), Fig. 3; Sec. IV.2.4 Eq. (21) TO internalizes to standard QM; Sec. V Eqs. (22)-(24) discrete-time unitary model; Appendix D Eqs. (55)-(66) TO-PM equivalence for ideal clocks via reduction maps R(tau), R^-1(tau); Appendix F Eq. (106) PM probabilities as time-non-local TO conditional probabilities; Appendix G Eqs. (107)-(115) orthonormal discrete clock basis t_k=k pi/E",
+            "assumptions": "Clock C with Hilbert space and Hamiltonian H_C=integral over sigma of e|e><e|, sigma=[-E,E]; time measurement by covariant POVM with states |phi_t>; ideal clock = spectrum R with orthogonal |t>; TO: constraint (H_C+H_S)|Psi>=0 with twirled observables; PM: constraint with clock-conditioned measurement interaction K_SA(t), non-ideal generalization Eq. (15); in parts H_S=0; probability rule Eq. (14) whose denominator is trivial only for ideal clocks",
+            "conclusion": "Authors' claims: for ideal clocks TO and PM give identical multi-time probabilities (proved in Appendix D); for non-ideal clocks they describe operationally distinct situations. TO: unitary evolution, sharp externally chosen order of operations independent of clock resources; internalizable as standard QM with external time. PM: conditional dynamics is time-non-local with memory kernel F(t) (Eq. 16-17), generally non-unitary, with a modified probability rule; with disjoint supports of the two measurement interactions the cross-order term survives, so the temporal order of measurement events is fundamentally limited (indefinite temporal order of PM-defined events), which the authors flag as possibly relevant to process-matrix indefinite causal structure (their refs [32]-[34]); unitarity is restored in a discrete-time PM model (Eqs. 22-24), and the authors state: if best clocks have finite energy spread, measurements are clock-triggered, and unitary evolution is demanded, then time must be discrete",
+            "proof_status": "Full HTML text read including Appendices A-G; Appendix D equivalence proof inspected stepwise (Eqs. 55-66) and Appendix E perturbative solution inspected, neither numerically reproduced; published peer-reviewed version exists (Quantum 9, 1616, 2025) but was not separately read",
+            "dependencies": "Page-Wootters formalism; Kuchar criticisms (Kuchar 2011); Giovannetti-Lloyd-Maccone quantum time (2015); Hoehn-Smith-Lock trinity (2021); Smith-Ahmadi interacting clocks (2019); process matrices Oreshkov-Costa-Brukner 2012, Baumann et al. noncausal Page-Wootters circuits 2022, Oreshkov 2019",
+            "related_source_ids": [
+              "frontier-smith-ahmadi-interacting-2019",
+              "frontier-relational-trinity-2019v3",
+              "ico-oreshkov-costa-brukner-2012",
+              "ico-oreshkov-time-delocalized-2019",
+              "ico-baumann-noncausal-pw-2022",
+              "frontier-time-delocalization-2026"
+            ],
+            "open_questions": "How PM indefinite temporal order relates to formal causal nonseparability (no causal game is analyzed); whether the equivalence of relational-dynamics approaches survives interactions (paper defers to trinity literature); correction: authors and submission date here supersede the earlier frontier-lane record, which mislisted authors as 'Vincent Baumann, Maximilian P. E. Lock' and dated v1 to 2023-11-10",
+            "relevance": "Anchor 2: defines TO vs PM operational event notions; source of the non-ideal-clock indefinite temporal order result and of the only TO-PM equivalence statement in the comparison set",
+            "limits": "v1 read, not the 2025 published version (v1 is the only arXiv version); perturbative results not reproduced; no process-matrix formalism used, so its relation to causal nonseparability remains a flagged analogy, not a result"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontier-qrf-beyond-subsystems-2026",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-1"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/frontier/sources.jsonl",
+          "line": 1,
+          "record": {
+            "id": "frontier-qrf-beyond-subsystems-2026",
+            "title": "Quantum reference frames beyond subsystems: a reconstruction and generalization of the perspective-neutral framework",
+            "url": "https://arxiv.org/html/2607.24976v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-preprint",
+            "authors": [
+              "Stefan L. Ludescher",
+              "Manuel Mekonnen",
+              "Thomas D. Galley",
+              "Markus P. Müller"
+            ],
+            "version": "arXiv:2607.24976v1, submitted 2026-07-27",
+            "locators": "Abstract; Sec. IV.3; Example 29 and Eqs. (39)-(57); Appendix B.1 Eqs. (53)-(57); Appendix B.2 Example 32 Eqs. (58)-(59); references [97], [99]-[102]",
+            "assumptions": "Main formal construction assumes finite-dimensional Hilbert spaces and compact Lie symmetry groups (Sec. II, lines 90-91); continuous R example 29 is explicitly outside the framework and omits correct normalization (Sec. IV.3, lines 747-751). Finite Abelian Z_n example is stated as rigorous. Constraint includes interaction; ordinary subsystem clock states generated by H_C differ from full constraint. Non-local center-of-mass instrument frame recovers a factorized relative-coordinate evolution for the specific translation-plus-K(X1-X2)^2 model.",
+            "conclusion": "Authors generalize perspective-neutral QRFs to covariant instruments not tied to tensor-factor subsystems; derive exact relational Schrödinger dynamics with interactions in cited clock examples and a finite Abelian analogue. Does not assert arbitrary interactions admit decoupling/autonomous evolution; generalized formalism permits treating interactions without claiming dynamics/ontology are changed by representation alone.",
+            "proof_status": "Primary HTML full text inspected. Formal claims/equations read at stated locators, not independently proved or reproduced.",
+            "dependencies": "Relies on the perspective-neutral QRF framework, compact-group representations, covariant operations/instruments; cites Smith & Ahmadi (2019), Höhn et al. (2021), and relational clock-switching work.",
+            "related_source_ids": [
+              "frontier-relational-trinity-2019v3",
+              "frontier-relativistic-trinity-2020v1",
+              "frontier-smith-ahmadi-interacting-2019",
+              "frontier-time-delocalization-2026"
+            ],
+            "open_questions": "Which non-local clock instruments yield autonomous reduced dynamics for interactions outside the commuting relative-potential example? How are operational probabilities compared across subsystem and non-subsystem frames? No novelty claim without citation forward check.",
+            "relevance": "Directly narrows interaction and non-subsystem QRF gaps; key recent predecessor.",
+            "limits": "Abstract and selected full-text sections inspected; not all general formal proofs audited. Example 29's continuous R model omits correct normalization; Example 32 is finite Abelian and model-specific. No independent reproduction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontier-relational-trinity-2019v3",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-1",
+        "RC-3"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/frontier/sources.jsonl",
+          "line": 9,
+          "record": {
+            "id": "frontier-relational-trinity-2019v3",
+            "title": "The Trinity of Relational Quantum Dynamics",
+            "url": "https://arxiv.org/html/1912.00033v3",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "authors": [
+              "Philipp A. Höhn",
+              "Alexander R. H. Smith",
+              "Maximilian P. E. Lock"
+            ],
+            "version": "arXiv:1912.00033v3 (submitted 2019-12-03; v3 dated 2021-04-13; PRD 104, 066001 (2021))",
+            "locators": "Sec. II.2 Eq. (4); Sec. III.2 Eqs. (13)-(20), especially (15)-(16); Sec. IV.1 Eq. (27), Theorems 1-2; Sec. V Theorems 3-6; Appendix A; Sec. IX conclusion",
+            "assumptions": "Global clock/system phase-space partition, clock phase-space dimension 2, autonomous constraint C_H=H_C+H_S≈0 with no clock-system interaction; one Hamiltonian constraint; covariant clock POVM density proportional to rank-one (possibly generalized) |t><t| effects and normalized resolution; clock Hamiltonian spectral cases developed for non-degenerate continuous/discrete spectra, with degeneracy/periodicity via cited extensions. Physical system subspace selected by constraint projection Π_sigmaSC.",
+            "conclusion": "Three descriptions (relational Dirac observables, Page-Wootters conditional Schrödinger, quantum symmetry-reduced relational Heisenberg) are equivalent under stated uncoupled model hypotheses. Covariant POVMs accommodate bounded/non-ideal clocks, nonorthogonal and overcomplete time states, and resolve the monotonicity problem; no ideal/self-adjoint time operator is required. Appendix A and conclusion explicitly identify clock-system interactions as a major open extension for generic models; certain interactions already modify PW evolution in cited work.",
+            "proof_status": "Primary HTML full text inspected; equations and stated theorem locators read. Proofs not independently reconstructed or checked beyond paper text.",
+            "dependencies": "Dirac constraint quantization/group averaging, covariant POVMs, reduction maps; appendix discussion cites interaction-free factorization and prior interaction work.",
+            "related_source_ids": [
+              "frontier-relativistic-trinity-2020v1",
+              "frontier-smith-ahmadi-interacting-2019",
+              "frontier-page-wootters-measurements-2023",
+              "frontier-qrf-beyond-subsystems-2026"
+            ],
+            "open_questions": "How do the trinity reduction maps generalize when the clock couples to S and/or only an instrument on a non-subsystem defines the clock? Need compare existing interaction and non-local-frame constructions before claiming open status.",
+            "relevance": "Essential predecessor; already covers broad non-ideal clock POVMs, while uncoupled hypothesis bounds its equivalence claim.",
+            "limits": "Formal proof correspondence not independently audited; extension to generic interacting systems is not supplied by the central theorem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontier-relativistic-trinity-2020v1",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-3"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/frontier/sources.jsonl",
+          "line": 10,
+          "record": {
+            "id": "frontier-relativistic-trinity-2020v1",
+            "title": "Equivalence of approaches to relational quantum dynamics in relativistic settings",
+            "url": "https://arxiv.org/html/2007.00580v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "authors": [
+              "Philipp A. Höhn",
+              "Alexander R. H. Smith",
+              "Maximilian P. E. Lock"
+            ],
+            "version": "arXiv:2007.00580v1; journal Frontiers in Physics 9 (2021), DOI 10.3389/fphy.2021.587083",
+            "locators": "Sec. II constraint Eq. (13); Sec. III frequency sectors Eqs. (10)-(12); Sec. IV.2 clock POVM Eqs. (25)-(30), Lemmas 1-3; Sec. V.1 Theorems 1-2; Sec. V.3 Theorems 4-5",
+            "assumptions": "Uncoupled clock/system split; quadratic clock Hamiltonian H_C=s p_t^2/2, s=±1, giving C_H=s p_t^2/2+H_S≈0 (Eq. 10); frequency label sigma=± and sectorwise reduction. Clock time POVM uses nonorthogonal overcomplete sector states; group averaging/physical inner product and sectorwise reductions. Reduced phase-space quantization is not always equivalent unless an extra condition holds.",
+            "conclusion": "Extends equivalence sector by sector to quadratic relativistic clock constraints, with covariant POVM and normalized conditioning on time plus frequency; includes relativistic particle and homogeneous cosmology examples. It does not remove the two frequency branches or make cross-sector clock change automatically invertible; frame maps are restricted to sector overlaps.",
+            "proof_status": "Primary HTML full text inspected; theorem statements and definitions read, proofs largely referred back to 1912.00033 and not independently verified.",
+            "dependencies": "2019 relational trinity; group averaging; Klein-Gordon-type constraint and frequency-sector decomposition.",
+            "related_source_ids": [
+              "frontier-relational-trinity-2019v3",
+              "frontier-qrf-beyond-subsystems-2026"
+            ],
+            "open_questions": "Interacting quadratic clocks, turning points, and cross-sector operational measurements are not resolved by this extension; compare with Smith-Ahmadi and newer instrument QRF framework.",
+            "relevance": "Closes a broad 'relativistic clocks/frequency branches' gap; exact sector restrictions are important.",
+            "limits": "Selected full text read; imported theorem proofs not rebuilt. No empirical or ontological inference."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontier-smith-ahmadi-interacting-2019",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [
+        "RC-1"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/frontier/sources.jsonl",
+          "line": 13,
+          "record": {
+            "id": "frontier-smith-ahmadi-interacting-2019",
+            "title": "Quantizing time: Interacting clocks and systems",
+            "url": "https://arxiv.org/html/1712.00081v3",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "authors": [
+              "Alexander R. H. Smith",
+              "Mehdi Ahmadi"
+            ],
+            "version": "arXiv:1712.00081v3 (2019-07-02); Quantum 3, 160 (2019), DOI 10.22331/q-2019-07-08-160",
+            "locators": "Sec. 2 Eq. (4)-(5); Sec. 3.1 Eqs. (9)-(15); Sec. 3.2 Eqs. (16)-(19); Sec. 4.2 Eqs. (22)-(23); Sec. 4.3 Eqs. (24)-(27)",
+            "assumptions": "Tensor-factor clock C/system S, interacting Hamiltonian constraint H=H_C+H_S+H_int; clock states generated by H_C and resolution of identity, with ideal orthogonal clock for examples 1-2 and finite-dimensional periodic qubit clock in example 3. Authors choose physical inner product conditional on clock projector and require time-independent normalization; interaction is self-adjoint.",
+            "conclusion": "Conditional system state obeys i d/dt psi_S=H_S psi_S+integral K(t,t')psi_S(t')dt', K=<t|H_int|t'>; norm/isometry condition follows from chosen physical inner product being time-independent. Perturbative Dyson-like series and gravity/qubit examples supplied. It does not prove the 2019 trinity equivalence for interacting POVM clocks.",
+            "proof_status": "Primary HTML full text inspected; exact kernel, norm condition, and examples read. Calculations not independently reproduced.",
+            "dependencies": "Page-Wootters conditional probability interpretation; Dirac constraint quantization; selected physical inner product.",
+            "related_source_ids": [
+              "frontier-relational-trinity-2019v3",
+              "frontier-page-wootters-measurements-2023",
+              "frontier-qrf-beyond-subsystems-2026"
+            ],
+            "open_questions": "What is the equivalent Dirac-observable/relational-Heisenberg description under interaction for general covariant POVM clocks, and when is conditioning an isometry under a physical inner product compatible with measurable clock effects? The 2026 QRF paper narrows, not closes, this question.",
+            "relevance": "Nearest direct predecessor for clock-system interaction; blocks broad claims that interacting Page-Wootters equations are new.",
+            "limits": "Specific conditional construction and clock classes; physical inner product is a stated choice; no full generalization of the trinity or ontology result."
+          }
+        }
+      ]
+    },
+    {
+      "id": "meth-diagrammatica-2026",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/methods/sources.jsonl",
+          "line": 8,
+          "record": {
+            "id": "meth-diagrammatica-2026",
+            "title": "Agentic Diagrammatica: Towards Autonomous Symbolic Computation in High Energy Physics",
+            "authors": [
+              "Tony Menzo",
+              "Alexander Roman",
+              "George T. Fleming",
+              "Sergei Gleyzer",
+              "Konstantin T. Matchev",
+              "Stephen Mrenna"
+            ],
+            "url": "https://arxiv.org/abs/2603.26990",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:2603.26990v1 (2026-03-27)",
+            "locator": "Secs. 2-4, 6 (v1, 2026-03-27)",
+            "relevance": "Names the core problem our contract must solve - correctness governed by implicit mathematical conventions not checkable in the computational backend - and its two remedies (tool-constrained computation with a human-auditable diagram spec; targeted knowledge grounding) map onto our translation-contract and extraction-role designs.",
+            "limits": "Exhaustive enumeration within supported vertex families (19 formulas, 6 families), checked by chiral-basis and NDA cross-checks and four PDG comparisons at 2-4%; not a graded known-answer catalog. One curated Claude Code session per task (Claude Opus 4.6). Code: github.com/tonymenzo/heptapod GPL-3.0, HEAD 76e1a311237cb970d106645589640b04c207b34a on 2026-10-14, after the paper, so not a paper-pinned commit; log files unverified. Read by a coordinator-launched subagent on 2026-10-19 from the arXiv HTML; the coordinator verified only the cited repository facts (licenses, SHAs) and did not re-read the paper.",
+            "authors_claim": "Concentrating the agent's action distribution onto convention-fixing tool calls validated on an exhaustive known-answer catalog (all tree-level 1->2 single-vertex partial widths with massless and threshold limits) plus an NDA case study.",
+            "proof_status": "Authors' validation claim; not reproduced here.",
+            "related_source_ids": [
+              "meth-cas-agents-2026",
+              "meth-fermiacc-2026"
+            ],
+            "open_questions": [
+              "Their known-answer benchmark design (exhaustive catalog with limits) is a model for our pilot's clean-item suite; details need a full-text read."
+            ],
+            "assumptions": "Single-coupling-per-vertex JSON diagram specs; supported vertex families only; Claude Opus 4.6 via Claude Code in curated single sessions.",
+            "conclusion": "Tool-constrained symbolic computation (NDA and exact FeynCalc paths) yields 19 decay-width formulas across 6 vertex families, checked by internal cross-checks and four PDG comparisons at 2-4%.",
+            "dependencies": [
+              "HEPTAPOD",
+              "FeynCalc",
+              "FeynGraph"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "meth-sw-lean-2026",
+      "audit_lane": "clocks-methods",
+      "selection": "contract-anchor",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/methods/sources.jsonl",
+          "line": 4,
+          "record": {
+            "id": "meth-sw-lean-2026",
+            "title": "Axioms for physical reasoning: codifying the Seiberg-Witten solution in Lean",
+            "authors": [
+              "Michael R. Douglas"
+            ],
+            "url": "https://arxiv.org/abs/2607.06379",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:2607.06379v1, submitted 2026-07-07; companion repository mrdouglasny/seiberg-witten (not inspected in this pass)",
+            "locator": "HTML v1: Sec. 2 two kinds of formalization; Sec. 4.1 dictionary; Sec. 4.2 H0-H7; Sec. 4.4 what formalizing forces into the open; Sec. 5 checking the axioms; Appendices A-B",
+            "relevance": "The clearest public discipline for separating named physical postulates from checked mathematics, with a working semantic-audit practice: dependency printing, numerical oracle, adversarial statement review, and vacuity hardening. Direct template for our audit procedure.",
+            "limits": "Authors' report; repository and oracle scripts not inspected or rerun here. The physical postulates are argued for, not derived; their justification is external review plus numerics by the authors' own account.",
+            "design_principles": [
+              "Physical postulates are named predicates carried in theorem types (H0-H7); the Lean `axiom` keyword carries only mathematics, so physics never hides in the trusted base (Sec. 2, 4.2, Appendix A).",
+              "A single dictionary maps each physical concept to a named mathematical object (e.g., PeriodChart.a/.aD/.tau as coupling; SymplecticReframing as duality); physics enters only through the dictionary (Sec. 4.1).",
+              "#print axioms reports the complete trusted base of any result; the genus-one uniqueness theorem's reported footprint is three logical axioms plus two classical covering axioms (Sec. 4.3).",
+              "Two kinds of formalization distinguished: proving existing rigorous statements vs. codifying trusted non-rigorous arguments (Sec. 2)."
+            ],
+            "failure_modes_documented": [
+              "Vacuous hypotheses: first-pass H3 ('there exists a lattice map equal to the Picard-Lefschetz transvection') was true by fiat; hardened to demand an actual deck transformation with covariant central charge. H2 hardened to demand a nonzero charge go massless; H5 pinned to 'exactly 2N' was unsatisfiable at rank 1 and corrected to 'order dividing 2N' with the u -> -u reflection as witness (Sec. 4.4).",
+              "A convenient falsehood refused by types: single-valued periods would be vacuous (bounded holomorphic map extends and is constant); data must live on the universal cover (Sec. 4.4).",
+              "Family-dependence trap: H6's instanton expansion with free coefficients fits any prepotential at fixed Lambda; content appears only as a weighted-homogeneity clause across the Lambda-family (Sec. 4.4). Heuristic recorded: for every existential inside a hypothesis, ask what stops the witness being reverse-engineered.",
+              "Adversarial review beat 62 passing numerical checks: a proposed axiom set failed statement-level review with three gaps (pointwise existence without holomorphic choice, missing boundary limits, an unlabelled parabolic slot); a hyperbolic matrix briefly occupied a parabolic slot passing every property the proofs consumed (Sec. 5, 'Validating a transcription').",
+              "The checking apparatus itself erred twice (fractional power on the wrong branch; cycle normalization off by a factor of two), caught by anchor values such as lambda(i)=1/2 before agreeing with Lean (Sec. 5, oracle paragraph)."
+            ],
+            "verification_protocol_as_published": "Cheapest first: (1) independent numerical oracle in mpmath/numpy sharing no code or authorship with Lean - 9 suites, 278 checks at 30-40 digit precision; authors call a numerical pass 'necessary, not sufficient'; (2) cross-model and self-review against pinned sources, separating 'is it proved?', 'does it say what the source says?', and 'can the intended theorems be derived from it?'; (3) transcription validation with four checks - instantiation, oracle, agreement with independently proved results, adversarial content; (4) the physicist's triangle: independent routes to the same quantity (perturbation theory, Nekrasov instantons, exact periods) attached as a cross-check rather than asserted (Sec. 5).",
+            "authors_claim": "AI's characteristic error in physics derivations is 'a hallucinated assumption, an unphysical premise or a dropped subtlety presented as if derived' (Sec. 1) - the error class our audit targets.",
+            "proof_status": "Authors report sorry-free genus-one theorems with printed axiom footprints; not rebuilt here.",
+            "related_source_ids": [
+              "seed-sw-lean-2026",
+              "meth-tensor-agents-2026"
+            ],
+            "open_questions": [
+              "Inspect mrdouglasny/seiberg-witten: pin commit, read validate_singcount.py and oracle suites, verify the printed axiom footprints by building."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aqft-fewster-verch-2012-kg",
+      "audit_lane": "foundations",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/aqft-locality/sources.jsonl",
+          "line": 8,
+          "record": {
+            "id": "aqft-fewster-verch-2012-kg",
+            "title": "Dynamical locality of the free scalar field",
+            "authors": [
+              "Christopher J. Fewster",
+              "Rainer Verch"
+            ],
+            "url": "https://arxiv.org/html/1109.6732v2",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:1109.6732v2 (2012); Annales Henri Poincaré 13(7), 1675-1709 (2012), DOI 10.1007/s00023-012-0166-z",
+            "section_locator": "Abstract; Sec. 4, Theorem 4.3 and adjacent construction/proof, lines 406-422 in arXiv HTML",
+            "assumptions": "The paper defines the massless minimally coupled scalar theory modulo locally constant solutions, in the locally covariant framework, and distinguishes categories Loc (possibly disconnected spacetimes) and Loc_0 (connected spacetimes). The theorem is specific to that quotient model and those categories.",
+            "conclusion": "The quotient massless scalar theory is dynamically local in Loc_0 for all spacetime dimensions n>=2 and in Loc for n>=3, but not in Loc at n=2. The authors exhibit the two-dimensional disconnected-spacetime topological obstruction; they conjecture adding topological charge as background may address it. This is a model/domain-specific locality result, not a universal claim about local events.",
+            "proof_status": "Theorem 4.3 statement and explanatory derivation inspected; no independent reproduction.",
+            "dependencies": [
+              "Uses the locally covariant functor/time-slice and relative-Cauchy-evolution framework, the classical minimally coupled Klein–Gordon solution space, its symplectic structure, and the quotient by locally constant solutions. The comparison target is kinematic versus dynamical localization as defined in the Fewster–Verch framework."
+            ],
+            "related_source_ids": [
+              "aqft-fewster-verch-2012-dynamical"
+            ],
+            "open_questions": "The paper identifies topological charge as a conjectural diagnosis of the two-dimensional failure; keep the authors' conjecture separate from theorem content.",
+            "relevance": "Concrete counterexample to treating kinematic and dynamical localization as automatically identical.",
+            "limits": "Massless scalar quotient model only; do not generalize the dimensional exception to all AQFTs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arrow-wallace-gravity-entropy-2009",
+      "audit_lane": "foundations",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/arrow-cosmology/sources.jsonl",
+          "line": 10,
+          "record": {
+            "id": "arrow-wallace-gravity-entropy-2009",
+            "title": "Gravity, Entropy, and Cosmology: In Search of Clarity",
+            "authors": [
+              "David Wallace"
+            ],
+            "url": "https://arxiv.org/html/0907.0659v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-philosophy-of-physics-paper",
+            "version": "arXiv:0907.0659v1 (2009-07-03); British Journal for the Philosophy of Science 61(3) (2010), pp. 513-540",
+            "locators": "Secs. 2-4, 8-10 of primary HTML read by a subsequent reviewer in this task; key distinctions at Sec. 3 and revised principles/conclusion at Sec. 10. Original worker's earlier screening was abstract-level.",
+            "assumptions": "Distinguishes gravity's dynamical effects on material macrostates from entropy attributed to gravitational field degrees of freedom. Argues in relevant cosmological regimes that local matter entropy and radiation, expansion-driven departure from equilibrium, and gravitational dynamics must be considered; black-hole entropy is a special case. Scope is the author's statistical-mechanical analysis, not a general quantum-gravity derivation.",
+            "conclusion": "Wallace argues that collapse need not increase the collapsing matter's entropy: in his model discussion the matter's entropy can decrease while heat/radiation transfer increases total entropy. He says gravitational collapse is not generally the source of local second-law behavior; expansion and nuclear fusion matter to his account. He criticizes Earman's limitations as too strong because gravity can affect material statistical mechanics through dynamics even when field entropy is neglected. This is a substantive counterpoint, not a final resolution of the Past Hypothesis or a universal entropy formula.",
+            "proof_status": "Primary arXiv HTML sections 2-4 and 8-10 read in a subsequent reviewer pass after the initial abstract-only record; calculations and wider empirical claims not independently reproduced.",
+            "dependencies": "Classical statistical mechanics of gravitating matter, expanding-universe thermodynamics, matter/radiation entropy, and distinctions between field entropy and dynamical influence.",
+            "related_source_ids": [
+              "arrow-penrose-wch-1979",
+              "arrow-earman-past-hypothesis-2006"
+            ],
+            "open_questions": "Which parts of Wallace's classical account generalize to broader relativistic/quantum cosmological models; what entropy functional is appropriate for the initial universe; how does the account compare to later gravitational entropy proposals?",
+            "relevance": "Detailed adversarial counterpoint to both a simplistic Weyl=entropy identification and the claim that Earman's critique rules out cosmological entropy reasoning; also shows why gravitational dynamics can matter without assigning an entropy to the gravitational field.",
+            "limits": "This is the author's argument in a bounded 2009 treatment; it does not settle all gravitational-entropy questions or establish a unique cosmological entropy. No independent calculation or contemporary model audit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "axrel-sep-bebecome-2021",
+      "audit_lane": "physics",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/axiomatic-relativity/sources.jsonl",
+          "line": 17,
+          "record": {
+            "id": "axrel-sep-bebecome-2021",
+            "title": "Being and Becoming in Modern Physics (Stanford Encyclopedia of Philosophy, October 2021 revision)",
+            "authors": [
+              "Steven F. Savitt"
+            ],
+            "url": "https://plato.stanford.edu/entries/spacetime-bebecome/",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "scholarly-secondary-source",
+            "version": "First published 2001-07-11; substantive revision 2021-10-06 (stated on page)",
+            "section_locator": "Sec. 3 intro (light-cone regions; Rietdijk-Putnam-Penrose 'chronogeometrical fatalism' argument via Penrose's Andromeda example); Sec. 3.2 (Stein 1968/1991 approach: R as two-place 'has become/already definite' relation; transitivity, reflexivity, non-universality; answer: y in/on past light cone of x; Stein 1968 p.15 quote 'an event's present is constituted by itself alone'; Callender 2000 non-uniqueness objection; Yourgrau objection); Sec. 3.3 (Robb-Stein-Dieks point presents; causal diamonds for a specious present; Stein 1968 fn 6 on proper time)",
+            "assumptions": "Secondary exposition of Stein's formalization; conditions on R attributed to Stein 1968: reflexive, transitive (as SEP presents them), non-universal; the fully precise original conditions (including the hereditary condition and symmetry option) are in Stein 1968, which this lane could not access.",
+            "conclusion": "Per SEP: Stein showed there is a unique non-universal two-place 'becoming' relation definable from Minkowski structure (the past causal cone of each event), which blocks the Rietdijk-Putnam-Penrose argument IF the definition is accepted; the cost is that becoming becomes event-relative and the present degenerates to a single event; Callender objects that this is too thin. SEP also warns (Sec. 3.2, citing Sellars discussion) that adopting the spacetime framework is not tantamount to eternalism.",
+            "proof_status": "Secondary exposition; Stein 1968 remains unread (all public routes blocked, see AGENT_REPORT).",
+            "dependencies": [
+              "found-stein-1968",
+              "found-stein-1991"
+            ],
+            "related_source_ids": [
+              "found-stein-1968",
+              "found-stein-1991",
+              "found-putnam",
+              "found-malament-1977"
+            ],
+            "open_questions": "Obtain Stein 1968 full text (JSTOR/PDC paywalled) to audit the exact theorem statement and its conditions before any formal use.",
+            "relevance": "Connects the definability line to the becoming/open-future line; the Stein uniqueness result is the becoming-side analog of Malament's uniqueness, and shares the same logical status (a definability theorem given chosen constraints).",
+            "limits": "Secondary; explicitly not a substitute for the primary theorem statement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-madsen-2026-v1",
+      "audit_lane": "physics",
+      "selection": "contract-alias-anchor",
+      "contract_ids": [
+        "RC-4"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/causal-sets/sources.jsonl",
+          "line": 3,
+          "record": {
+            "id": "cs-madsen-2026-v1",
+            "title": "On the Uniqueness of Embeddings of Causal Sets",
+            "authors": [
+              "Nathan Madsen"
+            ],
+            "url": "https://arxiv.org/abs/2607.05840v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-preprint",
+            "version": "arXiv:2607.05840v1 [gr-qc], submitted 7 Jul 2026, 39 pages, MSC 83C27, 53C50. Unrefereed single-author preprint. Text from arxiv.org/html v1.",
+            "section_locator": "Def. 2.6 (well-conditioned embedding, F1-F3, Eqs. (1)-(5)); Lemma 4.1; Lemma 4.3 (covariance matrix isotropy, Eq. (22)-(25)); Prop. 4.16; Thm 4.18 (Eq. (39)); Thm 5.1 (Eq. (40)); Cor. 5.6 (Eq. (48)); Sec. 6.1-6.2 (relation to Malament, Muller). Statements read in full; proofs of Props 4.8-4.15, 5.3 and Appendices A-E were skimmed or not read.",
+            "assumptions": "Finite causal set; globally hyperbolic Lorentzian manifolds of dimension d with finite volume and curvature scale lambda; density rho with rho*lambda^d >= c_*^(-2d) (log rho V)^2; (F1) exact order preservation, (F2) scale-dependent uniform density, (F3) longest-chain distance preservation (author notes F3's independence from F1-F2 is open); Poisson sprinkling for Part II.",
+            "conclusion": "Author's claims: two well-conditioned embeddings of one causal set force an epsilon-approximate isometry of the deep interiors, Phi*g2 = g1 + E with ||E|| = O(rho^(-2/(5d)) lambda^(-2/5) log^(3/2)(rho V)); Poisson sprinklings are well-conditioned with probability >= 1-(rho V)^(-K'). Concerns spacetime reconstruction from a completed causal set; it says nothing about growth, becoming or observers.",
+            "proof_status": "Hand proof in the paper; no formal verification; unrefereed. Only the statements and proof roadmaps were checked here; proofs not audited. The Corollary 5.6 error exponent is the author's, with a footnote that log exponent 3/2 is an upper bound.",
+            "dependencies": [
+              "Bernal-Sanchez smooth time functions",
+              "Bollobas-Brightwell 1992 height of random partial orders",
+              "Brightwell-Gregory 1991 longest chain",
+              "Bombelli et al. 1987",
+              "Malament 1977",
+              "Muller arXiv:2503.01719 (Hauptvermutung; unread)"
+            ],
+            "related_source_ids": [
+              "frontier-causal-embedding-2026",
+              "cs-bombelli-1987",
+              "cs-malament-1977-jmp"
+            ],
+            "open_questions": [
+              "Does F2 imply F3? (author, footnote 1)",
+              "Applies to Poisson sprinklings at high density only; non-sprinkled or sparse causets unaddressed",
+              "Independent refereeing or reproduction not found"
+            ],
+            "relevance": "Anchor for the order-to-geometry reconstruction side of the lane: what fixes a manifold from a completed causet.",
+            "limits": "A completed-order result. Using it as support for either temporal ontology would require a bridge premise it does not supply. Naming collision: 'covariance' here is the covariance matrix Sigma(x) of embedded points, unrelated to discrete general covariance. Coordinator directly checked Def. 2.6 Eq. (4): delta_D=K_d*sqrt(log(rho*V_M)/(rho*Vol_g(D))), and the statements of Thm. 4.18 and Cor. 5.6 in the v1 HTML on 2026-10-19. This is a statement-level spot-check, not a proof audit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gq-bs-2005-smooth-time",
+      "audit_lane": "physics",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/gr-qg/sources.jsonl",
+          "line": 1,
+          "record": {
+            "id": "gq-bs-2005-smooth-time",
+            "title": "Smoothness of time functions and the metric splitting of globally hyperbolic spacetimes",
+            "authors": [
+              "Antonio N. Bernal",
+              "Miguel Sánchez"
+            ],
+            "url": "https://arxiv.org/html/gr-qc/0401112v3",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-physics-mathematics",
+            "version": "arXiv gr-qc/0401112v3 (15 Feb 2005); Commun. Math. Phys. 257 (2005), 43–50",
+            "relevance": "Sharp existence result linking global hyperbolicity to a smooth Cauchy temporal function and orthogonal product splitting.",
+            "locators": "Abstract; Sec. 1, Theorems 1.1–1.2; proof construction Secs. 2–3, especially Prop. 2.4 and Theorem 3.11.",
+            "assumptions": "Time-oriented smooth Lorentzian spacetime; Theorem 1.1 assumes global hyperbolicity. Theorem 1.2 assumes an existing continuous time function.",
+            "conclusion": "Authors prove every globally hyperbolic spacetime admits a smooth function with timelike gradient whose levels are spacelike Cauchy hypersurfaces, yielding a smooth splitting M ≅ R × S and metric form −β dT² + g_T. Any spacetime admitting a time function admits a temporal function. The theorem supplies existence, not a unique or physically preferred foliation.",
+            "proof_status": "Published mathematical proof read in the arXiv HTML; not independently reproduced.",
+            "dependencies": [
+              "Bernal and Sánchez 2003, arXiv:gr-qc/0306108v2; Geroch 1970, cited in the paper"
+            ],
+            "related_source_ids": [
+              "gq-bs-2003-smooth-cauchy",
+              "phil-global-time"
+            ],
+            "open_questions": "What additional physical structure, if any, selects one among the admissible Cauchy temporal functions? This paper does not answer that interpretive question.",
+            "limits": "Mathematical existence theorem only; it does not imply objective passage, determinism, or a temporal ontology."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fol-dgtz-2014-can-bohmian",
+      "audit_lane": "physics",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/preferred-foliation/sources.jsonl",
+          "line": 18,
+          "record": {
+            "id": "fol-dgtz-2014-can-bohmian",
+            "title": "Can Bohmian mechanics be made relativistic?",
+            "url": "https://arxiv.org/abs/1307.1714",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-physics",
+            "relevance": "Central modern statement of the Bohmian foliation problem and the main escape route: instead of positing a preferred foliation as extra structure, let it be covariantly determined by the wave function; authors argue such theories 'seem to qualify as fundamentally Lorentz invariant'.",
+            "limits": "Full text read at argument level; Sec. 6 quantum equilibrium skimmed, not re-derived.",
+            "authors": [
+              "Detlef Dürr",
+              "Sheldon Goldstein",
+              "Travis Norsen",
+              "Ward Struyve",
+              "Nino Zanghì"
+            ],
+            "version": "Proc. R. Soc. A 470 (2014) 20130699",
+            "doi": "10.1098/rspa.2013.0699",
+            "arxiv": "arXiv:1307.1714 (v2)",
+            "section_locator": "Read via ar5iv HTML (50,983 chars). Sec. 2 'Bohmian theories in relativistic space-time'; Sec. 3 geometry of foliations (incl. the integrable-vector-field construction where leaves are normal to n only when n is integrable); Sec. 4 'Lorentz invariance'; Sec. 5 generalizations; Sec. 7 'Discussion'.",
+            "assumptions": "Relativistic Bohmian particle dynamics for N>1 needs a foliation; the question is its status: posited (hero) vs covariantly wave-function-determined; quantum equilibrium assumed for empirical equivalence.",
+            "conclusion": "Authors' claim: positing a foliation looks like a violation of fundamental Lorentz invariance, but a wave-function-determined foliation yields Bohmian theories that arguably remain fundamentally Lorentz invariant; conclusion is hedged ('seem to qualify').",
+            "proof_status": "Conceptual/geometric construction with technical sections; main conclusion is explicitly evaluative, not a theorem. Not reproduced.",
+            "dependencies": [
+              "phil-bohm-foliation",
+              "fol-dgtz-2005-belltype-qft"
+            ],
+            "related_source_ids": [
+              "fol-bell-2004-speakable",
+              "fol-myrvold-2017-nonstandard-dof",
+              "found-stein-1991"
+            ],
+            "open_questions": "Whether wave-function-determined foliations are dynamically stable under interactions; whether 'fundamental Lorentz invariance' under their definition matches philosophical standards for Lorentz invariance.",
+            "paper_claim_vs_established": "Foliation as extra structure for N>1 = consensus in the Bohmian literature. 'Covariantly wave-function-determined foliation preserves fundamental Lorentz invariance' = the authors' hedged claim, not an established result. Whether this blocks Rietdijk-Putnam-style inference = our note."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-hersent-2025",
+      "audit_lane": "physics",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/thermal-records/sources.jsonl",
+          "line": 2,
+          "record": {
+            "id": "tr-hersent-2025",
+            "title": "Thermal time of noncommutative Minkowski spacetime",
+            "authors": [
+              "Kilian Hersent"
+            ],
+            "url": "https://arxiv.org/abs/2502.12750v1",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:2502.12750v1 [hep-th], submitted 18 Feb 2025 (self-described preliminary version); a later arXiv version was not checked",
+            "locators": "Sec. 2.1-2.4 (algebra A_l, weight omega eq. (5), modular function, twisted cyclicity eq. (13)); Sec. 3.2 (omega not normalisable, modular operator = I^2); Sec. 4.1 kappa-Minkowski eq. (21)-(22); Sec. 4.2 thermal Hamiltonian and lack of kappa-Poincare invariance; Sec. 4.3 rho-Minkowski; Sec. 5.2-5.3 phenomenology and open issues. Characters 100000-116898 of the HTML text (end of references) not read by me; the dead GLM worker's log shows it read Secs. 3-5 and the reference list directly.",
+            "assumptions": "Deformed Minkowski algebra as Hopf dual of deformed translation algebra; weight = spacetime integral (infinite on identity, hence not a state); twist given by the modular function of the momentum group; thermal time hypothesis applied to a weight rather than a normalised state.",
+            "conclusion": "Paper author's claims: for kappa-Minkowski the modular flow is a shift of global time x0 by (d/kappa)t (thermal Hamiltonian (d/kappa)p0), with kappa read as a temperature scale and omega a 'highest temperature' state; for rho-Minkowski the group is unimodular, the twist is trivial and the flow is trivial, linked to discreteness of global time. Flow selects a preferred frame (not kappa-Poincare invariant). Phenomenology (Sec. 5.2) is speculative.",
+            "proof_status": "Formal-power-series level; the author states the full C*-algebra structure is not constructed and inner-automorphism freedom is left open. Not independently checked by me.",
+            "dependencies": "Connes-Rovelli thermal time hypothesis; Tomita-Takesaki theory extended to weights; Matassa 2013 (arXiv:1212.3462) and Poulain-Wallet 2018 (arXiv:1801.02715) cited as modular/KMS-weight predecessors (cited in Hersent's reference list per worker log; not read by anyone in this lane).",
+            "related_source_ids": [
+              "frontier-thermal-noncommutative-2025",
+              "tr-connes-rovelli-1994",
+              "tr-vanneerven-portal-2023"
+            ],
+            "open_questions": "Is the thermal time of a non-normalisable tracial weight a clock for any observer? Does the twist survive a proper C*-completion? Does choosing a different weight change the flow beyond inner automorphisms?",
+            "relevance": "Anchor for 'mathematical flow equals a coordinate translation by construction'; no operational clock is described.",
+            "limits": "Preprint v1, self-described preliminary; read through a retrieval summarizer; partly read by me, whole by the dead worker (log only). Not peer-review evidence.",
+            "checked_on": "2026-10-19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "time-hartle-2005-now",
+      "audit_lane": "physics",
+      "selection": "stratified-draw",
+      "contract_ids": [],
+      "copies": [
+        {
+          "file": "knowledge/time-interpretations/sources.jsonl",
+          "line": 19,
+          "record": {
+            "id": "time-hartle-2005-now",
+            "title": "The Physics of 'Now'",
+            "url": "https://arxiv.org/abs/gr-qc/0403001",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-journal-article",
+            "authors": [
+              "James B. Hartle"
+            ],
+            "version": "Am. J. Phys. 73, 101-109 (2005); DOI 10.1119/1.1783900; arXiv:gr-qc/0403001v2 (2004-05-21). TeX source inspected: pnow12.tex.",
+            "locators": "Abstract ('Past, present, and future are not properties of four-dimensional spacetime but notions describing how individual IGUSes process information'); Sec. II 'A Model IGUS'; Sec. III 'The Present is Not a Moment in Time'; Sec. IV 'Why Don't We Remember the Future?' (time-neutral laws; asymmetric boundary conditions as origin of arrows; 'By convention, this paper refers throughout to the times closer to the big bang as the past'); Conclusion (subjective present as possible 'cognitive universal', explicitly a conjecture).",
+            "assumptions": "Four-dimensional block description of fundamental physics assumed; IGUSes (information gathering and utilizing systems) modeled as classical stochastic automata with limited memory; quantum cosmology background from GH program.",
+            "conclusion": "Authors' claims: the experienced present is a feature of information processing, not a spacetime surface; passage is not fundamental and its experience is explained in four-dimensional terms; why IGUSes organize data as present/past/future is an adaptive-conjecture question, 'accessible to observational test, at least in principle'.",
+            "proof_status": "Conceptual/model paper; robot model read; no formal theorems claimed.",
+            "dependencies": "GH decoherent histories; WMAP cosmology for the arrow; psychology literature (Shepard 1994) for cognitive universality.",
+            "related_source_ids": [
+              "time-gmh-1994-timesym",
+              "time-gmh-1990",
+              "phil-price-arrow",
+              "phil-callender"
+            ],
+            "open_questions": "Whether any IGUS-level account explains all passage phenomenology is left open; the cognitive-universal claim is the author's conjecture.",
+            "relevance": "Primary anchor for the Everett/histories-family treatment of objective passage vs block description: gives a locatable claim that passage is not fundamental while experience of passage is explained.",
+            "limits": "Full text read from arXiv v2 TeX; AJP pagination not mapped. Model is deliberately simple; no claim that it constitutes a full quantum measurement theory."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-rideout-sorkin-2000-v3",
+      "audit_lane": "physics",
+      "selection": "contract-alias-anchor",
+      "contract_ids": [
+        "RC-4"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/causal-sets/sources.jsonl",
+          "line": 1,
+          "record": {
+            "id": "cs-rideout-sorkin-2000-v3",
+            "title": "A Classical Sequential Growth Dynamics for Causal Sets",
+            "authors": [
+              "D. P. Rideout",
+              "R. D. Sorkin"
+            ],
+            "url": "https://arxiv.org/abs/gr-qc/9904062v3",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:gr-qc/9904062v3 (revised 26 Jun 2004; SU-GP-99/4-1); Phys. Rev. D 61, 024002 (2000); doi 10.1103/PhysRevD.61.024002. Text from ar5iv render; key formulas cross-checked against the v3 LaTeX source (e-print dated 2004-06-26).",
+            "section_locator": "Sec. 1.1 (natural labeling, fictitious external time); Sec. 3 (internal temporality, discrete general covariance, Bell causality Eq. (2), Markov sum rule); Sec. 4 (Lemmas 1-4, Eqs. (3)-(13), Claims on inequalities); Sec. 4.4 (verification, Eqs. (14)-(15)); Sec. 5 (Eqs. (17)-(18), Prob_N(C)=W(C)P(C)); Sec. 7 (open questions); Appendix Lemmas 5-6. The paper has no numbered theorem; the main result is the derivation in Sec. 4.",
+            "assumptions": "Markov transition probabilities; internal temporality (births to the future of or unrelated to existing elements; natural labelling); discrete general covariance (path independence of the product of transition probabilities); Bell causality (ratio of sibling transition probabilities depends only on the union of precursor sets); Markov sum rule; genericity: no transition probability vanishes (Sec. 4); elements counted as distinguishable (sum-rule multiplicities).",
+            "conclusion": "Authors' derivation: under those conditions the transition probability is alpha_n = lambda(w,m)/lambda(n,0) with lambda(w,m)=sum_{k=m}^{w} C(w-m,w-k) t_k, free parameters t_n>=0, t_0=1 (equivalently q_n with q_n^-1 = sum C(n,k) t_k); transitive percolation is t_n=t^n. Label-independent formation weight P(C)=prod_x lambda(w(x),m(x))/prod_j lambda(j,0). Authors state that labels are fictitious/gauge and that statements such as 'when the causet had 8 elements it was a chain' are meaningless; they describe the phenomenological passage of time as a manifestation of growth. These are the authors' interpretive claims, not consequences of the mathematics.",
+            "proof_status": "Hand derivation in the paper (Lemmas 1-6 with proofs); no formal or machine verification. Not independently re-derived here beyond reading; the n<=5 finite check in knowledge/defeat-search/csg_ancillarity_check.py (coordinator) is exact rational arithmetic for two parameter vectors through n=5, not a general proof or an observer model. Coordinator re-ran it on 2026-10-19.",
+            "dependencies": [
+              "Markovian sequential growth; Kleitman-Rothschild entropy problem motivation; Sorkin quantum measure (gr-qc/9401003) for the quantum extension, not used"
+            ],
+            "related_source_ids": [
+              "seed-causal-growth",
+              "frontier-causal-growth-1999",
+              "cs-wuthrich-callender-2015-v1",
+              "cs-brightwell-2003-observables",
+              "cs-surya-zalel-2020",
+              "cs-bombelli-1987"
+            ],
+            "open_questions": [
+              "Can Bell causality be formulated without a birth sequence? (Sec. 7, authors)",
+              "Are all meaningful assertions combinations of partial-stem occurrence? (conjecture, Sec. 5/7, authors)",
+              "Non-generic cases with vanishing transition probabilities (originary models) left open by the authors",
+              "Equation numbers are those of the ar5iv/LaTeXML v3 render; the journal numbering was not checked."
+            ],
+            "relevance": "Anchor for growth-model comparison (candidate A): defines the label-independence and Bell-causality conditions and the transition probabilities.",
+            "limits": "Classical model family; no observers, records or clock construction in the paper; passage language is interpretive. Text extraction flattens sub/superscripts, so formulas were verified against LaTeX for (6),(7),(12),(17) and P(C_n)=W p^L q^(C(n,2)-R)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-wuthrich-callender-2015-v1",
+      "audit_lane": "physics",
+      "selection": "contract-alias-anchor",
+      "contract_ids": [
+        "RC-4"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/causal-sets/sources.jsonl",
+          "line": 2,
+          "record": {
+            "id": "cs-wuthrich-callender-2015-v1",
+            "title": "What becomes of a causal set",
+            "authors": [
+              "Christian Wuthrich",
+              "Craig Callender"
+            ],
+            "url": "https://arxiv.org/abs/1502.00018v1",
+            "checked_on": "2026-10-19",
+            "read_depth": "full-text",
+            "kind": "primary-paper",
+            "version": "arXiv:1502.00018v1 (30 Jan 2015); 'forthcoming in the British Journal for the Philosophy of Science' per arXiv comments (publication details not checked). Text from ar5iv render.",
+            "section_locator": "Sec. 3 'Facing the same dilemma?' (Stein's theorem, counterexample causet R, non-Hegelian subsets); Sec. 4 'Taking growth seriously' (CSG as tenseless history space, localized becoming, label time, gauge-invariant growth, posts, Fig. 3); Sec. 5 conclusion. No numbered theorems.",
+            "assumptions": "Causet = locally finite partial order (reflexive convention); Stein-style becoming as a binary relation R 'definite as of' that is reflexive, non-trivial, non-universal, automorphism-invariant; CSG dynamics with discrete general covariance; the quotient-by-relabelling measure of Brightwell et al. 2003; identity conditions of events (for coherence of the 'exotic' becoming).",
+            "conclusion": "Authors' claims: (i) the analogue of Stein's theorem is false in CST (counterexample causet with b,c spacelike related; R includes <b,c> and <c,b> without collapsing to universal); but non-Hegelian subsets large enough for a global present are non-generic, and regular ones would violate Lorentz invariance, so CST 'embraces' the dilemma; (ii) CSG is compatible with a tenseless history-space reading; (iii) localized/observer-dependent becoming is available but has Minkowski analogues; (iv) a novel global, objective but ontologically indeterminate 'becoming' (cardinality grows, which elements exist at a stage is not determinate) is compatible with CST, at radical metaphysical cost (vague existence, indeterminate past). Authors do not claim it is physically established.",
+            "proof_status": "Informal philosophical argument with one explicit counterexample (checkable by hand); no formal proof. Quoted Meyer non-Hegelian-pair estimate is an unpublished result cited by the authors, unread.",
+            "dependencies": [
+              "Stein 1991 (theorem not re-read here)",
+              "Rideout-Sorkin 2000",
+              "Brightwell et al. 2003",
+              "Huggett 2014, Pooley 2013, Earman 2008, Arageorgis 2012, Dowker 2014 as cited, all unread"
+            ],
+            "related_source_ids": [
+              "seed-causal-becoming",
+              "frontier-causal-becoming-2015",
+              "found-wuthrich-callender",
+              "found-stein-1991",
+              "cs-rideout-sorkin-2000-v3",
+              "cs-brightwell-2003-observables"
+            ],
+            "open_questions": [
+              "Whether the cardinality-only 'becoming' is coherent depends on event identity conditions (authors)",
+              "Whether the measure being defined only on Omega(infinity) makes the infinite end state prior to the growth (authors raise it)",
+              "Whether non-Hegelian-subset statistics hold for realistic causets (only Meyer's unpublished 1+1 estimate cited)"
+            ],
+            "relevance": "Closest philosophical prior art for candidate A and for any claim that causal-set growth supplies objective passage.",
+            "limits": "Philosophy-of-physics argument; the Stein-analogue statement is in prose (Sec. 3), not a theorem with proof. The paper's Stein statement is paraphrased from Stein 1991 and was not checked against it. Coordinator directly checked Secs. 3-4 in the versioned HTML; the prose Stein reconstruction must not be reused as a validated primary theorem (transitivity/strict-versus-reflexive qualifications unresolved)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "found-stein-1968",
+      "audit_lane": "foundations",
+      "selection": "required-primary",
+      "contract_ids": [
+        "RC-2"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/foundations/sources.jsonl",
+          "line": 1,
+          "record": {
+            "id": "found-stein-1968",
+            "title": "On Einstein-Minkowski Space-Time",
+            "authors": [
+              "Howard Stein"
+            ],
+            "url": "https://doi.org/10.2307/2024512",
+            "checked_on": "2026-10-19",
+            "read_depth": "discovery",
+            "kind": "primary-paper",
+            "relevance": "Stein's event-relative notion of becoming/local present in Minkowski spacetime; key reply to global-now arguments.",
+            "limits": "Bibliographic/source lead only in this pass; exact argument awaits full text. Coordinator Crossref check 2026-10-19: DOI corrected from 10.2307/2023910 (404). Title and pages match Crossref; content still unread.",
+            "version": "Journal of Philosophy 65(1), 1968, pp.5-23; DOI 10.2307/2024512"
+          }
+        }
+      ]
+    },
+    {
+      "id": "found-malament-1977",
+      "audit_lane": "foundations",
+      "selection": "required-primary",
+      "contract_ids": [
+        "RC-2"
+      ],
+      "copies": [
+        {
+          "file": "knowledge/foundations/sources.jsonl",
+          "line": 3,
+          "record": {
+            "id": "found-malament-1977",
+            "title": "Causal Theories of Time and the Conventionality of Simultaneity",
+            "authors": [
+              "David B. Malament"
+            ],
+            "url": "https://doi.org/10.2307/2214766",
+            "checked_on": "2026-10-19",
+            "read_depth": "abstract",
+            "kind": "primary-paper",
+            "version": "Noûs 11(3), 1977, pp.293-300; DOI 10.2307/2214766",
+            "relevance": "Uniqueness result for simultaneity definable from causal connectibility plus an observer worldline; assumption-sensitive result often invoked in presentism debates.",
+            "limits": "Original full text not obtained; theorem premises are represented from SEP discussion, not independently checked in the paper. Coordinator Crossref check 2026-10-19: DOI corrected from 10.1111/j.1933-1592.1977.tb01280.x (404). Title, journal and volume match Crossref."
+          }
+        }
+      ]
+    }
+  ]
+}
