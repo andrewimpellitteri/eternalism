@@ -126,3 +126,14 @@ baseline rather than discarding anything.
 4. **Coordinator follow-up**: if a v2 of 2606.08595 appears (e.g. with a Kraus
    form for `J^(σ)` or a normalized-state master equation), re-audit Q1–Q3
    against it; today's "unclear" verdicts are version-specific.
+
+## Coordinator review (2026-10-20)
+
+Checked against the arXiv HTML of 2606.08595v1 (fetched 2026-10-20):
+
+- Quoted verbatim and present: "Applying the clock instrument and tracing over the bath and clock sectors…" (before Eq. 10); "the normalized conditioned state evolves nonlinearly…" (after Eq. 7); "Promoting the perturbative expansion…"; "Equation (44) is generically non-Markovian…"; the Fig. 1 caption's "in the sharp-clock limit"; both Conclusion sentences; "if the dressed kernel is of positive type".
+- Eq. (23) gates the bath operator with `F_σ(T̂(x)−τ(x))` inside the interaction (Eq. 24), and Eq. (31) is a plain partial trace over clock and bath, as the audit says.
+- "instrument" occurs only twice, both in the main text; "postselect", "outcome", "Kraus", "divisib", "backflow" and "process tensor" never occur. "semigroup" occurs only as GKLS/Lindblad background and in citations. The Q1–Q3 verdicts follow.
+- The audit's linear-channel argument for the supplement's per-τ map holds if `F_σ` is real-valued, which the text implies but does not state.
+- Not re-checked: the Q4 equation-by-equation order claims beyond Eqs. (10), (30), (31), (37), (43).
+- Moved this report into the lane directory and removed two `10.48550/arXiv` DOI fields that the Crossref-based checker cannot resolve.
