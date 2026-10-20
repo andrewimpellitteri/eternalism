@@ -1,0 +1,320 @@
+[
+  {
+    "id": "found-deasy-2015",
+    "action": "hold-existing-id",
+    "canonical": {
+      "file": "knowledge/foundations/sources.jsonl",
+      "line": 10,
+      "read_depth": "discovery",
+      "record_sha256": "aa25ed2098f8f87f06d0642a3aefe8128fc7fcb961256d25171402cd17f82fea"
+    },
+    "reason": "Keep an ID reference; existing source payloads require explicit coordinator resolution, even if unchanged.",
+    "changed_fields": [
+      "inherited_from",
+      "limits",
+      "map_role",
+      "url",
+      "version"
+    ],
+    "field_differences": [
+      {
+        "field": "inherited_from",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 10,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "knowledge/foundations/sources.jsonl (record written by its lane worker; read depth and locators are the lane's, not re-verified by theory-map except where theory-map independently fetched the page)"
+          }
+        ]
+      },
+      {
+        "field": "limits",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 10,
+            "present": true,
+            "value": "Bibliographic lead only; no full text read. Coordinator Crossref check 2026-10-19: venue, year and DOI corrected. The record said Philosophy Compass 2015 with DOI 10.1111/phc3.12294, which resolves to an unrelated paper. Crossref's match for Deasy's 'The moving spotlight theory' is Philosophical Studies 2014; whether a separate Philosophy Compass article exists is unchecked."
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "Bibliographic lead only; no full text read."
+          }
+        ]
+      },
+      {
+        "field": "map_role",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 10,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "inherited"
+          }
+        ]
+      },
+      {
+        "field": "url",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 10,
+            "present": true,
+            "value": "https://doi.org/10.1007/s11098-014-0398-5"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "https://doi.org/10.1111/phc3.12294"
+          }
+        ]
+      },
+      {
+        "field": "version",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 10,
+            "present": true,
+            "value": "Philosophical Studies 172, 2014, pp.2073-2089; DOI 10.1007/s11098-014-0398-5"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 1,
+            "present": false,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "unresolved": false
+  },
+  {
+    "id": "found-malament-1977",
+    "action": "hold-existing-id",
+    "canonical": {
+      "file": "knowledge/foundations/sources.jsonl",
+      "line": 3,
+      "read_depth": "abstract",
+      "record_sha256": "9963de78d52519f5e6d24c2d0ba5d07ae3829957a6a06457e0d4efa14ca6b06e"
+    },
+    "reason": "Keep an ID reference; existing source payloads require explicit coordinator resolution, even if unchanged.",
+    "changed_fields": [
+      "inherited_from",
+      "limits",
+      "map_role",
+      "url",
+      "version"
+    ],
+    "field_differences": [
+      {
+        "field": "inherited_from",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 3,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 2,
+            "present": true,
+            "value": "knowledge/foundations/sources.jsonl (record written by its lane worker; read depth and locators are the lane's, not re-verified by theory-map except where theory-map independently fetched the page)"
+          }
+        ]
+      },
+      {
+        "field": "limits",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "Original full text not obtained; theorem premises are represented from SEP discussion, not independently checked in the paper. Coordinator Crossref check 2026-10-19: DOI corrected from 10.1111/j.1933-1592.1977.tb01280.x (404). Title, journal and volume match Crossref."
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 2,
+            "present": true,
+            "value": "Original full text not obtained; theorem premises are represented from SEP discussion, not independently checked in the paper."
+          }
+        ]
+      },
+      {
+        "field": "map_role",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 3,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 2,
+            "present": true,
+            "value": "inherited"
+          }
+        ]
+      },
+      {
+        "field": "url",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "https://doi.org/10.2307/2214766"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 2,
+            "present": true,
+            "value": "https://doi.org/10.1111/j.1933-1592.1977.tb01280.x"
+          }
+        ]
+      },
+      {
+        "field": "version",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "Noûs 11(3), 1977, pp.293-300; DOI 10.2307/2214766"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 2,
+            "present": true,
+            "value": "Noûs 11(3), 1977, pp.293-300"
+          }
+        ]
+      }
+    ],
+    "unresolved": false
+  },
+  {
+    "id": "found-stein-1968",
+    "action": "hold-existing-id",
+    "canonical": {
+      "file": "knowledge/foundations/sources.jsonl",
+      "line": 1,
+      "read_depth": "discovery",
+      "record_sha256": "fb2df881dce0022395f50947fa8705be9d35c578b842fb7fe8eb79ee420e7b71"
+    },
+    "reason": "Keep an ID reference; existing source payloads require explicit coordinator resolution, even if unchanged.",
+    "changed_fields": [
+      "inherited_from",
+      "limits",
+      "map_role",
+      "url",
+      "version"
+    ],
+    "field_differences": [
+      {
+        "field": "inherited_from",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 1,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "knowledge/foundations/sources.jsonl (record written by its lane worker; read depth and locators are the lane's, not re-verified by theory-map except where theory-map independently fetched the page)"
+          }
+        ]
+      },
+      {
+        "field": "limits",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "Bibliographic/source lead only in this pass; exact argument awaits full text. Coordinator Crossref check 2026-10-19: DOI corrected from 10.2307/2023910 (404). Title and pages match Crossref; content still unread."
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "Bibliographic/source lead only in this pass; exact argument awaits full text."
+          }
+        ]
+      },
+      {
+        "field": "map_role",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 1,
+            "present": false,
+            "value": null
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "inherited"
+          }
+        ]
+      },
+      {
+        "field": "url",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "https://doi.org/10.2307/2024512"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 3,
+            "present": true,
+            "value": "https://doi.org/10.2307/2023910"
+          }
+        ]
+      },
+      {
+        "field": "version",
+        "values": [
+          {
+            "file": "knowledge/foundations/sources.jsonl",
+            "line": 1,
+            "present": true,
+            "value": "Journal of Philosophy 65(1), 1968, pp.5-23; DOI 10.2307/2024512"
+          },
+          {
+            "file": "research/redteam/source-canonicalization/historical-stale-input.jsonl",
+            "line": 3,
+            "present": false,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "unresolved": false
+  }
+]
