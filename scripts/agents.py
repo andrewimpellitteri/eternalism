@@ -23,8 +23,8 @@ REFUSED = 3
 # About a dozen simultaneous GLM workers hit z.ai 429 (code 1302) on 2026-10-19.
 DEFAULT_MAX_CONCURRENT = 6
 RATE_LIMIT_ATTEMPTS = 4
-RESUME_NOTE = ("\n\n## Resumed run\n\nYour previous attempt was interrupted by a provider "
-               "rate limit. Inspect `git status`, `git log` and your output paths first; keep "
+RESUME_NOTE = ("\n\n## Resumed run\n\nYour previous attempt was interrupted (provider rate "
+               "limit, usage quota, or a supervisor failure). Inspect `git status`, `git log` and your output paths first; keep "
                "and continue existing work rather than starting over.\n")
 
 
@@ -45,6 +45,10 @@ def tasks():
     if len(book) != len(records):
         raise ValueError("duplicate task ID")
     for row in records:
+        missing = [key for key in ("id", "title", "blocked_by", "owns", "brief", "done_when")
+                   if key not in row]
+        if missing:
+            raise ValueError(f"task {row.get('id', '?')} lacks {', '.join(missing)}")
         if not re.fullmatch(r"[a-z][a-z0-9-]*", row["id"]):
             raise ValueError("invalid task ID")
         for name in row["owns"]:
@@ -230,6 +234,40 @@ def launch(args):
     render_board()
 
 
+def resume(args):
+    """Restart a claimed task whose supervisor died, in its existing worktree."""
+    tid, root = args.task, main_root()
+    record = snapshot().get(tid, {})
+    if record.get("status") != "claimed" or record.get("agent") != f"glm-{tid}":
+        raise ValueError(f"{tid} is not claimed by glm-{tid}")
+    wt, run = root / ".worktrees" / tid, root / ".agent-runtime" / "runs" / tid
+    if not wt.is_dir():
+        raise ValueError(f"no worktree at {wt}; use launch after releasing the claim")
+    if (run / "process.json").exists():
+        pid = json.loads((run / "process.json").read_text())["pid"]
+        alive = subprocess.run(["ps", "-p", str(pid), "-o", "command="], text=True,
+                               capture_output=True).stdout
+        if f"_worker {tid}" in alive:
+            raise ValueError(f"supervisor {pid} is still running")
+    busy = subprocess.run(["pgrep", "-f", "--", f"--title time-{tid} "], text=True, capture_output=True)
+    if busy.returncode > 1:
+        raise ValueError(f"pgrep failed: {busy.stderr.strip()}")
+    if busy.stdout.strip():
+        raise ValueError(f"an OpenCode run for {tid} is still alive (pid {busy.stdout.split()[0]}); stop it first")
+    print(f"{'DRY RUN' if args.dry_run else 'RESUME'} {tid}: {args.model}; worktree {wt}")
+    if args.dry_run:
+        return
+    if (run / "result.json").exists():
+        (run / "result.json").rename(run / f"result.{timestamp().replace(':', '')}.json")
+    with (run / "worker.log").open("a") as log:
+        proc = subprocess.Popen([sys.executable, str(root / "scripts/agents.py"), "_worker", tid,
+                                 "--model", args.model, "--resume"], cwd=wt, stdin=subprocess.DEVNULL,
+                                stdout=log, stderr=log, start_new_session=True)
+    atomic_json(run / "process.json", {"pid": proc.pid, "worktree": str(wt), "task": tid,
+                                       "started_at": timestamp(), "resumed": True})
+    print(f"resumed {tid}: worker {proc.pid}; logs {run}")
+
+
 def worker(args):
     tid, root = args.task, main_root()
     wt = root / ".worktrees" / tid
@@ -244,9 +282,9 @@ def worker(args):
                AWS_SHARED_CREDENTIALS_FILE="/dev/null", AWS_CONFIG_FILE="/dev/null")
     events = run / "events.jsonl"
     slot = acquire_slot(root, tid)
-    session, code, limited = None, None, False
+    session, code, limited, quota = None, None, False, None
     for attempt in range(1, RATE_LIMIT_ATTEMPTS + 1):
-        message = prompt if attempt == 1 else prompt + RESUME_NOTE
+        message = prompt + RESUME_NOTE if attempt > 1 or args.resume else prompt
         command = ["opencode", "run", "--standalone", "--auto", "--model", args.model,
                    "--title", f"time-{tid}", "--format", "json",
                    *(["--session", session] if session else []), message]
@@ -263,15 +301,15 @@ def worker(args):
                     code = process.wait(timeout=60)
                     break
                 except subprocess.TimeoutExpired:
-                    transition("heartbeat", tid, f"glm-{tid}")
-        session, limited = scan_events(events, start, session)
-        if code == 0 or not limited or attempt == RATE_LIMIT_ATTEMPTS:
+                    beat(tid)
+        session, limited, quota = scan_events(events, start, session)
+        if code == 0 or quota or not limited or attempt == RATE_LIMIT_ATTEMPTS:
             break
         delay = 90 * 2 ** (attempt - 1)
         print(f"{tid}: provider rate limit; retry {attempt + 1} in {delay}s "
               f"(session {session})", flush=True)
         for _ in range(delay // 30):
-            transition("heartbeat", tid, f"glm-{tid}")
+            beat(tid)
             time.sleep(30)
     slot.close()
     report = wt / "AGENT_REPORT.md"
@@ -282,13 +320,21 @@ def worker(args):
         outcome, reason = "review", f"exit {code} after a committed report and clean tree"
     else:
         outcome = "failed"
-        reason = "provider rate limit, retries exhausted" if limited else f"exit {code}"
+        reason = (f"provider usage quota exhausted: {quota}" if quota else
+                  "provider rate limit, retries exhausted" if limited else f"exit {code}")
     atomic_json(run / "result.json", {"exit_code": code, "outcome": outcome, "reason": reason,
                                       "attempts": attempt, "finished_at": timestamp()})
     if outcome == "review":
         transition("review", tid, f"glm-{tid}",
                    notes=f"Inspect {report}; {reason}; not yet accepted.")
     print(f"{tid}: {outcome} ({reason})", flush=True)
+
+
+def beat(tid):
+    try:
+        transition("heartbeat", tid, f"glm-{tid}")
+    except (ValueError, KeyError, OSError, json.JSONDecodeError) as exc:
+        print(f"{tid}: heartbeat failed ({exc}); worker continues", flush=True)
 
 
 def acquire_slot(root, tid):
@@ -311,13 +357,16 @@ def acquire_slot(root, tid):
         if not waited:
             print(f"{tid}: all {limit} worker slots busy; queued", flush=True)
             waited = True
-        transition("heartbeat", tid, f"glm-{tid}")
+        beat(tid)
         time.sleep(30)
 
 
 def scan_events(path, start, session):
-    """Session ID and whether a provider rate limit appeared since byte offset start."""
-    limited = False
+    """Session ID, whether a 429 appeared since byte offset start, and any quota message.
+
+    z.ai reports short-window throttling as provider.rate-limit (code 1302) and an
+    exhausted plan window as provider.quota (code 1308, with a reset time)."""
+    limited, quota = False, None
     with path.open() as f:
         f.seek(start)
         for line in f:
@@ -330,7 +379,10 @@ def scan_events(path, start, session):
             if event.get("type") == "error" and (
                     error.get("type") == "provider.rate-limit" or error.get("status") == 429):
                 limited = True
-    return session, limited
+            if event.get("type") == "error" and (
+                    error.get("type") == "provider.quota" or '"1308"' in json.dumps(error)):
+                quota = error.get("message") or "code 1308"
+    return session, limited, quota
 
 
 def committed_and_clean(wt, name):
@@ -381,9 +433,14 @@ def main():
     command.add_argument("tasks", nargs="+")
     command.add_argument("--dry-run", action="store_true")
     command.add_argument("--model", default=DEFAULT_MODEL)
+    command = commands.add_parser("resume", help="restart a claimed task whose supervisor died")
+    command.add_argument("tasks", nargs="+")
+    command.add_argument("--dry-run", action="store_true")
+    command.add_argument("--model", default=DEFAULT_MODEL)
     command = commands.add_parser("_worker")
     command.add_argument("task")
     command.add_argument("--model", required=True)
+    command.add_argument("--resume", action="store_true")
     command = commands.add_parser("stop")
     command.add_argument("task")
     args = parser.parse_args()
@@ -400,6 +457,10 @@ def main():
             render_board()
         elif args.command == "launch":
             launch(args)
+        elif args.command == "resume":
+            for tid in args.tasks:
+                args.task = tid
+                resume(args)
         elif args.command == "_worker":
             worker(args)
         elif args.command == "status":

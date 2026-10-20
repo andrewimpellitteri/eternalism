@@ -99,6 +99,15 @@ class WorkboardTests(unittest.TestCase):
         self.assertFalse((self.root / ".agent-runtime").exists())
         self.assertFalse((self.root / ".worktrees").exists())
 
+    def test_resume_dry_run_keeps_previous_result(self):
+        agents.transition("claim", "first", "glm-first")
+        (self.root / ".worktrees/first").mkdir(parents=True)
+        run = self.root / ".agent-runtime/runs/first"
+        run.mkdir(parents=True)
+        (run / "result.json").write_text("{}")
+        agents.resume(argparse.Namespace(task="first", dry_run=True, model=agents.DEFAULT_MODEL))
+        self.assertEqual(sorted(path.name for path in run.iterdir()), ["result.json"])
+
     def test_main_and_worktree_share_claim_store(self):
         def run_git(*args):
             return subprocess.run(["git", *args], cwd=self.root, check=True,
@@ -117,8 +126,19 @@ class WorkboardTests(unittest.TestCase):
 
 
 class ProjectContractTests(unittest.TestCase):
-    def test_live_task_graph_and_seed_contract(self):
-        self.assertEqual(len(agents.tasks()), 11)
+    def test_live_task_graph_is_valid(self):
+        # tasks() raises on duplicate IDs, bad IDs, unsafe owns, unknown or cyclic deps;
+        # compare against the raw file so a silently dropped row is also caught.
+        rows = [json.loads(line) for line in
+                (PROJECT / "WORKBOARD.jsonl").read_text().splitlines() if line.strip()]
+        book = agents.tasks()
+        self.assertEqual(set(book), {row["id"] for row in rows})
+        for row in rows:  # Every field the runner and brief renderer index directly.
+            for key in ("title", "priority", "blocked_by", "owns", "brief", "done_when"):
+                self.assertIn(key, row, f"{row['id']} lacks {key}")
+            self.assertTrue(row["owns"], f"{row['id']} owns nothing")
+
+    def test_seed_sources_contract(self):
         records = [json.loads(line) for line in
                    (PROJECT / "knowledge/seed-sources.jsonl").read_text().splitlines()]
         self.assertEqual(len(records), len({row["id"] for row in records}))
@@ -127,9 +147,25 @@ class ProjectContractTests(unittest.TestCase):
             self.assertIn(row["read_depth"], {"discovery", "abstract", "full-text",
                                              "reproduced", "code-audited"})
             self.assertTrue(row["limits"])
+
+    def test_worker_permission_contract(self):
         config = json.loads((PROJECT / "scripts/agents/opencode-agent.json").read_text())
         self.assertNotIn("mcp", config)  # Do not disable the user's search MCP.
         self.assertEqual(config["permission"]["webfetch"], "allow")
+
+    def test_validation_is_board_size_agnostic(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(agents, "ROOT", Path(temp)):
+            rows = [{"id": f"t{index}", "title": "t", "priority": 1,
+                     "blocked_by": [f"t{index - 1}"] if index else [], "owns": [f"out/t{index}/"],
+                     "brief": "b", "done_when": ["d"]} for index in range(5)]
+            (Path(temp) / "WORKBOARD.jsonl").write_text(
+                "".join(json.dumps(row) + "\n" for row in rows))
+            self.assertEqual(len(agents.tasks()), 5)
+            del rows[2]["owns"]  # The 2026-10-19 half-written row that killed six workers.
+            (Path(temp) / "WORKBOARD.jsonl").write_text(
+                "".join(json.dumps(row) + "\n" for row in rows))
+            with self.assertRaisesRegex(ValueError, "t2 lacks owns"):
+                agents.tasks()
 
 
 if __name__ == "__main__":
