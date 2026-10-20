@@ -2,9 +2,10 @@
 
 Status: 2026-10-20. Task `lean-certificate`. This audits the selected
 mathematical claims, their assumptions, and the correspondence between the
-paper statements, the proof draft, and the reproducible checks. It is not a
-Lean build; see `formal/INFEASIBILITY.md` for why a faithful Lean encoding is
-deferred and what the staged route would be.
+paper statements, the proof draft, and the reproducible checks. A light
+no-mathlib Lean kernel is included (`formal/lean/Certificate.lean`); the
+all-level theorem is not formalized. See `formal/INFEASIBILITY.md` for the
+staged route.
 
 No novelty or physical/ontological claim is made. The verified object is a
 measure-existence statement on a labelled event algebra.
@@ -64,6 +65,28 @@ The independent implementation (`experiments/baseline/reproduce.py`) and the
 fresh-audit script (`research/creative/proof-audit/verify_small.py`) agree.
 These are finite instances; they do not prove the all-level divergence.
 
+### Light Lean kernel
+
+`formal/lean/Certificate.lean` is a single self-contained Lean 4.35.0 file
+(core only, no mathlib, no imports). It proves by `decide`:
+
+- `causet_count_four`: `40` naturally labelled causets on four elements
+  (plus the counts `1, 2, 7` for smaller sizes);
+- `two_cap_five`: the doubly-principal five-element causets are exactly the
+  two-caps of the three-element causets (plus sizes 3 and 4);
+- `covers_three`: `L(cap G)=L(G)+M(G)+1` for every three-element `G` (plus
+  sizes 1 and 2), and the analogous incomparable-pair identities;
+- `amp_factor_two`: `V_4 = p·Σ_G p^{L(G)+M(G)} q^{h(G)}` at the integer
+  instance `p=2, q=3`.
+
+`#print axioms` reports that each named theorem depends on no axioms. There is
+no `sorry`, no `axiom` declaration, and no admitted goal. Build:
+`lean formal/lean/Certificate.lean`.
+
+This kernel corresponds to proof steps 1–3 at finite sizes. It does **not**
+formalize the sigma-algebra, complex measures, countable additivity, the Euler
+product, the all-level divergence, or the conditional covariant theorem.
+
 ### Assumptions and axioms (paper proof)
 
 - Classical logic and standard set theory; no large-cardinal or nonstandard
@@ -71,9 +94,10 @@ These are finite instances; they do not prove the all-level divergence.
 - Countable additivity and finite total variation of the complex measure.
 - Finite additivity on disjoint cylinders; finite inclusion–exclusion.
 - Strict triangle inequality; convergence/positivity of the Euler product.
-- No `sorry`, no assumed target theorem, no proof-assistant axiom. There is no
-  Lean proof at all, so the "transitive axiom audit" is of the paper proof, not
-  a compiled dependency closure.
+- No `sorry`, no assumed target theorem, no proof-assistant axiom. The light
+  Lean kernel's named theorems print "does not depend on any axioms"; the
+  all-level paper proof has no compiled dependency closure, so its transitive
+  axiom audit is paper-level.
 
 ## Claim 2 — conditional covariant post-factor theorem
 
@@ -162,9 +186,11 @@ all-level bound is a paper proof, independently audited in
 - **Paper proof:** audited step by step; no falsifier found in the read
   sources; the one wording gap is that "finite-valued" should be stated as a
   countably additive complex measure with finite total variation.
-- **Lean certificate:** not built. A faithful encoding is a staged project;
-  the infeasibility review and route are in `formal/INFEASIBILITY.md`. No
-  vacuous or axiomatized encoding was substituted.
+- **Lean certificate:** a light finite kernel is built and axiom-free
+  (Lean 4.35.0, no mathlib, no imports). The all-level analytic theorem and the
+  conditional covariant theorem are **not** formalized; the infeasibility
+  review and staged route are in `formal/INFEASIBILITY.md`. No vacuous or
+  axiomatized encoding was substituted.
 - **Meaning:** the result is a measure-existence classification only; no
   physical or ontological claim is certified.
 
