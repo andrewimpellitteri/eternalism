@@ -1,0 +1,6 @@
+{"path": "knowledge/causal-sets/sources.jsonl", "id": "cs-brightwell-2003-observables", "disposition": "replaced-by-reference", "reference_file": "knowledge/causal-sets/source-refs.jsonl"}
+{"path": "knowledge/causal-sets/sources.jsonl", "id": "cs-surya-zalel-2020", "disposition": "replaced-by-reference", "reference_file": "knowledge/causal-sets/source-refs.jsonl"}
+{"path": "knowledge/frontier/sources.jsonl", "id": "frontier-qrf-beyond-subsystems-2026", "disposition": "added-attributed-reading-history", "changed_fields": ["reading_history"]}
+{"path": "knowledge/frontier/sources.jsonl", "id": "frontier-relativistic-trinity-2020v1", "disposition": "added-attributed-reading-history", "changed_fields": ["reading_history"]}
+{"path": "knowledge/sector-conditioning/sources.jsonl", "id": "frontier-relativistic-trinity-2020v1", "disposition": "replaced-by-reference", "reference_file": "knowledge/sector-conditioning/source-refs.jsonl"}
+{"path": "knowledge/sector-conditioning/sources.jsonl", "id": "frontier-qrf-beyond-subsystems-2026", "disposition": "replaced-by-reference", "reference_file": "knowledge/sector-conditioning/source-refs.jsonl"}

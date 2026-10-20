@@ -1,0 +1,14 @@
+ERROR cs-brightwell-2003-observables  [knowledge/causal-sets/sources.jsonl:6, knowledge/csg-quantum/sources.jsonl:2]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR cs-brightwell-2003-observables  [knowledge/causal-sets/sources.jsonl:6, knowledge/csg-quantum/sources.jsonl:2]
+      copied record diverges in read_depth: discovery, full-text
+ERROR cs-surya-zalel-2020  [knowledge/causal-sets/sources.jsonl:7, knowledge/csg-quantum/sources.jsonl:1]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR cs-surya-zalel-2020  [knowledge/causal-sets/sources.jsonl:7, knowledge/csg-quantum/sources.jsonl:1]
+      copied record diverges in read_depth: discovery, full-text
+ERROR frontier-qrf-beyond-subsystems-2026  [knowledge/frontier/sources.jsonl:1, knowledge/sector-conditioning/sources.jsonl:5]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-relativistic-trinity-2020v1  [knowledge/frontier/sources.jsonl:7, knowledge/sector-conditioning/sources.jsonl:2]
+      duplicate id across files; keep one canonical source record and reference its id
+
+25 files, 340 records: 6 errors, 0 warnings, 0 info

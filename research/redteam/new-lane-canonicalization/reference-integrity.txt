@@ -1,0 +1,14 @@
+{
+  "reference_integrity_passed": true,
+  "errors": [],
+  "references": 67,
+  "alias_groups": 8,
+  "archives": [
+    "research/redteam/source-repairs/before-records.jsonl",
+    "research/redteam/new-lane-canonicalization/before-records.jsonl"
+  ],
+  "records": 336,
+  "unique_ids": 336,
+  "global_duplicate_ids": {},
+  "limits": "Identity, references and preserved provenance only; no source-entailment, theorem, reading, novelty or ontology certification. Manifest digests are integrity checks, not signatures."
+}

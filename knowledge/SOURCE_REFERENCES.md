@@ -19,8 +19,9 @@ Each reference records:
   reader's scope. The archive retains old errors as historical evidence, not as
   current competing metadata.
 
-The migration archive is
-`research/redteam/source-repairs/before-records.jsonl`; each row has `path`,
+The first migration archive is
+`research/redteam/source-repairs/before-records.jsonl`; the second is
+`research/redteam/new-lane-canonicalization/before-records.jsonl`. Each row has `path`,
 `line`, and the original `record`. Its manifest pins the Git revision, original
 file byte hashes and archive byte hash. Record hashes use UTF-8 JSON with sorted
 keys and `ensure_ascii=False`, with Python's default JSON separators. These are
@@ -46,17 +47,28 @@ the original member. In particular, McTaggart's pp. 458–461 passage check does
 not turn its discovery record into a whole-paper reading. Additional readings
 and proposals retain their own explicit scope and audit locator.
 
+The second migration retains frontier as the canonical home for the two sector
+re-reads, recording their new findings separately in the canonical records'
+reading histories. It retains the reviewed CSG-quantum primary records for
+`cs-brightwell-2003-observables` and `cs-surya-zalel-2020`, with the earlier
+causal-sets discovery readings preserved as references. This removes four new
+duplicate payloads without replacing either migration archive or any prior
+reference.
+
 Run:
 
 ```sh
-python3 research/redteam/source-repairs/check_references.py
+python3 research/redteam/new-lane-canonicalization/check_references.py
 python3 scripts/check_sources.py --strict knowledge research
 ```
 
-The first checks explicit canonical targets, archived provenance, coverage of
-removed copies, curated aliases, ID preservation and the unchanged shared seed.
-It separately reports global duplicate IDs; zero means reference integrity,
-not global source clearance. The second enforces the whole source-record
-contract. Concurrent lanes can introduce new duplicates outside this migration;
-they require their own coordinator decisions. Neither check establishes source
-entailment, theorem correctness, priority or temporal ontology.
+The first checks both archives, explicit canonical targets, prior-reading
+fields/hashes, coverage of removed copies, curated aliases, ID preservation and
+the unchanged shared seed. A reference can preserve a copy appearing in both
+archives only when its lane, ID and exact normalized payload hash agree. This
+checker also fails on global duplicate IDs. The second enforces the whole
+source-record contract. The first migration's snapshot-specific validator and
+saved test results remain historical evidence; it cannot validate new references
+to the second archive. Concurrent lanes can introduce further changes requiring
+new coordinator decisions. Neither check establishes source entailment, theorem
+correctness, priority or temporal ontology.

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "errors": [],
+  "migrated_ids": [
+    "cs-brightwell-2003-observables",
+    "cs-surya-zalel-2020"
+  ],
+  "canonical_records": 2,
+  "source_references": 2,
+  "snapshot_revision": "c480ff1ce0e9d4f01e5e8f5bdef4af86a7bc3326",
+  "snapshot_sha256": "c92673e7691b3464b3c87bab9a4344a33274e0a412bc3fa944d93a3d6c81b1f5"
+}

@@ -1,0 +1,7 @@
+DRY RUN first: zai-coding-plan/glm-5.3-flash; branch agent/first; owns knowledge/first/
+DRY RUN first: zai-coding-plan/glm-5.3-flash; worktree /var/folders/k0/46qrmwrj74gcdwzmbtsxlbpm0000gn/T/tmp17uoefou/.worktrees/first
+............
+----------------------------------------------------------------------
+Ran 12 tests in 1.609s
+
+OK

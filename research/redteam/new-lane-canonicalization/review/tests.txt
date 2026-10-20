@@ -1,0 +1,13 @@
+test_alias_does_not_upgrade_shallow_seed_member (test_check_references.DualArchiveFixture.test_alias_does_not_upgrade_shallow_seed_member) ... ok
+test_archive_digest_and_seed_hash_are_enforced (test_check_references.DualArchiveFixture.test_archive_digest_and_seed_hash_are_enforced) ... ok
+test_both_archives_and_repeated_identical_copy_pass (test_check_references.DualArchiveFixture.test_both_archives_and_repeated_identical_copy_pass) ... ok
+test_current_global_duplicate_fails_and_reports_paths (test_check_references.DualArchiveFixture.test_current_global_duplicate_fails_and_reports_paths) ... ok
+test_missing_alias_registry_and_alias_metadata_drift_fail (test_check_references.DualArchiveFixture.test_missing_alias_registry_and_alias_metadata_drift_fail) ... ok
+test_prior_depth_version_date_hash_revision_and_lane_are_bound (test_check_references.DualArchiveFixture.test_prior_depth_version_date_hash_revision_and_lane_are_bound) ... ok
+test_removed_copy_in_second_snapshot_requires_reference_even_if_id_survives (test_check_references.DualArchiveFixture.test_removed_copy_in_second_snapshot_requires_reference_even_if_id_survives) ... ok
+test_wrong_direct_target_fails (test_check_references.DualArchiveFixture.test_wrong_direct_target_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.089s
+
+OK

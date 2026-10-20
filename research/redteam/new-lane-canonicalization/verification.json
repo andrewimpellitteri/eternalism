@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "strict-after": {
+      "command": [
+        "python3",
+        "scripts/check_sources.py",
+        "--strict",
+        "knowledge",
+        "research"
+      ],
+      "exit_code": 0,
+      "tail": "\n25 files, 336 records: 0 errors, 0 warnings, 0 info\n"
+    },
+    "reference-integrity": {
+      "command": [
+        "python3",
+        "research/redteam/new-lane-canonicalization/check_references.py"
+      ],
+      "exit_code": 0,
+      "tail": "{\n  \"reference_integrity_passed\": true,\n  \"errors\": [],\n  \"references\": 67,\n  \"alias_groups\": 8,\n  \"archives\": [\n    \"research/redteam/source-repairs/before-records.jsonl\",\n    \"research/redteam/new-lane-canonicalization/before-records.jsonl\"\n  ],\n  \"records\": 336,\n  \"unique_ids\": 336,\n  \"global_duplicate_ids\": {},\n  \"limits\": \"Identity, references and preserved provenance only; no source-entailment, theorem, reading, novelty or ontology certification. Manifest digests are integrity checks, not signatures.\"\n}\n"
+    },
+    "csg-reference-integrity": {
+      "command": [
+        "python3",
+        "research/redteam/new-lane-canonicalization/csg/verify_refs.py"
+      ],
+      "exit_code": 0,
+      "tail": "{\n  \"passed\": true,\n  \"errors\": [],\n  \"migrated_ids\": [\n    \"cs-brightwell-2003-observables\",\n    \"cs-surya-zalel-2020\"\n  ],\n  \"canonical_records\": 2,\n  \"source_references\": 2,\n  \"snapshot_revision\": \"c480ff1ce0e9d4f01e5e8f5bdef4af86a7bc3326\",\n  \"snapshot_sha256\": \"c92673e7691b3464b3c87bab9a4344a33274e0a412bc3fa944d93a3d6c81b1f5\"\n}\n"
+    },
+    "coordination-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_agents.py"
+      ],
+      "exit_code": 0,
+      "tail": "DRY RUN first: zai-coding-plan/glm-5.3-flash; branch agent/first; owns knowledge/first/\nDRY RUN first: zai-coding-plan/glm-5.3-flash; worktree /var/folders/k0/46qrmwrj74gcdwzmbtsxlbpm0000gn/T/tmp17uoefou/.worktrees/first\n............\n----------------------------------------------------------------------\nRan 12 tests in 1.609s\n\nOK\n"
+    },
+    "board-validation": {
+      "command": [
+        "python3",
+        "scripts/agents.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "tail": "Validated 53 tasks, paths and acyclic dependencies.\n"
+    },
+    "reference-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/redteam/new-lane-canonicalization/review",
+        "-v"
+      ],
+      "exit_code": 0,
+      "summary": "8tests pass; review/tests.txt"
+    }
+  },
+  "dispositions": {
+    "replaced-by-reference": 4,
+    "added-attributed-reading-history": 2
+  },
+  "limitations": "Structural validation and recorded source identity only; original/new reader histories preserved. Source semantics and scientific novelty not certified."
+}
