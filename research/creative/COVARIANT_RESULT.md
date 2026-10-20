@@ -146,6 +146,34 @@ classical continuation for these events throughout \(U\), including its
 nonreal points, contradicting the theorem. This restricted-event corollary
 does not claim a new general principle about analytic families of measures.
 
+## What a rank-dependent tail factor would have to do
+
+We can weaken (T) by allowing a factor \(\kappa_n\) that depends on the
+number of elements in the principal past, while requiring it to be independent
+of shape at that rank:
+\[
+\nu(D_H)=\kappa_n N(H)A_p(H),\qquad |H|=n.
+\]
+This weaker rule no longer gives the iff classification above. It does have a
+necessary attenuation bound outside the real interval. The doubly-principal
+events at rank \(n\) are disjoint, and their absolute values sum exactly to
+\(|\kappa_n|V_n(p)\). Hence every finite complex measure extension must
+satisfy
+\[
+|\kappa_n|V_n(p)\leq\|\nu\|_{\mathrm{TV}},\qquad
+|\kappa_n|\leq
+\frac{\|\nu\|_{\mathrm{TV}}}{|p|c_s}
+\bigl(|p|+|1-p|\bigr)^{-(n-2)}.
+\]
+Here \(c_s=\prod_{j\ge1}(1-s^j)>0\) is defined above. In particular,
+\(\limsup_{n\to\infty}|\kappa_n|^{1/n}\leq (|p|+|1-p|)^{-1}\). A
+shape-independent correction that decays subexponentially is therefore ruled
+out. This is only necessary: it neither constructs an extension for an
+exponentially decaying factor nor handles shape-dependent factors. For those,
+the necessary condition is boundedness of the weighted sums
+\(\sum_{|H|=n}|\kappa_H|N(H)|A_p(H)|\), which also does not by itself
+prove countable additivity.
+
 Priority and physical scope remain separate: the possible contribution is the
 specific conditional extension obstruction, not classical post probabilities,
 general measure theory, a quantum decoherence functional, or temporal ontology.
