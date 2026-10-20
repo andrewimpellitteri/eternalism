@@ -1,153 +1,163 @@
-# baseline-reproduction — Dowker–Zalel finite-level variation on (doubly-)reduced poscau
+# extension-search — conditional covariant boundary for the selected contract
 
 Status: 2026-10-20. Claimed by `opencode-coordinator` because the GLM quota was
 exhausted. Selected target: the labelled doubly-principal complex-percolation
-classification, with RC-1 as fallback (`research/redteam/selection-gate/DECISION.md`).
-This task reproduces the **published baseline** that the candidate extends. It
-does not reproduce the candidate's all-level theorem, and it makes no novelty or
-ontological claim.
+classification (`research/creative/RESULT.md`), with RC-1 as fallback
+(`research/redteam/selection-gate/DECISION.md`). This task extends that contract
+to covariant post events, produces an explicit countermodel for a weakened
+factorization, and audits the changed assumptions. It claims no new theorem and
+no temporal ontology.
 
-## Named published result
+## Candidate theorem (conditional)
 
-Dowker & Zalel, *Observables for cyclic causal set cosmologies*,
-arXiv:2212.01149v2, Secs. III.3–III.4 and V, Eqs. (23)–(26), (30)–(31),
-Theorems 14–15, Figs. 6–7.
+The extension candidate is the **stationary post-factorization boundary**
+already derived in `research/creative/COVARIANT_RESULT.md` and
+`research/creative/covariant-boundary/BOUNDARY.md`, and audited in
+`research/creative/proof-audit/AUDIT.md`. This task consolidates it and gives a
+standalone witness; it does not present it as a new result.
 
-**Result reproduced.** For Complex Transitive Percolation
-`A_p(C) = p^L (1-p)^{binom(n,2)-R}` (Eq. 26), on the reduced poscau the level-`n`
-minimum variation `zeta_n^min` (Eq. 25), and on the doubly-reduced poscau the
-valency-greater-than-one minimum `zeta_bar_n^min` (Eq. 30), equal
-`|p| + |1-p| - 1` for `n = 2, 3, 4` in the regions coloured in Fig. 6/7.
+Setting: Dowker–Zalel 2212.01149v2, Sec. V, covariant post algebra `R_p`; a
+post is an element comparable with every other. For a principal finite order
+`H` (`n=|H|`), `D_H` is the event that the causet has infinitely many posts and
+has a post whose inclusive past is `H`; `N(H)` is the number of distinct
+naturally labelled representatives and `A_p(H)=p^{L}(1-p)^{binom(n,2)-R}`.
 
-**Explicit scope.** The figures are numerical and region-coloured. The paper's
-stronger suggestion — a level `m` above which the equality holds for every
-`p` — is not proved and is not reproduced here. The asymptotic improved
-criterion Eq. (31) is not evaluated; only its finite inputs (`S_n`, `S_bar_n`,
-`S_n^{v=1}`) are reported. The covariant algebra `R_p` and the candidate's
-doubly-principal extension theorem are outside this reproduction.
+**Assumptions.**
 
-## Implementation
+1. `nu` is a finite countably additive **complex** measure on `R_p`.
+2. `nu(P_infinity)=1` (cyclic normalization; `P_infinity` is the event of
+   infinitely many posts).
+3. **Common post factor (T)**: there is one finite complex `kappa`,
+   independent of `H` and `n`, with
+   `nu(D_H) = kappa N(H) A_p(H)` for **every principal** `H`.
 
-Files (standard library only, no dependencies):
+**Claim.** Under (1)–(3), such a measure exists **iff** `0 < p <= 1`.
 
-- `experiments/baseline/poscau.py` — natural-labelled causet enumeration,
-  cover/relation counts, amplitudes, down-set children, and the two tree
-  constructions.
-- `experiments/baseline/reproduce.py` — the reproduction and checks.
-- `experiments/baseline/test_poscau.py` — seven unit checks.
+This is conditional on (T). Covariance and the labelled cylinder values do not
+imply (T); (T) is an added renewal compatibility axiom. The theorem says nothing
+about measures that use different post amplitudes.
 
-Construction used:
+## Explicit countermodel: the Dirac history
 
-1. Causets are naturally labelled partial orders on `{0,…,n-1}` (`i ≺ j ⇒ i < j`),
-   enumerated by relation masks and filtered for transitivity. Counts:
-   `n=1…6` → `1, 2, 7, 40, 357, 4824`.
-2. A causet is principal iff it has a unique maximal element. A child is
-   obtained by adding element `n` above any down-set of the parent; the
-   principal child is the down-set of all elements. A child is doubly principal
-   iff it is principal and its parent is principal.
-3. Reduced poscau: a node's children are one singleton node per principal child
-   plus one merged node of all non-principal children. Doubly-reduced poscau:
-   the same with “doubly principal”.
-4. A node amplitude is the sum of the causet amplitudes in the node; the
-   transition amplitude is the ratio of child to parent node amplitudes. This
-   makes the sum over children exactly one whenever the parent amplitude is
-   nonzero, and is the semi-ring/tree additivity the paper relies on.
-5. `zeta(node) = sum_i |A(child_i)| / |A(node)| - 1`; for the doubly-reduced
-   tree the improved criterion uses the minimum over nodes of valency greater
-   than one, and `S_n`, `S_bar_n`, `S_n^{v=1}` as in Eq. (30).
+Weaken (3) to doubly-principal `H` only. The Dirac history
 
-## Results
+`H = (A_2 + {z_1}) + (A_2 + {z_2}) + ...`
 
-At `p = (1+i)/2`, `|p| + |1-p| - 1 = 0.414213562373…`:
+(`A_2` the two-element antichain, `+` ordinal sum) has infinitely many posts
+`z_j`, each comparable with every element. Its inclusive post past
+`H_j = B_1 + ... + B_j` is principal (unique maximum `z_j`), but `H_j` minus
+`z_j` has two maximal elements, so `H_j` is **not doubly principal**.
 
-| level | reduced `zeta_min` | doubly `zeta_bar_min` | nodes (red/dbl) |
-|---|---|---|---|
-| 2 | 0.414213562373 | 0.414213562373 | 2 / 2 |
-| 3 | 0.414213562373 | 0.414213562373 | 4 / 3 |
-| 4 | 0.414213562373 | 0.414213562373 | 11 / 5 |
+The Dirac measure `nu = delta_H` has `nu(P_infinity)=1` and `nu(D_H)=0` for
+every doubly-principal `H`. Hence the weakened rule
+`nu(D_H)=kappa N(H)A_p(H)` (doubly-principal `H` only) holds with `kappa=0` for
+**every** `p`. The weakened rule therefore has no `p`-classification, even with
+normalization. This is exactly why the conditional theorem assumes (T) for all
+principal `H`; see `countermodel.py`.
 
-This is the published finite-level value for `n = 2, 3, 4`. The reduced tree has
-no valency-one nodes at these levels; the doubly-reduced tree does, and its
-`zeta` is zero on them, which is exactly why the paper introduces the
-valency-greater-than-one criterion.
+The Dirac measure violates (T): at `p=0.5`, `H_1` and `H_2` both occur on the
+history (`nu(D_{H_j})=1`), but `N(H_1)A_p(H_1)=0.25` and
+`N(H_2)A_p(H_2)=0.015625`, so (T) would require `kappa=4` and `kappa=64`
+simultaneously.
 
-Grid (`p` real and imaginary from `-0.5` to `1.5` in steps of `0.1`, 441 points):
+## Known-result reduction and triviality checks
 
-- reduced: equality at `n=2`: 340/441, `n=3`: 362/441, `n=4`: 384/441;
-- doubly-reduced `zeta_bar`: `n=2`: 440/441, `n=3`: 303/441, `n=4`: 316/441.
+- **Reduction to the labelled theorem.** For `p in [0,1]`, the labelled
+  amplitudes are a probability pre-measure. At `p in (0,1)`, classical
+  transitive percolation restricted to `R_p` satisfies (T) with
+  `kappa=c(1-p)=prod_j(1-(1-p)^j)>0`. At `p=1` the history is the infinite
+  chain, `P_infinity=1`, `kappa=c(0)=1`.
+- **Why `p=0` is excluded here but not in the labelled theorem.** At `p=0`
+  the labelled measure is the infinite antichain; it has no posts, so
+  `nu(P_infinity)=0`. The conditional theorem's normalization premise fails at
+  `p=0`, so its scope is `0<p<=1`, not `[0,1]`. This is a scope difference, not
+  a contradiction.
+- **Normalization is load-bearing.** Without `nu(P_infinity)=1`, `kappa=0`
+  gives the zero measure for every `p`; normalization is what turns `kappa=0`
+  into a contradiction.
+- **All-principal coverage is load-bearing.** The Dirac history satisfies the
+  doubly-principal-only rule for every `p`; the all-principal family is needed
+  to exclude `kappa=0`.
+- **Shape-dependent factors are vacuous.** For any finite `nu` and any
+  principal `H` with `N(H)A_p(H) != 0`, set
+  `kappa_H = nu(D_H)/(N(H)A_p(H))`. The factorized form holds by definition.
+  A shape-dependent rule therefore has no predictive content; only shape-blind
+  (common or rank-only) rules can constrain `p`.
+- **Rank-only factors: necessary bound, no classification.** If
+  `nu(D_H)=kappa_n N(H)A_p(H)`, the same-rank disjoint events give
+  `|kappa_n|V_n <= ||nu||_TV`. Since
+  `V_n >= |p|(|p|+|1-p|)^{n-2} c_s` diverges for `p notin [0,1]`, `kappa_n`
+  must decay at least exponentially:
+  `limsup |kappa_n|^{1/n} <= (|p|+|1-p|)^{-1}`. This is necessary only. An
+  exponentially decaying `kappa_n` is not excluded, and no consistent
+  rank-dependent measure is constructed. The classification is open.
+- **Finite level vs all-level.** The finite values `V_5,V_6` illustrate the
+  bound; they do not establish divergence. Divergence is the analytic two-cap
+  estimate, not a finite search.
 
-Mismatches concentrate outside the positive-probability region and in parts of
-the complex plane; the paper's figures colour exactly such regions. The grid is
-coarse and is not a proof of the coloured boundary.
+## Philosophical bridge-premise audit
 
-Improved-criterion inputs at `p=(1+i)/2`:
+- `P_infinity`, `D_H`, and the post events are **measure-theoretic events in a
+  causal-set model**, not operational observer records. Treating them as
+  observables requires a separate bridge premise; this task does not supply it.
+- Covariance is a **kinematic** invariance of the event algebra. The post factor
+  (T) is a **dynamical renewal** compatibility condition; covariance alone does
+  not imply it. The Dirac countermodel is precisely a covariant measure that
+  fails (T).
+- The theorem constrains one scalar complex-measure framework on one event
+  algebra. It does not imply a new quantum measure, a decoherence functional, a
+  physical dynamics, or an empirical prediction.
+- No conclusion follows about temporal ontology, objective passage, determinism,
+  causal order, clock time, or the thermodynamic arrow. Eternalism/presentism
+  are not selected by a measure-existence result.
 
-| tree | n | `zeta_bar_min` | `S_n` | `S_bar_n` | `S_n^{v=1}` | nodes |
-|---|---|---|---|---|---|---|
-| reduced | 2 | 0.414214 | 1.414214 | 1.414214 | 0 | 2 |
-| reduced | 3 | 0.414214 | 2.144123 | 2.144123 | 0 | 4 |
-| reduced | 4 | 0.414214 | 3.606013 | 3.606013 | 0 | 11 |
-| doubly | 2 | 0.414214 | 1.414214 | 0.707107 | 0.707107 | 2 |
-| doubly | 3 | 0.414214 | 1.707107 | 1.207107 | 0.500000 | 3 |
-| doubly | 4 | 0.414214 | 2.358495 | 2.004941 | 0.353553 | 5 |
+## Search bounds and negative results
 
-The nonzero `S_n^{v=1}` on the doubly-reduced tree is the term Dowker–Zalel
-leave to future work.
+Changed assumptions examined:
 
-**Separate candidate check.** The selected target's finite certificate at
-`p=(1+i)/2` is reproduced exactly in `Q(sqrt 2)`, independently of
-`research/creative/proof-audit/verify_small.py`:
+| Change | Result |
+|---|---|
+| Doubly-principal-only factor | **Countermodel** (Dirac history); no `p`-classification. |
+| All-principal common factor + normalization | Conditional theorem `0<p<=1` (existing, audited). |
+| Rank-only factor `kappa_n` | Necessary exponential attenuation; no construction; open. |
+| Shape-dependent factor `kappa_H` | Vacuous (any measure can be written this way). |
+| Drop normalization `nu(P_infinity)=1` | Zero measure always satisfies; no classification. |
+| Vector/Banach-valued measure | Proof's total-variation step does not transfer; no construction or counterexample; open scope boundary. |
+| Larger labelled algebra | Labelled theorem already excludes it by restriction to doubly-principal cylinders. |
 
-- `V_5 = 3/4 + 3 sqrt(2)/16` (7 doubly-principal causets),
-- `V_6 = 31/32 + 55 sqrt(2)/64` (40 doubly-principal causets).
+Search bounds: this task did not run a new literature search. The bounded
+priority search for the conditional result is `research/creative/priority-audit/POST_TAIL_PRIORITY.md`;
+no matching theorem was located there, but global priority remains open. The
+rank-dependent and vector-valued boundaries were not searched in the literature.
 
-This checks the candidate's finite arithmetic; it does not reproduce its
-all-level divergence proof.
+## Files and commands
 
-## Independent analytic and known-limit checks
-
-- **Additivity:** for every causet at levels 1–4 (50 causets), the sum of child
-  amplitudes equals the parent amplitude to `0.000e+00` (floating point). This
-  is the tree/semi-ring consistency the transition-ratio construction relies on.
-- **Real probability limit:** at `p = 0.5`, every `zeta` on both trees is `0`
-  (max `|zeta| = 0`), as it must be for a positive probability walk.
-- **Level-2 analytic value:** the reduced `zeta` minimum and the doubly
-  `zeta_bar` minimum both equal `|p|+|q|-1` at `p=(1+i)/2`; the non-principal
-  antichain node is strictly higher, which is why the paper compares minima.
-- **Causet counts:** `1, 2, 7, 40, 357, 4824` for `n=1…6`, matching the
-  natural-labelled enumeration used by the projects' earlier 40-block
-  certificate.
-- **Unit tests:** `python3 -m unittest -v test_poscau` — 7 tests, all pass.
-
-## Discrepancies and limits
-
-- `zeta` is computed in floating-point complex arithmetic. The exact
-  `Q(sqrt 2)` arithmetic is used only for the `V_5`/`V_6` certificate. Equality
-  assertions use `1e-9`; the reported values agree to `1e-12`.
-- The published figures' exact coloured regions were not digitized. The grid
-  reports mismatch counts and examples; it does not claim the full region.
-- Only `n = 2, 3, 4` are computed, matching the published figures. The all-level
-  suggestion and Eq. (31) asymptotics are not checked.
-- The transition-amplitude-equals-ratio convention is not spelled out in the
-  paper in one sentence; it follows from the tree/semi-ring construction and is
-  validated by the additivity check and by matching the published minima.
-- The read text is the arXiv HTML v2; the PDF/published version was not
-  compared. No external dependency or install was used.
-- This is a reproduction of a published numerical criterion, not a proof of the
-  candidate theorem, not an external acceptance, and not a priority claim.
-
-## Commands
+- `experiments/extensions/countermodel.py` — constructs the Dirac history,
+  checks every post past is principal but not doubly principal, and checks the
+  weakened/all-principal rules.
+- `experiments/extensions/boundary.py` — rank-factor bound, shape-factor
+  vacuity, endpoint reduction, normalization, vector-valued scope.
+- `experiments/baseline/` — the reproduced Dowker–Zalel criterion and the
+  `V_n` computation used here.
 
 ```sh
-cd experiments/baseline
-python3 -m unittest -v test_poscau
-python3 reproduce.py
+cd experiments/extensions
+python3 countermodel.py
+python3 boundary.py
 ```
 
-## Handoff
+Both run with the Python standard library only. `countermodel.py` checks
+`j=1..6`; `boundary.py` computes `V_5,V_6` from the baseline enumeration.
 
-`extension-search` can now work against a reproduced baseline. `lean-certificate`
-should target the candidate's two-cap bound and the doubly-principal
-classification, not this finite criterion. `adversarial-review` should check
-whether the candidate's estimate is a corollary of Dowker–Zalel's criterion and
-whether the finite certificate's `V_5`/`V_6` values are the right target.
+## Results and limits
+
+- The countermodel is explicit and reproducible; it defeats the weakened
+  factorization for every `p`, not a finite sample.
+- The conditional theorem is **not newly proved here**. Its proof, laminar
+  family argument, finite-cutoff corollaries and priority search are in the
+  creative-pass files and the fresh proof audit. This task independently
+  re-checks the countermodel and the boundary statements.
+- The rank-dependent and vector-valued cases remain open; they are recorded as
+  negative search results, not as claims of existence or nonexistence.
+- No external mathematical acceptance, publication priority, physical model or
+  ontological conclusion is claimed.
