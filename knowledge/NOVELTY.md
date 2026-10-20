@@ -123,3 +123,12 @@ Choose one narrow target after broad screening. Python explores and reproduces;
 Lean verifies selected statements after checking correspondence. Keep proposed
 results, failed searches, and accepted conclusions separately labeled throughout.
 
+## 2026-10-20 verdict
+
+The `novelty-verdict-selected` gate returned **PURSUE — narrow** for the
+labelled doubly-principal classification: it closes an explicitly stated open
+case (Zalel 2021 thesis Ch. 6; Dowker–Zalel 2023 Sec. V), but the estimate is
+elementary and the general criterion is not new. The rank-factor and
+vector-measure probes are the higher-upside bets. See
+`research/novelty-verdict/AGENT_REPORT.md`.
+

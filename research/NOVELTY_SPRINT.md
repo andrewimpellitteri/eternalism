@@ -108,3 +108,13 @@ Classify which weaker post-value rules still force `0<p≤1`: doubly-principal-o
 - `experiments/clock-three-picture/` — fallback model.
 - `research/adversarial-review/` — gate report.
 - `research/paper-novel/` — paper only if the claim survives.
+
+## Verdict update (2026-10-20)
+
+`novelty-verdict-selected` returned **PURSUE — narrow** for the labelled
+doubly-principal classification. It closes an explicitly stated open case
+(Zalel 2021 thesis Ch. 6; Dowker–Zalel 2023 Sec. V), but the two-cap estimate is
+elementary and the general measure-extension criterion is not new. Treat the
+labelled result as a short-note floor; the rank-factor and vector-measure probes
+remain the higher-upside bets. The full report is
+`research/novelty-verdict/AGENT_REPORT.md`.
