@@ -1,119 +1,101 @@
-# Vector-valued measures: bounded-variation boundary and a finite conditional-convergence witness
+# Covariant value rules: local renewal upgrades the doubly-principal-only rule
 
-Status: 2026-10-20. Probe `vector-measure-boundary`. This does **not** construct
-a countably additive vector-valued counterexample on the infinite
-doubly-principal algebra. It proves the bounded-variation no-go, gives an
-explicit finite-level `R^2`-valued measure with the prescribed norms, and
-isolates the infinite extension as the remaining problem.
+Status: 2026-10-20. Probe `covariant-value-rules`. This proves a boundary
+refinement of the conditional covariant theorem and an explicit `p=0`
+countermodel. It is not a new headline classification and does not select a
+temporal ontology.
 
-## Exact formulation
+## Setting
 
-The scalar theorem prescribes complex values `A_p(C)`. A vector-valued
-generalisation must say what replaces them. This probe uses the **norm-prescribed**
-version:
+`D_H` is the covariant event that a post has inclusive past `H` (principal,
+`n=|H|`); `N(H)` counts natural labelings; `A_p(H)=p^L(1-p)^{binom(n,2)-R}`;
+`ν` is a finite countably additive complex measure on `R_p` with
+`ν(P∞)=1`. `H⊕{x}` is the principal order obtained by adjoining a new universal
+maximum.
 
-> Find a countably additive `R^2`-valued measure `mu` on the labelled
-> doubly-principal cylinder sigma-algebra with
-> `||mu(cyl(C))|| = |A_p(C)|` for every cylinder `C`.
+## Theorem (local renewal + weakened rank rule)
 
-This is not a vector lift of the complex phase. If one instead fixes a vector
-`v` and demands `mu(cyl(C)) = A_p(C) v`, the problem reduces to the scalar one
-and the scalar no-go applies immediately. The norm-prescribed version is the
-non-trivial weakening in which conditional cancellation can occur.
+Assume `p≠0` and:
 
-## Theorem 1 — bounded-variation no-go
+**(A)** there are numbers `κ_n` such that for every **doubly-principal** `H` of
+size `n`, `ν(D_H)=κ_n N(H)A_p(H)`;
 
-Let `X` be a Banach space and `mu` a countably additive `X`-valued measure with
-finite total variation on the doubly-principal cylinder algebra. Then
-`mu(cyl(C))` cannot have `||mu(cyl(C))|| = |A_p(C)|` for `p∉[0,1]`.
+**(B)** local renewal: for every principal `H`,
+`ν(D_{H⊕{x}})=p ν(D_H)`.
 
-**Proof.** At level `k+2`, the doubly-principal cylinders are pairwise disjoint.
-Finite additivity gives
+Then `κ_n` is a constant `κ`, and `ν(D_H)=κ N(H)A_p(H)` for **every** principal
+`H`. Consequently, by the conditional all-principal theorem, `p∈(0,1]`.
 
-`Σ_{|C|=k+2, dp} ||mu(cyl(C))|| = V_{k+2}(p) ≥ |p|(|p|+|1-p|)^k c_s → ∞`,
+**Proof.** For principal `H` of size `n`, `J=H⊕{x}` is doubly principal
+(unique max; deleting it returns the principal `H`), with `N(J)=N(H)` and
+`A_p(J)=p A_p(H)`. By (A),
+`ν(D_J)=κ_{n+1}N(H)pA_p(H)`. By (B),
+`ν(D_H)=ν(D_J)/p=κ_{n+1}N(H)A_p(H)`. Thus the full formula holds for every
+principal `H`, with `κ_{n+1}`. If `H` is doubly principal, (A) also gives
+`ν(D_H)=κ_nN(H)A_p(H)`; comparing on a chain (where `N(H)A_p(H)=p^{n-1}≠0`)
+gives `κ_n=κ_{n+1}`. Hence `κ_n` is constant, and the all-principal theorem
+applies. ∎
 
-which contradicts finite total variation. The same argument rules out finite
-semivariation in finite dimensions, since total variation and semivariation are
-equivalent there. This is the scalar proof with `|mu(·)|` in place of `|mu(·)|`
-for a complex measure; it does not use the triangle inequality of the target
-space. ∎
+**Converse.** For `p∈(0,1]`, classical CTP restricted to `R_p` satisfies (A)
+and (B) with `κ=c(1-p)` (and `κ=1` at `p=1`).
 
-So the scalar no-go **does** extend to bounded-variation/semivariation vector
-measures. The open question is general countably additive vector measures,
-which may have infinite total variation.
+## The `p=0` boundary
 
-## Theorem 2 — finite-level norm-prescribed construction
+The division by `p` is essential. At `p=0`, the Dirac history
+`(A_2⊕{z_1})⊕(A_2⊕{z_2})⊕…` is a normalized covariant measure with no
+doubly-principal post past; the doubly-principal-only rule holds with
+`κ_n=0`, and local renewal holds trivially as `0=0·ν`. So (A)+(B) do **not**
+exclude `p=0`; the `p=0` exclusion in the all-principal theorem uses the
+all-principal factorization, not local renewal.
 
-For `p=(1+i)/2`, for every finite level `N` there is a finitely additive
-`R^2`-valued measure on the labelled cylinder algebra truncated at `N` with
-`||mu(cyl(C))|| = |A_p(C)|` for every cylinder.
+This is the precise boundary: local renewal upgrades the weakened rule to the
+full rule for every `p≠0`, but at `p=0` the Dirac measure escapes both.
 
-**Construction.** Start with `mu(root)=(1,0)`. At a node with parent vector `V`
-and children of norms `a_1,…,a_m`, the polygon inequality
-`|V| ∈ [max(0, 2 max a_i - Σ a_i), Σ a_i]` is exactly the condition that
-vectors of lengths `a_i` can sum to `V`; it holds because `A_p(parent)=Σ A_p(child)`
-and `|Σ A_p(child)|` lies in that interval. Choose the child vectors in `R^2` by
-the greedy polygon construction in `vector_measure.py` (take the longest child,
-pick the intermediate norm in the feasible interval, solve the triangle, and
-recurse). Finite additivity and the norm constraints hold by construction.
+## Rule table
 
-**Check.** At `p=(1+i)/2`, levels 1–5 (407 nodes):
+| Rule | Verdict |
+|---|---|
+| Doubly-principal-only, no local renewal | **No classification.** Dirac history with `κ=0` is normalized for every `p`; the weakened rule has no content. |
+| Doubly-principal-only + local renewal, `p≠0` | **Forces the all-principal common factor**, hence `p∈(0,1]`. |
+| Same, `p=0` | **Countermodel survives.** Dirac history is normalized and satisfies both rules with `κ_n=0`. |
+| All-principal common factor + normalization | `0<p≤1` (conditional theorem). |
+| Rank-only on all principal `H` | **Open.** Reduces to the convolution equation in `research/extensions/rank-factor/`; no construction or no-go. |
+| Shape-dependent factor | **Vacuous.** Any measure can be written as `κ_H N(H)A_p(H)` by division. |
+| Local renewal alone (no rank rule) | **Does not force rank-independence.** It only says `ν(D_H)/(N(H)A_p(H))` is constant along top-extension chains; shape-dependent assignments can satisfy it. |
+| Asymptotic/decaying rank factors | **Open** (same convolution problem). |
 
-- maximum norm error: `1.11e-16`;
-- maximum child-sum error: `6.21e-17`;
-- zero polygon failures;
-- level sums of norms: `1, 1.41421, 2.62132, 6.0481, 16.751` (diverging);
-- level vector sums: `(1,0), (1,0), (1,0), (1,0), (1,0)` (bounded).
+## Relation to the existing source
 
-This is a finite-level conditional-convergence witness: the norm series
-diverges while the vector series cancels. It shows that no finite-level
-total-variation argument can rule out a vector-valued extension.
+`research/creative/COVARIANT_RESULT.md` states that local renewal **together
+with rank-only on all principal H** forces `κ_{n+1}=κ_n`. The theorem above
+weakens the starting point: rank-only is assumed only on doubly-principal `H`,
+and local renewal extends it to all principal `H` for `p≠0`. The `p=0` Dirac
+exception is explicit. This is a boundary refinement, not a new headline
+classification.
 
-Reproduce: `python3 vector_measure.py`.
+## Checks
 
-## What remains open
+`check.py` verifies for `p=(1+i)/2` and principal `H` of sizes 1–4:
 
-The infinite countably additive extension is **not** constructed. A finitely
-additive vector measure on the clopen algebra of the compact path space extends
-to a countably additive vector measure if it is strongly additive (norm-continuous
-at `∅`) or if the associated vector martingale converges; neither is proved
-here. The path norms decay for `|p|,|q|<1`, but that controls individual
-cylinders, not the strong additivity of arbitrary countable partitions. This is
-the precise remaining problem:
+- `H⊕{x}` is principal and its restriction is `H` (hence doubly principal);
+- `A_p(H⊕{x})=p A_p(H)` (max error 0);
+- at `p=0`, the Dirac history's post pasts are principal but not doubly
+  principal; the weakened rule with `κ_n=0` and local renewal `0=0·ν` hold;
+  the Dirac measure is normalized.
 
-> Does the finite polygon construction admit a consistent infinite choice that
-> is strongly additive (or a bounded vector martingale density), and if so, what
-> is the resulting measure?
-
-A yes would be a genuine counterexample to the scalar-total-variation intuition;
-a no would be a stronger vector-measure no-go. The finite data do not decide it.
-
-## Known-result reduction and triviality checks
-
-- For a fixed direction `mu(C)=A_p(C)v`, the problem is scalar and the no-go
-  applies; the norm-prescribed construction is genuinely different.
-- For `p∈[0,1]`, the classical scalar probability measure is a special case of
-  the norm-prescribed construction (all vectors collinear); no new result.
-- For `p∉[0,1]`, the disjoint level norm sums diverge, so any bounded-variation
-  or finite-semivariation vector measure is excluded. The only possible
-  extension is a general countably additive vector measure with infinite
-  variation, exactly the case the finite witness explores.
-- The construction is non-unique; different polygon choices give different
-  finite-level measures. No physical or ontological interpretation is claimed.
+Run: `python3 check.py`.
 
 ## Verdict
 
-**Scope boundary, not a counterexample.** The scalar no-go is not about
-complexity as such: it is about finite total variation. It extends to
-bounded-variation/semivariation vector measures, but the norm-prescribed
-finite-level construction shows the total-variation hypothesis is doing real
-work. The infinite countably additive extension remains open. This is a
-publishable remark/section for the short note, not a headline result.
+**Boundary theorem + explicit `p=0` countermodel.** This is a real refinement of
+the conditional theorem: local renewal is exactly what upgrades the weakened
+doubly-principal rule for `p≠0`, and `p=0` is a genuine exception. It should be
+a short section in the short note, not a standalone headline. No physical or
+ontological claim follows; the rules are measure-theoretic compatibility axioms.
 
 ## Files
 
-- `research/extensions/vector-measure/vector_measure.py` — finite polygon
-  construction and checks.
-- `research/extensions/vector-measure/AGENT_REPORT.md` — this report.
+- `research/extensions/covariant-values/AGENT_REPORT.md` — this report.
+- `research/extensions/covariant-values/check.py` — finite checks.
 
 Standard library only; no installs; no board edits.
