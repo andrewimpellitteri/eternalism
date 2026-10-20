@@ -15,7 +15,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `kb-agent-methods` — Audit AI-assisted physics and design evidence-preserving synthesis | 9 | — | glm-kb-agent-methods |
 | done | `theory-map` — Synthesize a broad assumption and observable map without erasing disagreements | 9 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | glm-theory-map |
 | done | `novelty-audit` — Independently challenge proposed contributions against closest prior work | 10 | theory-map | luna-recovery-novelty-audit |
-| blocked | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit, rt-selection-decision-gate | — |
+| open | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit, rt-selection-decision-gate | — |
 | blocked | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | — |
 | blocked | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | — |
 | blocked | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | lean-certificate | — |
@@ -48,7 +48,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
 | done | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | claude-coordinator |
 | done | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | claude-coordinator |
-| open | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc, ctp-priority-audit, ctp-fresh-proof-audit, ctp-covariant-boundary | — |
+| done | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc, ctp-priority-audit, ctp-fresh-proof-audit, ctp-covariant-boundary | opencode-coordinator |
 | done | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
 | done | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
 | done | `creative-clock-memory` — Find an operational intervention boundary between clock memory and system memory | 10 | novelty-audit | luna-creative-memory |
