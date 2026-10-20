@@ -1,0 +1,90 @@
+{
+  "id": "pa-clifton-hogarth-1995",
+  "title": "The definability of objective becoming in Minkowski spacetime",
+  "authors": [
+    "Rob Clifton",
+    "Mark Hogarth"
+  ],
+  "url": "https://doi.org/10.1007/BF01089733",
+  "checked_on": "2026-10-20",
+  "read_depth": "full-text",
+  "kind": "primary-paper",
+  "version": "Published article: Synthese 103(3), pp. 355-387 (June 1995), DOI 10.1007/BF01089733. Read from the complete 33-page scan explicitly supplied by the user at /Users/andrew/Downloads/clifton_hogarth.pdf; SHA-256 1bcf93f94e5ff3252b154006b82c53e6462aa763e6d608525b630d100e8fa364. Scan journal pagination verified against printed page headers and bibliographic issue records.",
+  "section_locator": "Full article read. Definitions and implicit-definability/invariance: pp. 359-362. Worldline becoming, worldline transitivity, meshing and Lemma: pp. 362-364. Theorem 1 and Corollary 1: pp. 365-367. Worldline-dependent definability and Theorem 2/proof: pp. 370-375. Corollary 2 and distinguished-worldline limits, including Peacock/Muller: pp. 376-380. Implications and limits: pp. 381-387.",
+  "relevance": "Primary predecessor establishing a classification of absolute and worldline-dependent objective-becoming relations under explicit adequacy assumptions in time-oriented Minkowski spacetime. It substantially pre-empts a broad novelty claim for such a classification.",
+  "assumptions": {
+    "shared_conventions": "The model is 3+1 Minkowski spacetime (R^4, eta) with a chosen objective time orientation T. The authors explicitly take I± and J± reflexively for convenience, including I−; thus I− here is reflexive closure of strict chronological past. For an absolute relation B, objective becoming requires implicit definability from the time-oriented metric (equivalently invariance under all time-orientation-preserving metric automorphisms) and transitivity.",
+    "theorem_1": "Absolute/worldline-independent B additionally satisfies chronological becoming I− ⊆ B. The theorem does not assume causal becoming J− ⊆ B and states no separate non-universality condition.",
+    "lemma_and_theorem_2": "The family {B_λ} ranges over all inextendible timelike worldlines, not a selected actual observer family. Worldline becoming requires the reflexive chronological past of b along λ to be included in B_λ(b). Worldline transitivity quantifies across arbitrary λ and μ: a∈B_λ(b) and b∈B_μ(c) imply a∈B_μ(c). Meshing defines absolute B by agreement of all λ through b. For Theorem 2, each B_λ is implicitly definable from the time-oriented metric plus that corresponding λ, invariant under its λ-preserving automorphisms; no other privileged lines or initial global surface are included."
+  },
+  "conclusion": "Theorem 1: under implicit time-oriented metric definability, transitivity, and I− ⊆ B, B is exactly I−, J−, or universal U. The Lemma derives I− ⊆ B from worldline becoming plus cross-worldline transitivity and meshing; it does not derive null-cone inclusion. Theorem 2: under worldline becoming, cross-worldline transitivity, and each-line implicit definability from the time-oriented metric plus that line, uniformly every B_λ is the restriction of I−, or uniformly every B_λ is the restriction of J−, or uniformly every B_λ is the restriction of U. Distinguished sets of worldlines/initial surfaces fall outside the theorem’s stated structure. The article does not establish an ontology from SR or advocate objective becoming.",
+  "proof_status": "Full statements and proofs read from the supplied scan, including Lemma, Theorems 1 and 2 and Corollaries 1 and 2. Proof correspondence was read; the group-generation argument used in Theorem 2 was not independently reproduced or formally verified. Not a proof audit of the related Stein, Malament, or Callender results.",
+  "dependencies": [
+    "found-stein-1991",
+    "found-putnam",
+    "found-rietdijk",
+    "found-maxwell-1993",
+    "found-malament-1977"
+  ],
+  "related_source_ids": [
+    "pa-savitt-2011-cdlp",
+    "pa-saunders-2000",
+    "pa-callender-2000",
+    "pa-myrvold-2003",
+    "pa-thyssen-2023-rpm"
+  ],
+  "open_questions": "Callender primary text was not read, so the exact relation between his No Go theorem and these alternatives remains unresolved. No independent check for publisher errata or comparison against a separate publisher copy was made. Any formalization would require a correspondence and proof audit; novelty, physical relevance, and ontology require separate review.",
+  "limits": "Complete user-supplied published scan; PDF page count and SHA-256 verified, and theorem/proof-critical page images visually checked. Theorem proof read but not independently reproduced. The earlier record’s abstract-only read is preserved verbatim in reading_history and must not be treated as a full-text read.",
+  "reading_history": [
+    {
+      "read_depth": "abstract",
+      "checked_on": "2026-10-20",
+      "provenance": "Earlier lane record before the user supplied the complete scan. Preserved exactly as recorded at that time; it describes Springer abstract plus page-one preview only and explicitly says pp. 357-387 were not read.",
+      "record_before_primary_read": {
+        "id": "pa-clifton-hogarth-1995",
+        "title": "The definability of objective becoming in Minkowski spacetime",
+        "authors": [
+          "Rob Clifton",
+          "Mark Hogarth"
+        ],
+        "url": "https://doi.org/10.1007/BF01089733",
+        "text_url": "https://page-one.springer.com/pdf/preview/10.1007/BF01089733",
+        "checked_on": "2026-10-20",
+        "read_depth": "abstract",
+        "kind": "primary-paper",
+        "version": "Synthese 103(3), pp. 355-387, 1995 (Kluwer); DOI 10.1007/BF01089733. Read: Springer landing-page abstract (verbatim) and the publisher's free page-one preview PDF covering pp. 355-356 only (sha256 be00fa93...89a4). Pages 357-387, including the Lemma, Theorem 1, Theorem 2, Corollary 1 and all proofs, NOT read.",
+        "section_locator": "p.355 abstract and Sec. 1 Introduction opening; p.356 (RPM premises shared with Stein; worldline-dependent becoming motivation). Theorem/lemma locators (pp.362-365, 371-372) are known only from Savitt's preprint (pa-savitt-2011-cdlp) and are secondary.",
+        "relevance": "Closest predecessor for RC-2 deliverable (1): a uniqueness/classification theorem for transitive, metrically definable becoming relations in time-oriented Minkowski spacetime, extended to worldline-dependent relations.",
+        "assumptions": "As read on pp.355-356 only: becoming relation must be transitive and characterizable in terms of time-oriented metrical relations ('time-oriented', 'transitive', 'metrical relations' are each motivated on p.356). Secondary (Savitt): chronological becoming I-(x) subset of B(x); worldline becoming; worldline transitivity; meshing; reflexivity stipulated for convenience; implicit definability from time-oriented metrical relations (plus the worldline for Thm 2).",
+        "conclusion": "Authors' claim (abstract, verbatim): 'Stein's uniqueness proof can be extended in a natural way to cover this more general kind of becoming, provided one does not enrich standard Minkowski spacetime by privileging certain sets of worldlines over others in an unwarranted manner.' Secondary statement of Thm 1 and Thm 2 (Savitt): only past chronological connectibility, past causal connectibility, or the universal relation.",
+        "proof_status": "Proofs not read. Theorem statements known only through Savitt (2011 preprint) paraphrase-quotation; publication status: peer-reviewed journal article; correctness not audited here.",
+        "dependencies": [
+          "found-stein-1991",
+          "found-putnam",
+          "found-rietdijk",
+          "found-maxwell-1993",
+          "found-malament-1977"
+        ],
+        "related_source_ids": [
+          "pa-savitt-2011-cdlp",
+          "pa-saunders-2000",
+          "pa-callender-2000",
+          "pa-myrvold-2003",
+          "pa-thyssen-2023-rpm"
+        ],
+        "open_questions": "Exact wording of Lemma (p.364), Theorem 1 (p.365), Theorem 2 (pp.371-72), Corollary 1(B); whether the paper shows by countermodel that each condition is needed (e.g. Peacock 1992 and Muller 1992 relations as violators of worldline transitivity); dimension assumptions; whether null-cone inclusion is assumed or derived.",
+        "limits": "Paywalled. Routes tried 2026-10-20: doi.org -> link.springer.com (bot challenge for curl; abstract only after cookie redirect; PDF link redirects to paywalled landing page, USD 39.95); OpenAlex (is_oa false, oa_status closed, any_repository_has_fulltext false); Semantic Scholar API (openAccessPdf status CLOSED, abstract elided); Unpaywall not queried (requires a real e-mail; OpenAlex OA status derives from it); PhilPapers/PhilArchive rec CLITRO/CLITDO (Cloudflare 403); Internet Archive Scholar (no hit); JSTOR (bot challenge). No author-repository copy found. Only pp.355-356 legitimately readable. Theorem statements here are SECONDARY (via Savitt) and must not be cited as read."
+      }
+    },
+    {
+      "read_depth": "full-text",
+      "checked_on": "2026-10-20",
+      "provenance": "New primary reading by codex-clifton-primary from the complete user-supplied 33-page scan; SHA-256 1bcf93f94e5ff3252b154006b82c53e6462aa763e6d608525b630d100e8fa364. Full argument and references read, theorem/proof-critical images visually checked. See knowledge/audits/clifton-hogarth/AGENT_REPORT.md."
+    }
+  ],
+  "read_copy": {
+    "local_path": "/Users/andrew/Downloads/clifton_hogarth.pdf",
+    "sha256": "1bcf93f94e5ff3252b154006b82c53e6462aa763e6d608525b630d100e8fa364",
+    "access": "User supplied local complete scan; earlier publisher preview route retained only in reading_history."
+  }
+}

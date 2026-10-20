@@ -1,0 +1,38 @@
+{
+  "input_file": {
+    "local_path": "/Users/andrew/Downloads/clifton_hogarth.pdf",
+    "sha256": "1bcf93f94e5ff3252b154006b82c53e6462aa763e6d608525b630d100e8fa364",
+    "access": "User supplied local complete scan; earlier publisher preview route retained only in reading_history."
+  },
+  "pdf_pages": 33,
+  "published_pages": "355–387",
+  "coordinator_visually_checked_pdf_pages": [
+    11,
+    17,
+    18,
+    22
+  ],
+  "coordinator_visually_checked_journal_pages": [
+    365,
+    371,
+    372,
+    376
+  ],
+  "full_read": "native primary reviewer; see AGENT_REPORT.md",
+  "independent_review": "review/AGENT_REPORT.md",
+  "checks": {
+    "proposed_record_strict": {
+      "command": [
+        "python3",
+        "scripts/check_sources.py",
+        "--strict",
+        "/tmp/eternalism-clifton-proposed.jsonl"
+      ],
+      "exit_code": 0,
+      "output": "\n1 files, 1 records: 0 errors, 0 warnings, 0 info\n"
+    },
+    "previous_abstract_record_preserved_exactly": true,
+    "input_hash_matches": true
+  },
+  "limits": "Schema check and bounded coordinator page-image review do not independently reproduce the proof. No primary PDF or complete extracted text is committed; active Claude source register remains unchanged."
+}
