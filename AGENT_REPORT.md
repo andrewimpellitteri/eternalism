@@ -1,143 +1,119 @@
-# Rank-only post factors: stationary kernel, recurrence, and pivot
+# Vector-valued measures: bounded-variation boundary and a finite conditional-convergence witness
 
-Status: 2026-10-20. Probe `rank-factor-boundary`. This does **not** settle
-whether a normalized rank-only measure exists for `p∉[0,1]`. It proves a new
-structural lemma, reduces the question to a scalar convolution equation, and
-records why the finite root search is inconclusive. Verdict: **PIVOT** — keep
-the lemma, do not claim a counterexample or a no-go.
+Status: 2026-10-20. Probe `vector-measure-boundary`. This does **not** construct
+a countably additive vector-valued counterexample on the infinite
+doubly-principal algebra. It proves the bounded-variation no-go, gives an
+explicit finite-level `R^2`-valued measure with the prescribed norms, and
+isolates the infinite extension as the remaining problem.
 
-## Result
+## Exact formulation
 
-### Theorem (stationary next-post kernel)
+The scalar theorem prescribes complex values `A_p(C)`. A vector-valued
+generalisation must say what replaces them. This probe uses the **norm-prescribed**
+version:
 
-Let `H` be a principal finite order of size `n` with unique maximum `p`, and let
-`A_p(C)=p^{L(C)}(1-p)^{binom(|C|,2)-R(C)}` on Complex Transitive Percolation.
-For `m>n`, let `J` range over principal orders of size `m` whose previous post
-past is `H` (equivalently, the next post past after `H`). Then
+> Find a countably additive `R^2`-valued measure `mu` on the labelled
+> doubly-principal cylinder sigma-algebra with
+> `||mu(cyl(C))|| = |A_p(C)|` for every cylinder `C`.
 
-`Σ_J N(J) A_p(J) = N(H) A_p(H) R_{m-n}`,
+This is not a vector lift of the complex phase. If one instead fixes a vector
+`v` and demands `mu(cyl(C)) = A_p(C) v`, the problem reduces to the scalar one
+and the scalar no-go applies immediately. The norm-prescribed version is the
+non-trivial weakening in which conditional cancellation can occur.
 
-where `R_1 = p`, and for `k≥2`
+## Theorem 1 — bounded-variation no-go
 
-`R_k = Σ_{T post-free, |T|=k-1} A_p(T) p^{M(T)+min(T)}`,
+Let `X` be a Banach space and `mu` a countably additive `X`-valued measure with
+finite total variation on the doubly-principal cylinder algebra. Then
+`mu(cyl(C))` cannot have `||mu(cyl(C))|| = |A_p(C)|` for `p∉[0,1]`.
 
-with `M(T)` the number of maximal elements and `min(T)` the number of minimal
-elements of `T`.
+**Proof.** At level `k+2`, the doubly-principal cylinders are pairwise disjoint.
+Finite additivity gives
 
-**Proof.** A next post past `J` is the ordinal sum `H ⊕ S`: the previous post
-`p` is below every element after it, and the next post `x` is above all of them.
-`S` is principal (unique maximum `x`) and has no post other than `x`; conversely
-`H⊕S` has previous post past `H` for any such `S`. Covers across the ordinal sum
-are exactly the covers from `p` to the minimal elements of `S`; there are no
-cross incomparable pairs. Hence `A_p(J)=A_p(H)A_p(S)p^{min(S)}` and
-`N(J)=N(H)N(S)`. Writing `S=T⊕{x}` with `T` post-free gives
-`A_p(S)=A_p(T)p^{M(T)}`, `min(S)=min(T)`, and the stated `R_k`. Summing over
-`S` of size `k` gives the factorization. ∎
+`Σ_{|C|=k+2, dp} ||mu(cyl(C))|| = V_{k+2}(p) ≥ |p|(|p|+|1-p|)^k c_s → ∞`,
 
-The finite check `check_stationarity.py` compares every `S(H,m)` from the
-next-post enumeration against `N(H)A(H)R_{m-n}` for `H` up to size 5 and `m≤6`:
-32 checks at `p=0.5` and at `p=(1+i)/2`, **max error 0.000e+00** (floating
-point).
+which contradicts finite total variation. The same argument rules out finite
+semivariation in finite dimensions, since total variation and semivariation are
+equivalent there. This is the scalar proof with `|mu(·)|` in place of `|mu(·)|`
+for a complex measure; it does not use the triangle inequality of the target
+space. ∎
 
-### Consequence for rank-only factors
+So the scalar no-go **does** extend to bounded-variation/semivariation vector
+measures. The open question is general countably additive vector measures,
+which may have infinite total variation.
 
-For a rank-only rule `ν(D_H)=κ_n N(H)A_p(H)`, the laminar conservation identity
-`ν(D_H)=Σ_{J next from H} ν(D_J)` becomes the scalar convolution
+## Theorem 2 — finite-level norm-prescribed construction
 
-`κ_n = Σ_{k≥1} R_k κ_{n+k}`.
+For `p=(1+i)/2`, for every finite level `N` there is a finitely additive
+`R^2`-valued measure on the labelled cylinder algebra truncated at `N` with
+`||mu(cyl(C))|| = |A_p(C)|` for every cylinder.
 
-A geometric ansatz `κ_n=λ^n` solves it iff
+**Construction.** Start with `mu(root)=(1,0)`. At a node with parent vector `V`
+and children of norms `a_1,…,a_m`, the polygon inequality
+`|V| ∈ [max(0, 2 max a_i - Σ a_i), Σ a_i]` is exactly the condition that
+vectors of lengths `a_i` can sum to `V`; it holds because `A_p(parent)=Σ A_p(child)`
+and `|Σ A_p(child)|` lies in that interval. Choose the child vectors in `R^2` by
+the greedy polygon construction in `vector_measure.py` (take the longest child,
+pick the intermediate norm in the feasible interval, solve the triangle, and
+recurse). Finite additivity and the norm constraints hold by construction.
 
-`1 = Σ_{k≥1} R_k λ^k`.
+**Check.** At `p=(1+i)/2`, levels 1–5 (407 nodes):
 
-The common-factor case is `λ=1`. For `p∈[0,1]` the series sums to 1
-(classical probability); for `p∉[0,1]` it generally diverges at `λ=1`, which is
-the existing no-go. A root `λ` with `|λ|<1/(|p|+|1-p|)` would give a decaying
-rank-only sequence; if the total mass `Σ_n κ_n U_n` converges and the
-laminar values extend to a countably additive measure, that would be a genuine
-counterexample to the necessity of a common factor.
+- maximum norm error: `1.11e-16`;
+- maximum child-sum error: `6.21e-17`;
+- zero polygon failures;
+- level sums of norms: `1, 1.41421, 2.62132, 6.0481, 16.751` (diverging);
+- level vector sums: `(1,0), (1,0), (1,0), (1,0), (1,0)` (bounded).
 
-## Numerical coefficients
+This is a finite-level conditional-convergence witness: the norm series
+diverges while the vector series cancels. It shows that no finite-level
+total-variation argument can rule out a vector-valued extension.
 
-At `p=0.5`:
+Reproduce: `python3 vector_measure.py`.
 
-| k | `R_k` | terms in `T` |
-|---|---|---|
-| 1 | 0.5 | 1 |
-| 2 | 0 | 0 |
-| 3 | 0.03125 | 1 |
-| 4 | 0.025390625 | 4 |
-| 5 | 0.02203369140625 | 28 |
-| 6 | 0.020195960998535156 | 283 |
-| 7 | 0.018873311579227448 | 4141 |
+## What remains open
 
-At `p=(1+i)/2`:
+The infinite countably additive extension is **not** constructed. A finitely
+additive vector measure on the clopen algebra of the compact path space extends
+to a countably additive vector measure if it is strongly additive (norm-continuous
+at `∅`) or if the associated vector martingale converges; neither is proved
+here. The path norms decay for `|p|,|q|<1`, but that controls individual
+cylinders, not the strong additivity of arbitrary countable partitions. This is
+the precise remaining problem:
 
-| k | `R_k` |
-|---|---|
-| 1 | `0.5+0.5i` |
-| 2 | `0` |
-| 3 | `-0.125+0.125i` |
-| 4 | `-0.21875+0.21875i` |
-| 5 | `-0.40625+0.4140625i` |
-| 6 | `-0.5888671875+0.94140625i` |
-| 7 | `-0.32391357421875+1.87969970703125i` |
+> Does the finite polygon construction admit a consistent infinite choice that
+> is strongly additive (or a bounded vector martingale density), and if so, what
+> is the resulting measure?
 
-The coefficients are computed by `kernel_sequence7.py` from post-free `T` up to
-size 6; `R_k` for larger `k` would need a post-free enumeration at size ≥7 or a
-generating function.
+A yes would be a genuine counterexample to the scalar-total-variation intuition;
+a no would be a stronger vector-measure no-go. The finite data do not decide it.
 
-## Root search and why it is inconclusive
+## Known-result reduction and triviality checks
 
-Solving the truncated polynomial `1-Σ_{k≤7}R_k z^k` gives, for
-`p=0.2+0.7i` (`1/(|p|+|1-p|)=0.558`), roots at `|z|≈0.486, 0.496, 0.521,
-0.540, 0.554`, i.e. apparently inside the convergence radius. For
-`p=(1+i)/2` (`1/t=0.707`) the smallest root is `≈0.750`, outside.
+- For a fixed direction `mu(C)=A_p(C)v`, the problem is scalar and the no-go
+  applies; the norm-prescribed construction is genuinely different.
+- For `p∈[0,1]`, the classical scalar probability measure is a special case of
+  the norm-prescribed construction (all vectors collinear); no new result.
+- For `p∉[0,1]`, the disjoint level norm sums diverge, so any bounded-variation
+  or finite-semivariation vector measure is excluded. The only possible
+  extension is a general countably additive vector measure with infinite
+  variation, exactly the case the finite witness explores.
+- The construction is non-unique; different polygon choices give different
+  finite-level measures. No physical or ontological interpretation is claimed.
 
-**This is not evidence for a counterexample.** The `R_k` grow roughly like
-`t^k`; the truncated polynomial is being evaluated beyond its reliable radius,
-and at a candidate `λ` the terms `R_k λ^k` are still growing at `k=7`
-(e.g. for `p=0.2+0.7i`, `R_7 λ^7≈0.5` at `λ=0.486`). A root of the truncated
-polynomial can move or disappear when the tail is included. No construction and
-no no-go follows.
+## Verdict
 
-What would settle it:
+**Scope boundary, not a counterexample.** The scalar no-go is not about
+complexity as such: it is about finite total variation. It extends to
+bounded-variation/semivariation vector measures, but the norm-prescribed
+finite-level construction shows the total-variation hypothesis is doing real
+work. The infinite countably additive extension remains open. This is a
+publishable remark/section for the short note, not a headline result.
 
-1. derive a generating function or rigorous bounds for `R(z)=Σ R_k z^k` and
-   evaluate it inside `|z|<1/t`;
-2. or prove that no root with the required decay exists (e.g. by a
-   maximum-modulus/positive-coefficient argument in the real case and an
-   analytic continuation in the complex case);
-3. or construct the measure directly on the laminar tree and verify countable
-   additivity and the total-mass normalization.
+## Files
 
-## Verdict: PIVOT
+- `research/extensions/vector-measure/vector_measure.py` — finite polygon
+  construction and checks.
+- `research/extensions/vector-measure/AGENT_REPORT.md` — this report.
 
-The probe produced a **new structural lemma** (stationarity of the next-post
-kernel and the scalar recurrence), not the desired classification. The
-rank-only existence question is now a hard analytic/generating-function problem
-beyond this two-week timebox. Preserve the lemma for the short note; pivot the
-main effort to `vector-measure-boundary`, which has a crisper route to a
-theorem or counterexample, and keep the labelled short note as the floor.
-
-Do **not** claim:
-- a rank-only counterexample;
-- a no-go for rank-only factors;
-- that the truncated roots are meaningful;
-- any physical or ontological consequence.
-
-## Files and checks
-
-- `probe.py` — next-post enumeration and finite `S(H,m)` kernel.
-- `kernel_sequence7.py` — `R_k` via post-free `T`, and truncated root search.
-- `check_stationarity.py` — 32 exact finite comparisons; max error 0.
-- Standard library only; no installs; no board edits.
-
-## Known-result reduction
-
-- For `p∈[0,1]`, `R(1)=1` and the common factor `κ=c(1-p)` is the classical
-  result; the recurrence reduces to the probability identity.
-- For `p∉[0,1]`, the common factor fails because `R(1)` diverges; the existing
-  no-go is recovered.
-- The rank-only case is new only in the weakened value rule; it does not change
-  the labelled theorem.
+Standard library only; no installs; no board edits.
