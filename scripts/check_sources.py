@@ -4,6 +4,7 @@ against arXiv and Crossref. Standard library only.
 
     python3 scripts/check_sources.py                      # offline, knowledge/
     python3 scripts/check_sources.py --online             # plus identifier checks
+    python3 scripts/check_sources.py --strict             # enforce the evidence contract
     python3 scripts/check_sources.py --online .worktrees/kb-causal-sets/knowledge
 
 Offline: JSON validity, required fields, read_depth vocabulary, full-text extra
@@ -12,8 +13,12 @@ resolve (via its DataCite DOI) and match the recorded title, a stated arXiv
 version must exist; every DOI must resolve in Crossref and
 match the title, and recorded pages/year must agree when both sides state them.
 
-A pass means the identifiers point at the recorded titles. It does not show that
+An online pass means the identifiers point at the recorded titles. It does not show that
 a source was read, that a locator is right, or that any extracted claim is true.
+Offline checks do not verify identifier/title correspondence. Strict mode makes
+full-text contract gaps and cross-file ID/depth conflicts errors; with --online,
+every mismatched identifier is an error, even if another identifier matches.
+It also retains the existing nonzero exit for any remaining warnings.
 """
 
 import argparse
@@ -38,6 +43,7 @@ DEPTHS = {"discovery", "abstract", "full-text", "reproduced", "code-audited"}
 FULL_TEXT_EXTRA = ["authors", "version", "assumptions", "conclusion", "proof_status",
                    "dependencies", "related_source_ids", "open_questions"]
 LOCATOR_KEYS = ["locator", "section_locator", "locators"]
+EMPTY_LIST_OK = {"dependencies", "related_source_ids", "open_questions"}
 
 ARXIV_RE = re.compile(
     r"arxiv\.org/(?:abs|html|pdf)/((?:\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})(?:v\d+)?)",
@@ -131,7 +137,31 @@ def load(files, rep):
     return records
 
 
-def check_offline(records, rep):
+def missing_full_text(r):
+    # An explicitly empty list records "none"; an absent field records no audit.
+    return [k for k in FULL_TEXT_EXTRA if not r.get(k)
+            and not (k in EMPTY_LIST_OK and r.get(k) == [])]
+
+
+def unpinned_arxiv_ids(r):
+    ids = arxiv_ids(r)
+    version = str(r.get("version", ""))
+    missing = []
+    for aid in ids:
+        if re.search(r"v\d+$", aid):
+            continue
+        # A version often follows the identifier directly (1234.56789v2),
+        # where a word boundary before v does not exist.
+        pinned = re.search(r"(?<![\w./])" + re.escape(aid) + r"v\d+\b", version)
+        # Preserve support for a standalone version on a single-source record.
+        if not pinned and len(ids) == 1:
+            pinned = re.search(r"\bv\d+\b", version)
+        if not pinned:
+            missing.append(aid)
+    return missing
+
+
+def check_offline(records, rep, strict=False):
     by_id = {}
     for where, n, r in records:
         rid = r.get("id", "-")
@@ -143,20 +173,22 @@ def check_offline(records, rep):
         if depth and depth not in DEPTHS:
             rep.add("ERROR", loc, rid, f"read_depth {depth!r} not in contract")
         if depth == "full-text":
-            gaps = [k for k in FULL_TEXT_EXTRA if not r.get(k)]
+            gaps = missing_full_text(r)
             if not any(r.get(k) for k in LOCATOR_KEYS):
                 gaps.append("locator")
             if gaps:
-                rep.add("WARN", loc, rid, "full-text record lacks: " + ", ".join(gaps))
+                rep.add("ERROR" if strict else "WARN", loc, rid,
+                        "full-text record lacks: " + ", ".join(gaps))
         if r.get("checked_on") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r["checked_on"])):
             rep.add("WARN", loc, rid, f"checked_on not ISO date: {r['checked_on']!r}")
         url = str(r.get("url", ""))
         if url and not url.startswith(("http://", "https://")):
             rep.add("WARN", loc, rid, f"url is not http(s): {url!r}")
-        if depth in ("full-text", "reproduced") and arxiv_ids(r):
-            if not any(re.search(r"v\d+$", a) for a in arxiv_ids(r)) and not re.search(
-                    r"\bv\d+\b", str(r.get("version", ""))):
-                rep.add("WARN", loc, rid, "arXiv full-text record has no exact version")
+        unpinned = unpinned_arxiv_ids(r) if depth in ("full-text", "reproduced") else []
+        if unpinned:
+            rep.add("ERROR" if strict else "WARN", loc, rid,
+                    "arXiv full-text record has no exact version: "
+                    + ", ".join(unpinned))
         by_id.setdefault(rid, []).append((loc, r))
     for rid, hits in by_id.items():
         files = {h[0].rsplit(":", 1)[0] for h in hits}
@@ -165,12 +197,15 @@ def check_offline(records, rep):
         titles = {norm_title(h[1].get("title", "")) for h in hits}
         depths = {h[1].get("read_depth") for h in hits}
         where = ", ".join(sorted(h[0] for h in hits))
+        if strict:
+            rep.add("ERROR", where, rid,
+                    "duplicate id across files; keep one canonical source record and reference its id")
         if len(titles) > 1:
             rep.add("ERROR", where, rid, "same id names different titles across files")
         elif len(depths) > 1:
-            rep.add("WARN", where, rid,
+            rep.add("ERROR" if strict else "WARN", where, rid,
                     "copied record diverges in read_depth: " + ", ".join(sorted(map(str, depths))))
-        else:
+        elif not strict:
             rep.add("INFO", where, rid, "record copied across files; reference the id instead")
 
 
@@ -275,7 +310,7 @@ class Net:
         return self.cache[key]
 
 
-def check_online(records, rep, refresh):
+def check_online(records, rep, refresh, strict=False):
     net = Net(refresh)
     all_arxiv = sorted({a for _, _, r in records for a in arxiv_ids(r)})
     try:
@@ -311,7 +346,7 @@ def check_online(records, rep, refresh):
                 if k in matched:
                     continue
                 generic = len(norm_title(ts[0]).split()) <= 3 or re.search(r"\brepl(y|ies)\b", ts[0], re.I)
-                if matched or generic:
+                if not strict and (matched or generic):
                     why = f"matches {', '.join(sorted(matched))}" if matched else "Crossref title is generic"
                     rep.add("WARN", loc, rid, f"{k} title is {ts[0]!r}; record title {why}")
                 else:
@@ -343,7 +378,8 @@ def main():
     ap.add_argument("--online", action="store_true", help="resolve arXiv IDs and DOIs")
     ap.add_argument("--refresh", action="store_true", help="ignore the lookup cache")
     ap.add_argument("--info", action="store_true", help="also print INFO lines")
-    ap.add_argument("--strict", action="store_true", help="exit nonzero on warnings")
+    ap.add_argument("--strict", action="store_true",
+                    help="enforce full-text, canonical-ID and identifier-match rules; fail on warnings")
     a = ap.parse_args()
 
     rep = Report()
@@ -352,10 +388,10 @@ def main():
         print("no sources.jsonl files found", file=sys.stderr)
         return 2
     records = load(files, rep)
-    check_offline(records, rep)
+    check_offline(records, rep, strict=a.strict)
     checked = ""
     if a.online:
-        n_ax, n_doi = check_online(records, rep, a.refresh)
+        n_ax, n_doi = check_online(records, rep, a.refresh, strict=a.strict)
         checked = f"; {n_ax} arXiv IDs and {n_doi} DOI lookups checked"
 
     order = {"ERROR": 0, "WARN": 1, "INFO": 2}

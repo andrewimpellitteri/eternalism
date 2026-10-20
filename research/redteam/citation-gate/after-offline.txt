@@ -1,0 +1,26 @@
+WARN  found-sep-malament  [knowledge/foundations/sources.jsonl:4]
+      full-text record lacks: authors, version
+WARN  frontier-records-time-asymmetry-1993  [knowledge/frontier/sources.jsonl:24]
+      arXiv full-text record has no exact version: gr-qc/9304027
+WARN  frontier-qrf-operational-meaning-2026  [knowledge/frontier/sources.jsonl:3, knowledge/ico-qrf/sources.jsonl:4]
+      copied record diverges in read_depth: abstract, full-text
+WARN  frontier-time-delocalization-2026  [knowledge/frontier/sources.jsonl:7, knowledge/ico-qrf/sources.jsonl:3]
+      copied record diverges in read_depth: abstract, full-text
+WARN  frontier-qrf-indefinite-order-2022v3  [knowledge/frontier/sources.jsonl:8, knowledge/ico-qrf/sources.jsonl:1]
+      copied record diverges in read_depth: discovery, full-text
+WARN  meth-cas-agents-2026  [knowledge/methods/sources.jsonl:1]
+      full-text record lacks: assumptions, conclusion
+WARN  meth-ax-prover  [knowledge/methods/sources.jsonl:10]
+      full-text record lacks: related_source_ids
+WARN  meth-tensor-agents-2026  [knowledge/methods/sources.jsonl:2]
+      full-text record lacks: assumptions, conclusion
+WARN  meth-sw-lean-2026  [knowledge/methods/sources.jsonl:4]
+      full-text record lacks: assumptions, conclusion, dependencies
+WARN  fol-tumulka-2006-grw-flash  [knowledge/preferred-foliation/sources.jsonl:1]
+      arXiv full-text record has no exact version: quant-ph/0406094
+WARN  fol-dgtz-2014-can-bohmian  [knowledge/preferred-foliation/sources.jsonl:18]
+      arXiv full-text record has no exact version: 1307.1714
+
+17 files, 274 records: 0 errors, 11 warnings, 1 info
+
+Exit status: 0

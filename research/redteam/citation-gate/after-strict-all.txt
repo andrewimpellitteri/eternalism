@@ -1,0 +1,152 @@
+ERROR form-physlib  [knowledge/formalization/sources.jsonl:1, research/theory-map/sources.jsonl:5]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-isabelle-schutz  [knowledge/formalization/sources.jsonl:2, research/theory-map/sources.jsonl:3]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-isabelle-special-relativity  [knowledge/formalization/sources.jsonl:3, research/theory-map/sources.jsonl:4]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-axqm  [knowledge/formalization/sources.jsonl:4, research/theory-map/sources.jsonl:2]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-physlib-mstate-code  [knowledge/formalization/sources.jsonl:6, research/theory-map/sources.jsonl:7]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-physlib-povm-code  [knowledge/formalization/sources.jsonl:7, research/theory-map/sources.jsonl:8]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-physlib-minkowski-code  [knowledge/formalization/sources.jsonl:8, research/theory-map/sources.jsonl:6]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR form-afp-schutz-outline  [knowledge/formalization/sources.jsonl:9, research/theory-map/sources.jsonl:1]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-stein-1968  [knowledge/foundations/sources.jsonl:1, research/theory-map/sources.jsonl:19]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-deasy-2015  [knowledge/foundations/sources.jsonl:10, research/theory-map/sources.jsonl:11]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-brading  [knowledge/foundations/sources.jsonl:11, research/theory-map/sources.jsonl:9]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-wuthrich-callender  [knowledge/foundations/sources.jsonl:12, research/theory-map/sources.jsonl:21]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-sarkar-stachel-1999  [knowledge/foundations/sources.jsonl:14, research/theory-map/sources.jsonl:17]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-stein-1991  [knowledge/foundations/sources.jsonl:2, research/theory-map/sources.jsonl:20]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-malament-1977  [knowledge/foundations/sources.jsonl:3, research/theory-map/sources.jsonl:12]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-sep-malament  [knowledge/foundations/sources.jsonl:4]
+      full-text record lacks: authors, version
+ERROR found-sep-malament  [knowledge/foundations/sources.jsonl:4, research/theory-map/sources.jsonl:18]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-rietdijk  [knowledge/foundations/sources.jsonl:5, research/theory-map/sources.jsonl:16]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-putnam  [knowledge/foundations/sources.jsonl:6, research/theory-map/sources.jsonl:15]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-maxwell-1993  [knowledge/foundations/sources.jsonl:7, research/theory-map/sources.jsonl:13]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-broad-1923  [knowledge/foundations/sources.jsonl:8, research/theory-map/sources.jsonl:10]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-prior-2009  [knowledge/foundations/sources.jsonl:9, research/theory-map/sources.jsonl:14]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-qrf-beyond-subsystems-2026  [knowledge/frontier/sources.jsonl:1, research/theory-map/sources.jsonl:30]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-relativistic-trinity-2020v1  [knowledge/frontier/sources.jsonl:10, research/theory-map/sources.jsonl:37]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-spacetime-qrf-2021  [knowledge/frontier/sources.jsonl:11, research/theory-map/sources.jsonl:39]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-page-wootters-measurements-2023  [knowledge/frontier/sources.jsonl:12, knowledge/ico-qrf/sources.jsonl:2, research/theory-map/sources.jsonl:29]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-smith-ahmadi-interacting-2019  [knowledge/frontier/sources.jsonl:13, research/theory-map/sources.jsonl:38]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-causal-growth-1999  [knowledge/frontier/sources.jsonl:14, research/theory-map/sources.jsonl:25]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-causal-becoming-2015  [knowledge/frontier/sources.jsonl:15, research/theory-map/sources.jsonl:23]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-thermal-noncommutative-2025  [knowledge/frontier/sources.jsonl:16, research/theory-map/sources.jsonl:41]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-emergent-spin-glass-2025  [knowledge/frontier/sources.jsonl:17, research/theory-map/sources.jsonl:27]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-thermal-time-original-1994  [knowledge/frontier/sources.jsonl:18, research/theory-map/sources.jsonl:43]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-thermal-clock-relational-2011  [knowledge/frontier/sources.jsonl:19, research/theory-map/sources.jsonl:40]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-causal-embedding-2026  [knowledge/frontier/sources.jsonl:2, research/theory-map/sources.jsonl:24]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-emergence-time-qg-2012  [knowledge/frontier/sources.jsonl:20, research/theory-map/sources.jsonl:26]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-thermal-time-concept-2024  [knowledge/frontier/sources.jsonl:21, research/theory-map/sources.jsonl:42]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-thermodynamics-clocks-2020  [knowledge/frontier/sources.jsonl:22, research/theory-map/sources.jsonl:44]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-records-histories-2016  [knowledge/frontier/sources.jsonl:23, research/theory-map/sources.jsonl:33]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-records-time-asymmetry-1993  [knowledge/frontier/sources.jsonl:24]
+      arXiv full-text record has no exact version: gr-qc/9304027
+ERROR frontier-records-time-asymmetry-1993  [knowledge/frontier/sources.jsonl:24, research/theory-map/sources.jsonl:34]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-qrf-operational-meaning-2026  [knowledge/frontier/sources.jsonl:3, knowledge/ico-qrf/sources.jsonl:4, research/theory-map/sources.jsonl:32]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-qrf-operational-meaning-2026  [knowledge/frontier/sources.jsonl:3, knowledge/ico-qrf/sources.jsonl:4, research/theory-map/sources.jsonl:32]
+      copied record diverges in read_depth: abstract, full-text
+ERROR frontier-canonical-clock-sectors-2026  [knowledge/frontier/sources.jsonl:4, research/theory-map/sources.jsonl:22]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-local-observer-unitarity-2026  [knowledge/frontier/sources.jsonl:5, research/theory-map/sources.jsonl:28]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-relational-markov-2026  [knowledge/frontier/sources.jsonl:6, research/theory-map/sources.jsonl:35]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-time-delocalization-2026  [knowledge/frontier/sources.jsonl:7, knowledge/ico-qrf/sources.jsonl:3, research/theory-map/sources.jsonl:45]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-time-delocalization-2026  [knowledge/frontier/sources.jsonl:7, knowledge/ico-qrf/sources.jsonl:3, research/theory-map/sources.jsonl:45]
+      copied record diverges in read_depth: abstract, full-text
+ERROR frontier-qrf-indefinite-order-2022v3  [knowledge/frontier/sources.jsonl:8, knowledge/ico-qrf/sources.jsonl:1, research/theory-map/sources.jsonl:31]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR frontier-qrf-indefinite-order-2022v3  [knowledge/frontier/sources.jsonl:8, knowledge/ico-qrf/sources.jsonl:1, research/theory-map/sources.jsonl:31]
+      copied record diverges in read_depth: discovery, full-text
+ERROR frontier-relational-trinity-2019v3  [knowledge/frontier/sources.jsonl:9, research/theory-map/sources.jsonl:36]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR meth-cas-agents-2026  [knowledge/methods/sources.jsonl:1]
+      full-text record lacks: assumptions, conclusion
+ERROR meth-ax-prover  [knowledge/methods/sources.jsonl:10]
+      full-text record lacks: related_source_ids
+ERROR meth-tensor-agents-2026  [knowledge/methods/sources.jsonl:2]
+      full-text record lacks: assumptions, conclusion
+ERROR meth-sw-lean-2026  [knowledge/methods/sources.jsonl:4]
+      full-text record lacks: assumptions, conclusion, dependencies
+ERROR meth-sw-lean-2026  [knowledge/methods/sources.jsonl:4, research/theory-map/sources.jsonl:47]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR meth-diagrammatica-2026  [knowledge/methods/sources.jsonl:8, research/theory-map/sources.jsonl:46]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR fol-tumulka-2006-grw-flash  [knowledge/preferred-foliation/sources.jsonl:1]
+      arXiv full-text record has no exact version: quant-ph/0406094
+ERROR fol-dgtz-2014-can-bohmian  [knowledge/preferred-foliation/sources.jsonl:18]
+      arXiv full-text record has no exact version: 1307.1714
+ERROR seed-einstein-1905  [knowledge/seed-sources.jsonl:1, research/theory-map/sources.jsonl:54]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-qrf-proper-times  [knowledge/seed-sources.jsonl:10, research/theory-map/sources.jsonl:59]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-bell-temporal-order  [knowledge/seed-sources.jsonl:11, research/theory-map/sources.jsonl:49]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-lorentz-data-2026  [knowledge/seed-sources.jsonl:13, research/theory-map/sources.jsonl:56]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-axiomatic-relativity  [knowledge/seed-sources.jsonl:2, research/theory-map/sources.jsonl:48]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-physlib  [knowledge/seed-sources.jsonl:3, research/theory-map/sources.jsonl:57]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-isabelle-relativity  [knowledge/seed-sources.jsonl:4, research/theory-map/sources.jsonl:55]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-besnard-simultaneity  [knowledge/seed-sources.jsonl:5, research/theory-map/sources.jsonl:50]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-brading-presentism  [knowledge/seed-sources.jsonl:6, research/theory-map/sources.jsonl:51]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-causal-growth  [knowledge/seed-sources.jsonl:7, research/theory-map/sources.jsonl:53]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-causal-becoming  [knowledge/seed-sources.jsonl:8, research/theory-map/sources.jsonl:52]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR seed-problem-of-time  [knowledge/seed-sources.jsonl:9, research/theory-map/sources.jsonl:58]
+      duplicate id across files; keep one canonical source record and reference its id
+ERROR found-sep-malament  [research/theory-map/sources.jsonl:18]
+      full-text record lacks: authors, version
+ERROR frontier-records-time-asymmetry-1993  [research/theory-map/sources.jsonl:34]
+      arXiv full-text record has no exact version: gr-qc/9304027
+ERROR meth-diagrammatica-2026  [research/theory-map/sources.jsonl:46]
+      full-text record lacks: assumptions, conclusion, dependencies
+ERROR meth-sw-lean-2026  [research/theory-map/sources.jsonl:47]
+      full-text record lacks: assumptions, conclusion, dependencies
+
+21 files, 360 records: 74 errors, 0 warnings, 0 info
+
+Exit status: 1

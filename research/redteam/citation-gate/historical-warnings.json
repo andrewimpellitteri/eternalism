@@ -1,0 +1,224 @@
+[
+  {
+    "level": "WARN",
+    "where": "knowledge/aqft-locality/sources.jsonl:1",
+    "id": "aqft-haag-kastler-1964",
+    "message": "full-text record lacks: related_source_ids"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/arrow-cosmology/sources.jsonl:1",
+    "id": "arrow-goldstein-boltzmann-2001",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/axiomatic-relativity/sources.jsonl:1",
+    "id": "axrel-giulini-2001",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/axiomatic-relativity/sources.jsonl:2",
+    "id": "axrel-mamone-capria-2012",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/discriminators/sources.jsonl:7",
+    "id": "disc-mewes-clockcompare-sme-2018",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/foundations/sources.jsonl:2",
+    "id": "found-stein-1991",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/foundations/sources.jsonl:4",
+    "id": "found-sep-malament",
+    "message": "full-text record lacks: authors, version, related_source_ids"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/foundations/sources.jsonl:6",
+    "id": "found-putnam",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/foundations/sources.jsonl:7",
+    "id": "found-maxwell-1993",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/foundations/sources.jsonl:14",
+    "id": "found-sarkar-stachel-1999",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/frontier/sources.jsonl:18",
+    "id": "frontier-thermal-time-original-1994",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/frontier/sources.jsonl:24",
+    "id": "frontier-records-time-asymmetry-1993",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/ico-qrf/sources.jsonl:1",
+    "id": "frontier-qrf-indefinite-order-2022v3",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/ico-qrf/sources.jsonl:2",
+    "id": "frontier-page-wootters-measurements-2023",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/ico-qrf/sources.jsonl:4",
+    "id": "frontier-qrf-operational-meaning-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/ico-qrf/sources.jsonl:5",
+    "id": "ico-oreshkov-costa-brukner-2012",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:1",
+    "id": "meth-cas-agents-2026",
+    "message": "full-text record lacks: assumptions, conclusion"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:1",
+    "id": "meth-cas-agents-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:2",
+    "id": "meth-tensor-agents-2026",
+    "message": "full-text record lacks: assumptions, conclusion"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:2",
+    "id": "meth-tensor-agents-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:4",
+    "id": "meth-sw-lean-2026",
+    "message": "full-text record lacks: assumptions, conclusion, dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:4",
+    "id": "meth-sw-lean-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:5",
+    "id": "meth-axqm-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:6",
+    "id": "meth-language-agents-position-2026",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:6",
+    "id": "meth-language-agents-position-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:7",
+    "id": "meth-fermiacc-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:8",
+    "id": "meth-diagrammatica-2026",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:9",
+    "id": "meth-tpbench",
+    "message": "full-text record lacks: dependencies"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:9",
+    "id": "meth-tpbench",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:10",
+    "id": "meth-ax-prover",
+    "message": "full-text record lacks: related_source_ids"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/methods/sources.jsonl:10",
+    "id": "meth-ax-prover",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/preferred-foliation/sources.jsonl:1",
+    "id": "fol-tumulka-2006-grw-flash",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/preferred-foliation/sources.jsonl:18",
+    "id": "fol-dgtz-2014-can-bohmian",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/time-interpretations/sources.jsonl:19",
+    "id": "time-hartle-2005-now",
+    "message": "arXiv full-text record has no exact version"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/frontier/sources.jsonl:3, knowledge/ico-qrf/sources.jsonl:4",
+    "id": "frontier-qrf-operational-meaning-2026",
+    "message": "copied record diverges in read_depth: abstract, full-text"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/frontier/sources.jsonl:7, knowledge/ico-qrf/sources.jsonl:3",
+    "id": "frontier-time-delocalization-2026",
+    "message": "copied record diverges in read_depth: abstract, full-text"
+  },
+  {
+    "level": "WARN",
+    "where": "knowledge/frontier/sources.jsonl:8, knowledge/ico-qrf/sources.jsonl:1",
+    "id": "frontier-qrf-indefinite-order-2022v3",
+    "message": "copied record diverges in read_depth: discovery, full-text"
+  }
+]
