@@ -34,9 +34,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `kb-preferred-foliation` — Map theories that add a preferred foliation or relativistic collapse structure | 8 | — | glm-kb-preferred-foliation |
 | claimed | `kb-pw-critiques` — Collect critiques and defenses of the Page-Wootters construction | 8 | — | glm-kb-pw-critiques |
 | done | `kb-novelty-prepass-a` — Pre-pass search for prior work defeating candidate A, growing history versus completed history | 8 | — | luna-recovery-kb-novelty-prepass-a |
-| claimed | `article-working-draft` — Write an argument-driven LaTeX working article without claiming an unestablished result | 8 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | codex-article |
+| done | `article-working-draft` — Write an argument-driven LaTeX working article without claiming an unestablished result | 8 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | codex-article |
 | claimed | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
-| claimed | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
+| done | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
 | claimed | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
 | claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
 | done | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | claude-coordinator |
@@ -44,7 +44,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rt-citation-gate-hardening` — Harden check_sources.py so full-text contract violations fail, not warn | 9 | — | codex-citation-gate |
 | done | `rt-fulltext-claim-spotcheck` — Independently spot-check full-text claims and primary Stein/Malament sources | 10 | — | codex-fulltext-spotcheck |
 | blocked | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
-| open | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | — |
+| claimed | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | claude-coordinator |
 | done | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
 | done | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | claude-coordinator |
 | done | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | claude-coordinator |

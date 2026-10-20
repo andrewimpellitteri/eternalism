@@ -55,7 +55,19 @@ non-ideal clock POVM `E_τ = Σ_t f(t−τ)|t⟩⟨t|`. Then:
 - the propagator between readings is the unitary `U(τ₂−τ₁)`.
 
 So the map family is CP-divisible with no backflow, and it fails the semigroup
-law only because `Φ_0 = D ≠ id`. The script checks this exactly for N = 5, 8, 12
+law only because `Φ_0 = D ≠ id`.
+
+**Premise (added after `kb-clock-interactions`, merged in bc4b109):** this holds
+for a pure physical state on a single constraint surface. A stationary mixture
+over several total-energy sectors gives backflow even with an interaction that
+commutes with the clock. In Rijavec's model (2204.11740v3, Eq. 90 and footnote 21)
+the trace distance is `|cos(θ/2)|` with θ linear in t; the lane checked this
+numerically, and it is the lane's derivation, not Rijavec's claim. So the
+remaining case should also fix the universe state to one constraint surface.
+The lane also conjectures a mechanism for the interacting case: when
+`[H_int, H_C] ≠ 0`, the reading probabilities need not be uniform, so
+normalized conditioning becomes reading-dependent. The `Z_3` example should
+compute those probabilities first. The script checks this exactly for N = 5, 8, 12
 with four blurs. This kills the uncoupled, covariant version of the defeat
 search's proposed sub-case: there is no memory to classify. It is a finite check
 of one model plus a two-line derivation, and needs independent checking.
