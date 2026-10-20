@@ -38,12 +38,12 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
 | done | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
 | done | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
-| claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
+| done | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
 | done | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | claude-coordinator |
 | done | `rt-source-canonicalization` — Canonicalize duplicated source records and read-depth conflicts across lanes | 10 | — | codex-source-canonicalization |
 | done | `rt-citation-gate-hardening` — Harden check_sources.py so full-text contract violations fail, not warn | 9 | — | codex-citation-gate |
 | done | `rt-fulltext-claim-spotcheck` — Independently spot-check full-text claims and primary Stein/Malament sources | 10 | — | codex-fulltext-spotcheck |
-| blocked | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
+| open | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
 | done | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | claude-coordinator |
 | done | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
 | done | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | claude-coordinator |
@@ -56,10 +56,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ctp-fresh-proof-audit` — Try to falsify the extension theorem from a fresh derivation | 10 | creative-covariant-stopping | luna-ctp-proof |
 | done | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | luna-ctp-covariant |
 | done | `rt-source-repair-integration` — Apply audited source repairs and replace inherited source copies with references | 10 | rt-source-canonicalization, rt-fulltext-claim-spotcheck, rt-citation-gate-hardening | codex-source-repairs |
-| open | `rt-stein-printed-page-check` — Compare Stein 1991 printed theorem pages with the OCR and contextual premises | 9 | rt-fulltext-claim-spotcheck | — |
-| open | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | — |
+| done | `rt-stein-printed-page-check` — Compare Stein 1991 printed theorem pages with the OCR and contextual premises | 9 | rt-fulltext-claim-spotcheck | codex-stein-pages |
+| claimed | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | codex-admissibility |
 | done | `rt-clifton-hogarth-primary` — Read the user-supplied Clifton-Hogarth primary and resolve RC-2 secondary discrepancies | 10 | — | codex-clifton-primary |
-| open | `rt-new-lane-canonical-references` — Resolve inherited copies from the newly integrated sector and CSG lanes | 9 | rt-source-repair-integration, kb-sector-conditioning, kb-csg-quantum-boundary | — |
+| done | `rt-new-lane-canonical-references` — Resolve inherited copies from the newly integrated sector and CSG lanes | 9 | rt-source-repair-integration, kb-sector-conditioning, kb-csg-quantum-boundary | codex-new-lane-refs |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
