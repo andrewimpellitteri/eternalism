@@ -17,6 +17,22 @@ explicit assumptions and observables. Choose a narrow contribution only after
 an independent novelty audit. A literature collection is infrastructure, not
 evidence that a new result has been discovered.
 
+## Current phase: novelty sprint
+
+The first selection gate is complete: a primary target and a fallback are
+recorded in `research/redteam/selection-gate/`, and the baseline, extension,
+Lean kernel and certificate audit are accepted. The next phase is a bounded
+sprint for one genuinely new result:
+
+- [Novelty sprint](research/NOVELTY_SPRINT.md) — bets, gates, timeboxes and
+  kill criteria.
+- [Agentic philosophy playbook](research/agentic-philosophy/STATE_AND_PLAYBOOK.md)
+  — what agents can and cannot do, and the swarm design used here.
+
+No result is called new until the `novelty-verdict-selected` gate and an
+independent adversarial review say so.
+
+
 ## Agent workflow
 
 ```sh

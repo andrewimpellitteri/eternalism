@@ -18,8 +18,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit, rt-selection-decision-gate | opencode-coordinator |
 | done | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | opencode-coordinator |
 | done | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | opencode-coordinator |
-| open | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | lean-certificate | — |
-| blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review | — |
+| open | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | — |
+| blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
 | done | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
 | done | `kb-ico-qrf` — Compare indefinite causal order, process matrices and temporal quantum reference frames | 9 | — | glm-kb-ico-qrf |
@@ -32,7 +32,6 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `kb-axiomatic-relativity` — Extract the axiomatic and definability results behind simultaneity and relativity | 9 | — | glm-kb-axiomatic-relativity |
 | done | `kb-relational-markov-audit` — Audit the derivations of the 2026 relational-Markovianity and clock-conditioning paper | 8 | — | glm-kb-relational-markov-audit |
 | done | `kb-preferred-foliation` — Map theories that add a preferred foliation or relativistic collapse structure | 8 | — | glm-kb-preferred-foliation |
-| claimed | `kb-pw-critiques` — Collect critiques and defenses of the Page-Wootters construction | 8 | — | glm-kb-pw-critiques |
 | done | `kb-novelty-prepass-a` — Pre-pass search for prior work defeating candidate A, growing history versus completed history | 8 | — | luna-recovery-kb-novelty-prepass-a |
 | done | `article-working-draft` — Write an argument-driven LaTeX working article without claiming an unestablished result | 8 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | codex-article |
 | done | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
@@ -60,6 +59,13 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | codex-admissibility |
 | done | `rt-clifton-hogarth-primary` — Read the user-supplied Clifton-Hogarth primary and resolve RC-2 secondary discrepancies | 10 | — | codex-clifton-primary |
 | done | `rt-new-lane-canonical-references` — Resolve inherited copies from the newly integrated sector and CSG lanes | 9 | rt-source-repair-integration, kb-sector-conditioning, kb-csg-quantum-boundary | codex-new-lane-refs |
+| open | `novelty-verdict-selected` — Decide whether the selected complex-percolation result is actually new | 10 | baseline-reproduction, extension-search, lean-certificate | — |
+| blocked | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | — |
+| blocked | `vector-measure-boundary` — Test the no-go for Banach/Hilbert-valued measures | 9 | novelty-verdict-selected | — |
+| blocked | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | — |
+| blocked | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | — |
+| blocked | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | — |
+| blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
