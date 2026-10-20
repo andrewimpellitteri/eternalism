@@ -11,8 +11,11 @@ useful result; it marks that region of the grid as covered.
   a precise form, and does P make it true, false, or undecidable as stated?
 - **Transfer cell** `T1-Pxx-Pyy`: does a theorem, construction, or technique
   native to one framework answer a question in the other?
-- **Expansion cell** `S2-…-Oz-Mw`: a stage-1 survivor crossed with an ontology
-  package and a move type. It is generated only from cells that advanced.
+- **Adversary cell** `A-<cell>`: an independent kill attempt on an advanced
+  S1 or T1 cell. Verdicts are `kill`, `hold` or `survive`; copy the claim exactly.
+- **Expansion cell** `S2-<cell>-Oz`: a claim that survived its adversary crossed
+  with one ontology package (the move is already fixed by the claim). It is
+  terminal: no S2 record feeds another stage.
 
 ## Output: one JSON object per cell
 
@@ -22,8 +25,8 @@ assignment order. Every assigned cell gets a line, including killed ones.
 | Field | Content |
 |---|---|
 | `cell` | The assigned cell ID, exactly. |
-| `verdict` | `kill`, `hold`, or `advance`. |
-| `kill_reason` | When killed: `incoherent`, `trivial-by-definition`, `known`, `no-checkable-instance`, `ontology-leap`, or `out-of-scope`. Otherwise `null`. |
+| `verdict` | `kill`, `hold`, or `advance` (`survive` in place of `advance` for adversary cells). |
+| `kill_reason` | When killed: `incoherent`, `trivial-by-definition`, `known`, `refuted`, `no-checkable-instance`, `ontology-leap`, or `out-of-scope`. Otherwise `null`. |
 | `claim` | The strongest precise claim found: quantifiers, objects, and hypotheses stated. Write it even for a killed cell, so the kill can be audited. |
 | `move` | One of the move IDs in `axes.json` (`M1`–`M6`). |
 | `smallest_instance` | The smallest finite or explicit model in which the claim can be checked (Python, Lean, or by hand), or why none exists. |
@@ -37,8 +40,11 @@ assignment order. Every assigned cell gets a line, including killed ones.
 
 - **kill**: any kill reason applies. `known` names the predecessor that already
   states the claim. `trivial-by-definition` explains which definition makes it
-  hold. `ontology-leap` means the claim matters only through a bridge premise
-  that does all of the work.
+  hold. `refuted` puts a checked counterexample in `smallest_instance`.
+  `ontology-leap` means the ontological conclusion rests on a bridge premise
+  that is undeclared, circular, or identifies the target by stipulation. An
+  explicit, argued bridge is not a leap: judge its validity, motivation and
+  priority instead (see research/redteam/grid-verdict/CRITERIA.md).
 - **hold**: the claim is precise and not obviously known, but the defeat search
   or the smallest instance is incomplete. Say exactly what is missing.
 - **advance**: precise claim, smallest checkable instance, three predecessors

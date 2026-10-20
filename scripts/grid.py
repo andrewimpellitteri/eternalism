@@ -25,8 +25,8 @@ AXES = ROOT / "grid" / "axes.json"
 BOARD = ROOT / "WORKBOARD.jsonl"
 CELLS_RE = re.compile(r"^Cells: (.+)$", re.M)
 GRID_TASK_RE = re.compile(r"^grid-(s1|t1|adv|s2)-\d+$")
-KILL_REASONS = {"incoherent", "trivial-by-definition", "known", "no-checkable-instance",
-                "ontology-leap", "out-of-scope"}
+KILL_REASONS = {"incoherent", "trivial-by-definition", "known", "refuted",
+                "no-checkable-instance", "ontology-leap", "out-of-scope"}
 READ_DEPTHS = {"discovery", "abstract", "full-text", "reproduced", "code-audited"}
 
 S1_BRIEF = ("Pressure cells. For each cell, take the bridge premise and ask what it "

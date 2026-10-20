@@ -41,6 +41,6 @@ CONTRACT.md gaps G1 and G2 are fixed.**
 
 - [x] Gate fixes and regression tests (`grid-regression-tests`, 9d821f3)
 - [x] Independent design review (`grid-adversarial-design`)
-- [ ] CONTRACT.md amended for G1 (`refuted`) and G2 (`ontology-leap`)
+- [x] CONTRACT.md amended for G1 (`refuted`), G2 (`ontology-leap`), G5 and S2 naming (coordinator, 2026-10-20)
 - [ ] Pilot rows chosen from accepted lanes
 - [ ] Provider quota checked before launch

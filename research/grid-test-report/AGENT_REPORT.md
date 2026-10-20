@@ -74,3 +74,11 @@ witness vs. universal claim, completed paths vs. determinism) verify only their
 finite witnesses in the stated domain. The defended-bridge and unargued-leap
 dispositions are proposals for independent human review. No test certifies
 entailment, priority, novelty or metaphysical truth.
+
+## Update after rt-grid-kill-criteria (2026-10-20)
+
+Choices 1 and 2 above are now settled in `grid/CONTRACT.md`: S2 is
+`S2-<cell>-Oz` (one cell per ontology, terminal), and adversary cells use
+`kill/hold/survive`. `refuted` was added as a kill reason. The skipped
+cardinality test is replaced by `test_s2_cardinality_is_one_cell_per_ontology`.
+Choices 3–5 remain as stated.

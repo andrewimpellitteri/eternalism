@@ -198,8 +198,8 @@ class ValidationTests(GridCase):
         record = valid_record("S1-P01-B01", "kill")
         record["kill_reason"] = "seems weak"
         self.assertTrue(grid.contract_problems(record))
-        for reason in ("incoherent", "trivial-by-definition", "known", "no-checkable-instance",
-                       "ontology-leap", "out-of-scope"):
+        for reason in ("incoherent", "trivial-by-definition", "known", "refuted",
+                       "no-checkable-instance", "ontology-leap", "out-of-scope"):
             record["kill_reason"] = reason
             self.assertEqual(grid.contract_problems(record), [], reason)
 
@@ -327,10 +327,12 @@ class StageTransitionTests(GridCase):
         self.assertEqual(self.adv_ids(), ["A-S1-P01-B01"])
         self.assertNotIn(f"A-{s2}", self.adv_ids())
 
-    def test_s2_cardinality_matches_agreed_contract(self):
-        self.skipTest("Open contract choice: CONTRACT.md names S2 cells S2-...-Oz-Mw "
-                      "(ontology x move) while README.md and the runner use ontology only. "
-                      "rt-grid-kill-criteria must decide before this test fixes a count.")
+    def test_s2_cardinality_is_one_cell_per_ontology(self):
+        # CONTRACT.md since 2026-10-20: S2-<cell>-Oz, the move being fixed by the claim.
+        self.promote_parent()
+        self.write_results("grid-adv-01", valid_record("A-S1-P01-B01", "survive"))
+        self.assertEqual(self.s2_ids(), [f"S2-S1-P01-B01-{o['id']}" for o in self.ax["ontologies"]])
+        self.assertTrue(grid.contract_problems(valid_record("S2-S1-P01-B01-O1-M1")))
 
 
 class ScientificControlTests(unittest.TestCase):
