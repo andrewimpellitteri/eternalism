@@ -134,3 +134,11 @@ which keeps the sectors in orthogonal clock states.
 - **Physical status of off-diagonal effects.** Are `C_H`-commuting effects that are off-diagonal in
   sigma physical observables, or excluded by a further principle? None of the texts read answers
   this explicitly.
+
+## Coordinator review (2026-10-20)
+
+- Checked verbatim against arXiv HTML fetched 2026-10-20: 2007.00580 ("such coherence is not physically accessible…"; the complete ref. [117] paragraph; footnote 16's "which only conditions on the clock time, would not be invertible"); 2604.00092v1 ("must be defined sector-wise [32]. In that case these maps are partial isometries"; Appendix A Eq. (42), "is an isometry if and only if"); 2607.24976 Example 30 ("is not a coherent seed state any more").
+- Accepted correction to the coordinator's RC-3 draft: footnote 14 holds only the example constraint; "no superselection rule across the σ-sectors would arise" is main text. RC3.md is corrected.
+- Not verified: the reading of 2409.06479 Example 14 as counting sector-mixing operators among Dirac observables. The opening of Example 14 does not say this. Treat it as the lane's reading pending a full read.
+- The two-outcome reflection-refined POVM is the lane's conjecture, unchecked. It is the most concrete RC-3 residue and is recorded as such in RC3.md.
+- `check_sources.py --online`: 9 records, 0 errors.
