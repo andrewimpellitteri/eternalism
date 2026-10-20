@@ -1,0 +1,11 @@
+ERROR pilot-r10  [mech.jsonl:10]
+      DOI 10.1111/j.1933-1592.1977.tb01280.x: not found
+ERROR pilot-r13  [mech.jsonl:13]
+      DOI 10.2307/2023910: not found
+ERROR pilot-r15  [mech.jsonl:15]
+      DOI 10.1093/mind/fzp077 title is 'Describing Inner Experience? by Russell T. Hulburt and Eric Schwitzgebel.'
+ERROR pilot-r06  [mech.jsonl:6]
+      DOI 10.1063/1.522676 title is 'Eigenvalues of the invariant operators of the orthogonal and symplectic groups'
+ERROR pilot-r09  [mech.jsonl:9]
+      DOI 10.1111/phc3.12294 title is 'Philosophy of Climate Science Part I: Observing Climate Change'
+1 files, 17 records; 9 arXiv IDs and 11 DOI lookups checked: 5 errors, 0 warnings, 0 info
