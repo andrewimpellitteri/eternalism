@@ -1,0 +1,45 @@
+SKIP  arXiv book/9780415: lookup failed
+SKIP  arXiv book/9780792: lookup failed
+SKIP  arXiv docview/3029061: lookup failed
+SKIP  arXiv edu/9780262: lookup failed
+SKIP  arXiv physics/0402040: lookup failed
+SKIP  arXiv quant-ph/9801070: lookup failed
+SKIP  arXiv stable/2000961: lookup failed
+SKIP  arXiv stable/2023892: lookup failed
+SKIP  arXiv stable/2024493: lookup failed
+FLAG  axrel-andreka-etal-2002-report [knowledge/axiomatic-relativity/sources.jsonl:12] via arXiv 1105.0885
+      'with contributions from A. Andai, G. Sagi, I. Sain, Cs. Toke': family name not in source
+FLAG  form-isabelle-schutz [knowledge/formalization/sources.jsonl:2] via arXiv 2108.10868
+      'Richard Schmoetten, Jake E. Palmer, Jacques D. Fleuriot': source given name 'richard'
+FLAG  found-prior-2009 [knowledge/foundations/sources.jsonl:9] via doi 10.1093/mind/fzp077
+      'Katherine Hawley': family name not in source
+FLAG  frontier-qrf-beyond-subsystems-2026 [knowledge/frontier/sources.jsonl:1] via arXiv 2607.24976
+      'Markus P. Müller': family name not in source
+FLAG  frontier-relational-trinity-2019v3 [knowledge/frontier/sources.jsonl:9] via arXiv 1912.00033
+      'Philipp A. Höhn': family name not in source
+FLAG  frontier-page-wootters-measurements-2023 [knowledge/frontier/sources.jsonl:12] via arXiv 2308.10967
+      'Vincent Baumann': family name not in source
+      'Maximilian P. E. Lock': family name not in source
+FLAG  frontier-emergence-time-qg-2012 [knowledge/frontier/sources.jsonl:20] via arXiv 1203.4995
+      'Carlo Rovelli': family name not in source
+SKIP  gq-hkt-1976-geometrodynamics [knowledge/gr-qg/sources.jsonl:9] lookup failed: HTTP Error 404: Not Found
+FLAG  ico-apadula-frame-process-matrices-2026 [knowledge/ico-qrf/sources.jsonl:14] via arXiv 2604.02873
+      'Alfred Grinbaum': source given name 'alexei'
+FLAG  ico-kabel-quantum-hole-2025 [knowledge/ico-qrf/sources.jsonl:15] via doi 10.1038/s42005-025-02084-3
+      'Christina Cepollaro': source given name 'carlo'
+      'James Butterfield': source given name 'jeremy'
+FLAG  ico-ormrod-sectorial-2023 [knowledge/ico-qrf/sources.jsonl:16] via doi 10.22331/q-2023-06-01-1028
+      'Nicolas Ormrod': source given name 'nick'
+FLAG  ico-araujo-witnessing-2015 [knowledge/ico-qrf/sources.jsonl:17] via doi 10.1088/1367-2630/17/10/102001
+      'Costantino Branciard': source given name 'cyril'
+FLAG  phil-sme [knowledge/philosophy/sources.jsonl:19] via arXiv hep-ph/9809521
+      'V. Alan Kostelecky': source given name 'alan'
+FLAG  phil-everett [knowledge/philosophy/sources.jsonl:22] via doi 10.1103/RevModPhys.29.454
+      'Hugh Everett III': family name not in source
+SKIP  fol-myrvold-2002-peaceful [knowledge/preferred-foliation/sources.jsonl:7] lookup failed: HTTP Error 404: Not Found
+FLAG  fol-bell-2004-speakable [knowledge/preferred-foliation/sources.jsonl:19] via doi 10.1017/CBO9780511815676
+      'Alain Aspect (introduction)': family name not in source
+FLAG  fol-poincare-1906 [knowledge/preferred-foliation/sources.jsonl:21] via doi 10.1007/BF03013466
+      'H. Poincaré': source given name 'm h'
+
+251 records with authors; 202 checked against a source; 15 flagged
