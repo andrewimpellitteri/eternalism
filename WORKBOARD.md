@@ -35,7 +35,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `kb-pw-critiques` — Collect critiques and defenses of the Page-Wootters construction | 8 | — | glm-kb-pw-critiques |
 | done | `kb-novelty-prepass-a` — Pre-pass search for prior work defeating candidate A, growing history versus completed history | 8 | — | luna-recovery-kb-novelty-prepass-a |
 | done | `article-working-draft` — Write an argument-driven LaTeX working article without claiming an unestablished result | 8 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | codex-article |
-| claimed | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
+| done | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
 | done | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
 | claimed | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
 | claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
@@ -48,13 +48,16 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | claude-coordinator |
 | done | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | claude-coordinator |
 | done | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | claude-coordinator |
-| blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc | — |
+| blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc, ctp-priority-audit, ctp-fresh-proof-audit, ctp-covariant-boundary | — |
 | done | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
 | done | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
 | done | `creative-clock-memory` — Find an operational intervention boundary between clock memory and system memory | 10 | novelty-audit | luna-creative-memory |
 | done | `ctp-priority-audit` — Audit forward citations and priority of the doubly-principal extension theorem | 10 | creative-covariant-stopping | luna-ctp-priority |
 | done | `ctp-fresh-proof-audit` — Try to falsify the extension theorem from a fresh derivation | 10 | creative-covariant-stopping | luna-ctp-proof |
 | done | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | luna-ctp-covariant |
+| open | `rt-source-repair-integration` — Apply audited source repairs and replace inherited source copies with references | 10 | rt-source-canonicalization, rt-fulltext-claim-spotcheck, rt-citation-gate-hardening | — |
+| open | `rt-stein-printed-page-check` — Compare Stein 1991 printed theorem pages with the OCR and contextual premises | 9 | rt-fulltext-claim-spotcheck | — |
+| open | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
