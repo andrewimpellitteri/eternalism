@@ -24,6 +24,10 @@ ROOT = Path(__file__).resolve().parent.parent
 AXES = ROOT / "grid" / "axes.json"
 BOARD = ROOT / "WORKBOARD.jsonl"
 CELLS_RE = re.compile(r"^Cells: (.+)$", re.M)
+GRID_TASK_RE = re.compile(r"^grid-(s1|t1|adv|s2)-\d+$")
+KILL_REASONS = {"incoherent", "trivial-by-definition", "known", "no-checkable-instance",
+                "ontology-leap", "out-of-scope"}
+READ_DEPTHS = {"discovery", "abstract", "full-text", "reproduced", "code-audited"}
 
 S1_BRIEF = ("Pressure cells. For each cell, take the bridge premise and ask what it "
             "says inside the named framework: give it a precise form, then decide "
@@ -37,7 +41,8 @@ ADV_BRIEF = ("Adversary pass. Each cell below advanced at an earlier stage. You 
              "your own defeat search and try to kill it: find prior work stating it, "
              "show it is trivial by a definition, find a counterexample in its smallest "
              "instance, or show its ontological relevance rests entirely on a bridge "
-             "premise. Use verdict 'kill' or 'survive' (in place of 'advance').")
+             "premise. Use verdict 'kill' or 'survive' (in place of 'advance'). Copy the "
+             "claim into `claim` exactly; a reworded claim is not a survivor of this one.")
 S2_BRIEF = ("Expansion cells. Each cell crosses a claim that survived an independent "
             "kill attempt with one temporal-ontology package. State exactly what the "
             "claim does to that package: excludes it under named premises, is neutral, "
@@ -58,15 +63,20 @@ def board():
     return [json.loads(l) for l in BOARD.read_text().splitlines() if l.strip()]
 
 
-def assigned():
-    """Cell ID -> grid task ID, read from task briefs on the workboard."""
+def assignments():
+    """Cell ID -> every grid batch task naming it in its brief."""
     out = {}
     for t in board():
-        if t["id"].startswith("grid-"):
+        if GRID_TASK_RE.match(t["id"]):
             m = CELLS_RE.search(t.get("brief", ""))
             for c in (m.group(1).split(", ") if m else []):
-                out[c] = t["id"]
+                out.setdefault(c, []).append(t["id"])
     return out
+
+
+def assigned():
+    """Cell ID -> grid task ID, read from task briefs on the workboard."""
+    return {c: tids[0] for c, tids in assignments().items()}
 
 
 def result_dirs(worktrees):
@@ -77,44 +87,120 @@ def result_dirs(worktrees):
         yield from sorted((r / "grid" / "results").glob("*/cells.jsonl"))
 
 
-def results(worktrees):
-    """Cell ID -> list of (source, record). Later stages are separate cell IDs."""
-    out, problems = {}, []
+def results(worktrees, ax=None):
+    """Cell ID -> [(source, record)] for records that pass every gate, and problems.
+
+    Fails closed: a record with a contract or provenance problem, a cell whose
+    records conflict, and a later-stage record without its exact eligible parent
+    are all reported and left out, so they can neither promote nor count as
+    coverage."""
+    ax = ax or load_axes()
+    owners = assignments()
+    problems = [f"{c}: assigned to more than one grid task ({', '.join(t)})"
+                for c, t in sorted(owners.items()) if len(t) > 1]
+    found = {}
     for f in result_dirs(worktrees):
         for n, line in enumerate(f.read_text().splitlines(), 1):
             if not line.strip():
                 continue
+            where = f"{f}:{n}"
             try:
                 r = json.loads(line)
             except json.JSONDecodeError:
-                problems.append(f"{f}:{n}: invalid JSON")
+                problems.append(f"{where}: invalid JSON")
                 continue
-            problems += [f"{f}:{n}: {p}" for p in contract_problems(r)]
-            out.setdefault(r.get("cell", "?"), []).append((str(f), r))
+            issues = contract_problems(r, ax)
+            if not issues:
+                tids = owners.get(r["cell"], [])
+                if not tids:
+                    issues.append(f"{r['cell']} is not assigned to any grid task")
+                elif f.parent.name not in tids:
+                    issues.append(f"{r['cell']} is assigned to {tids[0]}, not {f.parent.name}")
+            if issues:
+                problems += [f"{where}: {p}" for p in issues]
+                continue
+            found.setdefault(r["cell"], []).append((str(f), r))
+    out = {}
+    for c, recs in found.items():
+        if len({(r["verdict"], r["claim"], r.get("kill_reason")) for _, r in recs}) > 1:
+            problems.append(f"{c}: conflict among {len(recs)} records "
+                            f"({', '.join(sorted(src for src, _ in recs))}); quarantined")
+        else:
+            out[c] = recs[:1]
+    for stage, needed in (("A-", "advance"), ("S2-", "survive")):
+        for c in sorted(k for k in out if k.startswith(stage)):
+            parent = c[2:] if stage == "A-" else "A-" + c[3:].rsplit("-", 1)[0]
+            prec = out.get(parent)
+            if not prec or prec[0][1]["verdict"] != needed:
+                problems.append(f"{c}: parent {parent} has no valid '{needed}' record; not counted")
+                del out[c]
+            elif out[c][0][1]["claim"] != prec[0][1]["claim"]:
+                problems.append(f"{c}: claim differs from parent {parent}; not counted")
+                del out[c]
     return out, problems
 
 
-def contract_problems(r):
-    p = []
+def contract_problems(r, ax=None):
+    """Shape and enum checks from grid/CONTRACT.md. Passing says nothing about
+    whether the claim, its sources or its bridge premises are correct."""
+    if not isinstance(r, dict):
+        return [f"record is {type(r).__name__}, not a JSON object"]
+    ax = ax or load_axes()
+    text = lambda v: isinstance(v, str) and v.strip() != ""
+    cell = r.get("cell")
+    if not text(cell):
+        return ["missing cell"]
+    p = [x for x in [cell_problem(cell, ax)] if x]
     v = r.get("verdict")
-    adv = str(r.get("cell", "")).startswith("A-")
-    allowed = {"kill", "hold", "survive"} if adv else {"kill", "hold", "advance"}
+    allowed = {"kill", "hold", "survive"} if cell.startswith("A-") else {"kill", "hold", "advance"}
     if v not in allowed:
         p.append(f"verdict {v!r} not in {sorted(allowed)}")
-    if not r.get("claim"):
+    if not text(r.get("claim")):
         p.append("missing claim")
-    if v == "kill" and not r.get("kill_reason"):
-        p.append("kill without kill_reason")
+    if v == "kill" and r.get("kill_reason") not in KILL_REASONS:
+        p.append(f"kill_reason {r.get('kill_reason')!r} not in {sorted(KILL_REASONS)}")
+    moves = {m["id"] for m in ax["moves"]}
+    if "move" in r and r["move"] not in moves:
+        p.append(f"move {r['move']!r} not in {sorted(moves)}")
     if v in ("advance", "survive"):
-        if len(r.get("predecessors") or []) < 3:
-            p.append(f"{v} with fewer than 3 predecessors")
-        if len(r.get("defeat_queries") or []) < 5:
-            p.append(f"{v} with fewer than 5 defeat queries")
-        if not r.get("smallest_instance"):
-            p.append(f"{v} without smallest_instance")
-        if r.get("bridge_premises") is None:
-            p.append(f"{v} without bridge_premises (use [] if none)")
+        if "move" not in r:
+            p.append(f"{v} without move")
+        for field in ("smallest_instance", "falsifier"):
+            if not text(r.get(field)):
+                p.append(f"{v} without {field}")
+        bridges = r.get("bridge_premises")
+        if not isinstance(bridges, list) or not all(text(b) for b in bridges):
+            p.append(f"{v} needs bridge_premises as a list of statements (use [] if none)")
+        preds = r.get("predecessors")
+        preds = preds if isinstance(preds, list) else [None]
+        if len(preds) < 3 or not all(
+                isinstance(q, dict) and q.get("read_depth") in READ_DEPTHS
+                and all(text(q.get(k)) for k in ("ref", "shows", "differs")) for q in preds):
+            p.append(f"{v} needs 3+ predecessors, each with ref, read_depth, shows and differs")
+        queries = r.get("defeat_queries")
+        queries = queries if isinstance(queries, list) else [None]
+        if len(queries) < 5 or not all(
+                text(q) or (isinstance(q, dict) and text(q.get("query"))) for q in queries):
+            p.append(f"{v} needs 5+ nonempty logged defeat queries")
     return p
+
+
+def cell_problem(cell, ax):
+    """None if the runner can generate this cell ID from these axes."""
+    ids = {k: [i["id"] for i in ax[k]] for k in ("physics", "bridges", "ontologies")}
+    parts = cell.split("-")
+    if parts[0] == "S1" and len(parts) == 3:
+        ok = parts[1] in ids["physics"] and parts[2] in ids["bridges"]
+    elif parts[0] == "T1" and len(parts) == 3:
+        ok = (parts[1] in ids["physics"] and parts[2] in ids["physics"]
+              and ids["physics"].index(parts[1]) < ids["physics"].index(parts[2]))
+    elif parts[0] == "A" and parts[1:2] in (["S1"], ["T1"]):
+        ok = cell_problem(cell[2:], ax) is None
+    elif parts[0] == "S2" and parts[1:2] in (["S1"], ["T1"]) and len(parts) > 2:
+        ok = parts[-1] in ids["ontologies"] and cell_problem("-".join(parts[1:-1]), ax) is None
+    else:
+        ok = False
+    return None if ok else f"unknown cell ID {cell!r}"
 
 
 def verdict(recs):
@@ -131,10 +217,10 @@ def cells(ax, family, worktrees=False):
     if family == "t1":
         return [(f"T1-{p['id']}-{q['id']}", f"{p['label']} || {q['label']}")
                 for p, q in itertools.combinations(P, 2)]
-    res, _ = results(worktrees)
-    if family == "adv":
+    res, _ = results(worktrees, ax)
+    if family == "adv":  # Stage-1 cells only; S2 is terminal.
         return [(f"A-{c}", recs[0][1]["claim"]) for c, recs in sorted(res.items())
-                if not c.startswith("A-") and verdict(recs) == "advance"]
+                if c.startswith(("S1-", "T1-")) and verdict(recs) == "advance"]
     if family == "s2":
         out = []
         for c, recs in sorted(res.items()):
@@ -208,7 +294,7 @@ def cmd_tasks(a, ax):
 
 
 def cmd_status(a, ax):
-    res, problems = results(a.worktrees)
+    res, problems = results(a.worktrees, ax)
     taken = assigned()
     sym = {"kill": "x", "hold": "h", "advance": "A", "survive": "S", "?": "?"}
 
@@ -252,6 +338,12 @@ def cmd_status(a, ax):
     return 1 if problems else 0
 
 
+def positive(value):
+    if int(value) < 1:
+        raise argparse.ArgumentTypeError("must be at least 1")
+    return int(value)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -259,7 +351,7 @@ def main():
     c.add_argument("--worktrees", action="store_true")
     t = sub.add_parser("tasks")
     t.add_argument("family", choices=sorted(FAMILY))
-    t.add_argument("--batch", type=int, default=10)
+    t.add_argument("--batch", type=positive, default=10)
     t.add_argument("--limit", type=int, default=0, help="max tasks to emit")
     t.add_argument("--append", action="store_true", help="append to WORKBOARD.jsonl")
     t.add_argument("--worktrees", action="store_true", help="read results from grid worktrees")

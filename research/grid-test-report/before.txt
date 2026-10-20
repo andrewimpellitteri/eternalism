@@ -1,0 +1,326 @@
+test_dry_run_does_not_write (test_grid.EnumerationTests.test_dry_run_does_not_write) ... ok
+test_duplicate_assignment_reported (test_grid.EnumerationTests.test_duplicate_assignment_reported) ... FAIL
+test_invalid_batch_size_rejected_without_writing (test_grid.EnumerationTests.test_invalid_batch_size_rejected_without_writing) ... ERROR
+test_live_axes_ids_unique_and_counts_follow_axes (test_grid.EnumerationTests.test_live_axes_ids_unique_and_counts_follow_axes) ... ok
+test_non_grid_task_with_grid_prefix_is_not_an_assignment (test_grid.EnumerationTests.test_non_grid_task_with_grid_prefix_is_not_an_assignment) ... FAIL
+test_s1_and_t1_enumeration_is_legal_and_unique (test_grid.EnumerationTests.test_s1_and_t1_enumeration_is_legal_and_unique) ... ok
+test_tasks_assign_each_cell_once_and_never_reassign (test_grid.EnumerationTests.test_tasks_assign_each_cell_once_and_never_reassign) ... ok
+test_conflicting_claims_quarantined (test_grid.PromotionTests.test_conflicting_claims_quarantined) ... FAIL
+test_conflicting_verdicts_reported (test_grid.PromotionTests.test_conflicting_verdicts_reported) ... FAIL
+test_identical_duplicates_deduplicate (test_grid.PromotionTests.test_identical_duplicates_deduplicate) ... ok
+test_invalid_advance_is_not_promoted (test_grid.PromotionTests.test_invalid_advance_is_not_promoted) ... FAIL
+test_invalid_kill_is_not_coverage (test_grid.PromotionTests.test_invalid_kill_is_not_coverage) ... FAIL
+test_result_outside_assigned_batch_is_not_promoted (test_grid.PromotionTests.test_result_outside_assigned_batch_is_not_promoted) ... FAIL
+test_unassigned_cell_is_not_promoted (test_grid.PromotionTests.test_unassigned_cell_is_not_promoted) ... FAIL
+test_valid_assigned_advance_promotes_once (test_grid.PromotionTests.test_valid_assigned_advance_promotes_once) ... ok
+test_completed_paths_need_not_be_deterministic (test_grid.ScientificControlTests.test_completed_paths_need_not_be_deterministic) ... ok
+test_finite_witness_is_existential_only (test_grid.ScientificControlTests.test_finite_witness_is_existential_only) ... ok
+test_fixtures_state_domain_witness_and_limits (test_grid.ScientificControlTests.test_fixtures_state_domain_witness_and_limits) ... ok
+test_gate_checks_shape_not_bridge_quality (test_grid.ScientificControlTests.test_gate_checks_shape_not_bridge_quality) ... ok
+test_observation_does_not_fix_intervention (test_grid.ScientificControlTests.test_observation_does_not_fix_intervention) ... ok
+test_expansion_cells_never_reenter_adversary (test_grid.StageTransitionTests.test_expansion_cells_never_reenter_adversary) ... FAIL
+test_orphan_survivor_not_expanded (test_grid.StageTransitionTests.test_orphan_survivor_not_expanded) ... FAIL
+test_s2_cardinality_matches_agreed_contract (test_grid.StageTransitionTests.test_s2_cardinality_matches_agreed_contract) ... skipped 'Open contract choice: CONTRACT.md names S2 cells S2-...-Oz-Mw (ontology x move) while README.md and the runner use ontology only. rt-grid-kill-criteria must decide before this test fixes a count.'
+test_stale_survivor_claim_not_expanded (test_grid.StageTransitionTests.test_stale_survivor_claim_not_expanded) ... FAIL
+test_survivor_of_invalidated_parent_not_expanded (test_grid.StageTransitionTests.test_survivor_of_invalidated_parent_not_expanded) ... FAIL
+test_survivor_of_killed_parent_not_expanded (test_grid.StageTransitionTests.test_survivor_of_killed_parent_not_expanded) ... FAIL
+test_survivor_with_exact_parent_expands (test_grid.StageTransitionTests.test_survivor_with_exact_parent_expands) ... ok
+test_unassigned_survivor_not_expanded (test_grid.StageTransitionTests.test_unassigned_survivor_not_expanded) ... FAIL
+test_complete_valid_records_pass (test_grid.ValidationTests.test_complete_valid_records_pass) ... ok
+test_each_required_advance_field_enforced (test_grid.ValidationTests.test_each_required_advance_field_enforced) ... FAIL
+test_field_types_enforced (test_grid.ValidationTests.test_field_types_enforced) ... FAIL
+test_kill_reason_enum_enforced (test_grid.ValidationTests.test_kill_reason_enum_enforced) ... FAIL
+test_malformed_and_non_object_lines_reported_not_fatal (test_grid.ValidationTests.test_malformed_and_non_object_lines_reported_not_fatal) ... ERROR
+test_minimal_malformed_advance_rejected (test_grid.ValidationTests.test_minimal_malformed_advance_rejected) ... FAIL
+test_predecessor_content_enforced (test_grid.ValidationTests.test_predecessor_content_enforced) ... FAIL
+test_stage_specific_verdicts (test_grid.ValidationTests.test_stage_specific_verdicts) ... ok
+test_unknown_cell_id_rejected (test_grid.ValidationTests.test_unknown_cell_id_rejected) ... FAIL
+
+======================================================================
+ERROR: test_invalid_batch_size_rejected_without_writing (test_grid.EnumerationTests.test_invalid_batch_size_rejected_without_writing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 143, in test_invalid_batch_size_rejected_without_writing
+    code, _, _ = self.run_main("tasks", "s1", "--batch", batch, "--append")
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 90, in run_main
+    code = grid.main()
+  File "/Users/andrew/eternalism/scripts/grid.py", line 270, in main
+    return {"cells": cmd_cells, "tasks": cmd_tasks, "status": cmd_status}[a.cmd](a, ax) or 0
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/andrew/eternalism/scripts/grid.py", line 193, in cmd_tasks
+    for i in range(0, len(free), a.batch):
+             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: range() arg 3 must not be zero
+
+======================================================================
+ERROR: test_malformed_and_non_object_lines_reported_not_fatal (test_grid.ValidationTests.test_malformed_and_non_object_lines_reported_not_fatal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 218, in test_malformed_and_non_object_lines_reported_not_fatal
+    problems = self.problems()
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 83, in problems
+    return grid.results(False)[1]
+           ~~~~~~~~~~~~^^^^^^^
+  File "/Users/andrew/eternalism/scripts/grid.py", line 92, in results
+    problems += [f"{f}:{n}: {p}" for p in contract_problems(r)]
+                                          ~~~~~~~~~~~~~~~~~^^^
+  File "/Users/andrew/eternalism/scripts/grid.py", line 99, in contract_problems
+    v = r.get("verdict")
+        ^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+FAIL: test_duplicate_assignment_reported (test_grid.EnumerationTests.test_duplicate_assignment_reported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 151, in test_duplicate_assignment_reported
+    self.assertNotEqual(code, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_non_grid_task_with_grid_prefix_is_not_an_assignment (test_grid.EnumerationTests.test_non_grid_task_with_grid_prefix_is_not_an_assignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 158, in test_non_grid_task_with_grid_prefix_is_not_an_assignment
+    self.assertNotIn("S1-P01-B01", grid.assigned())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'S1-P01-B01' unexpectedly found in {'S1-P01-B01': 'grid-regression-tests'}
+
+======================================================================
+FAIL: test_conflicting_claims_quarantined (test_grid.PromotionTests.test_conflicting_claims_quarantined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 260, in test_conflicting_claims_quarantined
+    self.assertEqual(self.adv_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['A-S1-P01-B01'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'A-S1-P01-B01'
+
+- ['A-S1-P01-B01']
++ []
+
+======================================================================
+FAIL: test_conflicting_verdicts_reported (test_grid.PromotionTests.test_conflicting_verdicts_reported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 268, in test_conflicting_verdicts_reported
+    self.assertTrue(any("conflict" in p for p in self.problems()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_invalid_advance_is_not_promoted (test_grid.PromotionTests.test_invalid_advance_is_not_promoted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 235, in test_invalid_advance_is_not_promoted
+    self.assertEqual(self.adv_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['A-S1-P01-B01'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'A-S1-P01-B01'
+
+- ['A-S1-P01-B01']
++ []
+
+======================================================================
+FAIL: test_invalid_kill_is_not_coverage (test_grid.PromotionTests.test_invalid_kill_is_not_coverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 276, in test_invalid_kill_is_not_coverage
+    self.assertNotEqual(code, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_result_outside_assigned_batch_is_not_promoted (test_grid.PromotionTests.test_result_outside_assigned_batch_is_not_promoted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 247, in test_result_outside_assigned_batch_is_not_promoted
+    self.assertEqual(self.adv_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['A-S1-P01-B01'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'A-S1-P01-B01'
+
+- ['A-S1-P01-B01']
++ []
+
+======================================================================
+FAIL: test_unassigned_cell_is_not_promoted (test_grid.PromotionTests.test_unassigned_cell_is_not_promoted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 240, in test_unassigned_cell_is_not_promoted
+    self.assertEqual(self.adv_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['A-S1-P01-B01'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'A-S1-P01-B01'
+
+- ['A-S1-P01-B01']
++ []
+
+======================================================================
+FAIL: test_expansion_cells_never_reenter_adversary (test_grid.StageTransitionTests.test_expansion_cells_never_reenter_adversary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 327, in test_expansion_cells_never_reenter_adversary
+    self.assertEqual(self.adv_ids(), ["A-S1-P01-B01"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['A-S1-P01-B01', 'A-S2-S1-P01-B01-O1'] != ['A-S1-P01-B01']
+
+First list contains 1 additional elements.
+First extra element 1:
+'A-S2-S1-P01-B01-O1'
+
+- ['A-S1-P01-B01', 'A-S2-S1-P01-B01-O1']
++ ['A-S1-P01-B01']
+
+======================================================================
+FAIL: test_orphan_survivor_not_expanded (test_grid.StageTransitionTests.test_orphan_survivor_not_expanded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 292, in test_orphan_survivor_not_expanded
+    self.assertEqual(self.s2_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'S2-S1-P01-B01-O1'
+
+- ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2']
++ []
+
+======================================================================
+FAIL: test_stale_survivor_claim_not_expanded (test_grid.StageTransitionTests.test_stale_survivor_claim_not_expanded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 305, in test_stale_survivor_claim_not_expanded
+    self.assertEqual(self.s2_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'S2-S1-P01-B01-O1'
+
+- ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2']
++ []
+
+======================================================================
+FAIL: test_survivor_of_invalidated_parent_not_expanded (test_grid.StageTransitionTests.test_survivor_of_invalidated_parent_not_expanded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 312, in test_survivor_of_invalidated_parent_not_expanded
+    self.assertEqual(self.s2_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'S2-S1-P01-B01-O1'
+
+- ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2']
++ []
+
+======================================================================
+FAIL: test_survivor_of_killed_parent_not_expanded (test_grid.StageTransitionTests.test_survivor_of_killed_parent_not_expanded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 319, in test_survivor_of_killed_parent_not_expanded
+    self.assertEqual(self.s2_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'S2-S1-P01-B01-O1'
+
+- ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2']
++ []
+
+======================================================================
+FAIL: test_unassigned_survivor_not_expanded (test_grid.StageTransitionTests.test_unassigned_survivor_not_expanded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 299, in test_unassigned_survivor_not_expanded
+    self.assertEqual(self.s2_ids(), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'S2-S1-P01-B01-O1'
+
+- ['S2-S1-P01-B01-O1', 'S2-S1-P01-B01-O2']
++ []
+
+======================================================================
+FAIL: test_each_required_advance_field_enforced (test_grid.ValidationTests.test_each_required_advance_field_enforced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 180, in test_each_required_advance_field_enforced
+    self.assertTrue(grid.contract_problems(record), field)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : move
+
+======================================================================
+FAIL: test_field_types_enforced (test_grid.ValidationTests.test_field_types_enforced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 189, in test_field_types_enforced
+    self.assertTrue(grid.contract_problems(record), field)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : claim
+
+======================================================================
+FAIL: test_kill_reason_enum_enforced (test_grid.ValidationTests.test_kill_reason_enum_enforced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 200, in test_kill_reason_enum_enforced
+    self.assertTrue(grid.contract_problems(record))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_minimal_malformed_advance_rejected (test_grid.ValidationTests.test_minimal_malformed_advance_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 174, in test_minimal_malformed_advance_rejected
+    self.assertTrue(grid.contract_problems(record))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_predecessor_content_enforced (test_grid.ValidationTests.test_predecessor_content_enforced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 195, in test_predecessor_content_enforced
+    self.assertTrue(grid.contract_problems(record), key)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : ref
+
+======================================================================
+FAIL: test_unknown_cell_id_rejected (test_grid.ValidationTests.test_unknown_cell_id_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/andrew/eternalism/tests/test_grid.py", line 213, in test_unknown_cell_id_rejected
+    self.assertTrue(grid.contract_problems(valid_record(cell)), cell)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : S1-P99-B01
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.044s
+
+FAILED (failures=20, errors=2, skipped=1)

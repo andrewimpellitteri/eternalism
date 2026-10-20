@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "note": "Small fixture axes for tests/test_grid.py. Not research content.",
+  "physics": [
+    {"id": "P01", "key": "p-one", "label": "Physics one", "lanes": ["foundations"]},
+    {"id": "P02", "key": "p-two", "label": "Physics two", "lanes": ["frontier"]},
+    {"id": "P03", "key": "p-three", "label": "Physics three"}
+  ],
+  "bridges": [
+    {"id": "B01", "key": "b-one", "label": "Bridge one"},
+    {"id": "B02", "key": "b-two", "label": "Bridge two"}
+  ],
+  "ontologies": [
+    {"id": "O1", "key": "o-one", "label": "Ontology one"},
+    {"id": "O2", "key": "o-two", "label": "Ontology two"}
+  ],
+  "moves": [
+    {"id": "M1", "key": "m-one", "label": "Move one"},
+    {"id": "M2", "key": "m-two", "label": "Move two"}
+  ]
+}

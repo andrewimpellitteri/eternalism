@@ -7,8 +7,8 @@ First milestone: prior work → theory map → independent novelty audit.
 
 | State | Task | Priority | Depends on | Owner |
 |---|---|---|---|---|
-| open | `grid-regression-tests` — Test idea-grid validation, provenance and stage transitions | 10 | — | — |
-| claimed | `grid-adversarial-design` — Independently review the idea-grid gates and build adversarial control cases | 9 | — | codex-grid-review |
+| claimed | `grid-regression-tests` — Test idea-grid validation, provenance and stage transitions | 10 | — | claude-coordinator |
+| done | `grid-adversarial-design` — Independently review the idea-grid gates and build adversarial control cases | 9 | — | codex-grid-review |
 | done | `kb-foundations` — Map the strongest time arguments and their physical assumptions | 10 | — | luna-foundations |
 | done | `kb-formalization` — Inventory reusable relativity and quantum formalizations | 10 | — | luna-formalization |
 | done | `kb-frontier` — Screen recent physics of time and identify tractable extension targets | 10 | — | luna-frontier |
@@ -24,9 +24,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
 | done | `kb-ico-qrf` — Compare indefinite causal order, process matrices and temporal quantum reference frames | 9 | — | glm-kb-ico-qrf |
 | done | `kb-gr-qg-time` — Map global spacetime structure and the problem of time in canonical quantum gravity | 9 | — | luna-recovery-kb-gr-qg-time |
-| review | `kb-aqft-locality` — Audit algebraic QFT, locality and relativistic causality as constraints on time claims | 8 | — | luna-aqft-locality |
-| review | `kb-arrow-cosmology` — Separate the cosmological and thermodynamic arrows from temporal ontology | 8 | — | luna-arrow-cosmology |
-| review | `kb-discriminators` — Collect proposed observational or experimental discriminators for time ontologies | 8 | — | luna-discriminators |
+| done | `kb-aqft-locality` — Audit algebraic QFT, locality and relativistic causality as constraints on time claims | 8 | — | luna-aqft-locality |
+| done | `kb-arrow-cosmology` — Separate the cosmological and thermodynamic arrows from temporal ontology | 8 | — | luna-arrow-cosmology |
+| done | `kb-discriminators` — Collect proposed observational or experimental discriminators for time ontologies | 8 | — | luna-discriminators |
 | done | `kb-time-interpretations` — Map time in retrocausal, Everettian, two-time and block-history interpretations | 8 | — | glm-kb-time-interpretations |
 | done | `kb-bib-repair` — Repair and verify bibliographic records, including books and JSTOR items without DOIs | 9 | — | glm-kb-bib-repair |
 | done | `kb-axiomatic-relativity` — Extract the axiomatic and definability results behind simultaneity and relativity | 9 | — | glm-kb-axiomatic-relativity |
@@ -39,9 +39,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
 | claimed | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
 | claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
-| open | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | — |
+| done | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | claude-coordinator |
 | open | `rt-source-canonicalization` — Canonicalize duplicated source records and read-depth conflicts across lanes | 10 | — | — |
-| open | `rt-citation-gate-hardening` — Harden check_sources.py so full-text contract violations fail, not warn | 9 | — | — |
+| review | `rt-citation-gate-hardening` — Harden check_sources.py so full-text contract violations fail, not warn | 9 | — | codex-citation-gate |
 | open | `rt-fulltext-claim-spotcheck` — Independently spot-check full-text claims and primary Stein/Malament sources | 10 | — | — |
 | blocked | `rt-loadbearing-rereads-rc` — Coordinator-level rereads of the papers that can kill or shrink RC-1 to RC-5 | 9 | kb-clock-interactions, kb-sector-conditioning, kb-csg-quantum-boundary, kb-putnam-ablation-prior, kb-relational-markov-audit | — |
 | open | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | — |
