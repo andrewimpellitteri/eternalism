@@ -1,0 +1,16 @@
+
+== claude_auditor.jsonl
+detected 8/8: ['R01', 'R02', 'R06', 'R09', 'R10', 'R13', 'R14', 'R15']
+field miss: []  missed: []
+false flags 0/9: []  unverifiable: []
+checker-missed caught: ['R01', 'R02', 'R14']
+GPT-produced items detected: ['R01', 'R02', 'R06', 'R14'] of ['R01', 'R02', 'R06', 'R14']
+pre-registered: adds value over checker = True; fails as gate = False
+
+== gpt_auditor.jsonl
+detected 8/8: ['R01', 'R02', 'R06', 'R09', 'R10', 'R13', 'R14', 'R15']
+field miss: []  missed: []
+false flags 0/9: []  unverifiable: []
+checker-missed caught: ['R01', 'R02', 'R14']
+GPT-produced items detected: ['R01', 'R02', 'R06', 'R14'] of ['R01', 'R02', 'R06', 'R14']
+pre-registered: adds value over checker = True; fails as gate = False
