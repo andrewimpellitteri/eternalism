@@ -29,3 +29,10 @@ Submitted for coordinator review; not accepted/integrated. No commits or board t
 Filled the mathematical `dependencies` field for each of the six full-text records with the stated framework premises and structures already covered in the assumptions/theorem map. These entries describe actual mathematical inputs, not newly researched papers. The Fewster–Verch curved-spacetime review retains its stable lane ID, but its `limits` now flags that the embedded `2012` is misleading: the source is arXiv:1504.00586v1 / a 2015 chapter.
 
 Ran `python3 scripts/check_sources.py knowledge/aqft-locality/sources.jsonl`: 9 records, 0 errors, 1 warning. The sole warning is the validator's `full-text record lacks: related_source_ids` check for Haag–Kastler. The list is intentionally empty because no lane source record is a mathematical input to that 1964 paper; this is documented in the record's `limits`. The validator only checks whether a field is nonempty, so this warning reflects its empty-list heuristic, not missing source content or a dependency claim to be filled with an unrelated ID.
+
+## Coordinator review (2026-10-20)
+
+- `check_sources.py --online`: 4 arXiv IDs and 7 DOIs resolve; the one warning is the documented empty `related_source_ids` for Haag–Kastler.
+- Verified against primary text: Fewster–Verch arXiv:1106.4785v3 Theorem 6.13 (Sec. 6.3, PDF p. 43) matches the map's paraphrase; Fewster–Verch arXiv:1109.6732v2 Theorem 4.3 is the massless-current result (connected n ≥ 2; possibly disconnected n ≥ 3; fails n = 2); Fewster–Rejzner arXiv:1904.04051v2 Theorem 26 is in Sec. 5.2.
+- Precision note: Theorem 26 is stated for "any causally convex bounded open region"; the spectrum condition and weak additivity are set up in the surrounding text. The map's phrasing about small translates describes the proof's set-up rather than the stated hypothesis.
+- "Fewster–Verch (2012), Theorem 4.3" in the map means the Klein–Gordon paper (`aqft-fewster-verch-2012-kg`), not the dynamical-locality paper.

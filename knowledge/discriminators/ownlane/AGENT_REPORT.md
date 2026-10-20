@@ -20,7 +20,7 @@ Additional positive package-level discriminator: Müller et al. 2007 rotating re
 
 ## Checks and evidence
 
-- Parsed every JSONL line with Python's standard JSON parser; confirmed 10 unique IDs and all required source-record fields.
+- Parsed every JSONL line with Python's standard JSON parser; confirmed unique IDs (10 at first check; 11 after the LAGEOS PRL record) and all required source-record fields.
 - Checked in-scope file status; unrelated untracked `knowledge/aqft-locality/` and `knowledge/arrow-cosmology/` were left untouched.
 - Read `AGENTS.md`, `README.md`, `knowledge/README.md`, `knowledge/NOVELTY.md`, the `kb-discriminators` brief, and existing frontier/foundations/methods source registers before writing.
 - Public primary sources checked: Brading DOI/author-linked paper text; APS and arXiv pages for Barontini, Moreva, LAGEOS, SME clock comparisons, optical-cavity tests, and trapped-ion proper-time proposal; PMC full text for Loriani et al.; APS abstract for Foster & Jacobson. Full details and read-depth limits are in `sources.jsonl`.
@@ -36,3 +36,12 @@ Additional positive package-level discriminator: Müller et al. 2007 rotating re
 - Bounded screening is not evidence of novelty or untreatability; forward citation checks and adversarial comparison with more recent experiments remain.
 
 No board transition, commit, installation, or other lane edit was made. Submitted for coordinator review; not accepted as complete.
+
+## Coordinator review (2026-10-20)
+
+- `check_sources.py --online`: all 11 DOIs and 3 arXiv IDs resolve; no errors.
+- Corrected authorship of arXiv:1805.04499v1 / PRD 98, 036003 to Kostelecký and Vargas (arXiv listing), in the record and the ledger. ID `disc-mewes-clockcompare-sme-2018` is kept stable.
+- Barontini's PRR 8, L022047 is titled "Testing the problem of time with cold atoms" (Crossref, 2026-06-11). The record now says so and that only arXiv v2 was read.
+- `disc-herrmann-cavity-2007` keeps its ID (cited from knowledge/bib-audit); its first author is H. Müller.
+- LAGEOS α1 central values match preprint arXiv:2501.10588v2 Eq. (12) (v2 2026-02-19), which gives σsys≈8×10^-6; the PRL Table II figure of 7.7×10^-6 was not re-read (APS returned 403).
+- Not re-verified by the coordinator: the Sorci and Loriani equations. They rest on this worker's full-text reads.

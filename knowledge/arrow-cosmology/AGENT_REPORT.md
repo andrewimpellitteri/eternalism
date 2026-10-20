@@ -27,7 +27,7 @@ Four additional leads remain abstract-level only: Stoica's conditional quasi-reg
 ## Limitations and unresolved questions
 
 - Search was targeted, not systematic. No backward/forward citation audit, exhaustive scan of Boltzmann-brain measure proposals, or modern cosmological-data review was performed.
-- Earman and Wallace arguments remain abstract-level here; their detailed models and counterarguments need full-text reading before reliance on specifics.
+- Earman's argument remains abstract-level here; his detailed models need full-text reading before reliance on specifics. Wallace was upgraded to full-text for Secs. 2-4 and 8-10 only (see above).
 - No current experimental bound or numerical entropy of the universe is asserted. The BABAR result is confined to microscopic neutral-B transitions and cannot be substituted for a thermodynamic arrow.
 - WCH has no accepted, general gravitational entropy functional established by this lane. The cited later vanishing-Weyl result is only an abstract lead and conditional on a mathematical singularity class.
 - The Newtonian N-body typicality model is not relativistic cosmology; reported simulations were not reproduced. Central-time typicality depends on measure and observer-conditioning choices.
@@ -36,3 +36,10 @@ Four additional leads remain abstract-level only: Stoica's conditional quasi-reg
 ## Novelty status
 
 No novelty claim. Nearest predecessors are enumerated in `comparison.md`. Any new formal or physical claim would need a broader search and independent challenge; candidate falsifiers are listed there.
+
+## Coordinator review (2026-10-20)
+
+- Verified on arXiv: GTZ arXiv:1602.05601v3 (2016-07-06), Phys. Rev. D 94, 023520; Goldstein cond-mat/0105242 has only v1 (2001-05-11), Lecture Notes in Physics 574.
+- Corrected the Lazarovici–Reichert venue. The record named SHPS B 69 (2020), pp. 1-10, which no source supports; the paper appeared in the 2020 World Scientific volume *Statistical Mechanics and Scientific Explanation*. Also fixed the v2 date (2019-01-10, not 2018).
+- Fixed the limitations bullet that still called Wallace abstract-level after the upgrade.
+- Versioned the Goldstein URL. The checker's `\bv\d+\b` test misses old-style IDs such as `cond-mat/0105242v1`; that is a checker gap for rt-citation-gate-hardening, not a record defect.
