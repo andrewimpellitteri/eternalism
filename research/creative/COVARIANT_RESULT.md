@@ -174,6 +174,34 @@ the necessary condition is boundedness of the weighted sums
 \(\sum_{|H|=n}|\kappa_H|N(H)|A_p(H)|\), which also does not by itself
 prove countable additivity.
 
+## A local renewal rule that recovers a common factor
+
+There is a direct way to interpret the shape-blind rank factorization. For
+principal \(H\) with \(|H|=n\), let \(J=H\oplus\{x\}\), adjoining a new
+universal maximum. Then \(J\) is principal, \(N(J)=N(H)\), and
+\(A_p(J)=pA_p(H)\). Moreover \(D_J\subseteq D_H\): the post with past \(J\)
+has, inside \(J\), the earlier post whose past is \(H\). Under the rank-factor
+rule, whenever the denominator is nonzero,
+\[
+\frac{\nu(D_J)}{\nu(D_H)}=p\frac{\kappa_{n+1}}{\kappa_n}.
+\]
+
+For ordinary real percolation, the same ratio is \(p\). Given the finite past
+\(H\), the next birth lies above its top with probability \(p\); it is then a
+post in that finite prefix. Requiring it to remain a post through the infinite
+future contributes \(c(1-p)\). This is exactly the event \(D_J\), while
+\(D_H\) has the same future factor \(c(1-p)\) after the existing post. Thus
+the ratio is \(p\), including the deterministic endpoint \(p=1\).
+
+Consequently, for \(p\ne0\), imposing the local renewal axiom
+\(\nu(D_{H\oplus\{x\}})=p\nu(D_H)\) for every principal \(H\), together
+with a rank-only factorization, forces \(\kappa_{n+1}=\kappa_n\): apply it
+to the chain of size \(n\), whose amplitude is \(p^{n-1}\ne0\). It recovers
+the common-factor premise (T); the conditional theorem then rules out all
+nonreal parameters. The local axiom is an added dynamical compatibility
+condition. Neither the event inclusion nor covariance alone implies its
+measure equation.
+
 Priority and physical scope remain separate: the possible contribution is the
 specific conditional extension obstruction, not classical post probabilities,
 general measure theory, a quantum decoherence functional, or temporal ontology.
