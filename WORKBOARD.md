@@ -62,7 +62,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `novelty-verdict-selected` — Decide whether the selected complex-percolation result is actually new | 10 | baseline-reproduction, extension-search, lean-certificate | opencode-coordinator |
 | done | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | opencode-coordinator |
 | done | `vector-measure-boundary` — Test the no-go for Banach/Hilbert-valued measures | 9 | novelty-verdict-selected | opencode-coordinator |
-| open | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | — |
+| done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
 | open | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | — |
 | open | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | — |
 | blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
