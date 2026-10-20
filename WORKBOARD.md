@@ -37,7 +37,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `article-working-draft` — Write an argument-driven LaTeX working article without claiming an unestablished result | 8 | kb-foundations, kb-formalization, kb-frontier, kb-agent-methods | codex-article |
 | done | `kb-sector-conditioning` — Read the sector-coherence and normalization literature behind RC-3 at full text | 9 | — | glm-kb-sector-conditioning |
 | done | `kb-clock-interactions` — Read the interacting and non-ideal clock neighbours of RC-1 at full text | 9 | — | glm-kb-clock-interactions |
-| claimed | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
+| done | `kb-csg-quantum-boundary` — Read the quantum and non-Markov boundary of covariant causal-set growth | 8 | — | glm-kb-csg-quantum-boundary |
 | claimed | `kb-putnam-ablation-prior` — Find and read prior work on premise ablation of the Rietdijk-Putnam argument | 8 | — | glm-kb-putnam-ablation-prior |
 | done | `rt-fix-live-contract-test` — Restore a green test baseline: fix the stale live task-graph contract test | 10 | — | claude-coordinator |
 | done | `rt-source-canonicalization` — Canonicalize duplicated source records and read-depth conflicts across lanes | 10 | — | codex-source-canonicalization |
@@ -55,7 +55,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ctp-priority-audit` — Audit forward citations and priority of the doubly-principal extension theorem | 10 | creative-covariant-stopping | luna-ctp-priority |
 | done | `ctp-fresh-proof-audit` — Try to falsify the extension theorem from a fresh derivation | 10 | creative-covariant-stopping | luna-ctp-proof |
 | done | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | luna-ctp-covariant |
-| open | `rt-source-repair-integration` — Apply audited source repairs and replace inherited source copies with references | 10 | rt-source-canonicalization, rt-fulltext-claim-spotcheck, rt-citation-gate-hardening | — |
+| claimed | `rt-source-repair-integration` — Apply audited source repairs and replace inherited source copies with references | 10 | rt-source-canonicalization, rt-fulltext-claim-spotcheck, rt-citation-gate-hardening | codex-source-repairs |
 | open | `rt-stein-printed-page-check` — Compare Stein 1991 printed theorem pages with the OCR and contextual premises | 9 | rt-fulltext-claim-spotcheck | — |
 | open | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | — |
 
