@@ -7,7 +7,7 @@ First milestone: prior work → theory map → independent novelty audit.
 
 | State | Task | Priority | Depends on | Owner |
 |---|---|---|---|---|
-| claimed | `grid-regression-tests` — Test idea-grid validation, provenance and stage transitions | 10 | — | claude-coordinator |
+| done | `grid-regression-tests` — Test idea-grid validation, provenance and stage transitions | 10 | — | claude-coordinator |
 | done | `grid-adversarial-design` — Independently review the idea-grid gates and build adversarial control cases | 9 | — | codex-grid-review |
 | done | `kb-foundations` — Map the strongest time arguments and their physical assumptions | 10 | — | luna-foundations |
 | done | `kb-formalization` — Inventory reusable relativity and quantum formalizations | 10 | — | luna-formalization |
@@ -47,7 +47,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `rt-cross-model-pilot` — Prepare and, if authorized, run the cross-model semantic-audit pilot | 8 | — | — |
 | open | `rt-coordination-state-audit` — Audit claimed-but-idle worktrees, stale claims and unpushed main; write the recovery plan | 9 | — | — |
 | open | `rt-paper-claim-ledger` — Build a claim-by-claim source ledger for the working paper and a freeze list | 9 | — | — |
-| blocked | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | — |
+| claimed | `rt-grid-kill-criteria` — Set advance/kill criteria for the idea-grid before any cell is assigned | 8 | grid-regression-tests, grid-adversarial-design | claude-coordinator |
 | blocked | `rt-selection-decision-gate` — Force a selection: one bounded target, a fallback, or an explicit no-selection | 10 | novelty-audit, rt-loadbearing-rereads-rc | — |
 | done | `creative-clock-certificates` — Find a nontrivial finite-clock instrument obstruction or tradeoff | 10 | novelty-audit | luna-creative-clock |
 | done | `creative-covariant-stopping` — Find an observer-access or covariant stopping boundary in causal-set growth | 10 | novelty-audit | luna-creative-stopping |
