@@ -1,12 +1,29 @@
-# Lean certificate: infeasibility review and proof route
+# Lean certificate: light kernel, infeasibility review, and proof route
 
-Status: 2026-10-20. Task `lean-certificate`. No Lean toolchain is installed
-(`lean` and `lake` are absent), no mathlib was fetched, and the user explicitly
-asked not to download large Lean libraries. This note records why a faithful
-Lean encoding is not attempted now, what a non-vacuous encoding would require,
-and the proof route actually used.
+Status: 2026-10-20. A **light Lean 4.35.0 core toolchain** is installed with
+`elan`; no mathlib was fetched, and the user explicitly asked not to download
+large Lean libraries. A self-contained no-mathlib finite kernel is built in
+`formal/lean/Certificate.lean` (see `formal/lean/README.md`). A faithful
+all-level encoding is still deferred: this note records why, what a non-vacuous
+encoding would require, and the proof route actually used.
 
-## Why not a Lean build now
+## Light kernel now built
+
+`formal/lean/Certificate.lean` checks, by finite evaluation (`decide`), the
+finite combinatorial kernel of the selected proof:
+
+- naturally labelled causet counts (`1, 2, 7, 40`);
+- the two-cap decomposition `G ↦ G ⊕ {u} ⊕ {v}` for sizes 3–5;
+- the cover identity `L(cap G)=L(G)+M(G)+1` and unchanged incomparable pairs;
+- the amplitude factorization at the concrete integer instance `p=2, q=3`,
+  `k=2`.
+
+Toolchain: Lean 4.35.0, commit `eb6cafb…`, core only, no imports, no `sorry`,
+no `axiom`; `#print axioms` reports no axioms for the named theorems. Build:
+`lean formal/lean/Certificate.lean`. This is a finite kernel, not the
+analytic all-level theorem and not the conditional covariant theorem.
+
+## Why the full theorem is not formalized now
 
 The selected statement is the labelled doubly-principal complex-percolation
 classification (`research/creative/RESULT.md`), with the conditional covariant
@@ -81,9 +98,11 @@ and start at step 1, not at the theorem statement.
 ## What this does and does not certify
 
 - It certifies the finite certificate and the combinatorial bookkeeping at the
-  stated levels, and it audits the paper proof's assumptions and scope.
-- It does **not** certify the all-level theorem in a proof assistant. No
-  `sorry`-free Lean build exists, and no opaque assumed target is used.
+  stated levels (including the light Lean kernel), and it audits the paper
+  proof's assumptions and scope.
+- It does **not** certify the all-level theorem or the conditional covariant
+  theorem in a proof assistant. No Lean build of those statements exists, and
+  no opaque assumed target is used.
 - The physical/ontological meaning is narrower than the mathematics: the
   theorem is a measure-existence classification, not a physical dynamics or an
   ontology result.

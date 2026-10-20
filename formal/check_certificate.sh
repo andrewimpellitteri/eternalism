@@ -6,7 +6,27 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
 echo "== Toolchain =="
-if command -v lean >/dev/null 2>&1; then lean --version; else echo "lean: absent (see formal/INFEASIBILITY.md)"; fi
+LEAN_BIN="${LEAN_BIN:-}"
+if [ -z "$LEAN_BIN" ]; then
+  if command -v lean >/dev/null 2>&1; then
+    LEAN_BIN="lean"
+  elif [ -x "$HOME/.elan/bin/lean" ]; then
+    LEAN_BIN="$HOME/.elan/bin/lean"
+  fi
+fi
+if [ -n "$LEAN_BIN" ]; then
+  "$LEAN_BIN" --version
+else
+  echo "lean: absent (see formal/INFEASIBILITY.md)"
+fi
+
+echo
+echo "== Light Lean kernel =="
+if [ -n "$LEAN_BIN" ]; then
+  "$LEAN_BIN" formal/lean/Certificate.lean
+else
+  echo "skipped: no lean toolchain"
+fi
 
 echo
 echo "== Baseline unit tests =="
