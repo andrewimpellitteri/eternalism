@@ -8,11 +8,13 @@ claim.
 
 **Killed.** The coordinator's 2026-10-19 derivation (finite stage, fixed
 covariant growth: labelled outcome uniform over natural labellings, so birth
-order is ancillary) is already published. Brightwell–Luczak 0901.0240v3, Sec. 1:
+order is ancillary) is already published. The property is Rideout–Sorkin's
+"general covariance"; Brightwell–Luczak 0901.0240v3, Sec. 1 characterizes it:
 "conditional on the causal set at some stage k being equal to some unlabeled
 k-element poset P, each linear extension of P is equally likely to have been the
 order in which the elements were generated. They called this property 'general
-covariance.'" It also follows from Rideout–Sorkin `Prob_N(C) = W(C) P(C)`.
+covariance.'" Theorem 4.2 gives the DLR-type characterization
+`μ(E) = E_μ ν^k(E)`. It also follows from Rideout–Sorkin `Prob_N(C) = W(C) P(C)`.
 
 **Classical remainder is a bridge question.** Covtree 1910.07292v2, Lemma 4.9
 discussion: "for every walk on labeled poscau – whether it satisfies Discrete
@@ -39,7 +41,38 @@ the preferred ordering used for conditional convergence (Dowker–Johnston–Sur
   shows covariant data are not sufficient in the infinite limit. It needs an
   independent check, and the lane notes Sorkin reports a stronger labelling
   independence for CSG proper (Brightwell, unpublished).
-- Srivastava–Surya and Dowker–Johnston–Surya passages: lane quotes, not re-read.
+- Bento–Dowker–Zalel 2109.10749v1: lane quote only; not re-read here.
+
+## Independent post-claim reread (2026-10-20)
+
+The parent task was claimed after this draft. Re-fetched and re-read:
+
+- **Brightwell–Luczak 0901.0240v3.** Verified the Sec. 1 quote and Theorem 4.2
+  (`μ` is order-invariant iff `μ(E) = E_μ ν^k(E)`). General covariance is
+  Rideout–Sorkin's name for the property; Brightwell–Luczak give the
+  characterization. The finite-stage ancillarity should be credited to both, not
+  called a coordinator derivation.
+- **Surya–Zalel 2003.11311v1.** Verified: Theorem 2.1 `μ_v` has a unique
+  extension to `S_Z` iff it is of bounded variation (both necessary and
+  sufficient); Theorem 3.1 gives convergence criteria; Claim 3.8 lists the
+  bounded-variation and non-bounded-variation cases; Sec. 2 "no event
+  α ∈ Z can be covariant unless α = Ω".
+- **Covtree 1910.07292v2.** Verified: "for every walk on labeled poscau – whether
+  it satisfies Discrete General Covariance or not – there exists a covtree walk
+  that produces the same measure on R(S)." The covtree cannot distinguish a
+  non-DGC labelled dynamics from a DGC one by covariant stem events.
+- **Srivastava–Surya 2603.25503v1.** Verified the Note in Sec. 3.1: a phase
+  `|c_n> = e^{iΦ(c_n,c_n')}|c_n'>` "will leave the quantum measure invariant.
+  Because of the ensuing ambiguities ... we do not consider this option
+  henceforth." The outlook repeats that norm-only covariance would allow
+  path-dependent phases and that the resulting dynamics "becomes rapidly more
+  complex", with exploration left to the future. This is the precise opening the
+  draft's contract targets.
+- **Dowker–Johnston–Surya 1007.2725v1.** Verified: for non-real `p`, `μ_v` does
+  not extend, and covariant observables would require "a conditional convergence,
+  with the conditionality determined by a preferred ordering of events in A";
+  the text then asks whether such an ordering is unique. This is a real
+  ordering-dependence question, not a result.
 
 ## Disagreements (unresolved)
 

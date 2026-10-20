@@ -118,3 +118,35 @@ of one model plus a two-line derivation, and needs independent checking.
 
 Not called novel or open. Wait for `kb-clock-interactions` (RC-1 neighbours)
 before writing a final contract, because the interacting region is shared.
+
+## Independent post-claim reread (2026-10-20)
+
+The parent task was claimed after this draft. Re-fetched and re-read
+2606.08595v1 (main text and supplement):
+
+- **Eq. (10).** A covariant time-convolutionless integro-differential equation
+  for `ρ̃_{S,τ}[Σ]`, with kernel
+  `C^{(σ)}_{αβ}(x,y;τ) = χ_σ(x,y;τ) G_{αβ}(x,y)` (Eq. 11) and `O(g³)`.
+  There is no map family, composition law or two-time instrument in the
+  equation, so none of the four criteria is formulated. The text's own claim is
+  at the generator level.
+- **Supplement Eq. (23).** `Ê_α(x;τ) = F_σ(T̂(x) − τ(x)) B̂_α(x)`, a Hermitian
+  composite environmental operator; Eq. (24) puts it inside the interaction
+  density; Eq. (31) is the plain partial trace
+  `ρ_S^I[Σ;τ] = Tr_Ξ(ρ_tot^I[Σ])`. This is the linear, trace-preserving per-τ
+  map the audit describes, not the normalized nonlinear Eq. (7) of the main
+  text.
+- **Supplement after Eq. (46).** "Equation (44) is generically non-Markovian
+  because the conditioned state at the spacetime point x depends on the causal
+  history encoded in the dressed relational kernel." This is a statement about
+  a kernel, not a divisibility/backflow/process-tensor test.
+- The words "divisib", "backflow" and "process tensor" do not occur anywhere in
+  the HTML; "postselect", "outcome" and "Kraus" do not occur. This supports the
+  audit's Q2 verdict.
+- The four-criterion separations listed above are published (Chruściński–
+  Kossakowski–Rivas 2011; Milz et al. 2019); applying them to this map family
+  would be an application, not a new criterion. The draft's SHRINK stands.
+
+One correction to the audit's contrary-evidence note: the linear-channel
+argument for the supplement needs `F_σ` to be real-valued, which the text
+implies but does not state. This is a premise to record, not a refutation.

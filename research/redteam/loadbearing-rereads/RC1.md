@@ -62,3 +62,59 @@ RC-1 and RC-5 now share their smallest open object, so one contract covers both.
   ontology result.
 
 Read Cafasso et al. at full text before any computation is presented as new.
+
+## Independent post-claim reread (2026-10-20)
+
+The parent task was claimed after this draft. The coordinator re-fetched the
+primary HTML and re-read the decisive passages; all quotes above reproduce.
+Additions and corrections:
+
+- **Rijavec 2204.11740v3, Eqs. (46)–(51).** `H = H ⊗ I + I ⊗ h + V`; Eq. (47)
+  imposes `[H ⊗ I + I ⊗ h, V] = 0`; Eq. (48) imposes `[I ⊗ h, V] = 0`; together
+  they give Eq. (49) `[H ⊗ I, V] = 0` and, with non-degenerate `h`, the
+  eigenbasis `{|E>|ε>}`. Eq. (51) is `V = X ⊗ h` with `[X,H] = 0`. Eq. (48)
+  alone already forces `V` to commute with the clock Hamiltonian, so the
+  `[H_int,H_C] ≠ 0` case is outside this paper's class by construction, not
+  merely by choice. Sec. VII: "Finally, it would be interesting to consider
+  interactions such that t̂ is not left invariant when moving from the
+  Schrödinger picture to the Heisenberg picture... I leave this problem open
+  for future investigations." This confirms the lane's reading.
+- **Smith–Ahmadi 1712.00081v3.** Eq. (14) is the modified Schrödinger equation
+  with the kernel `K(t,t') = <t|H_int|t'>`, derived for general `H_int` in the
+  Page–Wootters picture only. Eq. (15) is the isometry/norm-preservation
+  condition. Example 3 (Eq. 24) has `||[H_int,H_C]|| = 0.868` and
+  `H_int|10> = H_int|01> = 0`; `H` has the physical null space
+  `span{|01>,|10>}`. The example is therefore degenerate. Eq. (26) prints
+  `e^{+iH_S t}`; the conditional state computed from Eq. (26) matches
+  `e^{-iH_S t}`, so the paper has a sign typo (the lane's script reproduces
+  this; not checked against the published version).
+- **Garmier et al. 2512.19343v2.** The framework is kinematic: a global action
+  `U_A ⊗ U_S` (Eq. 1 and the relationalization map Eq. 3), perspective and
+  invariance principles, incoherent group averaging. Sec. IV describes the
+  superselection range for non-ideal QRFs; the only time-evolution remark in
+  Sec. V is qualitative ("the time evolution ... behaves as if A were an ideal
+  clock"). Finite Abelian groups, hence `Z_N`, are covered kinematically, but
+  there is no Hamiltonian-constraint dynamics or clock–system interaction. This
+  is not a three-picture result, so it does not close the RC-1 case.
+- **Höhn–Smith–Lock 1912.00033v3.** Verified: Sec. II.2 "we assume that the
+  clock and system do not interact"; Sec. V.3 "for clock Hamiltonians with
+  non-degenerate and continuous spectrum"; Sec. III.2.3 "henceforth considering
+  only noncompact clocks"; Sec. IX calls interactions "the most pressing
+  generalization".
+- **Chataignier–Höhn–Lock–Mele 2409.06479v3.** Verified: "we assume that there
+  are no interactions between the two sets of degrees of freedom, as this would
+  typically also ruin the periodicity of the clock"; and Sec. II "we shall
+  henceforth assume that no interactions between C and S are present".
+- **Cafasso et al. 2407.00161v1 (the named falsifier).** The abstract and Secs.
+  I–II were read. This is a finite-dimensional Page–Wootters framework, but the
+  system is non-interacting with the (possibly composite) clock: the
+  gravitational-like interaction is *inside* the composite clock (time-dilation
+  transfer between local clocks). It does not treat a clock–system interaction
+  with `[H_int,H_C] ≠ 0`, and it does not compare three reductions. It is not a
+  defeater for the remaining case, though a full read is still owed before any
+  computation is presented as new.
+
+Correction to the combined contract below: its "nearest predecessors" list
+should also name Garmier et al. 2512.19343 for the kinematic finite-Abelian
+case, and Cafasso et al. 2407.00161 as a finite-dimensional PaW neighbour that
+does not treat the interaction.

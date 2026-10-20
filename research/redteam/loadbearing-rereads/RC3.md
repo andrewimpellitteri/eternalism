@@ -95,3 +95,63 @@ system inside the constraint (not an external frame), giving a normalized rule
 that differs from the sector mixture. That would answer HSL's first objection
 and could be in the quantum-reference-frame literature (Bartlett–Rudolph–Spekkens,
 RMP 79, 555, unread here). It must be searched before any contract is written.
+
+## Independent post-claim reread (2026-10-20)
+
+The parent task was claimed after this draft. Re-fetched and re-read:
+
+- **HSL 2007.00580v1.** Verified verbatim: "While there do exist states in the
+  physical Hilbert space that exhibit coherence across the σ-frequency sectors
+  ... such coherence is not physically accessible because it does not affect the
+  expectation value of any relational Dirac observable on account of the
+  decomposition in Eq. (33). In other words, superpositions and classical
+  mixtures across the σ-frequency sectors are indistinguishable." Also verified:
+  "if an appropriate reference frame is used the superselection rule can be
+  lifted [117]. This interpretation seems unsuitable here. Firstly, lifting the
+  superselection rule would entail undoing the group averaging, in violation of
+  gauge invariance." The HTML footnote boundary confirms that footnote 14 is
+  only "E.g. when `C_H = p_t² − H²(q_i,p_i,t)` and `H²>0 ∀t∈R`"; the clause "no
+  superselection rule across the σ-sectors would arise" is the next main-text
+  sentence. The lane's correction is right.
+- **Hosseini–Lock 2604.00092v1.** Verified: after Eq. (20) "physical expectation
+  values are insensitive to coherence between the σ=± components"; Sec. III.1
+  the naive map "coherently combines the different superselection sectors",
+  "is not invertible", and the clock states "cannot be normalised in a
+  state-independent manner"; Sec. II.2 the maps "must be defined sector-wise"
+  and "are partial isometries"; Appendix A: the map "is an isometry if and only
+  if" Eq. (42) holds. The paper's model is a free particle with quadratic clock
+  Hamiltonian and position conditioning; it says its approach "does not
+  incorporate detector dynamics, finite resolution, or interaction effects"
+  (Sec. IV). It therefore does not address the non-twirled-instrument case.
+- **The lane's two-outcome reflection refinement remains a conjecture.** No
+  source read states it, and it was not checked here. It is a candidate for the
+  remaining case, not a result.
+
+## Conditional claim-contract draft (NOVELTY.md gate)
+
+This contract is **conditional** on reading Marolf gr-qc/9508015 and
+Bartlett–Rudolph–Spekkens (RMP 79, 555) at full text first.
+
+- **Question.** In the relativistic-trinity model `C_H = s p_t²/2 + H_S` with a
+  finite-dimensional clock and a `C_H`-commuting, `G`-twirled conditioning
+  instrument that is off-diagonal in the σ sectors (e.g. the clock reflection
+  `P_C ⊗ I_S` refined into a two-outcome POVM), do normalized conditional
+  probabilities exist, and do they differ from the sector-mixed rule by a
+  measurable cross-sector term?
+- **Nearest predecessors.** HSL 2007.00580 (sector coherence inaccessible to
+  relational Dirac observables; external-frame route rejected); Hosseini–Lock
+  2604.00092 (normalization obstruction and sector-wise partial-isometry remedy,
+  free particle); Bartlett–Rudolph–Spekkens (reference frames lift
+  superselection for compact/finite groups, unread).
+- **Delta.** A `C_H`-commuting, off-diagonal instrument inside the constraint,
+  with an explicit normalized rule and cross term. Possibly an application, or
+  an immediate consequence of the observable algebra; the reflection example may
+  already be excluded.
+- **Smallest example.** Two-level clock with `H_C = Ω σ_z` and a qubit system;
+  compute the two-outcome reflection-refined POVM on a physical state and
+  compare its `b`-marginal with HSL Eq. (62).
+- **Falsifier.** Marolf's auxiliary-structure argument; BRS's non-compact-group
+  limitations; a proof that `C_H`-commuting off-diagonal effects are not
+  relational Dirac observables.
+- **Novelty kind.** At most a small conditioning computation or a no-go
+  clarification. No ontology claim.
