@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-10-20",
+  "task": "article-working-draft",
+  "citation_keys": 14,
+  "missing_bib_keys": [],
+  "uncited_bib_keys": [],
+  "exact_example_checks": 5,
+  "exact_checks_exit": 0,
+  "build_sequence": [
+    "pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape",
+    "bibtex main",
+    "pdflatex (second pass)",
+    "pdflatex (third pass)"
+  ],
+  "tex_tool": "/Library/TeX/texbin/pdflatex",
+  "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+  "render_tool": "Swift macOS PDFKit via paper/render_pdf.swift",
+  "pdf_pages": 9,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_defects_found": [],
+  "unresolved_references": false,
+  "overfull_hboxes": false,
+  "source_sha256": {
+    "paper/main.tex": "0c1a6a5bc587c468bc88d79f01b33625dc7e50b93c549aacf997aa0d6ea73314",
+    "paper/references.bib": "090e9524b1c6947a7c12d921dff559281a45b302e709360a9c14167560988692",
+    "paper/check_records.py": "f819ae94e093b671a4f62cdfc178510cbd11aa0d6df716df6e094f962aeb85f5",
+    "output/pdf/temporal-ontology-working-draft.pdf": "82d5da72693525650008f5b4f779bdce308412521e6584debf5be43b045dd163"
+  },
+  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval."
+}

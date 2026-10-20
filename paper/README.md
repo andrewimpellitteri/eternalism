@@ -6,6 +6,9 @@ or a completed novelty claim. It is separate from the final synthesis task.
 
 Build from this directory with existing TeX tools:
 
+On the current macOS host, the executables are under `/Library/TeX/texbin/`;
+use that prefix if `pdflatex` or `bibtex` is not on the shell's search path.
+
 ```sh
 mkdir -p ../tmp/pdfs/article ../output/pdf
 pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape -output-directory=../tmp/pdfs/article main.tex
@@ -29,3 +32,9 @@ the general proposition or any ontology.
 The displayed author line is deliberately generic: human authorship, affiliation,
 acknowledgments and any journal-specific AI-disclosure wording require a later
 decision. The draft must not be submitted under invented author information.
+
+The 20 October 2026 revision has three native review reports under `reviews/`,
+a refreshed citation/evidence ledger, five passing exact example checks, and a
+clean nine-page PDF build inspected page by page. `verification.json` records
+the build, citation counts and source/output hashes. Completing this drafting
+task leaves the research and submission gates in `READINESS.md` open.

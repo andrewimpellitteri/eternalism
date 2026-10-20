@@ -1,26 +1,26 @@
 # Manuscript citation and claim ledger
 
-Status: 2026-10-19. This is an audit boundary, not a certificate of correctness.
+Status: 2026-10-20, native-review update. This is an audit boundary, not a certificate of correctness.
 No source is upgraded to full-text or reproduced merely by appearing in BibTeX.
 Primary source versions and the more detailed lane audits take precedence over
 first-pass source summaries that have not yet been reconciled.
 
 | BibTeX key | Evidence actually available | Permitted manuscript use / remaining gate |
 |---|---|---|
-| Callender2011 | Publisher overview/contents; `phil-handbook` | Reference breadth only; no chapter's argument claimed audited. |
+| Callender2011 | Publisher overview/contents at discovery depth; `phil-handbook` | Reference breadth only; no chapter's argument claimed audited. |
 | Callender2017 | Publisher abstract/contents; `phil-callender` | States explanatory program; full defense not adjudicated. |
 | Maudlin2007 | Publisher abstract/contents; `phil-maudlin` | Contrasting physical/metaphysical program; full passage argument pending. |
 | Bourne2006 | Publisher abstract/contents; `phil-bourne` | Direct defender exists; detailed presentist replies explicitly unread here. |
 | CorreiaRosenkranz2018 | Publisher overview/contents; `phil-growing-block` | Specific GBT program, not proof that its epistemic/relativistic replies succeed. |
 | Cameron2015 | Publisher abstract; `phil-cameron` | Specific spotlight program, not every spotlight view or a verified consistency theorem. |
 | Skow2015 | Publisher abstract/contents; `phil-skow` | Distinguishes robust passage and examines spotlight objections; full arguments pending. |
-| McTaggart1908 | Original metadata and selected public-domain transcription passages; `phil-mctaggart` | Distinctions/argument motivation; no new solution or exhaustive original-text audit. |
+| McTaggart1908 | Public copy of original journal scan, pp. 458-461; bounded native passage check in `reviews/evidence/AGENT_REPORT.md`. `phil-mctaggart` remains discovery in the unchanged knowledge register. | The narrow order/change/A-series distinction is passage-checked; no verification of the whole unreality argument, new solution or global depth upgrade. |
 | Putnam1967 | Foundations second-pass audit of pp. 241--247, especially Principle III and closure | Attribute bridge-principle structure. First-pass source record still describes a narrower reading: reconcile before submission; exact quotation not used. |
-| Stein1991 | Foundations audit and coordinator inspection of OCR theorem/context | Attribute alternative local-definiteness program, not a fully reproduced theorem. Original printed theorem image unresolved; no claim of a published error. |
-| Brading2013 | Abstract and selected indexed passages near pp. 1101, 1104, 1110 | Alternative ontological-unity bridge; not a demonstrated quantitative discriminator. Complete primary article still needed. |
-| HoehnSmithLock2019 | Version 3 selected full-text theorem/assumption audit, `frontier/theorem-matrix.md` | Conditional three-picture equivalence and noninteraction/clock restrictions, not generic interaction theorem or ontology reduction. No proof independently reproduced. |
+| Stein1991 | Foundations audit, fresh full-text spotcheck and coordinator inspection of OCR/context, pp. 148-150 | The isolated OCR implication is false without contextual conditions; preserve full-causal-past inclusion and unsettled states when discussing the preceding argument. No independently reproduced characterization or necessity table. Printed theorem image unresolved; no claim of a published error. |
+| Brading2013 | Complete eleven-page journal-paginated public PDF copy read at argument level by the native evidence reviewer; exact route/scope in `reviews/evidence/AGENT_REPORT.md` | Supports the existing limited characterization. The copy matches published metadata/layout but was not collated with a publisher-hosted file. No independent Newton reconstruction, quantitative discriminator or ontology selection. Canonical source-record reconciliation remains pending. |
+| HoehnSmithLock2019 | Version 3 selected full-text theorem/assumption audit and fresh spotcheck, `frontier/theorem-matrix.md`; journal metadata checked separately | Printed citation uses the 2021 journal year; internal key retains its older name. Text inspected was arXiv v3, not a separate journal-body collation. Conditional equivalence and noninteraction/clock restrictions only; no proof independently reproduced. |
 | SmithAhmadi2019 | Primary journal metadata and version 3 selected full-text interaction-equation audit | Interactions already studied; no broad research gap claimed. No independent model reproduction. |
-| BernalSanchez2005 | Author abstract and primary bibliographic record | Conditional smooth Cauchy-slicing result only; proof not reproduced; no unique preferred present. |
+| BernalSanchez2005 | Versioned primary text, `gq-bs-2005-smooth-time`; fresh spotcheck of arXiv:gr-qc/0401112v3, Theorems 1.1-1.2 | Conditional smooth Cauchy-time/splitting result; proof not reproduced; no unique preferred present. This existing knowledge record resolves the older paper-ledger claim that no record existed. |
 
 ## Our claims versus sourced claims
 
@@ -43,3 +43,18 @@ first-pass source summaries that have not yet been reconciled.
 No article claim relies on agent consensus, the number of collected sources,
 the name of this repository, or an unaudited recent preprint. Bibliography
 metadata and claim support are different checks. Verify both before submission.
+
+## Review status and unresolved source gates
+
+The 20 October article reviews are under `reviews/argument/`, `reviews/evidence/`
+and `reviews/bibliography/`. The argument review checks the manuscript's logic,
+not every cited work. The evidence review distinguishes new source access from
+source-record updates; it does not edit the shared knowledge base. The
+bibliography review verifies metadata rather than philosophical entailment.
+
+Malament 1977 was read from a published scan in the separate full-text spotcheck;
+Stein 1968 remained inaccessible. Neither is silently substituted for Stein 1991
+or added to the present argument. Putnam's first/second-pass records and Brading's
+multiple records still need owner reconciliation. The printed Stein page image,
+model-selection gate and philosophical-priority audit remain open. These reviews
+improve an explicitly provisional draft, not submission readiness.

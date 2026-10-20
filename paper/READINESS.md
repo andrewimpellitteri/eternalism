@@ -34,3 +34,27 @@ before presenting it as an original, source-complete research contribution.
 8. Only then decide venue, length, authorship, acknowledgments, disclosure,
    citation style and submission. No publication, upload or submission is
    authorized by creating the draft.
+
+## Review update, 20 October 2026
+
+Three native review lanes examined the actual argument, source correspondence
+and bibliography. Their reports are preserved under `reviews/`. The argument
+review found no formal error in the stated proposition or finite examples,
+while identifying the admissibility standard, positive explanatory route and
+strongest defender/critic exchanges as substantive remaining work. Those
+limitations are now explicit in the manuscript; they are not resolved by
+symmetric criteria or agent agreement.
+
+A complete public journal-paginated copy of Brading 2013 has now been read at
+argument level; publisher-file collation and reconciliation of the source
+records remain pending. The original frozen argument has not been expanded on
+that basis. Malament 1977's primary text is accessible and checked in the
+separate source audit; Stein 1968 is still inaccessible through the attempted
+routes. Stein 1991's printed-page/OCR discrepancy remains unresolved. The
+Bernal-Sanchez primary statement now has an existing full-text knowledge record
+and fresh statement-level spotcheck.
+
+The current work completes a reviewable working draft only. It does not pass
+the original-contribution, source-complete or submission gates above. No venue,
+author, upload, submission or ontology selection is inferred from completing
+the workboard's drafting task.
