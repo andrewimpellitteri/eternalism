@@ -133,3 +133,11 @@ arxiv.org HTML and abs pages with curl worked. No page was blocked or paywalled.
    makes the PW map isometric, and is it still equal to the group-averaging inner product?
 4. Should RC5.md state the single-constraint-surface premise explicitly, given Rijavec's
    mixed-sector route to backflow?
+
+## Coordinator review (2026-10-20)
+
+- Quotes checked verbatim against arXiv HTML fetched 2026-10-20: 1912.00033v3 ("we assume that the clock and system do not interact"; "the most pressing generalization"; "henceforth considering only noncompact clocks"; "non-degenerate and continuous spectrum"); 1712.00081v3 footnote 1 ("may severely reduce the size of the physical Hilbert space"); 2204.11740v3 Sec. VII ("I leave this problem open for future investigations"); 2409.06479v3 ("we shall henceforth assume that no interactions between C and S are present"; also, earlier, "this would typically also ruin the periodicity of the clock").
+- Re-ran `sa_example3_check.py` (commutator norm 0.868; `H_int` annihilates the physical span) and `rijavec_backflow_check.py` (trace distance |cos(θ/2)|, 20 increases on 41 points). Both reproduce.
+- `check_sources.py --online`: 6 records, 0 errors.
+- Accepted point for RC-5: the uncoupled-clock "no memory" result needs a single constraint surface (pure physical state). A stationary mixture over energy sectors gives backflow even with a commuting interaction. RC5.md is updated accordingly.
+- Not re-checked: Mendes et al. and Garmier et al. readings; the claimed Eq. (26) sign typo in Smith–Ahmadi.
