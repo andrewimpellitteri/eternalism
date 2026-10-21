@@ -131,6 +131,34 @@ clock (e.g. Brown–Kuchař dust; the massless scalar clock in loop quantum
 cosmology) are treated in the literature, and whether "ideal clock" can be
 made precise as "the time variable is cyclic in the reduced Hamiltonian".
 
+## Update: ideal clocks (abstract level; arXiv blocked here)
+
+Branch (ii) is realized in the literature, and it has a price.
+
+- **Massless scalar clock** (Ashtekar–Pawlowski–Singh 2006, gr-qc/0602086):
+  the standard loop-quantum-cosmology model uses a free massless scalar as
+  internal time. Note: flat FRW, not the closed case.
+- **Dust clock** (Brown–Kuchař 1995, gr-qc/9409001): solving the constraint
+  for the dust-time momentum gives a Hamiltonian density in geometric
+  variables only; dust time drops out.
+- **Cost** (Thiemann 2006, astro-ph/0607380): full deparametrization needs a
+  scalar whose Lagrangian contains only derivatives; to match standard
+  cosmology it must be DBI-type (k-essence/phantom), and the model predicts
+  late-time recollapse.
+- **Philosophy** (Bamonti–Thébault, BJPS 2025, arXiv:2411.00541): a
+  conservative alternative to Thiemann via reference frames and complete
+  observables, keeping the Friedmann equations. Closest prior work on whether
+  the universe has a privileged clock. Must be read in full before drafting.
+
+Sharpened branch (ii): the universe's present is a global slice of a clock
+field that (a) the dynamics does not single out among inequivalent choices
+(Isham p. 200), (b) for a time-independent physical Hamiltonian must be
+special matter (dust, a free massless scalar, or derivative-only k-essence),
+and (c) in the realistic-cosmology version is exotic matter postulated in
+part to supply time. So the defender must make a physics bet that such a
+clock exists and is the privileged one. This is a cost of Brading's view in
+the universe case, not a refutation.
+
 ## Prior art to beat (discovery level unless marked)
 
 - **Monton 2006, "Presentism and quantum gravity"** (Dieks ed., *The Ontology
