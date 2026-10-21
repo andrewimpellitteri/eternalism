@@ -58,3 +58,21 @@ The current work completes a reviewable working draft only. It does not pass
 the original-contribution, source-complete or submission gates above. No venue,
 author, upload, submission or ontology selection is inferred from completing
 the workboard's drafting task.
+
+## Revision update, 21 October 2026
+
+- Gate 3 (source correspondence): **partly closed.** Full Brading 2013 and 2015 and
+  the full Clifton–Hogarth primary are now read and used. The printed Stein 1991
+  theorem and the Putnam record reconciliation remain open, so the Putnam/Stein
+  paragraph is unchanged apart from the added Clifton–Hogarth theorem.
+- Gate 4 (admissibility defense): one worked case added (Brading versus a composite
+  block rival), reported as conditional underdetermination. It illustrates the
+  framework; it does not defend the admissibility profiles.
+- Gate 5 (physical classification): Case II now reports a fixed-model application
+  (three-state clock) and the published formulation dependence; still not a new
+  classification.
+- New exposure: the causal-set growth passage relies on published results only.
+  The project's own doubly-principal theorem is deliberately not cited; it awaits
+  `adversarial-review`. Arageorgis 2016 is quoted from a lossy extraction and must
+  be re-read before submission.
+- Gates 1, 2, 6, 7 (partly: build and render verified), 8: unchanged.
