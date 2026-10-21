@@ -109,6 +109,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `gh-gate-sync` — Read-only GitHub gate status checker | 6 | — | opencode-coordinator |
 | done | `existence-form-trilemma` — The form-of-existence trilemma for local presentism | 10 | — | opencode-coordinator |
 | done | `p1-double-prime-revision` — Retarget the article at Brading's P1** and the coverage premise | 10 | — | opencode-coordinator |
+| claimed | `refocus-cpobc-correspondence` — Audit CPOBC source correspondence and the remaining research boundary | 10 | — | luna-refocus-correspondence |
+| claimed | `refocus-cpobc-reproduction` — Independently reproduce a CPOBC obstruction and assess feasibility | 10 | — | luna-refocus-reproduction |
+| claimed | `refocus-rank-audit` — Audit the rank-dependent post theorem frame and priority | 10 | — | luna-refocus-rank |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
