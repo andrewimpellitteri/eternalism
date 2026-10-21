@@ -78,15 +78,19 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
 | claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
 | claimed | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
-| claimed | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | glm-bc-holonomy-stage4 |
+| done | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | codex-native-bc |
 | open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
 | open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |
-| claimed | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | glm-constraint-formulation-compare |
+| claimed | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
 | claimed | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
 | review | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
 | claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
 | review | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
-| open | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | — |
+| claimed | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
+| done | `clock-action-correspondence` — Repair finite-clock comparison: charge origin, aliasing and valid cyclic actions | 10 | — | codex-clock-audit |
+| claimed | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | codex-observer-audit |
+| open | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | — |
+| claimed | `bc-nonvanishing-continuation` — Does Bell-causal phase freedom survive when every transition is nonzero? | 10 | — | codex-native-bc-nonzero |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

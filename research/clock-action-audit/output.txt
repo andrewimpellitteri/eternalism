@@ -1,0 +1,17 @@
+eps=1 g=0.000000000 origin=0: max-entry wrap defect=2.000000000; valid=False
+eps=1 g=0.000000000 origin=0.5: max-entry wrap defect=0.000000000; valid=True
+eps=2 g=0.000000000 origin=0: max-entry wrap defect=0.000000000; valid=True
+eps=2 g=0.500000000 origin=1: max-entry wrap defect=0.658790419; valid=False
+eps=2 g=1.732050808 origin=1: max-entry wrap defect=0.000000000; valid=True
+eps=2 g=2.828427125 origin=-2: max-entry wrap defect=0.000000000; valid=True
+Unshifted eps=1 free model: wrap equals -I; half-unit origin repairs it.
+Alias check eps=1, g=0.000000000, origin=0.5: Dirac dim=2; fixed dim=2
+Alias check eps=1, g=0.000000000, origin=-0.5: Dirac dim=1; fixed dim=2
+Alias check eps=2, g=0.000000000, origin=0: Dirac dim=1; fixed dim=2
+Alias check eps=2, g=0.000000000, origin=1: Dirac dim=2; fixed dim=2
+Alias check eps=2, g=2.828427125, origin=-2: Dirac dim=1; fixed dim=4
+Exact resonance certificates g^2 = 0,3,8,15; g=1/2 fails integer gaps analytically.
+g=0.500000000: seed wrap defect=0.380352826, reading covariance defect=0.106935859; direct all-input reductions remain unitary.
+g=1.732050808: seed wrap defect=0.000000000, reading covariance defect=0.433012702; direct all-input reductions remain unitary.
+Invalid finite twirl: idempotence defect=0.114757747; Hermiticity defect=0.168287530
+PASS: analytic classification corroborated; no eigensolver or worker code reused.

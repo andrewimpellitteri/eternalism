@@ -1,0 +1,6 @@
+stage 2: 2 labelled causets, 2 classes; exact MSR/BC/norm covariance pass; cumulative BC=1
+stage 3: 7 labelled causets, 5 classes; exact MSR/BC/norm covariance pass; cumulative BC=10
+stage 4: 40 labelled causets, 16 classes; exact MSR/BC/norm covariance pass; cumulative BC=109
+stage 5: 357 labelled causets, 63 classes; exact MSR/BC/norm covariance pass; cumulative BC=1619
+Independent Gaussian-rational holonomy witness verified with separate enumeration and canonicalization.
+PASS: finite zero-aware product-BC convention only; nonzero extension unresolved.
