@@ -273,3 +273,42 @@ printed theorem and surrounding pages. It does not settle the metaphysics of
 the growing block, and it does not claim that any of these authors would accept
 the dilemma as formulated. The mathematical claims are the project's scoped
 results, not new theorems.
+
+## 11. Coda: the exclusivity premise
+
+The companion audit (`research/discriminators-audit/RESULT.md`) screened 21
+candidate tests and found none that qualifies as an ontology discriminator
+under the manuscript's standard. That result can look like an empirical failure:
+after all the detectors, no experiment separates the views. It is better read as
+a structural lesson.
+
+A detector reading selects a physical model, not an ontology. A foliation, a
+stochastic collapse noise, a discrete order, or a cosmological arrow can be
+carried by a block package as well as by a presentist or growing-block package.
+The audit's D1 (LAGEOS / Einstein-aether) is the clearest case: a nonzero
+preferred-frame parameter would select a gravity model, and a block universe
+with the same aether field is admissible. The missing premise is not a better
+measurement; it is an **exclusivity premise**: a defended claim that one
+ontology's constitutive commitments entail a structure with a specific coupling,
+and that the rival's commitments forbid it. No candidate in the screened
+literature supplies that premise.
+
+This is the same lesson as the completion dilemma. The mathematics constrains
+which models can carry a global completed history; it does not tell us which
+ontology owns the model. The audit's negative result therefore shifts the
+burden rather than ending the debate: the next move is a philosophical defense
+of an exclusivity premise, or an argument that the ontology labels are doing no
+independent work.
+
+The strongest objection is that no extra premise is needed because an ontology
+just is the structure of its best model. If so, the debate collapses into a
+structural-realist reading and the labels "presentism" and "eternalism" lose
+their distinctive content. The reply is that this is a substantive metaphysical
+position, not a neutral dissolution; it should be argued for, not assumed. The
+audit's conclusion is thus conditional in the same way as the essay's: given a
+non-structural reading of the labels, an exclusivity premise is required, and no
+detector supplies it.
+
+That is a philosophical result, not a failure of experimental imagination. It
+tells us where to look next: at the constitutive commitments of the views, not
+only at their detectors.

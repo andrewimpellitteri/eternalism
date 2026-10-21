@@ -25,6 +25,8 @@ mathematical consequence.
 6. Reply: what the objection concedes; access vs global becoming.
 7. Predecessors: Arageorgis, Earman, Wüthrich–Callender, Brading, Stein.
 8. Verdict: known in parts, new as a precise dilemma; conditional defence.
+11. Coda: the discriminator audit's negative result is a structural point about
+the missing exclusivity premise, not an empirical failure.
 9. What would change the verdict; limits.
 
 ## Sources and read depth
