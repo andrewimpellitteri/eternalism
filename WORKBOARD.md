@@ -105,7 +105,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `strongest-opponents` — Reconstruct Saunders and Pooley at their strongest | 9 | — | opencode-coordinator |
 | done | `examples-scope-cleanup` — Decide and execute the example/scope cleanup | 8 | — | opencode-coordinator |
 | done | `article-rebuild-integration` — Integrate the reframed article, cut the prospectus material, and build | 10 | article-reframe-scope, brading-existence-bridge, admissibility-burden-calibration, favoring-account, strongest-opponents, examples-scope-cleanup | opencode-coordinator |
-| open | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | — |
+| done | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | opencode-coordinator |
 | done | `gh-gate-sync` — Read-only GitHub gate status checker | 6 | — | opencode-coordinator |
 | done | `existence-form-trilemma` — The form-of-existence trilemma for local presentism | 10 | — | opencode-coordinator |
 
