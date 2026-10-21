@@ -19,7 +19,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | opencode-coordinator |
 | done | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | opencode-coordinator |
 | done | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | codex-adversarial |
-| open | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
+| done | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | opencode-coordinator |
 | done | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
 | done | `kb-ico-qrf` — Compare indefinite causal order, process matrices and temporal quantum reference frames | 9 | — | glm-kb-ico-qrf |
