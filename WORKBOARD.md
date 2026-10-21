@@ -91,7 +91,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | opencode-coordinator |
 | done | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | opencode-coordinator |
 | done | `bc-nonvanishing-continuation` — Does Bell-causal phase freedom survive when every transition is nonzero? | 10 | — | codex-native-bc-nonzero |
-| open | `rank-renewal-convergence` — Settle the weighted convergence obligation for rank-only post values | 10 | — | — |
+| done | `rank-renewal-convergence` — Settle the weighted convergence obligation for rank-only post values | 10 | — | opencode-coordinator |
 | done | `operator-qbc-phase-holonomy` — Does Bell-causal phase freedom survive operator-valued QBC? | 10 | — | opencode-coordinator |
 | done | `observer-growth-channel` — Derive a causal-set observer channel and test the unstable event | 10 | — | opencode-coordinator |
 | done | `paper-priority-referee` — Targeted priority audit and referee-style review of the selected paper | 9 | — | opencode-coordinator |

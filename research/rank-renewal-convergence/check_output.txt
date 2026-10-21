@@ -1,0 +1,68 @@
+A. enumeration and natural-label multiplicities
+  naturally labelled orders, n=0..7: 0:1, 1:1, 2:2, 3:7, 4:40, 5:357, 6:4824, 7:96428
+  A1: labelled sum == sum_shapes N(shape)*weight, n=1..5, p=1/2
+  A2: N(H(+)S) == N(H)N(S), 71 shape pairs, |H|+|S|<=5
+B. renewal identity U(z)(1-R(z)) = 1 exactly through degree 8
+  p=0: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=1/2: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=3/2: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=2: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=-1: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=(1+i)/2: B_m == sum_(k=1..m) R_k B_(m-k), m=1..8 exact
+  p=0: B_1=R_1=0 and B_j=R_k=0 for 2<=j,k<=8 (exact)
+C. exact level sums against the two-cap and star lower bounds
+  p=1/2: W_n >= star and V_n >= two-cap, n=2..7
+  p=3/2: W_n >= star and V_n >= two-cap, n=2..7
+  p=2: W_n >= star and V_n >= two-cap, n=2..7; bipartite bound (odd and even)
+  p=-1: W_n >= star and V_n >= two-cap, n=2..7
+  p=5/2: W_n >= star and V_n >= two-cap, n=2..7
+  p=-1/2: W_n >= star and V_n >= two-cap, n=2..7
+  p=(1+i)/2: W_n >= star and V_n >= two-cap, n=2..7
+  p=(1+i)/2 exact W_n / V_n in Q(sqrt2):
+    n=2: W_n=(0+1/2r2)  V_n=(0+1/2r2)
+    n=3: W_n=(1/2+1/4r2)  V_n=(1/2+0r2)
+    n=4: W_n=(3/8+3/4r2)  V_n=(1/4+1/4r2)
+    n=5: W_n=(55/32+31/32r2)  V_n=(3/4+3/16r2)
+    n=6: W_n=(29/8+809/256r2)  V_n=(31/32+55/64r2)
+    n=7: W_n=(12711/1024+18249/2048r2)  V_n=(809/256+29/16r2)
+D. bridge coefficients: three independent definitions, and bounds
+  p=1/2: B_j == inclusion-exclusion (j=1..7) and brute-force percolation (j=1..4, brute force to j=5); bound holds (b<1: product bound)
+  p=3/2: B_j == inclusion-exclusion (j=1..7) and brute-force percolation (j=1..4); bound holds (b<1: product bound)
+  p=2: B_j == inclusion-exclusion (j=1..7) and brute-force percolation (j=1..4); bound holds (b>=1: 4^j b^(j(j+1)/2) bound)
+  p=-1: B_j == inclusion-exclusion (j=1..7) and brute-force percolation (j=1..4); bound holds (b>=1: 4^j b^(j(j+1)/2) bound)
+  p=-1/2: B_j == inclusion-exclusion (j=1..7) and brute-force percolation (j=1..4); bound holds (b>=1: 4^j b^(j(j+1)/2) bound)
+  p=(1+i)/2: B_j == inclusion-exclusion, j=1..6
+E. weighted ratio: exact exponent identity and geometric majorant
+  p=3/2 (b<1): t=2.0000>1, geometric ratio 1/t; partial sum_60=2.000000
+  p=1/2 (classical, t=1): t=1 exactly (real p in (0,1)); the b<1 branch needs t>1 and is NOT invoked here
+  p=-1/2 (b>1): exponent identity exact j=0..40; n0=8, q=0.7023<1, const*sum_(j<60)q^j=0.0862107
+  p=-1 (b>1): exponent identity exact j=0..40; n0=5, q=0.5000<1, const*sum_(j<60)q^j=0.03125
+  p=5/2 (b>1): exponent identity exact j=0..40; n0=4, q=0.7111<1, const*sum_(j<60)q^j=0.065641
+  p=2 (b=1): no n<=79 with a*b^(n-2)>4; b=1 branch used
+  p=3/2: |B_j|^2, j=0..7 = 1, 2.25, 5.062, 0.7119, 3.028, 1.515, 2.515, 1.922
+  p=(1+i)/2: |B_j|^2, j=0..7 = 1, 0.5, 0.25, 0.2812, 0.5645, 1.347, 3.064, 5.539
+H. child-sum decomposition sum_J A_p(J) = A_p(H) R_(m-n), exact
+  p=1/2: 426 exact child-sum identities, n<m<=7
+  p=3/2: 426 exact child-sum identities, n<m<=7
+  p=-1: 426 exact child-sum identities, n<m<=7
+  p=(1+i)/2: 426 exact child-sum identities, n<m<=7
+F. endpoints and the division failure
+  p=0: every principal order of size 2..5 has L>=1, so A_0=0 exactly
+  p=1: A_1(H)=1 exactly on the unique chain, 0 elsewhere, n=2..5
+  chain: L=n-1, h=0, N=1, so N*A_p=p^(n-1); nonzero iff p!=0
+  at p=0 the rank-only recurrence cannot be derived by division;
+  the no-go instead uses A_0(H)=0 at ranks>=2 plus the laminar cover
+G. positive segment sums K_k (variation side) vs complex R_k
+  p=1/2 K_k = 1:0.5, 2:0, 3:0.03125, 4:0.02539, 5:0.02203, 6:0.0202, 7:0.01887
+  p=1/2 R_k = 1:0.5, 2:0, 3:0.03125, 4:0.02539, 5:0.02203, 6:0.0202, 7:0.01887
+  p=3/2 K_k = 1:1.5, 2:0, 3:2.531, 4:7.119, 5:37.06, 6:208.5, 7:1346
+  p=3/2 R_k = 1:1.5, 2:0, 3:2.531, 4:4.271, 5:2.091, 6:4.599, 7:11.41
+  p=2 K_k = 1:2, 2:0, 3:16, 4:160, 5:3392, 6:1.184e+05, 7:6.946e+06
+  p=2 R_k = 1:2, 2:0, 3:16, 4:32, 5:64, 6:384, 7:256
+  p=-1 K_k = 1:1, 2:0, 3:2, 4:20, 5:508, 6:3.085e+04, 7:4.608e+06
+  p=-1 R_k = 1:1, 2:0, 3:2, 4:4, 5:212, 6:4800, 7:8.841e+04
+  NOTE: growth of K_k is the total-variation side. It is NOT used by
+  the argument in RESULT.md and says nothing about convergence of
+  the complex series sum R_k z^k (cancellation is not excluded).
+
+ALL FINITE EXACT CHECKS PASSED (finite corroboration only)
