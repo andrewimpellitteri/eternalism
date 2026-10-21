@@ -86,6 +86,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
 | claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
 | review | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
+| open | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

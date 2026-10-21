@@ -51,4 +51,6 @@ if __name__=='__main__':
  for n in (1,2,4,8,12,20):binary_check(n)
  finite_dual_check()
  for n in (2,4,8,12,20):boolean_witness(n)
+ assert (F(525313,4)-1)*100 == 13132725
+ print('Common-filter diagnostic: eta<=4/525313; reference trials>=13132725 at relative RMSE 0.1')
  print('All exact checks passed.')
