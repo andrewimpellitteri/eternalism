@@ -69,14 +69,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
-| claimed | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
+| open | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
 | done | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | glm-glm-probe-corrections |
 | done | `longshot-regularized-measure` — Long shot: regularized covariant measure for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-growth-completion-dilemma` — Long shot: growth-vs-completion dilemma theorem for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-birth-order-interference` — Long shot: interference trace of birth order under norm-only covariance | 6 | — | claude-longshot |
 | done | `runner-report-handback` — Align root report acceptance with the worker brief and runner | 10 | — | codex-runner |
 | done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
-| claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
+| open | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
 | done | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
 | done | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | codex-native-bc |
 | open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
@@ -84,11 +84,11 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
 | done | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
 | done | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
-| claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
+| open | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
 | done | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
 | done | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
 | done | `clock-action-correspondence` — Repair finite-clock comparison: charge origin, aliasing and valid cyclic actions | 10 | — | codex-clock-audit |
-| claimed | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | codex-observer-audit |
+| open | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | codex-observer-audit |
 | open | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | — |
 | done | `bc-nonvanishing-continuation` — Does Bell-causal phase freedom survive when every transition is nonzero? | 10 | — | codex-native-bc-nonzero |
 
