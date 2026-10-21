@@ -132,15 +132,16 @@ alternative is a methodological paper with one completed application.
 
 ## Reframe integrated, 21 October 2026
 
-The article has been rebuilt as a focused paper on Brading, local presents and
-unrestricted existence (7 pages). The earlier prospectus material was cut or
+The article has been rebuilt as a focused paper on Brading's P1** and the
+coverage problem (8 pages). The earlier prospectus material was cut or
 moved: quantum one-dimensional diagnostic, record proposition, LAGEOS detail
-and causal-set breadth. The core is the coverage objection and the four repairs
+and causal-set breadth. The core is the P1** coverage objection and the repair costs
 of `research/brading-existence/RESULT.md`; the burden calibration and favoring
 account are integrated in shortened form; Saunders and Pooley are reconstructed
 in the objections section. The corrected Stein four-way distinction is retained
 as a compact source note.
 
-Status: **independent re-review pending**. The draft is not submission-ready
+Status: **independent source, logic and priority checks in progress**; the
+first re-review required the P1** retarget, which is now in place. The draft is not submission-ready
 until `article-rereview` records a contribution verdict and the author decides
 the metadata.

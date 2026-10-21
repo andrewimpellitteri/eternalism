@@ -88,6 +88,6 @@ The working draft was rebuilt around one application: Brading's system-relative
 present and the coverage objection. The quantum, record, LAGEOS and causal-set
 prospectus material was cut or moved per
 `reviews/external-2026-10-21/REVISION_PLAN.md` and
-`research/examples-scope/DECISIONS.md`. The new draft is 7 pages, with the
-Brading core, burden calibration, favoring account, strongest-opponents
-section and limited verdict. It is not yet independently re-reviewed.
+`research/examples-scope/DECISIONS.md`. The new draft is 8 pages, retargeted at Brading's P1** and the coverage
+problem. The second re-review required that retarget; independent source,
+logic and priority checks are in progress.

@@ -34,7 +34,7 @@ acknowledgments and any journal-specific AI-disclosure wording require a later
 decision. The draft must not be submitted under invented author information.
 
 The 21 October 2026 reframe replaces the earlier prospectus with a focused
-paper on Brading, local presents and unrestricted existence (7 pages). The
+paper on Brading's P1** and the coverage problem (8 pages). The
 20 October revision and its reviews remain preserved under `reviews/`; the
 external review and rebuild plan are under `reviews/external-2026-10-21/`.
 `verification.json` records the build, citation counts and source/output
