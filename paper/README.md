@@ -33,8 +33,10 @@ The displayed author line is deliberately generic: human authorship, affiliation
 acknowledgments and any journal-specific AI-disclosure wording require a later
 decision. The draft must not be submitted under invented author information.
 
-The 20 October 2026 revision has three native review reports under `reviews/`,
-a refreshed citation/evidence ledger, five passing exact example checks, and a
-clean nine-page PDF build inspected page by page. `verification.json` records
-the build, citation counts and source/output hashes. Completing this drafting
-task leaves the research and submission gates in `READINESS.md` open.
+The 21 October 2026 reframe replaces the earlier prospectus with a focused
+paper on Brading, local presents and unrestricted existence (7 pages). The
+20 October revision and its reviews remain preserved under `reviews/`; the
+external review and rebuild plan are under `reviews/external-2026-10-21/`.
+`verification.json` records the build, citation counts and source/output
+hashes. The submission gates in `READINESS.md` remain open pending independent
+re-review.

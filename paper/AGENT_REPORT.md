@@ -81,3 +81,13 @@ missing premise. The quantum paragraph is relabelled as a one-dimensional
 diagnostic. The architectural objections are assessed in `ASSESSMENT.md`; the
 rebuild options are in `REVISION_PLAN.md`. The draft is not submission-ready as
 a research paper.
+
+## Reframe integration, 21 October 2026
+
+The working draft was rebuilt around one application: Brading's system-relative
+present and the coverage objection. The quantum, record, LAGEOS and causal-set
+prospectus material was cut or moved per
+`reviews/external-2026-10-21/REVISION_PLAN.md` and
+`research/examples-scope/DECISIONS.md`. The new draft is 7 pages, with the
+Brading core, burden calibration, favoring account, strongest-opponents
+section and limited verdict. It is not yet independently re-reviewed.

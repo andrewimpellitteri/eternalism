@@ -129,3 +129,18 @@ Status: **not submission-ready as a research paper.** See
 `reviews/external-2026-10-21/REVIEW.md`, `ASSESSMENT.md` and `REVISION_PLAN.md`.
 The recommended rebuild is a focused Brading/existence-bridge paper; the
 alternative is a methodological paper with one completed application.
+
+## Reframe integrated, 21 October 2026
+
+The article has been rebuilt as a focused paper on Brading, local presents and
+unrestricted existence (7 pages). The earlier prospectus material was cut or
+moved: quantum one-dimensional diagnostic, record proposition, LAGEOS detail
+and causal-set breadth. The core is the coverage objection and the four repairs
+of `research/brading-existence/RESULT.md`; the burden calibration and favoring
+account are integrated in shortened form; Saunders and Pooley are reconstructed
+in the objections section. The corrected Stein four-way distinction is retained
+as a compact source note.
+
+Status: **independent re-review pending**. The draft is not submission-ready
+until `article-rereview` records a contribution verdict and the author decides
+the metadata.

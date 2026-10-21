@@ -104,8 +104,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `favoring-account` — A positive account of defeasible favoring, not only exclusion | 9 | — | opencode-coordinator |
 | done | `strongest-opponents` — Reconstruct Saunders and Pooley at their strongest | 9 | — | opencode-coordinator |
 | done | `examples-scope-cleanup` — Decide and execute the example/scope cleanup | 8 | — | opencode-coordinator |
-| open | `article-rebuild-integration` — Integrate the reframed article, cut the prospectus material, and build | 10 | article-reframe-scope, brading-existence-bridge, admissibility-burden-calibration, favoring-account, strongest-opponents, examples-scope-cleanup | — |
-| blocked | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | — |
+| done | `article-rebuild-integration` — Integrate the reframed article, cut the prospectus material, and build | 10 | article-reframe-scope, brading-existence-bridge, admissibility-burden-calibration, favoring-account, strongest-opponents, examples-scope-cleanup | opencode-coordinator |
+| open | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | — |
 | open | `gh-gate-sync` — Read-only GitHub gate status checker | 6 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.

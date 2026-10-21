@@ -15,17 +15,20 @@
   "tex_tool": "/Library/TeX/texbin/pdflatex",
   "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
   "render_tool": "Swift macOS PDFKit via paper/render_pdf.swift",
-  "pdf_pages": 12,
-  "visually_reviewed_pages": [],
+  "pdf_pages": 7,
+  "visually_reviewed_pages": [
+    1,
+    7
+  ],
   "visual_defects_found": [],
   "unresolved_references": false,
   "overfull_hboxes": false,
   "source_sha256": {
-    "paper/main.tex": "703df01d38554132871417d819513ebebfdc2793ef3f406972ed95f1e8b90722",
-    "paper/references.bib": "d838f15885ed83b52ada1292b1ec45c2a3883ca96c5df410ca41cb162b07a49b",
+    "paper/main.tex": "3f472c449df07b8c1f4484e4dc1136077499254c740db52fd59c70cb1147c312",
+    "paper/references.bib": "72c6ff808b22b8d91653e51e80b53cb6056931e27d9a3331d9fe249f272acae8",
     "paper/check_records.py": "f819ae94e093b671a4f62cdfc178510cbd11aa0d6df716df6e094f962aeb85f5",
-    "output/pdf/temporal-ontology-working-draft.pdf": "876754f28cbb784e3f317fdd3f3e0ddc37931132222afefdf605774ab96c2a50"
+    "output/pdf/temporal-ontology-working-draft.pdf": "e2299ac7ae0db51f04ae7ee15402667f9218390c72358861ecfd1b61f039ccc1"
   },
   "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. Stein printed-page gate closed at p.149 with condition (iv) caveat.",
-  "visual_review_note": "Build checked after the 21 October Stein and quantum corrections; page-by-page visual inspection not repeated. 12 pages, no unresolved references or overfull boxes."
+  "visual_review_note": "Reframed 7-page draft; pages 1 and 7 inspected (title/abstract and conclusion/references). Build has no unresolved references or overfull boxes; full page-by-page inspection remains for the re-review."
 }

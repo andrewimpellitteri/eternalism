@@ -1,618 +1,412 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{microtype,booktabs}
+\usepackage[letterpaper,margin=1.05in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype,booktabs}
 \usepackage[round,authoryear]{natbib}
-\usepackage[colorlinks=true,allcolors=blue]{hyperref}
-\setlength{\emergencystretch}{2em}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 \newtheorem{proposition}{Proposition}
-\newcommand{\Real}{\mathcal{R}}
-\newcommand{\Obs}{\mathcal{E}}
-\title{What Would It Take for Physics to Favor a Theory of Time?\\
-\large Bridge Premises, Records, and Conditional Constraints}
+\newtheorem{definition}[proposition]{Definition}
+\theoremstyle{definition}
+\newtheorem{remark}[proposition]{Remark}
+\newcommand{\W}{\mathcal W}
+\newcommand{\U}{\mathcal U}
+\title{Local presents and unrestricted existence:\\ the coverage problem for dynamical presentism}
 \author{Working manuscript}
-\date{21 October 2026 --- revised provisional argument draft}
-
+\date{21 October 2026}
 \begin{document}
 \maketitle
-\begin{abstract}
-Physical theories constrain temporal metaphysics, but the target of a constraint
-must be specified. Presentism, eternalism, and accounts of becoming do not, by
-their labels alone, determine experimental probabilities. This draft argues
-for a contrast-sensitive burden of proof: an inference from physics to a
-temporal ontology should identify an admissible physical realization, the
-bridge premises connecting its structures to existence or passage, and the
-alternative that the evidence or argument discriminates against. We distinguish
-physical incompatibility, empirical discrimination, and representation
-equivalence. Special-relativistic simultaneity and relational quantum clocks
-illustrate why these inferential forms cannot substitute for one another. In the relativistic case, a definability theorem classifies becoming relations
-under explicit structural premises, while preferred-frame effects can be tested
-in specified coupled models. In the clock case, interacting examples show why
-equivalence claims must fix the constraint, physical inner product and
-observables. An elementary finite-history example makes record preservation
-precise while exposing its limits; causal-set growth supplies a related
-covariance problem, without an embedded-record model.
 
-The position is neither that physics is irrelevant to
-metaphysics nor that empirical equivalence makes ontologies identical.
-The proposed framework and examples are expository and argumentative; no
-mathematical or philosophical priority, new physical prediction, or preferred
-temporal ontology is established here.
+\begin{abstract}
+Brading's law-constitutive present is system-relative: a present is the
+spatiotemporal region needed to sustain a dynamical unity. This paper asks
+whether that local present restricts unrestricted concrete existence, as
+presentism requires. It does not, by itself. Local boundedness of each
+system-present is compatible with the union of all presents covering the whole
+history; the coverage objection is exact. Brading's own reformulation and her
+interaction passage support a system-relative existence reading. Recovering a
+global restriction requires an actuality or privilege premise, restrictions on
+coexistence, or a revised presentism, each with a cost not settled by physics.
+The result is a limited verdict: dynamical individuation is insufficient for the
+presentist existential claim. The paper does not refute Brading or establish
+eternalism.
 \end{abstract}
 
-\noindent\textbf{Draft status.} Citations vary in reading depth; the companion
-\texttt{SOURCE\_AUDIT.md} records those limits. The manuscript does not report
-a completed systematic review, a proof-assistant verification, or an original
-result that has passed the project's independent novelty audit.
+\section{Introduction}
 
-\section{The question is contrastive}
+Brading's \emph{Presentism as an Empirical Hypothesis} offers one of the most
+careful attempts to keep a presentist ontology alive within special relativity
+\citep{Brading2013}. She rejects the shared assumption that spacetime is the
+ontological principle of unity of what exists, and replaces it with a
+law-constitutive principle: the dynamical laws constitute genuine unities, and
+the present of a system is the spatiotemporal region needed to sustain its
+dynamics \citep[pp.~1104--1109]{Brading2013}. The present is therefore local and
+system-relative, not a global simultaneity slice.
 
-What would it mean for physics to favor eternalism over presentism, or local
-becoming over a moving spotlight? At least three answers are possible. A view
-might contradict a well-supported physical structure. A realized model might
-predict observations more successfully than a rival. Or the physical theory
-might provide an explanation whose ontological commitments are better
-understood in one way than another. These are serious routes to philosophical
-justification, but they have different premises and different conclusions.
+This paper asks a narrower question than whether presentism or eternalism is
+true:
 
-The danger is not merely an insufficient number of citations. It is an
-inference in which a result answering one question is taken to answer another:
-the absence of a distinguished simultaneity relation becomes the nonexistence
-of passage; the representation of an entire history becomes determinism; or
-an equivalence of relational dynamics becomes the elimination of fundamental
-time. A dense catalogue of physical theories cannot repair that inferential
-gap without identifying the premises that cross it.
-
-Our methodological starting point is physics-constrained but non-reductive.
-Empirical adequacy matters greatly, while meaningful claims about grounding,
-existence, and explanation are not defined away because they lack a direct
-meter reading. This starting point is itself a philosophical commitment,
-not a theorem of physics. The breadth of the field is usefully represented by
-\citet{Callender2011}. The contrast between the programs of
-\citet{Callender2017} and \citet{Maudlin2007} motivates our caution about
-treating one account of passage as the neutral interpretation of scientific
-practice; that methodological inference is ours.
-
-Our thesis is therefore a burden-of-proof claim:
 \begin{quote}
-An argument that physics favors a temporal ontology must identify the
-realization and bridge premises under which the physical result bears on that
-ontology, and specify the contrast that the result actually supports.
+Under what conditions does a physically defined local present constitute a
+restriction on what exists, rather than merely a division of an eternalist
+history into dynamical unities?
 \end{quote}
-This does not require every philosophical argument to predict a new
-measurement. It requires an argument to say whether its force is empirical,
-logical, explanatory, or a combination, and to preserve that scope at its
-conclusion.
 
-\section{What is being compared?}
+The answer defended here is negative and limited. Brading's local present does
+not, by itself, establish a restriction on unrestricted concrete existence. Her
+own reformulation,
 
-\subsection{Independent questions}
+\begin{quote}
+(P1*) For each and every thing, that thing exists only presently, where it is
+something to be determined empirically \citep[p.~1110]{Brading2013},
+\end{quote}
 
-For this draft, presentism restricts unrestricted concrete existence to what
-is present; eternalism admits past and future entities as well as present
-ones. Growing-block views retain the past and present while rejecting future
-entities; moving-spotlight accounts combine a complete temporal ontology with
-objectively distinguished presentness. These are schematic families, not
-complete theories. Direct defenses differ substantially: compare
-\citet{Bourne2006}, \citet{CorreiaRosenkranz2018}, and \citet{Cameron2015}.
-Their detailed replies have not yet been fully audited for this manuscript.
+is a per-thing, system-relative existence claim, not the original
+``all and only things that exist now are real'' \citep[p.~1101]{Brading2013}.
+Local boundedness of each system-present is compatible with the union of all
+presents covering the entire history. Recovering a global restriction requires
+an additional actuality or privilege premise, a restriction on which presents
+coexist, or a revision of what presentism claims. Each repair has a cost that
+is not settled by the physics.
 
-Several further questions must remain separate. Are tensed facts irreducible?
-Does something objectively become present, existent, or definite? Do laws
-and complete appropriate data select one history? How do objects persist?
-Is time fundamental? Which asymmetries need explanation? An eternalist can
-accept indeterministic laws. A four-dimensional spacetime does not by itself
-make ordinary objects temporal worms. Knowing that an event is now is not
-automatically knowing an extra objective spotlight property.
+The contribution is not a new general theory of time. It is a focused
+reconstruction of one existence bridge and a precise objection to it. The paper
+does not refute Brading, does not prove eternalism, and does not claim that
+every presentism fails.
 
-These distinctions are not concessions invented to protect a preferred
-position. McTaggart's argument already differentiates temporal order,
-change, and A-determinations \citep{McTaggart1908}; its contested premises
-cannot be replaced by the phrase ``time is an illusion.'' Likewise,
-\citet{Skow2015} distinguishes robust from less demanding senses of passage.
-Clock-rate comparisons constrain metric relations. Connecting those relations
-to one of these senses of passage requires a further bridge argument.
+\section{The existential contrast}
 
-\subsection{Realizations, not bare labels}
+\subsection{Two premises and a reformulation}
 
-Represent a comparison target schematically as
+Brading begins from the familiar tension between
+
+\begin{itemize}
+\item (P1) All and only things that exist now are real;
+\item (P2) Special relativity is a complete account of spatiotemporal
+structure \citep[p.~1101]{Brading2013}.
+\end{itemize}
+
+P1 is a global restriction on existence: what there is is what is present, and
+events outside the present are not real. P2 says that nothing is missing from
+the special-relativistic account of spatiotemporal structure. The apparent
+conflict is that relativity supplies no global present.
+
+Brading's response is not to add a preferred foliation. It is to reject the
+assumption that spacetime is the ontological ground of unity, and to ground
+unity in the dynamical laws instead \citep[pp.~1104--1108]{Brading2013}.
+Spacetime becomes an epistemic principle of unity, the framework in which we
+organize knowledge beyond the here and now. The present becomes the region
+needed to sustain a dynamical system, and P1 is rewritten as P1*.
+
+P1* is the textual pivot of this paper. It quantifies over things and assigns
+each a present. It does not say that there is a global domain of existence
+smaller than the world history. That difference is the subject of the coverage
+objection.
+
+\subsection{Existence, presence, unity and endurance}
+
+Four notions must be kept apart:
+
+\begin{enumerate}
+\item \emph{Existence}: the unrestricted claim that an event is part of what
+there is.
+\item \emph{Presence}: an event's belonging to a system's sustaining region.
+\item \emph{Unity}: the law-constituted integration that makes a system one
+thing.
+\item \emph{Endurance}: the persistence of that unity through change.
+\end{enumerate}
+
+Brading's argument moves from unity to presence. The further move from presence
+to a restriction on existence is the one at issue. Confusing presence with
+existence makes the coverage problem invisible: every event can be present in
+some system's present while every event exists.
+
+\subsection{The target contrast}
+
+Let $\W$ be the set of concrete events in the world history, and for each
+genuine dynamical system $i$ let $\U_i\subseteq\W$ be its system-sustaining
+present.
+
+\begin{definition}[Global restriction]
+A reading imposes a \emph{global existential restriction} if there is a fact
+about what exists simpliciter and $\W$ contains events that do not satisfy it.
+\end{definition}
+
+\begin{definition}[Local boundedness]
+A reading is \emph{locally bounded} if $\U_i$ is a proper subregion of $\W$ for
+every system $i$.
+\end{definition}
+
+Presentism, in the sense of P1, requires a global restriction. Eternalism denies
+one. Brading's system-relative present is locally bounded; whether it imposes a
+global restriction is exactly what the coverage objection puts in question.
+
+\section{Brading's law-constitutive present}
+
+Brading's positive proposal has three parts.
+
+First, the laws constitute genuine unities. A physical thing, simple or
+composite, is what it is in part because it satisfies the laws; the laws also
+constitute the parts of a composite and their persistence through change
+\citep[pp.~1105--1108]{Brading2013}. This is offered as an alternative to
+essentialism and haecceitism, and as an account of numerical identity through
+qualitative change.
+
+Second, spacetime is demoted from an ontological to an epistemic principle of
+unity. It is the framework in which we organize knowledge of the not-here and
+not-now, not the ground of what exists \citep[pp.~1108--1109]{Brading2013}.
+
+Third, the present is the region needed to sustain the dynamical system:
+
+\begin{quote}
+The present is a spatiotemporal region of whatever size is necessary to sustain
+the dynamical system in question \citep[p.~1109]{Brading2013}.
+\end{quote}
+
+The region may be much smaller than the block, or it may be the size of the
+block. The 2015 follow-up develops the same system-sustaining-region
+formulation \citep{Brading2015}. If the only genuine system is the entire universe, Brading says that
+``this version of presentism is defeated and the block universe triumphs''
+\citep[p.~1109]{Brading2013}. The empirical question is whether there are
+genuine subsystems whose sustaining regions are proper parts of the whole.
+
+This is an elegant proposal. It avoids pluralistic solipsism by denying that
+spacetime is the ground of unity, and it makes the extent of the present an
+empirical matter. The question is what it claims about existence.
+
+A distinguished predecessor is Stein's event-relative notion of definiteness:
+the state at a point is definite as of that point, and the relation is local
+rather than a global present \citep{Stein1991}. Stein's printed theorem
+(p.~149) lists reflexivity, transitivity, invariance under
+time-orientation-preserving automorphisms and one past-pointing related pair.
+It is not self-contained: the proof also uses the non-universality condition
+(iv) and the prose premise that every event in the causal past---timelike or
+null---is definite as of the point. The reflexive strict chronological past is
+non-universal but omits past-null pairs, so condition (iv) alone is not enough.
+The local-present strategy inherits this distinction; it does not inherit a
+global restriction.
+
+\section{The coverage objection}
+
+\subsection{Local boundedness is not global restriction}
+
+Local boundedness says, for every system $i$,
+
 \[
- M=(P,O,B,A,S;\Obs),
+\U_i\subsetneq\W .
 \]
-where $P$ specifies a physical model and dynamics, $O$ an ontological
-interpretation, $B$ the bridge premises connecting physical structure to
-ontological claims, $A$ auxiliary and boundary assumptions, $S$ semantic
-conventions, and $\Obs$ the allowed preparations, observations, and
-interventions. The tuple is bookkeeping rather than a new physical formalism;
-its components need not be independent.
 
-An ontology may have several proposed realizations. Write $\Real(O)$ for the
-specified admissible class, where admissibility must be defended independently
-of rescuing a view after each objection. An empirical likelihood is supplied
-by a realized package and an experimental protocol, not simply by its label.
-This observation does not make ontological hypotheses impossible to assess:
-one may compare independently justified realization classes or marginalize
-over auxiliaries with explicit priors. It blocks only the unannounced move
-from a result for one realization to a verdict on every realization.
+It does not imply
 
-\paragraph{Constraining admissibility without settling the dispute by fiat.}
-Before inspecting a proposed discriminator, register at least four conditions:
-(i) mathematical consistency and empirical adequacy in the declared regime;
-(ii) fidelity to the ontology's explicitly stated constitutive commitments,
-rather than merely retaining its name; (iii) a specified dynamics, probability
-model and operational interface, including proposed auxiliaries; and (iv) an
-independent motivation for additional structure, assessed against the same
-standards used for rivals. The first conditions constrain which models enter
-the comparison. Simplicity, explanatory contribution and costs of primitive
-structure then help rank the survivors; they are not covert empirical vetoes.
-
-The proponent bears the burden of describing a realization and defending its
-bridges; the exclusion advocate bears the stronger burden of defending the
-scope of the excluded class. Neither party may change those standards silently
-after a counterexample. Where reasonable standards disagree, report conditional
-verdicts under both rather than call one class uniquely admissible. This does
-not mechanically settle abduction, but it makes auxiliary rescue and asymmetric
-demands on rivals inspectable.
-The constitutive commitments and permitted auxiliary changes should be recorded
-before evaluating the discriminator. Symmetric treatment alone does not show
-that an admissibility criterion is independent of the intended verdict. A
-comparison should therefore state which conclusions change under reasonable
-alternative admissibility profiles. Defending those profiles remains a task
-for the stronger philosophical argument, rather than a result of this checklist.
-
-\paragraph{A worked case: Brading's law-constituted present.}
-Brading accepts special relativity as a complete framework for organizing
-spatiotemporal knowledge in its regime, while rejecting the inference that this
-epistemic framework must ground ontological unity
-\citep[][Sec.~5, pp.~17--18]{Brading2015}.
-
-She proposes that what exists presently is fixed by the extent
-of a dynamical system's law-constituted unity rather than by a simultaneity
-hyperplane. To avoid the block, that extent must be smaller than the
-universe's full history; it need not be smaller than the system's own complete
-history. The extent is system-relative and need not be transitive, so the view
-does not imply that everything outside a chosen system's present is unreal.
-Brading herself leaves open whether there are genuine dynamical subsystems
-smaller than all of spacetime, and she supplies no common solution, access
-protocol or probabilities against which a rival could be scored
-\citep[][Sec.~5, p.~18]{Brading2015}.
-
-A block-compatible rival in this case is a composite we assemble,
-not a position any single cited author develops against Brading. It grants
-law-based dynamical unity but denies that a system's law-sustaining region
-exhausts that system's existence. Explanatory arguments about the direction of
-explanation between spacetime structure and dynamics bear on it:
-\citet{BalashovJanssen2003} argue that spacetime structure unifies the Lorentz
-invariance of matter laws, against a neo-Lorentzian rival (Secs.~9--11 of the
-longer PhilSci archive preprint, the version read), and \citet{BrownPooley2006}
-defend the reverse direction (Secs.~3--5 of arXiv:physics/0403088v1). Neither
-addresses Brading's ontology directly. If both realizations are granted a
-common, consistent and empirically adequate model, matched likelihoods give no
-empirical preference, and this draft has established no decisive independent argument for either
-existence bridge. This is an illustrative conditional comparison, rather than
-a demonstrated pair of admissible physical realizations. The matched
-likelihoods are stipulated here. Brading's argument from law-based unity to
-endurance and thence toward presentism offers an explanatory route
-\citep[][Sec.~5]{Brading2013}; its final step remains contestable because
-endurance itself is compatible with eternalism. A further objection remains: if each local
-present may include its system's entire history, the restriction of its extent
-does not by itself show that the union of all system-presents excludes any
-past or future entities. That ontological inference needs a separate account
-of existence and of the relations between overlapping systems.
-
-\section{Three different inferential burdens}
-
-\subsection{Exclusion}
-
-A physical incompatibility argument has a form such as
 \[
- O\land B\land A\ \Longrightarrow\ F,
- \qquad P\ \Longrightarrow\ \neg F.
+\bigcup_i \U_i\subsetneq\W .
 \]
-It follows that $P$ excludes the conjunction $O\land B\land A$.
-Concluding $\neg O$ requires independent support for the indispensable bridge
-and auxiliary premises, or an argument that every admissible realization
-of $O$ encounters the conflict. Otherwise the result identifies a conditional
-cost: retain the ontology only by revising the disputed structure or bridge.
 
-This is not the claim that a bare ontology can always be rescued. A bridge
-may be constitutive of a precisely defined view, or its removal may destroy
-the explanation that made the view attractive. That stronger argument should
-be made rather than hidden in a generic ontology label.
+If every event belongs to at least one system-present, the family
+$\{\U_i\}$ covers $\W$. The account then divides the history into dynamical
+unities; it does not exclude any event from existence. The present can be
+``local, not global'' \citep[p.~1110]{Brading2013} while the union of local
+presents is the whole history.
 
-\subsection{Empirical discrimination}
-
-Empirical discrimination requires different probability assignments to a
-common experimental question. At fixed realized packages, if
-\[
- p(D\mid M_1,e)=p(D\mid M_2,e)
-\]
-for every outcome event $D$ and protocol $e\in\Obs$, those observations cannot
-discriminate the packages by their likelihoods. This statement is restricted
-to the declared protocol class, not all conceivable future observations.
-
-For composite hypotheses, pointwise equivalence at matched parameter values
-is insufficient for equal Bayesian evidence. The marginalized likelihoods
-must also agree. For example,
-\[
- p(D\mid O_i,e)=\int p(D\mid \theta_i,O_i,e)
-                   \,\pi_i(d\theta_i\mid O_i,e)
-\]
-can differ because the realization or parameter priors differ. Equal
-prior-predictive distributions give a Bayes factor of one wherever the common
-likelihood is nonzero; equal predictions at selected parameter settings need
-not. Prior preference remains possible, but must not be redescribed as an
-empirical likelihood advantage.
-
-\subsection{Representation equivalence}
-
-A structure- or probability-preserving map can establish equivalence for its
-specified domain. It does not automatically establish identical metaphysical
-interpretations, gauge redundancy, or equal explanatory value. Nor does a
-mathematically invertible reparameterization necessarily preserve which
-operations an observer can perform. An equivalence argument must state the
-common state space, physical inner product when relevant, observable map, and
-access restrictions. A failure of such an equivalence can be physically
-important without immediately deciding an ontology.
-
-\section{Case I: what a relativistic present would require}
-
-The elementary simultaneity result is exact within its standard domain. A
-boost along one spatial axis gives
-\[
- t'=\gamma(t-vx/c^2),\qquad
- \gamma=(1-v^2/c^2)^{-1/2},\qquad |v|<c.
-\]
-An event $(0,L)$ with $L\ne0$ is simultaneous with the origin in one frame but
-has $t'=-\gamma vL/c^2\ne0$ for a nonzero boost. Thus that simultaneity
-hyperplane is not invariant under all boosts fixing the origin. This is
-standard kinematics, not a new result or a proof that nothing changes.
-
-To obtain an ontological conclusion one must say why presentness must be that
-kind of hyperplane and respect the relevant symmetries. Putnam's argument
-invokes an observer-neutral reality-transfer principle; its broader closure
-argument includes further assumptions about observers \citep{Putnam1967}.
-
-The definability literature shows how much the structural premises carry.
-Clifton and Hogarth classify absolute, worldline-independent becoming relations
-in time-oriented Minkowski spacetime. With their convention that chronological
-and causal connectibility include identity, their Theorem 1 leaves only past
-chronological connectibility, past causal connectibility and the universal
-relation, provided the becoming relation is implicitly definable from the
-time-oriented metric, transitive, and includes chronological connectibility
-\citep[][pp.~360--365]{CliftonHogarth1995}. The proof uses invariance under the
-structure's automorphisms. It excludes these premises together with any demand
-for a relation outside those three alternatives; it does not exclude the
-premises themselves. Requiring invariance under the larger automorphism group
-of the unoriented structure leaves only the universal candidate
-\citep[][Cor.~1(A), p.~367]{CliftonHogarth1995}. Conversely, adding distinguished
-worldlines weakens the invariance requirement: causal pasts of the associated
-simultaneity planes, or suitably covering past-null-cone surfaces, yield
-further examples \citep[][pp.~376--377]{CliftonHogarth1995}. These are changes
-of available structure, not a complete independence analysis. Whether an
-ontology must accept the joint premises, and whether a surviving relation
-captures genuine becoming, remain bridge questions.
-
-Stein's event-relative approach supplies a different account of definite
-past structure \citep{Stein1991}. The printed theorem (p.~149) lists
-reflexivity, transitivity, invariance under time-orientation-preserving
-automorphisms, and one past-pointing related pair. That display is not
-sufficient even with the surrounding non-universality condition~(iv). The
-reflexive strict chronological past,
-$R(p,q)$ iff $q=p$ or $q\in I^-(p)$, is reflexive, transitive, invariant,
-has a past-pointing related pair, and is non-universal at every point, yet it
-omits distinct past-null-related events. Stein's prose supplies the stronger
-premise that every event in the causal past---timelike or null---is definite as
-of the point \citep[pp.~148--149]{Stein1991}. With that causal-past inclusion
-and condition~(iv), the argument yields the causal-past relation. Four items
-must be kept distinct: the displayed theorem, non-universality~(iv),
-causal-past inclusion, and chronological-past inclusion. The earlier draft
-conflated the last two; the present text corrects that. No broader error in
-Stein's argument is inferred.
-
-One response adds a preferred foliation. That is a substantive extra structure,
-not a free conclusion of SR. But observability also requires care. Appending
-a structure without changing old dynamics, probability assignments, or
-accessible operations need not change the old predictions. This conditional
-observation does not establish that any particular preferred-foliation theory
-is admissible or empirically equivalent; a coupling can make the structure
-observable. Nor does mere covariance of a notation establish absence of a
-physical preferred structure.
-
-The difference is concrete. Einstein-aether theory couples a dynamical unit
-timelike vector to gravity and can produce preferred-frame PPN effects
-\citep{FosterJacobson2006}. Assuming a preferred rest frame aligned with the
-CMB, Lucchesi et al.'s analysis of about thirty years of LAGEOS laser ranging
-gives $\alpha_1=(+1\pm2)\times10^{-5}$ with SATAN and
-$(+2\pm3)\times10^{-5}$ with GEODYN II, and an estimated systematic error
-of about $8\times10^{-6}$ (arXiv:2501.10588v2, Eq.~12). Both estimates are
-compatible with zero \citep{LucchesiEtAl2026}. This constrains the specified
-signal, not every coupled preferred-frame theory: nonzero aether couplings can
-also give vanishing preferred-frame PPN parameters
-\citep[][Eqs.~10--12]{FosterJacobson2006}. A foliation stipulated to leave the
-underlying relativistic model's dynamics, observables and access rules unchanged
-is invisible to those tests by construction. Neither comparison selects a
-temporal ontology without further bridge premises.
-
-Another response disputes that simultaneity must provide the unity of what
-exists. Brading develops such a presentist program
-\citep{Brading2013,Brading2015}, worked through in Section~2: it relocates the
-contested premise from simultaneity to the extent of law-constituted unity, and
-it supplies no quantitative discriminator. That is enough to identify a premise
-needing argument, not enough to vindicate the whole program.
-
-There are real philosophical costs on both sides. A preferred structure may
-be explanatorily idle; a local becoming relation may do no more than restate
-causal order; and a block account owes an account of the phenomena motivating
-passage. The point is to locate these costs accurately. A geometrical
-constraint on one global-present realization is not a completed comparison
-of all these packages.
-
-The strongest schematic foliation reply is not that the structure must be
-detectable. It is that a primitive foliation constitutes which entities exist
-together, even if it changes no measured quantity. A critic can question its
-motivation or its explanatory return; merely noting observational redundancy
-does not answer a constitutive claim. The same standard applies to a local
-becoming bridge: it could be defended as specifying definiteness rather than
-causing a new detector response, but must explain what motivates that role
-instead of simply assigning a temporal name to the causal past. These are
-deliberately schematic rival arguments, not fully audited reconstructions of
-a particular defender. The comparative explanatory judgment remains open.
-
-\section{Case II: relational dynamics without an ontological shortcut}
-
-Relational clock constructions expose a second inference risk. A constrained
-global description can admit conditional evolution relative to a chosen
-clock. The relational-trinity work relates Dirac-observable, conditional
-Schrodinger, and reduced Heisenberg descriptions under specified hypotheses
-\citep{HoehnSmithLock2019}. Its noninteracting setup and clock conditions
-matter. Interaction treatments already exist, including the kernel equation
-studied by \citet{SmithAhmadi2019}; ``add interactions'' is not a generic
-unoccupied research gap.
-
-Two implications should be resisted. First, a stationary constraint equation
-does not by itself mean that subsystems cannot change: correlations can support
-conditional dynamics. Second, successful conditional dynamics does not by
-itself establish that correlations exhaust temporal reality. A reductionist
-argument needs a defensible sufficiency principle identifying all relevant
-temporal roles and showing that the construction realizes them. A primitive
-passage advocate cannot dismiss the construction, but may dispute that
-exhaustiveness premise.
-
-The inverse mistake is equally important. An interaction-dependent or
-nonunitary conditioned evolution does not establish objective passage or
-an open future. One must specify the physical state space, clock instrument,
-normalization, accessible measurements, and what the proposed ontology would
-predict differently. A transformation that changes access restrictions
-cannot be treated as experimentally neutral merely because it is invertible
-on an enlarged mathematical space.
-
-Where does a published equivalence stop? The trinity results assume no
-clock--system interaction \citep{HoehnSmithLock2019}; the periodic extension
-does too, noting that interactions typically spoil periodic dynamics unless
-fine-tuned \citep[][Sec.~II.2]{ChataignierEtAl2026}. Interacting models require
-new checks of the reduction maps, inner products and observables. A normalized
-conditional trajectory alone does not establish a unitary map on a common
-initial-state space. Cafasso et al.'s gravitational-like commuting construction
-has constant conditional normalization
-\citep[][Sec.~IV and App.~B]{CafassoEtAl2024}, while finite noncommuting
-examples can also preserve norms
-\citep[][Sec.~4.3]{SmithAhmadi2019}
-\citep[][Sec.~II]{BoetteRossignoli2018}.
-The later finite-group example supplies another norm-preserving construction
-\citep[][App.~B.2, Ex.~32]{LudescherEtAl2026}.
-Hausmann et al.'s discrete model uses prescribed unitary steps of the system
-and measurement ancilla with a bandlimited clock
-\citep[][Sec.~5]{HausmannEtAl2025}. These are specific constructions; they do
-not establish unitarity for arbitrary Hamiltonian interactions or equivalence
-between the interacting formulations.
-
-Our three-state-clock/qubit calculation illustrates these checks without
-claiming a new result. We choose a total Hamiltonian
-$H=H_C\otimes 1+1\otimes H_S+gK\otimes\sigma_x$ and a physical sector
-given by one eigenspace of $H$. If $G(X)=\sum_\lambda P_\lambda X P_\lambda$,
-then $\langle G(X)\rangle=\langle X\rangle$ in that sector. This elementary
-pinching identity also preserves the corresponding conditional ratio whenever
-its denominator is nonzero; it is not a construction of the interacting
-trinity's relational observables. For the tested noncommuting $K$ and
-couplings, clock-reading probabilities become nonuniform. At the sampled
-generic couplings, however, each selected energy sector is one dimensional.
-Any linear reduction map is then a scalar on the sector, so the apparent
-nonisometry is a reweighting, not a state-dependent obstruction; the commuting
-control preserves only that scalar structure. The calculation is therefore a
-diagnostic of the sector-dimension problem, not evidence for or against
-relational equivalence. A nontrivial physical sector, a defended inner
-product and a state family are needed before it can test the interacting
-trinity. A constraint imposed at a
-fixed energy can also lose its solutions under perturbation. Structured
-clock-step constraints can instead retain a larger sector; this follows from
-their construction, not from group invariance alone. Comparing different
-constraints therefore requires showing whether they describe the same physical
-model and access rules. Constraint choice is part of specifying the package,
-not automatically a change of representation.
-
-\section{A finite record example and its exact limits}
-
-The following elementary construction makes one possible equivalence burden
-explicit. It is an expository application of ordinary probability, not a
-novel theorem about becoming.
-
-\begin{proposition}[Probability preservation under matched kernels]
-Let $(X,\mu)$ and $(Y,\nu)$ be probability spaces, and let $F:X\to Y$ be
-measurable with $F_*\mu=\nu$. The outcome kernels share one measurable outcome
-space. For each allowed complete observation protocol $e$, suppose
-$K_X^e(x,D)=K_Y^e(F(x),D)$ for $\mu$-almost every $x$, for every outcome
-event $D$. Then the two packages assign the same probabilities to those
-protocols.
+\begin{proposition}[Coverage]
+Local boundedness of every $\U_i$ is consistent with
+$\bigcup_i\U_i=\W$.
 \end{proposition}
 \begin{proof}
-For any declared $e,D$, the probability in $X$ is
-\[
- \int_X K_X^e(x,D)\,d\mu(x)
- =\int_X K_Y^e(F(x),D)\,d\mu(x)
- =\int_Y K_Y^e(y,D)\,d\nu(y),
-\]
-which is the probability in $Y$. The result assumes rather than derives
-the measure and kernel preservation.
+Let $\W$ be a nonempty set and let $\{\U_i\}$ be any cover of $\W$ by proper
+subsets. For example, take two overlapping proper subsets whose union is $\W$.
+Every $\U_i$ is locally bounded, and the union is $\W$.
 \end{proof}
 
-For a finite horizon $T$ and finite state space $S$, let
-\[
- \mu(x_0,\ldots,x_T)=
- \pi(x_0)\prod_{t=0}^{T-1}P_t(x_{t+1}\mid x_t).
-\]
-One implementation samples an initial state and then successive transitions;
-another samples an entire path with this law and releases its entries in
-order. Any common protocol restricted to the revealed prefixes, whose auxiliary
-randomness has the same conditional law given those prefixes and no access to
-the unrevealed path, yields the same record distribution.
-Adaptive choices of which revealed data to read can be included in the complete
-kernel. Operations modifying future transitions are not included unless their
-conditional dynamics are separately matched.
+The proposition is elementary. Its philosophical point is not the set theory
+but the missing premise: local boundedness does not supply a global
+restriction. Overlap does not help, because overlapping presents make coverage
+easier. Disjointness does not help either, because a partition of $\W$ into
+disjoint proper parts still covers $\W$.
 
-\paragraph{An exact numerical illustration.}
-Take $S=\{0,1\}$, $T=2$, a fair initial state, and at each step a probability
-$3/4$ of staying in the same state. The path $000$ has probability
-$(1/2)(3/4)(3/4)=9/32$; $010$ has probability $1/32$.
-Both implementations assign these same probabilities and the same prefix
-marginals. A companion standard-library check enumerates all paths using
-exact fractions. It verifies this example, not the general measure-theoretic
-argument or a theory of time.
+\subsection{Brading's text points to system-relative existence}
 
-Several limits are decisive. A sequential generator is not thereby the growing
-block theory; a sampled path is not thereby eternalism. The observer-access
-condition, the measure, and the identification of records do the operational
-work. If a different package gives access to unrevealed entries, or responds
-differently to interventions, the stated equivalence need not apply. Such
-extra access is a changed model assumption, not something entailed by one
-ontology label.
+The coverage objection is not an external imposition. Brading's own gloss
+supports the system-relative reading.
 
-Observational agreement also falls short of interventional agreement. Consider
-a fair latent bit $Z$. In model A set $X=Z$ and $Y=X$; in model B set $X=Z$
-and $Y=Z$. Both observational distributions have $X=Y$ with a fair marginal.
-Here $Z$ is exogenous in both models. Under an intervention replacing only
-the assignment for $X$ by $X:=0$, model A
-has $Y=0$, whereas model B retains a fair $Y$. This familiar type of causal
-example shows why accessible interventions must be specified. It does not
-attribute either causal model to a temporal ontology.
+P1* quantifies over things and assigns each a present. It is not P1. More
+strikingly, the interaction passage says:
 
-The philosophical payoff is limited but useful: records cannot favor one
-implementation when measure and complete allowed response kernels are matched.
-To turn that into an argument about becoming requires a separately defended
-interpretation. Calling the implementations two ontologies would skip exactly
-the premise the paper asks us to inspect.
+\begin{quote}
+The ground of what is real is the dynamics, and we belong to the same world as
+whatever we interact with, and the rest of that world is as real as we are.
+\ldots\ Does my son exist relative to me when he is in London and I am here? Of
+course. There are plenty of interactions going on that link us. Is there a
+determinate fact of the matter about what he is doing right now? No.
+\citep[p.~1110]{Brading2013}
+\end{quote}
 
-Classical causal-set growth provides a related covariance example. Its
-one-element-at-a-time dynamics imposes discrete general covariance
-\citep{RideoutSorkin1999}. At a fixed finite stage, conditional on the
-unlabelled poset, its compatible generation orders are equiprobable
-\citep[][Secs.~1, 4]{BrightwellLuczak2011}. This order-invariance concerns
-labelling information beyond causal precedence. Interpreting the remaining
-labelling distinctions as gauge limits the physical questions; identifying
-that restriction with an observer's record access is a further premise.
+This is a relational existence claim: the son exists relative to the speaker
+because of interaction; there is no determinate global fact about his present.
+The rest of the world is ``as real as we are.'' That is system-relative
+existence, not the global restriction of P1.
 
-Completion raises a separate issue. On the full labelled-history space, the
-finite-cylinder algebra contains no nontrivial covariant event
-\citep[][Sec.~2]{SuryaZalel2020}. This does not prohibit covariant facts with
-finite positive witnesses or establish that a mathematically completed history
-is an already existent future. Arageorgis criticizes a growing-block reading's
-dependence on completion \citep[][Sec.~4, p.~52]{Arageorgis2016}; Sorkin
-acknowledges the formal tension while defending becoming
-\citep[][Secs.~5, 7]{Sorkin2007}, and W{\"u}thrich and Callender explore a
-qualified growth response \citep[][Sec.~4]{WuthrichCallender2017}.
-For complex percolation with $p\notin[0,1]$, the prescribed scalar amplitude
-premeasure has no countably additive extension to the full cylinder-generated
-sigma-algebra \citep{DowkerJohnstonSurya2010,SuryaZalel2020}. This constrains
-preservation of that amplitude rule, not the existence of every measure on
-covariant events. A reading that requires real propositions to belong to the
-finite-cylinder algebra, or a reading that requires this specific countably
-additive extension, consequently faces a conditional obstruction. Neither
-requirement follows from a temporal-ontology label. Revising the model,
-event algebra or extension rule remains an option requiring its own defense.
+Brading's empirical defeat condition points the same way: if the only genuine
+system is the whole universe, the view is defeated and the block triumphs
+\citep[p.~1109]{Brading2013}. This is a conditional about which systems exist,
+not a global actuality principle.
 
-\section{Objections and replies}
+Whether the view should still be called ``presentism'' is partly verbal;
+Brading herself worries that ``labeling it `presentism' dooms the view''
+\citep[p.~1101]{Brading2013}. The substantive point is that the global
+restriction is not established.
 
-\paragraph{Bridge premises are unavoidable; your test is too demanding.}
-Correct: every interpretation uses bridges. Their presence is not a defect.
-The demand is that the bridge be visible, defensible, and relevant to the
-contrast. A bridge can be constitutive of a view or supported by explanatory
-arguments. We reject the inference ``extra premise, therefore arbitrary,''
-as firmly as ``physical equation, therefore metaphysical conclusion.''
+\section{Four repairs and their costs}
 
-\paragraph{This makes every view compatible with physics.}
-Only if admissibility is unconstrained, which the framework rejects. A
-view that discards its defining commitments, adds ad hoc structure, or fails
-empirical adequacy is not rescued by renaming the remainder. Conversely,
-showing one admissible realization establishes compatibility, not equal
-plausibility. A full exclusion claim has a stronger quantifier burden than a
-counterexample to one proposed proof of exclusion.
+If one wants the original global restriction, at least one repair is needed.
 
-\paragraph{Relativity and parsimony already favor the block.}
-They may favor a specified block package over a competitor with unjustified
-structure. The paper's demand is to articulate that explanatory comparison:
-which structure is avoided, whether the rival needs it, and what explanatory
-work competing packages perform. An inference to the best explanation is not
-discredited by being philosophical rather than a direct detector reading.
-It is also not rendered deductively compulsory by the success of SR.
+\paragraph{1. System-relative existence.}
+Replace a single unrestricted existence predicate with ``exists-for-system-$i$.''
+This blocks the coverage objection by changing the question, but it gives up
+the global presentist claim: there is no system-independent fact that future
+events do not exist. The view becomes a relativized ontology. Brading's
+interaction passage is naturally read this way.
 
-\paragraph{Phenomenology supplies evidence for passage.}
-It supplies phenomena a satisfactory account should explain. It does not
-automatically choose among explanations. The advocate of primitive passage
-must show why experience supports that cause over alternatives; the critic
-must explain the experience rather than simply call it illusory.
-The accounts discussed by \citet{Callender2017} and \citet{Skow2015} are
-relevant comparators, not settled answers inherited by this draft.
+\paragraph{2. Privileged actual systems.}
+Only some systems' presents are actual. This restores a restriction, but the
+selection principle is not derived from the physics or from dynamical unity. It
+needs an independent actuality premise; without it the choice is arbitrary, and
+with it the view may reintroduce a privileged perspective.
 
-\paragraph{An inaccessible ontology is physically meaningless.}
-That conclusion needs a verificationist or other semantic argument which we
-have not assumed. Empirical equivalence can coexist with differences in
-grounding, explanation, simplicity, or modal commitment. The narrower
-conclusion is that matched observational likelihoods do not themselves select
-between the packages. Physics can still contribute through structural
-constraints and explanatory considerations.
+\paragraph{3. Restrictions on coexistence.}
+Not all local presents can coexist: a maximal consistent set, a single actual
+present, or a dynamics of present-selection. This risks reintroducing a global
+present or a privileged foliation, and it needs a rule the physics does not
+supply.
 
-\paragraph{Your record example is trivial and deliberately restrictive.}
-The mathematics is elementary and the restrictions are deliberate. It is
-not offered as the novel contribution. Its purpose is to distinguish a
-proved conditional equivalence from an unsupported claim about all ontologies.
-A publishable extension would need a nontrivial physical class, a justified
-access model, and a result not already provided by the nearest predecessors.
+\paragraph{4. Revised presentism.}
+Give up global exclusion and accept local or functional becoming. This is
+coherent, but it is a different thesis: it may be an eternalist history with a
+local becoming, not presentism as the restriction on existence.
 
-\section{What would turn this into a research contribution?}
+The paper does not select among these. It argues that at least one is needed,
+and that each has a cost not settled by the physics. That is the limited
+verdict.
 
-The present argument supplies a way of auditing claims, not a discovery that
-underdetermination exists. At least three developments could make it more
-than an organized restatement of familiar cautions:
+\section{What the argument owes}
+
+An objection to a bridge should specify what the bridge needs, not demand a
+complete rival dynamics. The relevant standard here is admissibility and
+explanatory comparison, not a likelihood model of every ontology.
+
+For an admissibility claim, one must state:
+
 \begin{enumerate}
-\item A source-faithful reconstruction showing that a widely used inference
-      requires a neglected bridge, and that the strongest published defenses
-      and replies do not already establish the same point.
-\item A nontrivial classification of when specified physical realizations
-      preserve records and interventions, with explicit counterexamples at
-      the boundary and a comparison to known equivalence results.
-\item A substantive defense of one bridge principle that survives alternative
-      temporal interpretations and explains why the resulting constraint is
-      not merely a preference built into a definition.
+\item the ontology's constitutive commitments;
+\item the permitted auxiliary changes;
+\item the eligibility evidence;
+\item the bridge from the physical structure to the existential claim;
+\item what would defeat the claim.
 \end{enumerate}
-The independent novelty gate is unmet. Neither the elementary proposition nor
-the use of agents, Python, or a future Lean proof supplies priority. Source
-audits, model reproductions, and the strongest contrary philosophical arguments
-are still needed. General relativity and cosmological time also require a
-separate extension: the existence of smooth Cauchy slicings under global hyperbolicity
-\citep{BernalSanchez2005} is not uniqueness of a metaphysical present.
 
-\section{Provisional conclusion}
+Brading's commitments are law-constituted unity, a system-relative present and
+P1*. The eligibility condition is that genuine subsystems exist and their
+sustaining regions are proper parts. The bridge is from presence to existence.
+The defeat condition is that the universe is the only system. The coverage
+objection shows that the bridge is missing. That is enough to make the
+criticism bite without demanding a full likelihood model of eternalism.
 
-Physics can make temporal metaphysics harder, more precise, and sometimes
-empirically vulnerable. It does not follow that every temporal distinction
-is physically idle; nor does a successful mathematical representation settle
-all questions of existence and passage. The appropriate unit of comparison
-is a defended ontology--physics--bridge package with explicit access conditions.
-An argument should state whether it excludes such a package, discriminates
-its predictions, or establishes a representation equivalence. Keeping those
-conclusions distinct is a precondition for discovering, rather than assuming,
-what physics tells us about time.
+This is not a licence for vagueness. Background evidence that fixes the
+eligible packages must be distinguished from the evidence that compares them.
+Filtering out unsuccessful realizations changes the evidential base, and the
+cost of the filter must be reported. A criterion can be prejudicial before any
+result is inspected; preregistration is not justification. A principled
+revision must state what changed, why the change is licensed by the ontology's
+commitments, what else it affects, whether the revised package still deserves
+the name, and what would have counted against it.
+
+\section{Favoring without exclusion}
+
+The conclusion is not that the evidence is silent. A package can be favored
+without excluding every rival.
+
+Treat an ontology as a composite hypothesis: a class of admissible
+realizations, a prior over them, and a marginal likelihood. If one ontology has
+one realization with $p(D\mid O_1)=1$ and a rival has ten equally weighted
+realizations, one with $p(D\mid r)=1$ and nine with $0$, then
+$p(D\mid O_2)=0.1$ and the Bayes factor is ten. The rival retains a compatible
+realization; evidential parity does not survive.
+
+The prior must be justified by earlier physical evidence, explanatory
+achievements, symmetry or an explicitly stated ignorance prior. If it is not,
+the verdict is conditional on a stipulated prior, not evidence simpliciter.
+
+For Brading, the presentist composite includes realizations that differ in
+which systems are genuine and how presence relates to existence. The
+system-relative realization may be behaviorally indistinguishable from an
+eternalist history with local presents; if so, the comparison does not favor
+presentism. A privileged-actuality realization may favor it, but the privilege
+premise is doing the work. That is a substantive comparative verdict, not a
+catalogue of failed exclusions.
+
+\section{Strongest objections}
+
+\paragraph{Saunders: the equivalence-relation requirement.}
+Saunders argues that presentism needs an invariant, definable, non-trivial
+equivalence relation of co-presence \citep{Saunders2000}. The definability
+results leave no such relation: the surviving relations are past-chronological,
+past-causal or universal, and none is a symmetric equivalence relation of a
+present except the trivial universal one. A system-relative present is not an
+equivalence relation among all events; it is a region assigned to a system.
+Brading's view therefore either gives up the equivalence-relation requirement
+and with it the standard presentist claim, or needs an additional structure
+that defines co-presence. The coverage objection is the set-theoretic shadow of
+the first horn.
+
+\paragraph{Pooley: taking both passage and relativity seriously.}
+Pooley distinguishes two easy routes: a deflationary analysis of passage
+compatible with the block, which does not take passage seriously, and a
+privileged global present, which does not take relativity seriously
+\citep{Pooley2013}. His hard route eschews a global Now and links passage to
+the open future. Brading's local present is a candidate for that route, but the
+coverage objection shows that it can be read as a division of the block into
+system-relative presents, with the rest of the world ``as real as we are.''
+That is the deflationary horn. If the view adds an actuality or privilege
+premise to get a real restriction, it moves toward the second horn or a hidden
+privileged structure.
+
+The paper does not refute either challenge. It concedes that it does not
+vindicate robust passage. Its contribution is to show that the local-present
+route does not by itself restore the presentist existential restriction. That
+is a negative result about one bridge, not a proof of eternalism.
+
+\section{Conclusion}
+
+Brading's law-constitutive present is a serious alternative to both the block
+and the privileged-now strategy. Its system-relative present is locally
+bounded, and its law-constitutive unity is a genuine explanatory proposal. But
+local boundedness does not imply a global existential restriction. The coverage
+objection is exact: the union of system-presents can be the whole history.
+Brading's own P1* and interaction passage support a system-relative existence
+reading, not P1. Recovering P1 requires an actuality or privilege premise,
+restrictions on coexistence, or a revised presentism; each has a cost not
+settled by the physics.
+
+The limited verdict is therefore: dynamical individuation alone is insufficient
+for the presentist existential claim. This does not refute Brading, does not
+establish eternalism, and does not claim that every presentism fails. It
+identifies the missing premise and the price of supplying it.
+
+\paragraph{What would change the verdict.}
+A proof that the actual system-presents cannot cover $\W$ would restore the
+restriction without an actuality premise. A physically motivated principle
+selecting privileged actual systems would supply the missing premise, though
+its cost would still need defense. A revised P1* that explicitly restricts the
+domain of existence, rather than assigning each thing a present, would change
+the target. A demonstration that system-relative existence is the same global
+claim under another notation would defeat the system-relative reading.
+
+\paragraph{Limits.}
+This is a philosophical argument, not an empirical prediction or an ontology
+selection. The coverage objection is elementary set theory; the contribution is
+the focused reconstruction and cost analysis. Brading 2013 is read at full text;
+Brading 2015 is used at abstract/indexed depth for the system-sustaining-region
+formulation. Saunders and Pooley are read at the preprint depths stated in the
+accompanying note. No global priority or novelty claim is made.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
