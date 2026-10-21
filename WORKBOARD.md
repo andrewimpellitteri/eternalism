@@ -98,6 +98,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `growth-completion-c3-revision` — Correct growth-completion Prop. 5/C3 and re-audit downstream covtree claims | 9 | — | opencode-coordinator |
 | done | `empirical-discriminator-audit` — Audit proposed empirical discriminators for temporal ontology | 8 | — | opencode-coordinator |
 | done | `completion-access-dilemma` — Completion, access, and the growing-block dilemma | 9 | — | opencode-coordinator |
+| open | `article-reframe-scope` — Freeze the reframed article thesis, abstract and section plan | 10 | — | — |
+| open | `brading-existence-bridge` — When does a local present restrict existence? The Brading coverage problem | 10 | — | — |
+| open | `admissibility-burden-calibration` — Calibrate specification burdens: contradiction, likelihood, explanation and admissibility | 9 | — | — |
+| open | `favoring-account` — A positive account of defeasible favoring, not only exclusion | 9 | — | — |
+| open | `strongest-opponents` — Reconstruct Saunders and Pooley at their strongest | 9 | — | — |
+| open | `examples-scope-cleanup` — Decide and execute the example/scope cleanup | 8 | — | — |
+| blocked | `article-rebuild-integration` — Integrate the reframed article, cut the prospectus material, and build | 10 | article-reframe-scope, brading-existence-bridge, admissibility-burden-calibration, favoring-account, strongest-opponents, examples-scope-cleanup | — |
+| blocked | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
