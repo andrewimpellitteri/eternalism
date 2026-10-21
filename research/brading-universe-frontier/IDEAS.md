@@ -289,3 +289,14 @@ by an added phantom reference medium, not by the universe's own sustaining
 dynamics; the empirical-exposure framing is weakened accordingly. The core
 claim is now the reading-independent one: on no route does the dynamics of a
 sustaining system fix the universe's present.
+
+## Spatial curvature (closed)
+
+The ideal-clock constructions do not need spatial flatness. GHTW I treats a
+three-manifold of arbitrary topology and assumes no boundary throughout
+Secs. 2-4 (pp. 12, 36); Thiemann allows compact sigma without boundary
+(p. 26). Only their FRW comparisons are k=0. Our elementary extension, now in
+the paper and labelled as ours: in Isham's closed minisuperspace, homogeneous
+Brown–Kuchař dust contributes |P_T|, the constraint becomes C ± P_T = 0, and
+the physical Hamiltonian ∓P_T = C has no T dependence for k=1 as for k=0.
+Not covered: closed-universe perturbations.

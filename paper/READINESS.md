@@ -208,9 +208,13 @@ of hits is not priority. Do not submit or claim discovery.
   DOI 10.1093/9780197845745.003.0011.
 - Bridge premise Definition 2 (conservation test regimented as a conserved
   generator) is ours and needs adversarial review.
-- Physics scope: Isham's examples are closed minisuperspace; Thiemann's model
-  is k=0 and his "whatever matter" claim is asserted; Bamonti and Thébault do
-  not address conservation in synchronous gauge.
+- Physics scope: Isham's examples are closed minisuperspace. The dust
+  (Giesel et al.) and phantom-scalar (Thiemann) clocks hold for closed spatial
+  topology; their cosmological comparisons are k=0, and our closed-model
+  extension covers the homogeneous background only. Thiemann's "whatever
+  matter" claim is not an empirically significant cost (dust corrections
+  decay). Bamonti and Thébault do not address conservation in synchronous
+  gauge.
 - Monton is cited from the 2005 author preprint; Bamonti and Thébault page
   numbers are from the author version; confirm against published pagination.
 - Independent re-review of the redraft is required before acceptance.
