@@ -96,3 +96,25 @@ Review the two headless GLM submissions when available. Produce an explicit
 correction disposition before accepting this gate. Until then, this document is
 a review checkpoint and the `adversarial-review` claim remains active; it is
 neither an accepted completion nor authorization to advance the paper task.
+
+## Coordinator direction follow-up (2026-10-21)
+
+The user authorized four concurrent headless GLM runs. The two queued workers
+were confirmed stopped with clean worktrees and no model events, then resumed
+with a four-slot limit; the original two sessions were preserved. All four are
+now producing events or awaiting their current model step. No provider error
+was recorded at the subsequent check; an initially quiet scalar reviewer began
+emitting again without restart.
+
+`coordinator/DIRECTION.md` records the revised project judgment: finish the
+narrow scalar result and corrections, keep the rank attempt analytically
+bounded, treat the standard vector construction as scope clarification, and
+recommend closing the clock application after its separate coordinator review.
+The clock coordinator has since committed its negative/application-only outcome
+in c0a2176 and the updated reread verdicts in 2e8bfd4.
+
+`coordinator/RENEWAL_OBSTRUCTION.md` gives a conditional renewal-inversion
+obstruction and states the missing absolute-convergence obligation. Its exact
+finite check passed 25 coefficient identities through degree five. This new
+coordinator reduction is not independently reviewed and does not close the
+rank-only existence question or the adversarial gate.
