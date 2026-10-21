@@ -77,7 +77,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `runner-report-handback` — Align root report acceptance with the worker brief and runner | 10 | — | codex-runner |
 | done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
 | claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
-| claimed | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
+| done | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
 | done | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | codex-native-bc |
 | open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
 | open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |

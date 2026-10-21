@@ -1,5 +1,10 @@
 # Long shot: a growth-versus-completion dilemma for complex percolation
 
+> **Erratum (21 Oct 2026):** Prop. 5's equality `D'_H = N_{H}` is false; the
+> correct identity is `N_{H} = D'_{H^-}`. The `D'_H` amplitude formula and the
+> non-extension conclusion are unaffected. See `ERRATUM.md` and
+> `research/longshots/review/REVIEW.md`.
+
 Task `longshot-growth-completion-dilemma`, Claude subagent, 2026-10-21. Saved by
 the coordinator from the subagent's returned text (its file write was refused).
 Submission for review; no novelty claim. Sources: `sources.jsonl` (14 records).
