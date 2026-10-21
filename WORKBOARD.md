@@ -18,7 +18,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit, rt-selection-decision-gate | opencode-coordinator |
 | done | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | opencode-coordinator |
 | done | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | opencode-coordinator |
-| claimed | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | codex-adversarial |
+| done | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | codex-adversarial |
 | blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
 | done | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
@@ -65,18 +65,26 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
 | done | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
-| blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
-| claimed | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
+| open | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
+| done | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
 | claimed | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
 | done | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | glm-glm-probe-corrections |
-| claimed | `longshot-regularized-measure` — Long shot: regularized covariant measure for complex percolation | 6 | — | claude-longshot |
+| done | `longshot-regularized-measure` — Long shot: regularized covariant measure for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-growth-completion-dilemma` — Long shot: growth-vs-completion dilemma theorem for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-birth-order-interference` — Long shot: interference trace of birth order under norm-only covariance | 6 | — | claude-longshot |
 | done | `runner-report-handback` — Align root report acceptance with the worker brief and runner | 10 | — | codex-runner |
 | done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
 | claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
+| claimed | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
+| open | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | — |
+| open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
+| open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |
+| open | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | — |
+| claimed | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
+| open | `paper-source-gates` — Paper source gates | 7 | — | — |
+| claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
