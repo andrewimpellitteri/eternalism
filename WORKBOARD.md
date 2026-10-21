@@ -69,7 +69,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
-| open | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
+| done | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | opencode-coordinator |
 | done | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | glm-glm-probe-corrections |
 | done | `longshot-regularized-measure` — Long shot: regularized covariant measure for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-growth-completion-dilemma` — Long shot: growth-vs-completion dilemma theorem for complex percolation | 6 | — | claude-longshot |
