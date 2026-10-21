@@ -35,14 +35,50 @@ Which option holds depends on cosmology:
 
 Each row is a claim to verify against GR sources before use.
 
-## Prior art to beat (discovery level)
+## Update after full-text read of Wüthrich 2010
+
+Kill test 1 passed (record: `sources.jsonl`, `wuthrich-2010-no-presentism-qg`).
+Wüthrich predates Brading and defines presentism by an objective spatially
+extended present (p. 261), which Brading rejects. He covers relativized
+(Fine), point (Harrington) and past-light-cone (Stein) presents, not
+dynamically individuated ones. The problem of time appears only in passing
+(p. 260; p. 275 on loop quantum gravity). Nothing on the universe's own present
+or on unity.
+
+His p. 274 supplies a sharper argument. Reporting Isham (1991, p. 200), he
+notes that the CMC reduction gives the universe a **time-dependent**
+Hamiltonian, normally read as energy entering or leaving the system, "odd
+indeed, as the system at stake is supposed to be the entire universe." That
+yields a dilemma for the universe under Brading's own unity criterion
+(conservation of total quantity of motion under isolation), for spatially
+closed canonical GR:
+
+- **Global time (CMC gauge):** the universe gets a global slice as its
+  present (horn 2a), but its reduced Hamiltonian is time-dependent, so the
+  conservation-under-isolation criterion fails for it. The present comes at
+  the cost of the unity.
+- **No gauge fixing (Hamiltonian constraint):** total energy is constrained
+  to vanish and there is no evolution parameter. The universe can count as a
+  conserved whole, but it has no present (horn 4).
+
+Either the universe is a unity without a present, or it has a present but
+fails the unity test. In both cases P1\*\* is not satisfied by a genuine
+unity with a proper present. Status: conjecture. Scope: spatially closed,
+CMC-sliceable spacetimes (Wüthrich notes the CMC approach is understood
+mainly for the vacuum, spatially closed case, p. 271). To verify: read Isham
+1991 itself; check whether every global-time gauge, not just CMC, gives a
+time-dependent reduced Hamiltonian; and check whether Brading's criterion
+needs the total quantity to be conserved or only defined.
+
+## Prior art to beat (discovery level unless marked)
 
 - **Monton 2006, "Presentism and quantum gravity"** (Dieks ed., *The Ontology
   of Spacetime*; PhilSci-Archive 2308). Presentism compatible with QG theories
   using a fixed (e.g. CMC) foliation. Global-present presentism; not Brading.
   https://philsci-archive.pitt.edu/2308/
 - **Wüthrich 2010, "No presentism in quantum gravity"** (Petkov ed., *Space,
-  Time, and Spacetime*). Argues the CMC route fails. Same global target.
+  Time, and Spacetime*). **Full text read.** Argues the CMC route fails. Same
+  global target; see the update above.
   https://www.wuthrich.net/pub/WuthrichChristian2010PetkovColl_NoPresQG.pdf
 - **Anderson, "A local resolution of the problem of time"** (arXiv:1809.01908
   and series). Abstract: "timelessness for the universe as a whole at the
@@ -71,8 +107,8 @@ candidate delta is the bridge, not any component.
 
 ## Kill tests before drafting
 
-1. Read Wüthrich 2010 in full: does it discuss local or system-relative
-   presents, or Brading?
+1. ~~Read Wüthrich 2010 in full.~~ Done: no Brading, no dynamical presents,
+   no universe-own-present case. Passed.
 2. Read Balaguer 2026 ch. 9 (the main unread scoop risk from the earlier audit).
 3. Search Brading's own later work (2016 onward) for GR or the problem of time.
 4. Check that her criterion is really conservation-based in a way that carries
