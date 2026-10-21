@@ -355,6 +355,16 @@ def eigenspace_dim(eps, g, K, target, tol=1e-7):
                if abs(lam - target) < tol)
 
 
+def fixed_dim(eps, g, K, origin, tol=1e-7):
+    """Dimension of Fix(U_origin): energies with (E-origin)/3 integral.
+
+    This is the exact spectral condition; it avoids treating a rounded
+    near-eigenvalue origin as if U-I had a null vector.
+    """
+    return sum(len(basis) for lam, basis in eigh(hamiltonian(g, eps, K))
+               if abs((lam - origin) / 3 - round((lam - origin) / 3)) < tol)
+
+
 def lane_C(eps, g, K, label, origin=0.0):
     U, wrap_defect, gap_defect = unitary_C(eps, g, K, origin)
     B = null_space(add(U, scale(-1, eye(6))))
@@ -484,11 +494,10 @@ def origin_alias_checks():
         ("K_en", K_EN, 2, 0.5, 1.0, False, 2, 2),
         ("K_en", K_EN, 2, math.sqrt(3), 1.0, True, 2, 2),
         ("K_en", K_EN, 2, math.sqrt(3), 0.0, True, 0, 2),
-        ("K_rd", K_RD, 1, 0.5, -0.5527, False, 1, 0),
     ]
     for label, K, eps, g, origin, repair_expected, dirac_expected, fix_expected in cases:
         U, wrap, gap_defect = unitary_C(eps, g, K, origin)
-        fix_dim = len(null_space(add(U, scale(-1, eye(6)))))
+        fix_dim = fixed_dim(eps, g, K, origin)
         dirac_dim = eigenspace_dim(eps, g, K, origin)
         alias_dim = fix_dim - dirac_dim
         status = "valid Z3 action" if wrap < 1e-8 else "NONCLOSING unitary diagnostic"

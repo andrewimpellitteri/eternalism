@@ -81,7 +81,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | codex-native-bc |
 | open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
 | open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |
-| open | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
+| done | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
 | done | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
 | done | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
 | claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |

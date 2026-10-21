@@ -14,3 +14,11 @@ but must not be presented as equivalent models or valid group actions where
 the corresponding checks fail. Native correction is assigned; no acceptance
 yet. Sources.jsonl errata claims also require explicit scope and independent
 primary verification before promotion to the canonical knowledge register.
+
+## Update, 21 October: correction completed
+
+The native correction was interrupted by a Codex usage limit and later
+completed locally. `SPEC.md`, `formulations.py` and `corrected_output.txt` now
+implement and check the closure, alias and local-readout distinctions. The
+old GLM interpretation remains superseded; see `AGENT_REPORT.md` and
+`INTERRUPTED.md`.
