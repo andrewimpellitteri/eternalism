@@ -67,16 +67,16 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
 | blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
 | claimed | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
-| claimed | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
+| done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
 | claimed | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
 | done | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | glm-glm-probe-corrections |
 | claimed | `longshot-regularized-measure` — Long shot: regularized covariant measure for complex percolation | 6 | — | claude-longshot |
-| claimed | `longshot-growth-completion-dilemma` — Long shot: growth-vs-completion dilemma theorem for complex percolation | 6 | — | claude-longshot |
+| done | `longshot-growth-completion-dilemma` — Long shot: growth-vs-completion dilemma theorem for complex percolation | 6 | — | claude-longshot |
 | done | `longshot-birth-order-interference` — Long shot: interference trace of birth order under norm-only covariance | 6 | — | claude-longshot |
 | done | `runner-report-handback` — Align root report acceptance with the worker brief and runner | 10 | — | codex-runner |
-| claimed | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
-| open | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | — |
+| done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
+| claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
