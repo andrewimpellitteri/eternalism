@@ -76,6 +76,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `longshot-birth-order-interference` — Long shot: interference trace of birth order under norm-only covariance | 6 | — | claude-longshot |
 | done | `runner-report-handback` — Align root report acceptance with the worker brief and runner | 10 | — | codex-runner |
 | claimed | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
+| open | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
