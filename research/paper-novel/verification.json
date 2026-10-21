@@ -2,7 +2,7 @@
   "status": "passed",
   "source_revision": "ed2e721f11830fa0bb461b3374b1893b4a357b58",
   "python": "3.15.0",
-  "manuscript_sha256": "b7e21644ff07c2e01318241d06e5fc82ab40e730dfb71007bc6a1c24c049cb7d",
+  "manuscript_sha256": "c90bf90232a7285797eb46f7e8882fb83f9efccafadaef049c08a0165585a25d",
   "input_files_verified": 6,
   "labels_verified": 22,
   "bibliography_entries": 5,
