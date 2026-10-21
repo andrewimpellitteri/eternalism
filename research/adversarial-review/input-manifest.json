@@ -1,0 +1,41 @@
+{
+  "revision": "be41977d3b3be74df14a4bbdad1764d480946ebf",
+  "date": "2026-10-21",
+  "input_sha256": {
+    "experiments/baseline/AGENT_REPORT.md": "e1a1f91b9f1de3310332be6144517d2bd0e7771e27a123ed8143d4a515dc9997",
+    "experiments/baseline/poscau.py": "ff5540d2672f021fea197c94e3027e3de513890a43c08b13597b662de8124348",
+    "experiments/baseline/reproduce.py": "c97764d92fed0c950765e11e34dbc6db1549ec5149fa6eb12754f5333baa2f99",
+    "experiments/baseline/test_poscau.py": "337fb07120b3b06b6231edabe23b58d0391e9a22f239e9ddf590d0e63df5b414",
+    "experiments/extensions/boundary.py": "e661a60b5a1903d761e1158c2668f8b7bff7d419da0b7ebaab6e3adb52966507",
+    "experiments/extensions/countermodel.py": "0b29c46a525d706b850ff79828927875e50c76f8f37e04f1dac7203efd4908f3",
+    "formal/check_certificate.sh": "59c9a7b6fe250d546f4260e7406d4c035cf275b659c3f5960026fa3943ae491a",
+    "formal/lean/Certificate.lean": "afbaca6f413d9614cdb44bc22cb16953535b0e85e723361b8c5d93dfcf039762",
+    "research/NOVELTY_SPRINT.md": "4dceef457bce0392fb0433c2e72e36ef7826b70fe860b1bfe5f33cb56fd9a7fa",
+    "research/creative/CLAIM_CONTRACT.md": "4d08c23e59fb15ce2cd495b41ca297c77474f3f97c4da5b0be07e2c3ccd3f488",
+    "research/creative/COVARIANT_RESULT.md": "a5b684ac23b811b10db299b0fd055a7f4adc34ca4862d27e54817722c4762228",
+    "research/creative/RESULT.md": "add274c0716b65a1fec69f3f8bfec9d7413c66aa350f1d4bd4d6dc7388f260d7",
+    "research/creative/proof-audit/AUDIT.md": "a569ab7d7a0d8ff03abfd898dbfe4a07d3df54999a6e24bd98c0b85f2978b001",
+    "research/extensions/covariant-values/AGENT_REPORT.md": "62051a07e910ba8fd38324571911a54bf9f2b2df2be6f854e2bc16a69ce39e96",
+    "research/extensions/covariant-values/check.py": "1b02175f7da584852f3c261a036103eb9310f4dc435562d8f2fa55eefa5170b8",
+    "research/extensions/rank-factor/AGENT_REPORT.md": "b0a643260494682ebea0f9e86189ce5127058a82ab2566bc16a15556d1119c0b",
+    "research/extensions/rank-factor/check_stationarity.py": "b126c14d31ac9fa94c9823e79207d1f9da65f74fece9b89b934ba01dee243b39",
+    "research/extensions/rank-factor/kernel_sequence7.py": "ac379451b47a4c61979e1aa0df746e32f2e0718b680f4c29f7c20e27d5c75f11",
+    "research/extensions/rank-factor/probe.py": "2c2b6439b20fdadb69c30d45b278fc90fb14da3a5d01e98a8606fe035ebf9151",
+    "research/extensions/vector-measure/AGENT_REPORT.md": "55a39510ec3b9c5bae5187ad2f0eb04961e01e0a6803504ab01678027460a1d2",
+    "research/extensions/vector-measure/vector_measure.py": "dcf39954ea5d03d96b046b3a53f19c918fb927f4cb4aa42795dbe4555647d7e3",
+    "research/novelty-verdict/AGENT_REPORT.md": "95c79ddc27e5084839d3806e8bce6ef246dc48cf6718b6ee5e2e98d70b0b6777",
+    "research/replication/AGENT_REPORT.md": "72938bbbbabb99df0f106e00818a7b60dde0ddcb3ed49b164c73d1d865019527",
+    "research/replication/replicate.py": "fbe3aa606a457b11d45e78c9b27ad13829ef117cc354c46d6024ad678c52f5ba"
+  },
+  "method": "Three native reviewers, disjoint outputs; coordinator boundary audit. User requested native work while GLM quota exhausted. This is not a fresh two-family external review; model-diversity limitation must remain explicit.",
+  "followup_2026_10_21": {
+    "user_request": "Use GLM subagents through headless OpenCode",
+    "tasks": [
+      "glm-adversarial-scalar",
+      "glm-vector-indicator-boundary"
+    ],
+    "status": "launched; reports pending, not yet a completed two-family gate",
+    "model": "zai-coding-plan/glm-5.3-flash",
+    "base": "8162134"
+  }
+}

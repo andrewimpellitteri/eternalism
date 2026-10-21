@@ -66,8 +66,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
 | blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
-| open | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | — |
-| open | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | — |
+| claimed | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
+| claimed | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
