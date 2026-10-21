@@ -19,7 +19,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | opencode-coordinator |
 | done | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | opencode-coordinator |
 | done | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | codex-adversarial |
-| blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
+| open | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
 | done | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
 | done | `kb-ico-qrf` — Compare indefinite causal order, process matrices and temporal quantum reference frames | 9 | — | glm-kb-ico-qrf |
@@ -65,7 +65,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
 | done | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
-| claimed | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | codex-paper-novel |
+| done | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | codex-paper-novel |
 | done | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
