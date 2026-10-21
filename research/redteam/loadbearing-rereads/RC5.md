@@ -150,3 +150,19 @@ The parent task was claimed after this draft. Re-fetched and re-read
 One correction to the audit's contrary-evidence note: the linear-channel
 argument for the supplement needs `F_σ` to be real-valued, which the text
 implies but does not state. This is a premise to record, not a refutation.
+
+## Outcome of the clock-three-picture probe (2026-10-21)
+
+`experiments/clock-three-picture/` (accepted; independently replicated): the
+combined RC-1/RC-5 contract reduces to applications and known results. In a Z_3
+clock + qubit model, Dirac and Page–Wootters expectations coincide identically
+on physical states. The reductions differ only at normalization, and whether
+they do is model-specific: published finite examples with non-commuting
+interactions keep unit norm (Smith–Ahmadi Sec. 4.3; Boette–Rossignoli
+1806.00956; Ludescher et al. Example 32), and Cafasso et al. 2407.00161 gives the
+closest general normalization statement. With an eigenvalue constraint, a generic
+interaction leaves one-dimensional surfaces and no dynamical map, so RC-5's
+memory question is undefined there. With a step-invariance or group-action
+constraint the space survives, so the answer depends on the formulation.
+Verdict for both: no surviving new result; the contract should be retired
+unless a formulation is fixed first and the three named papers are read in full.
