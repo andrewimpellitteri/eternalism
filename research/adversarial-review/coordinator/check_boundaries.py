@@ -77,6 +77,23 @@ def main():
                 assert value == kappas[n] * amplitude
     assert kappas[1] != kappas[2]
     print(f'{total} exact cylinder identities; singleton kappa_1 counterassignment verified')
+    # Ordinal-block weights include the seam into each minimal element.
+    # This is a different quantity from a two-cap level sum.
+    pairs = list(combinations(range(5), 2))
+    orders = {closure([e for i, e in enumerate(pairs) if mask >> i & 1], 5)
+              for mask in range(1 << len(pairs))}
+    W = [F(0), F(0)]  # coefficient of 1, coefficient of sqrt(2)
+    count = 0
+    for rel in orders:
+        if not principal(rel, 5):
+            continue
+        count += 1
+        L, h = stats(rel, 5)
+        minima = sum(not any((j, i) in rel for j in range(i)) for i in range(5))
+        exponent = L + minima + h + 1
+        W[exponent % 2] += F(1, 2 ** ((exponent + 1) // 2))
+    assert count == 40 and W == [F(9, 16), F(105, 256)]
+    print('Ordinal-block W = 9/16 + 105*sqrt(2)/256 exact (40 blocks, minimum-element seam included)')
 
 
 if __name__ == '__main__':

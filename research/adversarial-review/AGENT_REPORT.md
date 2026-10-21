@@ -118,3 +118,20 @@ obstruction and states the missing absolute-convergence obligation. Its exact
 finite check passed 25 coefficient identities through degree five. This new
 coordinator reduction is not independently reviewed and does not close the
 rank-only existence question or the adversarial gate.
+
+## Provisional norm-classification follow-up (2026-10-21)
+
+`coordinator/BANACH_NORM_BOUNDARY.md` now contains a candidate exact
+classification for existence in some Banach space when only DP cylinder norms
+are prescribed, using a c0-valued weighted conditional-probability measure.
+It separately treats the stricter all-cylinder prescription. Its explicit
+boundary construction and disjoint-family obstructions passed exact finite
+checks in `check_c0_construction.py`. The infinite argument is written out;
+independent proof and priority review are still required. This does not
+classify Hilbert-valued measures or restore complex phases, and it has not
+changed the paper gate or promoted the candidate to accepted newness.
+
+An interim failed GLM certificate check was traced independently to using the
+wrong exponent for an ordinal-block weight. `coordinator/INTERIM_GLM_CHECK.md`
+records the correct calculation and the printed V_2 edge case. The worker is
+still running and its final submission must be reviewed afresh.
