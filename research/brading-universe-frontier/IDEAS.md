@@ -272,3 +272,20 @@ candidate delta is the bridge, not any component.
 
 Open: whether Brown–Kuchař dust deparametrisation of FRW reproduces the
 standard Friedmann equations or modifies them (full text not read).
+
+## Correction after reading Brown–Kuchař and Giesel–Hofmann–Thiemann–Winkler
+
+Route (b) was overstated. With a dust clock the universe gets a conserved,
+positive physical Hamiltonian, the FRW background equations formally agree
+with the standard ones (GHTW II p. 11), and perturbative corrections decay as
+1/a (II p. 4). Thiemann's 2006 "observable consequences whatever matter" is
+not an empirically significant cost. What survives: the dust must be phantom
+(negative energy); with ordinary dust physical time runs backwards; its
+density can be tuned arbitrarily small but must not vanish (I p. 4). So the
+actual cosmological fluid cannot directly be the forward-running clock.
+
+Paper revised: the cost of route (b) is that the universe's present is fixed
+by an added phantom reference medium, not by the universe's own sustaining
+dynamics; the empirical-exposure framing is weakened accordingly. The core
+claim is now the reading-independent one: on no route does the dynamics of a
+sustaining system fix the universe's present.
