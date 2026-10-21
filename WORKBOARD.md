@@ -106,6 +106,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `examples-scope-cleanup` — Decide and execute the example/scope cleanup | 8 | — | — |
 | blocked | `article-rebuild-integration` — Integrate the reframed article, cut the prospectus material, and build | 10 | article-reframe-scope, brading-existence-bridge, admissibility-burden-calibration, favoring-account, strongest-opponents, examples-scope-cleanup | — |
 | blocked | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | — |
+| open | `gh-gate-sync` — Read-only GitHub gate status checker | 6 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
