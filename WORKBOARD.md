@@ -80,7 +80,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
 | done | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | codex-native-bc |
 | done | `covtree-complex-levels` — Covtree complex levels | 6 | — | opencode-coordinator |
-| open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |
+| done | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | opencode-coordinator |
 | done | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
 | done | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
 | done | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
