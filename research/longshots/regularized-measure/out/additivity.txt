@@ -1,0 +1,12 @@
+(1) labelled causets n<=9 checked: 119375592; violations of [2chain & 2anti]==[2chain+1]: 0; of [2chain or 2anti] (n>=2): 0
+    p=1/2 (control): max relative deviation of a(2chain)+a(2anti)-a(2chain+1) from 1, n=2..80: 2.2e-16
+    p=3/2: max relative deviation of a(2chain)+a(2anti)-a(2chain+1) from 1, n=2..80: 1.7e-16
+    p=(1+i)/2: max relative deviation of a(2chain)+a(2anti)-a(2chain+1) from 1, n=2..80: 3.1e-16
+    p=-1/2: max relative deviation of a(2chain)+a(2anti)-a(2chain+1) from 1, n=2..40: 1.9e-16
+    p=(2-4i)/5 (|q|=1): max relative deviation of a(2chain)+a(2anti)-a(2chain+1) from 1, n=2..60: 2.2e-16
+(2) p=3/2 (stage 80 as proxy for the limit; tail beyond j=39 negligible): sum_j mu(#min=j) = 1.000000000000+0.000000000000j; sum_(j>=2) = -0.210724130301+0.000000000000j vs a(2anti) = -0.210724130301+0.000000000000j; variation sum_j |mu(#min=j)| = 1.440956
+    mu(#min=j), j=1..6: 1.21072+0.00000j  -0.07749+0.00000j  -0.14297+0.00000j  0.00881+0.00000j  0.00094+0.00000j  -0.00002+0.00000j
+(2) p=(1+i)/2 (stage 80 as proxy for the limit; tail beyond j=39 negligible): sum_j mu(#min=j) = 1.000000000000-0.000000000000j; sum_(j>=2) = 0.550778402012-1.183963758841j vs a(2anti) = 0.550778402012-1.183963758841j; variation sum_j |mu(#min=j)| = 4.386132
+    mu(#min=j), j=1..6: 0.44922+1.18396j  1.28289-1.35403j  -0.94661+0.16142j  0.25001-0.00002j  -0.03759+0.01235j  0.00179-0.00392j
+(2) p=1/2 (stage 80 as proxy for the limit; tail beyond j=39 negligible): sum_j mu(#min=j) = 1.000000000000+0.000000000000j; sum_(j>=2) = 0.711211904913+0.000000000000j vs a(2anti) = 0.711211904913+0.000000000000j; variation sum_j |mu(#min=j)| = 1.000000
+    mu(#min=j), j=1..6: 0.28879+0.00000j  0.46399+0.00000j  0.20852+0.00000j  0.03591+0.00000j  0.00269+0.00000j  0.00009+0.00000j

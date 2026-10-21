@@ -1,0 +1,14 @@
+(a) post-event identity amp_N(D'_H) = N(H)A_p(H)(q;q)_(N-n): 116 (N,n,H) cases, 0 mismatches, 0 missing; 25 principal shapes H with |H|<=5, N<=8
+(b) stem characterization of K_k(C): 20924 (C,k) cases (|C|<=6, k<=4), 0 failures
+(c) p=3/2: |(q;q)_inf| = 1.210724; P_n = sum_principal N(H)|A_p(H)|, and |(q;q)_inf| P_n, n=1..9:
+    P_n:         1 1.5 3.375 10.55 42 202.5 1142 7352 5.307e+04
+    |kappa| P_n: 1.211 1.816 4.086 12.77 50.85 245.2 1383 8902 6.425e+04
+    RESULT.md lower bound for doubly-principal part, |p| t^(n-2) c_s, n=3..9: 2.066 4.131 8.262 16.52 33.05 66.1 132.2
+(c) p=(1+i)/2: |(q;q)_inf| = 1.266322; P_n = sum_principal N(H)|A_p(H)|, and |(q;q)_inf| P_n, n=1..9:
+    P_n:         1 0.7071 0.8536 1.436 3.089 8.094 25.01 89.09 359.4
+    |kappa| P_n: 1.266 0.8954 1.081 1.818 3.911 10.25 31.68 112.8 455.1
+    RESULT.md lower bound for doubly-principal part, |p| t^(n-2) c_s, n=3..9: 0.2888 0.4084 0.5776 0.8168 1.155 1.634 2.31
+(c) p=1/2: |(q;q)_inf| = 0.288788; P_n = sum_principal N(H)|A_p(H)|, and |(q;q)_inf| P_n, n=1..9:
+    P_n:         1 0.5 0.375 0.3281 0.3076 0.298 0.2933 0.2911 0.2899
+    |kappa| P_n: 0.2888 0.1444 0.1083 0.09476 0.08884 0.08606 0.08472 0.08405 0.08373
+    RESULT.md lower bound for doubly-principal part, |p| t^(n-2) c_s, n=3..9: 0.1444 0.1444 0.1444 0.1444 0.1444 0.1444 0.1444

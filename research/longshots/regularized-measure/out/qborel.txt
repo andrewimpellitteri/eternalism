@@ -1,0 +1,18 @@
+q-Borel-Laplace check, 2-antichain stem, p=-1/2 (q=3/2)
+convention check: max |L[B[x^m]](x) - x^m| over m<=4, 3 directions, 2 x-values = 5.98e-16
+convergent control sum (1/2)^n: max error vs 2 over 3 directions = 2.10e-12
+B continuation vs power series on |xi|<=0.25: max error = 5.79e-11
+
+S(lam) = q-Borel-Laplace sum of sum Delta_n at x=1 (a_1 = 0, so S is the regularized a_inf):
+  lam = 1.0000:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 1.1000:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 1.2000:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 1.3000:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 1.4000:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 1.1e-16)
+  lam = 1.4900:  S = +1.000000000000 +0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 0.8776+0.4794j:  S = +1.000000000000 -0.000000000000i   (|S(lam)-S(q lam)| = 0.0e+00)
+  lam = 0.0707+0.9975j:  S = +1.000000000000 -0.000000000000i   (|S(lam)-S(q lam)| = 4.7e-15)
+  lam = -0.8011+0.5985j:  S = +1.000000000035 +0.000000000059i   (|S(lam)-S(q lam)| = 1.1e-11)
+  lam = 0.6484-1.0098j:  S = +1.000000000000 -0.000000000000i   (|S(lam)-S(q lam)| = 3.0e-16)
+  zeta-regularized 1-(q;q)_inf, (-1)^(-1/2) -> +i: +1.000000000000 -0.066970557070i
+  zeta-regularized 1-(q;q)_inf, (-1)^(-1/2) -> -i: +1.000000000000 +0.066970557070i
