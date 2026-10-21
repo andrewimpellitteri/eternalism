@@ -135,3 +135,27 @@ An interim failed GLM certificate check was traced independently to using the
 wrong exponent for an ordinal-block weight. `coordinator/INTERIM_GLM_CHECK.md`
 records the correct calculation and the printed V_2 edge case. The worker is
 still running and its final submission must be reviewed afresh.
+
+## Hilbert boundary and independent analytic follow-up (2026-10-21)
+
+`coordinator/HILBERT_NORM_BOUNDARY.md` gives an exact candidate disk boundary for
+the norm-only Hilbert realization problem. A conditional-probability measure in
+an independent random edge environment supplies the disk's interior; a Hilbert
+sign-average bound on disjoint squared norms and the two-cap estimate exclude
+its exterior. The same disk applies to DP-only and all-cylinder prescriptions.
+`check_hilbert_environment.py` passed 200 exact finite cylinder moment identities
+at four parameters plus the squared DP level formula through rank five.
+
+The independent proof reviewer audited this argument and the Banach c0 domains
+analytically in `proof/VECTOR_FOLLOWUP.md`, finding no mathematical falsifier.
+Its single wording clarification has been applied. A bounded source/priority
+review is now pending. These are realizations of cylinder norm data in new vector
+spaces, not extensions of the fixed complex scalar premeasure or its original
+decoherence functional. The construction's interference is constructive and its
+nonreal boundary is classically additive. Physical claims remain excluded.
+
+`coordinator/ADDITIONAL_SOURCE_READS.md` records a now-readable author route to
+Sorkin's fundamental-theorem preprint and the limited sections actually read.
+The scope check reinforces the distinction between fixed-premeasure extension
+and diagonal-only realization. Earlier unavailable/unread notes are preserved.
+The selected scalar statement and paper gate are unchanged.

@@ -1,10 +1,14 @@
 # Candidate classification for norm-prescribed Banach-valued measures
 
-Coordinator derivation, 2026-10-21. **Provisional: independent proof and priority
-review still required.** This classifies existence in some Banach space for a
+Coordinator derivation, 2026-10-21. **Independent analytic audit found no
+counterexample; priority review remains pending.** See `../proof/VECTOR_FOLLOWUP.md`.
+This classifies existence in some Banach space for a
 norm-only variant. It does not classify Hilbert-space extensions, recover complex
 phases or supply a physical decoherence functional. Do not treat it as an
 accepted novelty claim or quietly substitute it for the selected scalar theorem.
+The realization is not an extension of a fixed scalar or vector premeasure on
+finite unions. Vector covariance and phase-only relations are additional
+conditions that this norm-only formulation does not impose.
 
 ## Exact candidate statement
 
@@ -82,7 +86,7 @@ It is defined directly on the full sigma-algebra, so restriction needs no
 additional extension theorem. Its total mass has norm one.
 
 Fix a DP cylinder D. Any other cylinder C is disjoint from D or nested with it.
-If C⊆D then its coordinate on D is w_C≤w_D, since L and h never decrease on
+If C⊆D, the C-coordinate of μ(D) is w_C≤w_D, since L and h never decrease on
 extension and a,b≤1. If D⊆C, then
 
 `w_C P_C(D)=a^{L(C)}b^{h(C)} r^{L(D)-L(C)}(1-r)^{h(D)-h(C)}≤w_D`.
