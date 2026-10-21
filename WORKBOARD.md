@@ -108,6 +108,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `article-rereview` — Independent re-review of the reframed article | 9 | article-rebuild-integration | opencode-coordinator |
 | done | `gh-gate-sync` — Read-only GitHub gate status checker | 6 | — | opencode-coordinator |
 | done | `existence-form-trilemma` — The form-of-existence trilemma for local presentism | 10 | — | opencode-coordinator |
+| claimed | `p1-double-prime-revision` — Retarget the article at Brading's P1** and the coverage premise | 10 | — | opencode-coordinator |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
