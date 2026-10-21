@@ -1,0 +1,351 @@
+====================================================================================================
+Enumeration of the labelled poscau (natural labellings, growth by down-sets)
+ stage 1: 1 labelled causets, 1 unlabelled classes
+                     1: W=1  labellings ['{}']
+ stage 2: 2 labelled causets, 2 unlabelled classes
+                 anti2: W=1  labellings ['{}']
+                chain2: W=1  labellings ['{0<1}']
+ stage 3: 7 labelled causets, 5 unlabelled classes
+                Lambda: W=1  labellings ['{0<2,1<2}']
+                     V: W=1  labellings ['{0<1,0<2}']
+                 anti3: W=1  labellings ['{}']
+                chain3: W=1  labellings ['{0<1,1<2}']
+                    cp: W=3  labellings ['{0<2}', '{1<2}', '{0<1}']
+ stage 4: 40 labelled causets, 16 unlabelled classes
+            C4.02{0<3}: W=6  labellings ['{0<3}', '{1<3}', '{2<3}', '{0<2}', '{1<2}', '{0<1}']
+        C4.03{0<3,1<3}: W=4  labellings ['{0<3,1<3}', '{0<3,2<3}', '{1<3,2<3}', '{0<2,1<2}']
+        C4.05{0<2,0<3}: W=4  labellings ['{0<2,0<3}', '{1<2,1<3}', '{0<1,0<3}', '{0<1,0<2}']
+        C4.06{0<2,1<3}: W=3  labellings ['{0<2,1<3}', '{1<2,0<3}', '{0<1,2<3}']
+    C4.07{0<2,0<3,1<3}: W=5  labellings ['{0<2,0<3,1<3}', '{1<2,0<3,1<3}', '{0<2,1<2,0<3}', '{0<2,1<2,1<3}', '{0<1,0<3,2<3}']
+        C4.08{0<2,2<3}: W=4  labellings ['{0<2,2<3}', '{1<2,2<3}', '{0<1,1<3}', '{0<1,1<2}']
+    C4.09{0<2,1<3,2<3}: W=3  labellings ['{0<2,1<3,2<3}', '{1<2,0<3,2<3}', '{0<1,1<3,2<3}']
+    C4.13{0<1,0<2,1<3}: W=3  labellings ['{0<1,0<2,1<3}', '{0<1,0<2,2<3}', '{0<1,1<2,0<3}']
+ stage-4 classes with W=1 omitted above; total classes 16
+====================================================================================================
+MODEL GC0: complex percolation p=(1+i)/2   (GC by construction (label-independent p^L q^(C(n,2)-R)))
+  Markov sum rule at every labelled node, stages 1-3: OK
+  stage 2: norm-only GC OK;  full GC (psi class function): True
+  stage 3: norm-only GC OK;  full GC (psi class function): True
+  stage 4: norm-only GC OK;  full GC (psi class function): True
+  stage 2 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+                anti2 | 1 | [(1/2-1/2i)] | 1/2 | (1/2-1/2i) | 1/2 | 1/2 | 1
+               chain2 | 1 | [(1/2+1/2i)] | 1/2 | (1/2+1/2i) | 1/2 | 1/2 | 1
+  stage 3 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+               Lambda | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                    V | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                anti3 | 1 | [(-1/4-1/4i)] | 1/8 | (-1/4-1/4i) | 1/8 | 1/8 | 1
+               chain3 | 1 | [1/2i] | 1/4 | 1/2i | 1/4 | 1/4 | 1
+                   cp | 3 | [(1/4-1/4i), (1/4-1/4i), (1/4-1/4i)] | 1/8 | (3/4-3/4i) | 9/8 | 9/8 | 1
+                        holonomies psi_j/psi_1 = [1, 1, 1]  (labellings: ['{0<2}', '{1<2}', '{0<1}'])
+  stage-4 classes with W>1 (others have a single labelling, hence no labelling phase):
+                     C4.02{0<3} W=6 v=-3/4 mu=9/16 GCvalue=9/16 holonomies=[1, 1, 1, 1, 1, 1]
+                 C4.03{0<3,1<3} W=4 v=-1/2i mu=1/4 GCvalue=1/4 holonomies=[1, 1, 1, 1]
+                 C4.05{0<2,0<3} W=4 v=-1/2i mu=1/4 GCvalue=1/4 holonomies=[1, 1, 1, 1]
+                 C4.06{0<2,1<3} W=3 v=-3/8i mu=9/64 GCvalue=9/64 holonomies=[1, 1, 1]
+             C4.07{0<2,0<3,1<3} W=5 v=5/8 mu=25/64 GCvalue=25/64 holonomies=[1, 1, 1, 1, 1]
+                 C4.08{0<2,2<3} W=4 v=(1/2-1/2i) mu=1/2 GCvalue=1/2 holonomies=[1, 1, 1, 1]
+             C4.09{0<2,1<3,2<3} W=3 v=(3/8+3/8i) mu=9/32 GCvalue=9/32 holonomies=[1, 1, 1]
+             C4.13{0<1,0<2,1<3} W=3 v=(3/8+3/8i) mu=9/32 GCvalue=9/32 holonomies=[1, 1, 1]
+  stem events (finite-stage approximants of covariant stem events):
+   stem_2(chain2): v = (1/2+1/2i) , mu = 1/2
+   stem_2(anti2): v = (1/2-1/2i) , mu = 1/2
+   stem_3(chain2): v = 1 , mu = 1
+   stem_3(anti2): v = (3/4-3/4i) , mu = 9/8
+   stem_3(chain3): v = 1/2i , mu = 1/4
+   stem_3(V): v = (1/4+1/4i) , mu = 1/8
+   stem_3(Lambda): v = (1/4+1/4i) , mu = 1/8
+   stem_3(cp): v = (3/4-3/4i) , mu = 9/8
+   stem_3(anti3): v = (-1/4-1/4i) , mu = 1/8
+   stem_4(chain2): v = 7/8 , mu = 49/64
+   stem_4(anti2): v = (7/8-1i) , mu = 113/64
+   stem_4(chain3): v = (5/8+3/8i) , mu = 17/32
+   stem_4(V): v = 3/8 , mu = 9/64
+   stem_4(Lambda): v = (5/8-1/8i) , mu = 13/32
+   stem_4(cp): v = (3/4-1i) , mu = 25/16
+   stem_4(anti3): v = (-5/8-3/8i) , mu = 17/32
+  stage-3 identity v(cp)^2 = 9 v(V) v(anti3): lhs=-9/8i rhs=-9/8i holds=True
+  Bell causality (product form) at stage 2->3: True (True, True, True)
+====================================================================================================
+MODEL PA: CP + transition-covariant reflection twist at anti2   (norm-only GC; same moduli as GC0)
+  Markov sum rule at every labelled node, stages 1-3: OK
+  stage 2: norm-only GC OK;  full GC (psi class function): True
+  stage 3: norm-only GC OK;  full GC (psi class function): False
+  stage 4: norm-only GC OK;  full GC (psi class function): False
+  |psi(c)|^2 equal to GC0 for every labelled c, stages 1-4: True  => every labelled cylinder's quantum measure (Srivastava-Surya's <c_n|c_n>) is unchanged, and so is the stage-n total variation sum |psi|
+  stage 2 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+                anti2 | 1 | [(1/2-1/2i)] | 1/2 | (1/2-1/2i) | 1/2 | 1/2 | 1
+               chain2 | 1 | [(1/2+1/2i)] | 1/2 | (1/2+1/2i) | 1/2 | 1/2 | 1
+  stage 3 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+               Lambda | 1 | [(1/20-7/20i)] | 1/8 | (1/20-7/20i) | 1/8 | 1/8 | 1
+                    V | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                anti3 | 1 | [(-1/4-1/4i)] | 1/8 | (-1/4-1/4i) | 1/8 | 1/8 | 1
+               chain3 | 1 | [1/2i] | 1/4 | 1/2i | 1/4 | 1/4 | 1
+                   cp | 3 | [(7/20+1/20i), (7/20+1/20i), (1/4-1/4i)] | 1/8 | (19/20-3/20i) | 37/40 | 9/8 | 37/45
+                        holonomies psi_j/psi_1 = [1, 1, (3/5-4/5i)]  (labellings: ['{0<2}', '{1<2}', '{0<1}'])
+  stage-4 classes with W>1 (others have a single labelling, hence no labelling phase):
+                     C4.02{0<3} W=6 v=(-13/20-1/5i) mu=37/80 GCvalue=9/16 holonomies=[1, 1, 1, (3/5+4/5i), (3/5+4/5i), 1]
+                 C4.03{0<3,1<3} W=4 v=(-1/10-3/10i) mu=1/10 GCvalue=1/4 holonomies=[1, 1, 1, (-3/5-4/5i)]
+                 C4.05{0<2,0<3} W=4 v=(1/5-2/5i) mu=1/5 GCvalue=1/4 holonomies=[1, 1, (3/5-4/5i), (3/5-4/5i)]
+                 C4.06{0<2,1<3} W=3 v=(1/5-11/40i) mu=37/320 GCvalue=9/64 holonomies=[1, 1, (3/5-4/5i)]
+             C4.07{0<2,0<3,1<3} W=5 v=1/8 mu=1/64 GCvalue=25/64 holonomies=[1, 1, -1, -1, (3/5-4/5i)]
+                 C4.08{0<2,2<3} W=4 v=(3/5-1/5i) mu=2/5 GCvalue=1/2 holonomies=[1, 1, (3/5-4/5i), (3/5-4/5i)]
+             C4.09{0<2,1<3,2<3} W=3 v=(3/40+19/40i) mu=37/160 GCvalue=9/32 holonomies=[1, 1, (3/5-4/5i)]
+             C4.13{0<1,0<2,1<3} W=3 v=(3/8+3/8i) mu=9/32 GCvalue=9/32 holonomies=[1, 1, 1]
+  stem events (finite-stage approximants of covariant stem events):
+   stem_2(chain2): v = (1/2+1/2i) , mu = 1/2
+   stem_2(anti2): v = (1/2-1/2i) , mu = 1/2
+   stem_3(chain2): v = (6/5+3/5i) , mu = 9/5
+   stem_3(anti2): v = (3/4-3/4i) , mu = 9/8
+   stem_3(chain3): v = 1/2i , mu = 1/4
+   stem_3(V): v = (1/4+1/4i) , mu = 1/8
+   stem_3(Lambda): v = (1/20-7/20i) , mu = 1/8
+   stem_3(cp): v = (19/20-3/20i) , mu = 37/40
+   stem_3(anti3): v = (-1/4-1/4i) , mu = 1/8
+   stem_4(chain2): v = (27/40+2/5i) , mu = 197/320
+   stem_4(anti2): v = (7/8-1i) , mu = 113/64
+   stem_4(chain3): v = (29/40+27/40i) , mu = 157/160
+   stem_4(V): v = (23/40+1/10i) , mu = 109/320
+   stem_4(Lambda): v = (13/40-21/40i) , mu = 61/160
+   stem_4(cp): v = (11/20-3/5i) , mu = 53/80
+   stem_4(anti3): v = (-5/8-3/8i) , mu = 17/32
+  stage-3 identity v(cp)^2 = 9 v(V) v(anti3): lhs=(22/25-57/200i) rhs=-9/8i holds=False
+  Bell causality (product form) at stage 2->3: False (True, False, False)
+====================================================================================================
+MODEL PA4: PA + stage-4 twist at every cp node   (norm-only GC; same moduli as GC0)
+  Markov sum rule at every labelled node, stages 1-3: OK
+  stage 2: norm-only GC OK;  full GC (psi class function): True
+  stage 3: norm-only GC OK;  full GC (psi class function): False
+  stage 4: norm-only GC OK;  full GC (psi class function): False
+  |psi(c)|^2 equal to GC0 for every labelled c, stages 1-4: True  => every labelled cylinder's quantum measure (Srivastava-Surya's <c_n|c_n>) is unchanged, and so is the stage-n total variation sum |psi|
+  stage 2 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+                anti2 | 1 | [(1/2-1/2i)] | 1/2 | (1/2-1/2i) | 1/2 | 1/2 | 1
+               chain2 | 1 | [(1/2+1/2i)] | 1/2 | (1/2+1/2i) | 1/2 | 1/2 | 1
+  stage 3 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+               Lambda | 1 | [(1/20-7/20i)] | 1/8 | (1/20-7/20i) | 1/8 | 1/8 | 1
+                    V | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                anti3 | 1 | [(-1/4-1/4i)] | 1/8 | (-1/4-1/4i) | 1/8 | 1/8 | 1
+               chain3 | 1 | [1/2i] | 1/4 | 1/2i | 1/4 | 1/4 | 1
+                   cp | 3 | [(7/20+1/20i), (7/20+1/20i), (1/4-1/4i)] | 1/8 | (19/20-3/20i) | 37/40 | 9/8 | 37/45
+                        holonomies psi_j/psi_1 = [1, 1, (3/5-4/5i)]  (labellings: ['{0<2}', '{1<2}', '{0<1}'])
+  stage-4 classes with W>1 (others have a single labelling, hence no labelling phase):
+                     C4.02{0<3} W=6 v=(-7/40-11/40i) mu=17/160 GCvalue=9/16 holonomies=[1, 1, 1, (-4/5+3/5i), (-4/5+3/5i), 1i]
+                 C4.03{0<3,1<3} W=4 v=(-1/10-3/10i) mu=1/10 GCvalue=1/4 holonomies=[1, 1, 1, (-3/5-4/5i)]
+                 C4.05{0<2,0<3} W=4 v=(1/5-2/5i) mu=1/5 GCvalue=1/4 holonomies=[1, 1, (3/5-4/5i), (3/5-4/5i)]
+                 C4.06{0<2,1<3} W=3 v=(-11/40-1/5i) mu=37/320 GCvalue=9/64 holonomies=[1, 1, (3/5-4/5i)]
+             C4.07{0<2,0<3,1<3} W=5 v=1/8 mu=1/64 GCvalue=25/64 holonomies=[1, 1, -1, -1, (3/5-4/5i)]
+                 C4.08{0<2,2<3} W=4 v=(3/5-1/5i) mu=2/5 GCvalue=1/2 holonomies=[1, 1, (3/5-4/5i), (3/5-4/5i)]
+             C4.09{0<2,1<3,2<3} W=3 v=(3/40+19/40i) mu=37/160 GCvalue=9/32 holonomies=[1, 1, (3/5-4/5i)]
+             C4.13{0<1,0<2,1<3} W=3 v=(3/8+3/8i) mu=9/32 GCvalue=9/32 holonomies=[1, 1, 1]
+  stem events (finite-stage approximants of covariant stem events):
+   stem_2(chain2): v = (1/2+1/2i) , mu = 1/2
+   stem_2(anti2): v = (1/2-1/2i) , mu = 1/2
+   stem_3(chain2): v = (6/5+3/5i) , mu = 9/5
+   stem_3(anti2): v = (3/4-3/4i) , mu = 9/8
+   stem_3(chain3): v = 1/2i , mu = 1/4
+   stem_3(V): v = (1/4+1/4i) , mu = 1/8
+   stem_3(Lambda): v = (1/20-7/20i) , mu = 1/8
+   stem_3(cp): v = (19/20-3/20i) , mu = 37/40
+   stem_3(anti3): v = (-1/4-1/4i) , mu = 1/8
+   stem_4(chain2): v = (27/40+2/5i) , mu = 197/320
+   stem_4(anti2): v = (7/8-1i) , mu = 113/64
+   stem_4(chain3): v = (29/40+27/40i) , mu = 157/160
+   stem_4(V): v = (23/40+1/10i) , mu = 109/320
+   stem_4(Lambda): v = (13/40-21/40i) , mu = 61/160
+   stem_4(cp): v = (11/20-3/5i) , mu = 53/80
+   stem_4(anti3): v = (-3/20-9/20i) , mu = 9/40
+  stage-3 identity v(cp)^2 = 9 v(V) v(anti3): lhs=(22/25-57/200i) rhs=-9/8i holds=False
+  Bell causality (product form) at stage 2->3: False (True, False, False)
+====================================================================================================
+MODEL PB: CP + label-dependent twist (P={0} vs P={}) at anti2   (norm-only GC; breaks transition covariance and Bell causality)
+  Markov sum rule at every labelled node, stages 1-3: OK
+  stage 2: norm-only GC OK;  full GC (psi class function): True
+  stage 3: norm-only GC OK;  full GC (psi class function): False
+  stage 4: norm-only GC OK;  full GC (psi class function): False
+  |psi(c)|^2 equal to GC0 for every labelled c, stages 1-4: True  => every labelled cylinder's quantum measure (Srivastava-Surya's <c_n|c_n>) is unchanged, and so is the stage-n total variation sum |psi|
+  stage 2 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+                anti2 | 1 | [(1/2-1/2i)] | 1/2 | (1/2-1/2i) | 1/2 | 1/2 | 1
+               chain2 | 1 | [(1/2+1/2i)] | 1/2 | (1/2+1/2i) | 1/2 | 1/2 | 1
+  stage 3 classes: name | W | labelled psi | |psi|^2 | v(C)=sum psi | mu(C)=|v|^2 | GC value W^2|psi|^2 | coherence |kappa|^2
+               Lambda | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                    V | 1 | [(1/4+1/4i)] | 1/8 | (1/4+1/4i) | 1/8 | 1/8 | 1
+                anti3 | 1 | [(1/4-1/4i)] | 1/8 | (1/4-1/4i) | 1/8 | 1/8 | 1
+               chain3 | 1 | [1/2i] | 1/4 | 1/2i | 1/4 | 1/4 | 1
+                   cp | 3 | [(-1/4-1/4i), (1/4-1/4i), (1/4-1/4i)] | 1/8 | (1/4-3/4i) | 5/8 | 9/8 | 5/9
+                        holonomies psi_j/psi_1 = [1, 1i, 1i]  (labellings: ['{0<2}', '{1<2}', '{0<1}'])
+  stage-4 classes with W>1 (others have a single labelling, hence no labelling phase):
+                     C4.02{0<3} W=6 v=(-1/4-1/4i) mu=1/8 GCvalue=9/16 holonomies=[1, 1, 1, -1, -1i, -1i]
+                 C4.03{0<3,1<3} W=4 v=(3/8-1/8i) mu=5/32 GCvalue=1/4 holonomies=[1, 1, 1, -1i]
+                 C4.05{0<2,0<3} W=4 v=(-1/8-3/8i) mu=5/32 GCvalue=1/4 holonomies=[1, 1i, 1i, 1i]
+                 C4.06{0<2,1<3} W=3 v=(-1/8-1/4i) mu=5/64 GCvalue=9/64 holonomies=[1, 1i, 1i]
+             C4.07{0<2,0<3,1<3} W=5 v=(1/2-1/8i) mu=17/64 GCvalue=25/64 holonomies=[1, 1i, 1i, 1i, 1i]
+                 C4.08{0<2,2<3} W=4 v=(1/4-1/2i) mu=5/16 GCvalue=1/2 holonomies=[1, 1i, 1i, 1i]
+             C4.09{0<2,1<3,2<3} W=3 v=(3/8+1/8i) mu=5/32 GCvalue=9/32 holonomies=[1, 1i, 1i]
+             C4.13{0<1,0<2,1<3} W=3 v=(3/8+3/8i) mu=9/32 GCvalue=9/32 holonomies=[1, 1, 1]
+  stem events (finite-stage approximants of covariant stem events):
+   stem_2(chain2): v = (1/2+1/2i) , mu = 1/2
+   stem_2(anti2): v = (1/2-1/2i) , mu = 1/2
+   stem_3(chain2): v = 1/2 , mu = 1/4
+   stem_3(anti2): v = (3/4-3/4i) , mu = 9/8
+   stem_3(chain3): v = 1/2i , mu = 1/4
+   stem_3(V): v = (1/4+1/4i) , mu = 1/8
+   stem_3(Lambda): v = (1/4+1/4i) , mu = 1/8
+   stem_3(cp): v = (1/4-3/4i) , mu = 5/8
+   stem_3(anti3): v = (1/4-1/4i) , mu = 1/8
+   stem_4(chain2): v = (3/4-3/8i) , mu = 45/64
+   stem_4(anti2): v = (7/8-1i) , mu = 113/64
+   stem_4(chain3): v = (3/8+3/8i) , mu = 9/32
+   stem_4(V): v = (1/4+1/8i) , mu = 5/64
+   stem_4(Lambda): v = (7/8+1/8i) , mu = 25/32
+   stem_4(cp): v = (5/8-11/8i) , mu = 73/32
+   stem_4(anti3): v = -1/4i , mu = 1/16
+  stage-3 identity v(cp)^2 = 9 v(V) v(anti3): lhs=(-1/2-3/8i) rhs=9/8 holds=False
+  Bell causality (product form) at stage 2->3: False (True, False, False)
+====================================================================================================
+FROZEN MODELS: from stage N on each new element is born above all existing elements.
+Covariant atoms are the classes {C ~ C_N (+) omega}; covariant vector measure v = stage-N class vector.
+----------------------------------------------------------------------------------------------------
+MODEL GC0 frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC True
+  stage 4: norm-only GC OK; full GC True
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': (1/4+1/4i), 'V': (1/4+1/4i), 'anti3': (-1/4-1/4i), 'chain3': 1/2i, 'cp': (3/4-3/4i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 5/2 = |sum v_i w_i|^2 5/2: True
+  mu(cp-atom) = 9/8 ; mu(V-atom) = 1/8 ; mu(cp or V) = 5/4 ; D(cp,V) = 3/8i
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=-9/8i rhs=-9/8i holds=True; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 81/64 vs 81/64
+  model is Bell-causal (product form) at stage 2->3: True
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   reconstructed: x'=(1/2+1/2i), chain2->(cp,V,chain3)=[-1/2i, 1/2, (1/2+1/2i)], anti2->(anti3,{0},{1},Lambda)=[-1/2i, 1/2, 1/2, 1/2i]
+   reconstructed GC model Bell-causal at stage 2->3: True
+----------------------------------------------------------------------------------------------------
+MODEL PA frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': (1/20-7/20i), 'V': (1/4+1/4i), 'anti3': (-1/4-1/4i), 'chain3': 1/2i, 'cp': (19/20-3/20i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 9/2 = |sum v_i w_i|^2 9/2: True
+  mu(cp-atom) = 37/40 ; mu(V-atom) = 1/8 ; mu(cp or V) = 29/20 ; D(cp,V) = (1/5+11/40i)
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=(22/25-57/200i) rhs=-9/8i holds=False; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 1369/1600 vs 81/64
+  model is Bell-causal (product form) at stage 2->3: False
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   reconstructed: x'=(17/30+7/10i), chain2->(cp,V,chain3)=[(13/73-45/146i), (57/146-3/73i), (63/146+51/146i)], anti2->(anti3,{0},{1},Lambda)=[(6/61-51/122i), (31/122+18/61i), (31/122+18/61i), (24/61-21/122i)]
+   reconstructed GC model Bell-causal at stage 2->3: False
+----------------------------------------------------------------------------------------------------
+MODEL PB frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': (1/4+1/4i), 'V': (1/4+1/4i), 'anti3': (1/4-1/4i), 'chain3': 1/2i, 'cp': (1/4-3/4i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 4 = |sum v_i w_i|^2 4: True
+  mu(cp-atom) = 5/8 ; mu(V-atom) = 1/8 ; mu(cp or V) = 1/2 ; D(cp,V) = (-1/8+1/4i)
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=(-1/2-3/8i) rhs=9/8 holds=False; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 25/64 vs 81/64
+  model is Bell-causal (product form) at stage 2->3: False
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   reconstructed: x'=(1/3+1/2i), chain2->(cp,V,chain3)=[(-7/26-9/26i), (15/26-3/26i), (9/13+6/13i)], anti2->(anti3,{0},{1},Lambda)=[(21/50-3/50i), (13/50-9/50i), (13/50-9/50i), (3/50+21/50i)]
+   reconstructed GC model Bell-causal at stage 2->3: False
+----------------------------------------------------------------------------------------------------
+MODEL PA4 frozen at 4
+  MSR at all nodes up to stage 4: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  stage 5: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'C4.01{}': 1/8i, 'C4.02{0<3}': (-7/40-11/40i), 'C4.03{0<3,1<3}': (-1/10-3/10i), 'C4.04{0<3,1<3,2<3}': 1/8, 'C4.05{0<2,0<3}': (1/5-2/5i), 'C4.06{0<2,1<3}': (-11/40-1/5i), 'C4.07{0<2,0<3,1<3}': 1/8, 'C4.08{0<2,2<3}': (3/5-1/5i), 'C4.09{0<2,1<3,2<3}': (3/40+19/40i), 'C4.10{0<2,1<2,0<3,1<3}': (1/10-3/40i), 'C4.11{0<2,1<2,2<3}': (1/5-3/20i), 'C4.12{0<1,0<2,0<3}': 1/8, 'C4.13{0<1,0<2,1<3}': (3/8+3/8i), 'C4.14{0<1,0<2,1<3,2<3}': (-1/8+1/8i), 'C4.15{0<1,1<2,1<3}': 1/4i, 'C4.16{0<1,1<2,2<3}': (-1/4+1/4i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 5 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 28697/80 = |sum v_i w_i|^2 28697/80: True
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   largest |reconstructed transition amplitude|^2 = 740/793 at {1<2} -> P=(0, 1, 2)
+----------------------------------------------------------------------------------------------------
+MODEL BCPH: Bell-causal phased stage-3 model, x=1/2, a1=1/4, b0=(3+4i)/20, frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': (11/40-3/10i), 'V': 1/8, 'anti3': (3/40+1/10i), 'chain3': 1/4, 'cp': (11/40+1/5i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 65/4 = |sum v_i w_i|^2 65/4: True
+  mu(cp-atom) = 37/320 ; mu(V-atom) = 1/64 ; mu(cp or V) = 1/5 ; D(cp,V) = (11/320-1/40i)
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=(57/1600+11/100i) rhs=(27/320+9/80i) holds=False; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 1369/102400 vs 81/4096
+  model is Bell-causal (product form) at stage 2->3: True
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   reconstructed: x'=(7/15+1/15i), chain2->(cp,V,chain3)=[(17/80+9/80i), (21/80-3/80i), (21/40-3/40i)], anti2->(anti3,{0},{1},Lambda)=[(3/26+21/104i), (2/13+15/104i), (2/13+15/104i), (15/26-51/104i)]
+   reconstructed GC model Bell-causal at stage 2->3: False
+----------------------------------------------------------------------------------------------------
+MODEL BCGC: same with b0=a1 (GC+BC), frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC True
+  stage 4: norm-only GC OK; full GC True
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': 1/8, 'V': 1/8, 'anti3': 1/8, 'chain3': 1/4, 'cp': 3/8}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 37/4 = |sum v_i w_i|^2 37/4: True
+  mu(cp-atom) = 9/64 ; mu(V-atom) = 1/64 ; mu(cp or V) = 1/4 ; D(cp,V) = 3/64
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=9/64 rhs=9/64 holds=True; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 81/4096 vs 81/4096
+  model is Bell-causal (product form) at stage 2->3: True
+  GC reconstruction exists: MSR True, GC True, reproduces covariant vector measure True
+   reconstructed: x'=1/2, chain2->(cp,V,chain3)=[1/4, 1/4, 1/2], anti2->(anti3,{0},{1},Lambda)=[1/4, 1/4, 1/4, 1/4]
+   reconstructed GC model Bell-causal at stage 2->3: True
+----------------------------------------------------------------------------------------------------
+MODEL OBS: Bell-causal phased model with holonomy pi, x=2/5, frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': 33/20, 'V': 1/5, 'anti3': -9/20, 'chain3': -1/10, 'cp': -3/10}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 122/5 = |sum v_i w_i|^2 122/5: True
+  mu(cp-atom) = 9/100 ; mu(V-atom) = 1/25 ; mu(cp or V) = 1/100 ; D(cp,V) = -3/50
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=9/100 rhs=-81/100 holds=False; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 81/10000 vs 6561/10000
+  model is Bell-causal (product form) at stage 2->3: True
+  GC RECONSTRUCTION OBSTRUCTED: zero ancestor with nonzero descendants: [('{0<1}', [('{0<1}', -1/10), ('{0<1,0<2}', 1/5), ('{0<1,1<2}', -1/10)])]
+   => no GC sequential-growth model frozen at any N' >= 3 (nor any GC model that is arbitrary up to a finite stage and real percolation p'<1 afterwards) reproduces this covariant vector measure
+----------------------------------------------------------------------------------------------------
+MODEL OBSC: complex point on the obstruction locus (not Bell-causal), frozen at 3
+  MSR at all nodes up to stage 3: OK
+  stage 2: norm-only GC OK; full GC True
+  stage 3: norm-only GC OK; full GC False
+  stage 4: norm-only GC OK; full GC False
+  covariant vector measure v on atoms C_N(+)omega: {'Lambda': (1/10-2/5i), 'V': (1/100-1/50i), 'anti3': (23/50+2/25i), 'chain3': (-23/100-7/50i), 'cp': (33/50+12/25i)}
+  sum of v = 1 (normalisation D(Omega,Omega)=1 requires 1)
+  stage 4 nonzero class vectors (should equal the above, one per atom): True
+  decoherence functional on covariant atoms D=conj(v_i)v_j: Hermitian True, diag>=0 True, all 2x2 minors 0 True, test quadratic form 2617/200 = |sum v_i w_i|^2 2617/200: True
+  mu(cp-atom) = 333/500 ; mu(V-atom) = 1/2000 ; mu(cp or V) = 1321/2000 ; D(cp,V) = (-3/1000-9/500i)
+  identity v(cp)^2 = 9 v(V) v(anti3): lhs=(513/2500+396/625i) rhs=(279/5000-189/2500i) holds=False; measure form mu(cp)^2 = 81 mu(V) mu(anti3): 110889/250000 vs 8829/1000000
+  model is Bell-causal (product form) at stage 2->3: False
+  GC RECONSTRUCTION OBSTRUCTED: zero ancestor with nonzero descendants: [('{0<1}', [('{0<1}', (11/50+4/25i)), ('{0<1,0<2}', (1/100-1/50i)), ('{0<1,1<2}', (-23/100-7/50i))])]
+   => no GC sequential-growth model frozen at any N' >= 3 (nor any GC model that is arbitrary up to a finite stage and real percolation p'<1 afterwards) reproduces this covariant vector measure
+====================================================================================================
+STAGE-3 FORMULA CHECK: Bell-causal norm-GC family, x=1/2, |a1|=|b0|=1/4, b0=a1*u, u on a set of exact unit phases
+  u=1: cos theta=1  mu(cp)=9/64 predicted x^2|a1|^2(5+4cos)=9/64 GC value=9/64  identity holds=True  MSR=OK normGC=OK
+  u=-1: cos theta=-1  mu(cp)=1/64 predicted x^2|a1|^2(5+4cos)=1/64 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+  u=1i: cos theta=0  mu(cp)=5/64 predicted x^2|a1|^2(5+4cos)=5/64 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+  u=(3/5+4/5i): cos theta=3/5  mu(cp)=37/320 predicted x^2|a1|^2(5+4cos)=37/320 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+  u=(-3/5+4/5i): cos theta=-3/5  mu(cp)=13/320 predicted x^2|a1|^2(5+4cos)=13/320 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+  u=(5/13+12/13i): cos theta=5/13  mu(cp)=85/832 predicted x^2|a1|^2(5+4cos)=85/832 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+  u=(-7/25+24/25i): cos theta=-7/25  mu(cp)=97/1600 predicted x^2|a1|^2(5+4cos)=97/1600 GC value=9/64  identity holds=False  MSR=OK normGC=OK
+====================================================================================================
+CLOSURE CHECK near OBS: target v_eps = v_OBS + eps*(V-atom) - eps*(Lambda-atom).
+A GC frozen-at-3 model reproducing v_eps exists for every eps != 0; the needed amplitudes diverge as eps -> 0.
+  eps=1/10: x'=1/10, MSR True, GC True, reproduces v_eps True, reconstructed chain2->cp amplitude -1, |.|^2=1
+  eps=1/100: x'=1/100, MSR True, GC True, reproduces v_eps True, reconstructed chain2->cp amplitude -10, |.|^2=100
+  eps=1/1000: x'=1/1000, MSR True, GC True, reproduces v_eps True, reconstructed chain2->cp amplitude -100, |.|^2=10000
+  eps=-1/1000: x'=-1/1000, MSR True, GC True, reproduces v_eps True, reconstructed chain2->cp amplitude 100, |.|^2=10000
+====================================================================================================
+CLASSICAL COMPARISON: Bell-causal stage-3 models with nonnegative real amplitudes (probabilities),
+x=1/2, a1 and b0 free (a1 != b0 violates DGC).  Identity and GC reconstruction (frozen at 3).
+  a1=1/4, b0=1/4: probabilities nonneg True; DGC True; identity holds True (9/64 vs 9/64); GC reconstruction exists, reconstruction Bell-causal True
+  a1=1/4, b0=1/8: probabilities nonneg True; DGC False; identity holds False (1/16 vs 9/128); GC reconstruction exists, reconstruction Bell-causal False
+  a1=1/4, b0=1/16: probabilities nonneg True; DGC False; identity holds True (9/256 vs 9/256); GC reconstruction exists, reconstruction Bell-causal False
+  a1=1/8, b0=1/4: probabilities nonneg True; DGC False; identity holds False (25/256 vs 9/128); GC reconstruction exists, reconstruction Bell-causal False
