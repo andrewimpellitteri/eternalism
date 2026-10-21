@@ -44,7 +44,8 @@ per Bamonti and Thébault) or no time (P1** restricted). The four-event coverage
 model is retained. Supporting notes and source records are in
 `research/brading-universe-frontier/`.
 
-**Build status:** this redraft has not been compiled. The cloud session that
-wrote it has no TeX installation; `verification.json` describes the previous
-version and is stale. Rebuild with the commands above, then update
-`verification.json`. The submission gates in `READINESS.md` remain open.
+**Build status:** compiled locally on 21 October 2026 with pdfTeX (TeX Live
+2026): 10 pages, all citations and references resolved on the final pass. The
+one warning, an overfull box in the routes table, was fixed afterwards by
+narrowing the table; rebuild to confirm. `verification.json` still describes
+the previous version and should be regenerated from the next local build. The submission gates in `READINESS.md` remain open.
