@@ -9,6 +9,7 @@ Read the compiled manuscript at
 source locators, actual reading depth, falsifiers and excluded follow-ups.
 `review/AGENT_REPORT.md` records the separate manuscript audit when completed;
 `AGENT_REPORT.md` records coordinator disposition and build/verification results.
+`REVIEW_PACKET.md` lists exactly what to send to an external reviewer.
 
 ## Reproduce the exact checks
 
