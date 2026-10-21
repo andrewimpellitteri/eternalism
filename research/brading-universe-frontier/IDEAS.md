@@ -88,6 +88,49 @@ law-constitutive local presentism. Brading's local view escapes Wüthrich's
 Lorentz-symmetry objection to Monton, but meets the problem of time at the
 universe.
 
+## Update after reading Isham 1991 (printed pp. 192-202)
+
+Record `isham-1991-conceptual-geometrical-qg`. Verified against page images.
+
+1. **The quote is there, and broader than Wüthrich says.** p. 200, item 3a:
+   a time-dependent Hamiltonian means energy can be fed into or taken out of
+   the system; "a compact three-manifold Σ (the 'universe') has no external
+   environment, and so the time-dependence is perhaps a little odd." It is
+   stated for the general reduce-then-quantize approach (Sec. 5.2), shown in a
+   closed FRW minisuperspace, not for CMC specifically. (The choice
+   `t := π_a`, the momentum conjugate to the scale factor, is close to a
+   mean-curvature time in FRW; that identification is ours, not Isham's.)
+2. **Exception in his own example.** Eq. (5.2.8), matter time `t := φ`:
+   `H_φ = ±(a²π_a²/12 + 12a⁴ − 2a⁶V(t))^{1/2}`. With `V = 0` (a free massless
+   scalar clock) there is no explicit time dependence, so the reduced
+   Hamiltonian is conserved. The universe then gets a global time **and** a
+   conserved total quantity. The dilemma as stated earlier is false for
+   deparametrizable models with an ideal clock field.
+3. **Non-uniqueness.** Second item 3 (p. 200): there is no natural choice of
+   time variable, and different choices need not give equivalent quantum
+   theories. p. 196: for non-compact Σ the asymptotic structure might give an
+   absolute time.
+
+**Repaired dilemma (conjecture).** For a spatially closed universe in
+canonical GR, a global present for the universe (horn 2a) either
+
+- (i) uses a time whose reduced Hamiltonian is time-dependent, so Brading's
+  conservation-under-isolation unity test fails for the universe; or
+- (ii) uses an ideal clock (for example a free massless scalar), so the test
+  can pass, but the present is fixed by the choice of a particular matter
+  field. The dynamics does not select it uniquely (Isham p. 200), and
+  different choices need not be equivalent.
+
+Without gauge fixing, there is no evolution parameter (horn 4). Branch (ii)
+is the defender's best route. It matters because Brading says the dynamics
+fixes the present; here a choice of clock does. Whether a realistic universe
+contains an ideal clock is a physics question we have not settled.
+
+Next: check how the deparametrized models with a massless scalar or dust
+clock (e.g. Brown–Kuchař dust; the massless scalar clock in loop quantum
+cosmology) are treated in the literature, and whether "ideal clock" can be
+made precise as "the time variable is cyclic in the reduced Hamiltonian".
+
 ## Prior art to beat (discovery level unless marked)
 
 - **Monton 2006, "Presentism and quantum gravity"** (Dieks ed., *The Ontology
