@@ -1,0 +1,45 @@
+
+=== 1. Commutator and spectrum
+||[K, H_C]|| = 0.6667 (K = |tau_0><tau_0|)
+g = 0.0 : surfaces (lambda: dim) = -0.5000:1, +0.5000:2, +1.5000:2, +2.5000:1
+g = 0.05: surfaces (lambda: dim) = -0.5005:1, +0.4831:1, +0.5165:1, +1.4835:1, +1.5169:1, +2.5005:1
+g = 0.2 : surfaces (lambda: dim) = -0.5082:1, +0.4305:1, +0.5630:1, +1.4370:1, +1.5695:1, +2.5082:1
+g = 0.5 : surfaces (lambda: dim) = -0.5527:1, +0.3211:1, +0.6421:1, +1.3579:1, +1.6789:1, +2.5527:1
+g = 1.0 : surfaces (lambda: dim) = -0.7250:1, +0.1609:1, +0.7346:1, +1.2654:1, +1.8391:1, +2.7250:1
+
+=== 2. Known limit g -> 0: first-order splitting of the lambda = 0.5 surface
+degenerate-perturbation prediction (lambda - 0.5)/g = [-0.333333, 0.333333]
+numerical at g = 1e-3:              (lambda - 0.5)/g = [-0.333417, 0.33325]
+
+=== 3. g = 0 control: trinity conditions hold
+R(0) isometry defect on V_0.5 = 2.22e-16
+R(1) isometry defect on V_0.5 = 2.22e-16
+R(2) isometry defect on V_0.5 = 2.22e-16
+k = 0: p(k) = 0.333333
+k = 1: p(k) = 0.333333
+k = 2: p(k) = 0.333333
+max infidelity between PW state and exp(-i H_S t_k) psi_S(0): 4.44e-16
+
+=== 4. Interacting case g = 0.2: every surface, ideal and non-ideal readings
+lambda = -0.5082 dim 1 | p_ideal = 0.3444 0.3278 0.3278 | p_nonideal(d=0.1) = 0.3411 0.3294 0.3294 | max isometry defect = 0.033
+lambda = +0.4305 dim 1 | p_ideal = 0.3599 0.3201 0.3201 | p_nonideal(d=0.1) = 0.3519 0.3240 0.3240 | max isometry defect = 0.080
+lambda = +0.5630 dim 1 | p_ideal = 0.2957 0.3522 0.3522 | p_nonideal(d=0.1) = 0.3070 0.3465 0.3465 | max isometry defect = 0.113
+lambda = +1.4370 dim 1 | p_ideal = 0.2957 0.3522 0.3522 | p_nonideal(d=0.1) = 0.3070 0.3465 0.3465 | max isometry defect = 0.113
+lambda = +1.5695 dim 1 | p_ideal = 0.3599 0.3201 0.3201 | p_nonideal(d=0.1) = 0.3519 0.3240 0.3240 | max isometry defect = 0.080
+lambda = +2.5082 dim 1 | p_ideal = 0.3444 0.3278 0.3278 | p_nonideal(d=0.1) = 0.3411 0.3294 0.3294 | max isometry defect = 0.033
+
+=== 4. Interacting case g = 0.5: every surface, ideal and non-ideal readings
+lambda = -0.5527 dim 1 | p_ideal = 0.4018 0.2991 0.2991 | p_nonideal(d=0.1) = 0.3812 0.3094 0.3094 | max isometry defect = 0.205
+lambda = +0.3211 dim 1 | p_ideal = 0.3648 0.3176 0.3176 | p_nonideal(d=0.1) = 0.3553 0.3223 0.3223 | max isometry defect = 0.094
+lambda = +0.6421 dim 1 | p_ideal = 0.2335 0.3833 0.3833 | p_nonideal(d=0.1) = 0.2634 0.3683 0.3683 | max isometry defect = 0.300
+lambda = +1.3579 dim 1 | p_ideal = 0.2335 0.3833 0.3833 | p_nonideal(d=0.1) = 0.2634 0.3683 0.3683 | max isometry defect = 0.300
+lambda = +1.6789 dim 1 | p_ideal = 0.3648 0.3176 0.3176 | p_nonideal(d=0.1) = 0.3553 0.3223 0.3223 | max isometry defect = 0.094
+lambda = +2.5527 dim 1 | p_ideal = 0.4018 0.2991 0.2991 | p_nonideal(d=0.1) = 0.3812 0.3094 0.3094 | max isometry defect = 0.205
+
+=== 5. Dirac vs PW: twirl identity on physical states (g = 0.5)
+max |<G[E_k (x) O]> - <E_k (x) O>| over surfaces and readings = 5.57e-17
+
+=== 6. Is a two-dimensional surface ever kept at g != 0? (sweep)
+K = |tau0><tau0|           ||[K,H_C]|| = 0.667; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 1]
+K = |tau0><tau1| + h.c.    ||[K,H_C]|| = 0.667; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 1]
+K = |n=0><n=1| + h.c.      ||[K,H_C]|| = 1.000; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 2]
