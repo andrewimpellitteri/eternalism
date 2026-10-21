@@ -27,10 +27,10 @@ operator. Non-ideal covariant POVM with blur d = 0.1.
 |---|---|---|
 | R1 | Dirac and Page–Wootters expectations coincide on physical states for any interaction: `⟨G[E_k⊗O]⟩ = ⟨E_k⊗O⟩` | Sec. 5: max difference 5.6e-17. It holds because physical states are exact eigenvectors in a finite model; a one-line identity, not a computation-specific fact. |
 | R2 | The trinity can therefore fail only at normalization: reading probabilities `p(k)` and the isometry of `R(k)` | Sec. 3 (g = 0 control): p = 1/3, isometry defect 2e-16, conditional states evolve by `e^{−iH_S t_k}` (infidelity 4e-16). |
-| R3 | `[H_int, H_C] ≠ 0` makes `p(k)` non-uniform and `R(k)` non-isometric; a commuting interaction does not | Sec. 4: e.g. g = 0.5, p_ideal = 0.40/0.30/0.30, defect 0.21; non-ideal readout has the same pattern, smoothed. Sec. 7: commuting K, p = 1/3 to 1e-6, defect ≤ 4e-16. |
+| R3 | In this model, the non-commuting K makes `p(k)` non-uniform and `R(k)` non-isometric; the commuting control does not. Not a general law (see Answer) | Sec. 4: e.g. g = 0.5, p_ideal = 0.40/0.30/0.30, defect 0.21; non-ideal readout has the same pattern, smoothed. Sec. 7: commuting K, p = 1/3 to 1e-6, defect ≤ 4e-16. |
 | R4 | A generic non-commuting interaction splits every degenerate surface into one-dimensional ones | Sec. 1 and 6: all surfaces have dim 1 for g ∈ {0.05, 0.2, 0.5, 1} and three choices of K, except one level crossing. Known limit (Sec. 2): first-order splitting ±0.3333 g predicted, ±0.3334 g at g = 1e-3. |
 | R5 | So on a single generic interacting surface there is no family of initial system states and no dynamical map; the four memory criteria are undefined, not failed | Follows from R4. |
-| R6 | On the accidental two-dimensional surface (K = `|0⟩⟨1|`+h.c., g = 1 exactly; separate at 0.99 and 1.01), reduced maps are non-isometric and trace distance revives | Sec. 8: eigenvalues of `A_k†A_k` = 0.2087, 4.7913 for k = 1, 2; all three step propagators have the same; 200/200 random pairs show an increase. A periodic non-isometric family must revive. |
+| R6 | On the accidental two-dimensional surface (K = `|0⟩⟨1|`+h.c., g = 1 exactly; separate at 0.99 and 1.01), reduced maps are non-isometric and trace distance revives (forced by period-3 return) | Sec. 8: eigenvalues of `A_k†A_k` = 0.2087, 4.7913 for k = 1, 2; all three step propagators have the same; 200/200 random pairs show an increase. A periodic non-isometric family must revive. |
 
 ## Memory-criteria table
 
@@ -39,7 +39,7 @@ operator. Non-ideal covariant POVM with blur d = 0.1.
 | Uncoupled, covariant non-ideal POVM, single surface (RC5.md check) | fails only because Φ_0 = D ≠ id | holds (unitary propagators) | none | not computed |
 | Commuting interaction, 2-d surface (Sec. 7) | holds: `A_1` unitary, `A_2 = A_1²`, `A_1³ = 1` (checked to 1e-15 at g = 0.2, 0.5, 1) | holds | none | not computed |
 | Generic non-commuting interaction, single surface (R4) | undefined: no map | undefined | undefined | undefined |
-| Accidental 2-d non-commuting surface (R6) | no (non-isometric, period 3) | linear unnormalized propagators are single-Kraus CP but not trace-non-increasing (gain 4.79), so not CPTP-divisible; normalized maps are non-linear | yes, forced by periodicity | not computed: needs a choice of multi-time clock-readout instrument |
+| Accidental 2-d non-commuting surface (R6) | no (non-isometric, period 3) | linear unnormalized propagators are single-Kraus CP but not trace-non-increasing (gain 4.79), so not CPTP-divisible; normalized maps are non-linear | revival forced by periodicity; not backflow in the standard sense, since the normalized maps are nonlinear | not computed: needs a choice of multi-time clock-readout instrument |
 | Stationary mixture over several surfaces (Rijavec-type, from `kb-clock-interactions`) | — | fails | yes, even with commuting coupling | not computed |
 
 ## Answer to the probe (after the literature check)
