@@ -84,7 +84,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | codex-native-clock |
 | done | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
 | done | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
-| open | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
+| done | `bridge-principle-defense` — Bridge principle defense | 8 | — | opencode-coordinator |
 | done | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
 | done | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
 | done | `clock-action-correspondence` — Repair finite-clock comparison: charge origin, aliasing and valid cyclic actions | 10 | — | codex-clock-audit |
