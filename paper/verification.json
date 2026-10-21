@@ -18,6 +18,11 @@
   "pdf_pages": 7,
   "visually_reviewed_pages": [
     1,
+    2,
+    3,
+    4,
+    5,
+    6,
     7
   ],
   "visual_defects_found": [],
@@ -30,5 +35,5 @@
     "output/pdf/temporal-ontology-working-draft.pdf": "e2299ac7ae0db51f04ae7ee15402667f9218390c72358861ecfd1b61f039ccc1"
   },
   "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. Stein printed-page gate closed at p.149 with condition (iv) caveat.",
-  "visual_review_note": "Reframed 7-page draft; pages 1 and 7 inspected (title/abstract and conclusion/references). Build has no unresolved references or overfull boxes; full page-by-page inspection remains for the re-review."
+  "visual_review_note": "Full 7-page visual inspection of the reframed draft (title/abstract, coverage argument, repairs, burden/favoring, objections, conclusion/references). No layout or unresolved-reference defects found."
 }
