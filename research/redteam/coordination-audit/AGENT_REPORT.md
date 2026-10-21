@@ -89,3 +89,23 @@ Still to do: GitHub serves the old commits by hash until GitHub Support purges
 cached objects (no forks exist). Eleven local `agent/*` branches and their worktrees
 still contain the file; never push them, and prune them when the worktrees are
 retired.
+
+## Worktree cleanup, 2026-10-21
+
+Removed 31 worktrees and their `agent/*` branches for `done` tasks with clean
+working trees. Before deletion, each branch's commits were checked to be
+ancestors of the pre-rewrite main (`a265fdb`), so all their content is in the
+rewritten main. `.worktrees` went from 136 MB to 39 MB.
+
+Kept on purpose:
+- `glm-adversarial-scalar`, `glm-probe-corrections`, `glm-rank-renewal-boundary`,
+  `glm-vector-indicator-boundary`: claimed, active.
+- `kb-pw-critiques`: parked by the coordinator, uncommitted output preserved.
+- `lean-certificate`: `done`, but holds an untracked
+  `research/proof-audit/VERIFICATION_AUDIT.md` that is not in main.
+- `rank-factor-boundary`: `done`, but holds an untracked
+  `research/extensions/rank-factor/kernel_sequence.py` that is not in main.
+
+The last two branches are also the only local refs still holding the
+Clifton–Hogarth scan. Once their files are integrated or deliberately dropped,
+remove them to finish the local purge.

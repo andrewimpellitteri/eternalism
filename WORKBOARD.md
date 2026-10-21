@@ -63,14 +63,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | opencode-coordinator |
 | done | `vector-measure-boundary` — Test the no-go for Banach/Hilbert-valued measures | 9 | novelty-verdict-selected | opencode-coordinator |
 | done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
-| claimed | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
+| done | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
 | blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
 | claimed | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | claimed | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
-| open | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | — |
-| open | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | — |
+| claimed | `glm-rank-renewal-boundary` — Try to settle the rank-only renewal problem with analytic bounds | 10 | — | glm-glm-rank-renewal-boundary |
+| claimed | `glm-probe-corrections` — Apply the reviewed vector and covariant-probe corrections without strengthening claims | 9 | — | glm-glm-probe-corrections |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
