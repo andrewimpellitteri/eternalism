@@ -91,3 +91,41 @@ prospectus material was cut or moved per
 `research/examples-scope/DECISIONS.md`. The new draft is 8 pages, retargeted at Brading's P1** and the coverage
 problem. The second re-review required that retarget; independent source,
 logic and priority checks are in progress.
+
+## Totality rebuild, 21 October 2026
+
+Post-Savitt audits changed the target again. The Savitt-delta audit found that
+the P1** coverage retarget is not an increment: Brading 2013 p. 1110 already
+states local boundedness. The critical-note assessment and the
+alternative-contribution scout found a stronger internal argument: Brading's
+own principle identifies what exists with the genuine unities and applies the
+law-constitutive approach to the material universe (2015 p. 16; 2013 p. 1106
+n. 3). The universe is therefore a thing that exists; its sustaining region is
+the whole history; P1** (a) is false of it. The draft was rebuilt around that
+reductio, with the four-event coverage model retained as an independent finite
+countermodel and the scale-free-criterion diagnosis as the positive moral.
+
+Changes: `paper/main.tex` rewritten (8 pages); `paper/references.bib` gains
+Savitt 2021 and Rovelli 2019; `paper/check_records.py` gains a finite test of
+the two-system/four-event model. The 2013 defeat condition is described as
+incomplete, not as a non-sequitur, because "for whatever system we try to
+consider" can be read universally. The weakest premise is (T4): the inference
+that the universe's sustaining region is W. It is argued from Brading's
+aggregation sentence (2015 p. 16) and her rejection of a spatially global
+present (p. 17), not proved. The interaction passage is used only for the
+negative verdict.
+
+Verification: `python3 paper/check_records.py` runs six tests, all pass,
+including the four-event model. pdfTeX/TeX Live 2026 builds four passes with
+BibTeX; no unresolved references or overfull boxes. macOS PDFKit renders all
+eight pages; the coordinator inspected pages 1-8. `verification.json` records
+nine citation keys, hashes, build and visual coverage. Sources read at full text
+this session: Brading 2013 (hash `c93ca072…`), Brading 2015 (hash `7caceae7…`),
+Savitt SEP §3.3 live. Balaguer 2026 body and Brading 2011/2014 are unread; they
+are the main prior-art gap.
+
+This is still a working note, not an accepted result or a submission-ready
+manuscript. Independent totality-logic and totality-priority audits are running
+under `paper/reviews/`. No submission, upload, authorship decision or ontology
+claim is made here. No other task's worktree, the runner, the grid or the shared
+seed sources were changed.

@@ -82,6 +82,17 @@ class ManuscriptExamples(unittest.TestCase):
         self.assertEqual(causal_law("B", True), {(0, 0): Q(1, 2), (0, 1): Q(1, 2)})
         self.assertNotEqual(causal_law("A", True), causal_law("B", True))
 
+    def test_two_system_four_event_coverage_model(self):
+        """The paper's finite (a)+(b)-without-proper-union model."""
+        world = {"a", "b", "c", "d"}
+        history_1, present_1 = {"a", "b", "c"}, {"a", "b"}
+        history_2, present_2 = {"b", "c", "d"}, {"c", "d"}
+        self.assertTrue(present_1 < world)
+        self.assertTrue(present_2 < world)
+        self.assertTrue(present_1 < history_1)
+        self.assertTrue(present_2 < history_2)
+        self.assertEqual(present_1 | present_2, world)
+
     def test_pointwise_agreement_need_not_equal_marginal_evidence(self):
         # Identical conditional models with different priors over theta.
         probabilities = (Q(1, 4), Q(3, 4))

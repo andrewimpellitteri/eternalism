@@ -205,3 +205,37 @@ paper (or a specialist note only if the author accepts a very small increment).
 Record Savitt 2021 as the published home of the uniqueness/population objection,
 with the 2021 revision date and the fact that Brading 2015 is absent from its
 bibliography.
+
+## Totality turn, 21 October 2026
+
+The alternative-contribution scout found a stronger and more novel candidate,
+and corrected two errors above.
+
+1. **Savitt is not the coverage premise.** His ground is a population claim
+   (every system has a region) and a co-presence claim (no condition for two
+   systems sharing a present). Neither entails coverage; the earlier statement
+   that his passage is "the paper's conclusion and its coverage premise in
+   prose" is withdrawn. The coverage objection remains logically distinct.
+2. **The eligibility diagnosis was a misreading of Brading.** Brading does not
+   lack an existence criterion. She identifies what exists with the genuine
+   unities (2015 p. 17: "what exists (what is real) are the genuine unities")
+   and applies the law-constitutive principle "all the way up to the material
+   universe as a whole" (p. 16). The universe is therefore a thing that exists.
+3. **The surviving candidate is a totality reductio.** Because the universe is
+   a genuine unity, its sustaining region is the whole history; P1** (a)
+   requires every existing thing's present to be less than the whole; so (a) is
+   false of the universe. The 2013 defeat condition and the 2015 survival
+   condition do not cover this case. The scale-free criterion cannot select a
+   local level without adding a selection principle.
+
+**Novelty status:** moderate risk, not established. The argument is a
+reconstruction from Brading's own premises; no published statement was found in
+the bounded search, but Balaguer 2026's body and Brading 2011/2014 were not
+read, and PhilPapers/Scholar were unavailable. The note must not claim
+discovery of a new objection family. It claims an internal inconsistency and a
+diagnosis of why the local strategy cannot select its own scale.
+
+**Recommendation:** the standalone note is now the totality reductio, not the
+P1** coverage retarget. The coverage/(a)+(b) model is retained as an independent
+finite countermodel. Do not submit until the independent totality-logic and
+totality-priority audits report and (T4) survives its strongest objection.

@@ -145,3 +145,27 @@ Status: **independent source, logic and priority checks in progress**; the
 first re-review required the P1** retarget, which is now in place. The draft is not submission-ready
 until `article-rereview` records a contribution verdict and the author decides
 the metadata.
+
+## Totality rebuild, 21 October 2026
+
+The Savitt-delta and critical-note audits found that the P1** coverage retarget
+is not an increment: Brading 2013 p. 1110 already states the local-boundedness
+condition, and Savitt's 2021 objection is a co-presence/population objection,
+not the coverage union point. The article has therefore been rebuilt around a
+different, internal argument: Brading's own principle identifies what exists
+with the genuine unities and applies the law-constitutive approach to the
+material universe as a whole (2015 p. 16; 2013 p. 1106 n. 3); the universe is
+therefore a thing that exists; its sustaining region is the whole history; and
+P1** (a) is false of it. The 2013 defeat condition and 2015 survival condition
+are argued to be incomplete, and the retreat to subsystems is shown to give up
+the global claim. The four-event model remains as an independent finite
+countermodel to the claim that (a)+(b) imply a proper union.
+
+Current status: **working note, not submission-ready.** The totality argument's
+(T4) is an inference from Brading's aggregation sentence (2015 p. 16), not a
+quotation; it is the weakest premise and is flagged in the draft. The 2013
+defeat-condition criticism has been restated as "incomplete" rather than a
+non-sequitur, because "for whatever system we try to consider" can be read
+universally. Independent logic and priority audits (`reviews/totality-logic/`,
+`reviews/totality-priority/`) are running. Balaguer 2026's body and Brading
+2011/2014 remain unread and are the main scoop risk. Do not submit.

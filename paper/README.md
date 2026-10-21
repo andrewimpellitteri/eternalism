@@ -34,7 +34,12 @@ acknowledgments and any journal-specific AI-disclosure wording require a later
 decision. The draft must not be submitted under invented author information.
 
 The 21 October 2026 reframe replaces the earlier prospectus with a focused
-paper on Brading's P1** and the coverage problem (8 pages). The
+note on Brading's P1** (8 pages). Its current argument is a totality reductio:
+Brading's own identification of what exists with the genuine unities, applied to
+the material universe, makes the universe a thing that exists, and P1** (a) is
+false of it because its sustaining region is the whole history. A four-event
+model is retained as an independent countermodel to the claim that (a)+(b)
+imply a proper union. The earlier coverage-only framing is superseded; the
 20 October revision and its reviews remain preserved under `reviews/`; the
 external review and rebuild plan are under `reviews/external-2026-10-21/`.
 `verification.json` records the build, citation counts and source/output

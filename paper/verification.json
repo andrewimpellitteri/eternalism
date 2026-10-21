@@ -1,10 +1,10 @@
 {
   "checked_on": "2026-10-21",
-  "task": "article-working-draft",
-  "citation_keys": 7,
+  "task": "p1-double-prime-revision",
+  "citation_keys": 9,
   "missing_bib_keys": [],
   "uncited_bib_keys": [],
-  "exact_example_checks": 5,
+  "exact_example_checks": 6,
   "exact_checks_exit": 0,
   "build_sequence": [
     "pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape",
@@ -16,16 +16,16 @@
   "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
   "render_tool": "Swift macOS PDFKit via paper/render_pdf.swift",
   "pdf_pages": 8,
-  "visually_reviewed_pages": [],
+  "visually_reviewed_pages": [1, 2, 3, 4, 5, 6, 7, 8],
   "visual_defects_found": [],
   "unresolved_references": false,
   "overfull_hboxes": false,
   "source_sha256": {
-    "paper/main.tex": "e46bc799aabd8bc0c0ee4a4528eb2b7b30aee649c194e718bfc08b16a4d58a2a",
-    "paper/references.bib": "175ad3275b64afc5db48953d7f51643f3719c40e7eba885f50b3acbe0841fdb7",
-    "paper/check_records.py": "f819ae94e093b671a4f62cdfc178510cbd11aa0d6df716df6e094f962aeb85f5",
-    "output/pdf/temporal-ontology-working-draft.pdf": "5cf2ed6eedae96510b432c667d62c88786aceb7542485f9d22a3dd875236ec93"
+    "paper/main.tex": "bcbab620ac399dc71457e80f730ba76c53ffe7acde4c3f234115d746645c4ce8",
+    "paper/references.bib": "7a1da29f827cf26e00d5ee696da363c6f11aa2eba0ed8d0ec3313e61c8a9c3a4",
+    "paper/check_records.py": "e9877108661ccbf426ea3d559060e26b6efdebc4234b986ff3214783b6b75298",
+    "output/pdf/temporal-ontology-working-draft.pdf": "bfc9269e0f05084fd9581ab45fe721e0dcb864431285539f5497ad30ade58d0a"
   },
-  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. Stein printed-page gate closed at p.149 with condition (iv) caveat.",
-  "visual_review_note": "P1** retarget built at 8 pages with no unresolved references or overfull boxes; full visual inspection pending the independent source/logic reviews."
+  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. The totality argument's premise (T4) is argued, not proved; independent logic and priority reviews are pending. The four-event model is a finite set-theoretic countermodel, not a dynamical family.",
+  "visual_review_note": "Totality-reductio draft built at 8 pages with no unresolved references or overfull boxes; all pages rendered and inspected. P1** superscripts, the four-event proof and the Savitt/Rovelli citations display correctly."
 }
