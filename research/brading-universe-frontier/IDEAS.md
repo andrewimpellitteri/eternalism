@@ -147,8 +147,7 @@ Branch (ii) is realized in the literature, and it has a price.
   late-time recollapse.
 - **Philosophy** (Bamonti–Thébault, BJPS 2025, arXiv:2411.00541): a
   conservative alternative to Thiemann via reference frames and complete
-  observables, keeping the Friedmann equations. Closest prior work on whether
-  the universe has a privileged clock. Must be read in full before drafting.
+  observables, keeping the Friedmann equations. Now read in full; see below.
 
 Sharpened branch (ii): the universe's present is a global slice of a clock
 field that (a) the dynamics does not single out among inequivalent choices
@@ -158,6 +157,43 @@ and (c) in the realistic-cosmology version is exotic matter postulated in
 part to supply time. So the defender must make a physics bet that such a
 clock exists and is the privileged one. This is a cost of Brading's view in
 the universe case, not a refutation.
+
+## Update after full-text reads of Thiemann 2006 and Bamonti–Thébault 2025
+
+Neither discusses presentism or existence. Together they turn horn 2a (a
+global present for the universe) into three concrete options, each with a
+named cost. Horn 4 (no gauge fixing, frozen whole) stays as before.
+
+| Route to the universe's global present | Conserved total quantity? | Cost | Source |
+|---|---|---|---|
+| (a) generic internal time (scale factor, mean curvature) | no: reduced Hamiltonian time-dependent | fails Brading's unity test | Isham 1991 p. 200 |
+| (b) ideal clock, full deparametrisation | yes: "invariant, positive and time independent physical Hamiltonian" (Thiemann p. 17) | needs derivative-only phantom matter (DBI, Eq. 2.1, no potential), compensating k-essence, recollapse; **observable corrections to FRW** "whatever matter is used" (p. 9) | Thiemann 2006 |
+| (c) cosmic time along Hubble flow, conservative | not addressed | no actual system even approximately measures it; it is a model-based global average with the clock hypothesis as a coordinative definition (B–T pp. 17-20) | Bamonti–Thébault 2025 |
+
+**Best hook so far.** Brading calls her view "presentism as an empirical
+hypothesis" and says the decisive empirical question is whether there are
+genuine subsystems. On route (b), the universe case gives her view a
+different and sharper empirical exposure: a dynamically privileged global
+present with a conserved total quantity requires a clock field whose
+deparametrisation predicts deviations from standard FRW cosmology (per
+Thiemann; Bamonti–Thébault accept that this option changes the empirical
+content). On route (c), standard cosmology survives but the universe's
+present is fixed by idealisation and coordinative definition, not by "the
+region necessary to sustain the dynamical system". On (a) the universe is not
+a unity by her criterion; on horn 4 it has no present.
+
+Candidate thesis: *Applied to the universe, Brading's law-constitutive
+presentism either (i) loses the universe's unity, (ii) bets on new matter
+with observable cosmological signatures, (iii) fixes the universe's present
+by convention rather than dynamics, or (iv) leaves the universe without a
+present and must restrict P1\*\*.* That is an empirical-hypothesis reading
+of her own framework, extended to the scale she named ("all the way up to
+the material universe as a whole") but did not analyse.
+
+Caveats: Thiemann's model is k=0, not closed; his "whatever matter" claim
+is asserted, not proved in the read sections; B–T do not address energy
+conservation for route (c); Brading's criterion is stated for Newtonian/SR
+systems and its GR extension is our reconstruction.
 
 ## Prior art to beat (discovery level unless marked)
 
