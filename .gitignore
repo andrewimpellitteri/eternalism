@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 
 tmp/
+
+# Copyrighted primary-source scans: keep locally, never commit.
+knowledge/**/primary/*.pdf
