@@ -18,7 +18,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `baseline-reproduction` — Reproduce the selected target's smallest existing result in Python | 8 | novelty-audit, rt-selection-decision-gate | opencode-coordinator |
 | done | `extension-search` — Find a new consequence, counterexample or equivalence boundary | 8 | baseline-reproduction | opencode-coordinator |
 | done | `lean-certificate` — Verify selected mathematical claims and audit their meaning | 7 | extension-search, kb-formalization | opencode-coordinator |
-| open | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | — |
+| claimed | `adversarial-review` — Try to break the result, its novelty and its ontological inference | 10 | — | codex-adversarial |
 | blocked | `synthesis` — State what physics supports, excludes and cannot decide | 6 | adversarial-review, paper-novel-result | — |
 | done | `kb-causal-sets` — Extract causal-set growth, covariant becoming and embedding results at theorem level | 9 | — | glm-kb-causal-sets |
 | done | `kb-thermal-records` — Map thermal time, modular flow, records and the arrow of time | 9 | — | glm-kb-thermal-records |
@@ -63,9 +63,12 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `rank-factor-boundary` — Resolve the rank-dependent post-factor boundary (construct or no-go) | 10 | novelty-verdict-selected | opencode-coordinator |
 | done | `vector-measure-boundary` — Test the no-go for Banach/Hilbert-valued measures | 9 | novelty-verdict-selected | opencode-coordinator |
 | done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
-| open | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | — |
+| claimed | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
 | blocked | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
+| open | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | — |
+| open | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | — |
+| done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

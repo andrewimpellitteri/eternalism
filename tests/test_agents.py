@@ -108,6 +108,43 @@ class WorkboardTests(unittest.TestCase):
         agents.resume(argparse.Namespace(task="first", dry_run=True, model=agents.DEFAULT_MODEL))
         self.assertEqual(sorted(path.name for path in run.iterdir()), ["result.json"])
 
+    def test_committed_launch_preserves_disjoint_work_and_rejects_unsafe_inputs(self):
+        def run_git(*args):
+            return subprocess.run(["git", *args], cwd=self.root, check=True,
+                                  capture_output=True, text=True)
+        (self.root / "active").mkdir()
+        active = self.root / "active/model.py"
+        active.write_text("committed = True\n")
+        run_git("init", "-b", "main")
+        run_git("add", "WORKBOARD.jsonl", "scripts/agents.py", "active/model.py")
+        run_git("-c", "user.name=Test", "-c", "user.email=test@example.invalid",
+                "commit", "-m", "Fixture")
+        baseline = run_git("rev-parse", "HEAD").stdout.strip()
+        active.write_text("concurrent = True\n")
+        untracked = self.root / "active/report.md"
+        untracked.write_text("unfinished report\n")
+        with self.assertRaisesRegex(ValueError, "current changes"):
+            agents.launch_baseline(agents.tasks(), ["first"])
+        self.assertEqual(agents.launch_baseline(agents.tasks(), ["first"], True), baseline)
+        worker = self.root / "worker"
+        run_git("worktree", "add", "--detach", str(worker), baseline)
+        self.assertEqual((worker / "active/model.py").read_text(), "committed = True\n")
+        self.assertFalse((worker / "active/report.md").exists())
+        self.assertEqual(active.read_text(), "concurrent = True\n")
+        self.assertEqual(untracked.read_text(), "unfinished report\n")
+        board = self.root / "WORKBOARD.jsonl"
+        original = board.read_text()
+        board.write_text(original + "\n")
+        with self.assertRaisesRegex(ValueError, "clean coordination"):
+            agents.launch_baseline(agents.tasks(), ["first"], True)
+        board.write_text(original)
+        output = self.root / "knowledge/first"
+        output.mkdir(parents=True)
+        (output / "uncommitted.md").write_text("preserve me\n")
+        with self.assertRaisesRegex(ValueError, "task output"):
+            agents.launch_baseline(agents.tasks(), ["first"], True)
+        self.assertEqual((output / "uncommitted.md").read_text(), "preserve me\n")
+
     def test_main_and_worktree_share_claim_store(self):
         def run_git(*args):
             return subprocess.run(["git", *args], cwd=self.root, check=True,

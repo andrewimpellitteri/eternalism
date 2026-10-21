@@ -189,6 +189,22 @@ def render_board():
     (main_root() / "WORKBOARD.md").write_text("\n".join(lines))
 
 
+def launch_baseline(book, task_ids, from_committed_head=False):
+    """Pin the branch input without copying or changing concurrent working files."""
+    root = main_root()
+    baseline = git("rev-parse", "--verify", "HEAD", cwd=root).stdout.strip()
+    if not from_committed_head:
+        if git("status", "--porcelain", cwd=root).stdout.strip():
+            raise ValueError("commit the coordinator's current changes before branching workers")
+    else:
+        protected = ["WORKBOARD.jsonl", "AGENTS.md", "scripts/agents.py", "scripts/agents/"]
+        protected += [own for tid in task_ids for own in book[tid]["owns"]]
+        if git("status", "--porcelain", "--untracked-files=all", "--", *protected,
+               cwd=root).stdout.strip():
+            raise ValueError("committed-head launch requires clean coordination and task output paths")
+    return baseline
+
+
 def launch(args):
     book, state = tasks(), snapshot()
     if len(args.tasks) != len(set(args.tasks)):
@@ -204,9 +220,7 @@ def launch(args):
         return
     if not shutil.which("opencode"):
         raise ValueError("opencode is not installed")
-    git("rev-parse", "--verify", "HEAD")
-    if git("status", "--porcelain", cwd=main_root()).stdout.strip():
-        raise ValueError("commit the coordinator's current changes before branching workers")
+    baseline = launch_baseline(book, args.tasks, getattr(args, "from_committed_head", False))
     for tid in args.tasks:
         agent = f"glm-{tid}"
         root = main_root()
@@ -215,10 +229,10 @@ def launch(args):
         branch = f"agent/{tid}"
         transition("claim", tid, agent, extra={"worktree": str(wt), "branch": branch,
                                               "model": args.model,
-                                              "base": git("rev-parse", "HEAD", cwd=root).stdout.strip()})
+                                              "base": baseline})
         try:
             wt.parent.mkdir(parents=True, exist_ok=True)
-            git("worktree", "add", "-b", branch, str(wt), "HEAD", cwd=root)
+            git("worktree", "add", "-b", branch, str(wt), baseline, cwd=root)
             run.mkdir(parents=True, exist_ok=True)
             with (run / "worker.log").open("a") as log:
                 worker = subprocess.Popen([sys.executable, str(root / "scripts/agents.py"),
@@ -432,6 +446,8 @@ def main():
     command = commands.add_parser("launch")
     command.add_argument("tasks", nargs="+")
     command.add_argument("--dry-run", action="store_true")
+    command.add_argument("--from-committed-head", action="store_true",
+                         help="branch from pinned HEAD while preserving unrelated dirty working files")
     command.add_argument("--model", default=DEFAULT_MODEL)
     command = commands.add_parser("resume", help="restart a claimed task whose supervisor died")
     command.add_argument("tasks", nargs="+")

@@ -30,6 +30,14 @@ Dry-run checks task dependencies, active ownership, IDs, and target paths withou
 creating claims, worktrees, processes or model calls. Actual launch also checks
 OpenCode installation, a committed baseline, and a clean main checkout.
 
+When a disjoint worker has unfinished files in the main checkout, the coordinator
+may use `launch --from-committed-head TASK ...`. This explicit option pins one
+committed HEAD for the batch and preserves all working files. It still rejects
+uncommitted changes to WORKBOARD.jsonl, AGENTS.md, the runner, worker configuration
+and proposed task output paths. Uncommitted research inputs are absent from the
+new workers; commit any inputs they require first. The default launch continues
+to require a clean checkout. Neither mode stashes or commits another worker's work.
+
 **Search.** Runs before 16:30 on 2026-10-19 had no search: OpenCode 2.0.32 did
 not register the pre-2.0 global `web-search-prime` entry, its key had expired,
 and every built-in `websearch` call returned `Web search cancelled`. Those
