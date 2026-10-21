@@ -70,3 +70,22 @@ metadata fixed since then, for example in 795618a and 7fd614f.
 No push, no worktree removal, no release of the Codex claims, no killed
 processes other than three queued supervisors this coordinator had started
 (restarted with `resume`), and no edits to Codex's uncommitted files.
+
+## History rewrite, 2026-10-21
+
+At the user's direction, the Clifton–Hogarth 1995 scan
+(`knowledge/putnam-ablation/primary/clifton-hogarth-1995.pdf`, copyrighted, rights
+not established) was removed from every commit on `main` with `git filter-branch`.
+The rewritten `main` was force-pushed to the public GitHub repo with a lease on the
+old tip `a265fdb`. The file stays on local disk and is ignored by
+`knowledge/**/primary/*.pdf` in `.gitignore`. Two Codex commits made during the
+rewrite were replayed with their original author, date and message.
+
+Every commit hash changed. `history-rewrite-2026-10-21.tsv` maps each old hash to
+its new one (185 rows; subject, author and date verified pairwise), so hashes
+cited in reports and board notes can be translated.
+
+Still to do: GitHub serves the old commits by hash until GitHub Support purges
+cached objects (no forks exist). Eleven local `agent/*` branches and their worktrees
+still contain the file; never push them, and prune them when the worktrees are
+retired.
