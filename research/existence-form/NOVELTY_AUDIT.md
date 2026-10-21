@@ -123,7 +123,7 @@ restriction.
 
 ## Verdict
 
-**Objection not novel (Savitt 2021); narrow retargeting/formalisation increment only.**
+**Savitt preempts the 2015 retarget and the uniqueness objection; the coverage union point is distinct but thin. A standalone article is not justified.**
 
 - The **P1\*\* coverage point** — that Brading's own (a) is local boundedness and
   does not exclude coverage, so "all we need is (a)" is insufficient — is
@@ -170,3 +170,38 @@ This is a bounded search, not a priority certificate. The exact-phrase searches
 are weak evidence of absence. The published versions of Mason and Balaguer were
 not read in full. The paper should cite them as nearby positions and avoid any
 global novelty claim.
+
+
+## Adjudication after the Savitt-delta and critical-note audits
+
+The priority audit and the Savitt-delta audit overstate the preemption in one
+respect, and the critical-note assessment overstates the publishability in
+another.
+
+1. **Savitt's objection is not the coverage objection.** Savitt argues that
+   every system has a sustaining region and that co-presence between systems is
+   undefined; he says presents "will not necessarily exhaust" Minkowski
+   spacetime. That is a population/uniqueness objection, not an argument that
+   the union of presents may equal the history. The priority audit's reading of
+   Savitt as supplying the coverage premise is a misreading; the Savitt-delta
+   audit is right on the text.
+2. **But the 2015 retarget is not an increment.** Brading 2013 p. 1110 already
+   states the local-boundedness condition as a starting position, and P1** (a)
+   promotes it into a clause. "All we need is (a)" adds a sufficiency sentence,
+   not a new condition. The paper cannot claim the retarget as new.
+3. **The coverage point is distinct but thin.** The bare non-implication is
+   elementary. The only unoccupied formal point is that **(a) and (b) together
+   still do not imply a proper union**: two systems, four events, each present
+   proper relative to its own history, but the union is the whole history. That
+   closes the defender's obvious no-coverage move. It is a real micro-result,
+   not a paper-sized theorem.
+4. **The eligibility/unity distinction is the substantial idea**, but it is not
+   a new general thesis; it belongs in a larger paper on the form-of-existence
+   or quantifier-restriction route, not in a standalone Brading note.
+
+**Recommendation:** do not submit a standalone Brading paper. Preserve the
+coverage/(a)+(b) point and the eligibility diagnosis as sections of a larger
+paper (or a specialist note only if the author accepts a very small increment).
+Record Savitt 2021 as the published home of the uniqueness/population objection,
+with the 2021 revision date and the fact that Brading 2015 is absent from its
+bibliography.
