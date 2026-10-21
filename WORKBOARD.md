@@ -65,7 +65,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `covariant-value-rules` — Classify weaker covariant post-value rules | 9 | novelty-verdict-selected | opencode-coordinator |
 | done | `clock-three-picture` — Compute the RC-1 finite three-picture clock model (fallback) | 8 | novelty-verdict-selected | claude-coordinator |
 | done | `independent-replication` — Independently re-derive the selected two-cap bound and countermodel | 9 | novelty-verdict-selected | opencode-coordinator |
-| open | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | — |
+| claimed | `paper-novel-result` — Write the paper for the surviving new result | 9 | adversarial-review | codex-paper-novel |
 | done | `glm-adversarial-scalar` — Fresh GLM challenge to the scalar and conditional covariant theorems | 10 | — | glm-glm-adversarial-scalar |
 | done | `glm-vector-indicator-boundary` — Determine the scope of the indicator-valued vector counterexample | 9 | — | glm-glm-vector-indicator-boundary |
 | done | `runner-committed-launch` — Allow isolated workers from a checked committed baseline during disjoint active work | 10 | — | codex-runner |
@@ -78,13 +78,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `article-revision-2` — Revise the working article to capture the 20-21 October work | 7 | — | claude-coordinator |
 | claimed | `glm-vector-norm-adversarial` — Try to falsify the new norm-only Hilbert and Banach classifications | 10 | — | glm-glm-vector-norm-adversarial |
 | claimed | `longshot-residual-review` — Longshot residual review | 8 | — | claude-reviewer |
-| open | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | — |
+| claimed | `bc-holonomy-stage4` — Bc holonomy stage4 | 7 | — | glm-bc-holonomy-stage4 |
 | open | `covtree-complex-levels` — Covtree complex levels | 6 | — | — |
 | open | `sorkin-cc-complex-percolation` — Sorkin cc complex percolation | 6 | — | — |
-| open | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | — |
+| claimed | `constraint-formulation-compare` — Constraint formulation compare | 7 | — | glm-constraint-formulation-compare |
 | claimed | `article-revision-2-review` — Article revision 2 review | 8 | — | codex-exec-reviewer |
-| open | `paper-source-gates` — Paper source gates | 7 | — | — |
+| review | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
 | claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
+| review | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

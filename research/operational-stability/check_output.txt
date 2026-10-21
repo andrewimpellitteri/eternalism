@@ -1,0 +1,13 @@
+n=1: total=1; response(conjugate weights)=1; sup_norm_squared=1/2; variation_squared=2
+n=2: total=1; response(conjugate weights)=1; sup_norm_squared=1/4; variation_squared=4
+n=4: total=1; response(conjugate weights)=1; sup_norm_squared=1/16; variation_squared=16
+n=8: total=1; response(conjugate weights)=1; sup_norm_squared=1/256; variation_squared=256
+n=12: total=1; response(conjugate weights)=1; sup_norm_squared=1/4096; variation_squared=4096
+n=20: total=1; response(conjugate weights)=1; sup_norm_squared=1/1048576; variation_squared=1048576
+dual check: variation=13; budget=2; worst error=11=variation-budget
+Boolean witness n=2: max event amplitude squared=5/4; rays=[Fraction(1, 1), Fraction(1, 2), Fraction(0, 1), Fraction(1, 2)]
+Boolean witness n=4: max event amplitude squared=13/4; rays=[Fraction(3, 2), Fraction(1, 1), Fraction(1, 2), Fraction(1, 1)]
+Boolean witness n=8: max event amplitude squared=145/4; rays=[Fraction(9, 2), Fraction(4, 1), Fraction(7, 2), Fraction(4, 1)]
+Boolean witness n=12: max event amplitude squared=2113/4; rays=[Fraction(33, 2), Fraction(16, 1), Fraction(31, 2), Fraction(16, 1)]
+Boolean witness n=20: max event amplitude squared=525313/4; rays=[Fraction(513, 2), Fraction(256, 1), Fraction(511, 2), Fraction(256, 1)]
+All exact checks passed.
