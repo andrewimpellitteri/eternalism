@@ -24,7 +24,8 @@ deferred.
 
 ## How to check a gate
 
-Read-only:
+Read-only helper: `python3 tools/gh-gates/check_gates.py` (or `--json`).
+It only calls `gh issue view` and never writes to GitHub. Manual equivalent:
 
 ```sh
 gh issue view 1 --json number,title,state,labels,url
