@@ -56,7 +56,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ctp-covariant-boundary` — Find the precise covariant-event boundary of the block obstruction | 10 | creative-covariant-stopping | luna-ctp-covariant |
 | done | `rt-source-repair-integration` — Apply audited source repairs and replace inherited source copies with references | 10 | rt-source-canonicalization, rt-fulltext-claim-spotcheck, rt-citation-gate-hardening | codex-source-repairs |
 | done | `rt-stein-printed-page-check` — Compare Stein 1991 printed theorem pages with the OCR and contextual premises | 9 | rt-fulltext-claim-spotcheck | codex-stein-pages |
-| claimed | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | codex-admissibility |
+| done | `article-admissibility-case` — Test the article admissibility standard against one strongest rival case | 8 | article-working-draft | codex-admissibility |
 | done | `rt-clifton-hogarth-primary` — Read the user-supplied Clifton-Hogarth primary and resolve RC-2 secondary discrepancies | 10 | — | codex-clifton-primary |
 | done | `rt-new-lane-canonical-references` — Resolve inherited copies from the newly integrated sector and CSG lanes | 9 | rt-source-repair-integration, kb-sector-conditioning, kb-csg-quantum-boundary | codex-new-lane-refs |
 | done | `novelty-verdict-selected` — Decide whether the selected complex-percolation result is actually new | 10 | baseline-reproduction, extension-search, lean-certificate | opencode-coordinator |
