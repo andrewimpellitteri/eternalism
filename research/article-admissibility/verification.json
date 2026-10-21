@@ -1,0 +1,82 @@
+{
+  "assessment_date": "2026-10-21",
+  "protocol_commit": "e8948c4",
+  "protocol_unchanged": true,
+  "protocol_sha256": "1f39d89a28b453b8acdcd61f39e76ead425f41902e30e7ced4bf9ddc049dfb0c",
+  "evidence_records": 4,
+  "coordinator_visual_check": "Brading2015 published-layout copy, journal pp17–18, task-local PNGs outsiderepo",
+  "checks": {
+    "source-strict": {
+      "command": [
+        "python3",
+        "scripts/check_sources.py",
+        "--strict",
+        "knowledge",
+        "research"
+      ],
+      "exit_code": 0,
+      "output": "\n27 files, 352 records: 0 errors, 0 warnings, 0 info\n"
+    },
+    "reference-integrity": {
+      "command": [
+        "python3",
+        "research/redteam/new-lane-canonicalization/check_references.py"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"reference_integrity_passed\": true,\n  \"errors\": [],\n  \"references\": 67,\n  \"alias_groups\": 8,\n  \"archives\": [\n    \"research/redteam/source-repairs/before-records.jsonl\",\n    \"research/redteam/new-lane-canonicalization/before-records.jsonl\"\n  ],\n  \"records\": 352,\n  \"unique_ids\": 352,\n  \"global_duplicate_ids\": {},\n  \"limits\": \"Identity, references and preserved provenance only; no source-entailment, theorem, reading, novelty or ontology certification. Manifest digests are integrity checks, not signatures.\"\n}\n"
+    },
+    "workboard": {
+      "command": [
+        "python3",
+        "scripts/agents.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "output": "Validated 59 tasks, paths and acyclic dependencies.\n"
+    },
+    "whitespace": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    "core-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "observed_result": "88 tests passed in this coordinator turn; run before argument-only edits."
+    },
+    "reference-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/redteam/new-lane-canonicalization/review",
+        "-v"
+      ],
+      "exit_code": 0,
+      "observed_result": "8 tests passed in this coordinator turn."
+    },
+    "finite-replication": {
+      "command": [
+        "python3",
+        "research/replication/replicate.py"
+      ],
+      "exit_code": 0,
+      "observed_result": "Endpoint identity k1–5 (3 exact rational parameters), two-cap sets k1–4, V5/V6 displayed values matched expected, Dirac witness j1–3; no all-level theorem reproof."
+    }
+  },
+  "limits": "Argument-only completion/exposition, not empirical or mathematical novelty; source versions not publisher-file-collated; no actual common realized model or likelihoods established."
+}
