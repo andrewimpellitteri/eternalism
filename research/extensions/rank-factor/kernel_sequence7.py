@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""R_k via post-free T: S=T + {max}, k>=2."""
+"""R_k via naturally labelled post-free T: S=T + {max}, k>=2.
+
+The sum over T runs over poscau.causets(k-1), i.e. over NATURALLY LABELLED
+post-free orders of size k-1, each labelling counted once; equivalently over
+unlabelled post-free shapes tau with multiplicity N(tau) (checked exactly in
+check_stationarity.py section C). R_1 = p separately.
+
+The root search below solves a TRUNCATED polynomial 1 - sum_{k<=7} R_k z^k by
+a numerical method. Its roots are a numerical diagnostic only: they are not
+evidence for or against a rank-only measure, an infinite extension, or a no-go.
+"""
 import sys
 from pathlib import Path
 import cmath, math
@@ -45,5 +55,7 @@ for p in (0.5,0.5+0.5j,0.2+0.7j):
         print(' R%d = %r (terms %d)'%(k,r[k][0],r[k][1]))
     coeff=[1]+[-r[k][0] for k in range(1,8)]
     rs=sorted(roots(coeff),key=abs)
+    print(' truncated polynomial roots (numerical diagnostic only; a root of '
+          'the truncation is not a root of the infinite series):')
     for z in rs: print('   root %s |z=%.6g'%(z,abs(z)))
     print()

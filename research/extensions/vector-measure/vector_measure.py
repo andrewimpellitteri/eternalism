@@ -3,13 +3,25 @@
 
 This is not a vector lift of the complex scalar amplitudes: it prescribes the
 NORM of each cylinder vector to be |A_p(C)| and lets the directions vary.  The
-scalar complex measure does not exist for p outside [0,1]; this construction
-shows the total-variation no-go does not transfer to general vector-valued
-measures.
+scalar complex measure does not exist for p outside [0,1]; at finite level this
+construction shows the total-variation argument alone cannot block the finite
+data.
 
-At each node, child vectors with lengths |A(child)| are chosen to sum to the
-parent vector (polygon construction).  The finite tree is checked exactly; the
-infinite extension is the compactness/martingale step described in the report.
+[Corrected 2026-10-21, after research/adversarial-review/coordinator/
+VECTOR_COUNTERMODEL.md and BOUNDARIES.md:]
+- The finite tree is NOT "checked exactly" here: this script is a floating-point
+  polygon construction (max errors ~1e-16). Exact finite checks live in
+  check_indicator.py.
+- A finite norm-matching assignment is not evidence toward an infinite
+  extension: mu(C) = (Re A_p(C), Im A_p(C)) already gives an exact finitely
+  additive norm-matching assignment on every finite tree. Finite existence is
+  not the missing step.
+- The infinite norm-prescribed extension is no longer wholly open: on the
+  circle |p|^2+|1-p|^2 = 1 the standard L^2(P_r) indicator construction is a
+  countably additive infinite-dimensional example (semivariation one, infinite
+  total variation off the classical endpoints). What remains open is the
+  classification away from that locus; an R^2-valued (finite-dimensional)
+  countably additive extension outside [0,1] is impossible. See AGENT_REPORT.md.
 """
 import sys
 import math
