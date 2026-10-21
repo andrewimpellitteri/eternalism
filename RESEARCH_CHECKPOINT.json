@@ -1,0 +1,117 @@
+{
+  "captured_utc": "2026-10-21T16:12:36.582871+00:00",
+  "base_main": "feea4d0a23da9cdf1ad5c9547757b9a9beb37f99",
+  "status": "unreviewed research checkpoint; no task acceptance implied",
+  "files": [
+    {
+      "path": "experiments/constraint-formulations/GLM_SUBMISSION.md",
+      "sha256": "932b497d0f6170142b53bb30f4ea246d42198d88484e79ebdb556995aed97b97",
+      "bytes": 14640
+    },
+    {
+      "path": "experiments/constraint-formulations/REVIEW_STATUS.md",
+      "sha256": "79b6d391f1677c1328822b940eb5927427ba7e20499b264673e73d97e8cf01e2",
+      "bytes": 1001
+    },
+    {
+      "path": "experiments/constraint-formulations/SPEC.md",
+      "sha256": "7230a41bab3e5d7db46ebe28d25fc46ba30acae865cab74fbc9c159ff3252434",
+      "bytes": 8020
+    },
+    {
+      "path": "experiments/constraint-formulations/formulations.py",
+      "sha256": "2ef66cd50fe1a28622a62a8de98c1b31f1dab04c6d5963af223ffe4e93157fd5",
+      "bytes": 24897
+    },
+    {
+      "path": "experiments/constraint-formulations/linalg.py",
+      "sha256": "b6c157e08cd328c060d9e84f003c87ad0dfd2bd1be1fe82de01c51c9c80b083b",
+      "bytes": 4815
+    },
+    {
+      "path": "experiments/constraint-formulations/model_output.txt",
+      "sha256": "01f99d94e59f720978b25c5781f53802a1a5f25f33361b853df80da1d8d53297",
+      "bytes": 11210
+    },
+    {
+      "path": "experiments/constraint-formulations/sources.jsonl",
+      "sha256": "8d31abdd66eca623afb484132fdd8e43e285206e6a537377b7c7d0e09d2119e7",
+      "bytes": 10267
+    },
+    {
+      "path": "research/longshots/bc-nonzero/AGENT_REPORT.md",
+      "sha256": "ebe2339f715c1fa3ccc1b81e2899920b23113c361fa9b7fabe8f20bf5b9aa28b",
+      "bytes": 1489
+    },
+    {
+      "path": "research/longshots/bc-nonzero/REPORT.md",
+      "sha256": "af40b84c907aacf6516ea7d2abd74f3d33583874cc2de125dd45422a1c544bab",
+      "bytes": 8902
+    },
+    {
+      "path": "research/longshots/bc-nonzero/check-output.txt",
+      "sha256": "330574cfb53ccd2ee99b832a38eec1ce8e2986d0d9201da29e3baf654b97c9ca",
+      "bytes": 1043
+    },
+    {
+      "path": "research/longshots/bc-nonzero/nonzero_continuation.py",
+      "sha256": "41b5f02b8f14a52bd4181f86b4ca5ad46205ecd4c059a338c0c7975d95db845d",
+      "bytes": 7024
+    },
+    {
+      "path": "research/longshots/review/gc_review.py",
+      "sha256": "9f14a9ca852af0923109cca47c636be4f25e7f4a5fdc2b4963bb6db64b67c8e0",
+      "bytes": 13972
+    },
+    {
+      "path": "research/longshots/review/inspire_forward_citations.txt",
+      "sha256": "ab4004dbbad8d91d29af2959dcb6dcc8c186e60206651db851f3607d455b2615",
+      "bytes": 9337
+    },
+    {
+      "path": "research/longshots/review/inspire_searches.txt",
+      "sha256": "3ce12cf3abb793c0312606a15667410179efd8a502c5313c61fe856e49a855a2",
+      "bytes": 7200
+    },
+    {
+      "path": "research/paper-novel/CLAIM_LEDGER.md",
+      "sha256": "9a3765c50e4b0669f9acd41ed3951383ccb73234f512d23efb93b607f32f014f",
+      "bytes": 7121
+    },
+    {
+      "path": "research/paper-novel/README.md",
+      "sha256": "aebc63b30683daff650513556398a5ff605e4960a242cac4228fda433b01d119",
+      "bytes": 1918
+    },
+    {
+      "path": "research/paper-novel/input-manifest.json",
+      "sha256": "f4afc39219662cffec38ce53954df54b1d2f8a4de1525ceef06a4e1916e7d6df",
+      "bytes": 1124
+    },
+    {
+      "path": "research/paper-novel/main.tex",
+      "sha256": "b7e21644ff07c2e01318241d06e5fc82ab40e730dfb71007bc6a1c24c049cb7d",
+      "bytes": 20801
+    },
+    {
+      "path": "research/paper-novel/reproduce.py",
+      "sha256": "8b3a12b3fac6c28241df7efe6c0fc96ec9d0cf07f534b3c6826f94e17e80cbce",
+      "bytes": 3096
+    },
+    {
+      "path": "research/paper-novel/reproduce_output.txt",
+      "sha256": "db314be34f400082a356fd3c76ab92c554e9fdc9cd54aa707a0b8197fdaef561",
+      "bytes": 3508
+    },
+    {
+      "path": "research/paper-novel/review/AGENT_REPORT.md",
+      "sha256": "b47fcdc477eb962a6b1530a21a031cef405826752e4e3250c9659287c564c18c",
+      "bytes": 9622
+    },
+    {
+      "path": "research/paper-novel/verification.json",
+      "sha256": "443da50b528a03a2b1ac8e317b83065e36dd9934d1c3febb85404f822e7d40b1",
+      "bytes": 3763
+    }
+  ]
+}

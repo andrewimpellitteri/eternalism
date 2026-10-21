@@ -1,0 +1,21 @@
+{
+  "revision": "ed2e721f11830fa0bb461b3374b1893b4a357b58",
+  "input_sha256": {
+    "research/creative/RESULT.md": "add274c0716b65a1fec69f3f8bfec9d7413c66aa350f1d4bd4d6dc7388f260d7",
+    "research/creative/COVARIANT_RESULT.md": "a5b684ac23b811b10db299b0fd055a7f4adc34ca4862d27e54817722c4762228",
+    "research/adversarial-review/AGENT_REPORT.md": "e95dfce258804e2c9e1f39d23666f0ccc14ecb5d61413b1e3c239f4ff6c2df32",
+    "research/adversarial-review/coordinator/check_boundaries.py": "73957b443a83366cde4375e5504c487b43d82ef7282f364fe3c7d47a79557f88",
+    "research/adversarial-glm/scalar/check_bounded.py": "852f4ba9e9ecce9a47d75b9ae0f4745416eb40f64b2c816243b2185b818f90f8",
+    "formal/lean/Certificate.lean": "afbaca6f413d9614cdb44bc22cb16953535b0e85e723361b8c5d93dfcf039762"
+  },
+  "checks": [
+    {
+      "script": "research/adversarial-review/coordinator/check_boundaries.py",
+      "required_marker": "407 exact cylinder identities; singleton kappa_1 counterassignment verified"
+    },
+    {
+      "script": "research/adversarial-glm/scalar/check_bounded.py",
+      "required_marker": "26/26 checks passed"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+== a Arageorgis  total 3
+  1426039 None  cit 0 | Fields, Particles, and Curvature: Foundations and Philosophical Aspects of Quantum Field Theory in Curved Spacetime | Arageorgis, Aristidis | []
+  1279656 None  cit 10 | Weyling the time away: the non-unitary implementability of quantum field dynamics on curved spacetime | Arageorgis, Aristidis, Earman, John, Ruetsche, Laura | [('Stud.Hist.Phil.Sci.B', 2002)]
+  1411903 None  cit 15 | Fulling Non-uniqueness and the Unruh Effect: A Primer on Some Aspects of Quantum Field Theory | Arageorgis, Aristidis, Earman, John, Ruetsche, Laura | [('Phil.Sci.', 2003)]
+== t growing block and t causal set  total 0
+== a Gudder and t quantum gravity  total 16
+  922976 1108.2296 2011-08 cit 9 | Discrete Quantum Gravity | Gudder, Stan | []
+  925707 1108.6036 2011-08 cit 7 | Models for Discrete Quantum Gravity | Gudder, Stan | [('Rept.Math.Phys.', 2012)]
+  1111766 1204.4506 2012-04 cit 5 | An Einstein equation for discrete quantum gravity | Gudder, Stan | []
+  1427307 1603.03471 2016-03-07 cit 1 | Discrete Quantum Gravity and Quantum Field Theory | Gudder, Stan | []
+  926263 1109.0952 2011-09 cit 0 | Discrete Quantum Gravity Is Not Isometric | Gudder, Stan | []
+  1112550 1204.5767 2012-04 cit 0 | Causal set approach to discrete quantum gravity | Gudder, Stan | []
+  1286755 1403.5338 2014-03-20 cit 3 | A Unified Approach to Discrete Quantum Gravity | Gudder, Stan | []
+  1222315 1303.0433 2013-03-02 cit 2 | A Dynamics for Discrete Quantum Gravity | Gudder, Stan | [('Int.J.Theor.Phys.', 2014)]
+  1287914 1403.7839 2014-03-30 cit 0 | Labeled Causets in Discrete Quantum Gravity | Gudder, Stan | []
+  1235022 1305.5184 2013-05-22 cit 3 | An Approach to Discrete Quantum Gravity | Gudder, Stan | []
+  1391128 1508.07507 2015-08-29 cit 0 | Wave Equations for Discrete Quantum Gravity | Gudder, Stan | []
+  1343490 1502.02198 2015-02-07 cit 2 | Emergence of Four Dimensions in the Causal Set Approach to Discrete Quantum Gravity | Gudder, Stan | []
+  1264652 1311.3912 2013-11-15 cit 10 | A covariant causal set approach to discrete quantum gravity | Gudder, Stan | []
+  1287723 1403.7275 2014-03-27 cit 0 | Elementary Particles and the Causet Approach to Discrete Quantum Gravity | Gudder, Stan | []
+  1316326 1409.3770 2014-09-12 cit 4 | An Isometric Dynamics for a Causal Set Approach to Discrete Quantum Gravity | Gudder, Stan | [('Int.J.Theor.Phys.', 2015)]
+  1381511 1507.01281 2015-07-05 cit 1 | Inflation and Dirac in the Causal Set Approach to Discrete Quantum Gravity | Gudder, Stan | []
+== a Gudder and t causet  total 1
+  1287723 1403.7275 2014-03-27 cit 0 | Elementary Particles and the Causet Approach to Discrete Quantum Gravity | Gudder, Stan | []
+== t "covariant observables" and t percolation  total 0
+== a Surya and t covariant quantum measure  total 1
+  919525 None 2011 cit 0 | In search of a covariant quantum measure | Surya, Sumati | [('J.Phys.Conf.Ser.', 2011)]
+== t complex percolation  total 8
+  2934633 0906.2977 2009-12-15 cit 79 | Entanglement Percolation in Quantum Complex Networks | Cuquet, Martí, Calsamiglia, John | [('Phys.Rev.Lett.', 2009)]
+  2878963 None  cit 0 | Extended-range percolation and complex networks | Cirigliano, Lorenzo | [(None, 2025)]
+  3117966 None  cit 1 | Fluctuations in percolation of sparse complex networks | Bianconi, Ginestra | [('Phys.Rev.E', 2017)]
+  693096 hep-lat/0509105 2005-09 cit 0 | Vortex-line percolation in the three-dimensional complex Ginzburg-Landau model | Bittner, Elmar, Krinner, Axel, Janke, Wolfhard | [('PoS', 2006)]
+  3000386 1011.5630 2010-11-25 cit 24 | Limited path entanglement percolation in quantum complex networks | Cuquet, Martí, Calsamiglia, John | [('Phys.Rev.A', 2011)]
+  3074827 2510.24867 2025-10-28 cit 0 | Spin glass dynamics on complex hardware topologies: A bond-correlated percolation approach | Gómez, Viviana, Téllez, Gabriel, Gómez-Ruiz, Fernando J. | [('Phys.Rev.Res.', 2026)]
+  893603 1009.2551 2011-01 cit 3 | Complex critical exponents for percolation transitions in Josephson-junction arrays, antiferromagnets, and interacting bosons | Fernandes, Rafael M., Schmalian, Jorg | [('Phys.Rev.Lett.', 2011)]
+  1381039 None  cit 0 | Application of Percolation Theory to Complex Interconnected Networks in Advanced Functional Composites | Hing, P. | [(None, 2010)]
+== a Sorkin and a Surya and date>2015  total 2
+  1501233 1612.00149 2016-12-01 cit 71 | Boundary and Corner Terms in the Action for General Relativity | Jubb, Ian, Samuel, Joseph, Sorkin, Rafael, Surya, Sumati | [('Class.Quant.Grav.', 2017)]
+  1837566 None  cit 11 | Onset of the Asymptotic Regime for (Uniformly Random) Finite Orders | Henson, Joe, Rideout, David, Sorkin, Rafael D., Surya, Sumati | [('Exper.Math.', 2016)]
+== t covtree  total 2
+  3150899 2605.00622 2026-05-01 cit 0 | Sizes of witnesses in Covtree | Gutzeit, Jette, Shaban, Kimia, Yeats, Karen, Zalel, Stav | []
+  1810372 2008.02607 2020-08-06 cit 8 | The structure of covtree: searching for manifestly covariant causal set dynamics | Zalel, Stav | [('Class.Quant.Grav.', 2021)]
+== refersto:recid:1287914  total 0
+count 23
+  2018 Spooky Action at a Temporal Distance https://doi.org/10.3390/e20010041
+  2016 What Becomes of a Causal Set? https://doi.org/10.1093/bjps/axv040
+  2024 The Philosophy of Causal Set Theory https://doi.org/10.1007/978-981-99-7681-2_71
+  2025 Out of Nowhere https://doi.org/10.1093/oso/9780198758501.001.0001
+  2023 The Philosophy of Causal Set Theory https://doi.org/10.1007/978-981-19-3079-9_71-1
+  2025 The disappearance and emergence of spacetime in loop quantum gravity https://doi.org/10.1093/oso/9780198758501.003.0006
+  2025 The road to loop quantum gravity https://doi.org/10.1093/oso/9780198758501.003.0005
+  2025 Causal Set Theory is (Strongly) Causal https://doi.org/10.1007/s10701-025-00875-w
+  2025 Spacetime from causality: causal set theory https://doi.org/10.1093/oso/9780198758501.003.0003
+  2018 The Extensive Continuum versus the “Extensive Dis-Continuum” in Whitehead https://doi.org/10.5406/processstudies.47.1-2.0005
+  2020 Out of Nowhere: The emergence of spacetime from causal sets https://doi.org/10.48550/arxiv.2009.02951
+  2025 Conclusion: whence spacetime? https://doi.org/10.1093/oso/9780198758501.003.0011
+  2025 Spacetime functionalism https://doi.org/10.1093/oso/9780198758501.003.0002
+  2025 The string theoretic account of general relativity https://doi.org/10.1093/oso/9780198758501.003.0009
+  2025 Preface https://doi.org/10.1093/oso/9780198758501.002.0005
+  2025 A string theory primer https://doi.org/10.1093/oso/9780198758501.003.0007
+  2025 The emergence of spacetime from causal sets https://doi.org/10.1093/oso/9780198758501.003.0004
+  2025 Duality https://doi.org/10.1093/oso/9780198758501.003.0008
+  2025 Copyright Page https://doi.org/10.1093/oso/9780198758501.002.0003
+  2025 Dedication https://doi.org/10.1093/oso/9780198758501.002.0004
+  2025 Introduction: the emergence of spacetime https://doi.org/10.1093/oso/9780198758501.003.0001
+  2025 The emergence of spacetime in string theory https://doi.org/10.1093/oso/9780198758501.003.0010
+  2025 Naturalistic Metaphysics and Metaphysical Realism https://doi.org/10.3917/e.rmm.252.0223

@@ -1,0 +1,93 @@
+== refersto:recid:1788166
+total 15
+  2007.13206 2020-07-26 | Boundary contributions in the causal set action | Dowker, Fay
+  2212.01149 2022-12-02 | Observables for cyclic causal set cosmologies | Dowker, Fay, Zalel, Stav
+  2605.00622 2026-05-01 | Sizes of witnesses in Covtree | Gutzeit, Jette, Shaban, Kimia, Yeats, Karen, Zalel, Stav
+  2109.11953 2021-09-24 | If time had no beginning | Bento, Bruno Valeixo, Zalel, Stav
+  2109.10749 2021-09-22 | If time had no beginning: growth dynamics for past-infinite causal sets | Bento, Bruno Valeixo, Dowker, Fay, Zalel, Stav
+  2310.17547 2023-10-26 | Hopf algebras from poset growth models | Yeats, Karen, Zalel, Stav
+  2501.00139 2024-12-30 | Timelike boundary and corner terms in the causal set action | Dowker, Fay, Liu, Roger, Lloyd-Jones, Daniel
+  2305.16828 2023-05-26 | An intrinsic causality principle in histories-based quantum theory: a proposal | Dowker, Fay, Sorkin, Rafael D.
+  2603.25503 2026-03-26 | Implementing Bell causality in quantum sequential growth | Srivastava, Ritesh, Surya, Sumati
+  2401.17376 2024-01-30 | Measuring spatial distances in causal sets via causal overlaps | Boguna, Marian, Krioukov, Dmitri
+  2605.27514 2026-05-26 | Charting causal set configuration space with graph observables | Eichhorn, Astrid, Mack, Harald, Le, Kim Tuyen, Wagner, Fabian
+  2402.08555 2024-02-13 | In-in correlators and scattering amplitudes on a causal set | Albertini, Emma, Dowker, Fay, Nasiri, Arad, Zalel, Stav
+  None  | The Causal Set Approach to the Problem of Quantum Gravity | Dowker, Fay, Surya, Sumati
+  2607.26672 2026-07-29 | Relational Quantum Causal Processes: Exact Models, Continuum Limits, and the Boundary of Emergent Gravity | Xu, Yipeng
+  2207.10618 2022-07-21 | Frontiers of Quantum Gravity: shared challenges, converging directions | de Boer, Jan, Dittrich, Bianca, Eichhorn, Astrid, Giddings, Steven B.
+== refersto:recid:861720
+total 35
+  2303.14596 2023-03-25 | An inside view of the tensor product | Sorkin, Rafael D.
+  1108.6036 2011-08 | Models for Discrete Quantum Gravity | Gudder, Stan
+  1303.0433 2013-03-02 | A Dynamics for Discrete Quantum Gravity | Gudder, Stan
+  1910.07292 2019-10-16 | A manifestly covariant framework for causal set dynamics | Dowker, Fay, Imambaccus, Nazireen, Owens, Amelia, Sorkin, Rafael
+  1104.0997 2011-04 | Toward a fundamental theorem of quantal measure theory | Sorkin, Rafael D.
+  None 2011 | In search of a covariant quantum measure | Surya, Sumati
+  2007.13206 2020-07-26 | Boundary contributions in the causal set action | Dowker, Fay
+  2605.00622 2026-05-01 | Sizes of witnesses in Covtree | Gutzeit, Jette, Shaban, Kimia, Yeats, Karen, Zalel, Stav
+  2212.01149 2022-12-02 | Observables for cyclic causal set cosmologies | Dowker, Fay, Zalel, Stav
+  1011.1694 2010-11-07 | Hilbert space representations of decoherence functionals and quantum measures | Gudder, Stan
+  1909.07265 2019-09-16 | Schwinger's Picture of Quantum Mechanics III: The statistical interpretation | Ciaglia, Florio M., Ibort, Alberto, Marmo, Giuseppe
+  2109.11953 2021-09-24 | If time had no beginning | Bento, Bruno Valeixo, Zalel, Stav
+  2310.17547 2023-10-26 | Hopf algebras from poset growth models | Yeats, Karen, Zalel, Stav
+  1809.10427 2018-09-27 | Evolving Realities for Quantum Measure Theory | Wilkes, Henry
+  2109.10749 2021-09-22 | If time had no beginning: growth dynamics for past-infinite causal sets | Bento, Bruno Valeixo, Dowker, Fay, Zalel, Stav
+  2003.11311 2020-03-25 | A Criterion for Covariance in Complex Sequential Growth Models | Surya, Sumati, Zalel, Stav
+  1706.03793 2017-10-19 | A "problem of time" in the multiplicative scheme for the $n$-site hopper | Dowker, Fay, Havlíček, Vojtěch, Lewandowski, Cyprian, Wilkes, Henry
+  2011.06120 2020-11-11 | An argument for strong positivity of the decoherence functional in the path integral approach to the foundations of quantum theory | Dowker, Fay, Wilkes, Henry
+  2008.02291 2020-08-05 | Lorentzian Spectral Geometry with Causal Sets | Yazdi, Yasaman K., Letizia, Marco, Kempf, Achim
+  2302.10582 2023-02-21 | Covariant Growth Dynamics | Zalel, Stav
+  2603.25503 2026-03-26 | Implementing Bell causality in quantum sequential growth | Srivastava, Ritesh, Surya, Sumati
+  2501.00139 2024-12-30 | Timelike boundary and corner terms in the causal set action | Dowker, Fay, Liu, Roger, Lloyd-Jones, Daniel
+  2305.16828 2023-05-26 | An intrinsic causality principle in histories-based quantum theory: a proposal | Dowker, Fay, Sorkin, Rafael D.
+  1905.09055 2020-05-01 | Ontological models for quantum theory as functors | Gheorghiu, Alexandru, Heunen, Chris
+  1301.5704 2013-01 | The coevent formulation of quantum theory | Wallden, Petros
+  None  | Discrete Random Spacetimes:
+Covariance and Quantization
+in Growth Dynamics for Causal Sets | Zalel, Stav
+  2509.15318 2025-09-18 | Quantum field theory and observers | Nair, V.P.
+  None  | Causal Sets Dynamics: Review & Outlook | Wallden, Petros
+  None  | The Causal Set Approach to the Problem of Quantum Gravity | Dowker, Fay, Surya, Sumati
+  2402.08555 2024-02-13 | In-in correlators and scattering amplitudes on a causal set | Albertini, Emma, Dowker, Fay, Nasiri, Arad, Zalel, Stav
+  1010.5514 2010-10 | Quantum Fields on Causal Sets | Johnston, Steven Paul
+  1103.6272 2011-03 | Directions in Causal Set Quantum Gravity | Surya, Sumati
+  1903.11544 2019-03-27 | The causal set approach to quantum gravity | Surya, Sumati
+  2207.10618 2022-07-21 | Frontiers of Quantum Gravity: shared challenges, converging directions | de Boer, Jan, Dittrich, Bianca, Eichhorn, Astrid, Giddings, Steven B.
+  None  | Quantum Gravity: From continuous to discrete. | Versteegen, Fleur
+== refersto:recid:895114
+total 24
+  1108.6036 2011-08 | Models for Discrete Quantum Gravity | Gudder, Stan
+  1204.4506 2012-04 | An Einstein equation for discrete quantum gravity | Gudder, Stan
+  1304.7550 2013-04-28 | Does a Quantum Particle Know its Own Energy? | Sorkin, Rafael D.
+  1105.0705 2011 | Two-Site Quantum Random Walk | Gudder, Stan, Sorkin, Rafael D.
+  2007.13206 2020-07-26 | Boundary contributions in the causal set action | Dowker, Fay
+  1303.0433 2013-03-02 | A Dynamics for Discrete Quantum Gravity | Gudder, Stan
+  1108.2296 2011-08 | Discrete Quantum Gravity | Gudder, Stan
+  1107.0698 2011-07 | Scalar Field Theory on a Causal Set in Histories Form | Sorkin, Rafael D.
+  2011.06120 2020-11-11 | An argument for strong positivity of the decoherence functional in the path integral approach to the foundations of quantum theory | Dowker, Fay, Wilkes, Henry
+  1809.10427 2018-09-27 | Evolving Realities for Quantum Measure Theory | Wilkes, Henry
+  None  | Counterintuitive Scenarios in Discrete Gravity Without Quantum Effects or Causality Violations | Dribus, Benjamin F., Darnell, Jesiah T., Goldsmith, Neil
+  2109.10749 2021-09-22 | If time had no beginning: growth dynamics for past-infinite causal sets | Bento, Bruno Valeixo, Dowker, Fay, Zalel, Stav
+  2003.11311 2020-03-25 | A Criterion for Covariance in Complex Sequential Growth Models | Surya, Sumati, Zalel, Stav
+  1706.03793 2017-10-19 | A "problem of time" in the multiplicative scheme for the $n$-site hopper | Dowker, Fay, Havlíček, Vojtěch, Lewandowski, Cyprian, Wilkes, Henry
+  2307.04150 2023-07-09 | On Horizon Molecules and Entropy in Causal Sets | Dou, Djamel
+  None  | Entropic Phase Maps in Discrete Quantum Gravity | Dribus, Benjamin F.
+  2305.16828 2023-05-26 | An intrinsic causality principle in histories-based quantum theory: a proposal | Dowker, Fay, Sorkin, Rafael D.
+  1301.5704 2013-01 | The coevent formulation of quantum theory | Wallden, Petros
+  1311.6287 2013-11-25 | A histories perspective on characterizing quantum non-locality | Dowker, Fay, Henson, Joe, Wallden, Petros
+  None  | The Causal Set Approach to the Problem of Quantum Gravity | Dowker, Fay, Surya, Sumati
+  1708.07895 2017-08-25 | Semiclassical Length Measure from a Quantum-Gravity Wave Function | Lecian, Orchidea Maria
+  1903.11544 2019-03-27 | The causal set approach to quantum gravity | Surya, Sumati
+  2207.10618 2022-07-21 | Frontiers of Quantum Gravity: shared challenges, converging directions | de Boer, Jan, Dittrich, Bianca, Eichhorn, Astrid, Giddings, Steven B.
+  None  | Quantum Gravity: From continuous to discrete. | Versteegen, Fleur
+== refersto:recid:2635125
+total 3
+  2401.17376 2024-01-30 | Measuring spatial distances in causal sets via causal overlaps | Boguna, Marian, Krioukov, Dmitri
+  2605.27514 2026-05-26 | Charting causal set configuration space with graph observables | Eichhorn, Astrid, Mack, Harald, Le, Kim Tuyen, Wagner, Fabian
+  2605.06813 2026-05-07 | Towards black-hole horizons and geodesic focusing in causal sets | Eichhorn, Astrid, Gamito, Pedro, Stokes, Nawder
+== refersto:recid:2609896
+total 4
+  2310.17547 2023-10-26 | Hopf algebras from poset growth models | Yeats, Karen, Zalel, Stav
+  2501.00139 2024-12-30 | Timelike boundary and corner terms in the causal set action | Dowker, Fay, Liu, Roger, Lloyd-Jones, Daniel
+  2603.25503 2026-03-26 | Implementing Bell causality in quantum sequential growth | Srivastava, Ritesh, Surya, Sumati
+  2311.14881 2023-11-24 | Everything you always wanted to know about how causal set theory can help with open questions in cosmology, but were afraid to ask | Yazdi, Yasaman K.
