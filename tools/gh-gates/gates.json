@@ -1,0 +1,43 @@
+{
+  "gates": [
+    {
+      "issue": 1,
+      "name": "Theorem note external review",
+      "local_tasks": ["paper-novel-result"],
+      "area": "paper"
+    },
+    {
+      "issue": 2,
+      "name": "Article reframe and substantive application",
+      "local_tasks": [
+        "article-reframe-scope",
+        "brading-existence-bridge",
+        "admissibility-burden-calibration",
+        "favoring-account",
+        "strongest-opponents",
+        "examples-scope-cleanup",
+        "article-rebuild-integration",
+        "article-rereview"
+      ],
+      "area": "article"
+    },
+    {
+      "issue": 3,
+      "name": "Rank-only no-go independent audit",
+      "local_tasks": ["rank-renewal-convergence"],
+      "area": "rank"
+    },
+    {
+      "issue": 4,
+      "name": "Source closure and correspondence",
+      "local_tasks": ["paper-source-gates"],
+      "area": "source"
+    },
+    {
+      "issue": 5,
+      "name": "Submission decision and release sign-off",
+      "local_tasks": [],
+      "area": "release"
+    }
+  ]
+}
