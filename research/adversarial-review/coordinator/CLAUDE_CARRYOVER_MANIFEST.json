@@ -1,0 +1,175 @@
+{
+  "status": "incomplete experimental outputs, preserved without alteration; not an accepted worker submission",
+  "files": [
+    {
+      "path": "additivity.py",
+      "bytes": 3135,
+      "sha256": "82527b101ebc127a3b5726b5774f2bc6605e3479208a1d41ff965c109590c9f7"
+    },
+    {
+      "path": "chains.py",
+      "bytes": 4933,
+      "sha256": "f8453bef0311d6c1019a2dbd96b463738512309a2018c800e039ab6e878247a9"
+    },
+    {
+      "path": "crosscheck.py",
+      "bytes": 1236,
+      "sha256": "d5b0e45bbd3f9751181fb1228b61f31f84f7b1f54225017852c3de2a7dc217bc"
+    },
+    {
+      "path": "enumerate_labelled.py",
+      "bytes": 6260,
+      "sha256": "d356ae309bd9c61023d1a3cc871bbce41f42ed3babd67022e100164e96a3ddb6"
+    },
+    {
+      "path": "grouping.py",
+      "bytes": 2221,
+      "sha256": "3b933ab36e3de086900b826f3d1f7a6eac4a59c8e5865b42c441f3bb3e00a5e2"
+    },
+    {
+      "path": "montecarlo_control.py",
+      "bytes": 2165,
+      "sha256": "2ace01c44dc200aa0181f97dd7bafa747395a5930a1b371b2acc5e06713a18e1"
+    },
+    {
+      "path": "out/additivity.txt",
+      "bytes": 1786,
+      "sha256": "51789658c9425ad3294fa850201b6a467f3a22c544ba69879981e20f9afc4f86"
+    },
+    {
+      "path": "out/crosscheck_8.txt",
+      "bytes": 631,
+      "sha256": "750cf60ba7c7108bc4f8829ace8b2202302e2771b4ad9075dc8b2d35f0d0ec3e"
+    },
+    {
+      "path": "out/crosscheck_9.txt",
+      "bytes": 709,
+      "sha256": "bf8ccdd50ce52235b65ad76d3d5c80a4de05ae7c8c5401ec1e6e21be3eef6159"
+    },
+    {
+      "path": "out/enum_labelled_8.json",
+      "bytes": 71856,
+      "sha256": "a4472a50e101a15749564b3a18cb95fe0c4536683eb665cd362304e2c564fbbe"
+    },
+    {
+      "path": "out/enum_labelled_9.json",
+      "bytes": 162435,
+      "sha256": "54f7e2aeea2408cc0d647b25b255ed4d8a3a7c96a9858d64aceadf1729801544"
+    },
+    {
+      "path": "out/enum_labelled_9.log",
+      "bytes": 705,
+      "sha256": "0189ba1a5e338bfb5a1f544aec32ffc1f1ae2878b9315603fe8d07fb790f0768"
+    },
+    {
+      "path": "out/grouping.json",
+      "bytes": 8360,
+      "sha256": "75bb754f8108dcc4b8a70ac9f4e15f56e29f3d5bfb489d78ea9e8f4d9fb08623"
+    },
+    {
+      "path": "out/grouping.txt",
+      "bytes": 7091,
+      "sha256": "1f481c63b5692643189c3657e6fc5dafe18c0985d52dcde33328d0db0c680c84"
+    },
+    {
+      "path": "out/montecarlo_control.txt",
+      "bytes": 630,
+      "sha256": "790262e533651fa7d1b7f5ea178b8d963c1fd09ac6bb9b386451074f0b3a12c2"
+    },
+    {
+      "path": "out/qborel.json",
+      "bytes": 547,
+      "sha256": "24a03e937de043dd811f1da4ef15e359ad0eeaab8a0a27adb244727d0375858a"
+    },
+    {
+      "path": "out/qborel.txt",
+      "bytes": 1444,
+      "sha256": "10c1b57f3a9965b05330284e47e90f200b3f7ae94ad6565b616c6f046da9bd6a"
+    },
+    {
+      "path": "out/qborel_base.json",
+      "bytes": 9167,
+      "sha256": "0913b506cb1c09c69024714800da2d097691ea949dd5525e4679504f5c17c098"
+    },
+    {
+      "path": "out/qborel_base.txt",
+      "bytes": 4670,
+      "sha256": "19a54c8adbe6fb785e2555232471139ac4ab2519dedf2135abd01f9ab80e5d34"
+    },
+    {
+      "path": "out/qborel_pade.json",
+      "bytes": 13907,
+      "sha256": "ba3473803cab94c06904dba615b7bb319b49f6a60628126ca67c286bbe8f58cc"
+    },
+    {
+      "path": "out/qborel_pade.txt",
+      "bytes": 7700,
+      "sha256": "3139bb8f680e2416482008e3b2dbed5fc93f407f369b6e6792a4148efece0a29"
+    },
+    {
+      "path": "out/sequences.json",
+      "bytes": 270985,
+      "sha256": "6ec8c9e444f44f02b3c2863f90b2c74ac2e14d9da23630b2cf8fd17b994e0649"
+    },
+    {
+      "path": "out/sequences.log",
+      "bytes": 5312,
+      "sha256": "e16bde6ee732dca406a7520b8d7dafaf8aa5a3b6d7f1b117f0ccffcfa2eabb07"
+    },
+    {
+      "path": "out/sequences.txt",
+      "bytes": 5312,
+      "sha256": "e16bde6ee732dca406a7520b8d7dafaf8aa5a3b6d7f1b117f0ccffcfa2eabb07"
+    },
+    {
+      "path": "out/summability.json",
+      "bytes": 17020,
+      "sha256": "bf937ab8ec45bd83825152c05e87625f8524dbf08e0243c818fbc87ea48d20d1"
+    },
+    {
+      "path": "out/summability.txt",
+      "bytes": 13890,
+      "sha256": "8dc1472941bb2dcd8aad1b67b43412cc8ebc957a2a59247eca52070df8dd0280"
+    },
+    {
+      "path": "out/verify_posts.txt",
+      "bytes": 1328,
+      "sha256": "4f0a17275451cab03bcff5f796609578b5051f7402a357186cc9675d69eebb95"
+    },
+    {
+      "path": "qborel.py",
+      "bytes": 4958,
+      "sha256": "b605d35fff78b5f70569b3a9ee7e67990eb17cc871853ce81ab5977c34c6a4ae"
+    },
+    {
+      "path": "qborel_base.py",
+      "bytes": 4095,
+      "sha256": "881c1b378c513c6d1f862b49be64889301a4a288b05a924e4e13d405ac5b31a5"
+    },
+    {
+      "path": "qborel_pade.py",
+      "bytes": 4406,
+      "sha256": "3f745af29ef571bbe73836e4e919d91e395e45b66fabfcbd39a770a73d2f97f3"
+    },
+    {
+      "path": "ring.py",
+      "bytes": 2883,
+      "sha256": "561a42495bda4a964fdd4f8bc8075dc250d7f10e11c9d5f67c9ac1f7adee81a9"
+    },
+    {
+      "path": "sequences.py",
+      "bytes": 2136,
+      "sha256": "509f2ccda8415508d3dd287dd10bffcb0ba92f837e1cd337bc0bdba4c6494159"
+    },
+    {
+      "path": "summability.py",
+      "bytes": 3476,
+      "sha256": "b13cad0df863a3040a248ba1038e86536162e97fe2924e86cec416618a66856a"
+    },
+    {
+      "path": "verify_posts.py",
+      "bytes": 7914,
+      "sha256": "58d5c94efe8dc8ea473756afcaaed3c3a376b1535da9996f4d2d673f44c99c32"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+n=1: 1 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=2: 2 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=3: 7 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=4: 40 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=5: 357 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=6: 4824 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=7: 96428 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=8: 2800472 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+n=9: 116473461 naturally labelled causets, stage sum = 1 (polynomial identity) OK
+runtime 457.5s

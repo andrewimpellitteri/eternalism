@@ -1,0 +1,9 @@
+Monte Carlo control: p=1/2, 20000 samples of 40-element transitive percolation, seed 20261021
+  1         MC 1.00000 +- 0.00000   exact a_40 1.00000   z = +0.00
+  2chain    MC 0.87730 +- 0.00232   exact a_40 0.87927   z = -0.85
+  2anti     MC 0.71445 +- 0.00319   exact a_40 0.71121   z = +1.01
+  3chain    MC 0.54775 +- 0.00352   exact a_40 0.54817   z = -0.12
+  3anti     MC 0.24820 +- 0.00305   exact a_40 0.24722   z = +0.32
+  V         MC 0.31060 +- 0.00327   exact a_40 0.30977   z = +0.25
+  Lambda    MC 0.28510 +- 0.00319   exact a_40 0.28786   z = -0.86
+  2chain+1  MC 0.59175 +- 0.00348   exact a_40 0.59048   z = +0.36

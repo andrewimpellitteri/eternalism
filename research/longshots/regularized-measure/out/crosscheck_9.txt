@@ -1,0 +1,10 @@
+n=1: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=2: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=3: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=4: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=5: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=6: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=7: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=8: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+n=9: all 8 stem polynomials chain==enumeration: True; 2anti closed form: True
+ALL OK

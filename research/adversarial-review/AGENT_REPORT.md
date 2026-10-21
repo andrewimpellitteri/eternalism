@@ -1,182 +1,124 @@
-# Adversarial review: scalar result survives, vector probe needs correction
+# Adversarial review closeout
 
-Coordinator checkpoint, 2026-10-21. **The gate remains in progress.** Three native
-reviews and the coordinator boundary check are complete; two user-authorized
-headless OpenCode GLM workers are now running. No second-family result has yet
-been received or accepted. The paper gate must remain closed pending review of
-those submissions and disposition of the corrections below.
+Coordinator, 2026-10-21. **SURVIVE, narrow**, for the labelled scalar theorem
+and the conditional common-factor covariant theorem. Native proof,
+implementation and source reviews are integrated, as are the completed GLM
+scalar review, probe corrections and indicator-measure follow-up. This closes
+the review of those precise claims. It does not accept the outstanding rank
+candidate, establish global priority, or authorize broader physical claims.
 
-## Findings and disposition
+The earlier chronological checkpoint is preserved in
+`coordinator/REVIEW_HISTORY.md`; its statements about then-running workers and
+pending corrections are historical. This report gives the current disposition.
 
-| Target | Verdict | Evidence and scope |
+## Claim-by-claim disposition
+
+| Target | Disposition | Conditions and evidence |
 |---|---|---|
-| Labelled doubly-principal scalar iff | SURVIVE, narrow | Two-cap bijection, endpoint probability product, positive infinite product and divergent disjoint-cylinder variation checked analytically; p=0,1 handled separately. |
-| Covariant all-principal common-factor theorem | SURVIVE, conditional | Requires exactly the all-principal value rule, finite countable additivity and normalized infinite-post mass. Covariance alone supplies none of these dynamics. |
-| Doubly-principal-only classifier | KILL | The infinite-block Dirac countermodel satisfies the weakened rule with zero factor for every p. It does not satisfy the full rule. |
-| Rank-only measure classification | UNRESOLVED | Stationary kernel is a useful reduction; truncated roots and attenuation do not construct a measure or rule one out. Endpoint, convergence and priority corrections are required. |
-| Vector probe's infinite-extension and semivariation claims | REPLACE | The standard L² indicator construction gives a norm-prescribed infinite-dimensional extension on the displayed circle, with semivariation one and infinite total variation. An infinite R² extension outside [0,1] is impossible. |
-| Local-renewal refinement | SURVIVE after correction | The common factor starts at rank two; the unused κ_1 is unconstrained. Correct the shape-dependent-factor endpoint qualification. |
-| Finite Lean certificate | SURVIVE as finite kernel | No axioms or sorry; it does not encode sigma-algebras, countable additivity, the infinite product or the all-level iff theorem. |
-| Clock fallback | OUTSIDE THIS REVIEW | A separate claimed coordinator lane is working on it; its live files were not changed here. |
+| Labelled doubly-principal scalar iff p in [0,1] | SURVIVE | Analytic two-cap bound and disjoint-cylinder variation argument; endpoints separated; native and GLM falsifier attempts found no counterexample. |
+| Covariant common-factor iff 0<p<=1 | SURVIVE, conditional | Finite complex measure, all-principal value rule, one common factor, and normalized infinitely-many-post event remain essential. Covariance alone does not imply the rule. |
+| DP-only weakening of that rule | KILL | Infinite-block Dirac countermodel with zero factor works for every p; it does not satisfy the all-principal rule. |
+| Local-renewal refinement | CORRECTED | Constancy begins at rank two; kappa_1 is unconstrained by the refinement alone. Division arguments exclude p=0,1 where required. |
+| Blanket vector semivariation no-go | WITHDRAW | Standard infinite-dimensional indicator measures defeat it. Finite-dimensional and fixed-direction obstructions remain separately valid. |
+| Indicator-valued Lalpha realization | ACCEPT AS SCOPE | Reviewed GLM construction, endpoint domain and diagnostics corrected; known functional-analysis construction, not preserved quantum phases. |
+| General Banach norm-only domains | SURVIVE ANALYTIC REVIEW; scoped | DP: p=1 or |p|<1, |1-p|<=1. All cylinders: endpoints or both strict inequalities. Native proof audit completed; supplemental GLM review did not finish. |
+| Hilbert norm-only disk | SURVIVE ANALYTIC REVIEW; scoped | |p|^2+|1-p|^2<=1. Latent-edge conditional-expectation construction and squared-norm obstruction audited natively. Supplemental GLM review did not finish. |
+| Rank-only classification | NOT ACCEPTED | Earlier renewal obstruction is conditional. A further proof candidate is preserved in RANK_FACTOR_NO_GO.md; its new convergence estimates require independent audit. |
+| Claude regularized-measure experiment | INCOMPLETE | Raw scripts/results preserved, finite cross-check rerun, bounded Abel/Borel obstruction recorded. Generalized summation, additivity and approximation invariance remain unproved. |
+| Lean certificate | FINITE KERNEL ONLY | Existing build and axiom audit passed; it does not encode the infinite measure theorem or establish priority. |
+| Clock application | CLOSED IN SEPARATE LANE | The other coordinator recorded a known-result/application outcome. It supplies no new result to this review. |
 
-The scalar theorem solves the specific previously inconclusive doubly-reduced
-case in the primary sources checked by the source reviewer. Its estimate is
-short and elementary relative to an existing extension criterion. This supports
-a narrow mathematical note, not a new general extension criterion, new physics,
-global priority or a temporal ontology. See the source-priority report for the
-strongest triviality objection, actual search boundaries and exact source reads.
+## Proof, computation and source evidence
 
-## Material correction: the vector counterexample
+`proof/AGENT_REPORT.md` reconstructs the scalar and conditional proofs and
+challenges their assumptions. `implementation/AGENT_REPORT.md` records the
+baseline, certificate and independent replication checks, including alternative
+encodings. `source-priority/AGENT_REPORT.md` and `PRIMARY_EVIDENCE.md` identify
+the precise previously inconclusive case and bound the priority search.
 
-For `|p|²+|1-p|²=1`, put `r=|p|²`, take classical labelled percolation `P_r`, and
-set `μ(E)=1_E` in `L²(P_r)`. The norm of a cylinder indicator is precisely the
-prescribed amplitude modulus. Norm countable additivity follows from probability
-continuity on the disjoint tail; finite partitions give semivariation one. The
-scalar lower bound gives infinite total variation for nonreal p on the circle.
+The completed second-family review is at
+`../adversarial-glm/scalar/AGENT_REPORT.md`, with its coordinator disposition in
+`COORDINATOR_REVIEW.md`. Its corrected exact suite passes 26/26 checks. Git and
+tool chronology support an initial reconstruction before comparison; the
+recovery and corrected checks are explicitly feedback-informed. The supervisor
+exited 1 after committing a clean report; this was reviewed as a submission,
+not called a successful process exit. Arguments and source correspondence,
+not model agreement, support the verdict.
 
-The full analytic proof, phase/common-direction caveat, finite-dimensional
-no-go and independent finite corroboration are in
-`coordinator/VECTOR_COUNTERMODEL.md`. This construction is standard functional
-analysis applied here; no novelty follows from finding it during this review.
-Do not describe it as a phase-preserving quantum dynamics. The pending GLM
-follow-up studies only the finite-Lalpha indicator construction's locus, not
-all Banach-valued measures.
+The coordinator re-read Dowker-Zalel 2212.01149v2 Sec. V after Eq. (31): the
+paper already suggests computing a cumulative doubly-principal amplitude sum
+with techniques for post probabilities. The target's contribution executes
+that direction with an explicit bound and classification. It neither poses
+the original question nor invents the suggested route. Bombelli-Seggev-Watson
+0809.2258v2 Theorem 2.1 and Eq. (2) were also rechecked. Thesis coverage is in
+the native source review, not an independent GLM thesis read. A short
+mathematical note is defensible; general extension criteria and physical or
+philosophical novelty are not established.
 
-## Corrections required before a broader presentation
+Coordinator checks retained and rerun at closeout:
 
-1. Replace the historical vector report's blanket bounded-semivariation no-go
-   and its claim that the infinite norm-prescribed extension is wholly open.
-   Separate finite-dimensional, bounded-total-variation, fixed-direction and
-   general infinite-dimensional statements. Finite polygons do not establish
-   extension or newness.
-2. Correct local-renewal indexing to n≥2, using κ_2 in the full formula, and
-   qualify division-based shape-factor claims at p=0,1.
-3. Remove p=0 from the rank-kernel classical `R(1)=1` assertion; make labelled
-   multiplicities explicit; do not equate the measure no-go with divergence of
-   a complex scalar generating series without a separate proof.
-4. Keep rank-only existence and its priority unresolved. A finite root search
-   and zero floating residual are insufficient evidence for either claim.
-5. Integrate and assess the GLM submissions through their arguments and source
-   correspondence before claiming the requested two-family adversarial gate.
+- `coordinator/check_boundaries.py`: 407 exact finite identities through n=5,
+  plus the rank-one counterassignment.
+- `coordinator/check_renewal_series.py`: 25 coefficient identities through
+  degree five. These do not close the missing infinite convergence step.
+- `coordinator/check_c0_construction.py`: finite boundary constructions and
+  disjoint-family checks at the displayed parameters.
+- `coordinator/check_hilbert_environment.py`: 200 exact cylinder moments,
+  squared DP level identities and the finite-union witness.
+- GLM `check_bounded.py`: 26 exact checks; nonzero failure exit.
+- Claude `crosscheck.py 9`: eight stem polynomial comparisons at each rank
+  through nine, using saved enumeration aggregates; no enumeration rerun.
 
-`coordinator/BOUNDARIES.md` supplies the rank-one counterassignment and detailed
-locations. This review deliberately leaves builder artifacts unchanged and
-preserves them as the objects reviewed. No disputed claim has been silently
-repaired and then presented as an independent clean pass.
+The norm-only Hilbert construction changes interference. At p=1/2+i/4 the
+union of the three-chain and three-antichain cylinders has original scalar
+quantum measure 221/4096 versus 669/4096 in the new realization, although each
+cylinder diagonal matches. These are new realizations of selected norm data,
+not extensions of the fixed premeasure, off-diagonal decoherence data or
+physical dynamics. `proof/VECTOR_FOLLOWUP.md` and
+`source-priority/VECTOR_FOLLOWUP.md` recommend appendix-level scope at most.
 
-## Evidence, verification and provenance
+## Integrated corrections
 
-- `input-manifest.json` pins 24 builder inputs at be41977. Recomputed hashes on
-  2026-10-21 found no changes to any pinned input while these reviews ran.
-- `proof/AGENT_REPORT.md`: independent analytic challenge to both theorems and
-  the vector counterexample, with assumptions separated.
-- `implementation/AGENT_REPORT.md`: successful baseline/certificate/replication
-  checks, alternative encoding and multiplicity checks, finite formal scope,
-  plus a separately recorded later vector correction. Minor replication script
-  hygiene is documented there; the analytic theorem does not depend on it.
-- `source-priority/AGENT_REPORT.md` and `PRIMARY_EVIDENCE.md`: actual primary
-  source sections, bounded citation search, modest significance objection and
-  standard vector-measure predecessor with access limitations.
-- `python3 coordinator/check_boundaries.py` from this directory: 407 exact
-  cylinder identities through n=5 and the κ_1 counterassignment passed. The
-  program imports no builder code. This is finite corroboration of the written
-  infinite proof, not a substitute for it.
-- `python3 scripts/check_sources.py --strict knowledge research/theory-map`:
-  23 files, 327 records, zero errors/warnings for those explicit paths. This
-  invocation is not described as a scan of every register in the repository.
+The reviewed GLM probe corrections are integrated in c63d3cb and their report
+at `../probe-corrections/COORDINATOR_REVIEW.md`. The wrong complex parameter,
+object-truthiness test, rank indexing and unsupported finite-dimensional
+proposal were corrected or withdrawn. The indicator follow-up was integrated
+through e7bc238 after endpoint, first-arrival, source-contract and scope fixes;
+see `../vector-indicator-boundary/COORDINATOR_REVIEW.md`.
 
-No installs or large runs. Files changed are this owned review directory only;
-separate runner and workboard changes enabling the newly requested GLM runs have
-their own task/report at `research/runner-committed-launch/`. The native reviewers
-share a model family, so their agreement is not independent statistical evidence.
+Historical builder artifacts are not silently rewritten and presented as
+independent clean passes. Any result manuscript must incorporate these
+corrections explicitly, credit the already-suggested calculation, and retain
+the source and formalization limits. The two scalar theorems' statements did
+not change during this review.
 
-## Remaining work
+## Stopped and unfinished work
 
-Review the two headless GLM submissions when available. Produce an explicit
-correction disposition before accepting this gate. Until then, this document is
-a review checkpoint and the `adversarial-review` claim remains active; it is
-neither an accepted completion nor authorization to advance the paper task.
+The supplementary rank and norm GLM runs encountered provider transport
+timeouts and then produced no completed reports. At the user's closeout they
+were stopped with claims, worktrees and logs preserved. They are incomplete,
+not accepted and not evidence for either truth or falsity. Monthly search-tool
+quota exhaustion was a separate recorded limitation; it must not be described
+as a model-usage failure. No further agents are launched by this closeout.
 
-## Coordinator direction follow-up (2026-10-21)
+Claude's article revision landed in 09c32b7 before its session limit. Its
+regularization experiment had no final report. `coordinator/CLAUDE_CARRYOVER.md`
+and the hash manifest preserve the interruption, the 34 raw files, actual
+checks, one explicit ordinary-summability obstruction, and the remaining
+proof obligations. Its existing claim is left intact. The unreviewed new
+rank proof candidate is also preserved without promotion.
 
-The user authorized four concurrent headless GLM runs. The two queued workers
-were confirmed stopped with clean worktrees and no model events, then resumed
-with a four-slot limit; the original two sessions were preserved. All four are
-now producing events or awaiting their current model step. No provider error
-was recorded at the subsequent check; an initially quiet scalar reviewer began
-emitting again without restart.
+## Paper handoff and remaining limits
 
-`coordinator/DIRECTION.md` records the revised project judgment: finish the
-narrow scalar result and corrections, keep the rank attempt analytically
-bounded, treat the standard vector construction as scope clarification, and
-recommend closing the clock application after its separate coordinator review.
-The clock coordinator has since committed its negative/application-only outcome
-in c0a2176 and the updated reread verdicts in 2e8bfd4.
+The review gate is satisfied for a **short scalar mathematical note only**,
+with the conditional covariant variant separately labelled and the accepted
+corrections applied. No result paper has been written by this closeout. Do not
+make the unfinished rank, generalized regularization or globally new vector
+claims part of an accepted theorem package. The norm-only constructions can
+serve as carefully scoped counterexamples or an appendix after ordinary
+manuscript checking; they supply no new quantum extension of the original data.
 
-`coordinator/RENEWAL_OBSTRUCTION.md` gives a conditional renewal-inversion
-obstruction and states the missing absolute-convergence obligation. Its exact
-finite check passed 25 coefficient identities through degree five. This new
-coordinator reduction is not independently reviewed and does not close the
-rank-only existence question or the adversarial gate.
-
-## Provisional norm-classification follow-up (2026-10-21)
-
-`coordinator/BANACH_NORM_BOUNDARY.md` now contains a candidate exact
-classification for existence in some Banach space when only DP cylinder norms
-are prescribed, using a c0-valued weighted conditional-probability measure.
-It separately treats the stricter all-cylinder prescription. Its explicit
-boundary construction and disjoint-family obstructions passed exact finite
-checks in `check_c0_construction.py`. The infinite argument is written out;
-independent proof and priority review are still required. This does not
-classify Hilbert-valued measures or restore complex phases, and it has not
-changed the paper gate or promoted the candidate to accepted newness.
-
-An interim failed GLM certificate check was traced independently to using the
-wrong exponent for an ordinal-block weight. `coordinator/INTERIM_GLM_CHECK.md`
-records the correct calculation and the printed V_2 edge case. The worker is
-still running and its final submission must be reviewed afresh.
-
-## Hilbert boundary and independent analytic follow-up (2026-10-21)
-
-`coordinator/HILBERT_NORM_BOUNDARY.md` gives an exact candidate disk boundary for
-the norm-only Hilbert realization problem. A conditional-probability measure in
-an independent random edge environment supplies the disk's interior; a Hilbert
-sign-average bound on disjoint squared norms and the two-cap estimate exclude
-its exterior. The same disk applies to DP-only and all-cylinder prescriptions.
-`check_hilbert_environment.py` passed 200 exact finite cylinder moment identities
-at four parameters plus the squared DP level formula through rank five.
-
-The independent proof reviewer audited this argument and the Banach c0 domains
-analytically in `proof/VECTOR_FOLLOWUP.md`, finding no mathematical falsifier.
-Its single wording clarification has been applied. A bounded source/priority
-review is now pending. These are realizations of cylinder norm data in new vector
-spaces, not extensions of the fixed complex scalar premeasure or its original
-decoherence functional. The construction's interference is constructive and its
-nonreal boundary is classically additive. Physical claims remain excluded.
-
-`coordinator/ADDITIONAL_SOURCE_READS.md` records a now-readable author route to
-Sorkin's fundamental-theorem preprint and the limited sections actually read.
-The scope check reinforces the distinction between fixed-premeasure extension
-and diagonal-only realization. Earlier unavailable/unread notes are preserved.
-The selected scalar statement and paper gate are unchanged.
-
-## Scope-review disposition and finite-union witness (2026-10-21)
-
-`source-priority/VECTOR_FOLLOWUP.md` has completed its bounded primary-source
-review. It found no matching exact parameter classification in the searched
-sources, but identified standard moment, conditional-probability and c0-coordinate
-techniques as the strongest significance defeaters. Recommendation: appendix or
-scope-section treatment at most, rather than a separate quantum-extension note.
-The Hilbert necessity argument remains a specific use of the squared two-cap
-bound; a finite Gram matrix's positive-semidefiniteness does not prove the disk.
-
-An exact finite-union check at p=1/2+i/4 gives original scalar quantum measure
-221/4096 versus new Hilbert realization 669/4096 for the union of the three-chain
-and three-antichain cylinders, despite matching each cylinder diagonal. This
-makes the changed interference predictions explicit. The analytic proof audit
-and scoped source verdict support the norm-only classifications without
-conflating them with the original premeasure's extension problem.
-
-The first GLM correction submission is now in review. Its claimed quota
-interruption and exact complex-parameter checks must be verified rather than
-copied from its handback; the coordinator is inspecting these before integration.
+Neither temporal ontology, objective passage nor an empirical distinction
+between ontologies follows. Those questions still require physical dynamics,
+observer access and defended bridge premises. The working philosophical
+article and its submission gates remain a separate artifact.
