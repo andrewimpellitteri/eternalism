@@ -43,7 +43,7 @@ Dirac countermodel with zero factor. Artifact: `main.tex`, Theorem
 | Event-filter factor `1/m` | Known, reconstructed | Frauca–Sorkin 2010; `research/event-filter-resources/RESULT.md`. Detector probability tends to `1/4` while the event measure diverges. No universal resource bound. |
 | Record-loss obstruction | Scoped, independently reviewed | `research/event-filter-resources/RECORD_LOSS.md` and `INDEPENDENT_REVIEW.md`; Schur-channel, all-input effect, locally unbiased family only. |
 | Bell-causal phase freedom | Scoped witness | `research/longshots/bc-holonomy/` (zero-aware) and `bc-nonzero/` (all-nonzero fixed seed). Product-BC scalar amplitudes, MSR, norm-GC through stage 4; `(3-4i)/5` holonomy survives. Not operator QBC, not a classification. |
-| Rank-only post values | Bounded failure; open | Conditional renewal obstruction only; `research/adversarial-review/coordinator/RENEWAL_OBSTRUCTION.md` and `research/rank-renewal-followup/STATUS.md`. No measure, no general no-go. |
+| Rank-only post values | Conditional no-go | `research/rank-renewal-convergence/RESULT.md`: the weighted estimate is proved and forces no normalized rank-only measure outside `0<p<=1`, under the imported posts-algebra/two-cap frame. Independent audit of that frame pending. |
 | Sorkin even convergence on stem events | Scoped application | `research/longshots/sorkin-cc/RESULT.md`: for `|q|<1`, open stem events are evenly convergent and finitely additive by Sorkin's theorem; `|q|=1` fails. |
 | Covtree levels for complex percolation | Scoped | `research/longshots/covtree-complex/RESULT.md`: all levels exist uniquely for `|q|<1` via the skeleton chain; the non-root-of-unity boundary has no nonzero originary limit. |
 | Partial record access | Scoped combinatorial | `research/record-loss-robust/RESULT.md`: targeted block access threshold `1/B`, random access only at full access; access-model dependent. |
@@ -104,8 +104,10 @@ These are mathematical exclusions, not empirical refutations:
 - **Physical realizability of the control/instrument class.** The operational
   stability and event-filter results are conditional on an accessible control
   or coherent erasure model. No embedded causal-set observer is constructed.
-- **Rank-only post values.** The renewal obstruction is conditional; the
-  classification is open. No paper claim depends on it.
+- **Rank-only post values.** The weighted estimate is now proved under the
+  imported posts-algebra/two-cap frame, giving a conditional no-go outside
+  `0<p<=1`. An independent audit of that frame and of the two-cap bound is
+  still required; no paper claim depends on it.
 - **Empirical discrimination.** The 21-candidate audit in
   `research/discriminators-audit/RESULT.md` finds no genuine ontology
   discriminator without an independently defended exclusivity premise. The
@@ -133,9 +135,9 @@ These are mathematical exclusions, not empirical refutations:
 ## 7. Failure to discriminate, stated plainly
 
 The project has not produced a physical prediction that separates eternalism
-from its rivals, a derivation of a bridge principle from physics, a rank-only
-classification, a general operator-QBC phase theorem, or an embedded-observer
-realization. The discriminator audit shows why the first is not just missing
+from its rivals, a derivation of a bridge principle from physics, an
+unconditional rank-only classification (the present result is frame-conditional),
+a general operator-QBC phase theorem, or an embedded-observer realization. The discriminator audit shows why the first is not just missing
 but structurally blocked without an exclusivity premise; the philosophy essay
 in `research/philosophy-completion/ESSAY.md` states the completion/access
 dilemma that remains. Those are open, not hidden. The verified floor is the narrow
