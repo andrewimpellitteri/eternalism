@@ -1,7 +1,7 @@
 """Finite exact moment checks, not an infinite extension proof."""
 from fractions import Fraction as F
 from itertools import combinations, product
-from check_boundaries import closure, stats, principal
+from check_boundaries import closure, stats, principal, mul, power
 
 
 def law(x, y):
@@ -62,6 +62,21 @@ def main():
             capped+=A*A**(L+maxima)*B**h
         assert total==capped
     print('Squared DP level identity exact through n=5 at an exterior point')
+    # Same cylinder diagonals do not preserve a finite union's quantum measure.
+    atoms = law(F(1,2), F(1,4))
+    new_union = F(0)
+    for (g01,w01),(g02,w02),(g12,w12) in product(atoms,repeat=3):
+        chain = g01*g12  # the 0->2 edge is redundant
+        antichain = (1-g01)*(1-g02)*(1-g12)
+        new_union += w01*w02*w12*(chain+antichain)**2
+    p,q = (F(1,2),F(1,4)),(F(1,2),F(-1,4))
+    Achain,Aanti = power(p,2),power(q,3)
+    combined = tuple(a+b for a,b in zip(Achain,Aanti))
+    old_union = sum(v*v for v in combined)
+    assert old_union == F(221,4096)
+    assert new_union == F(669,4096)
+    assert new_union-old_union == F(7,64)
+    print('Finite-union scope witness: original Q=221/4096, new Q=669/4096; diagonal norm matching changes interference')
 
 
 if __name__=='__main__':

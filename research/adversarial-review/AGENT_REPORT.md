@@ -159,3 +159,24 @@ Sorkin's fundamental-theorem preprint and the limited sections actually read.
 The scope check reinforces the distinction between fixed-premeasure extension
 and diagonal-only realization. Earlier unavailable/unread notes are preserved.
 The selected scalar statement and paper gate are unchanged.
+
+## Scope-review disposition and finite-union witness (2026-10-21)
+
+`source-priority/VECTOR_FOLLOWUP.md` has completed its bounded primary-source
+review. It found no matching exact parameter classification in the searched
+sources, but identified standard moment, conditional-probability and c0-coordinate
+techniques as the strongest significance defeaters. Recommendation: appendix or
+scope-section treatment at most, rather than a separate quantum-extension note.
+The Hilbert necessity argument remains a specific use of the squared two-cap
+bound; a finite Gram matrix's positive-semidefiniteness does not prove the disk.
+
+An exact finite-union check at p=1/2+i/4 gives original scalar quantum measure
+221/4096 versus new Hilbert realization 669/4096 for the union of the three-chain
+and three-antichain cylinders, despite matching each cylinder diagonal. This
+makes the changed interference predictions explicit. The analytic proof audit
+and scoped source verdict support the norm-only classifications without
+conflating them with the original premeasure's extension problem.
+
+The first GLM correction submission is now in review. Its claimed quota
+interruption and exact complex-parameter checks must be verified rather than
+copied from its handback; the coordinator is inspecting these before integration.

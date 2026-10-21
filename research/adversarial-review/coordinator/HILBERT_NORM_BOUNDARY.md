@@ -129,3 +129,11 @@ the already-known rank-one product probability functional. Preserving single
 cylinder norms has not preserved the finite-union or off-diagonal predictions
 of the original complex scalar model. This is a substantive scope limitation,
 not merely a change of representation.
+
+An exact finite witness is p=1/2+i/4 and E equal to the disjoint union of the
+three-chain and three-antichain cylinders. The original scalar model gives
+`Q(E)=|p²+(1-p)³|²=221/4096`. The conditional-probability construction gives
+`Q(E)=669/4096`, a difference of 7/64, while matching both individual cylinder
+diagonals. The finite-check script computes both values independently. This
+explicit discrepancy prevents interpreting the construction as a representation
+change that retains the original event predictions.
