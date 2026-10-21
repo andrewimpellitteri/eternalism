@@ -146,26 +146,44 @@ first re-review required the P1** retarget, which is now in place. The draft is 
 until `article-rereview` records a contribution verdict and the author decides
 the metadata.
 
-## Totality rebuild, 21 October 2026
+## Totality rebuild and trilemma repair, 21 October 2026
 
 The Savitt-delta and critical-note audits found that the P1** coverage retarget
 is not an increment: Brading 2013 p. 1110 already states the local-boundedness
 condition, and Savitt's 2021 objection is a co-presence/population objection,
-not the coverage union point. The article has therefore been rebuilt around a
-different, internal argument: Brading's own principle identifies what exists
-with the genuine unities and applies the law-constitutive approach to the
-material universe as a whole (2015 p. 16; 2013 p. 1106 n. 3); the universe is
-therefore a thing that exists; its sustaining region is the whole history; and
-P1** (a) is false of it. The 2013 defeat condition and 2015 survival condition
-are argued to be incomplete, and the retreat to subsystems is shown to give up
-the global claim. The four-event model remains as an independent finite
-countermodel to the claim that (a)+(b) imply a proper union.
+not the coverage union point. The article was rebuilt around the universe case:
+Brading's principle identifies what exists with the genuine unities and applies
+the law-constitutive approach to the material universe (2015 p. 16; 2013
+p. 1105 n. 3). The first draft claimed a categorical reductio: the universe is a
+thing; its sustaining region is the whole history; P1** (a) is false of it.
 
-Current status: **working note, not submission-ready.** The totality argument's
-(T4) is an inference from Brading's aggregation sentence (2015 p. 16), not a
-quotation; it is the weakest premise and is flagged in the draft. The 2013
-defeat-condition criticism has been restated as "incomplete" rather than a
-non-sequitur, because "for whatever system we try to consider" can be read
-universally. Independent logic and priority audits (`reviews/totality-logic/`,
-`reviews/totality-priority/`) are running. Balaguer 2026's body and Brading
-2011/2014 remain unread and are the main scoop risk. Do not submit.
+The independent logic audit (`reviews/totality-logic/REVIEW.md`) rejected that
+categorical form. Its main findings: T1 is an adopted premise, not a textual
+entailment; T4 is not sound as stated, because a Cauchy slice or thick global
+slab is a proper region and Brading's rejection of "a spatially global present"
+is qualified by "common to all systems"; the 2013 condition is sufficient, not
+exhaustive, and the 2015 condition is necessary, not sufficient; the four-event
+model is valid but models the extensional shadow, not Brading's dynamics, and
+must address 2013 n. 7; "scale-free" misdescribes a scale-general approach that
+allows different principles at different scales. The draft was repaired
+accordingly.
+
+Current form: a **three-horn trilemma**, 9 pages. Horn 1: the universe's present
+is W, so (a) is false on the unrestricted reading. Horn 2: the present is a
+proper region, either spatially global (needs a qualification of Brading's
+rejection) or local (needs an account of how a local region sustains the whole).
+Horn 3: the universe is outside the domain, so the quantifier is restricted and
+the global claim is lost. The conclusion is conditional: P1** cannot be both
+universal and satisfied by the universe without an account Brading does not
+supply. The 2013/2015 defeat and survival conditions are criticized as a gap in
+framing, not as logical non-sequiturs; the four-event model states its
+assumptions and n. 7; the diagnosis is "scale-general," with a missing
+scale-selection guarantee rather than a missing existence criterion.
+
+Current status: **working note, not submission-ready, novelty not established.**
+Independent logic review is complete and the repairs are recorded. The priority
+audit could not run: the subagent hit the account's credit limit
+(`reviews/totality-priority/` is empty). A bounded web/SerpApi search found no
+published statement of the universe trilemma, but PhilPapers/Scholar were not
+searched, Balaguer 2026's body and Brading 2011/2014 remain unread, and absence
+of hits is not priority. Do not submit or claim discovery.

@@ -221,21 +221,28 @@ and corrected two errors above.
    unities (2015 p. 17: "what exists (what is real) are the genuine unities")
    and applies the law-constitutive principle "all the way up to the material
    universe as a whole" (p. 16). The universe is therefore a thing that exists.
-3. **The surviving candidate is a totality reductio.** Because the universe is
-   a genuine unity, its sustaining region is the whole history; P1** (a)
-   requires every existing thing's present to be less than the whole; so (a) is
-   false of the universe. The 2013 defeat condition and the 2015 survival
-   condition do not cover this case. The scale-free criterion cannot select a
-   local level without adding a selection principle.
+3. **The surviving candidate is a universe trilemma, not a categorical
+   reductio.** Because the universe is a candidate genuine unity, its present
+   is either W (so (a) fails on the unrestricted reading), a proper region
+   (spatially global, requiring a qualification of Brading's rejection; or
+   local, requiring an account of how a local region sustains the whole), or
+   outside the domain (global claim lost). The 2013 defeat condition and the
+   2015 survival condition do not cover the universe-own-region case. The
+   approach is scale-general, and what is missing is a guarantee that the
+   dynamical selection procedure picks a proper scale, or an account of the
+   maximal unity's present.
 
-**Novelty status:** moderate risk, not established. The argument is a
-reconstruction from Brading's own premises; no published statement was found in
-the bounded search, but Balaguer 2026's body and Brading 2011/2014 were not
-read, and PhilPapers/Scholar were unavailable. The note must not claim
-discovery of a new objection family. It claims an internal inconsistency and a
-diagnosis of why the local strategy cannot select its own scale.
+**Novelty status:** not established. The argument is a reconstruction from
+Brading's own premises; no published statement was found in the bounded search,
+but Balaguer 2026's body and Brading 2011/2014 were not read, and
+PhilPapers/Scholar were unavailable. The independent logic audit rejected the
+categorical form and forced the trilemma repair; the independent priority audit
+did not run because the subagent hit the account's credit limit. The note must
+not claim discovery of a new objection family. It claims an internal trilemma
+and a diagnosis of why the local strategy cannot select its own scale.
 
-**Recommendation:** the standalone note is now the totality reductio, not the
-P1** coverage retarget. The coverage/(a)+(b) model is retained as an independent
-finite countermodel. Do not submit until the independent totality-logic and
-totality-priority audits report and (T4) survives its strongest objection.
+**Recommendation:** the standalone note is now the universe trilemma, not the
+P1** coverage retarget and not a categorical refutation. The coverage/(a)+(b)
+model is retained as an independent finite countermodel. Do not submit until a
+priority audit is completed and the trilemma's interpretive premises are
+independently reviewed.

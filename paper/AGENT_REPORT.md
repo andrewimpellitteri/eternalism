@@ -92,40 +92,49 @@ prospectus material was cut or moved per
 problem. The second re-review required that retarget; independent source,
 logic and priority checks are in progress.
 
-## Totality rebuild, 21 October 2026
+## Totality rebuild and trilemma repair, 21 October 2026
 
 Post-Savitt audits changed the target again. The Savitt-delta audit found that
 the P1** coverage retarget is not an increment: Brading 2013 p. 1110 already
 states local boundedness. The critical-note assessment and the
 alternative-contribution scout found a stronger internal argument: Brading's
 own principle identifies what exists with the genuine unities and applies the
-law-constitutive approach to the material universe (2015 p. 16; 2013 p. 1106
-n. 3). The universe is therefore a thing that exists; its sustaining region is
-the whole history; P1** (a) is false of it. The draft was rebuilt around that
-reductio, with the four-event coverage model retained as an independent finite
-countermodel and the scale-free-criterion diagnosis as the positive moral.
+law-constitutive approach to the material universe (2015 p. 16; 2013 p. 1105
+n. 3). A first draft claimed a categorical reductio: the universe is a thing;
+its sustaining region is W; P1** (a) is false of it.
 
-Changes: `paper/main.tex` rewritten (8 pages); `paper/references.bib` gains
+The independent logic audit (`paper/reviews/totality-logic/REVIEW.md`) rejected
+that form. T1 is an adopted premise, not a textual entailment; T4 is not sound
+as stated, because a Cauchy slice or thick global slab is a proper region and
+Brading's rejection of a spatially global present is qualified by "common to all
+systems"; the 2013 condition is sufficient and the 2015 condition necessary, so
+criticizing them for non-exhaustiveness attacks a straw man; the four-event
+model needs its assumptions and 2013 n. 7; "scale-free" misdescribes a
+scale-general approach. The draft was repaired into a three-horn trilemma
+(9 pages): the universe's present is W (so (a) fails on the unrestricted
+reading), a proper region (global, requiring a qualification; or local,
+requiring an account), or outside the domain (global claim lost). The conclusion
+is conditional: P1** cannot be both universal and satisfied by the universe
+without an account Brading does not supply. The defeat/survival criticism is now
+about framing, using "the crucial question" (2015 p. 18) and "A great deal
+rests..." (2013 p. 1110). The diagnosis is "scale-general," with a missing
+scale-selection guarantee.
+
+Changes: `paper/main.tex` rewritten (9 pages); `paper/references.bib` gains
 Savitt 2021 and Rovelli 2019; `paper/check_records.py` gains a finite test of
-the two-system/four-event model. The 2013 defeat condition is described as
-incomplete, not as a non-sequitur, because "for whatever system we try to
-consider" can be read universally. The weakest premise is (T4): the inference
-that the universe's sustaining region is W. It is argued from Brading's
-aggregation sentence (2015 p. 16) and her rejection of a spatially global
-present (p. 17), not proved. The interaction passage is used only for the
-negative verdict.
-
-Verification: `python3 paper/check_records.py` runs six tests, all pass,
-including the four-event model. pdfTeX/TeX Live 2026 builds four passes with
-BibTeX; no unresolved references or overfull boxes. macOS PDFKit renders all
-eight pages; the coordinator inspected pages 1-8. `verification.json` records
-nine citation keys, hashes, build and visual coverage. Sources read at full text
-this session: Brading 2013 (hash `c93ca072…`), Brading 2015 (hash `7caceae7…`),
-Savitt SEP §3.3 live. Balaguer 2026 body and Brading 2011/2014 are unread; they
-are the main prior-art gap.
+the two-system/four-event model. Verification: `python3 paper/check_records.py`
+runs six tests, all pass, including the four-event model. pdfTeX/TeX Live 2026
+builds four passes with BibTeX; no unresolved references or overfull boxes.
+macOS PDFKit renders all nine pages; the coordinator inspected pages 1-9.
+`verification.json` records nine citation keys, hashes, build and visual
+coverage. Sources read at full text this session: Brading 2013 (hash
+`c93ca072…`), Brading 2015 (hash `7caceae7…`), Savitt SEP §3.3 live. Balaguer
+2026 body and Brading 2011/2014 are unread; they are the main prior-art gap.
 
 This is still a working note, not an accepted result or a submission-ready
-manuscript. Independent totality-logic and totality-priority audits are running
-under `paper/reviews/`. No submission, upload, authorship decision or ontology
-claim is made here. No other task's worktree, the runner, the grid or the shared
-seed sources were changed.
+manuscript. The independent priority audit could not run: the subagent hit the
+account's credit limit, and `paper/reviews/totality-priority/` is empty. A
+bounded web/SerpApi search found no published statement of the universe
+trilemma, but this is not a priority certificate. No submission, upload,
+authorship decision or ontology claim is made here. No other task's worktree,
+the runner, the grid or the shared seed sources were changed.
