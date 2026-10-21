@@ -106,3 +106,26 @@ supersede the corresponding pending items above. Stein 1991 printed theorem
 wording was verified on p. 149 from a user-supplied 21-page scan; the display
 omits condition (iv), which the proof uses, so the article cites the theorem
 with that premise (see `knowledge/audits/stein-printed-pages/PRINTED_VERIFICATION.md`).
+
+## External review, 21 October 2026
+
+An external reviewer accepted the central methodological claim but judged the
+draft, as an original research contribution, largely unsuccessful: it is a
+careful prospectus that repeatedly stops before doing the substantive work.
+The concrete Stein objection was correct and has been repaired. Condition (iv)
+alone is not enough; the missing premise is causal-past inclusion, and the
+reflexive strict chronological past is a counterexample to the display plus
+(iv). The article now distinguishes the displayed theorem, non-universality,
+causal-past inclusion and chronological-past inclusion.
+
+The review's architectural points remain open: the weak/strong ambiguity in the
+framework, the gap between exclusion and favoring, admissibility's relocation
+of the disputed judgments, the absence of a completed application, the Brading
+classification/coverage problem, the underpowered one-dimensional quantum
+example, the record proposition's assumptions, the breadth of the physics, and
+the missing engagement with Saunders and Pooley.
+
+Status: **not submission-ready as a research paper.** See
+`reviews/external-2026-10-21/REVIEW.md`, `ASSESSMENT.md` and `REVISION_PLAN.md`.
+The recommended rebuild is a focused Brading/existence-bridge paper; the
+alternative is a methodological paper with one completed application.

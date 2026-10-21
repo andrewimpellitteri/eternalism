@@ -65,3 +65,21 @@ characterization. No broader error in Stein's paper is inferred.
   published article. The PDF is kept local and is not committed.
 - This closes the printed-page access gate for the theorem passage only; it
   does not complete a formal reconstruction of Stein's broader argument.
+
+## Condition (iv) is not sufficient
+
+The earlier note treated condition (iv) as the missing premise. It is not
+enough. Let `R(p,q)` hold iff `q=p` or `q` lies in the strict chronological
+past `I^-(p)` (past-directed timelike separation). This relation is reflexive,
+transitive, invariant under time-orientation-preserving automorphisms, has a
+past-pointing related pair, and is non-universal at every point. Yet it is not
+the causal-past relation: it omits distinct past-null-related events. So the
+displayed theorem plus (iv) still fails.
+
+Stein's prose on p. 149 supplies the additional premise that every event in the
+causal past---timelike **or null**---is definite as of the point. With
+causal-past inclusion and (iv), the argument yields the causal-past relation.
+Keep four items distinct: the displayed theorem, non-universality (iv),
+causal-past inclusion, and chronological-past inclusion. The earlier
+reconstruction conflated the last two; this is corrected here and in the
+article.

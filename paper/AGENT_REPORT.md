@@ -69,3 +69,15 @@ or a submission-ready manuscript. Generic authorship remains until human authors
 and affiliation are decided. Workboard review/acceptance is recorded by the
 coordinator after the named-file commit. No knowledge register, paper-ledger task,
 runner, grid, shared seed or other worker's worktree was changed by this task.
+
+## External review, 21 October 2026
+
+The external report is preserved in `reviews/external-2026-10-21/`. It accepts
+the central methodological claim but not the draft as an original research
+contribution. The concrete Stein error is fixed: adding non-universality does
+not recover the causal-past characterization; the reflexive strict
+chronological past is a counterexample, and causal-past inclusion is the
+missing premise. The quantum paragraph is relabelled as a one-dimensional
+diagnostic. The architectural objections are assessed in `ASSESSMENT.md`; the
+rebuild options are in `REVISION_PLAN.md`. The draft is not submission-ready as
+a research paper.

@@ -21,11 +21,11 @@
   "unresolved_references": false,
   "overfull_hboxes": false,
   "source_sha256": {
-    "paper/main.tex": "de94ef11e5c2a56ecd146a98fe9203122cf41a9922cdca1fa194227b6fd437b3",
+    "paper/main.tex": "703df01d38554132871417d819513ebebfdc2793ef3f406972ed95f1e8b90722",
     "paper/references.bib": "d838f15885ed83b52ada1292b1ec45c2a3883ca96c5df410ca41cb162b07a49b",
     "paper/check_records.py": "f819ae94e093b671a4f62cdfc178510cbd11aa0d6df716df6e094f962aeb85f5",
-    "output/pdf/temporal-ontology-working-draft.pdf": "c467e4ac5c4247070fdc7ef379877f9ff173ba216be80ba23924afb4f58baddd"
+    "output/pdf/temporal-ontology-working-draft.pdf": "876754f28cbb784e3f317fdd3f3e0ddc37931132222afefdf605774ab96c2a50"
   },
   "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. Stein printed-page gate closed at p.149 with condition (iv) caveat.",
-  "visual_review_note": "Not re-inspected page by page after the 21 October Stein-paragraph and reference updates; build, page count, unresolved-reference and overfull-box checks passed. The theorem-note PDF was built separately."
+  "visual_review_note": "Build checked after the 21 October Stein and quantum corrections; page-by-page visual inspection not repeated. 12 pages, no unresolved references or overfull boxes."
 }
