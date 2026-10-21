@@ -97,7 +97,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `paper-priority-referee` — Targeted priority audit and referee-style review of the selected paper | 9 | — | opencode-coordinator |
 | done | `growth-completion-c3-revision` — Correct growth-completion Prop. 5/C3 and re-audit downstream covtree claims | 9 | — | opencode-coordinator |
 | open | `empirical-discriminator-audit` — Audit proposed empirical discriminators for temporal ontology | 8 | — | — |
-| open | `completion-access-dilemma` — Completion, access, and the growing-block dilemma | 9 | — | — |
+| done | `completion-access-dilemma` — Completion, access, and the growing-block dilemma | 9 | — | opencode-coordinator |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
