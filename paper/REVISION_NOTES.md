@@ -24,7 +24,7 @@
 |---|---|
 | The project's doubly-principal theorem for complex percolation and the conditional covariant extension | `adversarial-review` (claimed by codex-adversarial), then `paper-novel-result`, a separate paper |
 | Long-shot results: no observable birth-order trace under norm-only covariance; stage-limit covtree walk without countable completion | Independent review of `research/longshots/`; priority checks; both are at most small remarks |
-| Putnam/Stein paragraph | Printed Stein 1991 theorem; Putnam record reconciliation |
+| Putnam/Stein paragraph | Closed 21 Oct: printed Stein p. 149 theorem inspected; Putnam record reconciled. The article uses the contextual condition (iv). |
 | Defender replies (Bourne, Correia–Rosenkranz, Cameron, Skow) | Full-text reads; still frozen per `research/redteam/paper-ledger/FREEZE.md` |
 
 ## Build

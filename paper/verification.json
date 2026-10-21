@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-20",
+  "checked_on": "2026-10-21",
   "task": "article-working-draft",
   "citation_keys": 14,
   "missing_bib_keys": [],
@@ -15,26 +15,17 @@
   "tex_tool": "/Library/TeX/texbin/pdflatex",
   "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
   "render_tool": "Swift macOS PDFKit via paper/render_pdf.swift",
-  "pdf_pages": 9,
-  "visually_reviewed_pages": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9
-  ],
+  "pdf_pages": 12,
+  "visually_reviewed_pages": [],
   "visual_defects_found": [],
   "unresolved_references": false,
   "overfull_hboxes": false,
   "source_sha256": {
-    "paper/main.tex": "0c1a6a5bc587c468bc88d79f01b33625dc7e50b93c549aacf997aa0d6ea73314",
-    "paper/references.bib": "090e9524b1c6947a7c12d921dff559281a45b302e709360a9c14167560988692",
+    "paper/main.tex": "de94ef11e5c2a56ecd146a98fe9203122cf41a9922cdca1fa194227b6fd437b3",
+    "paper/references.bib": "d838f15885ed83b52ada1292b1ec45c2a3883ca96c5df410ca41cb162b07a49b",
     "paper/check_records.py": "f819ae94e093b671a4f62cdfc178510cbd11aa0d6df716df6e094f962aeb85f5",
-    "output/pdf/temporal-ontology-working-draft.pdf": "82d5da72693525650008f5b4f779bdce308412521e6584debf5be43b045dd163"
+    "output/pdf/temporal-ontology-working-draft.pdf": "c467e4ac5c4247070fdc7ef379877f9ff173ba216be80ba23924afb4f58baddd"
   },
-  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval."
+  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. Stein printed-page gate closed at p.149 with condition (iv) caveat.",
+  "visual_review_note": "Not re-inspected page by page after the 21 October Stein-paragraph and reference updates; build, page count, unresolved-reference and overfull-box checks passed. The theorem-note PDF was built separately."
 }

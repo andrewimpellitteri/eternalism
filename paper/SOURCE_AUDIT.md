@@ -16,7 +16,7 @@ first-pass source summaries that have not yet been reconciled.
 | Skow2015 | Publisher abstract/contents; `phil-skow` | Distinguishes robust passage and examines spotlight objections; full arguments pending. |
 | McTaggart1908 | Public copy of original journal scan, pp. 458-461; bounded native passage check in `reviews/evidence/AGENT_REPORT.md`. `phil-mctaggart` remains discovery in the unchanged knowledge register. | The narrow order/change/A-series distinction is passage-checked; no verification of the whole unreality argument, new solution or global depth upgrade. |
 | Putnam1967 | Foundations second-pass audit of pp. 241--247, especially Principle III and closure | Attribute bridge-principle structure. Canonical foundations record reconciles the partial first pass and broader second pass in reading_history; exact quotation not used. |
-| Stein1991 | Foundations audit, fresh full-text spotcheck and coordinator inspection of OCR/context, pp. 148-150 | The isolated OCR implication is false without contextual conditions; preserve full-causal-past inclusion and unsettled states when discussing the preceding argument. No independently reproduced characterization or necessity table. Printed theorem image unresolved; no claim of a published error. |
+| Stein1991 | Printed JSTOR page images inspected 21 Oct 2026, pp. 148-150 (theorem p. 149); foundations audit and full-text spotcheck inherited | The printed theorem includes reflexivity and the dimension qualification, but its display omits condition (iv), which the proof uses to exclude the universal relation. The article cites the theorem with that contextual premise. No independently reproduced characterization or necessity table; no broader error attributed. |
 | Brading2013 | Complete eleven-page journal-paginated public PDF copy read at argument level by the native evidence reviewer; exact route/scope in `reviews/evidence/AGENT_REPORT.md` | Supports the existing limited characterization. The copy matches published metadata/layout but was not collated with a publisher-hosted file. No independent Newton reconstruction, quantitative discriminator or ontology selection. Canonical source-record reconciliation remains pending. |
 | HoehnSmithLock2019 | Version 3 selected full-text theorem/assumption audit and fresh spotcheck, `frontier/theorem-matrix.md`; journal metadata checked separately | Printed citation uses the 2021 journal year; internal key retains its older name. Text inspected was arXiv v3, not a separate journal-body collation. Conditional equivalence and noninteraction/clock restrictions only; no proof independently reproduced. |
 | SmithAhmadi2019 | Primary journal metadata and version 3 selected full-text interaction-equation audit | Interactions already studied; no broad research gap claimed. No independent model reproduction. |
@@ -55,9 +55,11 @@ bibliography review verifies metadata rather than philosophical entailment.
 Malament 1977 was read from a published scan in the separate full-text spotcheck;
 Stein 1968 remained inaccessible. Neither is silently substituted for Stein 1991
 or added to the present argument. Putnam's reading histories are reconciled in the canonical foundations record; Brading's
-multiple records still need owner reconciliation. The printed Stein page image,
-model-selection gate and philosophical-priority audit remain open. These reviews
-improve an explicitly provisional draft, not submission readiness.
+multiple records still need owner reconciliation. The printed Stein page image is
+now inspected: the theorem is on p. 149 and the display omits condition (iv),
+which the proof uses. The model-selection gate and philosophical-priority audit
+remain open. These reviews improve an explicitly provisional draft, not
+submission readiness.
 
 ## Revision of 21 October 2026: new citations
 

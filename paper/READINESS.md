@@ -50,8 +50,8 @@ argument level; publisher-file collation and reconciliation of the source
 records remain pending. The original frozen argument has not been expanded on
 that basis. Malament 1977's primary text is accessible and checked in the
 separate source audit; Stein 1968 is still inaccessible through the attempted
-routes. Stein 1991's printed-page/OCR discrepancy remains unresolved. The
-Bernal-Sanchez primary statement now has an existing full-text knowledge record
+routes. Stein 1991's printed-page question was later resolved by the 21 October
+inspection below. The Bernal-Sanchez primary statement now has an existing full-text knowledge record
 and fresh statement-level spotcheck.
 
 The current work completes a reviewable working draft only. It does not pass

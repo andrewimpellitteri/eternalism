@@ -15,8 +15,8 @@ and inspected its rendering. The novelty and selection gates remain unmet.
 
 Manuscript changes clarify our Callender/Maudlin inference, the clock-rate bridge,
 preregistered admissibility commitments and sensitivity to alternative profiles,
-Stein's false isolated OCR implication versus contextual constraints and unknown
-printed-page status, the proposition's matched-kernel premise, the intervention's
+Stein's printed p. 149 theorem, whose display omits condition (iv) and requires
+the contextual premise, the proposition's matched-kernel premise, the intervention's
 exogenous variable, and smooth Cauchy slicings. The admissibility defense remains
 under-developed. Frozen Brading and prospective physical claims were not expanded.
 
@@ -58,8 +58,9 @@ The argument reviewer finds the admissibility standard and positive explanatory
 route under-defended; symmetry alone does not establish non-circularity. Strongest
 published defender/critic arguments remain to be reconstructed. The probability
 proposition assumes preservation and is not offered as novel. Source-record
-reconciliation, Stein's printed-page comparison, complete predecessor/priority
-assessment, physical target selection and later result-level review remain open.
+reconciliation, complete predecessor/priority assessment, physical target
+selection and later result-level review remain open; the Stein printed-page
+comparison is closed.
 A full Brading read alone establishes neither her proposed discriminator nor
 her ontology.
 
