@@ -89,7 +89,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
 | done | `clock-action-correspondence` — Repair finite-clock comparison: charge origin, aliasing and valid cyclic actions | 10 | — | codex-clock-audit |
 | open | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | codex-observer-audit |
-| open | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | — |
+| done | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | opencode-coordinator |
 | done | `bc-nonvanishing-continuation` — Does Bell-causal phase freedom survive when every transition is nonzero? | 10 | — | codex-native-bc-nonzero |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
