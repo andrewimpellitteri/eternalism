@@ -167,7 +167,7 @@ named cost. Horn 4 (no gauge fixing, frozen whole) stays as before.
 | Route to the universe's global present | Conserved total quantity? | Cost | Source |
 |---|---|---|---|
 | (a) generic internal time (scale factor, mean curvature) | no: reduced Hamiltonian time-dependent | fails Brading's unity test | Isham 1991 p. 200 |
-| (b) ideal clock, full deparametrisation | yes: "invariant, positive and time independent physical Hamiltonian" (Thiemann p. 17) | needs derivative-only phantom matter (DBI, Eq. 2.1, no potential), compensating k-essence, recollapse; **observable corrections to FRW** "whatever matter is used" (p. 9) | Thiemann 2006 |
+| (b) ideal clock, full deparametrisation | yes: "invariant, positive and time independent physical Hamiltonian" (Thiemann p. 20) | needs derivative-only phantom matter (DBI, Eq. 2.1, no potential), compensating k-essence, recollapse; **observable corrections to FRW** "whatever matter is used" (p. 9) | Thiemann 2006 |
 | (c) cosmic time along Hubble flow, conservative | not addressed | no actual system even approximately measures it; it is a model-based global average with the clock hypothesis as a coordinative definition (B–T pp. 17-20) | Bamonti–Thébault 2025 |
 
 **Best hook so far.** Brading calls her view "presentism as an empirical

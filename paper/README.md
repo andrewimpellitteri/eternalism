@@ -33,16 +33,18 @@ The displayed author line is deliberately generic: human authorship, affiliation
 acknowledgments and any journal-specific AI-disclosure wording require a later
 decision. The draft must not be submitted under invented author information.
 
-The 21 October 2026 reframe replaces the earlier prospectus with a focused
-note on Brading's P1** (10 pages). Its current argument is a three-horn
-trilemma: granting Brading's identification of what exists with the genuine
-unities, the universe is a candidate genuine unity; its present is either the
-whole history, a proper region (global or local), or outside the domain, and
-each option has a cost. The conclusion is conditional, not a refutation. A
-four-event model is retained as an independent countermodel to the claim that
-(a)+(b) imply a proper union. The earlier coverage-only framing is superseded; the
-20 October revision and its reviews remain preserved under `reviews/`; the
-external review and rebuild plan are under `reviews/external-2026-10-21/`.
-`verification.json` records the build, citation counts and source/output
-hashes. The submission gates in `READINESS.md` remain open pending independent
-re-review.
+The 21 October 2026 redraft (second of the day) reframes the note around the
+universe case as a problem of time: granting Brading's identification of what
+exists with the genuine unities, the universe's present in special relativity
+is the whole history, a global slice, a local region, outside the domain, or
+absent; in canonical general relativity the global-slice option splits into
+internal time (fails a regimented conservation test), an ideal clock (phantom
+matter, FRW corrections per Thiemann), cosmic time (model-based, coordinative,
+per Bamonti and Thébault) or no time (P1** restricted). The four-event coverage
+model is retained. Supporting notes and source records are in
+`research/brading-universe-frontier/`.
+
+**Build status:** this redraft has not been compiled. The cloud session that
+wrote it has no TeX installation; `verification.json` describes the previous
+version and is stale. Rebuild with the commands above, then update
+`verification.json`. The submission gates in `READINESS.md` remain open.
