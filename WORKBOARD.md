@@ -99,7 +99,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `empirical-discriminator-audit` — Audit proposed empirical discriminators for temporal ontology | 8 | — | opencode-coordinator |
 | done | `completion-access-dilemma` — Completion, access, and the growing-block dilemma | 9 | — | opencode-coordinator |
 | done | `article-reframe-scope` — Freeze the reframed article thesis, abstract and section plan | 10 | — | opencode-coordinator |
-| open | `brading-existence-bridge` — When does a local present restrict existence? The Brading coverage problem | 10 | — | — |
+| done | `brading-existence-bridge` — When does a local present restrict existence? The Brading coverage problem | 10 | — | opencode-coordinator |
 | open | `admissibility-burden-calibration` — Calibrate specification burdens: contradiction, likelihood, explanation and admissibility | 9 | — | — |
 | open | `favoring-account` — A positive account of defeasible favoring, not only exclusion | 9 | — | — |
 | open | `strongest-opponents` — Reconstruct Saunders and Pooley at their strongest | 9 | — | — |
