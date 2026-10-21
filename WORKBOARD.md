@@ -100,7 +100,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `completion-access-dilemma` — Completion, access, and the growing-block dilemma | 9 | — | opencode-coordinator |
 | done | `article-reframe-scope` — Freeze the reframed article thesis, abstract and section plan | 10 | — | opencode-coordinator |
 | done | `brading-existence-bridge` — When does a local present restrict existence? The Brading coverage problem | 10 | — | opencode-coordinator |
-| open | `admissibility-burden-calibration` — Calibrate specification burdens: contradiction, likelihood, explanation and admissibility | 9 | — | — |
+| done | `admissibility-burden-calibration` — Calibrate specification burdens: contradiction, likelihood, explanation and admissibility | 9 | — | opencode-coordinator |
 | open | `favoring-account` — A positive account of defeasible favoring, not only exclusion | 9 | — | — |
 | open | `strongest-opponents` — Reconstruct Saunders and Pooley at their strongest | 9 | — | — |
 | open | `examples-scope-cleanup` — Decide and execute the example/scope cleanup | 8 | — | — |
