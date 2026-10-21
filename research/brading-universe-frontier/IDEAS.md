@@ -70,11 +70,30 @@ mainly for the vacuum, spatially closed case, p. 271). To verify: read Isham
 time-dependent reduced Hamiltonian; and check whether Brading's criterion
 needs the total quantity to be conserved or only defined.
 
+## Update after full-text read of Monton (2005 preprint of 2006)
+
+Also passed (record `monton-2006-presentism-qg`; preprint pagination). Monton
+grants presentism is incompatible with SR and GR and rests it on fixed-foliation
+quantum gravity: one hypersurface of a CMC (or Bohmian) foliation represents
+the existing events (pp. 4-6). He calls relativized presentism "ad hoc and
+unbelievable" (p. 6 n. 6), and allows emergent time (p. 20). No local presents,
+no unity criterion, no universe-own-present case.
+
+Use in the paper: Monton is exactly the horn-2a route (a global slice as the
+universe's present). The new point is that this route, combined with Brading's
+conservation-under-isolation criterion, costs the universe its unity
+(Wüthrich p. 274, reporting Isham). So the dilemma joins two literatures that
+have not met: the Monton-Wüthrich foliation debate and Brading's
+law-constitutive local presentism. Brading's local view escapes Wüthrich's
+Lorentz-symmetry objection to Monton, but meets the problem of time at the
+universe.
+
 ## Prior art to beat (discovery level unless marked)
 
 - **Monton 2006, "Presentism and quantum gravity"** (Dieks ed., *The Ontology
-  of Spacetime*; PhilSci-Archive 2308). Presentism compatible with QG theories
-  using a fixed (e.g. CMC) foliation. Global-present presentism; not Brading.
+  of Spacetime*; PhilSci-Archive 2308). **Full text read (2005 preprint).**
+  Presentism compatible with QG theories using a fixed (e.g. CMC) foliation.
+  Global-present presentism; not Brading.
   https://philsci-archive.pitt.edu/2308/
 - **Wüthrich 2010, "No presentism in quantum gravity"** (Petkov ed., *Space,
   Time, and Spacetime*). **Full text read.** Argues the CMC route fails. Same
