@@ -94,7 +94,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `rank-renewal-convergence` — Settle the weighted convergence obligation for rank-only post values | 10 | — | — |
 | done | `operator-qbc-phase-holonomy` — Does Bell-causal phase freedom survive operator-valued QBC? | 10 | — | opencode-coordinator |
 | open | `observer-growth-channel` — Derive a causal-set observer channel and test the unstable event | 10 | — | — |
-| open | `paper-priority-referee` — Targeted priority audit and referee-style review of the selected paper | 9 | — | — |
+| done | `paper-priority-referee` — Targeted priority audit and referee-style review of the selected paper | 9 | — | opencode-coordinator |
 | done | `growth-completion-c3-revision` — Correct growth-completion Prop. 5/C3 and re-audit downstream covtree claims | 9 | — | opencode-coordinator |
 | open | `empirical-discriminator-audit` — Audit proposed empirical discriminators for temporal ontology | 8 | — | — |
 
