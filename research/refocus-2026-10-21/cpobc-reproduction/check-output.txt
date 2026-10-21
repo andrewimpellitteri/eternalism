@@ -1,0 +1,16 @@
+symbolic identity: exact maps agree; coefficient polynomial={(1, 0): 2, (1, 1): -2, (0, 0): -1, (0, 1): 1}
+complementary-mixing failure control: [F,B]=0, det(B)=5; [A^-1B,BA^-1]_11=27/4 != 0
+commuting block control: diagonal B satisfies [A^-1B,BA^-1]=0
+simple-R failure control: distinct eigenvalues force [R,Qn]=0, while this mixed Qn gives [[Fraction(0, 1), Fraction(1, 6)], [Fraction(-1, 6), Fraction(0, 1)]]
+noncomplementary-spectrum control: F eigenvalues 2/9 and 3/16; [F,Qn]_12=5/144
+commuting-control: q=1/3, r=1/2, coefficient=-1/6
+  det(Q1)=2/9, det(Q2)=1/18, det(Qn)=6, det(T2)=1/4, det(S)=1/18, det(A)=6
+  Q_n=[[Fraction(2, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(3, 1)]]; A_n^(2)=[[Fraction(2, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(3, 1)]]; hermitian=True; [Q1,Qn]=0=True
+rejected-noncommuting-control: q=1/3, r=1/2, coefficient=-1/6
+  det(Q1)=2/9, det(Q2)=1/18, det(Qn)=5, det(T2)=1/4, det(S)=1/18, det(A)=5
+  Q_n=[[Fraction(2, 1), Fraction(1, 1)], [Fraction(1, 1), Fraction(3, 1)]]; A_n^(2)=[[Fraction(2, 1), Fraction(1, 2)], [Fraction(2, 1), Fraction(3, 1)]]; hermitian=False; [Q1,Qn]=0=False
+rejected-singular-control: q=1/3, r=1, coefficient=0
+  det(Q1)=2/9, det(Q2)=2/9, det(Qn)=5, det(T2)=0, det(S)=2/9, det(A)=5
+  Q_n=[[Fraction(2, 1), Fraction(1, 1)], [Fraction(1, 1), Fraction(3, 1)]]; A_n^(2)=[[Fraction(-4, 1), Fraction(-1, 1)], [Fraction(-1, 1), Fraction(-3, 2)]]; hermitian=True; [Q1,Qn]=0=False
+singular-Q1-control: det(Q1)=0; inverse gate rejects it
+PASS: exact rational matrix checks and factorization identity
