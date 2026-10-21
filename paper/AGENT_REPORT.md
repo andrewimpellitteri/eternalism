@@ -139,8 +139,9 @@ coverage. Sources read at full text this session: Brading 2013 (hash
 
 This is still a working note, not an accepted result or a submission-ready
 manuscript. The independent priority audit could not run: the subagent hit the
-account's credit limit, and `paper/reviews/totality-priority/` is empty. A
-bounded web/SerpApi search found no published statement of the universe
-trilemma, but this is not a priority certificate. No submission, upload,
-authorship decision or ontology claim is made here. No other task's worktree,
-the runner, the grid or the shared seed sources were changed.
+account's credit limit. `paper/reviews/totality-priority/REVIEW.md` is a
+coordinator bounded note, not an independent audit. A bounded web/SerpApi and
+OpenAlex search found no published statement of the universe trilemma, but this
+is not a priority certificate. No submission, upload, authorship decision or
+ontology claim is made here. No other task's worktree, the runner, the grid or
+the shared seed sources were changed.

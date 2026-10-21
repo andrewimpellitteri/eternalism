@@ -192,9 +192,10 @@ judges the note "close to publishable as a specialist note" but not yet
 copy-edited; that judgement predates the current repairs.
 
 Current status: **working note, not submission-ready, novelty not established.**
-Independent logic review is complete and the repairs are recorded. The priority
-audit could not run: the subagent hit the account's credit limit
-(`reviews/totality-priority/` is empty). A bounded web/SerpApi search found no
+Independent logic review is complete and the repairs are recorded. The
+independent priority audit could not run: the subagent hit the account's credit
+limit. `reviews/totality-priority/REVIEW.md` is a coordinator bounded note, not
+an independent audit. A bounded web/SerpApi and OpenAlex search found no
 published statement of the universe trilemma, but PhilPapers/Scholar were not
 searched, Balaguer 2026's body and Brading 2011/2014 remain unread, and absence
 of hits is not priority. Do not submit or claim discovery.

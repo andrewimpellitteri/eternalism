@@ -237,7 +237,9 @@ Brading's own premises; no published statement was found in the bounded search,
 but Balaguer 2026's body and Brading 2011/2014 were not read, and
 PhilPapers/Scholar were unavailable. The independent logic audit rejected the
 categorical form and forced the trilemma repair; the independent priority audit
-did not run because the subagent hit the account's credit limit. The note must
+did not run because the subagent hit the account's credit limit; a coordinator
+bounded note is at `paper/reviews/totality-priority/REVIEW.md`, but it is not an
+independent audit. The note must
 not claim discovery of a new objection family. It claims an internal trilemma
 and a diagnosis of why the local strategy cannot select its own scale.
 
