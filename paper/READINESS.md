@@ -61,10 +61,12 @@ the workboard's drafting task.
 
 ## Revision update, 21 October 2026
 
-- Gate 3 (source correspondence): **partly closed.** Full Brading 2013 and 2015 and
-  the full Clifton–Hogarth primary are now read and used. The printed Stein 1991
-  theorem and the Putnam record reconciliation remain open, so the Putnam/Stein
-  paragraph is unchanged apart from the added Clifton–Hogarth theorem.
+- Gate 3 (source correspondence): **closed for the cited passages.** Full
+  Brading 2013 and 2015 and the full Clifton–Hogarth primary are read and used.
+  The printed Stein 1991 theorem was inspected on p. 149 from a user-supplied
+  JSTOR scan; the display omits condition (iv), so the article cites it with
+  that contextual premise. The Putnam record is reconciled in the canonical
+  register.
 - Gate 4 (admissibility defense): one worked case added (Brading versus a composite
   block rival), reported as conditional underdetermination. It illustrates the
   framework; it does not defend the admissibility profiles.
@@ -101,4 +103,6 @@ record. The Arageorgis quotation is now visually verified on printed p. 52 of
 the public journal PDF. Wüthrich–Callender arXiv:1502.00018v1 has now been read
 in full at argument level; journal collation remains unperformed. These updates
 supersede the corresponding pending items above. Stein 1991 printed theorem
-wording remains blocked as documented in the existing access audit.
+wording was verified on p. 149 from a user-supplied 21-page scan; the display
+omits condition (iv), which the proof uses, so the article cites the theorem
+with that premise (see `knowledge/audits/stein-printed-pages/PRINTED_VERIFICATION.md`).

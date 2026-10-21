@@ -1,5 +1,12 @@
 # Stein printed-page check: access-limited result
 
+> **Update 2026-10-21:** a user-supplied 21-page JSTOR scan was inspected.
+> The theorem is printed on **p. 149** and includes reflexivity and the
+> dimension qualification. The display omits condition (iv), which the
+> surrounding proof uses; the universal relation is a counterexample to the
+> four displayed hypotheses alone. See `PRINTED_VERIFICATION.md`. The
+> access-limited history below is preserved.
+
 Coordinator: `codex-stein-pages`, 2026-10-20. A separate native reader also
 attempted public publisher/library routes; see `access-review/AGENT_REPORT.md`.
 

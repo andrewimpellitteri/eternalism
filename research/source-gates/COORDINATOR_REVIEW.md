@@ -49,3 +49,14 @@ reconstruction remain open. No novelty or ontological claim follows.
   pagination.
 - Stein still needs a licensed or user-supplied scan; public routes are
   exhausted within this task's scope.
+
+## Addendum, 21 October: Stein gate closed
+
+A user-supplied 21-page JSTOR scan of Stein 1991 was inspected after this
+review. The theorem is printed on p. 149 and includes reflexivity and the
+dimension qualification. The displayed statement omits condition (iv), which
+the proof uses to exclude the universal relation. The article now cites the
+theorem with that contextual premise. This supersedes the "Stein remains
+blocked" sentence above for the printed-wording part of the gate; the
+access-limited history in `knowledge/audits/stein-printed-pages/` is
+preserved. See `PRINTED_VERIFICATION.md`.

@@ -7,7 +7,7 @@ Reader: codex-source-gates, 2026-10-21. Proposals for the manuscript owner.
 | Arageorgis conclusion | CLOSED for quotation and locator | Public journal PDF, printed p. 52 (PDF page 20), visually inspected after local rendering; text extraction compared. |
 | Wüthrich–Callender | CLOSED for cited preprint reading | arXiv:1502.00018v1, all five sections read as HTML; journal edition not collated; no mathematical proof reconstruction. |
 | Putnam record reconciliation | ALREADY CLOSED in canonical register | Current found-putnam in knowledge/foundations/sources.jsonl records both reading histories and the corrected Principle III interpretation; older proposed record is historical. No fresh primary reading today. |
-| Stein printed theorem | BLOCKED in existing access audit | knowledge/audits/stein-printed-pages/ records publisher, JSTOR, Paperzz and library routes; no inspectable printed theorem page. No new route tested today. |
+| Stein printed theorem | CLOSED for printed wording, with caveat | User-supplied 21-page JSTOR scan inspected (pp. 148-150, SHA-256 `fef022...153f7`). The theorem is on p. 149 and includes reflexivity; the displayed statement omits condition (iv), which the proof uses. See `knowledge/audits/stein-printed-pages/PRINTED_VERIFICATION.md`. |
 
 ## Arageorgis: verified primary passage
 
@@ -56,3 +56,15 @@ from pinned HTML. Re-inspected current canonical and historical Putnam records
 and the two Stein access reports. No source registry outside this task was edited.
 No new novelty, ontology, or theorem claim follows from closing these gates.
 Stein remains blocked and is deliberately not upgraded.
+
+## Addendum, 21 October: Stein printed theorem inspected
+
+A user-supplied 21-page JSTOR scan (DOI `10.1086/289609`, local SHA-256
+`fef0224102cca5037a9da1878f541ee074e64412fe71e52504b94ebc915153f7`) closes the
+printed-wording part of the Stein gate. The theorem is on **p. 149**, not
+p. 150, and includes reflexivity and the "at least two dimensions" qualification.
+The four conditions (i)-(iv) are on pp. 148-149. The displayed theorem omits
+condition (iv), which the proof uses to exclude the universal relation; the
+universal relation is a counterexample to the four displayed hypotheses alone.
+The article must cite the theorem with that contextual premise or not cite the
+isolated display. This is not a claim that Stein's broader argument fails.

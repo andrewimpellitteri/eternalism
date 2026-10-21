@@ -32,8 +32,10 @@ proof review is not an external referee report or a global priority certificate.
 - **Zalel, *Discrete random spacetimes: covariance and quantization in growth
   dynamics for causal sets* (Imperial, 2021).** Ch. 6 §6.2.3 pp. 89–90 was read
   in the prior native source/novelty lanes. This drafting task inherits their
-  verified locator; it did not independently reopen or reread the thesis PDF.
-  The citation identifies the institutional record, not a new read claim.
+  locator and could not obtain a fresh copy; it did not independently reopen
+  the thesis PDF. The citation is prior-work attribution only. The priority
+  delta is carried by the published Dowker–Zalel Sec. V statement, not by the
+  thesis.
 - **Bombelli–Seggev–Watson, 0809.2258v2 (25 September 2008).** Targeted full-text
   read of §2, Theorem 2.1, Eq. (2) and the following infinite-post attribution.
   Its probability identity is also rederived in the manuscript. No publisher
