@@ -28,10 +28,12 @@ Submission for review; no novelty claim. Sources: `sources.jsonl` (14 records).
    gr-qc/0703098v1 Sec. 5 and Sec. 7 footnote; Wüthrich 2308.05217v1 Sec. 3.3. Only
    the completion horn is specific to `p ∉ [0,1]`.
 4. **Escape via covtree.** For `|1−p| < 1`, `p ∉ [0,1]`, stage limits of the
-   labelled amplitudes define covariant covtree amplitudes (shown at level 2 and on
-   every principal singleton node), so a growth reading can ask covariant
-   finite-level questions. But covtree nodes constrain the whole infinite future,
-   not "what has grown so far"; for `|1−p| > 1` the construction fails at level 2.
+   labelled amplitudes define covariant covtree amplitudes (shown at level 2 and,
+   with the corrected `N_{H}=D'_{H^-}` values, on every principal singleton node),
+   so a growth reading can ask covariant finite-level questions. The principal
+   node values are the corrected product in Prop. 5, not the `D'_H` values. But
+   covtree nodes constrain the whole infinite future, not "what has grown so
+   far"; for `|1−p| > 1` the construction fails at level 2.
 5. **Residual (Prop. 6), priority unverified:** the stage-limit covtree walk
    `W_p` has level-n total variation `≥ |c(q)|·V_n(p) → ∞`, `c(q) = Π_{j≥1}(1−q^j)`,
    so it has no countably additive completion. Elementary corollary of
@@ -61,9 +63,12 @@ finitely branching tree, compact, with clopen sets exactly `Z`.
   with `μ_v` on `Z`. Known (DJS Lemma 1, Claim 5; SZ Thm 2.1, Eqs. 60–62).
 - (C2) For any normalized countably additive `ν` on `R` there is a finitely
   additive `m` on `alg(Z ∪ R)` with `m|_Z = μ_v`, `m|_R = ν`. All p; elementary.
-- (C3) For `|1−p| < 1` and principal `H`, the post-tail event `D'_H = N_{{H}}` has
+- (C3) For `|1−p| < 1` and principal `H`, the post-tail event `D'_H` has
   stage-m amplitudes `N(H)A_p(H)Π_{k=1}^{m−n}(1−q^k) → c(q)N(H)A_p(H)`, `c(q) ≠ 0`;
-  no countably additive measure takes these values. For `|1−p| > 1` the stage
+  no countably additive measure takes these values. **[Corrected 21 Oct 2026:
+  `D'_H` is not the covtree node `N_{H}`. The correct identity is
+  `N_{H} = D'_{H^-}`; see Prop. 5 and `ERRATUM.md`. The non-extension
+  conclusion uses `D'_H` and is unchanged.]** For `|1−p| > 1` the stage
   limits diverge already at the 2-chain.
 
 Not claimed: that `R` has no measures; that growth readings must be labelled;
@@ -83,10 +88,15 @@ anything on `|1−p| = 1`; failure of Sorkin's 1104.0997 method (untested).
   since `S(Z) ∩ S(R)` are constants; extend via a Hamel complement (uses choice).
   Reading: "completed histories get the dynamics' measure" is a continuity
   postulate, even for real p.
-- **Prop. 5:** for principal `H` with top `t`, the n-stem set is `{H}` iff every
-  element outside `H` lies above `t`; `t` has label n−1 in every natural
-  labelling, so `D'_H = N_{{H}}` is covariant; element j ≥ n lies above t with
-  amplitude `1−q^{j−n+1}`.
+- **Prop. 5 (corrected 21 Oct 2026):** for principal `H`, the covtree node
+  `N_{H}` (n-stem set exactly `{H}`) equals `D'_{H^-}`, where `H^-` is `H` with
+  its top removed, **not** `D'_H`. Its stage-m value is
+  `N(H) A_p(H) prod_{j=1}^{m-n}(1 - q^j(1-p^k))`, `k = #max(H^-)`, equivalently
+  the post-tail formula for `H^-`. The original "every element outside `H` lies
+  above `t`" iff-claim is false; the counterexample is `{a<b, a<c}` followed by
+  an infinite chain above `b` and `c`. The post-tail `D'_H` keeps the formula
+  `N(H)A_p(H)(q;q)_{m-n}` and remains covariant. See `ERRATUM.md` and
+  `research/longshots/review/REVIEW.md`.
 - **Prop. 6:** level-n stage values are finitely additive (the level-(n+1) stem
   set determines the level-n one); level-2 limits exist for `|q| < 1` by an exact
   recursion; level-n total variation `≥ |c(q)| V_n(p) → ∞`.

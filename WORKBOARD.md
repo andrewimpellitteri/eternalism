@@ -95,7 +95,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `operator-qbc-phase-holonomy` — Does Bell-causal phase freedom survive operator-valued QBC? | 10 | — | — |
 | open | `observer-growth-channel` — Derive a causal-set observer channel and test the unstable event | 10 | — | — |
 | open | `paper-priority-referee` — Targeted priority audit and referee-style review of the selected paper | 9 | — | — |
-| open | `growth-completion-c3-revision` — Correct growth-completion Prop. 5/C3 and re-audit downstream covtree claims | 9 | — | — |
+| done | `growth-completion-c3-revision` — Correct growth-completion Prop. 5/C3 and re-audit downstream covtree claims | 9 | — | opencode-coordinator |
 | open | `empirical-discriminator-audit` — Audit proposed empirical discriminators for temporal ontology | 8 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
