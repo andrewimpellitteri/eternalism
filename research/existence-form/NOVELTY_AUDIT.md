@@ -22,6 +22,34 @@ global priority certificate.
 5. **Deflationary upshot.** The local-present route either changes the subject
    or needs an actuality/eligibility premise.
 
+## Update: decisive prior art (Savitt 2021)
+
+The independent priority audit found that Steven Savitt's SEP entry *Being and
+Becoming in Modern Physics*, §3.3 "Localizing Time" (substantive revision
+6 October 2021), already argues against Brading's local present:
+
+> Presents construed this way will typically be larger than a single point but
+> will not necessarily exhaust all of Minkowski spacetime or fall afoul of the
+> relativity of simultaneity. But this is a characterization of a relativistic
+> present, not relativistic presentism. Presumably every dynamical system that
+> has existed, does exist or will exist had, has or will have a region of
+> whatever size is necessary to sustain it. Furthermore, it is unclear under
+> what conditions two dynamical systems share a present.
+
+This is the paper's conclusion and its coverage premise in prose, aimed at
+Brading 2013. The earlier sentence in this audit — that the P1** coverage point
+"appears not to be stated in the prior work found" — is **withdrawn** for the
+Brading 2013 target. Savitt does not mention Brading 2015, P1**, clause (a), or
+"all we need is (a)", and he does not give the set-theoretic non-implication or
+the explicit coverage premise.
+
+**Revised novelty status:** the objection is not new. The surviving increment is
+a retargeting and formalisation: apply Savitt's point to Brading's 2015 P1**
+(a) and the sufficiency sentence "all we need is (a)", state the non-implication
+explicitly, and map the repair costs. That is a short critical note, not a new
+objection or a new theory. The paper must cite and quote Savitt, and must not
+claim the objection as its own.
+
 ## Closest prior work
 
 ### Brading 2013, 2015
@@ -95,12 +123,13 @@ restriction.
 
 ## Verdict
 
-**Modest, source-grounded novelty; not a new general theory.**
+**Objection not novel (Savitt 2021); narrow retargeting/formalisation increment only.**
 
 - The **P1\*\* coverage point** — that Brading's own (a) is local boundedness and
-  does not exclude coverage, so "all we need is (a)" is insufficient — appears
-  not to be stated in the prior work found. This is the paper's defensible
-  contribution.
+  does not exclude coverage, so "all we need is (a)" is insufficient — is
+  **not new as an objection**: Savitt 2021 makes it against Brading 2013. The
+  surviving increment is the 2015 P1** retarget, the formal non-implication and
+  the cost analysis.
 - The **coverage non-implication** is elementary and should not be sold as
   novel.
 - **System-/frame-relative existence** is not novel: Balaguer 2026 and Mason
