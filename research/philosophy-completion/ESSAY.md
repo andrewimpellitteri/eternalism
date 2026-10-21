@@ -187,7 +187,9 @@ success probability approaches `1/4` while the event measure diverges
 (`research/event-filter-resources/RESULT.md`). The covariant-observer
 comparison shows that a cardinality-only algebra cannot resolve the
 phase-aligned event, while an unlabelled-class quotient can in the symmetric
-models (`research/covariant-observer-witness/RESULT.md`). These are model
+models (`research/covariant-observer-witness/RESULT.md`); the growth-derived
+analysis shows that record access or any dephasing removes the coherent effect
+even when the event is class-defined (`research/observer-growth-channel/RESULT.md`). These are model
 results, not a general theory of access, but they support the philosophical
 point: "global becoming" and "accessible becoming" are different notions, and
 the non-extension theorem bears directly only on the former.
