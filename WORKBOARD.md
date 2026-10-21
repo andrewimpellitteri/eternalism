@@ -86,7 +86,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `paper-source-gates` — Paper source gates | 7 | — | codex-source-gates |
 | claimed | `bridge-principle-defense` — Bridge principle defense | 8 | — | claude-philosopher |
 | done | `operational-stability-boundary` — Derive the operational stability boundary of finite-history amplitudes | 9 | — | codex-stability |
-| claimed | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
+| done | `event-filter-resource-boundary` — Test whether event filters can access divergent-history witnesses at finite cost | 9 | — | codex-event-filter |
 | done | `clock-action-correspondence` — Repair finite-clock comparison: charge origin, aliasing and valid cyclic actions | 10 | — | codex-clock-audit |
 | claimed | `covariant-observer-witness` — Can a covariant internal observer access the unstable finite-history event? | 10 | — | codex-observer-audit |
 | open | `record-loss-robust-boundary` — Find the robust interference boundary for partial access to environmental records | 9 | — | — |
