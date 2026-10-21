@@ -1,6 +1,6 @@
 # Weighted convergence for rank-only post values: the obligation closes
 
-Status: worker result, 2026-10-21, submitted for review. Task
+Status: coordinator-reviewed and corrected, 2026-10-21. Task
 `rank-renewal-convergence`. This document closes the **analytic** obligation
 left open in `research/rank-renewal-followup/STATUS.md` and
 `research/adversarial-review/coordinator/RENEWAL_OBSTRUCTION.md`, and thereby
@@ -12,6 +12,14 @@ not a physical result. The measure-theoretic frame (the covariant posts algebra,
 countable additivity, the laminar cover) is **imported** from
 `research/creative/COVARIANT_RESULT.md`; I re-derive the rank-only part but do
 not independently formalise countable additivity on that algebra.
+
+Review erratum: the original Lemma 2(iii) omitted covers from isolated lower
+vertices to the cap; its displayed bound was false when `b=1, a<1`. The
+corrected row sum below retains the required growth. The bridge-bound degree
+count and star multiplicity explanation are also corrected. See
+`research/refocus-2026-10-21/rank-audit/RESULT.md` for the independent structural
+audit and exact counterexample. These repairs establish neither global priority
+nor a result without the rank-only rule.
 
 Verdict: **(a)** — the needed weighted estimate is true and is proved below in
 all three parameter regimes. Consequently the conditional obstruction is not
@@ -120,7 +128,8 @@ is counted at most twice, so
 
 Row degrees are `j,j-1,…,1` and column degrees are `1,…,j`. For `b≤1`,
 `b^{e} ≤ b^{(Σdeg)/2}` and summing factorises into `Π_d(1+b^{d/2})` twice,
-giving (1a); for `b≥1`, `b^e ≤ b^{Σdeg} ≤ b^{j(j+1)/2}` and there are `2^j`
+giving (1a); for `b≥1`, directly `e≤j(j+1)/2`, the number of distinct forward
+edges, so `b^e≤b^{j(j+1)/2}`. There are `2^j`
 row and `2^j` column choices, giving (1b). ∎
 
 (1a) converges because `Σ_d b^{d/2}<∞` and `log(1+x) ≤ x`.
@@ -133,7 +142,8 @@ For `n≥2`, with `a,b>0`:
 (i)   W_n ≥ a t^{n-2} F_{n-2},   F_m = Π_{j=1}^{m}(1-s^j),  s=b/t   [two-cap]
 (ii)  W_n ≥ a^{n-1} b^{C(n-1,2)}                                    [star]
 (iii) when b=1 and m≥1:
-      W_{2m+1} ≥ a^m (1+a)^{m^2},   W_{2m+2} ≥ a^{m+1}(1+a)^{m^2}   [bipartite]
+      W_{2m+1} ≥ a^m ((1+a)^m+a-1)^m                               [bipartite]
+      W_{2m+2} ≥ a^{m+1} ((1+a)^m+a-1)^m
 ```
 
 `F_m ≥ c_s := Π_{j≥1}(1-s^j) > 0` for `0<s<1`.
@@ -147,21 +157,29 @@ by exact finite evaluation, not the probability lemma.
 
 (ii) The `(n-1)`-antichain capped once (a single maximum above it) is principal,
 has `a^{n-1}` for its `n-1` covers and `b^{C(n-1,2)}` for its incomparable pairs,
-and contributes at least once (in fact `n` times, once per choice of cap label).
+and contributes once. The unique maximum must have the last natural label;
+permuting antichain vertices does not produce distinct labelled orders.
 
 (iii) At `b=1`, take a lower antichain `A_m`, an upper antichain `B_m`, arbitrary
 edges `E⊆A_m×B_m`, and a universal maximum `z`. The order is principal. Its
-covers number `|E|+m`, its incomparable pairs number `m²-|E|+2C(m,2)`, and
-`b=1`, so `|A_p| = a^{|E|+m}`. Summing the `2^{m²}` edge choices gives
-`a^m(1+a)^{m^2}`. Appending one further universal maximum to each such order
-keeps it principal and multiplies `|A_p|` by `a`, giving the even case
-`a^{m+1}(1+a)^{m^2}`. Hence, with `m=⌊(N-1)/2⌋`,
+covers number `|E|+m+z(E)`, where `z(E)` counts lower vertices with no upper
+neighbor: each such vertex covers directly into the cap. At `b=1`, only
+these cover factors matter. For each lower row, the empty choice contributes
+`a`, while nonempty choices sum to `(1+a)^m-1`. Thus the `2^{m²}` distinct
+naturally labelled orders sum exactly to `a^m((1+a)^m+a-1)^m`.
+Appending another universal maximum multiplies this by `a`, giving the even
+case. For fixed `a>0`, eventually `(1+a)^m+a-1≥(1+a)^m/2`. Hence, with
+`m=⌊(N-1)/2⌋`, for sufficiently large `N`,
 
 ```
-W_N ≥ min(1,a)^{m+1} (1+a)^{m^2} ≥ exp( ((N-2)/2)^2 log(1+a) - C N )
+W_N ≥ min(1,a)^{m+1} 2^{-m}(1+a)^{m^2}
+    ≥ exp( ((N-2)/2)^2 log(1+a) - C N )
 ```
 
-for a constant `C` depending on `a` only. ∎
+for a constant `C` depending on `a` only. The original bound fails already
+at `p=(50+120i)/169`, where `a=10/13,b=1`: the chain and fork exhaust the
+principal three-element labelled orders, so `W_3=2a²=200/169`, below the
+original claim `a(1+a)=230/169`. ∎
 
 ### Theorem 1 (weighted estimate)
 
@@ -194,7 +212,7 @@ are `-(n+j-1) = -(n-1)-j`. Choosing `n` with `a b^{n-2}>4` makes the ratio
 
 The estimates are far from sharp; only summability is used. `check_weighted.py`
 verifies (exactly) the star and bipartite bounds for `n=2..7`, the two-cap bound
-for `n=2..7` at seven parameters, the bridge bounds for `j=1..7`, and the
+for `n=2..7` at eight parameters (including the `a<1,b=1` regression), the bridge bounds for `j=1..7`, and the
 exponent identity for `j=0..40`.
 
 ## 3. From the estimate to vanishing values
