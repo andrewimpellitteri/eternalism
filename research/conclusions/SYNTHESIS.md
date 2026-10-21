@@ -105,9 +105,12 @@ These are mathematical exclusions, not empirical refutations:
   or coherent erasure model. No embedded causal-set observer is constructed.
 - **Rank-only post values.** The renewal obstruction is conditional; the
   classification is open. No paper claim depends on it.
-- **Empirical discrimination.** No experiment in this project distinguishes
-  the ontological readings. The LAGEOS/preferred-frame and clock examples
-  constrain parameters or formulations, not ontology.
+- **Empirical discrimination.** The 21-candidate audit in
+  `research/discriminators-audit/RESULT.md` finds no genuine ontology
+  discriminator without an independently defended exclusivity premise. The
+  LAGEOS/preferred-frame and clock examples constrain parameters or
+  formulations, not ontology. This is a structural result, not a failure of
+  experimental imagination.
 
 ## 6. Falsifiers and what would change the verdict
 
@@ -123,15 +126,18 @@ These are mathematical exclusions, not empirical refutations:
   operational-stability/event-filter verdict from conditional to physical.
 - An empirical protocol with matched models and different likelihoods under
   the two ontological readings would break the underdetermination claim.
-- A primary-source image of Stein 1991 pp. 148–150 could close or correct the
-  remaining source gate.
+- A printed-source check contradicting the p. 149 Stein wording or condition
+  (iv) would reopen the source correspondence; the gate is otherwise closed.
 
 ## 7. Failure to discriminate, stated plainly
 
 The project has not produced a physical prediction that separates eternalism
 from its rivals, a derivation of a bridge principle from physics, a rank-only
 classification, a general operator-QBC phase theorem, or an embedded-observer
-realization. Those are open, not hidden. The verified floor is the narrow
+realization. The discriminator audit shows why the first is not just missing
+but structurally blocked without an exclusivity premise; the philosophy essay
+in `research/philosophy-completion/ESSAY.md` states the completion/access
+dilemma that remains. Those are open, not hidden. The verified floor is the narrow
 scalar classification and the conditional covariant companion; the rest is
 either known mathematics, a scoped countermodel, or a philosophical proposal.
 
