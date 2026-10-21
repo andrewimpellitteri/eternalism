@@ -252,3 +252,23 @@ candidate delta is the bridge, not any component.
 - Coverage and the universe case unify under "what exists are the genuine
   unities".
 - Domain-of-dependence sizing gives a computable lower bound on a present.
+
+## Adversarial pass on the redraft (coordinator, 2026-10-21)
+
+1. **Momentum vs energy.** Brading's "quantity of motion" is Newtonian
+   momentum. For a spatially closed universe the momentum constraints make
+   total momentum vanish identically, so a momentum reading of the unity test
+   is passed trivially and route (a) no longer fails it. The paper now
+   separates energy-reading costs from the reading-independent cost: on no
+   route does the dynamics of a sustaining system fix the universe's present.
+2. **Route (c) and dust.** In FRW, cosmic time is the proper time of the
+   comoving fluid, i.e. Brown–Kuchař dust time. As a gauge fixing (B–T) the
+   evolution generator is the vanishing constraint (test trivial); as a dust
+   deparametrisation it becomes route (b) and, if Thiemann's general claim
+   holds, inherits FRW corrections. Table cell changed accordingly.
+3. **Exact check.** `check_isham.py` verifies Isham's (5.2.6)-(5.2.8) against
+   constraint (5.2.5) at 500 exactly constructed on-shell points, and the
+   explicit time dependence claims. Finite exact checks only.
+
+Open: whether Brown–Kuchař dust deparametrisation of FRW reproduces the
+standard Friedmann equations or modifies them (full text not read).
