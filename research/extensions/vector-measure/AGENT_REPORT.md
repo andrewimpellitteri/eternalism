@@ -1,4 +1,25 @@
-# Vector-valued measures: bounded-variation boundary and a finite conditional-convergence witness
+# Vector-valued measures: corrected scope and historical finite construction
+
+## Coordinator integration, 2026-10-21
+
+The opening 2026-10-20 status and original finite-construction sections below
+are historical. The requested infinite `R^2` realization is impossible off
+`[0,1]`; it is not an open compactness or martingale problem. Strong additivity
+on an algebra is not interchangeable with continuity at the empty set, and
+unspecified martingale convergence is not an extension criterion. Those earlier
+proposed routes are withdrawn, rather than retained as current claims.
+
+The initial correction batch below establishes the circle indicator example.
+Subsequent coordinator arguments now give independently audited **norm-only**
+Hilbert and Banach realization classifications in
+`research/adversarial-review/coordinator/HILBERT_NORM_BOUNDARY.md` and
+`BANACH_NORM_BOUNDARY.md`, with the analytic audit in `../proof/VECTOR_FOLLOWUP.md`
+relative to that review directory. These replace the blanket assertion that
+classification away from the circle remains open. The target space and event
+family must be stated; Hilbert and general Banach domains differ. Priority is
+bounded, and the source review recommends appendix-level treatment at most.
+These constructions change finite-union and off-diagonal data; they are not
+extensions of the fixed complex scalar premeasure or new quantum dynamics.
 
 Status: 2026-10-20. Probe `vector-measure-boundary`. This does **not** construct
 a countably additive vector-valued counterexample on the infinite
@@ -157,14 +178,18 @@ circle locus: the L² indicator construction of `coordinator/
 VECTOR_COUNTERMODEL.md` (summarized in the correction section above) **is** a
 countably additive infinite-dimensional norm-prescribed extension for every p
 with `|p|²+|1-p|²=1`, with infinite total variation off the endpoints. The
-specific construction question below — a strongly-additive infinite choice
-extending the *polygon* data — remains open as stated, but it is no longer the
+specific construction question below — an infinite choice extending the
+`R^2` *polygon* data — is impossible off `[0,1]` by the finite-dimensional no-go;
+it is no longer the
 formulation whose affirmative answer was needed; the existence question it
 aimed at is answered by the L² example, negatively for `R^2` targets (finite-
 dimensional no-go) and affirmatively in infinite dimension on the circle. What
 remains genuinely open is the classification away from that locus: which other
 norm prescriptions admit countably additive Banach-valued extensions, and in
 which spaces. Marker end.]
+
+The following paragraph and proposed question are retained solely as withdrawn
+historical text, not an applicable extension criterion or an open `R^2` problem.
 
 A finitely
 additive vector measure on the clopen algebra of the compact path space extends

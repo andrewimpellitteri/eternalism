@@ -1,8 +1,8 @@
 # Rank-only post factors: stationary kernel, recurrence, and pivot
 
 Status: 2026-10-20. Probe `rank-factor-boundary`. This does **not** settle
-whether a normalized rank-only measure exists for `p∉[0,1]`. It proves a new
-structural lemma, reduces the question to a scalar convolution equation, and
+whether a normalized rank-only measure exists for `p∉[0,1]`. It derives a
+stationary-kernel identity whose priority is unverified, reduces the question to a scalar convolution equation, and
 records why the finite root search is inconclusive. Verdict: **PIVOT** — keep
 the lemma, do not claim a counterexample or a no-go.
 

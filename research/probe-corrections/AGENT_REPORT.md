@@ -5,10 +5,13 @@ Status: 2026-10-21. Task `glm-probe-corrections`, worktree
 Submission for coordinator review — not an accepted completion, not a new
 result claim.
 
-**Resumed run.** The first attempt was interrupted (provider rate limit /
-usage quota). On resume, `git status` was clean at `e0c833e` and no partial
-correction work existed anywhere in the owned paths, so this submission was
-produced entirely in the resumed session. All committed builder artifacts were
+**Resumed run (provenance corrected by coordinator).** The first supervisor
+was queued at a two-worker limit and was stopped before model activity so it
+could resume at the user-authorized four-worker limit. No model usage-quota or
+rate-limit interruption occurred in this lane. On resume, `git status` was clean
+at `e0c833e` and no partial correction work existed in the owned paths, so this
+submission was produced entirely in the resumed session. The separate search
+MCP quota failure is documented below. All committed builder artifacts were
 preserved as reviewed; corrections are dated and marked, nothing was silently
 rewritten or erased.
 
@@ -262,3 +265,15 @@ before any conclusion was drawn from them.
 - `research/probe-corrections/AGENT_REPORT.md` (this report)
 - `research/probe-corrections/sources.jsonl` (new)
 - `AGENT_REPORT.md` (root copy of this report, per worker convention)
+
+## Coordinator disposition, 2026-10-21
+
+Reviewed and integrated after the fixes in `COORDINATOR_REVIEW.md`: corrected
+exact complex test parameter, explicit Gaussian nonzero comparison, actual
+queued/resumed provenance, and current vector scope. All listed small checks
+were rerun on the corrected files. The root report copy was excluded from the
+integration in favor of this owned report; the existing main root report was
+preserved. This task's corrections are accepted independently of the still-open
+adversarial/paper gate. Later coordinator norm-only classifications supersede
+this submission's circle-only remaining-open description; they do not preserve
+the scalar model's complex premeasure or its interference predictions.

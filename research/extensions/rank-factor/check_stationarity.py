@@ -80,7 +80,8 @@ def _g(x):
 
 def section_a():
     print("A. exact kernel identity S(H,m) = N(H)A(H) R_{m-n}")
-    for name, p in (("p=1/2", Fraction(1, 2)), ("p=(1+i)/2", G(1, 2))):
+    for name, p in (("p=1/2", Fraction(1, 2)),
+                    ("p=(1+i)/2", G(Fraction(1, 2), Fraction(1, 2)))):
         data = probe.kernel(6, p)
         R = ks.R(7, p)
         checks = 0
@@ -97,7 +98,8 @@ def section_a():
 
 def section_b():
     print("B. edge cases for R_k")
-    for name, p in (("p=1/2", Fraction(1, 2)), ("p=(1+i)/2", G(1, 2))):
+    for name, p in (("p=1/2", Fraction(1, 2)),
+                    ("p=(1+i)/2", G(Fraction(1, 2), Fraction(1, 2)))):
         R = ks.R(7, p)
         assert R[1][0] == p
     print("  R_1 = p exactly at p=1/2 and p=(1+i)/2: PASS")

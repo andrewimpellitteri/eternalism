@@ -200,7 +200,7 @@ def main():
     for n in (1, 2, 3, 4, 5):
         for rel in poscau.causets(n):
             if poscau.is_principal(rel, n):
-                assert poscau.amplitude(rel, n, p)  # nonzero, exact
+                assert poscau.amplitude(rel, n, p) != G(0)  # value comparison, not object truthiness
                 nz += 1
     print(f"division available at p=(1+i)/2: A_p(H) != 0 on {nz} principal H "
           f"(sizes 1-5, exact): PASS")
