@@ -111,21 +111,27 @@ systems"; the 2013 condition is sufficient and the 2015 condition necessary, so
 criticizing them for non-exhaustiveness attacks a straw man; the four-event
 model needs its assumptions and 2013 n. 7; "scale-free" misdescribes a
 scale-general approach. The draft was repaired into a three-horn trilemma
-(9 pages): the universe's present is W (so (a) fails on the unrestricted
+(10 pages): the universe's present is W (so (a) fails on the unrestricted
 reading), a proper region (global, requiring a qualification; or local,
-requiring an account), or outside the domain (global claim lost). The conclusion
-is conditional: P1** cannot be both universal and satisfied by the universe
-without an account Brading does not supply. The defeat/survival criticism is now
-about framing, using "the crucial question" (2015 p. 18) and "A great deal
-rests..." (2013 p. 1110). The diagnosis is "scale-general," with a missing
+requiring an account), or outside the domain (split into not-a-unity and
+term-of-art restriction). A prior no-present case is flagged. The conclusion is
+conditional: P1** cannot be both universal and satisfied by the universe without
+an account Brading does not supply. The defeat/survival criticism is now about
+framing, using "the crucial question" (2015 p. 18) and "A great deal rests..."
+(2013 p. 1110). The diagnosis is "scale-general," with a missing
 scale-selection guarantee.
 
-Changes: `paper/main.tex` rewritten (9 pages); `paper/references.bib` gains
+A second independent pass (`reviews/totality-logic/SECOND_PASS.md`) found four
+remaining gaps in the 0f09900 draft: the no-present case, the two exits inside
+horn 3, the patch-only cost for non-global proper regions, and the unextended
+2013 n. 7 caveat. The current draft repairs all four.
+
+Changes: `paper/main.tex` rewritten (10 pages); `paper/references.bib` gains
 Savitt 2021 and Rovelli 2019; `paper/check_records.py` gains a finite test of
 the two-system/four-event model. Verification: `python3 paper/check_records.py`
 runs six tests, all pass, including the four-event model. pdfTeX/TeX Live 2026
 builds four passes with BibTeX; no unresolved references or overfull boxes.
-macOS PDFKit renders all nine pages; the coordinator inspected pages 1-9.
+macOS PDFKit renders all ten pages; the coordinator inspected pages 1-10.
 `verification.json` records nine citation keys, hashes, build and visual
 coverage. Sources read at full text this session: Brading 2013 (hash
 `c93ca072…`), Brading 2015 (hash `7caceae7…`), Savitt SEP §3.3 live. Balaguer

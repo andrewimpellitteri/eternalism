@@ -15,7 +15,7 @@
   "tex_tool": "/Library/TeX/texbin/pdflatex",
   "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
   "render_tool": "Swift macOS PDFKit via paper/render_pdf.swift",
-  "pdf_pages": 9,
+  "pdf_pages": 10,
   "visually_reviewed_pages": [
     1,
     2,
@@ -25,17 +25,18 @@
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
   "visual_defects_found": [],
   "unresolved_references": false,
   "overfull_hboxes": false,
   "source_sha256": {
-    "paper/main.tex": "c7dc253ad3c0edf551c205c226c44e0a3220ce360fb37bd78fb92563a6c85e99",
+    "paper/main.tex": "7a8e1889227a56007b69c266ae7cf3e481f242bdb41538bb8f556f80a828b99e",
     "paper/references.bib": "7a1da29f827cf26e00d5ee696da363c6f11aa2eba0ed8d0ec3313e61c8a9c3a4",
     "paper/check_records.py": "e9877108661ccbf426ea3d559060e26b6efdebc4234b986ff3214783b6b75298",
-    "output/pdf/temporal-ontology-working-draft.pdf": "44010e70d534dbeffa756de44796715a9af30bbc9d7ab26d541abf3acb6cbf10"
+    "output/pdf/temporal-ontology-working-draft.pdf": "2ba47542398463f7f0584d40289e96f92769b972590e435f2dbf0dbd52ed5999"
   },
-  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. The universe trilemma is conditional: T1 (the universe is a genuine unity) and the proper-present account are interpretive, not proved. Independent logic review found the earlier categorical reductio unsound; the trilemma is the repaired form. The priority audit could not run (subagent credits exhausted); the Balaguer 2026 body and Brading 2011/2014 remain unread.",
-  "visual_review_note": "Trilemma draft built at 9 pages with no unresolved references or overfull boxes; all pages rendered and inspected. P1** superscripts, the three-horn structure, the four-event proof and the Savitt/Balaguer/Mason/Rovelli citations display correctly."
+  "limits": "Working draft only; no proof-assistant check, publication-priority result, physical prediction, ontology selection or submission approval. The universe trilemma is conditional: T1b (the universe is a genuine unity) and the proper-present account are interpretive, not proved; the no-present case is flagged but not resolved. Independent logic review found the earlier categorical reductio unsound and a second pass found four remaining gaps, which are repaired here. The priority audit could not run (subagent credits exhausted); Balaguer 2026 body and Brading 2011/2014 remain unread.",
+  "visual_review_note": "Trilemma draft built at 10 pages with no unresolved references or overfull boxes; all pages rendered and inspected. P1** superscripts, the three-horn structure with (3a)/(3b), the four-event proof, the 2013 n. 7 caveat and the Savitt/Balaguer/Mason/Rovelli citations display correctly."
 }

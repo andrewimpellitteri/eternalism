@@ -168,17 +168,28 @@ must address 2013 n. 7; "scale-free" misdescribes a scale-general approach that
 allows different principles at different scales. The draft was repaired
 accordingly.
 
-Current form: a **three-horn trilemma**, 9 pages. Horn 1: the universe's present
+Current form: a **three-horn trilemma**, 10 pages. Horn 1: the universe's present
 is W, so (a) is false on the unrestricted reading. Horn 2: the present is a
 proper region, either spatially global (needs a qualification of Brading's
 rejection) or local (needs an account of how a local region sustains the whole).
-Horn 3: the universe is outside the domain, so the quantifier is restricted and
-the global claim is lost. The conclusion is conditional: P1** cannot be both
-universal and satisfied by the universe without an account Brading does not
-supply. The 2013/2015 defeat and survival conditions are criticized as a gap in
-framing, not as logical non-sequiturs; the four-event model states its
-assumptions and n. 7; the diagnosis is "scale-general," with a missing
-scale-selection guarantee rather than a missing existence criterion.
+Horn 3: the universe is outside the domain, split into (3a) not a genuine unity
+(so it does not exist) and (3b) a term-of-art restriction (so the global claim is
+lost). A prior "no present" case is flagged: if the universe is not a dynamical
+system in Brading's sense, P1** fails or is undefined for it. The conclusion is
+conditional: P1** cannot be both universal and satisfied by the universe without
+an account Brading does not supply. The 2013/2015 defeat and survival conditions
+are criticized as a gap in framing, not as logical non-sequiturs; the four-event
+model states its assumptions and n. 7; the trilemma itself is also marked as
+internal to the common Minkowski representation; the diagnosis is
+"scale-general," with a missing scale-selection guarantee rather than a missing
+existence criterion.
+
+A second independent pass (`reviews/totality-logic/SECOND_PASS.md`) found four
+remaining gaps in the 0f09900 draft: the no-present case, the conflation of the
+two exits in horn 3, the patch-only cost for non-global proper regions, and the
+unextended n. 7 caveat. The current draft repairs all four. The second pass still
+judges the note "close to publishable as a specialist note" but not yet
+copy-edited; that judgement predates the current repairs.
 
 Current status: **working note, not submission-ready, novelty not established.**
 Independent logic review is complete and the repairs are recorded. The priority
