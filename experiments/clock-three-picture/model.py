@@ -98,7 +98,6 @@ def main():
     section("3. g = 0 control: trinity conditions hold")
     for k in range(N):
         print(f"R({k}) isometry defect on V_0.5 = {isometry_defect(V, k):.2e}")
-    U = [[cmath.exp(-1j * 0.5 * t) if 0 else 0j for _ in range(2)] for t in (0,)]  # placeholder
     psi = [(x + y) / math.sqrt(2) for x, y in zip(V[0], V[1])]
     s0, _ = conditional_state(psi, 0)
     worst = 0.0
@@ -148,5 +147,69 @@ def main():
         print(f"K = {name:22} ||[K,H_C]|| = {maxabs(Kc):.3f}; max surface dim at g = .05,.2,.5,1: {dims}")
 
 
+def basis_vec(a):
+    return [1 + 0j if i == a else 0j for i in range(N)]
+
+
+def inv2(m):
+    a, b, c, d = m[0][0], m[0][1], m[1][0], m[1][1]
+    det = a * d - b * c
+    return [[d / det, -b / det], [-c / det, a / det]], det
+
+
+def section_7():
+    section("7. Commuting control: K = |0><0| (energy basis), [K, H_C] = 0")
+    Kc = proj(basis_vec(0))
+    for g in (0.2, 0.5, 1.0):
+        for lam, basis in eigh(hamiltonians(g, K=Kc)[3]):
+            p = reading_probs(basis[0], povm(0.0))
+            iso = max(isometry_defect(basis, k) for k in range(N))
+            print(f"g = {g} lambda = {lam:+.4f} dim {len(basis)} p = "
+                  + " ".join(f"{x:.6f}" for x in p) + f" isometry defect = {iso:.1e}")
+
+
+def section_8():
+    section("8. Accidental two-dimensional interacting surface: K = |0><1| + h.c., g = 1")
+    K3 = add(outer(basis_vec(0), basis_vec(1)), outer(basis_vec(1), basis_vec(0)))
+    for g in (0.99, 1.0, 1.01):
+        dims = [(round(lam, 6), len(b)) for lam, b in eigh(hamiltonians(g, K=K3)[3]) if abs(lam - 1.5) < 0.05]
+        print(f"g = {g}: surfaces near 1.5 = {dims}")
+    V = next(b for lam, b in eigh(hamiltonians(1.0, K=K3)[3]) if len(b) == 2)
+
+    def R(k):
+        t = tau(k)
+        cols = [[math.sqrt(N) * sum(t[n].conjugate() * v[2 * n + s] for n in range(N)) for s in range(2)] for v in V]
+        return [[cols[j][i] for j in range(2)] for i in range(2)]
+    r0inv, det = inv2(R(0))
+    A = [matmul(R(k), r0inv) for k in range(N)]
+    for k in range(N):
+        ada = matmul(dag(A[k]), A[k])
+        ev = sorted(lam for lam, bs in eigh(ada) for _ in bs)
+        print(f"k = {k}: eigenvalues of A_k^dag A_k = {[round(x, 6) for x in ev]}")
+    for k in range(N):
+        pk = matmul(A[(k + 1) % N], inv2(A[k])[0])
+        ev = sorted(lam for lam, bs in eigh(matmul(dag(pk), pk)) for _ in bs)
+        print(f"propagator {k}->{(k + 1) % N}: eigenvalues of P^dag P = {[round(x, 6) for x in ev]}")
+    import random
+    rng = random.Random(1)
+
+    def unit():
+        v = [complex(rng.gauss(0, 1), rng.gauss(0, 1)) for _ in range(2)]
+        n = norm(v)
+        return [x / n for x in v]
+
+    def dist(u, v):
+        u, v = [x / norm(u) for x in u], [x / norm(v) for x in v]
+        return math.sqrt(max(0.0, 1 - abs(inner(u, v)) ** 2))
+    revive = 0
+    for _ in range(200):
+        u, v = unit(), unit()
+        d = [dist(matvec(A[k % N], u), matvec(A[k % N], v)) for k in range(N + 1)]
+        revive += any(b > a + 1e-9 for a, b in zip(d, d[1:]))
+    print(f"random input pairs (seed 1) whose trace distance increases at some step k -> k+1: {revive}/200")
+
+
 if __name__ == "__main__":
     main()
+    section_7()
+    section_8()

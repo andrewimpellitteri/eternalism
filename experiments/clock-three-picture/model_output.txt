@@ -43,3 +43,32 @@ max |<G[E_k (x) O]> - <E_k (x) O>| over surfaces and readings = 5.57e-17
 K = |tau0><tau0|           ||[K,H_C]|| = 0.667; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 1]
 K = |tau0><tau1| + h.c.    ||[K,H_C]|| = 0.667; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 1]
 K = |n=0><n=1| + h.c.      ||[K,H_C]|| = 1.000; max surface dim at g = .05,.2,.5,1: [1, 1, 1, 2]
+
+=== 7. Commuting control: K = |0><0| (energy basis), [K, H_C] = 0
+g = 0.2 lambda = -0.5385 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 4.4e-16
+g = 0.2 lambda = +0.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 0.2 lambda = +0.5385 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 4.4e-16
+g = 0.2 lambda = +1.5000 dim 2 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 0.2 lambda = +2.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 0.5 lambda = -0.7071 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 0.0e+00
+g = 0.5 lambda = +0.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 0.5 lambda = +0.7071 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 0.0e+00
+g = 0.5 lambda = +1.5000 dim 2 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 0.5 lambda = +2.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 1.0 lambda = -1.1180 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 1.0 lambda = +0.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 1.0 lambda = +1.1180 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 1.0 lambda = +1.5000 dim 2 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+g = 1.0 lambda = +2.5000 dim 1 p = 0.333333 0.333333 0.333333 isometry defect = 2.2e-16
+
+=== 8. Accidental two-dimensional interacting surface: K = |0><1| + h.c., g = 1
+g = 0.99: surfaces near 1.5 = [(1.49, 1), (1.5, 1)]
+g = 1.0: surfaces near 1.5 = [(1.5, 2)]
+g = 1.01: surfaces near 1.5 = [(1.5, 1), (1.51, 1)]
+k = 0: eigenvalues of A_k^dag A_k = [1.0, 1.0]
+k = 1: eigenvalues of A_k^dag A_k = [0.208712, 4.791288]
+k = 2: eigenvalues of A_k^dag A_k = [0.208712, 4.791288]
+propagator 0->1: eigenvalues of P^dag P = [0.208712, 4.791288]
+propagator 1->2: eigenvalues of P^dag P = [0.208712, 4.791288]
+propagator 2->0: eigenvalues of P^dag P = [0.208712, 4.791288]
+random input pairs (seed 1) whose trace distance increases at some step k -> k+1: 200/200
