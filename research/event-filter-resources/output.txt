@@ -1,0 +1,10 @@
+n=2: histories=4; selected=3; mu=5/4; detector=5/12 (0.41666667); membership=3/4
+  Independent word enumeration and modular recognizer agree at n=2
+n=4: histories=16; selected=10; mu=13/4; detector=13/40 (0.32500000); membership=5/8
+  Independent word enumeration and modular recognizer agree at n=4
+n=8: histories=256; selected=136; mu=145/4; detector=145/544 (0.26654412); membership=17/32
+  Independent word enumeration and modular recognizer agree at n=8
+n=12: histories=4096; selected=2080; mu=2113/4; detector=2113/8320 (0.25396635); membership=65/128
+n=20: histories=1048576; selected=524800; mu=525313/4; detector=525313/2099200 (0.25024438); membership=1025/2048
+n=40: histories=1099511627776; selected=549756338176; mu=549756862465/4; detector=549756862465/2199025352704 (0.25000024); membership=1048577/2097152
+All exact checks passed.
