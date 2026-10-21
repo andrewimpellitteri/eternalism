@@ -24,7 +24,7 @@ pending corrections are historical. This report gives the current disposition.
 | General Banach norm-only domains | SURVIVE ANALYTIC REVIEW; scoped | DP: p=1 or |p|<1, |1-p|<=1. All cylinders: endpoints or both strict inequalities. Native proof audit completed; supplemental GLM review did not finish. |
 | Hilbert norm-only disk | SURVIVE ANALYTIC REVIEW; scoped | |p|^2+|1-p|^2<=1. Latent-edge conditional-expectation construction and squared-norm obstruction audited natively. Supplemental GLM review did not finish. |
 | Rank-only classification | NOT ACCEPTED | Earlier renewal obstruction is conditional. A further proof candidate is preserved in RANK_FACTOR_NO_GO.md; its new convergence estimates require independent audit. |
-| Claude regularized-measure experiment | INCOMPLETE | Raw scripts/results preserved, finite cross-check rerun, bounded Abel/Borel obstruction recorded. Generalized summation, additivity and approximation invariance remain unproved. |
+| Claude regularized-measure experiment | SEPARATE BOUNDED KILL | Claude's coordinator recovered and committed REPORT.md in 461501a while this closeout was integrating, then accepted that task. This review independently reran only the finite polynomial comparison and establishes one ordinary Abel/Borel obstruction; the recovered report's stronger infinite claims still need independent audit. |
 | Lean certificate | FINITE KERNEL ONLY | Existing build and axiom audit passed; it does not encode the infinite measure theorem or establish priority. |
 | Clock application | CLOSED IN SEPARATE LANE | The other coordinator recorded a known-result/application outcome. It supplies no new result to this review. |
 
@@ -101,12 +101,16 @@ not accepted and not evidence for either truth or falsity. Monthly search-tool
 quota exhaustion was a separate recorded limitation; it must not be described
 as a model-usage failure. No further agents are launched by this closeout.
 
-Claude's article revision landed in 09c32b7 before its session limit. Its
-regularization experiment had no final report. `coordinator/CLAUDE_CARRYOVER.md`
-and the hash manifest preserve the interruption, the 34 raw files, actual
-checks, one explicit ordinary-summability obstruction, and the remaining
-proof obligations. Its existing claim is left intact. The unreviewed new
-rank proof candidate is also preserved without promotion.
+Claude's article revision landed in 09c32b7 before its session limit. At the
+initial check its regularization experiment had no final report. Its
+coordinator subsequently recovered the returned text and committed the report
+in 461501a, accepting the lane as a bounded negative result. That concurrent
+commit and its new follow-up task briefs were preserved in this integration.
+`coordinator/CLAUDE_CARRYOVER.md` records the interruption and later recovery;
+the hash manifest covers the 34 raw files present before the recovered report.
+It separates the checks actually repeated here, one explicit ordinary-summability
+obstruction, and the remaining independent proof obligations. The unreviewed
+new rank proof candidate is also preserved without promotion.
 
 ## Paper handoff and remaining limits
 

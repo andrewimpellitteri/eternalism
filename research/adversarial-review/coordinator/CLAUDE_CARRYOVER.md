@@ -1,6 +1,16 @@
 # Claude interruption: preserved experiment and bounded disposition
 
 Coordinator closeout, 2026-10-21. The user supplied the stopped session log.
+**Subsequent update:** while this closeout was being integrated, Claude's
+coordinator recovered the returned report, committed it in 461501a and marked
+the lane done with a bounded KILLED verdict. That new `REPORT.md` and the eight
+new task briefs in d6c872c have been merged without alteration. The historical
+interruption below no longer describes the lane's board status. The new
+report's infinite skeleton/additivity and q-Borel claims have not received
+an independent proof audit in this closeout. The raw-file snapshot and the
+bounded check below remain useful evidence; the hash manifest predates the
+recovered report and covers only its 34 raw predecessors.
+
 It ends with a session-usage-limit message during literature fetching, followed
 by a partial attempt to collect experiment output. This is an interruption,
 not a completed research submission. The desktop Claude host still existing
@@ -78,7 +88,8 @@ regularization, analytic continuation or generalized Borel prescription.
   is not a verified primary theorem. No new source reading or novelty claim
   is asserted in this closeout.
 
-Disposition: preserve as an incomplete experimental lane; ordinary Abel/Borel
+Independent disposition: preserve the experiment and its recovered bounded
+negative report; ordinary Abel/Borel
 already fail in the explicit q>1 case above. Any continuation must first state
 the generalized summation operator, its domain, consistency on overlaps,
 linearity and approximation invariance. Keep it out of both papers until an
