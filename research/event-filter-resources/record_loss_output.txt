@@ -1,0 +1,15 @@
+m=2, gamma=1/2: optimal b=0, uniform probability error=1/4
+m=3, gamma=1/2: optimal b=1/7, uniform probability error=2/7
+m=4, gamma=1/2: optimal b=1/5, uniform probability error=3/10
+m=8, gamma=1/2: optimal b=3/11, uniform probability error=7/22
+m=32, gamma=1/2: optimal b=15/47, uniform probability error=31/94
+m=128, gamma=1/2: optimal b=63/191, uniform probability error=127/382
+gamma=1/10: exact preimage determinant=-99/4<0 (no positive effect)
+gamma=1/2: exact preimage determinant=-3/4<0 (no positive effect)
+gamma=9/10: exact preimage determinant=-19/324<0 (no positive effect)
+Independent leaked histories n=1: visibility=1/2; samples at x=0, RMSE 0.1: 100
+Independent leaked histories n=4: visibility=1/16; samples at x=0, RMSE 0.1: 6400
+Independent leaked histories n=8: visibility=1/256; samples at x=0, RMSE 0.1: 1638400
+Independent leaked histories n=12: visibility=1/4096; samples at x=0, RMSE 0.1: 419430400
+Independent leaked histories n=20: visibility=1/1048576; samples at x=0, RMSE 0.1: 27487790694400
+All exact record-loss checks passed.

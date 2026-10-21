@@ -1,0 +1,7 @@
+n=1: labelled histories=1; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+n=2: labelled histories=2; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+n=3: labelled histories=7; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+n=4: labelled histories=40; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+n=5: labelled histories=357; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+n=6: labelled histories=4824; sum amplitudes=1; squared norm=1; every parent column norm=1; disjoint column supports
+All coherent-growth exact checks passed.
