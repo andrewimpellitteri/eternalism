@@ -147,8 +147,8 @@ def transition(action, tid, agent, notes="", extra=None):
                             cwd=record["worktree"]).stdout.splitlines()
                 if any(line[3:] != "AGENT_REPORT.md" for line in dirty):
                     raise ValueError("worker has uncommitted files; inspect and commit owned outputs first")
-                changed = git("diff", "--name-only", record["base"], record["branch"]).stdout.splitlines()
-                if not changed or any(not any(name == own.rstrip("/") or
+                changed = git("diff", "--name-only", record["base"], record["branch"], "--").stdout.splitlines()
+                if not changed or any(name != "AGENT_REPORT.md" and not any(name == own.rstrip("/") or
                                               (own.endswith("/") and name.startswith(own))
                                               for own in book[tid]["owns"])
                                       for name in changed):

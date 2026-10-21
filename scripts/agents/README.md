@@ -83,6 +83,12 @@ The acceptance command checks that the recorded branch is an ancestor of the
 main checkout's HEAD. It cannot establish scientific correctness for you.
 Commit the refreshed workboard before launching the next batch.
 
+The root `AGENT_REPORT.md` is an allowed handback file, as shown in every task
+brief and required by the worker supervisor. Acceptance allows that exact file
+alongside the task's owned paths; any other unowned file still blocks acceptance.
+When integrating multiple lanes, archive the root report inside its lane-owned
+directory and remove the root copy in the integration commit to avoid collisions.
+
 ## Recover a stopped or failed task
 
 ```sh

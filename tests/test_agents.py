@@ -161,6 +161,37 @@ class WorkboardTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "claimed"):
                 agents.transition("claim", "first", "two")
 
+    def test_accept_allows_required_root_report_but_rejects_other_unowned_files(self):
+        def run_git(*args, cwd=None):
+            return subprocess.run(["git", *args], cwd=cwd or self.root, check=True,
+                                  capture_output=True, text=True)
+        def commit(message, cwd=None):
+            run_git("-c", "user.name=Test", "-c", "user.email=test@example.invalid",
+                    "commit", "-m", message, cwd=cwd)
+        run_git("init", "-b", "main")
+        run_git("add", "WORKBOARD.jsonl", "scripts/agents.py")
+        commit("Fixture")
+        baseline = run_git("rev-parse", "HEAD").stdout.strip()
+        wt = self.root / "worker"
+        run_git("worktree", "add", "-b", "worker", str(wt))
+        agents.transition("claim", "first", "glm-first", extra={
+            "worktree": str(wt), "branch": "worker", "base": baseline})
+        (wt / "knowledge/first").mkdir(parents=True)
+        (wt / "knowledge/first/result.md").write_text("Owned result\n")
+        (wt / "AGENT_REPORT.md").write_text("Required handback\n")
+        (wt / "unowned.txt").write_text("Must reject\n")
+        run_git("add", "knowledge/first/result.md", "AGENT_REPORT.md", "unowned.txt", cwd=wt)
+        commit("Submission with rogue file", cwd=wt)
+        run_git("merge", "--ff-only", "worker")
+        agents.transition("review", "first", "glm-first")
+        with self.assertRaisesRegex(ValueError, "out-of-scope"):
+            agents.transition("accept", "first", "glm-first", "Reviewed fixture")
+        run_git("rm", "unowned.txt", cwd=wt)
+        commit("Remove rogue file", cwd=wt)
+        run_git("merge", "--ff-only", "worker")
+        agents.transition("accept", "first", "glm-first", "Reviewed and integrated fixture")
+        self.assertEqual(agents.snapshot()["first"]["status"], "done")
+
 
 class ProjectContractTests(unittest.TestCase):
     def test_live_task_graph_is_valid(self):
