@@ -1,0 +1,1988 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tabularx,longtable,array}
+\usepackage{pdflscape}
+\usepackage{ragged2e}
+\usepackage{siunitx}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={Relational Quantum Causal Processes: Exact Models, Continuum Limits, and the Boundary of Emergent Gravity},
+  pdfauthor={Yipeng Xu},
+  pdfsubject={Relational quantum processes, emergent causal order, Lorentzian geometry, and controlled gravitational limits},
+  pdfkeywords={quantum causal processes, open quantum systems, causal order, Lorentzian geometry, quantum gravity}
+}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\definecolor{statusblue}{HTML}{0072B2}
+\definecolor{statusgreen}{HTML}{009E73}
+\definecolor{statusorange}{HTML}{D55E00}
+\definecolor{statusgray}{HTML}{666666}
+\definecolor{statusred}{HTML}{B13B35}
+\newcommand{\StatusAbstract}{\textcolor{statusblue}{\textsf{proved abstractly}}}
+\newcommand{\StatusModel}{\textcolor{statusgreen}{\textsf{proved in an explicit model}}}
+\newcommand{\StatusNumerical}{\textcolor{statusorange}{\textsf{controlled/model-specific}}}
+\newcommand{\StatusConditional}{\textcolor{statusgray}{\textsf{conditional interface}}}
+\newcommand{\StatusOpen}{\textcolor{statusred}{\textsf{open/phenomenological}}}
+\newcommand{\AssumptionArrow}{\ensuremath{\Longrightarrow}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{external}[theorem]{External input}
+
+\newcommand{\A}{\mathcal A}
+\newcommand{\B}{\mathcal B}
+\newcommand{\C}{\mathcal C}
+\newcommand{\D}{\mathcal D}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\mathcal F}
+\newcommand{\G}{\mathcal G}
+\newcommand{\Hh}{\mathcal H}
+\newcommand{\I}{\mathfrak I}
+\newcommand{\J}{\mathcal J}
+\newcommand{\K}{\mathcal K}
+\newcommand{\M}{\mathcal M}
+\newcommand{\N}{\mathcal N}
+\newcommand{\R}{\mathcal R}
+\newcommand{\Z}{\mathcal Z}
+\DeclareMathOperator{\Proj}{Proj}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Str}{\operatorname{Str}}
+\newcommand{\vN}{\operatorname{vN}}
+\newcommand{\MD}{\operatorname{MD}}
+\newcommand{\Fix}{\operatorname{Fix}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Index}{\operatorname{Index}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Ad}{\operatorname{Ad}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\diff}{\mathrm d}
+\newcommand{\Ev}{\mathrm{Ev}}
+
+\title{Relational Quantum Causal Processes:\\
+\large Exact Models, Continuum Limits, and the Boundary of Emergent Gravity}
+\author{Yipeng Xu\thanks{Email: \texttt{yx488@cam.ac.uk}.}\\
+\small University of Cambridge, Cambridge, United Kingdom}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Relational quantum causal processes describe finite operational contexts by
+normal positive functionals on local completely positive maps.  Response
+differences define an influence algebra, whose central projections form a
+Boolean algebra of jointly readable events.  This article develops that
+operator-algebraic starting point through exact models and states explicitly
+where its gravitational interpretation remains conditional.  Fresh-cell
+unitary collision circuits yield dephasing--exchange kinetics, an exact
+charge-center fixed algebra, a system-size-uniform finite-step limit at fixed
+response order, and graph-controlled metastable Markov dynamics.  A separate
+absorbing-state model produces a sharp transition between a surviving matrix
+algebra and Boolean memory records, while a reversal-covariant defect
+dynamics generates a locally finite partial order on a restricted graph
+family without a prescribed Lyapunov time.
+
+Given a certified order and a positive additive record measure, compactness
+and identifiability conditions lead to a Lorentzian metric--measure
+subsequential limit, finite error bounds, and uniqueness of admissible smooth
+interpretations.  Finite regulators then test distinct parts of the
+information-to-gravity problem: modular-to-boost response, null tomography,
+same-update variational identities, induced quadratic gravity, and
+common-refinement limits.  These statements are exact or controlled within
+their declared models.  They do not yet provide one background-independent
+microscopic law that simultaneously generates adjacency, time, volume
+normalization, dimension and signature, nonlinear Einstein constraints, and
+quantum matter.  Operator-growth rigidity and projective-history
+constructions further delimit the remaining non-Abelian possibilities.
+RQCP-QG is therefore presented here as a theorem-indexed research framework:
+established mechanisms, conditional compositions, and open assumptions are
+kept separate throughout.
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}\label{sec:introduction}
+
+A microscopic theory of spacetime must separate operational input from
+dynamical output.  In particular, causal order and metric geometry cannot be
+counted as emergent if they have already entered through the laboratory
+labels, a calibrated clock, or a prescribed continuum background.  The
+relational quantum causal process (RQCP) program starts instead from local
+interventions and their observable response relations.  Its central question
+is whether classical records, causal order, geometric measure, and
+gravitational response can arise as successive long-distance structures of
+one quantum process.
+
+For a finite operational context \(C\), the primitive probability object is a
+normal process functional
+\[
+ \Omega_C(\Phi_1,\ldots,\Phi_n),
+\]
+positive on completely positive local maps and normalized on deterministic
+normal unital completely positive maps.  The context specifies the
+laboratories, their admissible interventions, boundary data, and the
+background strategy class, but not a global state on a preferred time slice
+or a continuum metric.  This formulation includes finite process matrices
+and quantum combs as special cases \cite{OCB2012,Chiribella2009}.
+
+Interventions outside a target algebra \(Y\) generate predual response
+differences at \(Y\).  The unitaries that leave all of these differences
+invariant form a stabilizer; its commutant in \(Y\) is the influence algebra
+\(\I_Y^{C;\B}\).  The jointly readable exact events are
+\[
+ \Ev_0(Y|C;\B)=\Proj Z(\I_Y^{C;\B}).
+\]
+Their Boolean structure follows from centrality.  The full influence algebra
+may remain noncommutative, so the construction does not identify quantum
+logic with a Boolean lattice or assume that all infrared information is
+classical.
+
+This algebraic observation is only a starting point.  Complete positivity
+does not imply Markovian kinetics, a commutative infrared algebra, an acyclic
+response relation, a Lorentzian continuum, or an Einstein equation.  Earlier
+formulations collected these requirements in a conditional synthesis
+theorem.  Here they are separated and tested in explicit models.  Each
+result is labelled as abstract, exact in a model, controlled or numerical,
+conditional, or open.  The labels are part of the statements: conclusions
+from different models are not composed unless their shared variables and
+limits have been identified.
+
+The first group of results concerns the origin of stable classical records.
+A fresh-cell unitary collision circuit on a connected graph reduces exactly
+to local dephasing and random exchange after the environment cells are
+traced out.  Its finite-step invariant algebra is
+\(\operatorname{span}\{P_0,\ldots,P_N\}\), with \(P_q\) the projector onto
+total charge \(q\), and its Pauli-response hierarchy is an exact killed
+colored-interchange process.  At fixed response order, a palindromic
+collision round converges to the associated GKSL evolution with an error
+constant independent of the total number of qubits
+\cite{Lindblad1976,Gorini1976}.  For the continuous
+dephasing--exchange generator, the same charge algebra is the exact fixed
+observable algebra.  On a regular graph the complete operator-space gap is
+\[
+ \lambda_G=\min\!\left\{2\kappa,
+  \frac{\gamma}{d}\lambda_2(L_G)\right\}.
+\]
+Weak bistochastic perturbations then induce a Markov generator on charge
+observables, with a finite-time reduction error controlled by
+\(\varepsilon\|\mathcal V\|/\lambda_G\).  This establishes the formation and
+metastable motion of Boolean charge records without assigning them a
+spacetime meaning.
+
+A second model shows that Booleanity is dynamical rather than inevitable.
+Contact-process variables gate the dephasing of a separately writable
+memory \cite{Harris1974,Liggett1999}.  Every memory matrix unit acquires an
+exact occupation-time Feynman--Kac factor.  In the thermodynamic late-write
+limit, the surviving algebra is a full matrix algebra in the
+absorbing-noise phase and a diagonal algebra in the persistent-noise phase.
+For a tagged qubit, the same factor determines a commutator witness,
+reference-system negativity, and the memoryless-use quantum capacity.  The
+transition therefore changes an operational quantum-information resource,
+not merely the notation used for fixed points.
+
+Causal order is addressed by a reversal-covariant dynamics of binary edge
+orientations on a block cactus.  Directed triangles are local cycle defects,
+and their complete observable algebra has an exact contact-process quotient.
+Above the healing threshold, every fixed window becomes a directed acyclic
+graph with exponentially increasing probability.  Only after the defects
+have disappeared is the longest-path rank
+\[
+ T_\omega(v)=\max_{p:\,p\to v}|p|
+\]
+defined; it then increases along every realized directed edge.  Thus the
+Lyapunov ranking is an output on this graph family.  The undirected skeleton,
+laboratory runtime, and conversion from record number to spacetime volume
+remain external.
+
+Two complementary results connect operational data to geometry.  In the
+first, Ramsey ratios of a quantum field cancel local self-variances and
+isolate spacelike covariances.  For a conformal scalar in the Bunch--Davies
+state on \(\mathrm{dS}_4\), six generic anchors determine the curvature
+radius from a Lorentzian rank defect and predict target--target invariants
+not used in the fit.  This is an inverse theorem in a specified
+field--state--geometry family, not an emergence theorem.  In the second, a
+margin-certified partial order and a positive additive record measure define
+an intrinsic finite volume clock.  Uniform strong-profile covering bounds
+give a Lorentzian metric--measure subsequential limit without assuming a
+manifold; when an admissible smooth strongly causal limit exists, local
+interval volumes recover proper time and the order--measure data determine
+the geometry up to measure-preserving isometry.  Dimension and
+Alexandrov-nerve topology are inferred with explicit abstention criteria.
+This result realizes an ``order and number'' reconstruction under stated
+compactness and identifiability conditions
+\cite{BraunSaemann2025,BraunOrderNumber2026}; it does not generate the input
+order or the absolute record-density unit.
+
+The gravitational part is deliberately divided into finite questions.  A
+critical free-fermion interval supplies a fixed physical modular band and a
+controlled modular-to-boost response certificate
+\cite{BisognanoWichmann1975,Giudici2018}.  Affine null-wire and nonlinear
+record-lattice regulators then test null tomography, finite information
+balance, focusing, and Ward completion.  A same-update construction compares
+Ramsey response with the variation of the same declared phase functional,
+and a common-refinement model places order, integer record measure, and that
+phase on one register family.  A separate same-link determinant model removes
+the bare curvature action in a transverse-traceless sector and produces a
+positive two-derivative kernel from matter on the same links, in the spirit
+of induced gravity \cite{Sakharov1968,Adler1982,Visser2002}.  Further finite
+constructions supply relational clock histories, the quadratic
+Fierz--Pauli/ghost/BRST complex, and a regulator-independent Gaussian
+coefficient under a derived spectral balance.  These are nonempty-model and
+compatibility results.  None selects four dimensions, the Einstein phase,
+the record-area conversion, interacting matter, and the nonlinear continuum
+from one autonomous dynamics.
+
+The history constructions sharpen a different boundary.  Positive
+projective causal-growth laws extend to infinite past-finite histories, and
+restricted non-Abelian models yield countably additive operator-valued
+measures.  Conversely, central operator-valued growth reduces to mixtures of
+scalar laws, while several self-adjoint and triangular square-operator
+branches are rigidly commutative.  These results narrow the search for a
+covariant non-Abelian growth law with genuine geometric backreaction; they
+do not provide such a law on arbitrary causal sets
+\cite{RideoutSorkin2000,Sorkin1994QuantumMeasure}.
+
+The status of vacuum, matter, and cosmology is correspondingly limited.
+Fixed-sector normalization removes a source-independent pure-volume factor
+once an additive charge has already been identified with metric volume.
+No theorem here derives that identification, the observed cosmological
+constant, the Standard Model representation, three generations, or a dark
+equation of state.  Their conditional constructions are retained because
+they state precise mathematical targets and failure tests, but they are not
+used as evidence for the earlier information-to-geometry results.
+
+The article is organized so that this separation can be checked directly.
+Section~\ref{sec:status-map} gives the status conventions and a compact map of
+the principal results.  Sections~\ref{sec:v62-axiom-reduction}--%
+\ref{sec:closed-loops} introduce the operational assumptions and exact model
+results.  Sections~\ref{sec:process-algebra}--%
+\ref{sec:generic-order-volume} develop the common algebraic and
+order--volume constructions.  The subsequent sections treat finite
+gravitational regulators, induced quadratic dynamics, causal histories, and
+their no-go boundaries.  The appendices collect proofs and conditional
+matter and cosmological extensions.  The synthesis theorem records logical
+dependence only; it is not a claim that all of its hypotheses arise in a
+single model.
+
+\input{sections/00_status_map}
+
+\section{Axiom-reduced formulation}\label{sec:v62-axiom-reduction}
+
+Earlier versions collected a number of sufficient conditions under the label
+``axioms.''  That presentation obscured which conditions were operational
+definitions, which were model hypotheses, and which were open continuum
+bridges.  We retain one foundational operational input and record the
+remaining assumptions at the arrows where they are used.
+
+\subsection{Foundational operational input}
+
+\begin{assumption}[QI1: completely positive local processes]\label{ass:qi1}
+For every finite operational context $C$, $\Omega_C$ is normal, multilinear, positive on completely positive local operations, and normalized on deterministic normal unital completely positive operations.  This is the minimal operational validity condition for the process calculus.
+\end{assumption}
+
+Complete positivity and normalization do not imply Markovianity, classical
+records, order, geometry, or gravity.  Those are separate dynamical
+questions.  In particular, the following interfaces are not axioms of the
+operational calculus:
+\begin{enumerate}[label=(R\arabic*)]
+\item a local microscopic unitary process has a controlled Markovian response
+limit;
+\item the infrared information algebra is commutative rather than a noiseless
+matrix algebra;
+\item cycle-free directed response and a Lyapunov ranking are generated
+without a preordered vertex set;
+\item order and information number converge to an unknown Lorentzian
+metric-measure space;
+\item a local modular generator converges to boost energy in a fixed physical
+band and supplies enough null directions for a tensor equation;
+\item a local dynamics selects the capacity-balanced boundary reference and
+derives the map from record number to boundary area;
+\item an additive central charge converges to metric four-volume;
+\item residual sectors dynamically realize gauge, chiral, and cosmological
+phases.
+\end{enumerate}
+Items (R1) and (R2) are removed in the dephasing--exchange and memory model
+classes described in Section~\ref{sec:closed-loops}.  Item (R3) is removed
+for the stated block-cactus family, but not for generic graphs.  Restricted
+finite-regulator instances of (R4)--(R5) are provided by the affine and
+nonlinear bridge theorems; their background-independent and interacting
+limits remain open.  The factorized capacity--complement model removes the
+reference-selection part of (R6), but not the record--area map or a universal
+coefficient.  Items (R7)--(R8) remain conditional or open.  The split
+property used for
+field-theoretic laboratories is an external AQFT theorem under its standard
+nuclearity hypotheses, not an RQCP dynamical prediction.
+
+\subsection{Microscopic status of Markovian response kinetics}
+
+The companion foundational work \emph{Microscopic Derivation of Quantum
+Response Kinetics from Local Unitary Dynamics} replaces the earlier
+Markovian-response postulate by a constructive statement for a nontrivial
+local model class.  On any finite connected graph,
+each dephasing or exchange event is implemented by a unitary collision with a
+fresh one-pass bath qubit.  A symmetric edge-colored collision round
+\(\Phi_h\) then has, at every nonzero step size, the exact Heisenberg fixed
+algebra
+\[
+ \operatorname{Fix}(\Phi_h)
+ =\operatorname{span}\{P_0,\ldots,P_N\},
+\]
+where \(P_q\) projects onto total-charge sector \(q\).  The full Pauli
+response hierarchy is a killed colored-interchange process, and for every
+fixed Pauli order \(k\) its kinetic approximation obeys a system-size-uniform
+bound
+\[
+ \left\|\Phi_h^n-e^{t\mathcal L}\right\|_{(k),p}
+ \leq \frac{t h^2}{3}B_k^3e^{hB_k},
+ \qquad
+ B_k\leq \frac{2\chi k\gamma}{d},
+ \qquad t=nh,\qquad p\in\{1,\infty\}.
+\]
+Thus a local unitary circuit, its Markov generator, its Boolean charge
+records, and its operational response kernel are derived within one model
+rather than postulated independently.  This construction removes a
+phenomenological Markov-channel input for that class, but not in general:
+product bath
+input, one-pass cells, an external collision clock, and calibrated
+step-dependent angles remain assumptions.  In particular it does not yet
+derive a stationary reservoir spectrum, correlated-bath kinetics, or a
+self-generated time variable.
+
+This result establishes existence of a nontrivial microscopic realization of
+(R1) and of one Boolean record mechanism.  It does not turn every item in the
+former S1--S10 list into derived structure.  In particular, central volume,
+matter categories, autonomous clocks, and geometric locality remain distinct
+problems.
+
+\subsection{From CP fixed ranges to Boolean facts}
+
+Let $\Gamma$ be a normal UCP channel and suppose the Cesaro mean
+\[
+E_N(A)=\frac1N\sum_{k=0}^{N-1}\Gamma^k(A)
+\]
+converges ultraweakly to a normal completely positive projection $E_\infty$.  Its range
+\[
+\A_{\rm IR}=E_\infty(\A)
+\]
+is the infrared accessible algebra.  Choi--Effros theory
+\cite{ChoiEffros1976,ChoiEffros1977} gives a product
+\[
+X\circ Y=E_\infty(XY)
+\]
+under which $\A_{\rm IR}$ is a $C^*$-algebra.  However, this alone does not imply classicality: $\A_{\rm IR}$ may still be noncommutative.
+
+The missing dynamical condition is asymptotic abelianness on the invariant
+range:
+\[
+\lim_{n\to\infty}\|[\Gamma^n(X),\Gamma^n(Y)]\|_\omega=0,
+\qquad X,Y\in E_\infty(\A).
+\]
+Because \(E_\infty(\A)\subset\Fix(\Gamma)\), this condition says precisely
+that the retained observables commute in the faithful GNS seminorm; it is
+stronger than decay of equal-time commutators on a microscopic local
+subalgebra.  Under it, the Choi--Effros product is commutative and any
+faithful representation has a commutative von Neumann closure.  Its
+projection lattice is therefore Boolean.
+
+\begin{theorem}[IR Boolean facts from CP coarse-graining]\label{thm:v62-ir-bool}
+Let $\Gamma$ be a normal UCP channel preserving a faithful normal state
+$\omega$.  Suppose the normal mean-ergodic projection $E_\infty$ exists and
+for every \(X,Y\in E_\infty(\A)\),
+\[
+\lim_{n\to\infty}
+\|[\Gamma^n(X),\Gamma^n(Y)]\|_\omega=0.
+\]
+Then the Choi--Effros algebra \(E_\infty(\A)\) is commutative.  Consequently,
+for any faithful normal representation \(\pi\),
+\[
+\Proj\bigl(\pi(E_\infty(\A))''\bigr)
+\]
+is a complete Boolean algebra of infrared facts.
+\end{theorem}
+
+\begin{proof}
+The mean-ergodic identities give
+\(\Gamma E_\infty=E_\infty\Gamma=E_\infty\).  Hence
+\(\Gamma^n(X)=X\) and \(\Gamma^n(Y)=Y\) for \(X,Y\) in the range.  The
+assumed limit is therefore \(\|[X,Y]\|_\omega=0\).  Faithfulness of
+\(\omega\) implies \([X,Y]=0\).  Thus
+\[
+ X\circ Y=E_\infty(XY)=E_\infty(YX)=Y\circ X .
+\]
+The faithful von Neumann closure is commutative, and its projections form a
+complete Boolean algebra.
+\end{proof}
+
+\subsection{Central superselection and vacuum-response sequestering}
+
+\textbf{Status: \StatusModel\ for charge formation; \StatusConditional\ for
+vacuum response.}
+The local number-conserving model in Section~\ref{sec:loop-center} derives a
+complete additive-charge center rather than attaching a global register:
+\[
+ \ker\mathcal L_0^*=\operatorname{span}\{P_0,\ldots,P_N\}.
+\]
+Every fixed-charge block is dynamically invariant and the restriction of the
+semigroup is CPTP.  If a separately specified continuum map identifies the
+charge \(v\) with metric four-volume and one works with a normalized
+fixed-\(v\) functional, a common factor \(e^{-cv}\) cancels:
+\[
+ \frac{Z_v[J;c]}{Z_v[0;c]}
+ =\frac{e^{-cv}Z_v[J;0]}{e^{-cv}Z_v[0;0]}
+ =\frac{Z_v[J;0]}{Z_v[0;0]}.
+\]
+The leading heat-kernel \(a_0\) term of a matter loop has this pure-volume
+form.  Curvature, anomaly, boundary, nonlocal, and state-dependent terms do
+not.  This is a selective normalized-response identity, not yet a
+gravitational sequestering theorem.  No present result derives the map
+\(v\to\int\sqrt{-g}\), an independent central variable \(\lambda_R\), or a
+small cosmological integration constant.
+
+\subsection{Entanglement free-energy attractor for the response horizon}
+
+\textbf{Status: \StatusOpen.}
+The earlier long-form draft considered the phenomenological ansatz
+\[
+\rho_\Lambda^{\rm ren}\simeq \xi M_{\rm Pl}^2L_R^{-2}.
+\]
+A candidate thermodynamic selection principle defines, for a causal diamond
+of radius \(L\),
+\[
+F_R(L)=E_{\rm mod}(L)-T_HS_{\rm gen}(L),
+\qquad
+T_H=\frac{\hbar H}{2\pi}.
+\]
+If one assumes the late-time expansions
+\[
+E_{\rm mod}(L)=\alpha M_{\rm Pl}^2H^2L^3+\cdots,
+\]
+\[
+T_HS_{\rm gen}(L)=\beta M_{\rm Pl}^2HL^2+\cdots.
+\]
+then
+\[
+F_R(L)=\alpha M_{\rm Pl}^2H^2L^3-
+\beta M_{\rm Pl}^2HL^2+\cdots.
+\]
+The nonzero stationary point is
+\[
+\frac{\partial F_R}{\partial L}=0
+\quad\Longrightarrow\quad
+L_R=\frac{2\beta}{3\alpha}H^{-1}.
+\]
+The condition \(3\alpha=2\beta\) was previously imposed by causal-diamond
+first-law matching at \(L=H^{-1}\).  It is not an independent microscopic
+calculation of both coefficients and therefore cannot be used to derive
+\(L_R=H^{-1}\) without a circularity concern.  A closed project must compute
+\(\alpha\) and \(\beta\) in the same model before locating the extremum, prove
+\(F_R''(L_R)>0\), and determine the relaxation rate and matter corrections.
+Until then neither \(L_R=H^{-1}\) nor
+\(\rho_\Lambda^{\rm ren}\sim M_{\rm Pl}^2H^2\) is a result of the framework.
+
+\subsection{Noncommutative-geometric matter from influence algebras}
+
+\textbf{Status: \StatusOpen.}
+The residual noncommutative part of an infrared influence algebra is a
+candidate input to a finite real spectral triple.  Let
+\[
+\I_{\rm IR}^{\rm rel}/Z(\I_{\rm IR})
+\]
+be the residual noncentral influence algebra after the Boolean center has been separated.  Assume its finite semisimple real form is
+\[
+\A_F=\bigoplus_iM_{n_i}(\mathbb K_i),
+\qquad
+\mathbb K_i\in\{\mathbb R,\mathbb C,\mathbb H\}.
+\]
+A finite real spectral triple is then
+\[
+(\A_F,\Hh_F,D_F,J_F,\gamma_F).
+\]
+The product triple
+\[
+\A=C^\infty(M)\otimes\A_F,
+\qquad
+D=D_M\otimes1+\gamma_5\otimes D_F
+\]
+has inner fluctuations
+\[
+D\mapsto D_A=D+A+JAJ^{-1},
+\]
+which generate gauge bosons, scalar fields, and fermion mass/Yukawa data.
+Under a particular set of finite spectral-triple representation and
+consistency conditions---including a real structure, first-order condition,
+orientability, Poincare duality, unimodularity, anomaly cancellation, and a
+minimal faithful charge representation---the familiar minimal
+Standard-Model-like algebra is \cite{ConnesMarcolli,ChamseddineConnes}
+\[
+\A_F\simeq \mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+\]
+with gauge group
+\[
+G_F\simeq S(U(2)\times U(3))
+\simeq \frac{SU(3)\times SU(2)\times U(1)}{\mathbb Z_6}.
+\]
+The generation number is the index pairing
+\[
+N_{\rm gen}=\Index(D_A,p)=\langle \operatorname{ch}(D_A),[p]\rangle.
+\]
+These are consequences of imposing the spectral-triple axioms on a chosen
+residual algebra.  RQCP-QG has not proved that its influence sectors form this
+algebra, that the relevant tensor category reconstructs the Standard Model
+gauge group, or that dynamics selects an index equal to three.  The first
+closed matter project is therefore the reconstruction of one non-Abelian
+gauge group from an explicit influence-sector category; the chiral-index
+problem is separate.
+
+
+
+
+\section{Status of three conditional mechanisms}\label{sec:v62-referee-hardening}
+
+The following mechanisms have different logical roles.  Block-primitive
+mixing is realized exactly in the charge-sector models, although not proved
+for generic channels.  The
+free-energy coefficient relation remains a matching condition rather than an
+independent microscopic calculation.  The finite-real-spectral-triple route
+is a conditional classification problem.  Keeping these roles separate is
+more informative than presenting them as parallel derivations.
+
+\subsection{Physical origin of asymptotic abelianness}
+
+The condition
+\[
+\lim_{n\to\infty}\|[\Gamma^n(A),\Gamma^n(B)]\|_\omega=0
+\]
+characterizes a particular universality class of coarse-graining channels:
+local, information-scrambling channels whose microscopic off-diagonal
+information is discarded by the infrared observer.  In a causal graph or
+lattice regularization, Lieb--Robinson locality gives an approximate light
+cone for commutators \cite{LiebRobinson1972}, while ETH-type mixing
+\cite{Deutsch1991,Srednicki1994} can suppress off-diagonal matrix
+elements of coarse observables inside high-dimensional energy or response
+shells.  The channel $\Gamma$ then acts like a conditional expectation onto
+long-lived macroscopic labels plus a primitive mixing channel inside each
+label sector.
+
+A useful sufficient condition is the following block-primitive form.  Suppose there are mutually orthogonal projections $P_a$ with $\sum_aP_a=1$, $\Gamma(P_a)=P_a$, and block states $\omega_a$ such that
+\[
+\|P_a\Gamma^n(X)P_b\|_\omega\le C_Xe^{-\gamma n}\quad (a\ne b),
+\]
+and
+\[
+\|P_a\Gamma^n(X)P_a-\omega_a(P_aXP_a)P_a\|_\omega\le C_Xe^{-\gamma n}.
+\]
+Then
+\[
+\Gamma^n(X)\longrightarrow \sum_a\omega_a(P_aXP_a)P_a
+\]
+in the GNS seminorm.  The limiting range is the abelian pointer algebra $\oplus_a\mathbb C P_a$, and commutators decay exponentially:
+\[
+\|[\Gamma^n(A),\Gamma^n(B)]\|_\omega\le C_{A,B}e^{-\gamma n}.
+\]
+Thus asymptotic abelianness is not an independent metaphysical postulate; it follows in this channel class from local propagation, internal scrambling, and loss of microscopic phase information.
+
+\begin{theorem}[Block-primitive coarse-graining implies Boolean IR records]\label{thm:block-primitive-abelian}
+Let $\Gamma$ be a normal UCP channel preserving a faithful normal state
+$\omega$.  Assume the block-primitive estimates above hold for a finite
+family of invariant projections $\{P_a\}$.  Then the fixed observables of
+$\Gamma$ are the abelian algebra generated by the \(P_a\).  In particular,
+the infrared record projections form a Boolean algebra, and the stated
+commutator defect decays exponentially.
+\end{theorem}
+
+\begin{proof}
+The off-block estimate kills coherences between different sectors.  The primitive estimate inside each sector sends any local observable to a scalar multiple of $P_a$.  Summing over $a$ gives the stated GNS limit.  Scalar multiples of mutually orthogonal projections commute, hence the represented asymptotic range is abelian.  The commutator estimate follows by applying the triangle inequality to the difference between $\Gamma^n(A),\Gamma^n(B)$ and their abelian limits.
+\end{proof}
+
+Integrable systems, many-body-localized sectors, strictly topological nonabelian memories, or channels harboring nonabelian noiseless subsystems generally bypass these block-primitive estimates, predicting macroscopic persistent quantum records or separated topological properties.
+
+\subsection{\texorpdfstring{Why $2\beta/3\alpha=1$ remains a matching condition}{Why 2 beta / 3 alpha = 1 remains a matching condition}}
+
+The response-horizon free energy was written as
+\[
+F_R(L)=\alpha M_{\rm Pl}^2H^2L^3-\beta M_{\rm Pl}^2HL^2+\cdots .
+\]
+Earlier versions treated $\alpha$ and $\beta$ as two normalizations of a
+common causal-diamond first law.  If that identification is imposed at the
+de Sitter scale, the local matching condition is
+\[
+\left.\frac{\diff E_{\rm mod}}{\diff L}\right|_{L=H^{-1}}
+=
+\left.\frac{\diff (T_HS_{\rm gen})}{\diff L}\right|_{L=H^{-1}}.
+\]
+Since
+\[
+\frac{\diff E_{\rm mod}}{\diff L}=3\alpha M_{\rm Pl}^2H^2L^2,
+\qquad
+\frac{\diff(T_HS_{\rm gen})}{\diff L}=2\beta M_{\rm Pl}^2HL,
+\]
+the first law at the de Sitter response horizon $L=H^{-1}$ gives
+\[
+3\alpha=2\beta,
+\qquad
+\frac{2\beta}{3\alpha}=1.
+\]
+This calculation is internally consistent, but it does not independently
+predict $L_R=H^{-1}$: the scale at which the first-law matching is imposed is
+also the scale subsequently recovered from the extremum.  The relation
+$3\alpha=2\beta$ is therefore a diagnostic condition on a candidate
+microscopic model, not a present theorem of RQCP-QG.  A closed derivation must
+compute $\alpha$ and $\beta$ from the same process without using the desired
+horizon location, establish $F_R''(L_R)>0$, and derive the relaxation rate.
+If that calculation gives $2\beta/3\alpha\ne1$, the stationary radius is
+$L_R=(2\beta/3\alpha)H^{-1}$; if it gives equality, the equality is then an
+output rather than a calibration.
+
+\subsection{What is, and is not, proved about the NCG matter algebra}
+
+The finite spectral-triple completion is a selection theorem.  An arbitrary
+residual influence algebra $\I_{\rm rel}$ is not guaranteed to flow to
+\[
+\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).
+\]
+The claim instead takes a conditional form.  If there is a stable local
+matter sector, if its residual noncommutative influence algebra has a finite
+semisimple real form, and if that form satisfies the finite real
+spectral-triple consistency conditions---reality, the first-order condition,
+orientability, Poincare duality, unimodularity, anomaly cancellation, and a
+minimal faithful charge representation---then the admissible algebra is
+constrained to the Connes--Chamseddine Standard-Model-like class.  RQCP-QG
+supplies a possible operator-algebraic origin for the finite internal
+algebra; spectral-triple classification and the spectral action supply the
+conditional matter-selection constraint.
+
+\begin{remark}[Status of the $\I_{\rm rel}\to\A_F$ step]\label{rem:irel-af-status}
+This analysis provides a conditional result rather than a universal basin-of-attraction: if the infrared residual matter algebra is finite, semisimple, anomaly-free, and compatible with the axioms of a real finite spectral triple, then its minimal Standard-Model-like realization is $\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)$ with gauge group $S(U(2)\times U(3))$.  Proving that a broad CSR-TPN universality class dynamically selects this algebra is a separate mathematical problem.
+\end{remark}
+
+\input{sections/01_closed_loops}
+
+\section{Operational and algebraic process foundations}
+\label{sec:process-algebra}
+
+A finite process matrix assigns probabilities to local operations by
+\[
+p(\vec a|\vec x)=\Tr\left[W_C\bigotimes_{i\in C}M_i^{a_i|x_i}\right],
+\]
+where $M_i^{a_i|x_i}$ are CP-instrument Choi operators and $W_C$ is a positive process matrix normalized on deterministic operations.  Process-matrix theory allows local quantum laboratories without assuming a fixed global causal order \cite{OCB2012}.
+
+For infinite-dimensional and field-theoretic settings one replaces $W_C$ by a normal positive multilinear process functional.
+
+\begin{definition}[Algebraic process functional]
+Let $C=\{\N_i\}_{i=1}^n$ be a finite family of local von Neumann algebras.  An algebraic process functional is a positive multilinear map
+\[
+\Omega_C:\prod_i \mathrm{CP}_\sigma(\N_i)\to[0,1]
+\]
+which is normalized on deterministic normal UCP operations:
+\[
+\Omega_C(\Phi_1,\ldots,\Phi_n)=1
+\]
+whenever every $\Phi_i$ is deterministic.
+\end{definition}
+
+This object is operational: it maps local interventions to probabilities or states without first postulating a classical spacetime background.
+
+\section{Background-relative causal influence and exact facts}
+
+Fix a target algebra $\M_Y$ and source $X$.  A background strategy class $\B$ acts on the complement of $X\cup Y$.  For $\beta\in\B$ and source operation $\Phi_X$, define
+\[
+r_Y^{C;\beta}(\Phi_X)(A)=\Omega_C(\Phi_X,A,\beta),\qquad A\in\M_Y.
+\]
+Response differences are
+\[
+\delta_Y^{C;\beta}(\Phi_X,\Phi_X')
+=r_Y^{C;\beta}(\Phi_X)-r_Y^{C;\beta}(\Phi_X').
+\]
+Let $\D_Y^{C;\B}$ be the family of all such differences.
+
+\begin{definition}[Influence algebra]
+\[
+\Stab(\D)=\{U\in\mathcal U(\M_Y):\delta(U^*AU)=\delta(A),\ \forall A,\delta\},
+\]
+and
+\[
+\boxed{\I_Y^{C;\B}=\Stab(\D_Y^{C;\B})'\cap\M_Y.}
+\]
+\end{definition}
+
+In finite dimension, if $\delta_k(A)=\Tr(\Delta_k A)$, then
+\[
+\I_Y^{C;\B}=\vN\{\Delta_k\}.
+\]
+
+\begin{definition}[Exact event]
+An exact RQCP event is a tuple
+\[
+e=(C,Y,\B,P),\qquad P\in\Ev_0(Y|C;\B),
+\]
+where
+\[
+\boxed{\Ev_0(Y|C;\B)=\Proj(Z(\I_Y^{C;\B})).}
+\]
+\end{definition}
+
+\begin{theorem}[Boolean facts]
+For any von Neumann algebra $N$, $\Proj(Z(N))$ is a complete Boolean algebra with
+\[
+P\wedge Q=PQ,\quad P\vee Q=P+Q-PQ,
+\quad \neg P=1-P.
+\]
+\end{theorem}
+
+\begin{proof}
+$Z(N)$ is commutative and monotone complete; hence its projections form a complete Boolean projection lattice.
+\end{proof}
+
+If $P,Q$ are noncommuting projections, $PQ$ is not an orthogonal projection.  Therefore approximate records are effects, not exact Boolean facts.
+
+\section{Split-record laboratories}
+
+QFT local algebras are typically Type III.  RQCP does not demand atomic local projections.  Instead it uses split inclusions and record conditional expectations.  Under standard nuclearity/split hypotheses, one has
+\[
+\N\subset\F\subset\widetilde\N,
+\]
+with $\F$ a Type I factor.  This is an external AQFT input, connected to the Doplicher-Longo split framework \cite{DoplicherLongo}.
+
+A Type I split buffer alone has trivial center.  Classical records arise from a record decomposition
+\[
+\Hh_{\rm lab}=\bigoplus_a \Hh_a,
+\qquad P_a:\Hh_{\rm lab}\to\Hh_a.
+\]
+The record expectation is
+\[
+E_R(A)=\sum_a P_aAP_a,
+\]
+with range
+\[
+\R=\bigoplus_a\mathcal B(\Hh_a),
+\qquad Z(\R)=\left\{\sum_a\lambda_aP_a\right\}.
+\]
+If $\I^{C;\B_R}=\R$, then exact facts are exactly record-center projections.
+
+\section{Causal renormalization and multiplicative-domain stability}
+
+Let $\Gamma:\A_{\rm coarse}\to\A_{\rm fine}$ be a normal UCP coarse-graining map in Heisenberg picture.  A UCP map need not preserve products.  Its multiplicative domain is
+\[
+\MD(\Gamma)=\{a:\Gamma(a^*a)=\Gamma(a)^*\Gamma(a),\ \Gamma(aa^*)=\Gamma(a)\Gamma(a)^*\}.
+\]
+
+If $P=P^*=P^2$ and $P\in\MD(\Gamma)$, then $\Gamma(P)$ is again a projection.  Hence exact facts are RG-stable if
+\[
+Z(\I_{\ell+1})\subset\MD(\Gamma_\ell),
+\qquad
+\Gamma_\ell(Z(\I_{\ell+1}))\subset Z(\I_\ell).
+\]
+
+\begin{theorem}[Boolean RG homomorphism]
+Under the two conditions above,
+\[
+\Gamma_\ell:\Proj(Z(\I_{\ell+1}))\to\Proj(Z(\I_\ell))
+\]
+is a Boolean algebra homomorphism.
+\end{theorem}
+
+\begin{proof}
+For central $P,Q$ in the multiplicative domain,
+\[
+\Gamma(PQ)=\Gamma(P)\Gamma(Q),\qquad \Gamma(1-P)=1-\Gamma(P).
+\]
+Linearity gives joins; center covariance places images in $Z(\I_\ell)$.
+\end{proof}
+
+\section{Transfer-channel spectral gap and threshold-edge stability}
+
+A transfer-channel gap controls when threshold decisions stop changing; it
+does not by itself make the limiting graph acyclic.  Let $\Gamma$ be a UCP
+transfer channel with fixed-point algebra
+\[
+\Z=\Fix(\Gamma)=Z(\R),
+\]
+and let $E_\Z$ be the conditional expectation onto $\Z$.  Suppose
+\[
+r(\Gamma|_{\ker E_\Z})=r<1.
+\]
+Then for any $\rho\in(r,1)$ there is $C_\rho$ such that
+\[
+\boxed{\|\Gamma^k(A)-E_\Z(A)\|\le C_\rho\rho^k\|A\|.}
+\]
+
+Let response edge weights be
+\[
+w_k(e)=\ell_e(\Gamma^k(B_e))
+\]
+for bounded predual functionals $\ell_e$.  Then
+\[
+|w_k(e)-w_\infty(e)|\le C_\rho\rho^k\|\ell_e\|\|B_e\|.
+\]
+If a finite observation window $W$ has threshold margin
+\[
+m_W=\min_{e\in W}|w_\infty(e)-\tau|>0,
+\]
+then for
+\[
+k\ge \frac{\log(2C_\rho L_W/m_W)}{-\log\rho},
+\]
+where $L_W=\max_{e\in W}\|\ell_e\|\|B_e\|$, the edge set in $W$ is stable.
+If the limiting edge set in \(W\) is already acyclic, its transitive closure
+is stable as well.  Acyclicity is a separate dynamical conclusion in the
+block-cactus defect model of Section~\ref{sec:loop-causal}; it is not a
+consequence of spectral convergence alone.
+
+% The superseded version-1 synthesis is retained below only as source history
+% and is deliberately excluded from the version-2 build.
+
+\input{sections/02_open_bridges}
+\input{sections/04_same_link_induced_quantum_gravity}
+\input{sections/05_three_decisive_chains}
+\input{sections/06_positive_hilbert_balance}
+
+\appendix
+\clearpage
+\section{Finite-dimensional RQCP and projection logic}\label{app:finite}
+
+This appendix records the finite-dimensional algebraic lemmas that motivate concluding exact events must correspond to center projections. Let $\Hh$ be a finite-dimensional Hilbert space and let $\A=B(\Hh)$. A sharp yes/no experimental proposition is represented by an orthogonal projection $P$ satisfying $P=P^*=P^2$. In a commutative projection algebra, logical conjunction corresponds naturally to operator multiplication. However, in a noncommutative algebra, this association breaks down.
+
+\begin{lemma}[Product of projections]\label{lem:projection-product}
+Let $P,Q\in B(\Hh)$ be orthogonal projections. Then $PQ$ is an orthogonal projection if and only if $PQ=QP$.
+\end{lemma}
+
+\begin{proof}
+If $PQ$ is an orthogonal projection, it must be self-adjoint. This directly yields
+\[
+PQ=(PQ)^*=Q^*P^*=QP.
+\]
+Conversely, if $P$ and $Q$ commute ($PQ=QP$), their product is simultaneously self-adjoint:
+\[
+(PQ)^*=Q^*P^*=QP=PQ,
+\]
+and idempotent:
+\[
+(PQ)^2=PQPQ=P^2Q^2=PQ.
+\]
+This confirms $PQ$ is indeed an orthogonal projection.
+\end{proof}
+
+\begin{corollary}[No Boolean conjunction for noncommuting records]
+If $[P,Q]\ne0$, then the formal product $PQ$ cannot represent the Boolean meet of $P$ and $Q$.
+\end{corollary}
+
+\begin{proof}
+If $PQ$ were the Boolean meet within a projection algebra, it would necessarily be a projection itself. By Lemma~\ref{lem:projection-product}, this would strictly require $P$ and $Q$ to commute ($PQ=QP$), establishing a contradiction.
+\end{proof}
+
+The RQCP event definition is therefore deliberately conservative: a fact is not merely an arbitrary projection in the full local algebra. Instead, it must be a projection belonging to the center of the influence algebra.
+
+\begin{proposition}[Center projections form a Boolean algebra]\label{prop:centerboolean}
+Let $M$ be a von Neumann algebra. Then $\Proj(Z(M))$ is a complete Boolean algebra equipped with the standard lattice operations:
+\[
+P\wedge Q=PQ,\qquad P\vee Q=P+Q-PQ,\qquad \neg P=1-P.
+\]
+\end{proposition}
+
+\begin{proof}
+By definition, the center $Z(M)$ is a commutative von Neumann algebra; thus, all its internal projections naturally commute. Consequently, the specified operations correspond to the standard lattice operations for commuting projections, natively satisfying all required Boolean identities. Furthermore, arbitrary suprema of projections within any von Neumann algebra are guaranteed to exist in the strong operator topology. Because the center $Z(M)$ itself is strongly closed, these suprema inherently remain central, thereby establishing completeness.
+\end{proof}
+
+\subsection*{Finite Wigner-friend check}
+Let $\Hh_L=\operatorname{span}\{|a\rangle,|b\rangle\}$ and define
+\[
+P_a=|a\rangle\langle a|,
+\qquad
+Q_+=|+\rangle\langle+|,
+\qquad
+|+\rangle=\frac{|a\rangle+|b\rangle}{\sqrt 2}.
+\]
+In the ordered basis $(|a\rangle,|b\rangle)$,
+\[
+P_a=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+\qquad
+Q_+=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix}.
+\]
+Then
+\[
+[P_a,Q_+]=\frac12\begin{pmatrix}0&1\\-1&0\end{pmatrix}\ne0.
+\]
+Thus the friend's record proposition and the Wigner coherence proposition cannot be placed in a single exact Boolean algebra.  In RQCP language they may both be meaningful as contextual events, but they are not one global Boolean sample space.
+
+\section{Influence algebras and stabilizers}\label{app:influence}
+
+Let $\D$ be a family of normal linear functionals on a target von Neumann algebra $M$.  In RQCP, $\D$ is the family of response differences
+\[
+\delta_Y^{C;\beta}(\Phi_X,\Phi'_X)=r_Y^{C;\beta}(\Phi_X)-r_Y^{C;\beta}(\Phi'_X).
+\]
+Define
+\[
+\Stab(\D)=\{U\in\mathcal U(M):\delta(U^*AU)=\delta(A),\ \forall A\in M,\ \forall\delta\in\D\}.
+\]
+The influence algebra is
+\[
+\I(\D)=\Stab(\D)'\cap M.
+\]
+
+\begin{proposition}[Finite-dimensional density form]\label{prop:stabfinite}
+Let $M=M_d(\mathbb C)$ and suppose $\delta_k(A)=\Tr(\Delta_k A)$ for matrices $\Delta_k$.  Let $S=\{\Delta_k,\Delta_k^*:k\}$.  Then
+\[
+\I(\D)=\vN(S).
+\]
+\end{proposition}
+
+\begin{proof}
+The stabilizer condition is
+\[
+\Tr(\Delta_kU^*AU)=\Tr(\Delta_kA)
+\qquad\forall A,k.
+\]
+By cyclicity,
+\[
+\Tr((U\Delta_kU^*-\Delta_k)A)=0\qquad\forall A,k.
+\]
+Since the trace pairing is nondegenerate, $U\Delta_kU^*=\Delta_k$ for every $k$.  Applying the same condition to the adjoints gives $U\Delta_k^*U^*=\Delta_k^*$.  Hence
+\[
+\Stab(\D)=\mathcal U(\vN(S)').
+\]
+Taking commutants inside $M_d(\mathbb C)$ gives $\I(\D)=\vN(S)$.
+\end{proof}
+
+\begin{proposition}[Background monotonicity]
+If $\B_1\subseteq\B_2$, then
+\[
+\I_Y^{C;\B_1}\subseteq \I_Y^{C;\B_2}.
+\]
+\end{proposition}
+
+\begin{proof}
+The response-difference family for $\B_1$ is contained in the response-difference family for $\B_2$:
+\[
+\D^{C;\B_1}_Y\subseteq\D^{C;\B_2}_Y.
+\]
+A unitary stabilizing the larger family stabilizes the smaller family, so
+\[
+\Stab(\D^{C;\B_2}_Y)\subseteq\Stab(\D^{C;\B_1}_Y).
+\]
+Taking commutants reverses inclusion and gives the claim.
+\end{proof}
+
+\begin{remark}
+The centers need not be monotone under inclusion of von Neumann algebras.  Thus enlarging a background class can increase the influence algebra while either increasing, decreasing, or reorganizing the available central event algebra.  This is why the physical event is the quadruple $(C,Y,\B,P)$ rather than simply $P$.
+\end{remark}
+
+\section{Split-record laboratories and Type-III local algebras}\label{app:split}
+
+Local algebras in relativistic QFT are typically Type-III factors.  If $M$ is a factor, then $Z(M)=\mathbb C1$ and
+\[
+\Proj(Z(M))=\{0,1\}.
+\]
+Thus nontrivial exact classical records cannot be obtained merely by taking projections in the local field algebra.  The RQCP construction uses split inclusions and record conditional expectations.
+
+\begin{assumption}[Split laboratory]
+For a double inclusion of local regions $O\Subset\widetilde O$, the corresponding von Neumann algebras obey a split inclusion
+\[
+\A(O)\subset\F(O,\widetilde O)\subset\A(\widetilde O),
+\]
+where $\F$ is a Type-I factor.
+\end{assumption}
+
+Since $\F$ is Type I, there exists a Hilbert-space factorization
+\[
+\Hh\simeq\Hh_{\rm lab}\otimes\Hh_{\rm env}
+\]
+such that
+\[
+\F\simeq B(\Hh_{\rm lab})\otimes1_{\rm env}.
+\]
+However $Z(\F)=\mathbb C1$.  A nontrivial exact record requires a further record algebra.
+
+Let
+\[
+\Hh_{\rm lab}=\bigoplus_{a\in A}\Hh_a,
+\qquad
+P_a:\Hh_{\rm lab}\to\Hh_a
+\]
+be the record decomposition.  Define
+\[
+E_R(X)=\sum_{a\in A}P_aXP_a.
+\]
+
+\begin{proposition}[Record conditional expectation]\label{prop:recordexpectation}
+The map $E_R:B(\Hh_{\rm lab})\to B(\Hh_{\rm lab})$ is a normal UCP idempotent conditional expectation onto
+\[
+\R=\bigoplus_{a\in A}B(\Hh_a).
+\]
+Moreover
+\[
+Z(\R)=\left\{\sum_{a\in A}\lambda_aP_a:\lambda_a\in\mathbb C\right\}
+\]
+and
+\[
+\Proj(Z(\R))=\left\{\sum_{a\in S}P_a:S\subseteq A\right\}.
+\]
+\end{proposition}
+
+\begin{proof}
+Complete positivity follows from the Kraus form $E_R(X)=\sum_aP_aXP_a$.  It is unital because $\sum_aP_a=1$.  It is idempotent because $P_aP_b=\delta_{ab}P_a$.  The range is precisely the block-diagonal algebra $\oplus_aB(\Hh_a)$.  An element of this direct sum is central exactly when each block is a scalar multiple of the identity on that block, so the center is $\oplus_a\mathbb CP_a$.  Projections in this commutative algebra are exactly sums over subsets of the minimal central projections $P_a$.
+\end{proof}
+
+\begin{theorem}[Split-record event theorem]
+Assume a split laboratory $\F$ and a record algebra $\R\subset\F$.  If the background strategy class $\B_R$ is record-nondemolition,
+\[
+\delta(A)=\delta(E_R(A))\qquad\forall\delta\in\D_Y^{C;\B_R},
+\]
+and record-complete,
+\[
+\I_Y^{C;\B_R}=\R,
+\]
+then
+\[
+\Ev_0(Y|C;\B_R)=\Proj(Z(\R)).
+\]
+\end{theorem}
+
+\begin{proof}
+The event definition gives $\Ev_0=\Proj(Z(\I_Y^{C;\B_R}))$.  By record completeness $\I_Y^{C;\B_R}=\R$, so the result follows from Proposition~\ref{prop:recordexpectation}.
+\end{proof}
+
+\section{Multiplicative domains and transfer-channel spectral bounds}\label{app:md}
+
+Let $\Gamma:A\to B$ be a unital completely positive map.  Its multiplicative domain is
+\[
+\MD(\Gamma)=\{a:\Gamma(a^*a)=\Gamma(a)^*\Gamma(a),\ \Gamma(aa^*)=\Gamma(a)\Gamma(a)^*\}.
+\]
+
+\begin{lemma}[Projection preservation]\label{lem:mdprojection}
+Let $P=P^*=P^2$.  Then $P\in\MD(\Gamma)$ if and only if $\Gamma(P)$ is a projection.
+\end{lemma}
+
+\begin{proof}
+Since $P^*P=PP^*=P$, the two multiplicative-domain identities become
+\[
+\Gamma(P)=\Gamma(P)^*\Gamma(P),\qquad
+\Gamma(P)=\Gamma(P)\Gamma(P)^*.
+\]
+Because positive maps are $*$-preserving on self-adjoint elements, $\Gamma(P)^*=\Gamma(P)$.  Hence the identities are equivalent to $\Gamma(P)^2=\Gamma(P)$.
+\end{proof}
+
+\begin{lemma}[Multiplicativity on the multiplicative domain]
+If $a\in\MD(\Gamma)$, then for all $b$,
+\[
+\Gamma(ab)=\Gamma(a)\Gamma(b),
+\qquad
+\Gamma(ba)=\Gamma(b)\Gamma(a).
+\]
+\end{lemma}
+
+\begin{proof}
+By Stinespring, $\Gamma(x)=V^*\pi(x)V$.  Equality in Kadison's inequality for $a$ implies $\pi(a)V=V\Gamma(a)$.  Thus
+\[
+\Gamma(ab)=V^*\pi(a)\pi(b)V=\Gamma(a)V^*\pi(b)V=\Gamma(a)\Gamma(b).
+\]
+The right multiplication identity is analogous.
+\end{proof}
+
+\begin{theorem}[Boolean homomorphism under RG]\label{thm:booleanrg}
+Assume
+\[
+Z(\I_{\ell+1})\subset\MD(\Gamma_\ell),
+\qquad
+\Gamma_\ell(Z(\I_{\ell+1}))\subset Z(\I_\ell).
+\]
+Then
+\[
+\Gamma_\ell:\Proj(Z(\I_{\ell+1}))\to\Proj(Z(\I_\ell))
+\]
+is a Boolean algebra homomorphism.
+\end{theorem}
+
+\begin{proof}
+For $P,Q\in\Proj(Z(\I_{\ell+1}))$, multiplicativity gives
+\[
+\Gamma(PQ)=\Gamma(P)\Gamma(Q).
+\]
+Unitality gives $\Gamma(1-P)=1-\Gamma(P)$, and linearity gives preservation of joins.  Center covariance ensures images are central; Lemma~\ref{lem:mdprojection} ensures images are projections.
+\end{proof}
+
+\subsection*{Transfer-channel convergence}
+Let $\Gamma:\A\to\A$ be a normal UCP map on a finite-dimensional algebra or on a Banach space of quasi-local observables.  Suppose there is a normal conditional expectation $E_\Z:\A\to\Z$ onto the fixed-point algebra $\Z=\Fix(\Gamma)$ and a spectral gap on $\ker E_\Z$:
+\[
+r_0=r(\Gamma|_{\ker E_\Z})<1.
+\]
+For any $\rho$ with $r_0<\rho<1$, the spectral-radius formula gives a constant $C_\rho$ such that
+\[
+\|\Gamma^k|_{\ker E_\Z}\|\le C_\rho\rho^k.
+\]
+Therefore
+\[
+\|\Gamma^k(A)-E_\Z(A)\|\le C_\rho\rho^k\|A-E_\Z(A)\|
+\le 2C_\rho\rho^k\|A\|.
+\]
+Absorbing the factor of $2$ into $C_\rho$ yields the bound used in the main text.
+
+For response weights $w_k(e)=\ell_e(\Gamma^k(B_e))$ one obtains
+\[
+|w_k(e)-w_\infty(e)|\le C_\rho\rho^k\|\ell_e\|\|B_e\|.
+\]
+If in a finite window $W$ the limiting weights have margin
+\[
+m_W=\min_{e\in W}|w_\infty(e)-\tau|>0,
+\]
+then for
+\[
+k\ge \frac{\log(2C_\rho L_W/m_W)}{-\log\rho},
+\qquad
+L_W=\max_{e\in W}\|\ell_e\|\|B_e\|,
+\]
+the threshold decision $w_k(e)>\tau$ equals $w_\infty(e)>\tau$ for every edge in $W$.  Hence the finite-window directed graph and its transitive closure stabilize.
+
+\section{Araki relative entropy and the causal-modular first law}\label{app:araki}
+
+In finite dimensions, for density matrices $\rho$ and $\sigma$,
+\[
+S(\rho\|\sigma)=\Tr(\rho\log\rho)-\Tr(\rho\log\sigma).
+\]
+If $K_\sigma=-\log\sigma$, then
+\[
+S(\rho\|\sigma)=\Delta\langle K_\sigma\rangle-\Delta S,
+\]
+where $\Delta S=S(\rho)-S(\sigma)$ and $\Delta\langle K_\sigma\rangle=\Tr((\rho-\sigma)K_\sigma)$.  Let $\rho_s=\sigma+s\dot\rho+O(s^2)$ with $\Tr\dot\rho=0$.  Since relative entropy has a minimum at $s=0$,
+\[
+\frac{d}{ds}\bigg|_{0}S(\rho_s\|\sigma)=0.
+\]
+Hence
+\[
+\delta S=\delta\langle K_\sigma\rangle.
+\]
+
+For Type-III local algebras there is no density matrix.  The appropriate object is Araki relative entropy.  Let $M$ be a von Neumann algebra and $\omega,\phi$ faithful normal states.  The relative modular operator $\Delta_{\omega|\phi}$ defines
+\[
+S_A(\omega\|\phi)=-\langle\Omega_\omega,\log\Delta_{\phi|\omega}\,\Omega_\omega\rangle
+\]
+when represented in standard form.  The key properties needed in RQCP are positivity, monotonicity under restriction, and differentiability for smooth perturbations in a split-local chart.
+
+\begin{theorem}[Split-local Araki first law]\label{thm:arakifirstlaw}
+Let $M_D$ be a local diamond algebra approximated by a nested family of
+split Type-I buffers $\F_{D,n}$.  Let $\omega_s$ be a differentiable family
+of faithful normal states with $\omega_0$ as reference.  Suppose the
+regulated relative-entropies converge in \(C^1\) on a neighborhood of
+\(s=0\) to the Araki relative entropy, and suppose the corresponding
+regulated modular-energy and entropy differences have finite first
+variations.  Then
+\[
+\frac{d}{ds}\bigg|_0 S_A(\omega_s\|\omega_0)=0
+\]
+and
+\[
+\delta S_{\rm bulk}^{\rm alg}=\delta\langle K_D^0\rangle.
+\]
+\end{theorem}
+
+\begin{proof}
+On each Type-I split approximant, the density-matrix derivation applies and
+the first variation at the reference state vanishes.  The assumed \(C^1\)
+convergence permits the regulator limit to be interchanged with that first
+variation.  Taking the limit in the regulated identity
+\(S=\Delta\langle K\rangle-\Delta S_{\rm alg}\) gives the stated result.
+Without the \(C^1\) hypothesis, convergence of the relative-entropies alone
+would not justify differentiating through the split limit.
+\end{proof}
+
+\begin{remark}
+The remaining nontrivial input is not the first law itself but the local geometric identification
+\[
+K_D^0\longrightarrow \frac{2\pi}{\hbar}\int_D\xi^\mu T_{\mu\nu}\,d\Sigma^\nu.
+\]
+In RQCP this is explicitly listed as a local modular-geometric convergence assumption.
+\end{remark}
+
+\section{Conditional central-variable construction and fixed-sector
+cancellation}\label{app:sequestering}
+
+\textbf{Status: conditional comparison, not a derived cosmological
+mechanism.}
+Two distinct statements appeared under the earlier term
+``vacuum-response sequestering.''  They should be kept separate.
+
+The first is a comparison with global sequestering.  If one \emph{introduces}
+a central variable \(\lambda_R\) and the functional
+\[
+S_{\rm seq}[g,\lambda_R]
+=\int_M\sqrt{-g}\left[
+\frac{M_{\rm Pl}^2}{2}R-\rho_{\rm vac}^{\rm bare}
+-\lambda_R+\mathcal L_{\rm rel}\right]
++\Sigma\left(\frac{\lambda_R}{\mu^4}\right),
+\]
+then the simultaneous shift
+\[
+\rho_{\rm vac}^{\rm bare}\mapsto\rho_{\rm vac}^{\rm bare}+\Delta\rho,
+\qquad
+\lambda_R\mapsto\lambda_R-\Delta\rho
+\]
+leaves the combination entering the metric equation unchanged.  Variation
+with respect to \(\lambda_R\) imposes
+\[
+\int_M\sqrt{-g}
+=\frac{1}{\mu^4}\Sigma'\left(\frac{\lambda_R}{\mu^4}\right).
+\]
+This algebra is exact once the global variable and its action are supplied.
+It does not derive either object from the local response process.
+
+The second statement uses the additive charge center obtained in
+Sec.~\ref{sec:loop-center}.  Suppose an additional continuum theorem
+identifies a sector label \(v\) with metric four-volume, and define normalized
+fixed-sector response by
+\[
+\mathcal W_v[J]=\log Z_v[J]-\log Z_v[0].
+\]
+Any source-independent term \(cv\) multiplies numerator and denominator by
+the same factor:
+\[
+\frac{Z_v[J;c]}{Z_v[0;c]}
+=\frac{e^{-cv}Z_v[J;0]}{e^{-cv}Z_v[0;0]}
+=\frac{Z_v[J;0]}{Z_v[0;0]}.
+\]
+For a heat-kernel expansion this removes only the pure-volume \(a_0\) term.
+Curvature, anomaly, boundary, nonlocal, and source-dependent terms are not
+constant on the sector and remain in connected response.
+
+Neither statement presently implies
+\[
+\rho_\Lambda^{\rm ren}
+=\xi M_{\rm Pl}^2L_R^{-2}
++O(L_R^{-4})+O(e^{-L_R/\ell_R}).
+\]
+That expression is a dimensional infrared ansatz until a common microscopic
+model derives the metric-volume map, the central susceptibility, the scale
+\(L_R\), and the coupling of the surviving sector to curvature.  The
+required missing steps are listed as (V2)--(V5) in
+Section~\ref{sec:updated-vacuum}.
+
+\section{Conditional de Sitter CSR-TPN benchmark}\label{app:ds}
+
+\textbf{Status: background-relative consistency construction.}
+This appendix starts from a de Sitter diamond and therefore tests
+compatibility with that geometry; it does not derive de Sitter space.
+
+Let $(M,g_H)$ be a compact causally convex diamond in four-dimensional de Sitter spacetime,
+\[
+R_{\mu\nu}=3H^2g_{\mu\nu},\qquad R=12H^2.
+\]
+Let $a_n=H^{-1}2^{-n}$ and let $V_n$ be a nested Poisson sprinkling of intensity $a_n^{-4}$.  Each point $x\in V_n$ carries a finite split-record Hilbert space
+\[
+\Hh_x=\Hh_x^S\otimes\Hh_x^R\otimes\Hh_x^E,
+\qquad \dim\Hh_x^R=q\ge2.
+\]
+The finite region algebra is
+\[
+\A_n(O)=B\left(\bigotimes_{x\in O}\Hh_x\right).
+\]
+The record algebra is generated by projectors $P_{x,m}$ on $\Hh_x^R$ and the conditional expectation
+\[
+E_R(A)=\sum_{\mathbf m}P_{\mathbf m}AP_{\mathbf m}.
+\]
+The causal parent graph is induced from the de Sitter causal order in thin slabs.  Its transitive closure converges to the de Sitter causal order on finite windows, assuming the usual causal-set sprinkling convergence.
+
+The old notation
+\[
+\sin^2\theta_n(H)\sim \rho_\Lambda(H)a_n^4
+\]
+is a fixed-point matching coordinate.  If a separate vacuum-response
+mechanism supplies
+\[
+3H^2M_{\rm Pl}^2=\rho_\Lambda^{\rm ren}.
+\]
+then the benchmark may be evaluated at the resulting \(H\).  No present
+microscopic calculation selects either side of this equality.
+
+\begin{theorem}[Conditional de Sitter benchmark]
+Assume split-record laboratories, transfer-channel center stability, antichain boundary area capacity, causal-set curvature convergence, local modular geometry, and vacuum-response sequestering.  If the renormalized vacuum response satisfies
+\[
+\rho_\Lambda^{\rm ren}=3H^2M_{\rm Pl}^2,
+\]
+then the continuum vacuum sector satisfies
+\[
+G_{\mu\nu}+3H^2g_{\mu\nu}=0.
+\]
+\end{theorem}
+
+\begin{proof}
+The center-stable RG limit provides Boolean facts and a locally finite causal order.  Sprinkling convergence and information-volume convergence reconstruct $(M,g_H)$, while the causal-set curvature operator gives $R=12H^2$.  The modular first law and entropy equilibrium give Einstein's equation with source equal to the renormalized response stress.  In the normal-ordered vacuum sector the causal stress vanishes and the residual sequestered vacuum density is $3H^2M_{\rm Pl}^2$.  Hence the displayed equation follows.
+\end{proof}
+
+Every geometric and gravitational arrow used in this theorem appears among
+its hypotheses.  Its purpose is to verify consistency and nonemptiness of
+the conditional construction, not to close the order--volume or
+modular-gravity bridges.
+
+\section{Gauge holonomy and Yang-Mills stress}\label{app:gauge}
+
+\textbf{Status: conditional continuum construction.}
+Given a compact group \(G\), attach a gauge register to each causal edge
+$e=(x,y)$,
+\[
+\Hh_e^G=L^2(G_N)
+\]
+for a finite cutoff approximation $G_N$ of a compact gauge group $G$.  Link variables transform as
+\[
+U_{xy}\mapsto g_xU_{xy}g_y^{-1}.
+\]
+The gauge-invariant algebra is obtained by conditional expectation
+\[
+E_G(A)=\int_{G_N^{V_n}}\alpha_g(A)\,dg.
+\]
+For a causal plaquette $p=(x;y,z;w)$ define
+\[
+U_p=U_{xy}U_{yw}U_{zw}^{-1}U_{xz}^{-1}.
+\]
+If
+\[
+U_{xy}=\mathcal P\exp\left(i\int_x^yA_\mu dx^\mu\right),
+\]
+then the small plaquette expansion is
+\[
+U_p=\exp\left(iF_{\mu\nu}(m_p)\Sigma_p^{\mu\nu}+O(a_n^3\|\nabla F\|+a_n^4\|F\|^2)\right).
+\]
+Thus holonomy defects converge to Yang-Mills curvature.
+
+The discrete Yang-Mills action is
+\[
+S_{{\rm YM},n}=\frac{1}{2g_n^2}\sum_p\operatorname{ReTr}(1-U_p).
+\]
+For smooth fields and shape-regular causal plaquettes,
+\[
+S_{{\rm YM},n}\to\frac{1}{4g^2}\int_M\sqrt{-g}\,\operatorname{tr}(F_{\mu\nu}F^{\mu\nu})\,d^4x.
+\]
+Varying with respect to the metric yields
+\[
+T_{\mu\nu}^{\rm YM}=\frac{1}{g^2}\operatorname{tr}\left(F_{\mu\alpha}F_\nu{}^\alpha-\frac14g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}\right).
+\]
+This calculation recovers Yang--Mills response from a supplied gauge
+register.  It does not generate \(G\), the link Hilbert spaces, or their
+fusion rules.
+
+\section{Domain-wall and spectral-triple fermions}\label{app:fermions}
+
+\textbf{Status: conditional matter constructions.}
+Naive local lattice fermions in four dimensions face the doubling problem.  RQCP therefore treats chiral matter through either a higher-dimensional domain-wall construction or a noncommutative spectral triple.
+
+\subsection*{Domain-wall route}
+Let $\mathcal B^5=M^4\times[-L,L]$ and define
+\[
+D_5=\gamma^\mu(\nabla_\mu+iA_\mu)+\gamma^5\partial_s+M(s),
+\qquad
+M(s)=m\operatorname{sign}(s).
+\]
+Zero modes localized at $s=0$ have profile
+\[
+\psi(x,s)=\exp\left(-\int_0^sM(s')ds'\right)\psi_L(x)
+\]
+and chirality $\gamma^5\psi_L=-\psi_L$.  The number of boundary zero modes is controlled by the index of the four-dimensional Dirac operator.
+
+For the toy model $M^4=S^2\times S^2$, let $\alpha,\beta$ be the fundamental two-classes and take a line bundle $L_{p,q}$ with
+\[
+c_1(L_{p,q})=p\alpha+q\beta.
+\]
+Since $\widehat A(S^2\times S^2)=1$,
+\[
+\Index(D_{L_{p,q}})=\frac12\int c_1(L_{p,q})^2=pq.
+\]
+The explicit choice $(p,q)=(1,3)$ gives
+\[
+\Index(D_{L_{1,3}})=3.
+\]
+Thus an index-three defect background supports three chiral boundary zero
+modes.  The multiplicity is already encoded in the chosen Chern numbers;
+this example does not explain why the dynamics should select the value
+three.
+
+\subsection*{Spectral-triple route}
+A finite internal noncommutative geometry is specified by
+\[
+(\A_F,\Hh_F,D_F,J_F,\gamma_F).
+\]
+The full spectral triple is
+\[
+\A=C^\infty(M)\otimes\A_F,
+\qquad
+D_A=D_M\otimes1+\gamma_5\otimes D_F+A+JAJ^{-1}.
+\]
+Generation number is the index pairing
+\[
+Q_{\rm gen}=\langle\ch(D_A),[p]\rangle.
+\]
+In this route generations are $K$-theoretic invariants, not lattice copies.
+
+\section{Response-superfluid dark branch}\label{app:superfluid}
+
+\textbf{Status: phenomenological ansatz.}
+Let $N_R=\sum_xn_x$ be a conserved response charge and $B_x$ a lowering operator,
+\[
+[N_R,B_x]=-B_x.
+\]
+If response charge condenses,
+\[
+\omega(B_x^*B_y)\to n_Re^{i(\varphi(y)-\varphi(x))},
+\]
+then the long-wavelength field is
+\[
+\Psi_R=\sqrt{n_R}e^{i\varphi}.
+\]
+The thermodynamic pressure is defined directly from the process functional:
+\[
+Z_{n,\Lambda}(\mu)=\Omega_{n,\Lambda}(e^{\beta\mu N_R}),
+\qquad
+P_R(\mu)=\lim_{\Lambda\nearrow\infty}\lim_{n\to\infty}\frac{1}{\beta|\Lambda|}\log Z_{n,\Lambda}(\mu).
+\]
+In the nonrelativistic, weak-field, slow-phase limit, the local chemical-potential combination is
+\[
+X=\dot\varphi-m\Phi-\frac{|\nabla\varphi|^2}{2m}.
+\]
+The hydrodynamic action is
+\[
+S_R^{\rm hyd}=\int dtd^3x\,P_R(X)-\alpha\int dtd^3x\,\varphi\rho_b+\cdots.
+\]
+If the infrared response fixed point has
+\[
+P_R(X)=\kappa X\sqrt{|X|},
+\]
+then the phonon equation in a static spherical galaxy is
+\[
+\nabla\cdot(P_R'(X)\nabla\varphi)=\alpha\rho_b.
+\]
+Outside the baryonic mass $M_b$, this gives
+\[
+r^2P_R'(X)\varphi'=\frac{\alpha M_b}{4\pi}.
+\]
+With $P_R'(X)\propto\sqrt{|X|}$ and $X\simeq-|\nabla\varphi|^2/(2m)$, one obtains
+\[
+\varphi'\propto \frac{\sqrt{M_b}}{r}.
+\]
+The baryonic force mediated by the phonon is therefore
+\[
+g_R\propto\frac{\sqrt{GM_ba_R}}{r},
+\]
+which yields
+\[
+v_c^4=GM_ba_R.
+\]
+Whether the same parameters yield a normal-fluid phase compatible with
+cluster lensing, the CMB, and structure growth is an open cross-scale test.
+The BTFR scaling alone does not establish the microscopic equation of state.
+
+\section{Phenomenology and falsifiability}\label{app:phenom}
+
+In the weak-field Newtonian gauge,
+\[
+ds^2=-(1+2\Phi)dt^2+a(t)^2(1-2\Psi)d\mathbf x^2.
+\]
+RQCP deviations can be parameterized by
+\[
+-k^2\Psi=4\pi Ga^2\mu_{\rm eff}(k,z)\rho_m\Delta_m,
+\]
+\[
+\eta_{\rm slip}(k,z)=\frac{\Phi}{\Psi},
+\]
+and
+\[
+w_{\rm RQCP}(a)=-1-\frac13\frac{d\log\rho_{\rm resp}}{d\log a}.
+\]
+A minimal transfer-spectrum motivated expansion is
+\[
+\mu_{\rm eff}(k,z)=1+\sum_iA_i(1+z)^{-p_i}\frac{(k/k_i)^{\sigma_i}}{1+(k/k_i)^{\sigma_i}},
+\]
+\[
+\eta_{\rm slip}(k,z)=1+\sum_jB_j(1+z)^{-q_j}\frac{(k/k_j)^{\tau_j}}{1+(k/k_j)^{\tau_j}}.
+\]
+The parameters are not arbitrary: $k_i^{-1}$ are response correlation lengths, $p_i,q_i$ are related to transfer-channel critical exponents, and $A_i,B_j$ measure the coupling of the corresponding response operators to baryonic and lensing observables.
+
+\subsection*{Failure modes}
+The framework becomes empirically untenable if any of the following occur:
+\begin{enumerate}[label=(F\arabic*)]
+\item no CSR-TPN model has a split-record RG fixed point with nontrivial center;
+\item the response transfer channel lacks a spectral gap, so exact records fail to stabilize;
+\item no response-charge condensate exists in viable 3+1D models;
+\item the infrared response equation of state never approaches $P_R(X)\propto X\sqrt{|X|}$ or an observationally equivalent law;
+\item the sequestering constraint fails to remove UV identity vacuum response from local curvature;
+\item the predicted $\mu_{\rm eff}$ and $\eta_{\rm slip}$ cannot fit rotation curves, lensing, clusters, CMB, and structure growth simultaneously;
+\item no anomaly-free chiral defect/spectral triple sector reproduces the observed gauge and fermion representations.
+\end{enumerate}
+
+\section{Choi--Effros infrared algebras and asymptotic Boolean records}\label{app:v62-choi-effros}
+
+This appendix outlines the operator-algebraic derivation replacing the preliminary assumption of split-record laboratories.  Let $\A$ be a von Neumann algebra and let $\Gamma:\A\to\A$ be a normal UCP map preserving a faithful normal state $\omega$.
+
+\subsection*{Mean ergodic projection}
+
+Assume the Cesaro averages
+\[
+E_N(A)=\frac1N\sum_{k=0}^{N-1}\Gamma^k(A)
+\]
+converge ultraweakly to a normal UCP idempotent $E_\infty$.  Then
+\[
+E_\infty^2=E_\infty,
+\qquad
+\Gamma E_\infty=E_\infty\Gamma=E_\infty.
+\]
+The asymptotic range
+\[
+\A_{\rm IR}:=E_\infty(\A)
+\]
+is an operator system.  Choi--Effros theory
+\cite{ChoiEffros1976,ChoiEffros1977} equips it with the product
+\[
+X\circ Y=E_\infty(XY),
+\]
+turning it into a $C^*$-algebra.
+
+\begin{remark}
+The product $\circ$ need not coincide with the ambient product.  Moreover, Choi--Effros alone does not imply commutativity.  Therefore it does not by itself prove emergence of classical facts.
+\end{remark}
+
+\subsection*{Asymptotic abelianness}
+
+Define the GNS seminorm
+\[
+\|A\|_\omega=\omega(A^*A)^{1/2}.
+\]
+A coarse-graining flow is asymptotically abelian on its invariant range if
+\[
+\lim_{n\to\infty}\|[\Gamma^n(A),\Gamma^n(B)]\|_\omega=0
+\]
+for all \(A,B\in E_\infty(\A)\).  Since these elements are fixed by
+\(\Gamma\), this is an explicit commutativity condition on what survives.
+Decay established only for pairs of microscopic local observables is not
+sufficient unless it extends continuously to the invariant range.
+
+\begin{theorem}[Asymptotically abelian Choi--Effros range]
+Let $E_\infty$ be the normal ultraweak limit of Cesaro averages of $\Gamma$,
+and assume the invariant-range condition above.  Then the
+Choi--Effros algebra \(\A_{\rm IR}\) is commutative.  For any faithful normal
+representation \(\pi\),
+\[
+[\pi(X),\pi(Y)]=0,
+\qquad X,Y\in\A_{\rm IR}.
+\]
+Consequently \(\pi(\A_{\rm IR})''\) is a commutative von Neumann algebra and
+its projections form a complete Boolean algebra.
+\end{theorem}
+
+\begin{proof}
+For \(X,Y\in\A_{\rm IR}\), mean ergodicity gives
+\(\Gamma^n(X)=X\) and \(\Gamma^n(Y)=Y\).  The assumed limit therefore gives
+\(\|[X,Y]\|_\omega=0\).  Faithfulness of \(\omega\) implies
+\([X,Y]=0\).  Hence
+\(E_\infty(XY)=E_\infty(YX)\), so the Choi--Effros product is commutative.
+Faithful representation and von Neumann closure preserve commutativity, and
+the resulting projection lattice is complete Boolean.
+\end{proof}
+
+\subsection*{Finite split-record approximation}
+
+The split-record laboratory
+\[
+\R=\bigoplus_aB(\Hh_a)
+\]
+is a finite-stage approximation to the infrared fixed algebra before quotienting by asymptotically invisible intra-sector degrees of freedom.  Its center
+\[
+Z(\R)=\bigoplus_a\mathbb C P_a
+\]
+is the finite-dimensional shadow of the commutative Choi--Effros infrared algebra.
+
+\section{Conditional central sectors and the response-horizon
+ansatz}\label{app:v62-superselection-free-energy}
+
+\textbf{Status: conditional.}
+This appendix records the algebra of the earlier proposal while exposing the
+inputs that are not generated by the current local channel.
+
+\subsection*{Central response sector}
+
+Assume that \(Z_R\) is a central element of the global IR representation:
+\[
+Z_R\in Z(\pi_\omega(\A_{\rm glob})'').
+\]
+For any local observable $A_{\rm loc}$,
+\[
+[A_{\rm loc},Z_R]=0.
+\]
+Then $Z_R$ labels superselection sectors.  A state decomposes as
+\[
+\omega=\int^\oplus \omega_z\,d\mu(z),
+\]
+where $z$ is the response-center label.  Operations belonging to the
+block-diagonal observable algebra cannot detect cross-sector coherence.
+The existence of this particular global center is an input here.
+
+\subsection*{Vacuum identity response as a central gauge mode}
+
+The bare identity vacuum response contributes
+\[
+T_{\mu\nu}^{\rm bare,vac}=-\rho_{\rm vac}^{\rm bare}g_{\mu\nu}.
+\]
+If the local response calculus is insensitive to the central label,
+introduce a compensator $\lambda_R(Z_R)$ and define a sector-invariant
+combination
+\[
+\rho_\Lambda^{\rm loc}=\rho_{\rm vac}^{\rm bare}+\lambda_R+\rho_{\rm rel}.
+\]
+The transformation
+\[
+\rho_{\rm vac}^{\rm bare}\mapsto \rho_{\rm vac}^{\rm bare}+\Delta\rho,
+\qquad
+\lambda_R\mapsto\lambda_R-\Delta\rho
+\]
+leaves response differences invariant by construction.  A gravitational
+source defined on that quotient would depend only on the residual response
+density.  Neither the compensator nor the quotient-to-curvature rule follows
+from centrality alone.
+
+\subsection*{Renormalized residual}
+
+The earlier parametrization wrote
+\[
+\rho_\Lambda^{\rm ren}=\rho_{\rm IR}+\rho_{\rm bdry}+\rho_{\rm anomaly}.
+\]
+If the only macroscopic response scale is $L_R$, covariance and dimensional
+analysis permit
+\[
+\rho_\Lambda^{\rm ren}=\xi M_{\rm Pl}^2L_R^{-2}+O(L_R^{-4})+O(e^{-L_R/\ell_R}).
+\]
+This scaling is not a calculation of the residual.  It becomes a prediction
+only after deriving the central stiffness, the response length, and their
+coupling to curvature in the same microscopic model.
+
+\subsection*{Entanglement free-energy selection}
+
+Define
+\[
+F_R(L)=E_{\rm mod}(L)-T_HS_{\rm gen}(L),
+\qquad T_H=\frac{\hbar H}{2\pi}.
+\]
+The phenomenological late-time ansatz is
+\[
+E_{\rm mod}(L)=\alpha M_{\rm Pl}^2H^2L^3+O(L^2),
+\]
+and
+\[
+T_HS_{\rm gen}(L)=\beta M_{\rm Pl}^2HL^2+O(L).
+\]
+The leading free energy is
+\[
+F_R(L)=\alpha M_{\rm Pl}^2H^2L^3-\beta M_{\rm Pl}^2HL^2+\cdots.
+\]
+Thus
+\[
+\frac{\partial F_R}{\partial L}=M_{\rm Pl}^2HL(3\alpha HL-2\beta)+\cdots.
+\]
+The nonzero stationary point is
+\[
+L_R=\frac{2\beta}{3\alpha}H^{-1}+\cdots.
+\]
+Imposing first-law matching at \(L=H^{-1}\) sets
+\(2\beta/3\alpha=1\), and therefore reproduces
+\[
+L_R=H^{-1}+\cdots,
+\qquad
+\rho_\Lambda^{\rm ren}\simeq \xi M_{\rm Pl}^2H^2.
+\]
+
+\begin{remark}
+Because the matching point is the radius subsequently recovered, these
+equations are a consistency condition, not a derivation of a horizon
+attractor.  A closed calculation must determine \(\alpha\) and \(\beta\)
+before extremizing, verify \(F_R''(L_R)>0\), and compute the relaxation rate.
+\end{remark}
+
+\section{Residual influence algebras and finite spectral
+triples}\label{app:v62-ncg}
+
+\textbf{Status: conditional classification interface.}
+This appendix describes how a separately derived residual matter algebra
+could be tested against finite noncommutative geometry.
+
+\subsection*{Residual noncommutative influence algebra}
+
+Let $\I_{\rm IR}$ be the infrared influence algebra after CP coarse-graining.  Its center gives classical facts.  The residual internal algebra is the noncentral finite part
+\[
+\I_{\rm rel}:=\I_{\rm IR}/Z(\I_{\rm IR})
+\]
+restricted to finite-energy localized sectors.  Assume it has a finite semisimple real form
+\[
+\A_F=\bigoplus_iM_{n_i}(\mathbb K_i),
+\qquad
+\mathbb K_i\in\{\mathbb R,\mathbb C,\mathbb H\}.
+\]
+
+\subsection*{Finite real spectral triple}
+
+A finite real spectral triple consists of
+\[
+(\A_F,\Hh_F,D_F,J_F,\gamma_F),
+\]
+where $\A_F$ acts faithfully on $\Hh_F$, $D_F$ is self-adjoint, $J_F$ is a real structure, and $\gamma_F$ is a grading.  The product with spacetime gives
+\[
+\A=C^\infty(M)\otimes\A_F,
+\qquad
+\Hh=L^2(M,S)\otimes\Hh_F,
+\]
+\[
+D=D_M\otimes1+\gamma_5\otimes D_F.
+\]
+Inner fluctuations
+\[
+D_A=D+A+JAJ^{-1}
+\]
+produce gauge fields and scalar/Higgs-like components.
+
+\subsection*{Standard-Model-like algebra}
+
+Under the particular finite-spectral-triple representation and consistency
+conditions used in the Standard-Model construction---including a real
+structure, the first-order condition, orientability, Poincare duality,
+unimodularity, anomaly cancellation, and a minimal faithful nontrivial
+charge representation---the familiar minimal candidate is
+\cite{ConnesMarcolli,ChamseddineConnes}
+\[
+\A_F\simeq \mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).
+\]
+Its unitary group modulo the unimodular condition gives
+\[
+G_F\simeq S(U(2)\times U(3))
+\simeq \frac{SU(3)\times SU(2)\times U(1)}{\mathbb Z_6}.
+\]
+This is a classification of an assumed spectral triple.  It does not replace
+the missing RQCP theorem that must first generate the residual algebra and
+its representation.
+
+\subsection*{Generation number}
+
+The generation number is the index pairing
+\[
+N_{\rm gen}=\Index(D_A,p)=\langle \ch(D_A),[p]\rangle.
+\]
+A three-generation model is one in which the residual RQCP spectral triple contains a class $[p]\in K_0(\A_F)$ satisfying
+\[
+\langle \ch(D_A),[p]\rangle=3.
+\]
+This does not prove that RQCP dynamics selects three generations.  Once the
+class \([p]\) is chosen, the multiplicity is topologically stable; the value
+three remains encoded in the assumed index pairing.
+
+\subsection*{Spectral action and coupling to gravity}
+
+The spectral action has the form
+\[
+\operatorname{Tr} f(D_A/\Lambda_s)+\langle J\Psi,D_A\Psi\rangle.
+\]
+Its asymptotic expansion contains Einstein--Hilbert, Yang--Mills, scalar, and
+Dirac/Yukawa terms under the standard spectral-action hypotheses.  In the
+present program this is a candidate continuum functional, not a result
+derived from the Boolean or causal-order channels.
+
+
+\section{Microscopic mechanisms for asymptotic abelianness}\label{app:v62-asymptotic-origin}
+
+This appendix spells out the physical content behind the
+asymptotic-abelian condition.  A candidate coarse-graining channel is
+expected to be quasi-local, to have a finite information-propagation speed,
+and to discard phases inaccessible to long-wavelength probes.
+Lieb--Robinson bounds motivate the quasi-local part
+\cite{LiebRobinson1972}, while ETH and scrambling motivate intra-sector
+mixing \cite{Deutsch1991,Srednicki1994}.  Neither body of results, without
+additional hypotheses on the channel and observables, proves the
+block-primitive estimates used here.
+
+Mathematically, this motivates the block-primitive estimates used in Theorem~\ref{thm:block-primitive-abelian}.  If the invariant projections $P_a$ label macroscopic response sectors, the channel has the asymptotic form
+\[
+\Gamma^n(X)=\sum_a \omega_a(P_aXP_a)P_a+R_n(X),
+\qquad
+\|R_n(X)\|_\omega\le C_Xe^{-\gamma n}.
+\]
+The term $R_n$ contains both off-sector coherences and nonthermal intra-sector fluctuations.  Consequently,
+\[
+[\Gamma^n(A),\Gamma^n(B)]=[R_n(A),R_n(B)]+[R_n(A),X_B^{\rm cl}]+[X_A^{\rm cl},R_n(B)],
+\]
+where $X_A^{\rm cl}=\sum_a\omega_a(P_aAP_a)P_a$.  The right side is
+$O(e^{-\gamma n})$ in the GNS norm.  Thus the block-primitive estimates give
+a concrete sufficient route to Boolean IR records.  Deriving those estimates
+from a generic local Hamiltonian remains open; the dephasing--exchange model
+realizes them directly.
+
+\begin{remark}[Nonabelian exceptions]
+If a channel has a protected nonabelian noiseless subsystem, the IR algebra is not Boolean.  RQCP-QG then treats that subsystem as a residual quantum or topological sector, not as a classical record.  This is compatible with the matter-sector interpretation: classical spacetime facts are associated with the abelian center, while noncommutative residual algebras may encode gauge and internal degrees of freedom.
+\end{remark}
+
+\section{Causal-diamond coefficient matching}\label{app:v62-coefficients}
+
+The equality $2\beta/3\alpha=1$ is a first-law matching condition between the modular-volume term and the boundary area-capacity term.  Let
+\[
+E_{\rm mod}(L)=\alpha M_{\rm Pl}^2H^2L^3+O(L^2\partial H,H^4L^5),
+\]
+\[
+T_HS_{\rm gen}(L)=\beta M_{\rm Pl}^2HL^2+O(L\partial H,H^3L^4).
+\]
+If causal-diamond first-law matching is imposed at the de Sitter radius, one
+sets
+\[
+\delta E_{\rm mod}=T_H\delta S_{\rm gen}
+\]
+for first-order radial variations at $L=H^{-1}$ in the late-time quasi-de Sitter regime.  Substituting the two scaling laws yields
+\[
+3\alpha M_{\rm Pl}^2H^2L^2\delta L
+=
+2\beta M_{\rm Pl}^2HL\delta L
+\]
+at $L=H^{-1}$, hence $3\alpha=2\beta$.  The coefficient relation is
+therefore equivalent to imposing the Bekenstein--Hawking area normalization
+and Jacobson-type entanglement equilibrium at the target radius.  It is not
+an independent calculation of that radius.
+
+In an explicit CSR-TPN model, $\alpha$ should be computed from the modular response density and $\beta$ from the boundary record capacity.  Agreement with $3\alpha=2\beta$ is a nontrivial consistency check.  Failure of the relation does not invalidate the algebraic core of RQCP-QG, but it invalidates the specific claim that the response horizon locks exactly to $H^{-1}$.
+
+\section{Conditional status of the finite spectral-triple completion}\label{app:v62-ncg-status}
+
+The NCG completion is a conditional bridge from residual influence algebras to Standard-Model-like matter.  The input is not merely a finite-dimensional algebra; it is a finite real spectral triple
+\[
+(\A_F,\Hh_F,D_F,J_F,\gamma_F)
+\]
+with reality, grading, first-order condition, orientability, Poincare duality, unimodularity, anomaly cancellation, and minimal faithful charge representation.  These constraints are strong.  RQCP-QG proposes that the residual noncommutative influence algebra is the physical source of $\A_F$, but it does not yet prove the dynamical selection of this algebra from arbitrary microscopic data.
+
+The relevant result is an external classification input:
+\begin{external}[Finite-spectral-triple classification
+input]\label{thm:conditional-ncg-selection}
+Within the specific representation, irreducibility, KO-dimension, reality,
+first-order, orientability, Poincare-duality, unimodularity, and anomaly
+conditions of the cited finite-geometry construction
+\cite{ConnesMarcolli,ChamseddineConnes}, the familiar minimal
+Standard-Model-like internal algebra is
+\[
+\A_F\simeq \mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+\]
+with gauge group
+\[
+S(U(2)\times U(3))\simeq (SU(3)\times SU(2)\times U(1))/\mathbb Z_6.
+\]
+For a supplied \(K\)-theory class, generation multiplicity can be represented
+by an index pairing.
+\end{external}
+
+This classification is not a proof that the Standard Model is inevitable
+from RQCP.  The missing theorem must derive the residual sector category,
+its representation, and the relevant index data from a local process before
+the external classification can be applied.
+
+\section{Logical dependencies of the conditional synthesis}
+\label{app:synthesis}
+
+This appendix records the origin and scope of the conclusions used in the
+conditional synthesis and in the finite regulator results.  The list is not
+an additional proof.  Its purpose is to prevent statements established in
+different models from being combined without their interface hypotheses.
+\begin{enumerate}[label=(D\arabic*)]
+\item Boolean events follow abstractly from the center-projection theorem.
+The explicit collision and dephasing--exchange models prove that a nontrivial
+local dynamics can realize the required center and gap.
+\item A transfer-channel gap and threshold margin freeze an already specified
+finite-window edge set.  Acyclicity is obtained separately from defect
+extinction in the block-cactus model.  In the affine bridge, plaquette Hodge
+loss instead produces an exact response one-form and its reconstructed rank.
+\item The relative-entropy first law is algebraic.  Stress-energy, boost
+geometry, area response, several null directions, and tensor completion are
+supplied in the affine regulator by decoupled wires, global exchange
+stationarity, a product-reference matching condition, discrete focusing, the
+finite response frame, conservation, and an exact lattice Bianchi identity.
+The nonlinear regulator replaces the first-law and linear-focusing
+truncations by exact finite information and Riccati identities and extends
+the null-frame rank theorem to arbitrary invertible coframes.  It does not
+derive the remaining finite Ward relation, interacting modular theorem, or
+common holonomy/stress update.  The separate capacity--complement regulator
+selects the reference used by this balance for factorized tokens, but does
+not derive the record--area map or couple the selection to that same
+nonlinear update.
+\item The de Sitter sprinkling appendix is a background-relative benchmark;
+the Ramsey rank-defect model is an inverse theorem in a specified
+field--state family.  The affine rank-nine metric is a distinct flat
+finite-frame theorem.  The generic curved order--volume limit is instead the
+intrinsic volume-clock and strong-profile compactness theorem of
+Sec.~\ref{sec:generic-order-volume}, conditional on its displayed operational
+gates.  The unified-continuum theorem then proves, for one FLRW--TT
+refinement family, that this order--volume branch and the independently
+evaluated action-phase branch converge on the same reconstructed geometry;
+dimension, action, capacity normalization, and \(G\) remain inputs.
+\item The same-link branch uses a stable anonymous constructor to produce an
+unlabeled member of a supplied \(P_L\times T_L^3\) language.  Directed order,
+integer record volume, the scalar operator, the induced TT kernel, and the
+large-\(N_s\) TT measure use that one support.  The positive coefficient
+comes from the scalar determinant rather than a bare curvature phase.
+Dimension, program/clock, volume unit, matter content, fixed spacing, and
+the restricted metric sector remain inputs.
+\item The relational-history branch replaces the external update parameter
+by a stationary finite clock correlation and proves common causal-rank and
+record-volume refinement.  The clock boundary, program, port language, and
+volume unit remain inputs.  The quadratic completion branch uniquely extends
+the same TT normalization to all ten tensor components and supplies its
+finite Ward/ghost/BRST complex after the linear gauge law is declared.  The
+spectral-balance branch removes the Newton cutoff within its regulator class
+after two signed supertrace moments are imposed.  The positive-Hilbert
+companion derives those moments from exterior parity and an affine internal
+mass ladder geometry by geometry in every supplied finite graph ensemble,
+and proves exact finite graph-move response plus an obstruction to exact
+all-level pairing.  The selective-Ward companion then protects the moments
+for arbitrary finite positive interacting physical operators and realizes a
+positive geometry channel on a supplied finite language.  The
+projective-growth companion further constructs compatible cylinder laws and
+an infinite positive measure on a supplied naturally labelled causal-birth
+language.  The covariant-growth companion then maps response-generated
+	contact weights to an exactly discretely covariant, Bell-causal classical
+	sequential-growth law and constructs an extendible strongly positive
+	rank-one coherent history measure.  The fixed-strip companion separately
+	constructs an extendible local-unitary noncommuting rank-four history
+	measure.  The arbitrary-causet holonomy companion further combines that
+	classical CSG density with intrinsic fresh-event noncommuting gates and
+	proves a relabeling-covariant countably additive operator measure with a
+	non-Abelian integrated range.  Their composition is a
+	regulator-independent linear Gaussian response with finite interacting
+	protection, an exact positive history law, and a covariant coherent
+	subfamily, together with a distinct covariant non-Abelian
+	operator-density branch.  It is not a derivation of the protected commutant, the
+	maximal-birth language, contact motifs, response multiplet, coherent arity
+	or phase, an operator-Markov or square-operator Bell law, quantum
+	geometry backreaction, a tight Lorentzian
+continuum, spin--statistics or anomaly freedom, nonlinear BV symmetry, or a
+nonperturbative quantum metric measure.
+\item Fixed-sector normalization cancels a source-independent pure-volume
+factor if charge has already been identified with metric volume.  No
+cosmological residual or response horizon follows from that identity.
+\item Gauge registers, domain-wall data, finite spectral triples, and the
+response-superfluid equation of state are conditional constructions or
+phenomenological ansatzes, not outputs of the foundational channel.
+\end{enumerate}
+
+Accordingly, no equation in these appendices is used to claim that the
+current program autonomously derives generic quantum Einstein dynamics, the
+observed cosmological constant, the Standard Model, three generations, or
+dark matter.  Einstein response is reached only in the declared
+model-specific affine, same-update, unified-continuum, and induced-TT
+closures under their visible inputs.  The appendices otherwise specify the mathematical
+interfaces that future closed models must replace.
+
+\newpage
+\bibliographystyle{unsrturl}
+\bibliography{references_v2}
+
+\end{document}

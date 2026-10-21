@@ -384,7 +384,8 @@ def section_b():
           % TOPDEG)
     params = [(F(0), "p=0"), (F(1, 2), "p=1/2"), (F(3, 2), "p=3/2"),
               (F(2), "p=2"), (F(-1), "p=-1"),
-              ((F(1, 2), F(1, 2)), "p=(1+i)/2")]
+              ((F(1, 2), F(1, 2)), "p=(1+i)/2"),
+              ((F(50, 169), F(120, 169)), "p=(50+120i)/169")]
     for p, name in params:
         B, R, _ = bridge_tables(p, TOPDEG)
         for m in range(1, TOPDEG + 1):
@@ -445,13 +446,18 @@ def section_c():
             assert (V[n] - two).sign() >= 0, (name, n, "two-cap")
         bip_note = ""
         if b == Q2(1) and a.v == 0:
-            # odd n=2m+1: a^m (1+a)^(m^2); even n=2m+2: a^(m+1)(1+a)^(m^2)
+            # An empty lower row adds a direct cover into the universal cap.
+            # Row sum: a + (1+a)^m - 1; the upper-to-cap edges contribute a^m.
             for n in range(3, MAXN + 1):
                 m = (n - 1) // 2
                 exp_a = m if n % 2 == 1 else m + 1
-                bip = (a ** exp_a) * ((1 + a) ** (m * m))
+                bip = (a ** exp_a) * (((1 + a) ** m + a - 1) ** m)
                 assert (W[n] - bip).sign() >= 0, (name, n, "bipartite")
             bip_note = "; bipartite bound (odd and even)"
+            if a == Q2(F(10, 13)):
+                assert W[3] == Q2(F(200, 169))
+                assert (a * (1 + a) - W[3]).sign() > 0
+                bip_note += "; original bound falsified at n=3"
         print(f"  {name}: W_n >= star and V_n >= two-cap, n=2..{MAXN}"
               f"{bip_note}")
     W, V = level_sums((F(1, 2), F(1, 2)))

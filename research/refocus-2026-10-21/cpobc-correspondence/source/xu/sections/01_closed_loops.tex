@@ -1,0 +1,678 @@
+\section{Exact finite-model results}
+\label{sec:closed-loops}
+
+The abstract influence-algebra construction identifies the kind of
+information that may survive coarse graining, but it does not by itself
+provide a microscopic dilation, a mixing rate, a phase transition, or a
+geometric estimator.  This section records independent models that supply
+these missing pieces.  They are presented together because they
+constrain the architecture of RQCP-QG; they are not combined into one
+generator.  In particular, a solid implication below is always local to the
+stated model.
+
+\subsection{Local unitaries to quantum-response kinetics}
+\label{sec:loop-unitary-kinetics}
+
+\paragraph{Assumption removed.}
+The original process description began with a UCP coarse-graining channel.
+That is too high a starting point for a microscopic theory: complete
+positivity may be postulated while the Markov property and the kinetic rates
+remain unexplained.  A collision circuit supplies an exact dilation of
+the channel used in the Boolean sector model
+\cite{XuResponseKinetics2026}.  The continuum generator belongs to the
+standard Gorini--Kossakowski--Sudarshan--Lindblad class
+\cite{Gorini1976,Lindblad1976}; the point here is that its rates and its
+finite-step error follow from an explicit one-pass quantum network, rather
+than being postulated at the semigroup level \cite{Chiribella2009}.
+
+For an involution \(U=U^\dagger=U^{-1}\), let a system interact once with a
+fresh qubit bath cell through
+\begin{equation}
+ V_\theta=\exp(-i\theta\,U\otimes X_b),
+ \qquad
+ \rho_b=\tfrac12\mathbf1_b .
+ \label{eq:loop-collision-unitary}
+\end{equation}
+Tracing out the cell gives
+\begin{equation}
+ \Phi_{\theta,U}(X)
+ =\cos^2\theta\,X+\sin^2\theta\,UXU
+ =\exp\!\left[h r(\operatorname{Ad}_U-\operatorname{id})\right]X
+ \label{eq:loop-one-collision}
+\end{equation}
+when \(\sin^2\theta=(1-e^{-2rh})/2\).  The equality is finite-step and
+contains no weak-coupling expansion.  Taking \(U=Z_i\) produces local
+dephasing; taking \(U=S_{ij}\), the SWAP on an edge, produces symmetric
+exchange.  An edge coloring of a bounded-degree graph arranges the exchange
+collisions into a constant-depth symmetric round.  Every collision uses a
+new cell, so the global reduced circuit is exactly CPTP at every step.
+
+Let \(G=(V,E)\) be connected and \(d\)-regular, and write
+\begin{align}
+ \mathcal D&=\kappa\sum_i(\operatorname{Ad}_{Z_i}-\operatorname{id}),
+ \nonumber\\
+ \mathcal A&=\frac{\gamma}{d}\sum_{\{i,j\}\in E}
+   (\operatorname{Ad}_{S_{ij}}-\operatorname{id}),
+ \qquad
+ \mathcal L_{\rm kin}=\mathcal D+\mathcal A .
+ \label{eq:loop-kinetic-generator}
+\end{align}
+For a Pauli string \(P_{\boldsymbol\sigma}\), let \(k\) be its number of
+nonidentity labels and \(q\) its number of \(X\) or \(Y\) labels.  The
+Heisenberg generator closes exactly:
+\begin{equation}
+ \mathcal L_{\rm kin}P_{\boldsymbol\sigma}
+ =-2\kappa q\,P_{\boldsymbol\sigma}
+ +\frac{\gamma}{d}\sum_{\{i,j\}\in E}
+  \left(P_{s_{ij}\boldsymbol\sigma}-P_{\boldsymbol\sigma}\right).
+ \label{eq:loop-pauli-hierarchy}
+\end{equation}
+The second term is a colored interchange process and the first kills every
+transverse label.  Thus the hierarchy is not a low-moment closure: all Pauli
+orders are invariant sectors and together span the full operator algebra.
+
+\begin{theorem}[Finite-step charge algebra and fixed-order kinetic limit]
+\label{thm:loop-unitary-kinetics}
+Let \(\Phi_h\) be the symmetric collision round constructed from
+Eqs.~\eqref{eq:loop-collision-unitary}--\eqref{eq:loop-kinetic-generator}.
+For every \(h,\kappa,\gamma>0\),
+\begin{equation}
+ \operatorname{Fix}(\Phi_h)
+ =\operatorname{span}\{P_0,\ldots,P_N\},
+ \qquad
+ P_m=\sum_{|x|=m}|x\rangle\langle x|.
+ \label{eq:loop-finite-fixed}
+\end{equation}
+On an order-\(k\) Pauli orbit and for coefficient
+\(\ell^p\) norm, \(p\in\{1,\infty\}\), \(t=nh\),
+\begin{align}
+ \|\Phi_h^n-e^{t\mathcal L_{\rm kin}}\|_{(k),p}
+ &\le \varepsilon_k(t,h),\nonumber\\
+ \varepsilon_k(t,h)
+ &=\frac{t h^2}{3}B_k^3e^{hB_k},
+ \qquad
+ B_k\le\frac{2\chi k\gamma}{d},
+ \label{eq:loop-kinetic-bound}
+\end{align}
+where \(\chi\) is the edge-chromatic number of the chosen schedule.  At
+fixed \(k\) the bound is independent of \(N\).
+\end{theorem}
+
+\begin{proof}[Proof outline]
+Each random-unitary factor is a positive Hilbert--Schmidt contraction.
+Equality in the product contraction forces simultaneous commutation with
+all \(Z_i\) and all edge SWAPs.  The first condition makes an observable
+diagonal, while connected edge transpositions make its diagonal value
+depend only on Hamming weight, proving
+Eq.~\eqref{eq:loop-finite-fixed}.  On an order-\(k\) orbit, a matching has at
+most \(k\) active edges.  The symmetric product and
+\(e^{h\mathcal A}\) have equal derivatives through second order; a third
+derivative remainder gives the one-step error
+\(h^3B_k^3e^{hB_k}/3\).  Contractivity and a telescoping sum over \(n=t/h\)
+steps prove Eq.~\eqref{eq:loop-kinetic-bound}.
+\end{proof}
+
+The response is operational.  Preparing
+\(\rho_{\boldsymbol\sigma,\eta}
+=2^{-N}(\mathbf1+\eta P_{\boldsymbol\sigma})\) and measuring
+\(P_{\boldsymbol\tau}\) gives a matrix element of \(\Phi_h^n\).  In
+particular,
+\begin{align}
+ R^Z_{j\leftarrow i}(t)
+ &=\left[e^{-(\gamma/d)L_Gt}\right]_{ji},\nonumber\\
+ R^X_{j\leftarrow i}(t)
+ &=e^{-2\kappa t}
+   \left[e^{-(\gamma/d)L_Gt}\right]_{ji},
+ \label{eq:loop-local-response}
+\end{align}
+up to the controlled finite-step error
+\eqref{eq:loop-kinetic-bound}.  On a ring, taking
+\(t=N^2s/\gamma\) and a compatible \(h(N)\) yields the heat kernel on the
+unit circle, with separately bounded product-formula and lattice errors.
+This realizes the microscopic--kinetic--hydrodynamic separation advocated
+in Sec.~\ref{sec:status-map}.
+
+\paragraph{Boundary of the result.}
+Fresh one-pass bath cells are a physical memory assumption.  Reusing the
+same cell gives coherent recurrences, for example \(\cos(2n\theta)\), rather
+than exponential decay.  The circuit also uses an external schedule and a
+calibrated collision strength.  Equation~\eqref{eq:loop-kinetic-bound}
+therefore derives the response kinetics under a controlled Markovian
+dilation; it does not derive an autonomous clock, a thermal reservoir, or a
+metric.
+
+\subsection{Boolean charge records and metastable classical motion}
+\label{sec:loop-boolean}
+
+\paragraph{Assumption removed.}
+The first finite open-system loop removes asymptotic abelianness as a
+separate dynamical hypothesis.  For the Lindbladian
+\(\mathcal L_G=\mathcal D+\mathcal A\) in
+Eq.~\eqref{eq:loop-kinetic-generator}, the invariant algebra, its complete
+gap, and the weakly perturbed sector dynamics are all calculable
+\cite{XuBoolean2026}.  General fixed-algebra theory identifies stationary
+operator structures of quantum dynamical semigroups
+\cite{Frigerio1978}; the result below additionally fixes the complete
+many-body gap and the topology dependence of the metastable window.
+
+Let \(\mathcal E\) be the trace-preserving conditional expectation
+\begin{equation}
+ \mathcal E(X)=\sum_{m=0}^{N}
+ \frac{\operatorname{Tr}(P_mX)}{\binom Nm}P_m .
+ \label{eq:loop-boolean-expectation}
+\end{equation}
+
+\begin{theorem}[Noise-selected Boolean algebra and complete gap]
+\label{thm:loop-boolean}
+For connected \(d\)-regular \(G\),
+\begin{align}
+ \operatorname{Fix}(e^{t\mathcal L_G})
+ &=\bigoplus_{m=0}^{N}\mathbb CP_m,\nonumber\\
+ \lambda_G&=\min\!\left\{2\kappa,
+ \frac{\gamma}{d}\lambda_2(L_G)\right\},
+ \label{eq:loop-boolean-gap}\\
+ \|[e^{t\mathcal L_G}(A),e^{t\mathcal L_G}(B)]\|_2
+ &\le 2e^{-\lambda_Gt}
+ \bigl[\|B\|_\infty\|A-\mathcal EA\|_2
+ +\|A\|_\infty\|B-\mathcal EB\|_2\bigr].
+ \label{eq:loop-boolean-comm}
+\end{align}
+The norm \(\|\cdot\|_2\) is the normalized Hilbert--Schmidt norm.
+\end{theorem}
+
+Local dephasing removes all occupation-basis off-diagonal matrix units.
+On the diagonal subspace, exchange is the symmetric exclusion process.
+Aldous' spectral-gap theorem identifies its gap with the one-particle graph
+gap; a uniform one-excitation coherence attains the off-diagonal value
+\(2\kappa\).  Thus neither the algebra nor the slow scale is inferred from a
+small-system diagonalization.
+
+The theorem preserves the full charge distribution:
+\begin{equation}
+ \rho_\infty=\sum_{m=0}^{N}
+ p_m\,\frac{P_m}{\binom Nm},
+ \qquad p_m=\operatorname{Tr}(P_m\rho).
+ \label{eq:loop-boolean-state}
+\end{equation}
+All intrasection quantum information is erased, while the atoms \(P_m\)
+remain exactly distinguishable.  The finite-time Boolean defect obeys
+\begin{equation}
+ \mathfrak b(t)=
+ \sup_{\|A\|_\infty,\|B\|_\infty\le1}
+ \|[e^{t\mathcal L_G}(A),e^{t\mathcal L_G}(B)]\|_2
+ \le4e^{-\lambda_Gt}.
+ \label{eq:loop-boolean-defect}
+\end{equation}
+
+Now perturb by
+\(\mathcal L_{G,\epsilon}=\mathcal L_G+\epsilon\mathcal V\), where
+\(\mathcal V\) generates a bistochastic Hilbert--Schmidt contraction, and
+put \(v=\|\mathcal V\|_{2\to2}\),
+\(\delta=\epsilon v/\lambda_G\).  The compressed operator
+\(\mathcal K=\mathcal E\mathcal V\mathcal E\) is a backward classical Markov
+generator on the atoms \(P_m\).  Standard spectral perturbation and a
+Duhamel expansion give, on the metastable time window,
+\begin{equation}
+ \left\|
+ e^{t\mathcal L_{G,\epsilon}}
+ -e^{t\epsilon\mathcal K}\mathcal E
+ \right\|_{2\to2}
+ \le C\!\left(e^{-\lambda_Gt}+\delta
+ +\epsilon^2 v^2t/\lambda_G\right).
+ \label{eq:loop-metastable}
+\end{equation}
+Uniform bit flips preserve the sector manifold and give an exact Ehrenfest
+chain.  A one-site flip does not commute with \(\mathcal E\), produces
+genuine leakage, and is controlled by the same ratio \(\delta\).
+
+Topology enters twice.  On rings
+\(\lambda_2(L_G)=O(N^{-2})\), so a fixed isolation quality requires
+\(\epsilon v/\gamma=O(N^{-2})\).  On bounded-degree expanders,
+\(\lambda_2(L_G)=O(1)\), and a size-independent perturbation is tolerated.
+The result therefore ties a graph property to the formation and robustness
+of a classical information manifold.
+
+\paragraph{Boundary of the result.}
+The uniform theorem is in normalized Hilbert--Schmidt norm.  It controls
+the stated operator-space defect and mixed-state families of bounded
+normalized purity, but it is not a dimension-free diamond-norm or
+worst-case local operator-norm theorem.  Nor does the model decide which
+charge should encode a spacetime record.
+
+\subsection{A transition between full quantum memory and Boolean records}
+\label{sec:loop-memory}
+
+\paragraph{Assumption removed.}
+A fixed Boolean algebra does not show whether non-Abelian information and
+classical records can be separated by a genuine dynamical phase transition.
+This is realized by a contact-process flag field that gates local memory
+dephasing \cite{XuMemory2026}.  The flag quotient is the classical contact
+process \cite{Harris1974,Liggett1999}, while the object that crosses the
+transition is an operational quantum memory channel.
+
+Let \(n_i(t)\in\{0,1\}\) be contact-process occupation variables and let a
+memory qudit at \(i\) dephase at rate \(\kappa\) only when \(n_i=1\).
+After waiting to \(t_w\), an arbitrary state is written into a finite window
+\(W\).  For matrix units
+\(E_{\boldsymbol a\boldsymbol b}\), define
+\(D(\boldsymbol a,\boldsymbol b)=\{i:a_i\ne b_i\}\).  The reduced channel
+obeys the exact operator identity
+\begin{align}
+ \Phi^*_{s,t}(E_{\boldsymbol a\boldsymbol b})
+ &=q_D(s,t)E_{\boldsymbol a\boldsymbol b},\nonumber\\
+ q_D(s,t)&=\mathbb E\exp\!\left[
+ -\kappa\int_s^t\!du\sum_{i\in D}n_i(u)\right].
+ \label{eq:loop-memory-fk}
+\end{align}
+This is a Feynman--Kac representation of the entire memory channel, not a
+formula for one chosen coherence.
+
+Define the late-write algebra by taking the infinite-volume or
+quasistationary flag limit before the unbounded storage interval:
+\begin{equation}
+ \mathcal A_{\rm tail}(W)=
+ \left\{A:\lim_{t_w\to\infty}\sup_{\tau\ge0}
+ \|\Phi^*_{t_w,t_w+\tau}(A)-A\|=0\right\}.
+ \label{eq:loop-tail-definition}
+\end{equation}
+
+\begin{theorem}[Tail-algebra and capacity transition]
+\label{thm:loop-memory}
+For the contact process on \(\mathbb Z^r\), away from criticality,
+\begin{equation}
+ \mathcal A_{\rm tail}(W)=
+ \begin{cases}
+ M_{d^{|W|}},&\lambda<\lambda_c,\\
+ \operatorname{diag}(M_{d^{|W|}})
+ \simeq\mathbb C^{d^{|W|}},&\lambda>\lambda_c.
+ \end{cases}
+ \label{eq:loop-memory-algebra}
+\end{equation}
+Below threshold there are \(C,\alpha>0\) such that
+\begin{equation}
+ 1-q_D(t_w,\infty)
+ \le\frac{\kappa|D|C}{\alpha}e^{-\alpha t_w}.
+ \label{eq:loop-memory-bound}
+\end{equation}
+For one memory qubit entangled with an untouched reference,
+\begin{equation}
+ \mathcal N_{R:M}=\frac q2,
+ \qquad
+ Q_{\rm mem}(q)=
+ 1-h_2\!\left(\frac{1-q}{2}\right)
+ \label{eq:loop-memory-capacity}
+\end{equation}
+for independently reinitialized channel uses.
+\end{theorem}
+
+Subcritical sharpness makes the late integrated activity finite and proves
+\eqref{eq:loop-memory-bound}.  In the upper invariant supercritical process,
+ergodicity makes the occupation integral diverge for every nonempty \(D\),
+so only diagonal matrix units survive.  The one-qubit map is a phase-flip
+channel with \(p=(1-q)/2\); its Choi state has negativity \(q/2\), and
+degradability gives Eq.~\eqref{eq:loop-memory-capacity}.  The same scalar
+therefore controls noncommutativity, entanglement transmission, and
+memoryless-use quantum capacity.
+
+Quantum absorbing-state models can support coherence in the activity sector
+itself and can depart from directed-percolation criticality
+\cite{WamplerCooper2025}.  That is not the mechanism used here.  The flags
+form a classical quotient; the additional result is the exact matrix-unit
+Feynman--Kac action, which determines the full tail algebra and both
+reference-entanglement and capacity witnesses without a moment closure.
+
+\paragraph{Boundary of the result.}
+On every finite connected graph the flags eventually absorb and all memories
+become dark.  The phase transition belongs to the stated thermodynamic or
+quasistationary order of limits.  The activity quotient is classical and
+does not receive backaction from the memories.  A nonzero background
+dephasing rate rounds the ideal infinite-time distinction into a lifetime
+crossover.  These qualifications do not alter the exact channel identity,
+but they delimit the phase claim.
+
+\subsection{Causal order as an absorbing dissipative phase}
+\label{sec:loop-causal}
+
+\paragraph{Assumption removed.}
+The earlier causal-order criterion assumed a vertex function \(T\) satisfying
+\(u\to v\Rightarrow T(v)>T(u)\).  A local defect model produces the DAG
+first and constructs \(T\) afterward \cite{XuCausalOrder2026}.
+
+The underlying undirected graph is a chain, or more generally a locally
+finite tree, of triangular blocks.  Each edge carries a qubit whose monitored
+record is an orientation.  In block \(r\), the two cyclic words \(000\) and
+\(111\) define
+\begin{equation}
+ C_r=|000\rangle\langle000|_r+|111\rangle\langle111|_r,
+ \qquad Q_r=\mathbf1-C_r .
+ \label{eq:loop-cycle-projector}
+\end{equation}
+Local Lindblad jumps heal a cyclic block at total rate \(g\), while a cyclic
+neighbor infects a transitive target at rate \(1/2\).  The jump set is
+covariant under global arrow reversal, so no global direction is encoded in
+the generator.
+
+\begin{theorem}[Order from defect extinction]
+\label{thm:loop-causal-order}
+For every recorded orientation \(\omega\) of a block cactus, the threshold
+response graph is acyclic if and only if \(C_r(\omega)=0\) for every block.
+When this holds,
+\begin{equation}
+ T_\omega(v)=\max_{p:\,p\to v}|p|
+ \label{eq:loop-longest-path}
+\end{equation}
+is finite, obeys \(u\to v\Rightarrow T_\omega(v)>T_\omega(u)\), and the
+reachability relation is a locally finite strict partial order.
+\end{theorem}
+
+The block-cut tree is essential: every simple undirected cycle belongs to one
+block.  Hence the local projectors certify all directed cycles.  On a generic
+lattice a triangle test can miss a longer chordless loop.
+
+The commuting algebra generated by \(\{C_r\}\) is invariant and has the exact
+classical restriction
+\begin{align}
+ (\mathcal K_gf)(\boldsymbol n)
+ ={}&g\sum_r n_r
+ [f(\boldsymbol n^{r,0})-f(\boldsymbol n)]\nonumber\\
+ &+\frac12\sum_r(1-n_r)(n_{r-1}+n_{r+1})
+ [f(\boldsymbol n^{r,1})-f(\boldsymbol n)] .
+ \label{eq:loop-contact-generator}
+\end{align}
+After rescaling time, this is the one-dimensional contact process with
+\(\lambda=1/g\) \cite{Harris1974,Liggett1999}.  Thus
+\begin{equation}
+ g_c=\lambda_c^{-1}=0.3032280(18)
+ \label{eq:loop-causal-gc}
+\end{equation}
+using the accepted numerical contact-process threshold.  In the ordered
+phase, every fixed operational window \(W\) satisfies
+\begin{equation}
+ 1-P_{\rm DAG}(W,t)
+ \le A(g)|W|e^{-\alpha(g)t},
+ \qquad
+ P_{\rm DAG}(W,t)=
+ \operatorname{Tr}\!\left[\rho(t)\prod_{r\in W}Q_r\right].
+ \label{eq:loop-causal-window}
+\end{equation}
+The vanishing rate \(\alpha(g)\) is an order-formation gap, and the exact
+quotient transfers the directed-percolation critical exponents to cycle
+density and causal correlation scales.
+
+\paragraph{Boundary of the result.}
+The model assumes the block-cactus adjacency, the edge registers, the local
+laboratory runtime, monitoring, and a thresholded response readout.  It
+generates neither the undirected graph nor a volume measure.  Its theorem
+removes an assumed Lyapunov ranking on a nontrivial graph family; it is not
+yet a background-free spacetime theorem.
+
+\subsection{Quantum-field response as an inverse Lorentzian observable}
+\label{sec:loop-lorentz}
+
+\paragraph{Assumption removed.}
+The first inverse-geometry model encoded proper time into a calibrated
+depolarizing parameter.  That construction has been replaced by a physical
+field response: a Ramsey ratio isolates a Wightman covariance, whose
+rank defect determines an unknown de Sitter radius
+\cite{XuLorentz2026}.  Scalar propagators and localized quantum probes are
+known to carry metric and curvature information
+\cite{SaravaniAslanbeigiKempf2016,PercheMartinMartinez2022}, while
+Lorentzian multidimensional scaling embeds supplied interval data
+\cite{CloughEvans2017}.  The distinct claim tested here is partial-data
+completion from a physical covariance kernel: anchor responses fix an
+unknown curvature scale and predict target pairs never used in the fit.
+
+For real spacelike field smearings \(\Phi_i,\Phi_j\), two qubit probes undergo
+\begin{equation}
+ U=\exp[-ig(\sigma_z^i\Phi_i+\sigma_z^j\Phi_j)] .
+ \label{eq:loop-ramsey-unitary}
+\end{equation}
+In a zero-mean quasifree state their same- and opposite-sign coherences are
+\(\chi_\pm=\exp\{-2g^2[V_i+V_j\pm2W_{ij}]\}\), so
+\begin{equation}
+ W_{ij}=\frac{1}{8g^2}\log\frac{\chi_-}{\chi_+}.
+ \label{eq:loop-ramsey-ratio}
+\end{equation}
+The local self-variances cancel exactly.
+
+For a conformally coupled massless scalar in the Bunch--Davies state on
+\(\mathrm{dS}_4(R)\),
+\begin{equation}
+ W_{ij}=\frac{1}{8\pi^2R^2(1-Z_{ij})}
+ \label{eq:loop-ds-kernel}
+\end{equation}
+on the spacelike branch.  For six generic anchors define
+\(A_{ii}=0\), \(A_{ij}=(8\pi^2W_{ij})^{-1}\).
+
+\begin{theorem}[Finite-anchor curvature and blind completion]
+\label{thm:loop-lorentz}
+If \(A\) is invertible and the six ambient anchor vectors span
+\(\mathbb R^{1,4}\), then
+\begin{equation}
+ R^2=(\mathbf1^TA^{-1}\mathbf1)^{-1}.
+ \label{eq:loop-radius}
+\end{equation}
+The candidate is admissible only if
+\(G=R^2\mathbf1\mathbf1^T-A\) has rank five and Lorentzian inertia
+\((-++++0)\).  With \(K\ge6\) anchors and
+\(b_x=R^2\mathbf1-A_{Ax}\), every withheld target--target invariant is
+\begin{equation}
+ \widehat Z_{xy}=\frac{b_x^TG^+b_y}{R^2}.
+ \label{eq:loop-blind-completion}
+\end{equation}
+\end{theorem}
+
+The determinant lemma applied to
+\(G=X\eta X^T\) proves Eq.~\eqref{eq:loop-radius}; the pseudoinverse identity
+proves Eq.~\eqref{eq:loop-blind-completion}.  Redundant anchor sextuples,
+Lorentzian inertia, target hyperboloid norms, and unopened target pairs
+overidentify the model.  Perturbation bounds propagate Ramsey shot noise,
+finite smearing, and Gram conditioning into errors on \(R\) and
+\(\widehat Z_{xy}\).  The blind pairs can therefore falsify the assumed
+geometry--state kernel rather than merely reproduce data used in a fit.
+
+\paragraph{Boundary of the result.}
+The field species, Bunch--Davies state, de Sitter model class, spacelike
+support, canonical normalization, probe coupling, and a nondegenerate anchor
+frame are inputs.  Equation~\eqref{eq:loop-ramsey-ratio} is physical, but the
+kernel \eqref{eq:loop-ds-kernel} supplies the geometric model.  The theorem is
+an inverse problem inside that class; it does not derive a Lorentzian
+manifold from the causal-order model or determine temporal orientation of a
+timelike held-out pair.
+
+\subsection{A fixed physical modular band}
+\label{sec:loop-modular}
+
+\paragraph{Assumption removed.}
+Earlier lattice tests retained a fixed number of modular modes.  As the
+cutoff is removed, that prescription narrows the physical band and can make
+convergence tautological.  A state-independent band selected by the local
+lattice-boost operator removes this loophole
+\cite{XuModular2026}.
+
+For the half-filled free-fermion interval, let \(C_N\) be the restricted
+correlation matrix and
+\begin{equation}
+ h_N=\log[(\mathbf1-C_N)C_N^{-1}]
+ \label{eq:loop-modular-h}
+\end{equation}
+the exact one-particle modular Hamiltonian.  The known tridiagonal commuting
+operator determines a local boost matrix \(B_N\), with
+\([B_N,h_N]=0\).  This construction is rooted in the
+Bisognano--Wichmann form and its lattice implementations
+\cite{BisognanoWichmann1975,Giudici2018}.  The operational band
+\begin{equation}
+ Q_\Lambda=\mathbf1_{[-\Lambda,\Lambda]}(B_N)
+ \label{eq:loop-modular-band}
+\end{equation}
+is fixed before \(h_N\) is diagonalized; its rank grows with \(N\) at fixed
+\(\Lambda\).
+
+For any real Borel function \(g\), put \(G_N=g(B_N)\) and
+\(E_N=h_N-G_N\).  Every Hermitian correlation perturbation satisfies
+\begin{align}
+ |\operatorname{Tr}(\delta C E_N)|
+ \le{}&\delta_\Lambda[G_N]\,
+ \|Q_\Lambda\delta C Q_\Lambda\|_1\nonumber\\
+ &+\delta_\Lambda^\perp[G_N]\,
+ \|\bar Q_\Lambda\delta C\bar Q_\Lambda\|_1,
+ \label{eq:loop-modular-certificate}\\
+ \delta_\Lambda[G_N]
+ &=\|Q_\Lambda E_NQ_\Lambda\|_\infty,\qquad
+ \delta_\Lambda^\perp[G_N]
+ =\|\bar Q_\Lambda E_N\bar Q_\Lambda\|_\infty .
+\end{align}
+The in-band constant is minimax optimal for trace-neutral Gaussian tangents.
+It therefore certifies all linear modular responses in the stated physical
+band, rather than only one prepared wave packet.
+
+Common-spectrum analysis gives the sparse correction
+\begin{equation}
+ \widetilde B_N=B_N+\frac1{N^2}
+ \left[-\frac14B_N+\frac{1}{4\pi^2}B_N^3\right].
+ \label{eq:loop-range-three}
+\end{equation}
+It contains only first- and third-neighbor hopping.  The cubic coefficient is
+analytic; the linear coefficient was selected on \(N\le128\), frozen, and
+tested without refitting on \(N=192,\ldots,768\).  For \(\Lambda=8\), the
+archived deterministic data give
+\begin{equation}
+ \delta_8[B_N]\propto N^{-1.992},
+ \qquad
+ \delta_8[\widetilde B_N]\propto N^{-3.984},
+ \label{eq:loop-modular-scaling}
+\end{equation}
+with mode-entry-aware fourth-order envelopes on the held-out sizes.  The
+first relation is an analytic finite-band response certificate; the
+\(N^{-4}\) corrected law is controlled numerical evidence, not an all-size
+theorem.
+
+\paragraph{Boundary of the result.}
+This loop concerns a one-dimensional free state and a modular-to-lattice-
+boost response.  It contains no transverse area, multiple null directions,
+Newton constant, focusing equation, conservation completion, or dynamical
+metric.  Consequently it is not an Einstein derivation.  Interacting and
+higher-dimensional versions require new operator estimates.
+
+\subsection{Dynamical charge center and selective fixed-sector response}
+\label{sec:loop-center}
+
+\paragraph{Assumption removed.}
+A central variable should not be attached by hand.  A local
+number-conserving channel derives a complete additive-charge fixed
+center, its formation gap, and its lifting under weak symmetry breaking
+\cite{XuCentral2026}.
+
+On a connected graph let \(n_i\) be hard-core occupations,
+\(\widehat V=\sum_i n_i\), and use local dephasing together with symmetric
+number-conserving hops \(L_{ij}=\sigma_i^-\sigma_j^+\).  The reversible
+Lindbladian has Dirichlet form
+\begin{align}
+ -\langle X,\mathcal L^*(X)\rangle
+ ={}&\frac{\gamma}{2}\sum_i\|[n_i,X]\|_2^2\nonumber\\
+ &+\frac{\eta}{2}\sum_{\{i,j\}\in E}
+ \left(\|[L_{ij},X]\|_2^2+\|[L_{ji},X]\|_2^2\right).
+ \label{eq:loop-center-dirichlet}
+\end{align}
+
+\begin{theorem}[Dynamical additive-charge center]
+\label{thm:loop-center}
+Let \(P_v\) project onto \(\widehat V=v\).  Then
+\begin{align}
+ \ker\mathcal L^*&=\operatorname{span}\{P_0,\ldots,P_N\},\nonumber\\
+ \mathcal E_V(X)&=\sum_{v=0}^{N}
+ \frac{\operatorname{Tr}(P_vX)}{\binom Nv}P_v,\nonumber\\
+ \|e^{t\mathcal L^*}X-\mathcal E_VX\|_2
+ &\le e^{-\Delta t}\|X-\mathcal E_VX\|_2,\qquad
+ \Delta\ge\min\{\gamma/2,\eta\lambda_2(L_G)\}.
+ \label{eq:loop-center-gap}
+\end{align}
+The one-point density profile closes exactly:
+\begin{equation}
+ \mathcal L^*(n_i)=\eta\sum_{j\sim i}(n_j-n_i).
+ \label{eq:loop-center-heat}
+\end{equation}
+\end{theorem}
+
+The fixed projections are dynamically produced, not an appended register.
+They are central in the fixed algebra and for charge-preserving
+laboratories, but not in the microscopic algebra
+\(\mathcal B(\mathcal H)\).  Homogeneous weak flips give an exact Ehrenfest
+chain on \(v=0,\ldots,N\); in the balanced stationary state,
+\begin{equation}
+ \langle\delta\widehat V(t)\delta\widehat V(0)\rangle
+ =\frac N4e^{-2\epsilon t}.
+ \label{eq:loop-center-correlation}
+\end{equation}
+This separates the graph-controlled formation time from the
+symmetry-breaking charge-memory time.
+
+There is a precise, but conditional, field-theory consequence.  If \(v\) is
+identified with fixed Euclidean metric volume and the sector response is
+normalized as \(Z_v[J]/Z_v[0]\), a pure volume counterterm \(c v\) cancels:
+\begin{equation}
+ \frac{Z_v[J;c]}{Z_v[0;c]}
+ =\frac{e^{-cv}Z_v[J;0]}{e^{-cv}Z_v[0;0]}
+ =\frac{Z_v[J;0]}{Z_v[0;0]} .
+ \label{eq:loop-fixed-volume-cancellation}
+\end{equation}
+A coupling to an operator \(Q\) that is not constant inside the sector does
+not cancel; its derivative is the connected covariance
+\(-\operatorname{Cov}(O,Q)\).  Thus the statement is selective: it removes
+only the identity or pure-volume part from conditional response and leaves
+curvature-dependent counterterms to ordinary effective-field-theory
+renormalization.  Fixed-total-volume and unimodular formulations provide
+the closest gravitational precedent \cite{FiolGarriga2010}, while global
+sequestering uses a different set of constraints \cite{KaloperPadilla}.
+The microscopic result here is the local charge-center theorem; identifying
+that charge with metric volume remains a separate bridge.
+
+\paragraph{Boundary of the result.}
+The microscopic \(U(1)\) law is assumed.  No theorem identifies
+\(\widehat V\) with metric four-volume, derives sectorwise gravitational
+normalization, predicts a cosmological constant, or explains why the
+appropriate laboratory is confined to one volume sector.  Equation
+\eqref{eq:loop-fixed-volume-cancellation} is therefore a conditional
+interface attached to an exact charge-center theorem, not a solution of the
+cosmological-constant problem.
+
+\subsection{What these loops do and do not compose}
+\label{sec:loop-noncomposition}
+
+The completed loops remove several assumptions independently:
+\begin{equation}
+\begin{array}{rcl}
+\text{postulated UCP kinetics}
+&\Longrightarrow&\text{fresh-cell unitary dilation},\\
+\text{assumed asymptotic abelianness}
+&\Longrightarrow&\text{exact Boolean algebra and gap},\\
+\text{static algebraic dichotomy}
+&\Longrightarrow&\text{memory-capacity transition},\\
+\text{assumed Lyapunov ranking}
+&\Longrightarrow&\text{DAG followed by derived rank},\\
+\text{calibrated proper-time oracle}
+&\Longrightarrow&\text{field-covariance inverse geometry},\\
+\text{shrinking fixed-mode audit}
+&\Longrightarrow&\text{fixed physical modular band},\\
+\text{attached central label}
+&\Longrightarrow&\text{dynamical additive-charge center}.
+\end{array}
+\label{eq:loop-removals}
+\end{equation}
+No arrow in Eq.~\eqref{eq:loop-removals} licenses the replacement
+\[
+\text{collision graph}\equiv\text{causal graph}\equiv
+\text{de Sitter anchors}\equiv\text{fermion interval}\equiv
+\text{metric-volume sectors}.
+\]
+Those identifications would be additional assumptions.  A future unified
+model must define common microscopic degrees of freedom and prove that its
+distinct scaling regimes reduce to the models above, with an error budget
+that remains controlled across both arrows
+\[
+\text{microscopic process}\longrightarrow\text{kinetic response}
+\longrightarrow\text{order--volume geometry}.
+\]
+This noncomposition statement is as important as the positive theorems: it
+prevents evidence obtained in one solvable model from being counted twice as
+support for a different bridge.

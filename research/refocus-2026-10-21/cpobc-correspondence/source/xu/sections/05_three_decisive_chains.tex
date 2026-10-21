@@ -1,0 +1,481 @@
+\section{Three decisive model chains beyond the fixed-regulator TT sector}
+\label{sec:three-decisive-chains}
+
+The same-link construction of
+Sec.~\ref{sec:same-link-induced-gravity} ended at three visible boundaries:
+the update word was still prepared relative to an external schedule, the
+induced metric response was restricted to its transverse--traceless
+quadratic component, and its Newton coefficient was defined at fixed
+microscopic spacing.  Three companion results address these interfaces at
+the model-specific level stated below
+\cite{XuRelationalOrderVolume2026,XuConstraintCompleteEinstein2026,
+XuRegulatorIndependentNewton2026}.  Their composition is a
+regulator-independent \emph{quadratic} quantum Einstein band.  It is not a
+nonlinear, background-independent completion of A11.
+
+\subsection{Why the three arrows must be separated}
+
+The three problems are logically independent:
+\begin{equation}
+\begin{split}
+&\text{external update word}
+ \longrightarrow \text{finite relational history},\\
+&\text{two TT polarizations}
+ \longrightarrow \text{ten components + constraints + ghosts},\\
+&\text{fixed cutoff coefficient}
+ \longrightarrow \text{regulator-independent Newton limit}.
+\end{split}
+\label{eq:three-chain-separation}
+\end{equation}
+A history-state representation does not generate a gauge identity.  A
+Fierz--Pauli completion does not remove the cutoff.  A balanced determinant
+does not explain the clock or the causal records.  Combining the conclusions
+is legitimate only after the record support, metric derivative, and
+determinant response are identified through explicit interfaces.
+
+\subsection{Chain I: finite relational time, order, and information volume}
+
+\paragraph{The obstruction.}
+Let \(H=H^\dagger\) and \(T=T^\dagger\) act in finite dimension.  If the
+Heisenberg velocity is nonnegative in every state, then
+\begin{equation}
+ i[H,T]\geq0,\qquad \Tr i[H,T]=0
+ \quad\Longrightarrow\quad [H,T]=0.
+\label{eq:three-clock-no-go}
+\end{equation}
+Thus no bounded observable is a state-independent strictly increasing clock
+for a finite closed system.  The appropriate finite replacement is a
+stationary state with conditional clock correlations, not a monotone
+operator.
+
+\paragraph{Exact history sector.}
+For local reversible record updates \(U_0,\ldots,U_{M-1}\), introduce
+\begin{align}
+ H_{\rm prop}
+ =\frac12\sum_{r=0}^{M-1}\big(&
+ |r\rangle\langle r|+|r+1\rangle\langle r+1|\nonumber\\[-1mm]
+ &-|r+1\rangle\langle r|\otimes U_r
+ -|r\rangle\langle r+1|\otimes U_r^\dagger\big).
+\label{eq:three-hprop}
+\end{align}
+Writing
+\(|\psi_r\rangle=U_{r-1}\cdots U_0|\psi_0\rangle\), the state
+\begin{equation}
+ |\Psi_{\rm hist}\rangle
+ =\frac1{\sqrt{M+1}}\sum_{r=0}^{M}
+ |r\rangle_C|\psi_r\rangle
+\label{eq:three-history}
+\end{equation}
+has exactly zero propagation energy.  Conditioning on
+\(|r\rangle\langle r|\) returns \(|\psi_r\rangle\), and the first positive
+eigenvalue is
+\begin{equation}
+ \Delta_M=1-\cos\frac{\pi}{M+1}.
+\label{eq:three-history-gap}
+\end{equation}
+This follows by conjugating Eq.~\eqref{eq:three-hprop} to one half the path
+Laplacian.  The result replaces an external runtime by a finite internal
+clock correlation.  The low-entropy clock endpoint and the program remain
+state-preparation inputs.
+
+\paragraph{Causal rank and the common volume record.}
+An accepted event \(v\) is appended only after the event records in its
+parent-port set \(P(v)\) are present.  The update writes
+\begin{equation}
+ r(v)=
+ \begin{cases}
+ 0,&P(v)=\varnothing,\\
+ 1+\max_{u\in P(v)}r(u),&P(v)\neq\varnothing .
+ \end{cases}
+\label{eq:three-causal-rank}
+\end{equation}
+Every accepted edge \(u\to v\) raises \(r\), so a directed cycle is
+impossible.  Append operations at incomparable targets use disjoint
+registers and commute.  Adjacent exchanges of such operations connect all
+topological schedules, proving that their final incidence record is the
+same even when the schedule register is coherently superposed.
+
+On the explicit \(P_L\times T_L^3\) port branch, the accepted events also
+carry \(q\) stable record qubits.  If a local coupling \(J\) fixes the
+distinguishable clock tick \(\tau_*=\pi/(2J)\), define
+\begin{equation}
+ \mu_L(A)=\tau_*^4\#A,\qquad
+ C_L(A)=q\#A,\qquad
+ \frac{C_L(A)}{\mu_L(A)}=\frac{q}{\tau_*^4}.
+\label{eq:three-record-volume}
+\end{equation}
+The ratio is exactly preserved by additive \(b^4\)-cell blocking.  For
+midpoint tests \(f\in C^2([0,1]^4)\),
+\begin{equation}
+ \left|L^{-4}\sum_{\bm n}f\!\left(
+ \frac{\bm n+\bm1/2}{L}\right)-\int_{[0,1]^4}f\,\diff^4x\right|
+ \leq\frac1{24L^2}
+ \sum_{\alpha=1}^4\|\partial_\alpha^2f\|_\infty+O(L^{-4}).
+\label{eq:three-weak-volume}
+\end{equation}
+Hence conditional history, order, capacity, and weak volume use one record
+family and one refinement.  Exact diagonalization and 96 randomized
+spacelike schedules give zero history, rank, cycle, activation, and blocking
+defects within the archived precision; the fitted weak-volume exponent is
+\(-1.99996\).
+
+\begin{theorem}[Finite relational order--volume chain]
+\label{thm:three-relational-order-volume}
+For the Hamiltonian \eqref{eq:three-hprop} and the declared rank-increasing
+append program, every conditional history branch has a schedule-independent
+strict partial order.  Its accepted-event records define the positive
+additive measure \eqref{eq:three-record-volume}; order and measure share the
+same blocking maps, and the normalized weak measure converges at
+\(O(L^{-2})\).
+\end{theorem}
+
+This proves A19M.  It does not prove the general A19: the finite clock
+boundary, parent rule, four-dimensional port language, and volume unit are
+not dynamically selected.
+
+\subsection{Chain II: the constraint-complete quadratic Einstein field}
+
+The same-link determinant previously fixed one positive TT coefficient,
+\(Z_{\rm TT}\).  To determine what follows for the remaining eight tensor
+components, consider the most general parity-even isotropic two-derivative
+quadratic form of a symmetric tensor at nonzero momentum:
+\begin{align}
+ Q[h;q]={}&a_1q^2h_{\mu\nu}h_{\mu\nu}
+ +a_2(q_\mu h_{\mu\nu})(q_\rho h_{\rho\nu})\nonumber\\
+ &+a_3(q_\mu h_{\mu\nu}q_\nu)h
+ +a_4q^2h^2.
+\label{eq:three-quadratic-ansatz}
+\end{align}
+The declared linear gauge generator is
+\begin{equation}
+ (R\xi)_{\mu\nu}=q_\mu\xi_\nu+q_\nu\xi_\mu .
+\label{eq:three-gauge-generator}
+\end{equation}
+Solving \(KR=0\) gives a one-dimensional coefficient space,
+\begin{equation}
+ (a_1,a_2,a_3,a_4)=\zeta(1,-2,2,-1).
+\label{eq:three-fp-unique}
+\end{equation}
+TT matching fixes \(\zeta=Z_{\rm TT}/2\).  Thus no second coupling is
+introduced when extending the determinant response to
+\begin{align}
+ S_E^{(2)}=\frac{Z_{\rm TT}}2\sum_q\big[&
+ q^2h_{\mu\nu}h_{\mu\nu}
+ -2(q_\mu h_{\mu\nu})^2\nonumber\\
+ &+2(q_\mu h_{\mu\nu}q_\nu)h-q^2h^2\big].
+\label{eq:three-fierz-pauli}
+\end{align}
+
+On the lattice, every occurrence of \(q_\mu\) is replaced by the same
+\(\widehat q_\mu=2a^{-1}\sin(aq_\mu/2)\).  Define the de Donder map
+\begin{equation}
+ (Bh)_\nu=\widehat q^\mu h_{\mu\nu}
+ -\frac12\widehat q_\nu h .
+\label{eq:three-de-donder}
+\end{equation}
+Then the finite identities are
+\begin{equation}
+ K_E R=0,\qquad
+ B R=\widehat q^{\,2}\mathbb 1_4,\qquad
+ \operatorname{rank}K_E=6,\qquad
+ \operatorname{rank}R=4.
+\label{eq:three-finite-ward}
+\end{equation}
+The gauge-fixed kernel
+\(K_\alpha=K_E+\alpha^{-1}B^TB\) has rank ten.  The
+Faddeev--Popov operator is \(\widehat q^2\mathbb 1_4\), and the linear BRST
+differential
+\begin{equation}
+ sh=Rc,\qquad sc=0,\qquad
+ s\bar c=b,\qquad sb=0
+\label{eq:three-brst}
+\end{equation}
+is nilpotent.
+
+For a source satisfying \(R^TJ=0\), the Gaussian response is independent of
+the gauge parameter:
+\begin{equation}
+ \frac{\partial}{\partial\alpha}
+ \left(J^TK_\alpha^{-1}J\right)=0 .
+\label{eq:three-source-gauge}
+\end{equation}
+A source with a gauge component supplies a required failure control and
+changes by order unity across the tested \(\alpha\)-range.  On every fixed
+finite set of nonzero physical Fourier modes,
+\begin{equation}
+ \frac{\|K_E(\widehat q)-K_E(q)\|}{\|K_E(q)\|}
+ =O(a^2).
+\label{eq:three-full-band}
+\end{equation}
+The deterministic archive gives a maximum normalized Ward residual
+\(1.98\times10^{-16}\), BRST-square residual zero, conserved-source gauge
+spread \(3.47\times10^{-18}\), and continuum exponent \(-1.988\).
+
+\begin{theorem}[Constraint-complete induced Gaussian response]
+\label{thm:three-constraint-complete}
+Given a positive induced TT normalization and the linear gauge law
+\eqref{eq:three-gauge-generator}, locality, isotropy, parity, and
+two-derivative scaling uniquely determine the full Fierz--Pauli kernel.
+Equations~\eqref{eq:three-finite-ward}--\eqref{eq:three-brst} form an exact
+finite lattice gauge--ghost complex, and all conserved-source Gaussian
+Schwinger functions have a gauge-independent fixed-band continuum limit.
+\end{theorem}
+
+This proves A11Q.  Linear gauge symmetry and a conformal-contour or
+Lorentzian \(i0\) prescription are model inputs.  The theorem contains no
+cubic vertex, nonlinear constraint algebra, Slavnov--Taylor hierarchy, or
+BV master equation.
+
+\subsection{Chain III: a regulator-independent induced Newton coefficient}
+
+Let determinant sector \(i\) have fixed mass \(m_i>0\), signed weight \(w_i\),
+and a common curvature normalization \(\kappa_g\).  For the declared local
+regulator class, its dimension-two response has
+\begin{align}
+ I_r(m,\Lambda)
+={}&A_r\Lambda^2
+ -m^2\ln\frac{\Lambda^2}{\mu^2}
+ +B_rm^2\nonumber\\
+ &+m^2\ln\frac{m^2}{\mu^2}
+ +\rho_r(m,\Lambda),\qquad \rho_r\to0 ,
+\label{eq:three-regulator-class}
+\end{align}
+where \(A_r>0\) and \(A_r,B_r\) may be scheme dependent.  The induced
+normalization is
+\begin{equation}
+ Z_r(\Lambda)=\kappa_g\sum_iw_iI_r(m_i,\Lambda).
+\label{eq:three-running-z}
+\end{equation}
+Writing
+\begin{equation}
+ S_0=\sum_iw_i,\qquad
+ S_1=\sum_iw_im_i^2,\qquad
+ F=\sum_iw_im_i^2\ln\frac{m_i^2}{\mu^2},
+\label{eq:three-spectral-moments}
+\end{equation}
+gives
+\begin{equation}
+ \frac{Z_r}{\kappa_g}
+ =A_rS_0\Lambda^2
+ -S_1\ln\frac{\Lambda^2}{\mu^2}
+ +B_rS_1+F+o(1).
+\label{eq:three-running-decomposition}
+\end{equation}
+
+If all \(w_i\geq0\) and the spectrum is nonzero, then \(S_0>0\), so a
+cutoff-free coefficient is impossible without a bare counterterm or an
+additional signed sector.  If \(S_0=0\) but \(S_1\neq0\), a logarithmic
+divergence remains.  The two conditions
+\begin{equation}
+ S_0=0,\qquad S_1=0
+\label{eq:three-balance}
+\end{equation}
+remove the power, logarithmic, and scheme-dependent finite local terms and
+leave
+\begin{equation}
+ Z_*=\kappa_gF
+ =\kappa_g\sum_iw_im_i^2\ln\frac{m_i^2}{\mu^2}.
+\label{eq:three-zstar}
+\end{equation}
+The reference-scale derivative is
+\(\partial F/\partial\ln\mu^2=-S_1=0\).
+
+The explicit example
+\begin{equation}
+ w=(1,-2,1),\qquad
+ m^2=M_0^2(1,2,3)
+\label{eq:three-balanced-example}
+\end{equation}
+has
+\begin{equation}
+ \frac{Z_*}{\kappa_gM_0^2}
+ =3\ln3-4\ln2
+ =0.523248143764548\ldots>0 .
+\label{eq:three-balanced-value}
+\end{equation}
+A sharp momentum cutoff, sharp proper-time cutoff, and smooth proper-time
+cutoff agree to a spread \(1.03\times10^{-5}\) at
+\(\Lambda/M_0=1200\).  On the unit lattice, with
+\begin{equation}
+ C_{r,L}(n)=
+ \frac1{Z_r(LM_0)[2L\sin(\pi n/L)]^2},
+\label{eq:three-balanced-covariance}
+\end{equation}
+every fixed nonzero mode tends to
+\([Z_*(2\pi n)^2]^{-1}\), with
+\(O(L^{-2}\ln L)\) error for the three schemes.
+
+\begin{theorem}[Two-moment Newton universality]
+\label{thm:three-newton-universality}
+Within the regulator class \eqref{eq:three-regulator-class}, the two
+conditions \eqref{eq:three-balance} are sufficient for a finite,
+scheme-independent induced Newton coefficient and a common fixed physical
+Gaussian band.  They are necessary when the class contains independent
+power and finite-local scheme coefficients and the spectrum is not tuned as
+a function of the cutoff.
+\end{theorem}
+
+This proves A11RG.  Taken alone, the negative weight in
+\eqref{eq:three-balanced-example} is only a formal determinant supertrace
+or constrained determinant ratio, not an ordinary negative-multiplicity
+particle.  Section~\ref{sec:positive-hilbert-balance} supplies a separate
+free positive-Hilbert realization of exactly this spectrum, proves that it
+persists before averaging over any supplied finite positive graph
+ensemble, and thereby closes the model-level node A11BM.  It also proves
+that exact all-level pairing would erase the desired finite invariant.  It
+is followed by the selective-Ward closure in
+Sec.~\ref{sec:selective-ward-closure}, which protects the moments for
+arbitrary finite positive interacting physical operators and supplies a
+positive finite-geometry channel on a declared language.  The
+projective-growth extension in
+Sec.~\ref{sec:projective-response-growth} then constructs exact compatible
+cylinder laws and an infinite positive measure on a supplied naturally
+labelled causal-birth language.  The covariant-growth extension in
+Sec.~\ref{sec:covariant-response-growth} then maps contact-star responses to
+a nonvanishing classical sequential-growth law with exact discrete general
+covariance and Bell causality.  Its one-arity \(r\ge2\) complex branch has
+bounded variation and therefore a countably additive history measure,
+strongly positive rank-one decoherence functional, and nonzero
+finite-volume interference.  The fixed-strip construction in
+Sec.~\ref{sec:nonabelian-history-measure} separately supplies a
+fresh-ancilla, noncommuting, rank-four, countably extendible history
+measure.  The arbitrary-causet holonomy construction in
+Sec.~\ref{sec:covariant-nonabelian-holonomy} then combines the classical CSG
+density with intrinsic fresh-event noncommuting gates and proves a
+relabeling-covariant countably additive operator measure with a
+non-Abelian integrated range.  Next,
+Sec.~\ref{sec:central-operator-growth} solves the central operator-valued
+CSG branch and classifies it as a direct integral of scalar laws: its
+infinite geometry POVM is exactly covariant but cannot detect
+coupling-sector coherence, while a positive noncentral normalized control
+fails DGC.  Section~\ref{sec:bell-causal-rigidity} then proves exact
+rigidity of three natural neighborhoods of the remaining nonsingular CPOBC
+branch without constructing or globally excluding that branch.  These
+results do not prove the stronger A11B
+requirement of deriving the protected commutant, maximal-birth/port language,
+contact motifs, response multiplet, coherent arity and phase, an
+operator-Markov or square-operator Bell law, or quantum geometry
+backreaction; nor do they produce a tight
+Lorentzian continuum, establish spin--statistics and anomaly freedom, or
+couple the result to nonlinear BV constraints and graph backreaction.  The
+cosmological and higher-curvature heat-kernel moments are not cancelled by
+Eq.~\eqref{eq:three-balance}.
+
+\subsection{The composed quadratic limit}
+
+The three theorems compose under the following compatibility conditions.
+Let the \(P_L\times T_L^3\) record support of
+Theorem~\ref{thm:three-relational-order-volume} carry the determinant
+sectors of Eq.~\eqref{eq:three-running-z}.  Assume that, away from the two
+open clock boundaries, their local heat-kernel response belongs uniformly
+to Eq.~\eqref{eq:three-regulator-class}.  Use the same local incidence
+derivative in the scalar determinants, the symmetric-tensor kernel, and the
+de Donder operator.  Boundary-insensitive fixed-band observables are
+selected before \(L\to\infty\).  These are interface hypotheses, not
+additional conclusions.
+
+Define a joint discrepancy
+\begin{align}
+ {\cal D}_{M,L,r}={}&
+ \varepsilon_{\rm hist}+\varepsilon_{\rm ord}
+ +\varepsilon_{\rm block}
+ +\varepsilon_{\rm vol}(L)+\varepsilon_{\rm link}(L)\nonumber\\
+ &+\varepsilon_{\rm Ward}+\varepsilon_{\rm BRST}
+ +\varepsilon_{\rm src}+\varepsilon_{Z,r}(L)
+ +\varepsilon_{\rm band}(L),
+\label{eq:three-joint-discrepancy}
+\end{align}
+where:
+\begin{itemize}
+\item \(\varepsilon_{\rm hist}\) is the zero-energy plus
+conditional-state residual;
+\item \(\varepsilon_{\rm ord}\) is the integer sum of rank, cycle, and causal
+activation defects;
+\item \(\varepsilon_{\rm block}\) and \(\varepsilon_{\rm vol}\) are the
+capacity-density blocking and weak-measure errors;
+\item \(\varepsilon_{\rm link}\) measures disagreement between the record support
+and the links used in the determinant and tensor derivatives;
+\item \(\varepsilon_{\rm Ward}\), \(\varepsilon_{\rm BRST}\), and
+\(\varepsilon_{\rm src}\) measure \(K_ER\), \(s^2\), and
+conserved-source gauge spread;
+\item \(\varepsilon_{Z,r}=|Z_r-Z_*|/Z_*\), and
+\(\varepsilon_{\rm band}\) is the lattice-dispersion/resolvent error.
+\end{itemize}
+Every term is a finite observable or a remainder in a stated norm.
+In the explicit archives, all algebraic terms vanish to roundoff,
+\(\varepsilon_{\rm vol}=O(L^{-2})\), and
+\(\varepsilon_{Z,r}+\varepsilon_{\rm band}=O(L^{-2}\ln L)\).
+
+\begin{theorem}[Relational, constraint-complete, regulator-independent
+quadratic composition]
+\label{thm:three-chain-composition}
+Suppose the interface contract above holds, the two spectral moments vanish,
+and \(Z_*>0\).  Condition on a finite internal clock history, take the common
+record refinement \(L\to\infty\) on a fixed boundary-insensitive physical
+band, and remove the regulator along \(\Lambda=LM_0\).  Then:
+\begin{enumerate}
+\item the accepted records converge weakly to their additive
+order--volume measure while retaining an exact finite causal rank;
+\item the ten-component Gaussian metric complex obeys the finite Ward and
+BRST identities and has four gauge directions before fixing;
+\item for every finite collection of conserved sources, the connected
+two-point generating functional converges to the same gauge- and
+regulator-independent Fierz--Pauli response with normalization \(Z_*\);
+\item the total error is bounded by a constant times
+\({\cal D}_{M,L,r}\) on the chosen band.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The first conclusion is
+Theorem~\ref{thm:three-relational-order-volume}.  Determinant additivity
+reduces the total TT coefficient to Eq.~\eqref{eq:three-running-z}, and
+Theorem~\ref{thm:three-newton-universality} replaces it by \(Z_*\) uniformly
+on the fixed band.  The unique coefficient extension
+\eqref{eq:three-fp-unique} then fixes the complete quadratic kernel without
+introducing another coupling.  Exact finite Ward/BRST identities and
+Eq.~\eqref{eq:three-source-gauge} remove gauge-parameter dependence.
+The resolvent identity bounds the covariance change by the coefficient,
+lattice-momentum, and source-projection errors.  Adding the independent
+record/interface errors gives Eq.~\eqref{eq:three-joint-discrepancy}.
+\end{proof}
+
+\subsection{Boundary after the three chains}
+
+Theorem~\ref{thm:three-chain-composition} is the strongest quantum-gravity
+statement presently justified by these three additions.  It closes a
+finite-clock, common-record, gauge-complete, regulator-independent
+\emph{linear} quantum response under a supplied four-dimensional program,
+linear gauge law, and balanced signed determinant spectrum.  It does not
+close the following arrows:
+\begin{enumerate}
+\item dynamical selection of the clock/program state, adjacency language,
+dimension, signature, or absolute record-volume unit;
+\item dynamical derivation of the protected internal commutant, the
+maximal-birth graph language/topology/move law, contact motifs, response
+multiplet, coherent arity and phase, a square-operator
+Markov/Bell-complete quantum-backreacting geometry law, and a tight
+Lorentzian anomaly-free continuum realization of
+the finite selective-Ward/projective/covariant-growth models in
+Secs.~\ref{sec:selective-ward-closure}
+--\ref{sec:bell-causal-rigidity};
+\item nonlinear gauge symmetry, the BV master equation, graviton
+self-interactions, or a nonperturbative metric probability measure;
+\item graph backreaction, interacting matter, and a joint continuum limit
+away from the declared fixed physical band;
+\item simultaneous renormalization of vacuum and higher-curvature
+coefficients;
+\item the matter, central-volume, and cosmological branches.
+\end{enumerate}
+Accordingly A19M, A11Q, A11RG, A11BM, the finite selective-Ward node
+A11BW, the labelled projective-history node A11PG, and the covariant
+rank-one history node A11CG, together with the fixed-strip non-Abelian node
+A11NH, arbitrary-causet holonomy node A11CH, and central operator-growth
+classification A11OC, together with the CPOBC boundary-rigidity node A11BR,
+are marked proved at model or regulator-class level.
+General A7,
+A9V, A11, A11B, and A19 remain open.  This distinction
+is the reason the
+three chains
+strengthen the program without turning the conditional synthesis theorem
+into a claim of completed quantum gravity.

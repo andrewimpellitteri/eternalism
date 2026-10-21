@@ -199,3 +199,22 @@ an independent audit. A bounded web/SerpApi and OpenAlex search found no
 published statement of the universe trilemma, but PhilPapers/Scholar were not
 searched, Balaguer 2026's body and Brading 2011/2014 remain unread, and absence
 of hits is not priority. Do not submit or claim discovery.
+
+## Redraft gate, 21 October 2026 (universe and the problem of time)
+
+- Not compiled; `verification.json` is stale for this version.
+- Main unread priority risk: Balaguer, *How to Be a Presentist*, chapter "How
+  to Make Presentism Consistent with Special Relativity", pp. 212-237,
+  DOI 10.1093/9780197845745.003.0011.
+- Bridge premise Definition 2 (conservation test regimented as a conserved
+  generator) is ours and needs adversarial review.
+- Physics scope: Isham's examples are closed minisuperspace. The dust
+  (Giesel et al.) and phantom-scalar (Thiemann) clocks hold for closed spatial
+  topology; their cosmological comparisons are k=0, and our closed-model
+  extension covers the homogeneous background only. Thiemann's "whatever
+  matter" claim is not an empirically significant cost (dust corrections
+  decay). Bamonti and Thébault do not address conservation in synchronous
+  gauge.
+- Monton is cited from the 2005 author preprint; Bamonti and Thébault page
+  numbers are from the author version; confirm against published pagination.
+- Independent re-review of the redraft is required before acceptance.

@@ -1,0 +1,2122 @@
+\section{A positive-Hilbert origin of the balanced determinant spectrum}
+\label{sec:positive-hilbert-balance}
+
+\textbf{Status: \StatusModel\ for a balanced positive-Hilbert multiplet and
+its exact or approximate selective Ward protection over an arbitrary
+positive interacting operator on every member of a supplied finite geometry
+language, including a positive finite geometry channel; \StatusOpen\ for the
+microscopic origin of the protected commutant, a dynamically selected
+geometry language and projective refinement measure, continuum Lorentz
+spin--statistics and anomaly freedom, nonlinear BV closure, and a
+background-independent continuum quantum measure.}
+
+The regulator theorem in
+Theorem~\ref{thm:three-newton-universality} identifies exactly which
+spectral moments must vanish, but it does not explain why a physical
+microscopic system should have the signed weights needed for that
+cancellation.  Entering \((1,-2,1)\) as a list of ``multiplicities'' is not
+an answer: a negative multiplicity is not a positive state space.  The
+companion construction \cite{XuPositiveHilbertBalance2026} closes this
+narrower free-model problem by separating two notions that must not be
+conflated:
+\[
+ \text{sign of a closed Gaussian loop}
+ \quad\ne\quad
+ \text{sign of a state norm}.
+\]
+
+\subsection{Exterior parity and an additive mass ladder}
+
+Let \(G\) be any finite weighted graph and let \(K_G\geq0\) be one real
+symmetric local kernel on it.  Introduce the positive internal Hilbert space
+\begin{equation}
+ \Hh_{\rm int}=\Lambda^\bullet\mathbb C^k
+ =\bigoplus_{n=0}^{k}\Lambda^n\mathbb C^k,
+ \qquad
+ N=\sum_{a=1}^{k}c_a^\dagger c_a ,
+ \label{eq:ph-exterior}
+\end{equation}
+with its standard exterior-product inner product.  The degree-\(n\)
+subspace has dimension \(\binom{k}{n}\) and parity
+\((-1)^F=(-1)^N\).  Give every component the same graph operator and the
+additive mass-squared operator
+\begin{equation}
+ M^2=x\mathbf 1+\Delta N,\qquad x,\Delta>0,\qquad
+ h_n=K_G+(x+n\Delta)\mathbf 1 .
+ \label{eq:ph-mass}
+\end{equation}
+Even components are represented by commuting Gaussian variables and odd
+components by Grassmann variables.  Integrating out the complete multiplet
+therefore gives
+\begin{equation}
+ \Gamma_k[K_G]
+ =\sum_{n=0}^{k}(-1)^n\binom{k}{n}
+   \Tr\log\!\left[K_G+(x+n\Delta)\mathbf 1\right].
+ \label{eq:ph-gamma}
+\end{equation}
+Both the multiplicity and the loop sign in this expression are fixed by
+\(\Lambda^\bullet\mathbb C^k\); they are not independently tuned
+coefficients.
+
+\begin{theorem}[Exterior-algebra spectral balance]
+\label{thm:ph-balance}
+For Eqs.~\eqref{eq:ph-exterior} and \eqref{eq:ph-mass},
+\begin{equation}
+ \Str_{\Hh_{\rm int}}e^{-sM^2}
+ =e^{-sx}(1-e^{-s\Delta})^k .
+ \label{eq:ph-heat}
+\end{equation}
+Consequently,
+\begin{equation}
+ \Str(M^2)^j=0\quad(0\leq j<k),\qquad
+ \Str(M^2)^k=(-1)^k k!\Delta^k .
+ \label{eq:ph-moments}
+\end{equation}
+The identities hold at every graph size and for every common kernel
+\(K_G\).
+\end{theorem}
+
+\begin{proof}
+Resolving the supertrace by exterior degree gives
+\[
+ \Str e^{-sM^2}
+ =e^{-sx}\sum_{n=0}^{k}(-1)^n\binom{k}{n}e^{-sn\Delta}.
+\]
+The binomial theorem yields Eq.~\eqref{eq:ph-heat}.  Since
+\(1-e^{-s\Delta}=s\Delta+O(s^2)\), its zero at \(s=0\) has order exactly
+\(k\).  Taking the first \(k\) derivatives at the origin proves
+Eq.~\eqref{eq:ph-moments}.
+\end{proof}
+
+For the induced Newton term the minimal choice is \(k=2\):
+\begin{equation}
+ (w_0,w_1,w_2)=(1,-2,1),\qquad
+ m_n^2=x+n\Delta,\qquad
+ \Str\mathbf 1=\Str M^2=0 .
+ \label{eq:ph-k2}
+\end{equation}
+The logarithmic invariant that survives the two cancellations is
+\begin{align}
+ F_2(x,\Delta)
+ &:=\sum_{n=0}^{2}w_n m_n^2
+          \log\frac{m_n^2}{\mu^2}\nonumber\\
+ &=\int_0^\Delta\!\diff u\int_0^\Delta\!\diff v\,
+     \frac{1}{x+u+v}>0 .
+ \label{eq:ph-positive-invariant}
+\end{align}
+The integral is the second finite-difference identity for
+\(f(y)=y\log(y/\mu^2)\).  It proves both positivity and independence of
+\(\mu\), without subtracting large cutoff terms.  At \(x=\Delta=M^2\),
+\begin{equation}
+ F_2=M^2(3\log3-4\log2)
+ =0.523248143764548\ldots\,M^2 .
+ \label{eq:ph-value}
+\end{equation}
+
+\subsection{Where positivity is proved}
+
+The determinant supertrace is not used as the physical inner product.
+Associate a bosonic Fock factor \(\F_+(h_n)\) with each even component and a
+fermionic Fock factor \(\F_-(h_n)\) with each odd component:
+\begin{equation}
+ \F_{\rm phys}
+ =\bigotimes_{n\ {\rm even}}
+   \F_+(h_n)^{\otimes\binom{k}{n}}
+ \otimes
+ \bigotimes_{n\ {\rm odd}}
+   \F_-(h_n)^{\otimes\binom{k}{n}} .
+ \label{eq:ph-fock}
+\end{equation}
+Every factor has its standard positive norm.  On the finite graph,
+\begin{equation}
+ \widehat H=\sum_{n,\alpha}
+ \diff\Gamma_\pm(h_n)_{n,\alpha}\geq0,\qquad
+ T_a=e^{-a\widehat H},\quad 0<T_a\leq\mathbf1 .
+ \label{eq:ph-transfer}
+\end{equation}
+
+\begin{proposition}[Finite transfer-form positivity]
+\label{prop:ph-positive}
+For every positive density operator \(\rho\) and finite operator family
+\(\{A_\alpha\}\), the matrix
+\begin{equation}
+ (G_T)_{\alpha\beta}
+ =\Tr\!\left[
+ (T_a^{1/2}A_\alpha\rho^{1/2})^\dagger
+ (T_a^{1/2}A_\beta\rho^{1/2})\right]
+ \label{eq:ph-gram}
+\end{equation}
+is positive semidefinite.  This statement is independent of the loop
+weights \(w_n\).
+\end{proposition}
+
+\begin{proof}
+For every vector \(z\),
+\[
+ z^\dagger G_Tz
+ =\left\|T_a^{1/2}
+ \left(\sum_\alpha z_\alpha A_\alpha\right)\rho^{1/2}\right\|_2^2
+ \geq0.
+\]
+The spectral theorem gives \(\widehat H\geq0\) and \(0<T_a\leq\mathbf1\).
+\end{proof}
+
+Thus the minus signs in Eq.~\eqref{eq:ph-gamma} are ordinary closed
+fermion-loop signs.  Proposition~\ref{prop:ph-positive} is a finite-graph
+transfer statement, not an interacting Osterwalder--Schrader
+reconstruction \cite{OsterwalderSchrader1973}.
+
+\subsection{Regulator and same-link interfaces}
+
+In the regulator class used in
+Theorem~\ref{thm:three-newton-universality}, every scheme-dependent term is
+proportional either to \(\Str\mathbf1\) or to \(\Str M^2\).  Hence the
+two-mode multiplet gives the common limit
+\begin{equation}
+ Z_*=\kappa_g F_2(x,\Delta)>0 .
+ \label{eq:ph-zstar}
+\end{equation}
+For \(x=\Delta=1\) and \(\Lambda=1200\), the archived sharp-momentum,
+sharp-proper-time, and smooth-proper-time evaluations are respectively
+\[
+ 0.5232467549,\qquad 0.5232474487,\qquad 0.5232388701,
+\]
+with a total scheme spread \(8.58\times10^{-6}\).  The exact target is
+Eq.~\eqref{eq:ph-value}; these values are deterministic quadratures rather
+than fits.
+
+The same graph links can be varied rather than merely used as a common
+spectral label.  If \(K_G(\eta)\) is differentiable, then
+\begin{equation}
+ \frac{\diff\Gamma_2}{\diff\eta}
+ =\sum_{n=0}^{2}w_n
+ \Tr\!\left[
+ (K_G+m_n^2\mathbf1)^{-1}\frac{\diff K_G}{\diff\eta}\right].
+ \label{eq:ph-same-link}
+\end{equation}
+On the archived inhomogeneous \(17\)-cycle, the analytic value is
+\(0.022621032016492876\).  A central difference converges with measured
+exponent \(1.99996\) and reaches absolute error
+\(9.77\times10^{-11}\) before floating-point saturation.  This verifies
+the weight--mass--link interface that is needed when the multiplet is
+placed on the record support of Sec.~\ref{sec:same-link-induced-gravity}.
+
+\subsection{Finite geometry sums and why exact pairing is insufficient}
+
+Because the graph operator and internal mass act on different tensor
+factors, the balance is pointwise in geometry.  Let \(\Omega\) be any finite
+family of positive graph kernels \(K_\omega\), of possibly different
+dimensions, with a supplied positive prior \(p_\omega\).  Define
+\begin{equation}
+ \Gamma_\omega
+ =\sum_{n=0}^{k}w_n\Tr_\omega\log(K_\omega+m_n^2\mathbf1),
+ \qquad
+ \mathcal Z_\Omega
+ =\sum_{\omega\in\Omega}p_\omega e^{-\Gamma_\omega}.
+ \label{eq:ph-graph-sum}
+\end{equation}
+
+\begin{proposition}[Geometry-by-geometry spectral balance]
+\label{prop:ph-graph-sum}
+For every \(\omega\) and \(s>0\),
+\begin{align}
+ &\sum_{n=0}^{k}w_n
+ \Tr_\omega e^{-s(K_\omega+m_n^2\mathbf1)}
+ \nonumber\\
+ &\hspace{1.5cm}
+ =\Tr_\omega e^{-sK_\omega}\,
+ e^{-sx}(1-e^{-s\Delta})^k .
+ \label{eq:ph-graph-heat}
+\end{align}
+Thus the first \(k\) internal ultraviolet moments vanish on each graph
+before geometry averaging, and \(\mathcal Z_\Omega\) is finite and strictly
+positive.  For every finite move
+\(K(t)=K_0+t\,\delta K\geq0\),
+\begin{align}
+ \Gamma[K_0+\delta K]-\Gamma[K_0]
+ &=
+ \int_0^1\!\diff t\sum_n w_n
+ \nonumber\\[-2mm]
+ &\quad\times
+ \Tr[(K(t)+m_n^2\mathbf1)^{-1}\delta K] .
+ \label{eq:ph-finite-move}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+The heat operator factorizes on graph and internal tensor factors, and
+Theorem~\ref{thm:ph-balance} evaluates the internal supertrace.  Every
+shifted determinant is strictly positive, so every term in
+Eq.~\eqref{eq:ph-graph-sum} has positive real weight.  The final identity
+is the fundamental theorem of calculus applied to the log determinant.
+\end{proof}
+
+This extension is nonperturbative in the amplitude of a finite graph move
+and uses no cancellation between geometries.  It is not yet a dynamical
+sum over causal complexes: \(\Omega\), \(p_\omega\), and the refinement maps
+are inputs.  In the supporting data, 64 connected weighted graphs with
+7--15 vertices give a maximum pointwise heat-factorization residual
+\(1.07\times10^{-14}\); an order-one chord insertion agrees with
+Eq.~\eqref{eq:ph-finite-move} to \(2.98\times10^{-15}\).
+
+The most obvious interaction-protection proposal also has a precise
+failure mode.  Exact supersymmetry can be realized in interacting lattice
+models and on arbitrary triangulations
+\cite{CatterallKaramov2002,BerensteinCatterall2025}, but exact all-level
+pairing cancels too much.
+
+\begin{theorem}[Exact-pairing obstruction]
+\label{thm:ph-pairing-obstruction}
+Let \(\mathcal V=\mathcal V_+\oplus\mathcal V_-\) be a finite positive
+graded Hilbert space, let \(D=D^\dagger\) be odd, and set
+\(\mathcal H_D=D^2\).  Then for every continuous spectral function \(f\),
+\begin{equation}
+ \Str f(\mathcal H_D)=\operatorname{ind}(D_+)\,f(0).
+ \label{eq:ph-pairing-index}
+\end{equation}
+In particular,
+\(\Str[\mathcal H_D\log(\mathcal H_D/\mu^2)]=0\), with
+\(0\log0:=0\).
+\end{theorem}
+
+\begin{proof}
+On each positive \(\lambda\)-eigenspace,
+\(D/\sqrt{\lambda}\) is an isometric bijection between even and odd
+states, so their contributions cancel.  The zero-mode difference is
+\(\operatorname{ind}(D_+)\).  The logarithmic function vanishes at zero.
+\end{proof}
+
+The required interacting symmetry is therefore selective: it must protect
+\(\Str\mathbf1=\Str M^2=0\) but leave positive-energy spectra sufficiently
+misaligned that \(F_2>0\).  Broken-supersymmetry mass-sum rules provide
+continuum examples of partial rather than exact pairing
+\cite{ItoyamaMaru2015,BenaEtAl2016}; they do not yet derive the required
+record-lattice Ward identity.
+
+\subsection{Selective Ward closure on a supplied finite geometry language}
+\label{sec:selective-ward-closure}
+
+The companion selective-Ward construction
+\cite{XuSelectiveLadderWard2026} closes the finite interacting part of the
+preceding problem without imposing exact spectral pairing.  Let
+\(\K\) be any finite positive Hilbert space, let
+\(\F_k=\Lambda^\bullet\mathbb C^k\), and let \(c_a^\dagger\), \(N\), and
+\(\Pi=(-1)^N\) be the canonical creation, number, and parity operators on
+\(\F_k\).  All physical interactions and all degrees of freedom of one
+fixed geometry are contained in an arbitrary self-adjoint operator on
+\(\K\).
+
+\begin{theorem}[Selective ladder characterization and stability]
+\label{thm:selective-ladder-closure}
+For a self-adjoint \(H\) on \(\K\otimes\F_k\) and a real
+\(\Delta\), the identities
+\begin{equation}
+ [H,\mathbf1\otimes c_a^\dagger]
+ =\Delta(\mathbf1\otimes c_a^\dagger),
+ \qquad a=1,\ldots,k,
+ \label{eq:selective-ladder-ward}
+\end{equation}
+hold if and only if
+\begin{equation}
+ H=A\otimes\mathbf1+\Delta\,\mathbf1\otimes N
+ \label{eq:selective-ladder-normal}
+\end{equation}
+for one self-adjoint \(A\) on \(\K\).  Consequently,
+\begin{equation}
+ \Str e^{-sH}=\Tr_\K e^{-sA}(1-e^{-s\Delta})^k,
+ \qquad
+ \Str H^j=0\quad(0\leq j<k).
+ \label{eq:selective-heat}
+\end{equation}
+For an arbitrary self-adjoint \(H\), define
+\[
+ \varepsilon=\max_a
+ \|[H,c_a^\dagger]-\Delta c_a^\dagger\|.
+\]
+Its Hilbert--Schmidt projection \(H_0\) onto the affine manifold
+in Eq.~\eqref{eq:selective-ladder-normal} satisfies
+\begin{equation}
+ \|H-H_0\|\leq4k\varepsilon.
+ \label{eq:selective-distance}
+\end{equation}
+If \(H,H_0\geq m\mathbf1\), \(D=2^k\dim\K\), and \(s>0\), then
+\begin{equation}
+ \left|\Str(e^{-sH}-e^{-sH_0})\right|
+ \leq4kD\,s e^{-sm}\varepsilon .
+ \label{eq:selective-heat-bound}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+After subtracting \(\Delta N\), Eq.~\eqref{eq:selective-ladder-ward}
+commutes with the irreducible CAR algebra and therefore acts trivially on
+\(\F_k\), proving the characterization.  Equation
+\eqref{eq:selective-heat} follows by tensor factorization.  For the
+approximate statement, average \(H-\Delta N\) over the finite Majorana
+conjugation group.  The average is the conditional expectation onto the
+CAR commutant, and a telescoping product of at most \(2k\) Majoranas bounds
+the distance by \(4k\varepsilon\).  The Duhamel formula and
+\(\|e^{-tH}\|\leq e^{-tm}\) give
+Eq.~\eqref{eq:selective-heat-bound}.
+\end{proof}
+
+This theorem is nonperturbative in \(A\): \(A\) may contain arbitrary
+finite interacting physical and geometric terms.  For \(k=2\), the finite
+response is
+\begin{align}
+ \I_\Delta(A)
+ &:=
+ \Tr\!\left[
+ A\log A-2(A+\Delta)\log(A+\Delta)\right.\nonumber\\[-1mm]
+ &\hspace{29mm}\left.
+ +(A+2\Delta)\log(A+2\Delta)\right]\nonumber\\
+ &=\int_0^\Delta\!\diff u\int_0^\Delta\!\diff v\,
+ \Tr(A+u+v)^{-1}>0 .
+ \label{eq:selective-invariant}
+\end{align}
+Thus the protected low moments coexist with a nonzero response.  A fresh-cell
+unitary of the factorized form
+\[
+ U_h=U_{\rm phys}\otimes e^{-ih\Delta N}
+\]
+preserves the shifted ladder eigenoperator exactly even when
+\(U_{\rm phys}\) is strong.  This realizes the Ward law microscopically, but
+also exposes its present boundary: the ladder factor is installed in the
+commutant rather than derived from a Lorentzian continuum theory.
+
+The positive invariant also defines a genuine finite geometry dynamics.
+For a supplied finite language \(\Omega\), positive base weights
+\(p_\omega\), and positive interacting operators \(A_\omega\), set
+\begin{equation}
+ \pi_\omega=
+ \frac{p_\omega e^{-g\I_\Delta(A_\omega)}}
+ {\sum_{\nu\in\Omega}p_\nu e^{-g\I_\Delta(A_\nu)}} .
+ \label{eq:selective-geometry-law}
+\end{equation}
+On any connected symmetric local move graph, the Metropolis transition
+\[
+ P_{\omega\nu}=q_{\omega\nu}
+ \min\{1,\pi_\nu/\pi_\omega\}
+\quad(\nu\neq\omega)
+\]
+has unique stationary law \(\pi\), obeys exact detailed balance, and admits
+the positive-Hilbert isometry
+\begin{equation}
+ V|\omega\rangle
+ =\sum_\nu\sqrt{P_{\omega\nu}}\,
+ |\nu\rangle\otimes|e_{\omega\nu}\rangle .
+ \label{eq:selective-stinespring}
+\end{equation}
+Extending \(V\) to a unitary and tracing a fresh environment gives a CPTP
+geometry channel.  Hence the finite weights are dynamically sampled rather
+than only written as a formal partition sum.
+
+The archived calculation exhausts all 728 connected labelled simple graphs
+on five vertices, using
+\(A_\omega=0.8\mathbf1+L_\omega\) and \(\Delta=0.72\).
+The maximum heat-factorization, detailed-balance, stationary-law, and
+Stinespring-normalization residuals are respectively
+\(7.00\times10^{-15}\), \(2.71\times10^{-20}\),
+\(4.34\times10^{-19}\), and \(2.22\times10^{-16}\).
+The exact geometry-channel gap is \(0.1474055064\).  An independent
+\(2.0\times10^5\)-sample retained trajectory has total-variation distance
+\(0.0248875\) and mean-edge error \(7.24\times10^{-4}\); random Ward
+perturbations never exceed one quarter of the analytic distance bound.
+These computations test all supplied geometries rather than a selected
+saddle.
+
+The finite closure removes the old ``partial interacting Ward protection''
+and ``positive graph-weight dynamics'' gaps only at fixed regulator and for
+a supplied language.  It does not select \(\Omega\), its topology, or its
+move set; it does not give deletion-consistent measures as the regulator
+grows; and it does not establish continuum spin--statistics, anomaly
+freedom, nonlinear BV closure, or background-independent graph
+backreaction.
+
+\subsection{Projective response-weighted causal growth}
+\label{sec:projective-response-growth}
+
+The next companion construction
+\cite{XuProjectiveCausalGrowth2026} removes one of those qualifications:
+the positive response can generate compatible laws at every finite event
+number and hence a genuine infinite-history probability measure.  The result
+is exact, but it is deliberately stated on a naturally labelled causal-birth
+language; quotienting by labellings and taking a Lorentzian continuum limit
+remain separate tasks.
+
+Let \(\Omega_n^{(r)}\) be the naturally labelled \(n\)-event partial orders
+obtained by adjoining one maximal event at a time.  A birth selects a
+down-set \(S\subseteq C\) whose set of maximal elements has size
+\[
+ p_C(S):=|\max_C S|\leq r
+\]
+and writes \(C\oplus S\) for the child.  Deleting the largest label gives a
+map \(\rho_n:\Omega_{n+1}^{(r)}\to\Omega_n^{(r)}\), and every labelled child
+has exactly one parent under this deletion.  On the undirected Hasse graph
+of \(C\), define
+\begin{equation}
+ A_C=m^2\mathbf1+\kappa L_C,\qquad
+ \I_\Delta(C)=\Tr f_\Delta(A_C)>0 ,
+ \label{eq:pcg-response}
+\end{equation}
+where
+\begin{align}
+ f_\Delta(y)
+ &=y\log y-2(y+\Delta)\log(y+\Delta)\nonumber\\
+ &\quad +(y+2\Delta)\log(y+2\Delta)
+ \label{eq:pcg-f}
+\end{align}
+and, equivalently,
+\begin{equation}
+ \I_\Delta(C)=
+ \int_0^\Delta\!\diff u\int_0^\Delta\!\diff v\,
+ \Tr(A_C+u+v)^{-1}.
+ \label{eq:pcg-positive}
+\end{equation}
+This is the \(k=2\) selective-ladder response of
+Eq.~\eqref{eq:selective-invariant}, now evaluated on each causal history.
+
+The response of one birth is available from the parent without recomputing
+the child spectrum.  Put \(B_C=A_C\oplus m^2\) and
+\[
+ U_S=\sqrt\kappa\,[e_a-e_{n+1}]_{a\in\max_C S}.
+\]
+Because a maximal birth changes only its incident Hasse links,
+\(A_{C\oplus S}=B_C+U_SU_S^\dagger\).  Woodbury's identity then gives
+\begin{align}
+ \Delta\I_C(S)
+ &:=\I_\Delta(C\oplus S)-\I_\Delta(C)\nonumber\\
+ &=f_\Delta(m^2)
+ -\int_0^\Delta\!\diff u\int_0^\Delta\!\diff v\,
+ \mathcal W_{u+v}(C,S),
+ \label{eq:pcg-increment}\\
+ \mathcal W_t(C,S)
+ &=\Tr\!\left[
+ R_tU_S(\mathbf1+U_S^\dagger R_tU_S)^{-1}
+ U_S^\dagger R_t\right],
+ \qquad R_t=(B_C+t\mathbf1)^{-1}.
+ \label{eq:pcg-woodbury}
+\end{align}
+Thus a \(p\)-parent birth requires only a \(p\times p\) inverse.  Positivity
+also yields the nonperturbative parent-number bound
+\begin{equation}
+ f_\Delta(m^2)-\frac{2\kappa p_C(S)\Delta^2}{m^4}
+ \leq\Delta\I_C(S)\leq f_\Delta(m^2).
+ \label{eq:pcg-increment-bound}
+\end{equation}
+
+For real \(g,\alpha,\beta\), conditionally normalize the allowed births:
+\begin{equation}
+ G_{n,g}(C,S)=
+ \frac{
+ \exp[-g\Delta\I_C(S)-\alpha p_C(S)+\beta|S|/n]}
+ {\displaystyle\sum_{S'\in\mathcal D_r(C)}
+ \exp[-g\Delta\I_C(S')-\alpha p_C(S')+\beta|S'|/n]} .
+ \label{eq:pcg-kernel}
+\end{equation}
+Starting from the one-event order, set
+\begin{equation}
+ \mu_{n+1,g}(C\oplus S)=\mu_{n,g}(C)G_{n,g}(C,S).
+ \label{eq:pcg-recursion}
+\end{equation}
+
+\begin{theorem}[Projective response law and positive dilation]
+\label{thm:pcg-projective-law}
+For every finite \(n\), the laws in
+Eq.~\eqref{eq:pcg-recursion} are normalized and satisfy
+\begin{equation}
+ (\rho_n)_*\mu_{n+1,g}=\mu_{n,g}.
+ \label{eq:pcg-projectivity}
+\end{equation}
+They therefore define a unique probability measure on infinite
+past-finite naturally labelled causal histories.  Moreover,
+\begin{equation}
+ V_{n,g}|C\rangle=
+ \sum_{S\in\mathcal D_r(C)}
+ \sqrt{G_{n,g}(C,S)}\,
+ |C\oplus S\rangle\otimes|e_{C,S}\rangle
+ \label{eq:pcg-isometry}
+\end{equation}
+is an isometry.  Extending it to a unitary and tracing a fresh environment
+implements each birth by a CPTP channel.
+\end{theorem}
+
+\begin{proof}
+Every child has the unique labelled parent obtained by deleting \(n+1\).
+Summing Eq.~\eqref{eq:pcg-recursion} over that parent's children and using
+\(\sum_SG_{n,g}(C,S)=1\) proves
+Eq.~\eqref{eq:pcg-projectivity}.  Kolmogorov extension on the finite
+discrete cylinder spaces gives the infinite law.  Orthogonality of the
+environment labels and conditional normalization imply
+\(V_{n,g}^\dagger V_{n,g}=\mathbf1\).
+\end{proof}
+
+The same conditional structure supplies exact observables along a path.
+For an \(N\)-event history, let
+\[
+ X_n=\Delta\I_{C_n}(S_n),\qquad
+ \bar X_n=\mathbb E_g[X_n\mid\mathcal F_n].
+\]
+Its response score is the martingale
+\begin{equation}
+ \mathcal S_N(g)=\partial_g\log\mathbb P_g(C_1,\ldots,C_N)
+ =-\sum_{n=1}^{N-1}(X_n-\bar X_n),
+ \label{eq:pcg-score}
+\end{equation}
+and therefore
+\begin{align}
+ \mathbb E_g\mathcal S_N&=0,\nonumber\\
+ \mathcal F_N(g):=\mathbb E_g\mathcal S_N^2
+ &=\sum_{n=1}^{N-1}
+ \mathbb E_g\operatorname{Var}_g(X_n\mid\mathcal F_n),\label{eq:pcg-fisher}\\
+ \partial_g\mathbb E_g O&=\mathbb E_g[O\mathcal S_N]
+ \label{eq:pcg-linear-response}
+\end{align}
+for every bounded path observable \(O\).  Path relative entropy likewise
+obeys the exact chain rule
+\begin{equation}
+ D(\mathbb P_g^{(N)}\Vert\mathbb P_{g'}^{(N)})
+ =\sum_{n=1}^{N-1}
+ \mathbb E_gD(G_{n,g}(C_n,\cdot)\Vert
+ G_{n,g'}(C_n,\cdot)).
+ \label{eq:pcg-kl-chain}
+\end{equation}
+These identities distinguish a response-generated path law from a
+postselected terminal partition sum.
+
+The archived \(r=2\) calculation enumerates every allowed state through
+seven events:
+\[
+ 1,\ 2,\ 7,\ 39,\ 322,\ 3730,\ 58113.
+\]
+The largest normalization, deletion-projectivity, and Stinespring residuals
+are \(2.22\times10^{-16}\), \(5.55\times10^{-17}\), and
+\(4.44\times10^{-16}\).  The Fisher-chain residual is zero at stored
+precision, the relative-entropy-chain residual is
+\(2.58\times10^{-17}\), and independent differentiation verifies
+Eq.~\eqref{eq:pcg-linear-response} to \(1.84\times10^{-12}\).  Forty-seven
+independent birth checks bound the Woodbury and integrated-response errors
+by \(2.89\times10^{-16}\) and \(8.89\times10^{-15}\).  A
+\(2.5\times10^5\)-history sample reproduces a predeclared 131-bin
+trajectory coarse graining with total-variation distance \(0.00677\);
+the complete \(58113\)-state histogram is retained rather than hidden by
+coarse graining.  As a failure control, independently normalized terminal
+Gibbs weights have deletion defect as large as \(0.08635\).
+
+This closes A11PG only at model level.  Natural labels, the precursor
+language, \(m^2,\kappa,\Delta,g,\alpha,\beta\), the Hasse response operator,
+and the external birth index are inputs.  No equality of different linear
+extensions, Rideout--Sorkin discrete general covariance, Bell causality,
+coherent quantum measure, dimensional selection, tight Lorentzian
+metric--measure continuum limit, nonlinear BV master equation, continuum
+matter, graph backreaction, spin--statistics theorem, or anomaly
+cancellation is derived.  The result is an exact positive projective
+history interface, not a completed nonperturbative gravity measure.
+
+\subsection{Covariant response growth and an extendible quantum measure}
+\label{sec:covariant-response-growth}
+
+The preceding conditional kernel solves deletion consistency but not the
+natural-label gauge problem.  A second companion construction
+\cite{XuCovariantQuantumResponseGrowth2026} identifies a response-generated
+subfamily for which the stronger CSG constraints are exact.  The
+construction also isolates a coherent subfamily whose cylinder amplitudes
+extend countably additively.  These two branches should not be conflated:
+the positive branch has a local fresh-environment CPTP dilation, whereas the
+coherent branch has a strongly positive rank-one decoherence functional but
+no derived local unitary transfer operator.
+
+For each \(k\geq0\), let \(S_k=K_{1,k}\) be the \(k\)-contact star, with
+\(S_0=K_1\), and use the same positive logarithmic response as in
+Eq.~\eqref{eq:pcg-response}.  Define
+\begin{align}
+ \chi_k&=\I_\Delta(S_k)-\I_\Delta(S_0),&
+ t_k(g)&=e^{-g\chi_k}.
+ \label{eq:cqg-contact-couplings}
+\end{align}
+The star spectrum gives
+\begin{equation}
+ \chi_0=0,\qquad
+ \chi_k=(k-1)f_\Delta(m^2+\kappa)
+ +f_\Delta[m^2+\kappa(k+1)]>0
+ \label{eq:cqg-star-response}
+\end{equation}
+for \(k\geq1\).  Thus \(t_k(g)>0\) for every \(k\).  If a precursor
+down-set \(S\subseteq C\) has \(v=|S|\) elements and \(m=|\max_C S|\)
+maxima, put
+\begin{align}
+ \lambda_g(v,m)
+ &=\sum_{k=m}^{v}\binom{v-m}{k-m}t_k(g),\label{eq:cqg-lambda}\\
+ q_{n,g}(C,S)
+ &=\frac{\lambda_g(|S|,|\max_C S|)}{\lambda_g(n,0)}.
+ \label{eq:cqg-transition}
+\end{align}
+This transition has a microscopic seed sampler.  Choose
+\(K\subseteq C\) with weight
+\begin{equation}
+ \mathbb P_g(K\mid C)=\frac{t_{|K|}(g)}{\lambda_g(n,0)}
+ \label{eq:cqg-seed}
+\end{equation}
+and place the new maximal event above \(S=\downarrow K\).  The seeds with
+down-closure \(S\) are exactly
+\(\max S\subseteq K\subseteq S\).  Grouping them by cardinality gives the
+binomial coefficients in Eq.~\eqref{eq:cqg-lambda} and proves the Markov
+identity
+\begin{equation}
+ \sum_{S\in\mathcal D(C)}
+ \lambda_g(|S|,|\max S|)=\lambda_g(n,0).
+ \label{eq:cqg-markov}
+\end{equation}
+
+\begin{theorem}[Covariant positive response growth]
+\label{thm:cqg-positive-growth}
+The transition law in Eq.~\eqref{eq:cqg-transition} is normalized and
+deletion-projective.  Its path probability has the intrinsic form
+\begin{equation}
+ p_g(C)=
+ \frac{\displaystyle\prod_{x\in C}
+ \lambda_g(|J^-(x)|,|\max J^-(x)|)}
+ {\displaystyle\prod_{j=0}^{|C|-1}\lambda_g(j,0)},
+ \label{eq:cqg-intrinsic-path}
+\end{equation}
+and is therefore independent of the natural labelling.  For any two
+precursors \(S_1,S_2\) and \(B=S_1\cup S_2\),
+\begin{equation}
+ q_C(S_1)q_B(S_2)=q_C(S_2)q_B(S_1).
+ \label{eq:cqg-bell}
+\end{equation}
+Thus the law satisfies discrete general covariance and the zero-safe
+cross-multiplied Bell condition.  Moreover,
+\begin{equation}
+ V_{n,g}|C\rangle=
+ \sum_{K\subseteq C}
+ \sqrt{\frac{t_{|K|}(g)}{\lambda_g(n,0)}}\,
+ |C\oplus\downarrow K\rangle|C,K\rangle_E
+ \label{eq:cqg-isometry}
+\end{equation}
+is an isometry and gives a fresh-environment CPTP birth channel.
+\end{theorem}
+
+\begin{proof}
+Equation~\eqref{eq:cqg-markov} proves normalization and the unique labelled
+parent proves deletion projectivity.  Multiplication along a path gives
+Eq.~\eqref{eq:cqg-intrinsic-path}; its numerator is a product of intrinsic
+past invariants and its denominator depends only on cardinality.  Removing
+the spectators \(C\setminus B\) leaves the two precursor numerators
+unchanged, while the row normalizer cancels in
+Eq.~\eqref{eq:cqg-bell}.  Finally,
+\(\sum_{K\subseteq C}t_{|K|}=\lambda_g(n,0)\) proves
+\(V_{n,g}^\dagger V_{n,g}=\mathbf1\).
+\end{proof}
+
+The response remains operational along the covariant paths.  Define
+\begin{equation}
+ R_g(v,m)=-\partial_g\log\lambda_g(v,m)
+ =\frac{\sum_{k=m}^{v}\binom{v-m}{k-m}t_k(g)\chi_k}
+ {\lambda_g(v,m)}.
+ \label{eq:cqg-response-mean}
+\end{equation}
+The score increment of a birth is
+\[
+ Y_n=R_g(n,0)-R_g(v_n,m_n).
+\]
+Differentiating Eq.~\eqref{eq:cqg-markov} gives
+\(\mathbb E_g[Y_n\mid\mathcal F_n]=0\), so the Fisher, linear-response, and
+path-relative-entropy chain rules in
+Eqs.~\eqref{eq:pcg-fisher}--\eqref{eq:pcg-kl-chain} hold with \(Y_n\) in
+place of the global action increment.
+
+The coherent branch retains one response-generated contact amplitude:
+\begin{equation}
+ \widetilde t_0=1,\qquad
+ \widetilde t_r=z_r=e^{-g\chi_r/2+i\theta\chi_r},\qquad
+ \widetilde t_k=0\quad(k\neq0,r).
+ \label{eq:cqg-complex-coupling}
+\end{equation}
+The complex version of Eqs.~\eqref{eq:cqg-lambda} and
+\eqref{eq:cqg-transition} has row sum one, the same intrinsic product, and
+the cross-multiplied Bell identity even when some transitions vanish.
+Let
+\[
+ \zeta_n(C)=\sum_{S\in\mathcal D(C)}
+ |\widetilde q_n(C,S)|-1,\qquad
+ \zeta_n^{\max}=\max_{|C|=n}\zeta_n(C).
+\]
+For \(s=|z_r|\) and \(\phi=\arg z_r\), the maximum occurs at the
+\(n\)-antichain \cite{SuryaZalel2020} and equals
+\begin{equation}
+ \zeta_n^{\max}
+ =\frac{1+\binom nr s}
+ {\sqrt{1+2s\binom nr\cos\phi+s^2\binom nr^2}}-1.
+ \label{eq:cqg-zeta}
+\end{equation}
+
+\begin{theorem}[Extendible coherent response history]
+\label{thm:cqg-complex-extension}
+If \(r\geq2\), \(g>0\), and
+\(\phi=\theta\chi_r\in(0,\pi/2]\), the complex cylinder measure generated by
+Eq.~\eqref{eq:cqg-complex-coupling} has bounded variation and extends
+uniquely to a countably additive complex measure \(\mu\) on the cylinder
+sigma algebra.  The functional
+\begin{equation}
+ \mathfrak D(A,B)=\mu(A)\overline{\mu(B)}
+ \label{eq:cqg-decoherence}
+\end{equation}
+is normalized, countably additive, and strongly positive; its diagonal
+\(\mathfrak q(A)=|\mu(A)|^2\) obeys the grade-2 quantum-measure sum rule.
+For \(r=1\) and nonreal \(z_1\), bounded variation fails.
+\end{theorem}
+
+\begin{proof}
+Put \(x=s\binom nr\).  Rationalizing Eq.~\eqref{eq:cqg-zeta} gives
+\[
+ \zeta_n^{\max}
+ =\frac{2x(1-\cos\phi)}
+ {\sqrt{1+2x\cos\phi+x^2}
+ [1+x+\sqrt{1+2x\cos\phi+x^2}]}
+ \leq\frac{1-\cos\phi}{s\binom nr}.
+ \]
+The upper bound is summable for \(r\geq2\), so the finite cylinder
+variations are bounded by
+\(\prod_n(1+\zeta_n^{\max})<\infty\).  The complex-measure extension
+criterion of Ref.~\cite{SuryaZalel2020} gives \(\mu\).  Every finite matrix
+\([\mathfrak D(A_i,A_j)]\) is the outer product
+\([\mu(A_i)][\mu(A_j)]^\dagger\), hence is positive semidefinite.  Ordinary
+additivity of \(\mu\) yields the grade-2 sum rule
+\cite{Sorkin1994QuantumMeasure}.  For nonreal \(r=1\),
+\(\zeta_n^{\max}\sim(1-\cos\phi)/(sn)\), and the variation diverges.
+\end{proof}
+
+The coherent measure is not merely a complex rephrasing of a probability
+law.  For \(r=2\), the two allowed three-event unlabelled endpoint classes
+are the antichain \(A_3\) and the two-parent order \(V_3\), with amplitudes
+\[
+ \mu_3(A_3)=\frac1{1+z_2},\qquad
+ \mu_3(V_3)=\frac{z_2}{1+z_2}.
+ \]
+Their finite-volume quotient interference is
+\begin{equation}
+ I_3=
+ \mathfrak q(A_3\cup V_3)-\mathfrak q(A_3)-\mathfrak q(V_3)
+ =\frac{2\Re z_2}{|1+z_2|^2}.
+ \label{eq:cqg-interference}
+\end{equation}
+For the archived benchmark, \(I_3=0.3312668\).
+
+Complete enumeration gives
+\[
+ 1,\ 2,\ 7,\ 40,\ 357,\ 4824
+\]
+naturally labelled histories and
+\[
+ 1,\ 2,\ 5,\ 16,\ 63,\ 318
+\]
+unlabelled classes through six events.  Markov, seed-grouping, intrinsic
+path, DGC, Bell, Fisher, and relative-entropy residuals are all below
+\(1.8\times10^{-15}\).  The \(r=2,3\) accumulated row excess stabilizes
+with the predicted \(N^{-r}\) tail through \(N=200000\), while the
+\(r=1\) control grows logarithmically.
+
+There is also a decisive falsification.  If the full Hasse response is used
+as a conditionally normalized global potential,
+\[
+ q^{\rm glob}_{n,g}(C,S)\propto
+ e^{-g[\I_\Delta(C\oplus S)-\I_\Delta(C)]},
+ \]
+two natural labellings of one five-event causal set differ in log path
+weight by \(1.624733\), and removing one spectator changes a competing log
+transition ratio by \(0.136424\).  Positivity and projectivity therefore do
+not imply DGC or Bell causality; the response must enter through a
+covariant contact sequence (or another structure satisfying the same
+constraints).
+
+This closes A11CG at model level.  It removes the natural-label and Bell
+defects for the response-generated CSG subfamily and supplies a
+countably-additive strongly positive coherent history measure.  It does not
+select the maximal-birth language, contact stars, response multiplet,
+parameters, arity, or phase.  The coherent decoherence functional is rank
+one and has no derived local unitary complex transfer.  No Lorentzian
+continuum tightness, dimension selection, nonlinear gravitational
+constraint algebra, continuum matter, anomaly freedom, or graph
+backreaction is proved.
+
+\subsection{A local-unitary non-Abelian history measure on a fixed causal
+strip}
+\label{sec:nonabelian-history-measure}
+
+The rank-one boundary above can be removed without sacrificing countable
+extension, but presently only after fixing a smaller causal language
+\cite{XuNonAbelianQuantumHistory2026}.  Let
+\[
+ \Omega_2=\{00,01,10,11\}^{\mathbb N}
+\]
+be the record space of a ranked two-port strip.  A letter
+\(x_n=(a_n,b_n)\) tells the two ports at rank \(n\) which of the two
+ports at rank \(n-1\) is their parent.  Every generated edge raises rank,
+so acyclicity is kinematic.  This is not an unlabeled causal-set growth law.
+
+On a two-dimensional bond space, for any Pauli involution \(H\), define
+\[
+ F_H^{0,1}(\epsilon)=\frac{\mathbf 1\pm e^{i\epsilon H}}{2},
+ \qquad
+ A_n^{ab}=F_{H_a}^{b}(\epsilon_n)F_X^a(\epsilon_n),
+ \qquad (H_0,H_1)=(Z,Y).
+\]
+The angle is supplied by the same positive contact response,
+\[
+ \epsilon_n=\epsilon_\star e^{-g\chi_n}/n^p,
+ \qquad 0<\epsilon_\star<\pi.
+\]
+The two binary decisions have a Hadamard--controlled-unitary--Hadamard
+dilation with fresh ancillas.  Coherently conditioning the second axis on
+the first record gives all four blocks.
+
+\begin{theorem}[Local-unitary non-Abelian history extension]
+\label{thm:nonabelian-history-extension}
+For every cell,
+\begin{equation}
+ \sum_{a,b}A_n^{ab}=\mathbf 1,
+ \qquad
+ \sum_{a,b}A_n^{ab\dagger}A_n^{ab}=\mathbf 1.
+ \label{eq:nonabelian-history-two-sums}
+\end{equation}
+The transition algebra is noncommutative:
+\begin{equation}
+ [A^{00},A^{10}]=\frac{i}{2}\epsilon^2Y+O(\epsilon^3).
+ \label{eq:nonabelian-history-commutator}
+\end{equation}
+For a cylinder word \(w=x_1\cdots x_N\), set
+\[
+ M([w])=A_N^{x_N}\cdots A_1^{x_1}.
+\]
+If \(\sum_n\epsilon_n<\infty\), this operator cylinder content extends
+uniquely to a countably additive regular
+\(M_2(\mathbb C)\)-valued measure on the Borel sigma algebra of
+\(\Omega_2\).  For every density matrix \(\rho\),
+\begin{equation}
+ D(E,F)=\Tr[\rho\,M(E)^\dagger M(F)]
+ \label{eq:nonabelian-history-decoherence}
+\end{equation}
+is normalized and strongly positive, and \(D(E,E)\) is a grade-2 quantum
+measure.  Two independent strips obey exact spectator factorization.
+\end{theorem}
+
+\begin{proof}
+For either binary decision,
+\[
+ F_H^0+F_H^1=\mathbf 1,\qquad
+ F_H^{0\dagger}F_H^0+F_H^{1\dagger}F_H^1=\mathbf 1.
+\]
+Summing first over \(b\) and then \(a\) gives
+Eq.~\eqref{eq:nonabelian-history-two-sums}; the circuit above proves local
+unitary realizability.  The Pauli expansion gives
+Eq.~\eqref{eq:nonabelian-history-commutator}.  Cylinder refinement is exact
+because the first identity in
+Eq.~\eqref{eq:nonabelian-history-two-sums} is an operator Markov sum.
+Moreover,
+\begin{align}
+ \sum_{|w|=N}\|A_w\|
+ &\le
+ \prod_{n=1}^{N}
+ \left(\cos\frac{\epsilon_n}{2}
+      +\sin\frac{\epsilon_n}{2}\right)^2\nonumber\\
+ &\le \exp\!\left(\sum_n\epsilon_n\right).
+ \label{eq:nonabelian-history-variation}
+\end{align}
+Thus every matrix entry defines a uniformly bounded functional on the
+locally constant functions of the compact product space.  Density in
+\(C(\Omega_2)\) followed by Riesz--Markov gives the unique countably
+additive matrix measure.  Equation
+\eqref{eq:nonabelian-history-decoherence} is a Hilbert--Schmidt Gram
+functional, which proves strong positivity and the grade-2 identity.
+Tensor-product instruments and product bond states give spectator
+factorization after summing the complete spectator outcome partition.
+\end{proof}
+
+The response sequence is summable for every \(p\ge0\) when \(g>0\),
+because \(\chi_n\ge(n-1)f_\Delta(m^2+\kappa)>0\); at \(g=0\), \(p>1\)
+is sufficient and necessary for this power-law tail.  At the archived
+benchmark \(\epsilon=0.7\),
+\[
+ 2\Re D([00],[10])=-\frac14\sin^3\epsilon=-0.06684023094.
+\]
+The history Gram rank is three after one cell and reaches the full
+Hilbert--Schmidt bond rank four after two; the transition commutator is
+\(0.1949275542\).  The largest Markov, Kraus, dilation, and spectator
+residual is \(6.3\times10^{-16}\).  A commuting-axis control gives zero
+commutator, while the \(g=0,p=1\) variation envelope grows to
+\(1.7604\times10^4\) by \(N=200000\).  The latter is failure of the
+sufficient extension certificate, not a proof of nonextension.
+
+This proves A11NH at model level.  It removes the scalar/rank-one and
+local-realizability restrictions for one fixed causal strip.  It does not
+combine that non-Abelian transfer with the unlabeled DGC and Bell-causal
+arbitrary-down-set growth of A11CG.  The strip, rank foliation, port
+language, bond dimension, response sequence, and summable tail are inputs.
+This restriction is substantive: natural operator orderings of quantum
+Bell causality on unrestricted sequential growth can force the transition
+algebra to commute, and a general causal-past-ordered representation remains
+unknown \cite{SrivastavaSurya2026}.
+No fluctuating generic adjacency, Lorentzian continuum tightness, nonlinear
+constraint algebra, continuum matter, or graph backreaction is proved.
+
+\subsection{A covariant non-Abelian operator measure on arbitrary causal
+histories}
+\label{sec:covariant-nonabelian-holonomy}
+
+The fixed-strip restriction can be removed without giving up countable
+extension if the noncommuting operator is treated as an event-local density
+over the covariant positive growth law, rather than as a square transition
+ratio \cite{XuCovariantNonAbelianHolonomy2026}.  Use the response-generated
+CSG probability \(\mathbb P_g\) of
+Theorem~\ref{thm:cqg-positive-growth}.  If an event \(x\) is born above a
+precursor whose volume and number of maximal elements are
+\[
+ v_x=|J^-(x)|,\qquad m_x=|\max J^-(x)|,
+\]
+attach a fresh qubit and apply
+\begin{equation}
+ u_x=
+ \exp\!\left[
+ i\epsilon_\star e^{-h\chi_{v_x}}H_{m_x\bmod3}
+ \right],
+ \qquad (H_0,H_1,H_2)=(X,Y,Z).
+ \label{eq:cnh-gate}
+\end{equation}
+Every factor acts only on the new event qubit.  The aggregate
+\((v_x,m_x)\) is intrinsic to the precursor and is unchanged when spectators
+outside a competing precursor union are deleted.
+
+Let \(a=f_\Delta(m^2+\kappa)\),
+\[
+ r=e^{-ga},\qquad s=e^{-ha},\qquad
+ \rho=\frac{1+rs}{1+r}<1.
+\]
+Equation~\eqref{eq:cqg-star-response} gives
+\(\chi_k=(k-1)a+b_k\), with \(0<b_k\le a\).  Hence
+\begin{equation}
+ r^k\le t_k\le e^{ga}r^k,\qquad
+ \epsilon_\star e^{-h\chi_k}
+ \le \epsilon_\star e^{ha}s^k.
+ \label{eq:cnh-geometric-comparison}
+\end{equation}
+At stage \(n\), the CSG seed cardinality has conditional distribution
+\[
+ \mathbb P_g(|K_n|=k\mid\mathcal F_n)
+ =\binom nk t_k/\lambda_g(n,0).
+\]
+Since the precursor volume \(V_n=|\downarrow K_n|\) is at least
+\(|K_n|\), Eq.~\eqref{eq:cnh-geometric-comparison} gives the
+state-uniform tail
+\begin{equation}
+ \mathbb E_g(s^{V_n}\mid\mathcal F_n)
+ \le e^{ga}\rho^n,\qquad
+ \mathbb E_g\theta_{V_n}
+ \le\epsilon_\star e^{(g+h)a}\rho^n.
+ \label{eq:cnh-tail}
+\end{equation}
+Define
+\[
+ B_{\rm hol}=
+ \frac{\epsilon_\star e^{(g+h)a}}{1-\rho}.
+\]
+
+\begin{theorem}[Covariant non-Abelian causal-holonomy measure]
+\label{thm:covariant-nonabelian-holonomy}
+Suppose \(B_{\rm hol}<1\).  On the incomplete event tensor product
+\[
+ \mathcal H_{\rm ev}
+ =\bigotimes_{x\in\mathbb N}(\mathbb C^2,|0\rangle_x),
+\]
+the finite products \(U_N(\omega)=\bigotimes_{x\le N}u_x(\omega)\)
+converge in operator norm for \(\mathbb P_g\)-almost every causal history to
+a unitary \(U(\omega)\).  The Bochner integral
+\begin{equation}
+ \mathsf M(E)=\int_EU(\omega)\,\mathbb P_g(d\omega)
+ \label{eq:cnh-operator-measure}
+\end{equation}
+is a countably additive \(B(\mathcal H_{\rm ev})\)-valued measure of total
+variation at most one.  For every permutation-invariant density operator
+\(\varrho\),
+\begin{equation}
+ D(E,F)=
+ \frac{\Tr[\varrho\,\mathsf M(E)^\dagger\mathsf M(F)]}
+ {\Tr[\varrho\,\mathsf M(\Omega)^\dagger\mathsf M(\Omega)]}
+ \label{eq:cnh-decoherence}
+\end{equation}
+is normalized and strongly positive, and \(D(E,E)\) is grade 2.  Natural
+relabelings act equivariantly,
+\[
+ U(\pi\omega)=\Pi_\pi U(\omega)\Pi_\pi^\dagger,
+\]
+and the range of \(\mathsf M\) is noncommutative.
+\end{theorem}
+
+\begin{proof}
+Equation~\eqref{eq:cnh-tail} and Tonelli's theorem give
+\[
+ \mathbb E_g\sum_n\theta_{V_n}\le B_{\rm hol}<\infty,
+\]
+so the angle sum is finite almost surely.  Since
+\(\|u_x-\mathbf1\|\le\theta_{V_x}\), telescoping makes \(U_N\)
+operator-norm Cauchy.  Its finite-cylinder approximants have separable
+range, which proves Bochner measurability.  A bounded Bochner density
+defines an operator-norm countably additive vector measure and
+\(|\mathsf M|(\Omega)\le\int\|U\|d\mathbb P_g=1\).  Furthermore,
+\[
+ \|\mathsf M(\Omega)-\mathbf1\|
+ \le\mathbb E_g\|U-\mathbf1\|
+ \le B_{\rm hol}<1,
+\]
+so the denominator in Eq.~\eqref{eq:cnh-decoherence} is at least
+\((1-B_{\rm hol})^2\).  The Gram identity
+\[
+ \sum_{ij}\bar c_i c_jD(E_i,E_j)
+ \propto
+ \Tr\!\left[
+ \varrho\left(\sum_i c_i\mathsf M(E_i)\right)^\dagger
+ \left(\sum_j c_j\mathsf M(E_j)\right)
+ \right]\ge0
+\]
+proves strong positivity, and biadditivity gives the grade-2 sum rule.
+Intrinsic past data prove equivariance under natural relabeling.
+
+For noncommutativity, fix a positive-probability \(n\)-event prefix and
+compare a next birth with empty precursor to one with a singleton precursor.
+Their fresh-factor gates \(u_{0,0}\) and \(u_{1,1}\) obey
+\[
+ c_{\rm NA}:=\|[u_{0,0},u_{1,1}]\|
+ =2|\sin\theta_0\sin\theta_1|>0.
+\]
+After integrating unrestricted futures, both conditional tail operators
+are within \(B_{\rm hol}\rho^{n+1}\) of the identity.  The corresponding
+cylinder commutator is bounded below, apart from strictly positive path
+probabilities, by
+\begin{equation}
+ c_{\rm NA}-4B_{\rm hol}\rho^{n+1}.
+ \label{eq:cnh-range-bound}
+\end{equation}
+This is positive for all sufficiently large \(n\), so integration does not
+abelianize the range.
+\end{proof}
+
+For the archived parameters
+\[
+ (m^2,\Delta,\kappa,g,h,\epsilon_\star)
+ =(0.85,0.65,0.60,0.82,2.20,0.040),
+\]
+\(\rho=0.833981\) and \(B_{\rm hol}=0.446848\).
+The lower bound~\eqref{eq:cnh-range-bound} becomes positive at \(n=36\).
+Complete enumeration through six events gives 4824 naturally labelled
+histories in 318 unlabeled classes.  The Markov, scalar Bell, and
+spectator-gate residuals are below \(6.7\times10^{-16}\), while intrinsic
+decorated-causet covariance is exact.  A deliberately stage-labelled gate
+has covariance and spectator defects \(2.34\times10^{-2}\) and
+\(1.00\times10^{-2}\).  At four events the normalized decoherence matrix
+has interference \(1.10\times10^{-2}\), grade-2 residual
+\(5.4\times10^{-19}\), and a nonzero operator-measure commutator.
+
+This proves A11CH at model level.  It combines arbitrary-down-set CSG
+covariance with a local-unitary non-Abelian, countably additive history
+measure.  The exact spectator statement is
+\begin{equation}
+ \frac{q_C(S_1)}{q_C(S_2)}
+ =\frac{q_B(S_1)}{q_B(S_2)},\qquad
+ u_C(S_i)=u_B(S_i),
+ \quad B=S_1\cup S_2.
+ \label{eq:cnh-isometric-bell}
+\end{equation}
+It is \emph{isometric Bell locality}, not the square-operator TOBC, NTOBC,
+or CPOBC cross-product condition.  The operator density is integrated
+against a classical CSG law and does not obey an operator Markov sum at each
+parent.  Geometry does not backreact on the gate, precursor locality is not
+bounded-neighborhood locality, and no Lorentzian continuum, nonlinear
+constraint algebra, matter dynamics, anomaly freedom, or graph backreaction
+is proved.
+
+\subsection{Central operator-valued growth and the no-coherence boundary}
+\label{sec:central-operator-growth}
+
+The preceding constructions leave a tempting shortcut: promote the scalar
+CSG couplings to positive operators and interpret their state dependence as
+quantum backreaction.  The commutative branch of that proposal can be solved
+and classified completely \cite{XuOperatorValuedCausalGrowth2026}.  The
+classification is useful precisely because it proves that central
+operator-valued couplings do \emph{not} make the geometry marginal
+coherent.
+
+Let \(\mathcal Z\) be a commutative von Neumann algebra with separable
+predual,
+\[
+ \mathcal Z\simeq L^\infty(Z,\nu),
+ \qquad T_k=M_{t_k}\in\mathcal Z_+,\qquad T_0=\mathbf1 .
+\]
+For a birth above a down-set \(S\) of an \(n\)-event parent \(C\), put
+\[
+ v=|S|,\qquad m=|\max S|,
+\]
+and define
+\begin{align}
+ \Lambda(v,m)
+ &=\sum_{k=m}^{v}\binom{v-m}{k-m}T_k,\nonumber\\
+ \Lambda_n&=\Lambda(n,0),\qquad
+ Q_C(S)=\Lambda(v,m)\Lambda_n^{-1}.
+ \label{eq:ocg-transition}
+\end{align}
+The normalization is an operator identity rather than a fitted row sum.
+Every seed \(K\subseteq C\) has the unique down-closure
+\(\downarrow K=S\), and the seeds in that fiber are exactly
+\(\max S\subseteq K\subseteq S\).  Hence
+\begin{equation}
+ \sum_{S\in\mathcal D(C)}
+ \Lambda(|S|,|\max S|)
+ =\sum_{K\subseteq C}T_{|K|}
+ =\Lambda_n .
+ \label{eq:ocg-seed-identity}
+\end{equation}
+Since \(T_0=\mathbf1\), \(\Lambda_n\geq\mathbf1\); therefore
+\(Q_C(S)\geq0\) and \(\sum_SQ_C(S)=\mathbf1\).
+
+\begin{theorem}[Central operator-valued growth and classification]
+\label{thm:central-operator-growth-classification}
+The effects in Eq.~\eqref{eq:ocg-transition} have the following
+properties.
+\begin{enumerate}
+\item \(K_C(S)=Q_C(S)^{1/2}\) is a trace-preserving L\"uders instrument at
+each finite parent.
+\item For every finite history \(\omega\),
+\begin{equation}
+ K_\omega=\prod_jK_{C_j}(S_j)
+ =M_{\sqrt{P_z(\omega)}} ,
+ \label{eq:ocg-path}
+\end{equation}
+where \(P_z\) is the scalar CSG law with couplings \(t_k(z)\).  Thus
+naturally labeled paths with isomorphic endpoints have identical path
+operators.
+\item For \(B=S_1\cup S_2\), the exact Bell cross-product is
+\begin{equation}
+ Q_C(S_1)Q_B(S_2)=Q_C(S_2)Q_B(S_1).
+ \label{eq:ocg-bell}
+\end{equation}
+\item The finite effects extend to a normalized strongly countably
+additive POVM on the infinite past-finite history event algebra,
+\begin{equation}
+ Q(E)=M_{P_z(E)}.
+ \label{eq:ocg-infinite-povm}
+\end{equation}
+\item Conversely, every central operator-valued CSG has this direct-integral
+form.  For every normal state \(\rho\),
+\begin{equation}
+ p_\rho(E)=\Tr[\rho Q(E)]
+ =\int_ZP_z(E)\,\diff\mu_\rho(z),
+ \label{eq:ocg-mixture}
+\end{equation}
+where \(\mu_\rho\) is fixed by the restriction of \(\rho\) to
+\(\mathcal Z\).
+\end{enumerate}
+Consequently two states with the same central restriction give identical
+geometry statistics on every history event.
+\end{theorem}
+
+\begin{proof}
+Equation~\eqref{eq:ocg-seed-identity} proves Kraus completeness.  In the
+multiplication representation,
+\[
+ Q_C(S)=M_{q_z(C,S)},\qquad
+ q_z(C,S)=
+ \frac{\sum_{k=m}^{v}\binom{v-m}{k-m}t_k(z)}
+ {\sum_{k=0}^{n}\binom nk t_k(z)} .
+\]
+The scalar path product depends only on the intrinsic past
+\((|J^-(x)|,|\max J^-(x)|)\) of each endpoint event, proving
+Eq.~\eqref{eq:ocg-path} and DGC.  The two precursor numerators are unchanged
+when spectators outside \(B\) are removed, while the parent normalizer is
+common; commutativity then gives Eq.~\eqref{eq:ocg-bell}.  The scalar
+kernels define probability measures \(P_z\) on infinite histories.
+Measurability first holds for cylinders and extends by the monotone-class
+theorem.  Scalar countable additivity and dominated convergence give strong
+countable additivity of Eq.~\eqref{eq:ocg-infinite-povm}.  Finally, the
+representation theorem for commutative von Neumann algebras makes every
+central coupling a multiplication function, and every normal functional on
+\(\mathcal Z\) is integration against \(\mu_\rho\), which proves
+Eq.~\eqref{eq:ocg-mixture}.
+\end{proof}
+
+For two central sectors,
+\[
+ Q(E)=
+ \begin{pmatrix}P_0(E)&0\\0&P_1(E)\end{pmatrix},\qquad
+ \rho=
+ \begin{pmatrix}w&c\\\bar c&1-w\end{pmatrix},
+\]
+so
+\begin{equation}
+ p_\rho(E)=wP_0(E)+(1-w)P_1(E)
+ \label{eq:ocg-coherence-blind}
+\end{equation}
+is independent of \(c\).  Even when an external reference makes the
+off-diagonal block operational in a larger algebra, the central geometry
+POVM cannot detect it.  The geometry can be state controlled or classically
+correlated with a hidden sector, but it cannot interfere between sectors.
+
+Positivity and one-step normalization alone do not evade this conclusion.
+For noncommuting \(T_k>0\), the symmetrically normalized effects
+\begin{equation}
+ E_C(S)=
+ \Lambda_n^{-1/2}\Lambda(v,m)\Lambda_n^{-1/2}
+ \label{eq:ocg-noncentral-effect}
+\end{equation}
+remain positive and sum to the identity, yet their square roots need not
+compose covariantly.  An explicit two-dimensional control is
+\begin{equation}
+ T_k=e^{-\bar g\chi_k}
+ \left[
+ \mathbf1+\eta\cos(0.79k)X+\eta\sin(0.79k)Z
+ \right],
+ \qquad 0<\eta<1 ,
+ \label{eq:ocg-noncentral-coupling}
+\end{equation}
+with the positive contact-star response \(\chi_k\) of
+Eq.~\eqref{eq:cqg-star-response}.  For the archived parameters, the two
+natural labelings
+\[
+ (0,1,0),\qquad (0,0,1)
+\]
+of a two-event chain plus one isolated event have sequential probabilities
+\[
+ 0.14917364759401094,\qquad
+ 0.14919932629598825.
+\]
+Their DGC spread is \(2.5678702\times10^{-5}\), although the maximum
+parentwise POVM residual is \(1.11\times10^{-15}\).  This is a failure
+control, not a proposed noncentral growth law.
+
+Non-Abelian records can nevertheless coexist with the central geometry
+marginal.  For \(U_H=e^{i\epsilon H}\), set
+\[
+ F_H^0=\frac{\mathbf1+U_H}{2},\qquad
+ F_H^1=\frac{\mathbf1-U_H}{2},\qquad
+ A^{ab}=F_{H_a}^{\,b}F_X^{\,a},
+ \quad(H_0,H_1)=(Z,Y).
+\]
+The two binary identities imply
+\[
+ \sum_{ab}A^{ab}=\mathbf1,\qquad
+ \sum_{ab}A^{ab\dagger}A^{ab}=\mathbf1,
+\]
+while at \(\epsilon=0.22\),
+\[
+ \|[A^{00},A^{10}]\|=2.0800387\times10^{-2}.
+\]
+The combined fresh-event instrument
+\begin{equation}
+ L_C(S,a,b)=Q_C(S)^{1/2}\otimes A^{ab}
+ \label{eq:ocg-combined-instrument}
+\end{equation}
+is trace preserving, but summing over \(a,b\) returns \(Q_C(S)\); the
+record noncommutativity does not backreact on the geometry law.
+
+Complete enumeration through six events covers 4824 naturally labeled
+histories in 318 unlabeled classes.  The largest central POVM, DGC, and
+Bell residuals are \(6.66\times10^{-16}\),
+\(2.78\times10^{-17}\), and \(2.78\times10^{-17}\); direct-mixture and
+coherence-visibility residuals vanish at stored precision.  The analytic
+classification, rather than these finite residuals, is the infinite-history
+result.
+
+This proves A11OC at model level and sharpens the remaining cut.  The
+infinite object established here is a POVM, not a countably additive
+noncommutative instrument after unobserved future records are discarded.
+No noncentral solution of causal-past-ordered Bell causality, coherent
+geometry interference, geometry backreaction, tight Lorentzian continuum,
+constraint algebra, anomaly theorem, or nonlinear Einstein limit is
+obtained.  A viable quantum-growth replacement must therefore leave the
+central algebra while preserving normalization, DGC, and operator locality,
+or must use a different strongly positive history construction whose
+relative phases survive both quotienting and infinite extension.
+
+\subsection{Rigidity of the remaining square-operator Bell branch}
+\label{sec:bell-causal-rigidity}
+
+The preceding classification does not decide whether noncentral transition
+operators can obey an operator Markov sum, operator discrete general
+covariance (DGC), and causal-past-ordered Bell causality (CPOBC)
+simultaneously.  CPOBC is the only nonsingular ordering in the current
+square-operator formulation that is not already known to force immediate
+commutativity \cite{SrivastavaSurya2026}.  The companion analysis
+\cite{XuBellCausalGrowthRigidity2026} removes three natural neighborhoods
+from that search.
+
+Let \(a_n\) be the \(n\)-element antichain and set
+\[
+ Q_n=A(a_n,\varnothing).
+\]
+Pairing the gregarious transition with a singleton precursor and deleting
+their common spectators gives the exact CPOBC identity
+\begin{equation}
+ A_n^{(1)}Q_1=(\mathbf1-Q_1)Q_n,
+ \qquad
+ A_n^{(1)}=(\mathbf1-Q_1)Q_nQ_1^{-1}.
+\label{eq:bcgr-one-precursor}
+\end{equation}
+If the three displayed transition operators are self-adjoint, then
+\begin{equation}
+ Q_1\!\left(A_n^{(1)}-A_n^{(1)\dagger}\right)Q_1
+ =
+ [\,Q_1(\mathbf1-Q_1),Q_n\,].
+\label{eq:bcgr-hermiticity}
+\end{equation}
+Thus self-adjointness makes \(Q_n\) commute with
+\(Q_1(\mathbf1-Q_1)\).  The
+identity alone has a complementary-spectrum loophole, because the map
+\(f(\lambda)=\lambda(1-\lambda)\) identifies
+\(\lambda\) and \(1-\lambda\).  The full CPOBC system closes that loophole.
+
+\begin{theorem}[Self-adjoint and all-order triangular CPOBC rigidity]
+\label{thm:bcgr-rigidity}
+For nonsingular square-operator CPOBC:
+\begin{enumerate}
+\item if every transition is self-adjoint, then the complete
+finite-dimensional transition algebra is commutative, with no positivity
+or sign assumption and including all complementary-spectrum blocks;
+\item through four events, at the scalar transitive-percolation point
+\(t=1/4\), the 79 operator residuals in 30 marked-transition classes have
+\begin{equation}
+ \operatorname{rank}J=27,\qquad
+ \operatorname{rank}[\,J\mid W_{12}\ W_{13}\ W_{23}\,]=30,
+\label{eq:bcgr-ranks}
+\end{equation}
+so the three matrices multiplying every leading formal deformation obey
+\([H_1,H_2]=[H_1,H_3]=[H_2,H_3]=0\);
+\item for every pair of distinct strictly positive scalar CSG coupling
+sequences \(\bm t_L,\bm t_R\in(0,\infty)^{\mathbb N}\), every
+\(2\times2\) upper-triangular extension
+\[
+ A_e=
+ \begin{pmatrix}
+ a_e(\bm t_L)&x_e\\0&a_e(\bm t_R)
+ \end{pmatrix},
+\]
+is globally similar to the diagonal direct sum; if \(t_k\) is the first
+unequal coupling, the universal early obstruction has
+\begin{equation}
+\det\mathcal O_k=
+\frac{t_2}{\Lambda_1\Lambda_2}
+\prod_{j=2}^{k-1}\frac{t_1t_{j-1}}{\Lambda_j^2}>0
+\qquad(k\ge3).
+\label{eq:bcgr-allorder-det}
+\end{equation}
+Independently, the six-event \(9680\times707\) linear system has rank 706
+on every distinct positive five-jet and its kernel is only
+\[
+ \bm x=\xi\,[\,\bm a(\bm t_L)-\bm a(\bm t_R)\,],
+\]
+the coboundary generated by a global similarity transform.
+\item for coincident positive scalar characters, every \(2\times2\)
+upper-triangular self-extension is uniquely
+\begin{equation}
+ A_e=a_e(\bm t)\mathbf1+
+ \left(\sum_{\ell\ge1}c_\ell\partial_{t_\ell}a_e(\bm t)\right)E_{12},
+\label{eq:bcgr-equal-character}
+\end{equation}
+where a finite transition contains only finitely many terms.  Its
+transition algebra is commutative, and it splits if and only if all
+\(c_\ell\) vanish.
+\item if a nonsingular \(2\times2\) CPOBC representation is irreducible
+and \(R_n=Q_1^{-1}Q_n\), then \(R_2\) is scalar.  A non-scalar \(R_2\)
+reduces to an eigenline-swapping normal form, whose two exceptional
+components are both eliminated by the following antichain stage.
+\item write the surviving scalar ratio as \(R_2=h\mathbf1\).  The
+two-element chain requires \(h\ne0,1\).  In the trace-balanced subchart
+\(d=a,\ x=-1\) of the first-simple-spectrum chart
+\begin{equation}
+ Q_1=\begin{pmatrix}a&1\\q&d\end{pmatrix},\quad
+ R_3=\operatorname{diag}(1,x),\quad
+ R_4=\operatorname{diag}(1,y)
+\label{eq:bcgr-delayed-component}
+\end{equation}
+the physically saturated stage-three equations have exactly
+\[
+C_0:y=1,\quad
+E_1:a=\tfrac12,\ 4hq-3h+2=0,\quad
+E_2:q=a-a^2,\ 2ah-2h+1=0.
+\]
+None has a nonsingular extension through the next antichain stage.  No
+classification of the complementary part of the first-simple-spectrum
+chart is asserted.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Put \(F=Q_1(\mathbf1-Q_1)\).  Equation~\eqref{eq:bcgr-hermiticity}
+gives \([F,Q_n]=0\).  A second exact CPOBC relation is
+\begin{equation}
+ [Q_1Q_2^{-1},Q_1^{-1}Q_2]=0.
+\label{eq:bcgr-q1q2}
+\end{equation}
+The following elementary block argument removes the former sign
+restriction.  Let \(A,B\) be invertible self-adjoint matrices satisfying
+\[
+ [A(\mathbf1-A),B]=0,\qquad [AB^{-1},A^{-1}B]=0 .
+\]
+On a spectral subspace of \(A(\mathbf1-A)\), the spectrum of \(A\) contains
+at most the complementary pair \(q,1-q\).  In the nontrivial case write
+\[
+ A=\begin{pmatrix}q\mathbf1&0\\0&(1-q)\mathbf1\end{pmatrix},
+ \qquad
+ B=\begin{pmatrix}U&D\\D^\dagger&V\end{pmatrix}.
+\]
+With \(C=A^{-1}B\), the second commutator is equivalent to
+\([C,ACA^{-1}]=0\).  Its upper diagonal block is
+\[
+ \bigl[q^{-2}-(1-q)^{-2}\bigr]DD^\dagger .
+\]
+Invertibility excludes \(q=0,1\); for \(q\ne1/2\) the coefficient is
+nonzero and hence \(D=0\), while at \(q=1/2\) the two eigenvalues already
+coincide.  Thus \([A,B]=0\).  Applying this lemma to \(Q_1,Q_2\) proves
+\([Q_1,Q_2]=0\).
+
+Set \(R=Q_2Q_1^{-1}\).  It is self-adjoint and commutes with \(Q_1\).
+The three transitions from the two-element chain reduce to
+\begin{equation}
+ G_2=Q_2,\qquad
+ V_2=(\mathbf1-Q_1)R,\qquad
+ T_2=\mathbf1-R .
+\label{eq:bcgr-chain}
+\end{equation}
+Nonsingularity of \(T_2\) gives \(1\notin\operatorname{spec}R\), while the
+three-generator CPOBC relation gives \([R,Q_n]=0\).
+
+It remains to exclude mixing of complementary \(Q_1\) eigenvalues.  The
+two-element-antichain timid transition is
+\[
+ S=A_2^{(2)}=\mathbf1-(2\mathbf1-Q_1)R,
+ \qquad
+ A_n^{(2)}=S Q_nQ_2^{-1}.
+\]
+Resolve the commuting pair \((Q_1,R)\) into joint spectral projections
+\(P_{q,r}\).  The relations \([F,Q_n]=[R,Q_n]=0\) permit an off-diagonal
+block only between \((q,r)\) and \((1-q,r)\).  Hermiticity of
+\(A_n^{(2)}\), after multiplication by the invertible scalar denominators,
+yields
+\begin{align}
+ &\bigl[q\{1-(2-q)r\}
+ -(1-q)\{1-(1+q)r\}\bigr]\nonumber\\
+ &\hspace{23mm}\times
+ P_{q,r}Q_nP_{1-q,r}=0 .
+\label{eq:bcgr-separator}
+\end{align}
+The coefficient factors exactly as
+\((2q-1)(1-r)\).  It is nonzero for \(q\ne1/2\), because \(r\ne1\);
+for \(q=1/2\), \(Q_1\) is scalar on the block.  Thus
+\([Q_1,Q_n]=0\) for every \(n\), and the nonsingular CPOBC
+central-generator lemma propagates commutativity to every transition
+\cite{SrivastavaSurya2026}.
+
+For the second statement, exact marked-isomorphism enumeration gives
+\[
+ 8\ {\rm Markov}+26\ {\rm DGC}
+ +35\ {\rm unequal\ CPOBC}+10\ {\rm equal\ CPOBC}.
+\]
+At a scalar reference the linearization \(J\) acts entrywise.  Its
+three-dimensional kernel supplies
+\(X_e=\sum_{\alpha=1}^3(n_\alpha)_eH_\alpha\).  Symmetric quadratic terms
+are tangent to the three-parameter scalar solution manifold.  Modulo
+\(\operatorname{im}J\), the remaining second-order equation is
+\[
+ \sum_{\alpha<\beta}
+ [W_{\alpha\beta}]\otimes[H_\alpha,H_\beta]=0.
+\]
+The augmented rank in Eq.~\eqref{eq:bcgr-ranks} makes the three wedge classes
+independent, so all three commutators vanish.  A certified nonzero
+\(30\times30\) minor is
+\[
+ -\frac{1099511627776}{582076609134674072265625}.
+\]
+For the triangular ansatz, all diagonal equations hold by scalar
+covariance.  Through four events a scalar CSG character uses the complete
+three-jet \(\bm t=(t_1,t_2,t_3)\), with \(t_0=1\):
+\[
+ \lambda(v,m;\bm t)
+ =\sum_{k=m}^{v}\binom{v-m}{k-m}t_k,\qquad
+ a(c,P;\bm t)
+ =\frac{\lambda(|P|,m(P);\bm t)}
+ {\lambda(|c|,0;\bm t)}.
+\]
+Write the first three triangular antichain generators as
+\[
+ Q_i=\begin{pmatrix}a_i&x_i\\0&b_i\end{pmatrix}.
+\]
+An exact lower CPOBC residual has upper-right entry
+\begin{align}
+0={}&
+\frac{(a_1a_2-a_1b_2-a_2)(a_2a_3-a_2b_3-a_3)}
+{a_1a_2b_1b_2}\nonumber\\
+&\times\big[(a_1-b_1)x_2-(a_2-b_2)x_1\big].
+\label{eq:bcgr-triangular-separator}
+\end{align}
+For positive scalar transitions, both numerator factors are strictly
+negative:
+\[
+a_1(a_2-b_2)-a_2<0,\qquad
+a_2(a_3-b_3)-a_3<0.
+\]
+Thus \([Q_1,Q_2]=0\).  If the characters first differ at \(t_1\) or
+\(t_2\), one global triangular similarity diagonalizes this lower pair,
+and an exact \(22\times22\) late block has determinant
+\begin{align}
+D_1={}&
+\frac{t_{L2}t_{R1}^{5}t_{R2}^{2}
+(t_{L1}-t_{R1})(t_{R1}+t_{R2})^2}
+{(1+t_{L1})(1+t_{R1})^{10}
+(1+2t_{L1}+t_{L2})(1+2t_{R1}+t_{R2})^{12}},
+\label{eq:bcgr-minor-t1}\\
+D_2={}&
+-\frac{t_1^{7}t_{R2}^{2}(t_1+t_{R2})^2(t_{L2}-t_{R2})}
+{(1+t_1)^{10}(1+2t_1+t_{L2})
+(1+2t_1+t_{R2})^{13}},
+\label{eq:bcgr-minor-t2}
+\end{align}
+respectively.  The first expression is used when
+\(t_{L1}\ne t_{R1}\); the second when \(t_{L1}=t_{R1}=t_1\) and
+\(t_{L2}\ne t_{R2}\).  All undisplayed factors are positive on the
+declared domain.
+
+When the first difference is \(t_3\), the two characters agree through
+stage two and the early extension coordinates cannot be removed by
+similarity.  Exact block elimination instead gives
+\begin{align}
+D_{3,\mathrm{late}}
+&=\frac{t_1^5t_2^2(t_1+t_2)^2}
+{(1+t_1)^{10}(1+2t_1+t_2)^{12}},\\
+D_{3,\mathrm{Schur}}
+&=-\frac{t_1^3t_2(t_{L3}-t_{R3})^2}
+{(1+t_1)^2(1+2t_1+t_2)}
+\nonumber\\
+&\hspace{7mm}\times
+\frac{1}
+{(1+3t_1+3t_2+t_{L3})^2
+(1+3t_1+3t_2+t_{R3})^2}.
+\label{eq:bcgr-minor-t3}
+\end{align}
+Their product is a nonzero \(29\times29\) minor.  The three
+first-difference strata exhaust all distinct positive three-jets.  Since
+the global-similarity coboundary is always present, the rank is exactly 29
+and the kernel is exactly its span.
+
+At five events there are 131 marked transitions and 820 residual
+equations.  Suppose first that the characters differ among
+\(t_1,t_2,t_3\).  The four-event restriction just proved is a global
+coboundary.  Subtract it from all stages; the first 30 off-diagonal
+coordinates vanish.  The remaining \(820\times101\) late matrix has exact
+\(101\times101\) minors
+\begin{align}
+E_1={}&
+\frac{t_{L2}t_{R1}^{37}t_{R2}^{13}t_{R3}^{3}
+(t_{L1}-t_{R1})(t_{R1}+t_{R2})^{13}}
+{(1+t_{L1})(1+t_{R1})^{44}
+(1+2t_{L1}+t_{L2})(1+2t_{R1}+t_{R2})^{56}}
+\nonumber\\[-1mm]
+&\times
+\frac{(t_{R2}+t_{R3})^8(t_{R1}+2t_{R2}+t_{R3})^6}
+{(1+3t_{R1}+3t_{R2}+t_{R3})^{60}},
+\label{eq:bcgr-five-t1}\\
+E_2={}&-
+\frac{t_1^{39}t_{R2}^{13}t_{R3}^{3}
+(t_{L2}-t_{R2})(t_1+t_{R2})^{13}}
+{(1+t_1)^{44}(1+2t_1+t_{L2})
+(1+2t_1+t_{R2})^{57}}
+\nonumber\\[-1mm]
+&\times
+\frac{(t_{R2}+t_{R3})^8(t_1+2t_{R2}+t_{R3})^6}
+{(1+3t_1+3t_{R2}+t_{R3})^{60}},
+\label{eq:bcgr-five-t2}\\
+E_3={}&-
+\frac{t_1^{38}t_2^{14}t_{R3}^{3}
+(t_1+t_2)^{13}(t_2+t_{R3})^8}
+{(1+t_1)^{44}(1+2t_1+t_2)^{56}}
+\nonumber\\[-1mm]
+&\times
+\frac{(t_{L3}-t_{R3})(t_1+2t_2+t_{R3})^6}
+{(1+3t_1+3t_2+t_{L3})
+(1+3t_1+3t_2+t_{R3})^{61}} .
+\label{eq:bcgr-five-t3}
+\end{align}
+The first formula applies when \(t_1\) first differs, the second when
+\(t_1\) agrees and \(t_2\) first differs, and the third when \(t_1,t_2\)
+agree and \(t_3\) first differs.  Every factor other than the declared
+coupling difference is strictly positive.  These minors are independent of
+\(t_{L4},t_{R4}\), so no stage-four coupling can restore a late extension.
+
+It remains to treat a first difference in \(t_4\).  Put
+\[
+\Lambda_3=1+3t_1+3t_2+t_3,\qquad
+\Lambda_{4\alpha}=1+4t_1+6t_2+4t_3+t_{\alpha4}.
+\]
+Omit one nonzero stage-four coboundary column.  A 100-dimensional late
+block has determinant
+\[
+D_{4,\mathrm{late}}=
+\frac{t_1^{37}t_2^{13}t_3^3(t_1+t_2)^{13}
+(t_2+t_3)^8(t_1+2t_2+t_3)^6}
+{(1+t_1)^{44}(1+2t_1+t_2)^{56}\Lambda_3^{60}}.
+\]
+Solving this block exactly and substituting into 30 remaining rows gives a
+Schur determinant
+\[
+D_{4,\mathrm{Schur}}=
+\frac{t_1^9t_2^4(t_1+t_2)^2(t_{L4}-t_{R4})^3}
+{(1+t_1)^{12}(1+2t_1+t_2)^{13}
+\Lambda_{4L}^3\Lambda_{4R}^3}.
+\]
+The first block is removed by 100 degree-one row pivots; 23 further leaf
+pivots reduce the Schur block to a \(7\times7\) core.  Their product is a
+nonzero \(130\times130\) minor,
+\begin{equation}
+\begin{split}
+D_4={}&
+\frac{t_1^{46}t_2^{17}t_3^3(t_1+t_2)^{15}
+(t_2+t_3)^8(t_1+2t_2+t_3)^6}
+{(1+t_1)^{56}(1+2t_1+t_2)^{69}\Lambda_3^{60}}\\
+&\times
+\frac{(t_{L4}-t_{R4})^3}
+{\Lambda_{4L}^3\Lambda_{4R}^3}.
+\end{split}
+\label{eq:bcgr-five-t4}
+\end{equation}
+Thus every first-difference stratum has rank at least 130.  The global
+similarity coboundary makes the rank at most 130, proving the third
+statement through five events.
+
+At six events the catalog contains
+\[
+2+6+22+101+576=707
+\]
+marked transitions and 9680 residual equations: 87 operator Markov sums,
+4826 covariance equations, 3483 unequal-size CPOBC equations, and 1284
+equal-size CPOBC equations.  If the first unequal coupling is
+\(t_j\), \(j\le4\), the five-event restriction is already split.
+Subtracting its global-similarity coboundary leaves the 576 stage-five
+coordinates.  Exact \(576\times576\) late minors close all four strata.
+The \(t_2\) minor is completely row-leaf eliminable; the \(t_1,t_3,t_4\)
+minors have 573 degree-one column pivots and a \(3\times3\) core.  For
+example, the \(t_3\) core is
+\[
+\begin{pmatrix}
+-t_1/\Lambda_1&1/\Lambda_1&0\\
+-t_2/\Lambda_2&0&1/\Lambda_2\\
+0&-t_2/\Lambda_{3L}&t_1/\Lambda_{3R}
+\end{pmatrix},
+\]
+where
+\[
+\Lambda_1=1+t_1,\quad
+\Lambda_2=1+2t_1+t_2,\quad
+\Lambda_{3\alpha}=1+3t_1+3t_2+t_{\alpha3}.
+\]
+Its determinant is proportional to \(t_{L3}-t_{R3}\); the \(t_1\) and
+\(t_4\) cores have the same staircase form.  Multiplication by the exact
+leaf factors gives
+\[
+F_j=(t_{Lj}-t_{Rj})\,P_j/Q_j,\qquad j=1,\ldots,4,
+\]
+with \(P_j,Q_j\) products of strictly positive couplings, consecutive
+coupling sums, and CSG normalization polynomials.  Their complete
+factorizations and row lists are retained in the supporting material
+\cite{XuBellCausalGrowthRigidity2026}.
+
+For the only remaining stratum, put
+\[
+t_{L1}=t_{R1}=t_1,\ldots,t_{L4}=t_{R4}=t_4,
+\qquad t_{L5}\ne t_{R5},
+\]
+and define
+\begin{align*}
+\Lambda_1&=1+t_1,&\Lambda_2&=1+2t_1+t_2,\\
+\Lambda_3&=1+3t_1+3t_2+t_3,\\
+\Lambda_4&=1+4t_1+6t_2+4t_3+t_4,\\
+\Lambda_{5\alpha}&=1+5t_1+10t_2+10t_3+5t_4+t_{\alpha5}.
+\end{align*}
+After one nonzero coboundary coordinate is omitted, 575 row leaves
+eliminate the remaining late columns.  Four obstruction rows close the
+four early tangent directions.  After scaling out
+\((t_{L5}-t_{R5})/(\Lambda_{5L}\Lambda_{5R})\), their determinant is
+\[
+\frac{t_1^4t_2^2t_3}
+{\Lambda_1\Lambda_2^3\Lambda_3^2\Lambda_4^2}>0.
+\]
+Restoring the four scaled factors and the late determinant gives the
+nonzero \(706\times706\) minor
+\begin{equation}
+\begin{split}
+D_5={}&-\frac{t_1^{304}t_2^{105}t_3^{26}t_4^4
+(t_1+t_2)^{98}(t_2+t_3)^{71}(t_3+t_4)^{19}}
+{\Lambda_1^{269}\Lambda_2^{309}\Lambda_3^{355}\Lambda_4^{361}}\\
+&\times
+\frac{(t_1+2t_2+t_3)^{49}(t_2+2t_3+t_4)^{40}}
+{\Lambda_{5L}^4\Lambda_{5R}^4}\\
+&\times
+(t_1+3t_2+3t_3+t_4)^{22}(t_{L5}-t_{R5})^4 .
+\end{split}
+\label{eq:bcgr-six-t5}
+\end{equation}
+Every nondifference factor is positive.  Thus each of the five
+first-difference strata has rank at least 706.  The coboundary supplies a
+null vector, so the rank is exactly 706 and its span is the full kernel.
+
+The six-event result is the first complete four-tangent audit of an
+all-order antichain obstruction.  To derive the latter, let \(t_k\) be the
+least unequal coupling and subtract the global-similarity coboundary so that
+the upper-right entry of \(Q_k\) vanishes.  Below stage \(k\), the two
+diagonal characters coincide and every triangular transition belongs to
+the dual-number algebra
+\(\mathbb C[\varepsilon]/(\varepsilon^2)\).  The nonsingular scalar CSG
+classification uses only sums, products, and inverses of gregarious
+transitions, so it base-changes to this algebra.  Consequently every early
+coordinate is uniquely
+\[
+y_e=\sum_{\ell=1}^{k-1}c_\ell\partial_{t_\ell}a_e(\bm t).
+\]
+
+For \(k\ge3\), set
+\(\Lambda_n=1+\sum_{j=1}^n\binom njt_j\).  The antichain pivots
+\[
+A_k^{(r)}A_r^{(0)}=A_r^{(r)}A_k^{(0)}
+\]
+solve the needed stage-\(k\) coordinates.  Substitute them into
+\[
+[A_k^{(1)},A_2^{(1)}]=0,\qquad
+A_k^{(2)}A_2^{(1)}=A_2^{(2)}A_k^{(1)},
+\]
+and
+\[
+A_k^{(r)}A_{r+1}^{(1)}
+=A_{r+1}^{(r)}A_k^{(1)},\qquad2\le r\le k-2.
+\]
+After scaling by
+\(\Lambda_{kL}\Lambda_{kR}/(t_{Lk}-t_{Rk})\), one row interchange makes
+the resulting \((k-1)\)-square matrix lower triangular, with diagonal
+\[
+-\frac{t_2}{\Lambda_1\Lambda_2},\quad
+\frac{t_1^2}{\Lambda_2^2},\quad
+\frac{t_1t_2}{\Lambda_3^2},\ldots,
+\frac{t_1t_{k-2}}{\Lambda_{k-1}^2}.
+\]
+This proves Eq.~\eqref{eq:bcgr-allorder-det} and removes all early
+tangents.  The cases \(k=1,2\) follow from
+Eq.~\eqref{eq:bcgr-triangular-separator}.  The gregarious identity
+\[
+Q_nQ_1^{-1}Q_k=Q_kQ_1^{-1}Q_n\qquad(1<k<n)
+\]
+then diagonalizes every later antichain generator for \(k\ge2\); the
+\(k=1\) case uses the complementary pair
+\([Q_n,Q_2Q_1^{-1}]=0\) and
+\([A_n^{(1)},A_2^{(1)}]=0\).  Atomization, Bell causality against the
+gregarious alternative, and MSR propagate diagonality to all transitions.
+Restoring the coboundary proves the all-order statement.
+
+The symbolic archive derives the complete \(\mathcal O_k\) through
+\(k=12\) and reproduces the six-event \(\mathcal O_5\) entry by entry.  A
+second implementation using only exact rational arithmetic verifies
+normalization cancellation, triangularity, Eq.~\eqref{eq:bcgr-allorder-det},
+and positivity through \(k=40\).  These checks audit the formula; the
+all-\(k\) conclusion follows from the displayed triangular factorization.
+
+For the coincident-character branch, identify the upper-triangular algebra
+with the dual numbers
+\(\mathbb D=\mathbb C[\varepsilon]/(\varepsilon^2)\) through
+\(\varepsilon\mapsto E_{12}\).  Strict positivity makes every denominator
+in the scalar CSG induction a unit of \(\mathbb D\).  Because that induction
+uses only sums, products, and inverses of gregarious transitions, it
+base-changes to \(\mathbb D\): through parent size \(n\), the unique dual
+couplings are
+\[
+ t_\ell+\varepsilon c_\ell,\qquad1\le\ell\le n.
+\]
+Restriction from \(n+1\) to \(n\) preserves the coefficients, giving one
+infinite sequence \((c_\ell)_{\ell\ge1}\), and differentiation gives
+Eq.~\eqref{eq:bcgr-equal-character}.  The image of \(\mathbb D\) is
+commutative.  If \(c_k\) is the first nonzero coefficient, the nilpotent
+entry of the gregarious transition from the \(k\)-antichain is
+\(-c_k/\Lambda_k^2\ne0\), so the Jordan extension is nonsplit; the converse
+is immediate.  An independent exact-rational implementation evaluates
+47\,904 dual-number transition types through parent size 64.  The complete
+four- and five-event systems have nullities three and four, exactly their
+coupling-tangent dimensions, and all five tangent columns annihilate the
+9680 six-event residuals.
+
+For the irreducible two-dimensional branch, the gregarious identity makes
+all \(R_n=Q_1^{-1}Q_n\) commute.  If \(R_2\) is a non-scalar Jordan block,
+\([Q_1Q_2^{-1},Q_1^{-1}Q_2]=0\) makes \(Q_1\) preserve its unique
+eigenline.  If \(R_2\) has simple spectrum, irreducibility leaves only
+\[
+ Q_1=\begin{pmatrix}0&1\\p&0\end{pmatrix},\qquad
+ R_2=\operatorname{diag}(r,s),
+\quad prs(r-s)(p-1)\ne0 .
+\]
+Writing \(R_3=\operatorname{diag}(u,v)\), two rows of the next CPOBC
+relation have determinant
+\begin{equation}
+ -\frac{p^2(r-s)^2(r+s)[p(r^2+s^2)-rs]}
+ {rs^2(p-1)}.
+\label{eq:bcgr-early-irred}
+\end{equation}
+The first exceptional component \(s=-r\) forces \(u=v\).  At the following
+stage the required two-precursor transition has determinant
+\(-u^2D/r^2\), \(D=9pr^2-4r^2+1\), while two response rows have determinant
+\(48pu^2/D\); nonsingularity therefore makes the latter full rank and
+forces the next generator to vanish.  The other component has
+\(p=rs/(r^2+s^2)\), \(v=-su/r\); away from the overlap \(r+s=0\), the
+following two-row determinant is
+\[
+ \frac{2u^2(r-s)(r+s)^2}{r^3}\ne0.
+\]
+It gives the same contradiction.  A symbolic certificate reconstructs
+these factorizations exactly.  This excludes non-scalar onset at \(R_2\),
+not a delayed-onset branch with scalar \(R_2\).
+
+For the surviving scalar ratio, \(Q_2=hQ_1\).  The exact transitions from
+the two-element chain are
+\begin{equation}
+ G_2=hQ_1,\qquad V_2=h(\mathbf1-Q_1),\qquad
+ T_2=(1-h)\mathbf1 .
+\label{eq:bcgr-delayed-chain}
+\end{equation}
+Thus nonsingularity gives \(h\ne0,1\), eliminating every antichain
+candidate on the \(h=1\) branch.  We next restrict
+Eq.~\eqref{eq:bcgr-delayed-component} to the trace-balanced slice
+\(d=a,\ x=-1\).  Direct substitution into all twelve
+determinant-cleared stage-three residuals gives the common factor
+\((y-1)(q-a^2)\).  On \(y\ne1\), nonsingularity permits removal of
+\(q-a^2\), and two quotient rows give
+\[
+(2a-1)(a^2-a+q)^2=0,\qquad
+(2a-1)^2(a^2-a+q)=0.
+\]
+The remaining rows force exactly \(E_1\) or \(E_2\) as stated in the
+theorem; \(y=1\) is \(C_0\).  Direct factorization verifies sufficiency, so
+these components exhaust the trace-balanced subchart over
+\(\mathbb Q\).  The attempted exact elimination of \(d-a\) and \(x+1\)
+from the full saturated first-simple-spectrum ideal did not produce a
+finite characteristic-zero certificate; the complementary part of that
+chart therefore remains open.
+
+On \(C_0\), a putative next relative generator commutes with \(R_3\); write
+\(R_5=\operatorname{diag}(1,z)\).  For three stage-four residuals
+\(f_1,f_2,f_3\), with
+\begin{equation}
+ \Delta_3=-a^2h^2+6ah^2-6ah+h^2q-8h^2+18h-9 ,
+\end{equation}
+exact characteristic-zero reduction gives
+\begin{equation}
+ \operatorname{NF}_{I}\!\left[z(q-a^2)\Delta_3\right]\ne0,\qquad
+ \operatorname{NF}_{I}\!\left([z(q-a^2)\Delta_3]^2\right)=0,
+ \quad I=\langle f_1,f_2,f_3\rangle .
+\label{eq:bcgr-delayed-radical}
+\end{equation}
+Hence every common zero has
+\(z(q-a^2)\Delta_3=0\).  Yet \(z\ne0\),
+\(q-a^2=-\det Q_1\ne0\), and
+\(\Delta_3/h^2=\det A_3^{(3)}\ne0\) on the nonsingular branch, a
+contradiction.  SymPy and Singular independently reproduce both normal
+forms; saturation by all transition determinants gives the unit ideal.
+
+On \(E_1,E_2\), a next-stage residual first forces \(y=\pm1\); \(y=1\)
+returns to \(C_0\).  At \(y=-1\), two residuals force
+\[
+L_1=(2h-3)z-4h+3=0,\qquad
+L_2=(3a-2)z-3a+1=0,
+\]
+respectively.  Their resultants with a third residual core are
+\[
+-(2h-3)(9h^2-29h+18),\qquad
+(3a-2)(26a^2-31a+8).
+\]
+The linear leading factors cannot vanish with \(L_1,L_2\), while the
+quadratics are required stage-three transition determinants.  Both
+components are impossible.  Independent full saturated stage-four ideals
+are the unit ideal over \(\mathbb Q\).
+
+Transitive percolation is the subfamily \(t_k=t^k\).  With
+\(p=t/(1+t)\), one compact corollary is
+\[
+ p_L^3p_R^{13}(p_R-p_L)^2(1-p_R)^{22}
+ =
+ \frac{t_L^3t_R^{13}(t_R-t_L)^2}
+ {(1+t_L)^5(1+t_R)^{37}} .
+\]
+At the archived rational check pair
+\((t_L,t_R)=(1/4,1/2)\), this minor is
+\[
+ \frac{16777216}{1407137205909366759375}.
+\]
+\end{proof}
+
+Equation~\eqref{eq:bcgr-hermiticity} alone cannot prove the first part.  For
+\(Q_1=\operatorname{diag}(\lambda,1-\lambda)\), one positive off-diagonal
+\(Q_n\) can make Eq.~\eqref{eq:bcgr-one-precursor} positive while
+\([Q_1,Q_n]\ne0\).  This local example is a failure control for the
+one-precursor argument, not a complete CPOBC growth law: the second
+antichain-generator identity, nonsingularity of the chain timid transition,
+and the two-precursor self-adjointness condition supply the missing
+separators.  The second part excludes a noncommuting
+\emph{leading} tangent through second order; it does not exclude
+higher-order contact or a disconnected irreducible component in the
+non-self-adjoint or singular branches.  The third part applies to every
+pair of distinct strictly positive scalar CSG coupling sequences,
+irrespective of the stage at which they first differ.  It does not cover
+zero/singular coupling boundaries, irreducible nontriangular
+representations, or higher-dimensional noncommutative nilpotent structure.
+The fourth part closes the positive equal-character \(2\times2\)
+upper-triangular branch.  The fifth closes non-scalar onset in an
+irreducible nonsingular \(2\times2\) branch.  The sixth removes the scalar
+value \(h=1\) and exhausts the trace-balanced \(d=a,\ x=-1\) subchart at
+\(R_3\), but does not classify the rest of the first-simple-spectrum chart,
+Jordan onset, or first onset after \(R_3\).
+
+This proves A11BR as a boundary theorem.  It narrows the square-operator
+search to non-self-adjoint nonsingular transitions, zero/singular
+couplings, state-only covariance, higher-dimensional noncommutative
+nilpotent thickenings, the unclassified part of the normalized
+first-simple-spectrum chart, and the remaining delayed-onset irreducible
+nontriangular components with scalar \(R_2=h\mathbf1\), \(h\ne0,1\),
+including Jordan onset and later first onset.
+It neither constructs nor excludes such a representation.  Nor does it
+provide an infinite noncommutative CPOBC measure with consistent cylinder
+marginals, a Lorentzian continuum, or geometry backreaction.
+
+\subsection{Falsifying deformations and the remaining assumption}
+
+Three controls isolate the mechanism.  With only one internal mode,
+\(\Str M^2=-\Delta\), so the logarithmic cutoff dependence remains.
+Erasing parity replaces the supertrace by a positive trace with
+\(\Tr\mathbf1=4\), restoring the quadratic divergence.  Most importantly,
+the lowest number-conserving nonadditive deformation,
+\begin{equation}
+ M_\eta^2=x+\Delta N+\eta N(N-1),
+ \label{eq:ph-deformation}
+\end{equation}
+gives
+\begin{equation}
+ \Str M_\eta^2=2\eta .
+ \label{eq:ph-deformation-moment}
+\end{equation}
+The free result is therefore structural but not generically
+interaction-stable.  A partial Ward identity or renormalization-group
+invariant manifold must forbid or compensate the \(N(N-1)\) term without
+enforcing the complete pairing ruled out by
+Theorem~\ref{thm:ph-pairing-obstruction}.
+
+This distinction separates eight statements.  A11BM is proved by the
+positive finite-graph multiplet.  A11BW is proved by
+Theorem~\ref{thm:selective-ladder-closure} and the finite geometry channel:
+the required moments are selectively protected for arbitrary finite
+positive interacting \(A_\omega\), with a quantitative defect bound, and
+the resulting weights have a local positive dynamics.  A11PG is proved by
+Theorem~\ref{thm:pcg-projective-law}: on a supplied naturally labelled
+causal-birth language, those weights generate compatible finite cylinder
+laws and an infinite positive history measure.  A11CG is proved by
+Theorems~\ref{thm:cqg-positive-growth}
+and~\ref{thm:cqg-complex-extension}: the response-generated contact
+sequence is DGC and Bell causal, and one \(r\geq2\) coherent subfamily has a
+countably additive strongly positive rank-one quantum measure.  A11NH is
+proved by Theorem~\ref{thm:nonabelian-history-extension}: on a supplied
+two-port strip, a fresh-ancilla local unitary generates an extendible
+rank-four non-Abelian quantum measure.  A11CH is proved by
+Theorem~\ref{thm:covariant-nonabelian-holonomy}: on arbitrary CSG causal
+histories, intrinsic fresh-event gates define a covariant countably
+additive non-Abelian operator measure and strongly positive decoherence
+functional.  A11OC is proved by
+Theorem~\ref{thm:central-operator-growth-classification}: central
+operator-valued CSG has an infinite POVM and exact covariance, but is
+classified as a coherence-blind direct integral of scalar growth laws; the
+positive noncentral control proves that one-step normalization alone does
+not preserve DGC.  A11BR is proved by
+Theorem~\ref{thm:bcgr-rigidity}: every finite-dimensional self-adjoint
+nonsingular CPOBC system classicalizes, without a sign assumption and
+including complementary-spectrum blocks; independently, the tested scalar
+locus has no noncommuting leading tangent, and every \(2\times2\)
+upper-triangular extension between distinct strictly positive scalar CSG
+coupling sequences splits, at arbitrary first-difference order, while every
+coincident-character \(2\times2\) self-extension is a commuting coupling
+tangent; an irreducible nonsingular \(2\times2\) branch must have scalar
+\(R_2=h\mathbf1\), with \(h\ne0,1\), and the trace-balanced
+\(d=a,\ x=-1\) subchart of the normalized first-simple-spectrum chart at
+\(R_3\) is exhausted and obstructed at the next antichain stage.
+These are exact exclusions, not an existence theorem or a no-go
+theorem for non-self-adjoint, singular, higher-dimensional noncommutative
+nilpotent, the remainder of the first-simple-spectrum chart, the remaining
+delayed-onset irreducible nontriangular, or state-only formulations.
+A11B remains open and is stronger:
+the \emph{same interacting Lorentzian
+dynamics} must generate the relational records, growth language, topology,
+contact response, and arity, replace the external classical CSG density by
+a genuinely quantum backreacting geometry law satisfying the desired
+operator locality/constraint conditions; derive rather than declare the
+protected commutant; produce a
+tight Lorentzian continuum measure; satisfy spin--statistics and anomaly
+freedom; and couple consistently to nonlinear gauge constraints and graph
+backreaction.
+
+\subsection{Operational completion criterion for nonperturbative gravity}
+\label{sec:nonperturbative-completion-criterion}
+
+To prevent a growing list of model closures from being mistaken for a
+nonperturbative definition, we record the minimum completion target used by
+the present program.  A refining family \(\{\mathfrak Q_N\}\) will count as
+a nonperturbative RQCP-QG completion only if one construction supplies all
+of the following, with compatible orders of limits:
+\begin{enumerate}[label=(NP\arabic*)]
+\item a normalized positive microscopic process or state on each finite
+  regulator, with relational rather than external time;
+\item autonomous fluctuating adjacency, causal order, additive physical
+  volume, and a tight nondegenerate probability law on the resulting
+  geometries;
+\item a projectively consistent continuum net of local observables with a
+  positive Lorentzian reconstruction or an equivalent constructive
+  continuation;
+\item anomaly-free nonlinear diffeomorphism constraints, expressed by a
+  closed BV/BRST master equation or an equivalent exact relational Ward
+  algebra;
+\item regulator-independent relational observables, including matter
+  correlators and the Newton response, with graph topology changes,
+  backreaction, and caustic sectors controlled rather than excluded;
+\item a semiclassical regime in which the same observables recover
+  nonlinear Einstein--matter dynamics with an error that vanishes
+  uniformly on a stated physical domain.
+\end{enumerate}
+Every item is a simultaneous requirement, not a menu.  The present series
+has explicit finite or quadratic model realizations of parts of (NP1),
+(NP2), (NP4), and (NP6), and the regulator theorem plus the present
+multiplet and selective-Ward channel close one finite interacting,
+fixed-language contribution to (NP5).  The projective-growth channel closes
+the positive finite-to-infinite probability part of (NP2), and the
+covariant-growth companion removes the natural-label/Bell defect and
+supplies one extendible rank-one coherent measure.  The fixed-strip
+companion separately supplies an extendible local-unitary non-Abelian
+measure.  The causal-holonomy companion combines arbitrary-causet CSG
+covariance with an intrinsic noncommuting operator density and proves a
+countably additive measure whose integrated range remains non-Abelian.
+The central operator-growth classification supplies an infinite geometry
+POVM but proves that its probabilities are only direct mixtures; its
+positive noncentral control fails DGC.  The CPOBC rigidity theorem further
+excludes the complete finite-dimensional self-adjoint nonsingular branch
+without a sign assumption, every noncommuting leading tangent at one exact
+four-event scalar point, and every nonsplit \(2\times2\)
+upper-triangular extension between distinct strictly positive scalar CSG
+coupling sequences; it also classifies every coincident-character
+\(2\times2\) self-extension as a commuting coupling tangent.  It leaves
+non-self-adjoint nonsingular, zero/singular-coupling, state-only,
+higher-dimensional noncommutative nilpotent, delayed-onset irreducible
+nontriangular components with scalar
+\(R_2=h\mathbf1\), \(h\ne0,1\), Jordan/later onset, and infinite branches
+open.
+These results do not autonomously
+select the language, contact sequence, or arity, produce a genuinely
+noncentral operator-Markov/Bell quantum-backreacting law, or provide
+continuum tightness.
+The series has no single
+construction satisfying (NP1)--(NP6), no projectively tight interacting
+Lorentzian continuum measure, and no nonlinear anomaly-free continuum
+constraint algebra.  Accordingly these bridges shorten the open cut but do
+not constitute nonperturbative quantum gravity.

@@ -1,7 +1,8 @@
-"""Check the scalar reduction of the three operator-QBC orderings.
+"""Rerun the scalar product-BC/MSR/norm-GC certificate.
 
 The operator-level commutativity results are cited from the primary; this
-script verifies the scalar seed that any commutative representation uses.
+script checks output markers of the scalar seed, not operator equations or
+vector general covariance. A nontrivial phase prevents vector path equality.
 """
 import subprocess
 import sys
@@ -20,9 +21,9 @@ def main():
     assert "all transition amplitudes nonzero: 49 checked" in out
     print("scalar BCPH seed: 49 nonzero transitions, 109 product-BC equations, PASS")
     print("stage-4 cp-plus-top holonomy: (3-4i)/5")
-    print("TOBC/NTOBC scalar reductions are the same ratio equations;")
-    print("CPOBC crossed relations hold for commuting scalar operators.")
-    print("PASS: scalar reduction of all three orderings")
+    print("PASS: scalar product-BC/MSR/norm-GC seed certificate")
+    print("Scope: no operator residuals or vector-GC checks in this wrapper.")
+    print("The nontrivial phase obstructs primary vector path equality.")
 
 
 if __name__ == "__main__":
