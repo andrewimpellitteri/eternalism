@@ -1,0 +1,15 @@
+[PASS] binary norm prescription |A_p(w)|^2 = P_{1/2}(w), levels 1..12 (exact)  (8190 words checked in Fraction arithmetic)
+[PASS] locus identity |p|^2+|1-p|^2 = 1 at p=(1+i)/2 (exact)
+[PASS] additivity residual ||mu(U)-partial||_2^2 = P(tail), decreasing to 0 (exact)  (residuals 0.125..0.000976)
+[PASS] semivariation bound: V(g;E) <= P(E)^{1/2} for all sampled g, extremizer attains  (max excess 0.00e+00)
+[PASS] level-k norm sums = (|p|+|1-p|)^k = 2^{k/2} -> inf  (k=32 sum = 65536)
+[PASS] causet CTP cylinder formula P_r(cyl C)=r^{L}(1-r)^{h}, n=3,4, r=1/2,2/5 (exact)  (labelled orders: 7 (n=3), 40 (n=4))
+[PASS] two-cap V_4 at p=(1+i)/2, 2 base orders  (V_4 = 0.603553390593)
+[PASS] two-cap V_5 at p=(1+i)/2, 7 base orders  (V_5 = 1.015165042945 (matches replication 1.015165042945))
+[PASS] locus: on-circle points give alpha*=2, outside alpha*>2, inside alpha*<2  ((1+i)/2: 2.000000000; 0.7500+0.4330i: 2.000000000; 0.5+0.55i: 2.336575171; 0.9+0.1i: 1.141977394)
+[PASS] boundary/outside points: no alpha in [1,60] satisfies the locus equation
+[PASS] real interior (0,1): exactly alpha = 1
+[PASS] endpoints p=0,1: S(alpha) = 1 for every alpha in [1,60] (degenerate r in {0,1})
+[PASS] S(alpha) strictly decreasing on [1,9] for lens points (uniqueness)
+
+ALL CHECKS PASSED
