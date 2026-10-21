@@ -34,3 +34,19 @@ pdflatex + bibtex per `paper/README.md` (TeX Live under `/Library/TeX/texbin`),
 with `paper/render_pdf.swift` and pages 1, 3 and 9 inspected. Output:
 `output/pdf/temporal-ontology-working-draft.pdf`. `python3 paper/check_records.py`
 passes.
+
+
+## Independent review corrections, 21 October 2026
+
+Applied revision-2 review R1–R7 (BL1, MA1–MA8, MI1–MI4). The completion
+obstruction now concerns extension of the prescribed scalar amplitude rule to
+the full cylinder-generated sigma-algebra; it no longer rules out arbitrary
+measures on covariant events. Finite-cylinder decidability is distinguished
+from finite positive witnesses, and the differing readings of Sorkin, Arageorgis
+and Wüthrich–Callender are preserved. The Clifton–Hogarth implication and
+reflexive conventions are explicit. Clock pinching preserves conditional ratios;
+normalization of individual trajectories does not establish an all-state
+isometry. Structured step constraints require their own dynamics and spectra.
+Preferred-frame bounds and Brading's unresolved existence bridge are qualified.
+The review's source-access limitations remain in
+`paper/reviews/revision-2/REVIEW.md`; corrections do not upgrade source read depths.

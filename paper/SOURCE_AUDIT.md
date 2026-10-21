@@ -15,7 +15,7 @@ first-pass source summaries that have not yet been reconciled.
 | Cameron2015 | Publisher abstract; `phil-cameron` | Specific spotlight program, not every spotlight view or a verified consistency theorem. |
 | Skow2015 | Publisher abstract/contents; `phil-skow` | Distinguishes robust passage and examines spotlight objections; full arguments pending. |
 | McTaggart1908 | Public copy of original journal scan, pp. 458-461; bounded native passage check in `reviews/evidence/AGENT_REPORT.md`. `phil-mctaggart` remains discovery in the unchanged knowledge register. | The narrow order/change/A-series distinction is passage-checked; no verification of the whole unreality argument, new solution or global depth upgrade. |
-| Putnam1967 | Foundations second-pass audit of pp. 241--247, especially Principle III and closure | Attribute bridge-principle structure. First-pass source record still describes a narrower reading: reconcile before submission; exact quotation not used. |
+| Putnam1967 | Foundations second-pass audit of pp. 241--247, especially Principle III and closure | Attribute bridge-principle structure. Canonical foundations record reconciles the partial first pass and broader second pass in reading_history; exact quotation not used. |
 | Stein1991 | Foundations audit, fresh full-text spotcheck and coordinator inspection of OCR/context, pp. 148-150 | The isolated OCR implication is false without contextual conditions; preserve full-causal-past inclusion and unsettled states when discussing the preceding argument. No independently reproduced characterization or necessity table. Printed theorem image unresolved; no claim of a published error. |
 | Brading2013 | Complete eleven-page journal-paginated public PDF copy read at argument level by the native evidence reviewer; exact route/scope in `reviews/evidence/AGENT_REPORT.md` | Supports the existing limited characterization. The copy matches published metadata/layout but was not collated with a publisher-hosted file. No independent Newton reconstruction, quantitative discriminator or ontology selection. Canonical source-record reconciliation remains pending. |
 | HoehnSmithLock2019 | Version 3 selected full-text theorem/assumption audit and fresh spotcheck, `frontier/theorem-matrix.md`; journal metadata checked separately | Printed citation uses the 2021 journal year; internal key retains its older name. Text inspected was arXiv v3, not a separate journal-body collation. Conditional equivalence and noninteraction/clock restrictions only; no proof independently reproduced. |
@@ -54,7 +54,7 @@ bibliography review verifies metadata rather than philosophical entailment.
 
 Malament 1977 was read from a published scan in the separate full-text spotcheck;
 Stein 1968 remained inaccessible. Neither is silently substituted for Stein 1991
-or added to the present argument. Putnam's first/second-pass records and Brading's
+or added to the present argument. Putnam's reading histories are reconciled in the canonical foundations record; Brading's
 multiple records still need owner reconciliation. The printed Stein page image,
 model-selection gate and philosophical-priority audit remain open. These reviews
 improve an explicitly provisional draft, not submission readiness.
@@ -79,8 +79,8 @@ use, and where it is recorded.
 | SuryaZalel2020 | Full text of arXiv:2003.11311v1 (`knowledge/csg-quantum/`, `research/longshots/growth-completion/`) | "No event α∈Z can be covariant unless α=Ω"; extension criterion; temporality framing. |
 | DowkerJohnstonSurya2010 | Full text of Secs. 4–5 of arXiv:1007.2725v1 (same) | Non-extension of complex percolation for non-real p (Lemma 1) and for \|p\|>1 or \|1−p\|>1 (Claim 5). |
 | Sorkin2007 | Full text of arXiv:gr-qc/0703098v1 Secs. 2, 3, 5, 7 (`research/longshots/growth-completion/`) | "Echo of the block-universe idea"; stage has no objective meaning. |
-| Arageorgis2016 | Full text Secs. 1–4 from a lossy PDF extraction (same) | Growing-block construal of classical growth "parasitic on a block universe view"; classical dynamics only. Re-read the quote from a clean copy before submission. |
-| WuthrichCallender2017 | Section 4 fragments of arXiv:1502.00018v1 (same) | Completion requirement and gauge-invariant growth; classical only. Partial read: no detailed attribution beyond the cited reading. |
+| Arageorgis2016 | Full text Secs. 1–4 from a lossy PDF extraction (same) | Growing-block construal of classical growth "parasitic on a block universe view"; classical dynamics only. The coordinator visually checked the quotation on printed p. 52 of the public journal PDF on 21 October; see research/source-gates/AGENT_REPORT.md. |
+| WuthrichCallender2017 | Full-text HTML of arXiv:1502.00018v1, Sections 1–5 (research/source-gates/AGENT_REPORT.md) | Completion requirement and gauge-invariant growth; classical only. Preprint edition read; journal edition not collated. Its qualified defense of growth is distinguished from Arageorgis's criticism. |
 | SmithAhmadi2019 | Full text v3 (`knowledge/clock-interactions/`) | Now also cited for the degenerate non-commuting example (Sec. 4.3). |
 | BoetteRossignoli2018 | Full text Sec. II of arXiv:1806.00956v2 (`experiments/clock-three-picture/literature.md`) | Finite cyclic clock with system–time interaction terms and unit-norm conditional states. |
 | ChataignierEtAl2026 | Abstract plus located passages of arXiv:2409.06479v3; quotes checked by the coordinator | No-interaction assumption; interactions "would typically" ruin periodicity. |
@@ -91,3 +91,19 @@ use, and where it is recorded.
 The worked three-state clock in Case II is the project's own application
 (`experiments/clock-three-picture/`, independently replicated); it is not cited as
 literature and claims no novelty.
+
+
+## Independent review corrections, 21 October 2026
+
+Applied revision-2 review R1–R7 (BL1, MA1–MA8, MI1–MI4). The completion
+obstruction now concerns extension of the prescribed scalar amplitude rule to
+the full cylinder-generated sigma-algebra; it no longer rules out arbitrary
+measures on covariant events. Finite-cylinder decidability is distinguished
+from finite positive witnesses, and the differing readings of Sorkin, Arageorgis
+and Wüthrich–Callender are preserved. The Clifton–Hogarth implication and
+reflexive conventions are explicit. Clock pinching preserves conditional ratios;
+normalization of individual trajectories does not establish an all-state
+isometry. Structured step constraints require their own dynamics and spectra.
+Preferred-frame bounds and Brading's unresolved existence bridge are qualified.
+The review's source-access limitations remain in
+`paper/reviews/revision-2/REVIEW.md`; corrections do not upgrade source read depths.

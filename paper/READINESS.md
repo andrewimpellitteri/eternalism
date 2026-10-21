@@ -76,3 +76,29 @@ the workboard's drafting task.
   `adversarial-review`. Arageorgis 2016 is quoted from a lossy extraction and must
   be re-read before submission.
 - Gates 1, 2, 6, 7 (partly: build and render verified), 8: unchanged.
+
+
+## Independent review corrections, 21 October 2026
+
+Applied revision-2 review R1–R7 (BL1, MA1–MA8, MI1–MI4). The completion
+obstruction now concerns extension of the prescribed scalar amplitude rule to
+the full cylinder-generated sigma-algebra; it no longer rules out arbitrary
+measures on covariant events. Finite-cylinder decidability is distinguished
+from finite positive witnesses, and the differing readings of Sorkin, Arageorgis
+and Wüthrich–Callender are preserved. The Clifton–Hogarth implication and
+reflexive conventions are explicit. Clock pinching preserves conditional ratios;
+normalization of individual trajectories does not establish an all-state
+isometry. Structured step constraints require their own dynamics and spectra.
+Preferred-frame bounds and Brading's unresolved existence bridge are qualified.
+The review's source-access limitations remain in
+`paper/reviews/revision-2/REVIEW.md`; corrections do not upgrade source read depths.
+
+
+## Source-gate status, 21 October 2026
+
+The Putnam reading histories are already reconciled in the canonical foundations
+record. The Arageorgis quotation is now visually verified on printed p. 52 of
+the public journal PDF. Wüthrich–Callender arXiv:1502.00018v1 has now been read
+in full at argument level; journal collation remains unperformed. These updates
+supersede the corresponding pending items above. Stein 1991 printed theorem
+wording remains blocked as documented in the existing access audit.
