@@ -34,7 +34,8 @@ theorem, priority claim or ontology conclusion.
 - The priority search is bounded; the thesis locator is inherited, not reread.
 - The synthesis is not externally refereed.
 - Finite numerical checks do not certify the infinite theorems.
-- Several queued tasks remain open (rank-only classification, vector
-  adversarial review, bridge defense, covariant observer, record-loss robust
-  boundary, covtree levels, Sorkin complex percolation); they are listed as
-  open rather than silently counted as results.
+- The rank-only classification remains genuinely open; it is recorded as a
+  bounded failure, not a result. The other queued tasks are now closed as
+  scoped results or audits: vector norm-only review, bridge defense, covariant
+  observer comparison, partial record access, covtree levels, Sorkin even
+  convergence. Their limits are preserved in the synthesis.
