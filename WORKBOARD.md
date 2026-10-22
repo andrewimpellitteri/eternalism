@@ -116,7 +116,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `observer-effect-correspondence` — Separate class membership, coherent event filtering and completed-history covariance | 10 | — | codex-observer-effects |
 | done | `bc-all-stages-extension` — Extend Bell-causal phase holonomy to every stage with bounded scalar variation | 10 | — | codex-bc-all-stages |
 | done | `bc-phase-priority-and-invariants` — Audit phase-model priority and test an intrinsic completed-history quantity | 10 | bc-all-stages-extension, observer-effect-correspondence | codex-phase-invariants |
-| open | `bc-matched-cylinder-pair` — Test a two-phase pair with equal cylinder norms and different intrinsic completed values | 10 | bc-phase-priority-and-invariants | — |
+| done | `bc-matched-cylinder-pair` — Test a two-phase pair with equal cylinder norms and different intrinsic completed values | 10 | bc-phase-priority-and-invariants | codex-matched-norms |
+| open | `bc-matched-diffuse-continuation` — Seek a non-atomic matched-cylinder pair beyond the unit-timid obstruction | 10 | bc-matched-cylinder-pair | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
