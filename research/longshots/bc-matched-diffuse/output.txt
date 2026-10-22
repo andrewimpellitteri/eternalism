@@ -1,0 +1,20 @@
+Outward dyadic interval arithmetic: 256 bits; zero-S circle branch checked.
+Support SHA256: c1d1ebbf13757001d57b87e8d4f93d3e4956a8c678015f46d03b1364247dc17d
+Direct labelled counts: [1, 1, 2, 7, 40, 357]
+n=0: exact recursive/Mobius weights, common later weights, nonzero, norm match and 1 shape classes pass.
+n=1: exact recursive/Mobius weights, common later weights, nonzero, norm match and 1 shape classes pass.
+n=2: exact recursive/Mobius weights, common later weights, nonzero, norm match and 2 shape classes pass.
+n=3: exact recursive/Mobius weights, common later weights, nonzero, norm match and 5 shape classes pass.
+n=4: exact recursive/Mobius weights, common later weights, nonzero, norm match and 16 shape classes pass.
+n=5: exact recursive/Mobius weights, common later weights, nonzero, norm match and 63 shape classes pass.
+Per model: 51 MSR rows, 407 nonzero transitions, 1619 BC pair residual enclosures (parents through size 4).
+Exact infinite row-distance sum: 7715823102531768444113/106782186928294326375000
+Row-distance sum enclosure: [0.072257586442887214, 0.072257586442887215] < 1/8.
+For n>=4: each transition modulus < 1999/2000; fixed-path amplitudes decay.
+Global E2 amplitude tail <= 1/437062500
+Global completed E2 gap > 399999/10000000.
+Completed mu_A(E2) enclosure from depth 5: [0.249999999924922712, 0.249999999924927289]
+Completed mu_B(E2) enclosure from depth 5: [0.289999999804801796, 0.289999999804808204]
+Completed gap enclosure: [0.039999999879874507, 0.039999999879885491]
+Naive shared-real tail killed: cp weight-square mismatch = 1024/25.
+PASS. Atomlessness and all-stage claims use the analytic proof, not this cutoff.
