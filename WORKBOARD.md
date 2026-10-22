@@ -115,7 +115,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `refocus-selection-integration` — Integrate refocus audits, repair inherited claims and select the next target | 10 | refocus-cpobc-correspondence, refocus-cpobc-reproduction, refocus-rank-audit | codex-refocus-coordinator |
 | done | `observer-effect-correspondence` — Separate class membership, coherent event filtering and completed-history covariance | 10 | — | codex-observer-effects |
 | done | `bc-all-stages-extension` — Extend Bell-causal phase holonomy to every stage with bounded scalar variation | 10 | — | codex-bc-all-stages |
-| open | `bc-phase-priority-and-invariants` — Audit phase-model priority and test an intrinsic completed-history quantity | 10 | bc-all-stages-extension, observer-effect-correspondence | — |
+| done | `bc-phase-priority-and-invariants` — Audit phase-model priority and test an intrinsic completed-history quantity | 10 | bc-all-stages-extension, observer-effect-correspondence | codex-phase-invariants |
+| open | `bc-matched-cylinder-pair` — Test a two-phase pair with equal cylinder norms and different intrinsic completed values | 10 | bc-phase-priority-and-invariants | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

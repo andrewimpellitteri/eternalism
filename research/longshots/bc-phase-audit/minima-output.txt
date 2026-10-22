@@ -1,0 +1,20 @@
+phase, N=3: 7 posets; direct amplitude sums equal every coefficient of G_N exactly.
+  minimum-count amplitudes: [(Fraction(3, 8), Fraction(0, 1)), (Fraction(11, 20), Fraction(-1, 10)), (Fraction(3, 40), Fraction(1, 10))]
+phase, N=4: 40 posets; direct amplitude sums equal every coefficient of G_N exactly.
+phase, N=5: 357 posets; direct amplitude sums equal every coefficient of G_N exactly.
+conjugate, N=3: 7 posets; direct amplitude sums equal every coefficient of G_N exactly.
+  minimum-count amplitudes: [(Fraction(3, 8), Fraction(0, 1)), (Fraction(11, 20), Fraction(1, 10)), (Fraction(3, 40), Fraction(-1, 10))]
+conjugate, N=4: 40 posets; direct amplitude sums equal every coefficient of G_N exactly.
+conjugate, N=5: 357 posets; direct amplitude sums equal every coefficient of G_N exactly.
+real_control, N=3: 7 posets; direct amplitude sums equal every coefficient of G_N exactly.
+  minimum-count amplitudes: [(Fraction(3, 8), Fraction(0, 1)), (Fraction(1, 2), Fraction(0, 1)), (Fraction(1, 8), Fraction(0, 1))]
+real_control, N=4: 40 posets; direct amplitude sums equal every coefficient of G_N exactly.
+real_control, N=5: 357 posets; direct amplitude sums equal every coefficient of G_N exactly.
+Fixed-data check: all conjugate amplitudes agree by conjugation through N=5; V cylinder gap versus real control is 3/20.
+Infinite tail enclosure: L=12, exact residual sum = 1/9000000000000
+  mu_phase(exactly 2 minima) in [0.31226391660339, 0.31226391660352]
+  mu_conjugate(exactly 2 minima) in [0.31226391660339, 0.31226391660352]
+  mu_real_control(exactly 2 minima) in [0.24986110235132, 0.24986110235143]
+  strict gap in [0.06240281425207, 0.06240281425209]
+  global rational lower bound: 808201/12960000
+PASS: intrinsic event differs in the two specified dynamics. This is not a detector probability or a pure gauge comparison.
