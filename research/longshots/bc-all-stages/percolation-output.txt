@@ -1,0 +1,13 @@
+Labelled counts: [1, 1, 2, 7, 40, 357]
+n=0: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+n=1: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+n=2: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+n=3: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+  exact maximum Gaussian row distance from reference=348/625; bound=459/125
+n=4: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+  exact maximum Gaussian row distance from reference=696/3125; bound=816/625
+n=5: independent recursive/Mobius equality, perturbation bound, nonzero and norm-GC pass.
+Exact summable row-distance series: 4437/800
+Persistent cp phase: [(Fraction(1, 1), Fraction(0, 1)), (Fraction(1, 1), Fraction(0, 1)), (Fraction(3, 5), Fraction(-4, 5))]
+All 51 rows and 1619 BC equations pass; 407 finite transitions nonzero.
+PASS: finite corroboration of the L1 construction; non-atomic completion is analytic, not simulated.

@@ -1,0 +1,13 @@
+Labelled counts: [1, 1, 2, 7, 40, 357]
+Exact seed Gaussian norm at level 3: 8/5
+Parent size 0: MSR, nonzero, BC pass; next-level norm-GC and intrinsic product pass (1 classes).
+Parent size 1: MSR, nonzero, BC pass; next-level norm-GC and intrinsic product pass (2 classes).
+Parent size 2: MSR, nonzero, BC pass; next-level norm-GC and intrinsic product pass (5 classes).
+Parent size 3: MSR, nonzero, BC pass; next-level norm-GC and intrinsic product pass (16 classes).
+  q_3=5/1221; max proper Gaussian sum=7/111 < 2^-3
+Parent size 4: MSR, nonzero, BC pass; next-level norm-GC and intrinsic product pass (63 classes).
+  q_4=5/351493; max proper Gaussian sum=5171/351493 < 2^-4
+Cumulative exact BC equations: 1619 ; nonzero transitions: 407
+Atomic-padding differences corroborate the exact local summable-tail estimate (Gaussian upper bounds).
+cp holonomy persists through stages 4 and 5: [(Fraction(1, 1), Fraction(0, 1)), (Fraction(1, 1), Fraction(0, 1)), (Fraction(3, 5), Fraction(-4, 5))]
+PASS: finite checks corroborate the all-stage proof; they do not prove infinity or full vector covariance.
