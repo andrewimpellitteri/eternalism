@@ -118,6 +118,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `bc-phase-priority-and-invariants` — Audit phase-model priority and test an intrinsic completed-history quantity | 10 | bc-all-stages-extension, observer-effect-correspondence | codex-phase-invariants |
 | done | `bc-matched-cylinder-pair` — Test a two-phase pair with equal cylinder norms and different intrinsic completed values | 10 | bc-phase-priority-and-invariants | codex-matched-norms |
 | done | `bc-matched-diffuse-continuation` — Seek a non-atomic matched-cylinder pair beyond the unit-timid obstruction | 10 | bc-matched-cylinder-pair | codex-matched-diffuse |
+| done | `llm-creative-research-loop` — Apply recent LLM mathematics methods to a tested creative research loop | 10 | bc-matched-diffuse-continuation | codex-creative-loop |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
