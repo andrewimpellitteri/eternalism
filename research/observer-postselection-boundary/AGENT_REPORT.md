@@ -7,9 +7,10 @@ Coordinator claim codex-observer-postselect.
 
 Owned directory only: CLAIM_CONTRACT.md, PRIOR_WORK.md, sources.jsonl,
 RESULT.md, HISTORY_HILBERT.md, CONTROLS.md, CIRCUIT.md, check.py, output.json,
-this report, and the separately requested INDEPENDENT_REVIEW.md when delivered.
-Coordinator handles global board. Snapshot status: exact checks passed; final
-independent review remains pending and the task is not accepted yet.
+INDEPENDENT_REVIEW.md and this report. Coordinator handles global board.
+Final status: the separate review passed the stated mathematical scope.
+Coordinator inspected its derivations and finite-check audit; physical
+implementation and priority remain open.
 
 The sharper observer question yielded a specified auxiliary completion with
 all probabilities: a common variation-based pre/postselected PVM realization,
