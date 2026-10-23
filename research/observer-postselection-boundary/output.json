@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "domain": "seven-history auxiliary pre/postselected register",
+  "variation_exact": "(25+sqrt(265)+2sqrt(65))/40",
+  "variation_display_interval": [
+    "1.435083402317",
+    "1.435083402318"
+  ],
+  "baseline_success_display_interval": [
+    "0.485563146314",
+    "0.485563146315"
+  ],
+  "joint_E_success_gap_display_interval": [
+    "0.019422525852",
+    "0.019422525853"
+  ],
+  "four_outcomes_positive_and_normalized_exactly": true,
+  "record_only_statistics_equal": true,
+  "finite_within_class_apparatus_covariance": true,
+  "conditioned_E_frequency_both": "1/2",
+  "partial_pointer_c_values": [
+    "0",
+    "3/5",
+    "1"
+  ],
+  "total_success_gap_scaled_by_V_squared": "(2/25)(1-c)",
+  "strict_bound_and_signed_saturating_controls": true,
+  "rank_one_and_event_null_descent_witness": true,
+  "completed_ideal_joint_gap_lower_bound": "19599951/2560000000",
+  "display_precision_note": "Decimal intervals rounded outward to 12 places; comparisons and algebra internally exact.",
+  "limits": "No all-stage enumeration, physical preparation/cost, completed covariance or novelty certified."
+}
