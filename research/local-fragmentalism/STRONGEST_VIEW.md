@@ -186,14 +186,14 @@ causal order. [THESIS; an advantage over frame fragmentalism, if it holds up.]
 
 **O11. "Locational standpoints erase the difference between time and space."**
 Fine's own objection, now read in full (Fine 2005, §10; self-archived
-manuscript pp. 70–71, book pp. 304–305): "One of the primary motivations for
+manuscript pp. 70–71, book pp. 304–305 on the anchor below): "One of the primary motivations for
 the presentist view is that it enables one to distinguish between space and
 time. Temporal indexicality is metaphysically significant, while spatial
 indexicality is not; there is an objective 'now', even though there is no
 objective 'here'. However, once we adopt the locational view, this asymmetry
 between space and time disappears." Fine concludes that the "frame-theoretic
 form of nonstandard realism constitutes the only reasonable way of reconciling
-presentism with SR" (ibid., manuscript p. 72).
+presentism with SR" (ibid., manuscript p. 72, book p. 306).
 
 Reply, in two parts.
 (a) Concession: on local fragmentalism the fragment of b is centred on b, so
@@ -214,6 +214,22 @@ general relativity Fine's preferred option is no longer free, and the
 locational option is the only local one left. The Stein-GR theorem then fixes
 what its fragments contain. [THESIS; (b) is the view's main contribution
 relative to Fine]
+
+(c) Fine's other remark on event standpoints is a dismissal without
+argument. Footnote 36 (ms. p. 79, ≈ book pp. 310–311) reports Sprigge's view that
+"every event must be present from its own point of view, and as it really is",
+and continues: "the notion of each event having its own 'perspective' on
+reality is decidedly odd; and I assume that there must be some more plausible
+way in which one might accommodate the universal presentness of events within
+our overall conception of what is real." Local fragmentalism is a candidate for
+that "more plausible way": it says what an event's perspective contains (its
+causal past, R1), and why that content is forced (locality). [THESIS]
+
+Page numbers: the self-archived manuscript is reflowed, so there is no
+constant offset to the book; see PAGE_MAP.md (ten anchors). Interpolated: the
+asymmetry objection is book ≈ pp. 304–305 (ms. 69–71), matching Lipman's
+report; the chauvinism argument ≈ pp. 301–302 (ms. 65); footnote 36 ≈ pp.
+310–311 (ms. 79). Spot-check the print edition before quoting.
 
 Note: Fine (n. 31) identifies the world-line/location framework as "essentially
 the framework of Clifton & Hogarth [95]", and (n. 32) distinguishes his relation
