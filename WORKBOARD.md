@@ -121,6 +121,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `llm-creative-research-loop` — Apply recent LLM mathematics methods to a tested creative research loop | 10 | bc-matched-diffuse-continuation | codex-creative-loop |
 | done | `observer-postselection-boundary` — Derive observer access and its postselection cost from scalar history data | 10 | llm-creative-research-loop | codex-observer-postselect |
 | done | `observer-sequential-dilation` — Build coherent observer preparation and readout from individual growth transitions | 10 | observer-postselection-boundary | codex-sequential |
+| claimed | `observer-local-control` — Test whether growth-transition controls can depend only on an observer causal past | 10 | observer-sequential-dilation | native-local-control |
+| claimed | `observer-growth-intertwiner` — Determine whether sequential dilation descends to a symmetry-compatible quotient | 10 | observer-sequential-dilation | native-growth-intertwiner |
+| claimed | `observer-control-resources` — Bound memory and control precision for the sequential observer protocol | 9 | observer-sequential-dilation | native-control-resources |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
