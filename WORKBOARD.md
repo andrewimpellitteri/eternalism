@@ -120,6 +120,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `bc-matched-diffuse-continuation` — Seek a non-atomic matched-cylinder pair beyond the unit-timid obstruction | 10 | bc-matched-cylinder-pair | codex-matched-diffuse |
 | done | `llm-creative-research-loop` — Apply recent LLM mathematics methods to a tested creative research loop | 10 | bc-matched-diffuse-continuation | codex-creative-loop |
 | done | `observer-postselection-boundary` — Derive observer access and its postselection cost from scalar history data | 10 | llm-creative-research-loop | codex-observer-postselect |
+| done | `observer-sequential-dilation` — Build coherent observer preparation and readout from individual growth transitions | 10 | observer-postselection-boundary | codex-sequential |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
