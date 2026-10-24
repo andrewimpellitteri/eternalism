@@ -32,6 +32,7 @@ research/creative/proof-audit/AUDIT.md.
 """
 import sys
 from fractions import Fraction
+from math import factorial
 from pathlib import Path
 
 # Reuse the baseline causet checks without copying them.
@@ -75,8 +76,11 @@ def history_checks(max_j=6):
 
 
 def n_representatives(j):
-    """N(H_j) = 2^j: the two minima in each block may be exchanged."""
-    return 2 ** j
+    """N(H_j) under the COVARIANT_RESULT.md definition: distinct naturally
+    labelled representatives, identifying labelings related by an automorphism,
+    i.e. n!/|Aut| with n = 3j. Each block's two minima may be exchanged, so
+    |Aut| = 2^j and N(H_j) = (3j)!/2^j (3 and 180 for j = 1, 2)."""
+    return factorial(3 * j) // 2 ** j
 
 
 def amplitude_principal(j, p):

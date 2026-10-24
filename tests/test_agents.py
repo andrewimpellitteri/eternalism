@@ -94,6 +94,34 @@ class WorkboardTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsafe"):
             agents.tasks()
 
+    def test_owns_paths_must_be_plain_relative(self):
+        # Dot and empty components normalize to ordinary paths; reject the
+        # spellings outright so ownership comparisons always see one form.
+        for bad in (["./escape"], ["a//b"], ["a/./b"], ["//share/x"], ["a/b//"]):
+            self.book[0]["owns"] = bad
+            self.write_book()
+            with self.assertRaisesRegex(ValueError, "unsafe"):
+                agents.tasks()
+
+    def test_stale_claim_for_retired_task_neither_crashes_nor_blocks(self):
+        agents.transition("claim", "first", "one")
+        state_path = self.root / ".agent-runtime/coordination/state.json"
+        state = json.loads(state_path.read_text())
+        state["retired"] = {"status": "claimed", "agent": "gone"}  # task left the board
+        state_path.write_text(json.dumps(state))
+        self.assertEqual(len(agents.tasks()), len(self.book))  # no KeyError from the stale record
+        with self.assertRaisesRegex(ValueError, "overlaps"):
+            agents.transition("claim", "collision", "two")  # live claims still guard
+        agents.transition("release", "first", "one", "Stopped and outputs preserved.")
+        agents.transition("claim", "collision", "two")  # stale record is skipped, not fatal
+        self.assertEqual(agents.snapshot()["collision"]["status"], "claimed")
+
+    def test_render_board_rewrites_generated_file(self):
+        agents.render_board()
+        text = (self.root / "WORKBOARD.md").read_text()
+        self.assertIn("`first`", text)
+        self.assertIn("`second`", text)
+
     def test_dry_run_does_not_claim_or_create_runtime(self):
         agents.launch(argparse.Namespace(tasks=["first"], dry_run=True, model=agents.DEFAULT_MODEL))
         self.assertFalse((self.root / ".agent-runtime").exists())

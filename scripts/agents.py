@@ -52,7 +52,8 @@ def tasks():
         if not re.fullmatch(r"[a-z][a-z0-9-]*", row["id"]):
             raise ValueError("invalid task ID")
         for name in row["owns"]:
-            if Path(name).is_absolute() or ".." in Path(name).parts or not name.strip("/"):
+            if (Path(name).is_absolute() or ".." in Path(name).parts or not name.strip("/")
+                    or "." in name.split("/") or "//" in name):
                 raise ValueError(f"unsafe owned path: {name}")
         for dep in row["blocked_by"]:
             if dep not in book:
@@ -75,6 +76,14 @@ def atomic_json(destination, value):
     with tempfile.NamedTemporaryFile(mode="w", dir=destination.parent, delete=False) as handle:
         json.dump(value, handle, indent=2)
         handle.write("\n")
+        temp = handle.name
+    os.replace(temp, destination)
+
+
+def atomic_text(destination, text):
+    """Replace destination in one step so concurrent workers never tear it."""
+    with tempfile.NamedTemporaryFile(mode="w", dir=destination.parent, delete=False) as handle:
+        handle.write(text)
         temp = handle.name
     os.replace(temp, destination)
 
@@ -115,8 +124,8 @@ def assert_claimable(tid, book, state):
     if state_of(tid, book, state) != "open":
         raise ValueError(f"{tid} is {state_of(tid, book, state)}")
     for other, record in state.items():
-        if record.get("status") not in {"claimed", "review"}:
-            continue
+        if other not in book or record.get("status") not in {"claimed", "review"}:
+            continue  # a claim for a task no longer on the board cannot be overlap-checked
         if any(overlaps(a, b) for a in book[tid]["owns"] for b in book[other]["owns"]):
             raise ValueError(f"file ownership overlaps {other}, held by {record['agent']}")
 
@@ -186,7 +195,7 @@ def render_board():
                      f"{state.get(tid, {}).get('agent', '—')} |")
     lines += ["", "Agent delivery enters review. Only integrated, reviewed work becomes done.",
               "", "See scripts/agents/README.md for launch, recovery, and review commands.", ""]
-    (main_root() / "WORKBOARD.md").write_text("\n".join(lines))
+    atomic_text(main_root() / "WORKBOARD.md", "\n".join(lines))
 
 
 def launch_baseline(book, task_ids, from_committed_head=False):
