@@ -1,0 +1,50 @@
+{
+  "beta": "133333/80000000",
+  "bounded_poset_counts": {
+    "2": {
+      "cross_edges": 1,
+      "distinct_posets": 2,
+      "expected": 2
+    },
+    "3": {
+      "cross_edges": 2,
+      "distinct_posets": 4,
+      "expected": 4
+    },
+    "4": {
+      "cross_edges": 4,
+      "distinct_posets": 16,
+      "expected": 16
+    },
+    "5": {
+      "cross_edges": 6,
+      "distinct_posets": 64,
+      "expected": 64
+    },
+    "6": {
+      "cross_edges": 9,
+      "distinct_posets": 512,
+      "expected": 512
+    },
+    "7": {
+      "cross_edges": 12,
+      "distinct_posets": 4096,
+      "expected": 4096
+    },
+    "8": {
+      "cross_edges": 16,
+      "distinct_posets": 65536,
+      "expected": 65536
+    }
+  },
+  "fixed_per_stage_two_pass_error_examples": {
+    "1": "1/500000",
+    "10": "1/50000",
+    "100": "1/5000",
+    "1000": "1/500"
+  },
+  "gap": "133333/10000000",
+  "growth_sum_below_beta_over_2": true,
+  "per_model_error_bound_infinite_schedule": "133333/16000000",
+  "retained_gap_bound": "399999/80000000"
+}
