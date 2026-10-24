@@ -1,0 +1,867 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1.05in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\GH}{\mathsf{GH}}
+\newcommand{\Mink}{\mathbb M}
+\newcommand{\U}{\mathcal U}
+\newcommand{\Ifut}{I^{+}}
+\newcommand{\Ichr}{I^{-}}
+\newcommand{\Jp}{J^{+}}
+\newcommand{\Jm}{J^{-}}
+\newcommand{\B}{\mathcal B}
+\title{Stein's Theorem in General Relativity:\\[2pt]
+\large locality, not symmetry, fixes what has become}
+\author{Working manuscript}
+\date{24 October 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Stein proved that in Minkowski spacetime a transitive relation of becoming
+that is invariant under the spacetime's symmetries, and that makes some past
+event definite for an event, must be the causal past or degenerate. Clifton
+and Hogarth showed that, assuming only that the chronological past has become,
+the options are the causal past, the chronological past and the universal
+relation; they extended the result to worldline-dependent becoming and
+remarked that there is ``no
+obvious way'' to extend it beyond Minkowski spacetime. We give such an
+extension and locate exactly what it depends on. In a single curved
+spacetime, symmetry-invariance is too weak: generic spacetimes have no
+symmetries, and transitive relations containing the chronological past can
+then relate spacelike events. The right replacement is local covariance in
+the sense of locally covariant quantum field theory: one rule of becoming for
+all globally hyperbolic spacetimes, compatible with isometric embeddings of
+causally convex regions. Under that hypothesis we prove, by a gluing
+argument, that either everything has become for everything in every
+spacetime, or in every spacetime becoming lies between the chronological and
+the causal past; the worldline-dependent form follows. The residual freedom is exactly the status of
+lightlike-separated pairs, and we classify it: it can depend on curvature
+along the connecting light ray, so uniqueness fails even for relations
+determined by causal structure alone; topological regularity removes it. In
+causal set theory the same hypothesis yields an exact Stein theorem,
+although the analogue fails, as Wüthrich and Callender showed, under
+invariance within a single causal set. Locality also isolates
+Gödel-type universes, so that universal becoming there constrains nothing
+here. Finally we show why the result does not transfer routinely to
+spacetimes restricted by energy conditions, and isolate the open problem on
+which such a transfer depends.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Stein's theorem is the strongest positive result in the debate over
+relativistic becoming \citep{Stein1968,Stein1991}. Read as a constraint, it
+says that an objective, transitive becoming relation adapted to Minkowski
+geometry can only be past causal connectibility, apart from trivial or
+universal relations. Clifton and Hogarth gave the result its now-standard form
+\citep{CH1995}: their Theorem~1 assumes invariance under the
+time-orientation-preserving isometries of Minkowski spacetime, transitivity,
+and \emph{chronological becoming} (every event in an event's chronological
+past has become for it), and concludes that becoming is $\Ichr$, $\Jm$ or the
+universal relation $\U$. Their Theorem~2 extends this to becoming relative to
+an observer's worldline. They end with a problem:
+\begin{quote}
+each general relativistic spacetime has its own metric-preserving
+automorphisms and each its own distinctive geometry, leaving no obvious way
+to extend Theorem 1 beyond Minkowski spacetime, much less to extend Theorem 2
+\citep[p.~385]{CH1995}.
+\end{quote}
+They call the question of becoming ``in the real world'' ``more difficult,
+though more interesting'' (ibid., p.~386).
+
+The difficulty is real. Stein's argument runs entirely on symmetry: once one
+spacelike pair is related, boosts and rotations relate them all, and
+transitivity collapses the relation to $\U$. A generic curved spacetime has
+no isometries at all, so the corresponding single-spacetime statement is
+simply false (Proposition~\ref{prop:single}). Wüthrich and Callender observed
+the analogous failure in causal set theory, where invariance under the
+automorphisms of one causal set permits exotic becoming relations
+\citep{WC2017}.
+
+Our diagnosis is that the analogue of Minkowskian symmetry in general
+relativity is not invariance within a spacetime but \emph{uniformity and
+locality across spacetimes}: one rule, applied in every globally hyperbolic
+spacetime, whose verdict on a pair of events depends only on a causally
+convex region containing them. This is the hypothesis of local covariance
+used to say when a quantum field theory is ``the same in all spacetimes''
+\citep{BFV2003,FV2012}, and it is closely related to the locality
+intuition that Viglione defends informally against cosmic simultaneity
+\citep{Viglione2026}. With it, Stein's theorem has a curved-spacetime form:
+
+\begin{itemize}
+\item \textbf{No becoming outside the causal past} (Theorem~\ref{thm:main}).
+Either becoming is universal in every spacetime, or in every spacetime it lies
+between $\Ichr$ and $\Jm$. The worldline-dependent version follows
+(Corollary~\ref{cor:worldline}).
+\item \textbf{The residual freedom is the light cone} (Theorem~\ref{thm:class},
+Theorem~\ref{thm:weyl}, Proposition~\ref{prop:reg}). What remains open is
+exactly which lightlike-separated pairs count. We classify the possibilities;
+they can depend on Weyl curvature along the connecting light ray, so
+uniqueness fails even for relations fixed by causal structure. Closedness or
+openness of the relation selects $\Jm$ or $\Ichr$.
+\item \textbf{Locality is indispensable} (Propositions~\ref{prop:single} and
+\ref{prop:nonlocal}). Natural but non-local rules, such as ordering by a
+canonical cosmological time, satisfy every other condition and make spacelike
+events become.
+\item \textbf{Causal sets} (Proposition~\ref{prop:causets}). Under the same
+hypothesis Stein's theorem holds exactly: becoming is the causal order or
+universal. Discreteness removes the light-cone freedom.
+\item \textbf{Gödel universes are isolated} (Proposition~\ref{prop:godel}).
+Totally vicious spacetimes have no proper causally convex regions, so local
+covariance transmits nothing from them.
+\item \textbf{Energy conditions} (Section~\ref{sec:energy}). The proof uses
+arbitrary globally hyperbolic metrics. Under the dominant energy condition the
+key construction is provably unavailable, and the transfer reduces to an open
+gluing problem that we state.
+\end{itemize}
+
+The philosophical upshot is stated in Section~\ref{sec:phil}. What Stein's
+theorem tells us about relativity survives in general relativity in a robust
+and a fragile part. The robust part is that nothing outside an event's causal
+past can have become for it unless everything has. The fragile part is the
+uniqueness of the answer, which was an artefact of Minkowskian symmetry.
+
+\section{Framework}\label{sec:framework}
+
+Spacetimes are smooth, connected, four-dimensional, oriented and
+time-oriented Lorentzian manifolds. We follow Clifton and Hogarth in taking
+$\Ichr,\Jm$ to be reflexive \citep[p.~360]{CH1995}, write $x\ll y$ for
+$x\in\Ichr(y)$, $x\neq y$, and $x\le y$ for $x\in\Jm(y)$. Standard causal facts
+are cited from Minguzzi and Sánchez \citep{MS2008}, abbreviated MS.
+
+\begin{definition}
+$\GH$ is the category whose objects are globally hyperbolic spacetimes and
+whose morphisms $\psi:M\to M'$ are smooth isometric embeddings preserving
+orientation and time orientation, with $\psi(M)$ open and causally convex in
+$M'$. This is the category $\mathsf{Loc}$ of locally covariant quantum field
+theory \citep[\S2]{BFV2003}, \citep[\S2.2]{FV2012}.
+\end{definition}
+
+\begin{definition}
+A \emph{becoming theory} assigns to each $M\in\GH$ a relation
+$B_M\subseteq M\times M$ (read $x\,B_M\,b$ as ``$x$ has become for $b$'') such
+that, for every $M$:
+\begin{enumerate}
+\item[(LC)] for every morphism $\psi:M\to M'$, $x\,B_M\,b\iff
+\psi(x)\,B_{M'}\,\psi(b)$;
+\item[(T)] $B_M$ is transitive;
+\item[(CB)] $\Ichr_M\subseteq B_M$.
+\end{enumerate}
+\end{definition}
+
+(CB) is Clifton and Hogarth's chronological becoming; they derive it from
+``worldline becoming'' and ``worldline transitivity'' \citep[Lemma,
+p.~364]{CH1995}, and the derivation carries over verbatim to curved
+spacetime. (LC) contains invariance under every orientation- and
+time-orientation-preserving isometry of each $M$, which on Minkowski spacetime
+$\Mink$ is the proper orthochronous Poincaré group. Its further content is
+\emph{locality}: if $N\subseteq M$ is open, causally convex and contains $x$
+and $b$, then whether $x$ has become for $b$ is settled by $N$ alone.
+
+\begin{remark}[The off-shell premise]\label{rem:offshell}
+$\GH$ contains every globally hyperbolic metric, not only solutions of
+Einstein's equations; the category is defined kinematically in
+\citep{BFV2003,FV2012}. Theorem~\ref{thm:main} uses this: its proof builds
+auxiliary spacetimes that need not satisfy any field equation with reasonable
+matter. This is natural for a kinematic notion of becoming, defined (as Stein
+and Clifton--Hogarth define theirs) from geometry alone, but it is a premise.
+Section~\ref{sec:energy} examines what happens without it.
+\end{remark}
+
+\section{Why one spacetime is not enough}\label{sec:single}
+
+\begin{proposition}\label{prop:single}
+Let $M$ be globally hyperbolic and $x,b\in M$ spacelike-separated. Then
+$R=\Jm\cup(\Jm(x)\times\Jp(b))$, where $(e,z)$ in the second set means $e$
+has become for $z$, is reflexive and transitive, contains $\Ichr$, relates $x$
+to $b$, and is neither $\Ichr$, $\Jm$ nor $\U$. If $M$ has no nontrivial
+isometries, $R$ is invariant under all of them.
+\end{proposition}
+
+\begin{proof}
+Write $P=\Jm(x)\times\Jp(b)$. Compositions $\Jm\circ\Jm$, $\Jm\circ P$ and
+$P\circ\Jm$ land in $\Jm$ or $P$ because $\le$ is transitive. A composition
+$P\circ P$ would need some $q$ with $b\le q\le x$, which is impossible. The
+pair $(b,x)$ is not in $R$, so $R\neq\U$.
+\end{proof}
+
+So for a single generic spacetime, Stein-type uniqueness fails completely; the
+dust-cosmology ordering by scalar curvature (in $a(t)=t^{2/3}$ dust, curvature
+fixes cosmic time) is a symmetric instance. The next example shows that
+uniformity across spacetimes is still not enough without locality.
+
+\begin{proposition}\label{prop:nonlocal}
+Let $\tau_M(p)$ be the supremum of the lengths of past-directed causal curves
+from $p$ (the cosmological time of Andersson, Galloway and Howard
+\citep{AGH1998}). Put $B_M=\{(x,b):\tau_M(x)\le\tau_M(b)\}$ if $\tau_M$ is
+finite on $M$, and $B_M=\Jm_M$ otherwise. Then $B$ is invariant under all
+isometries and under the morphisms of $\GH$ that are onto, each $B_M$ is
+reflexive and transitive and satisfies (CB), and $B$ relates spacelike pairs
+in every spacetime where $\tau$ is finite (e.g.\ big-bang
+Friedmann--Lemaître--Robertson--Walker models). It is not a becoming theory:
+it violates (LC).
+\end{proposition}
+
+\begin{proof}
+Isometries preserve lengths of causal curves. If $x\ll b$, concatenating
+past curves from $x$ with a timelike curve from $x$ to $b$ gives
+$\tau(b)\ge\tau(x)+d(x,b)>\tau(x)$, so (CB) holds; transitivity is that of
+$\le$ on the reals. Failure of (LC): the Milne wedge $W=\Ifut_\Mink(0)$ is open,
+causally convex and globally hyperbolic, and its inclusion into $\Mink$ is a
+morphism. On $W$, $\tau_W(p)$ is the proper time from the origin, finite, so
+$B_W$ relates distinct points of the same hyperboloid $\{\tau_W=c\}$, which are
+spacelike-separated; on $\Mink$, $\tau=\infty$ and $B_\Mink=\Jm$ does not relate
+them.
+\end{proof}
+
+\section{Results}\label{sec:results}
+
+\begin{theorem}[Clifton--Hogarth]\label{thm:flat}
+For every becoming theory, $B_\Mink\in\{\Ichr,\Jm,\U\}$.
+\end{theorem}
+
+\begin{proof}
+Proper orthochronous Poincaré maps are automorphisms of $\Mink$ in $\GH$, so
+$B_\Mink$ is invariant under them by (LC). Clifton and Hogarth's Theorem~1
+\citep[p.~365]{CH1995} gives the conclusion from this invariance,
+transitivity and chronological becoming. Its proof (pp.~365--367) uses only
+point-preserving spatial rotations, boosts and translations, and they note
+that it does not use spatial reflections (pp.~385--386). Their stated
+hypothesis is invariance under all time-orientation-preserving isometries,
+reflections included; using only the proper orthochronous subgroup is a
+weakening whose adequacy rests on their proof, not their statement.
+\end{proof}
+
+\begin{theorem}[No becoming outside the causal past]\label{thm:main}
+Let $B$ be a becoming theory.
+\begin{enumerate}
+\item[(a)] If $B_\Mink\neq\U$, then $B_M\subseteq\Jm_M$ for every $M\in\GH$.
+\item[(b)] If $B_\Mink=\U$, then $B_M=\U_M$ for every $M\in\GH$.
+\end{enumerate}
+Hence either $B$ is universal everywhere, or $\Ichr_M\subseteq
+B_M\subseteq\Jm_M$ for every $M$.
+\end{theorem}
+
+\begin{corollary}[Worldline-dependent becoming]\label{cor:worldline}
+Suppose that for each $M\in\GH$, each inextendible timelike curve $\lambda$ in
+$M$ and each $b\in\lambda$ a set $B_{M,\lambda}(b)$ is given, satisfying
+Clifton--Hogarth's worldline becoming ($\Ichr(b)\cap\lambda\subseteq
+B_{M,\lambda}(b)$) and worldline transitivity ($a\in B_{M,\lambda}(b)$ and
+$b\in B_{M,\lambda'}(c)$ imply $a\in B_{M,\lambda'}(c)$) \citep[pp.~362--363]{CH1995},
+and local covariance in the form: for a morphism $\psi:N\to M$, an inextendible
+timelike $\lambda_N$ in $N$ and any inextendible timelike $\lambda$ in $M$
+extending $\psi\circ\lambda_N$, $a\in B_{N,\lambda_N}(b)\iff\psi(a)\in
+B_{M,\lambda}(\psi(b))$. Then $B_{M,\lambda}(b)$ does not depend on $\lambda$, and
+the resulting relation is a becoming theory. Hence Theorem~\ref{thm:main}
+applies to worldline-dependent becoming.
+\end{corollary}
+
+Clifton and Hogarth anticipated that extending their Theorem~2 would be
+harder still (``much less to extend Theorem 2'', p.~385). Under local
+covariance it is not: as they themselves note (p.~363), worldline transitivity
+makes observers whose worldlines cross agree, and the remaining work is done by
+Theorem~\ref{thm:main}.
+
+Write $E^-=\Jm\setminus\Ichr$ for the horismos (lightlike-only relation).
+
+\begin{theorem}[Classification of the residual freedom]\label{thm:class}
+Let $B$ be a non-universal becoming theory and $N_M=B_M\cap E^-_M$. Then $N$
+is locally covariant and satisfies
+\begin{enumerate}
+\item[(NC)] if $(x,y),(y,b)\in N_M$ and $(x,b)\in E^-_M$, then $(x,b)\in N_M$.
+\end{enumerate}
+Conversely, if $N\subseteq E^-$ is locally covariant and satisfies (NC), then
+$B=\Ichr\cup N$ is a becoming theory. On $\Mink$, $N$ is empty or all of $E^-$.
+\end{theorem}
+
+\begin{theorem}[Non-uniqueness]\label{thm:weyl}
+Let $N_M(x,b)$ hold iff $x\in E^-(b)$, $x\neq b$, and some lightlike geodesic
+segment from $x$ to $b$ contains a point at which the Weyl tensor is nonzero.
+Then $\Ichr\cup N$ is a becoming theory equal to $\Ichr$ on $\Mink$, equal to
+$\Jm$ on any spacetime with nowhere-vanishing Weyl tensor (such as the
+Schwarzschild exterior), and strictly between $\Ichr$ and $\Jm$ on spacetimes
+that are flat on a nonempty causally convex open set and have nonzero Weyl
+tensor somewhere. It depends only on the conformal structure (not merely the
+curvature: conformally flat spacetimes such as FLRW give $\Ichr$).
+\end{theorem}
+
+\begin{proposition}[Regularity]\label{prop:reg}
+Let $B$ be non-universal. If every $B_M$ is closed in $M\times M$, then
+$B=\Jm$. If every $B_M\setminus\Delta_M$ is open, then $B=\Ichr$.
+\end{proposition}
+
+\section{Proofs}\label{sec:proofs}
+
+\subsection{Theorem \ref{thm:class}, Theorem \ref{thm:weyl}, Proposition \ref{prop:reg}}
+
+We use: $\Ifut$ is open in $M\times M$ (MS Prop.~2.16); $\overline{\Jp}=
+\overline{\Ifut}$ and $\operatorname{Int}\Jp=\Ifut$ (MS Prop.~2.17); if $p\ll r\le q$
+or $p\le r\ll q$ then $p\ll q$, and if $r\in E^+(p)$, $q\in E^+(r)$ then
+$q\in E^+(p)$ or $p\ll q$ (MS Prop.~2.31); a causal curve that is not an
+unbroken lightlike pregeodesic can be deformed to a timelike curve with the
+same endpoints (MS Thm.~2.30).
+
+\begin{proof}[Proof of Theorem \ref{thm:class}]
+By Theorem~\ref{thm:main}(a), $B=\Ichr\cup N$. Timelike and causal curves
+between points of a causally convex set stay in it, so $\Ichr$, $\Jm$ and $E^-$
+are locally covariant and $N$ inherits (LC); (NC) is transitivity restricted
+to horismotic pairs. Conversely, $\Ichr\cup N$ is reflexive and satisfies (CB);
+for transitivity, a composition with a chronological step is chronological by
+MS 2.31, and a composition of two $N$-steps is chronological or horismotic, in
+which case (NC) applies. The last claim is Theorem~\ref{thm:flat}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{thm:weyl}]
+(NC): if $x\to y\to b$ along lightlike segments $\gamma_1,\gamma_2$ and
+$x\in E^-(b)$, then $\gamma_1\gamma_2$ is a causal curve between horismotic
+points, hence an unbroken lightlike pregeodesic (MS Thm.~2.30), and it
+contains the Weyl point of $\gamma_1$. (LC): lightlike geodesics between points
+of a causally convex image stay in it, and isometries preserve the Weyl
+tensor. On $\Mink$ the Weyl tensor vanishes. If it vanishes nowhere, every
+horismotic pair is in $N$. If $M$ is flat on an open causally convex $V$ and
+the Weyl tensor is nonzero at some point $z$, horismotic pairs inside $V$ are
+not in $N$ (every causal curve between them stays in $V$), while a horismotic
+pair joined by a lightlike segment through a neighbourhood of $z$ is. The Weyl
+tensor, as a $(1,3)$ tensor, is invariant under conformal rescaling (standard),
+and unparametrized lightlike pregeodesics are conformally invariant (MS
+\S2.6).
+\end{proof}
+
+\begin{proof}[Proof of Proposition \ref{prop:reg}]
+If $B_M$ is closed and contains $\Ichr$, it contains
+$\overline{\Ichr}=\overline{\Jm}\supseteq\Jm$, so $B=\Jm$ by
+Theorem~\ref{thm:main}(a). If $B_M\setminus\Delta$ is open and contained in
+$\Jm$, it lies in $\operatorname{Int}\Jm=\Ichr$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary \ref{cor:worldline}]
+By worldline becoming, $b\in B_{M,\lambda'}(b)$ for every $\lambda'\ni b$; with
+$c=b$, worldline transitivity gives $B_{M,\lambda}(b)\subseteq B_{M,\lambda'}(b)$,
+and by symmetry they are equal. Call the common set $B_M(b)$. Transitivity: if
+$a\in B_M(b)$ and $b\in B_M(c)$, choose $\lambda\ni b$, $\lambda'\ni c$ and apply
+worldline transitivity. (CB): if $a\ll b$, a timelike curve from $a$ to $b$
+extends to an inextendible timelike curve $\lambda$, and $a\in\Ichr(b)\cap\lambda
+\subseteq B_M(b)$. (LC): for $\psi:N\to M$ take $\lambda_N\ni b$ and an
+inextendible extension $\lambda$ of $\psi\circ\lambda_N$; then $a\in B_N(b)\iff
+a\in B_{N,\lambda_N}(b)\iff\psi(a)\in B_{M,\lambda}(\psi(b))\iff\psi(a)\in
+B_M(\psi(b))$.
+\end{proof}
+
+\subsection{Theorem \ref{thm:main}}
+
+The idea: a forbidden pair in a curved spacetime is moved, by local
+covariance, into an auxiliary spacetime that agrees with the original near
+the pair and is flat elsewhere; chronological becoming and transitivity then
+produce a forbidden pair in a flat region, contradicting
+Theorem~\ref{thm:flat}.
+
+\begin{lemma}[Future pairs reduce to spacelike pairs]\label{lem:R}
+If $x\in\Jp(b)\setminus\{b\}$, there is $e\ll x$ spacelike to $b$.
+\end{lemma}
+
+\begin{proof}
+Let $U$ be a convex normal neighbourhood of $b$ and $V\subseteq U$ an open
+neighbourhood of $b$ that is causally convex in $M$ ($M$ is strongly causal;
+MS Remark~2.12 and the construction following it). Causal relations in $U$,
+regarded as a spacetime, are read off $\exp^{-1}$ (MS Prop.~2.10), and for
+points of $V$ they agree with those of $M$ (MS Remark~2.12). A future causal
+curve from $b$ to $x$ is nonconstant ($M$ is causal), so it contains some
+$b_1\in V\setminus\{b\}$; then $b\le b_1\le x$ and $u=\exp_b^{-1}(b_1)$ is
+a nonzero future causal vector. Choose a spacelike $a\in T_bM$ with
+$g(u,a)>0$ and put $q_\varepsilon=\exp_b(\varepsilon a)$. Synge's world
+function $\sigma$ is smooth on $U\times U$ with $\nabla_q\sigma(q,b_1)|_{q=b}=-u$,
+so $2\sigma(q_\varepsilon,b_1)=g(u,u)-2\varepsilon g(u,a)+O(\varepsilon^2)<0$ for
+small $\varepsilon>0$. The vector $\exp^{-1}_{q_\varepsilon}(b_1)$ depends
+continuously on $\varepsilon$ and tends to $u\neq0$, so for small $\varepsilon$
+it is future-directed timelike: $q_\varepsilon\ll b_1$. Also
+$2\sigma(q_\varepsilon,b)=\varepsilon^2g(a,a)>0$, so $q_\varepsilon$ is spacelike
+to $b$. By MS Prop.~2.31(i), $e=q_\varepsilon\ll x$.
+\end{proof}
+
+The same local argument shows that every point has spacelike-separated
+points arbitrarily close to it.
+
+\begin{lemma}[Spacelike chains]\label{lem:E}
+In connected globally hyperbolic $M$, any two points are joined by a finite
+chain of consecutively spacelike-separated points.
+\end{lemma}
+
+\begin{proof}
+Globally hyperbolic spacetimes (MS Def.~3.70) are causally simple (MS
+Prop.~3.71), so $\Jp(z)$ and $\Jm(z)$ are closed and the set of points
+spacelike to $z$ is open. Fix $p$ and let $S$ be the set of points reachable
+from $p$. $S$ is open: if $q\in S$, pick $z$ spacelike to $q$; a
+neighbourhood of $q$ is spacelike to $z$ and reachable via $q,z$.
+$M\setminus S$ is open: if $q\notin S$ and $c$ is spacelike to $q$, a
+neighbourhood $W$ of $q$ is spacelike to $c$; were some $q''\in W$ in $S$, then
+$c\in S$ and $q\in S$. $M$ is connected.
+\end{proof}
+
+The example $M=\mathbb R\times S^3$, $b=(0,p)$, $x=(3\pi,p)$ shows that a single
+point spacelike to two causally related points need not exist; the chain is
+needed.
+
+\paragraph{Set-up.} Fix spacelike-separated $x,b\in M$. Since $J^+\subseteq
+M\times M$ is closed (MS Prop.~3.68(iii), 3.71), there are small closed
+spacelike embedded $3$-discs $D_x\ni x$, $D_b\ni b$, each acausal, with no causal
+curve between them; so $D_x\cup D_b$ is a compact acausal spacelike
+submanifold with boundary, and Bernal and Sánchez give a smooth spacelike
+Cauchy hypersurface $S\supseteq D_x\cup D_b$ \citep[Thm.~1.1, Rem.~4.14]{BS2006}.
+Choose $\delta_0>0$ and a smooth embedded curve $c:[-\delta_0,L+\delta_0]\to S$,
+unit speed for the induced metric $h$, with $c(0)=x$, $c(L)=b$.
+
+\begin{lemma}[Adapted coordinates]\label{lem:B}
+Let $n$ be the future unit normal to $S$, $(e_1=c',e_2,e_3)$ an $h$-orthonormal
+frame along $c$ with $(n,e_1,e_2,e_3)$ positively oriented,
+$\sigma(s,y)=\exp^h_{c(s)}(y_2e_2+y_3e_3)$, and
+$\Phi(t,s,y)=\exp^g_{\sigma(s,y)}(t\,n)$. Write
+$T_\rho=\{|t|<\rho,\ -\rho<s<L+\rho,\ |y|<\rho\}$. For some $\rho_0\le\delta_0$,
+$\Phi$ is a diffeomorphism from $\overline{T_{\rho_0}}$ onto a closed
+neighbourhood of $c([0,L])$, orientation- and time-orientation-preserving;
+$\Phi(\{t=0\})\subseteq S$ while $\Phi(t,\cdot)\in\Ifut(S)$ for $t>0$ and
+$\in\Ichr(S)$ for $t<0$; $\Phi^*g=-dt^2+h_t(s,y)$; and
+$\|\Phi^*g-\eta\|\le K(|t|+|y|)$ on $\overline{T_{\rho_0}}$.
+\end{lemma}
+
+\begin{proof}
+Gaussian normal coordinates to $S$ composed with Riemannian normal
+coordinates of $S$ along the compact embedded arc; points $\Phi(t,\cdot)$ lie
+on the normal timelike geodesic through a point of the acausal $S$. At
+$(t,y)=(0,0)$ the metric is exactly $\eta$ because the frame is orthonormal on
+$c$; the estimate is smoothness on a compact set.
+\end{proof}
+
+\begin{lemma}[Cone control]\label{lem:C}
+Let $\eta_c=-c^2dt^2+ds^2+|dy|^2$ and $\tfrac12<\mu<1<\lambda$. If
+$\|h-\eta_1\|\le\varepsilon<\min\{(1-\mu^2)/(1+\mu^2),(\lambda^2-1)/(\lambda^2+1)\}$
+(operator norm), then $h$ is Lorentzian with $\partial_t$ timelike, and for
+$v=(1,u)$: $|u|\le\mu\Rightarrow h(v,v)<0$, $|u|\ge\lambda\Rightarrow
+h(v,v)>0$. The bound is preserved by $\chi h+(1-\chi)\eta_1$, $0\le\chi\le1$.
+\end{lemma}
+
+\begin{proof}
+$h(v,v)\le-1+|u|^2+\varepsilon(1+|u|^2)$ and $h(v,v)\ge(1-\varepsilon)|u|^2-
+(1+\varepsilon)$. The spatial block is $\ge(1-\varepsilon)I>0$ and
+$h(\partial_t,\partial_t)<0$, which forces signature $(-,+,+,+)$.
+\end{proof}
+
+\paragraph{Constants and the auxiliary spacetime.} In this order: fix
+$\mu,\lambda,\varepsilon$ as in Lemma~\ref{lem:C}; Lemma~\ref{lem:B} gives
+$\rho_0$ and $K$; choose $r>0$ with $3r<\rho_0$, $6Kr\le\varepsilon$ and
+$8\lambda r<L$. Then $\overline{T_{2r}}\subset T_{3r}$; let $\chi$ be smooth,
+$\chi=1$ on $\overline{T_{2r}}$, $\operatorname{supp}\chi\subset T_{3r}$, and on
+$\mathbb R^4$ put $g'=\chi\,\Phi^*g+(1-\chi)\eta$. On $T_{3r}$,
+$\|\Phi^*g-\eta\|\le6Kr\le\varepsilon$, so Lemma~\ref{lem:C} applies to $g'$
+everywhere and to $\Phi^*g$ on $T_{3r}$. Every $g'$-causal vector therefore
+has $|d(s,y)/dt|\le\lambda$; $t$ increases strictly along future causal
+curves; and an inextendible causal curve along which $t$ had a finite limit
+would have convergent spatial coordinates and extend. Hence every level
+$\{t=c\}$ is a Cauchy hypersurface and $M'=(\mathbb R^4,g')$ is globally
+hyperbolic (MS Thm.~3.75), flat outside $T_{3r}$, and
+$\psi=\Phi^{-1}:\Phi(T_{2r})\to T_{2r}$ is an isometry preserving orientation
+and time orientation.
+
+\begin{lemma}[The slab region is self-determined]\label{lem:D}
+Let $B_0=\{s\in[-r/2,L+r/2],\ |y|\le r/2\}$, $\Sigma=\Phi(\{0\}\times B_0)\subset
+S$ and $\Sigma'=\{0\}\times B_0$. Then:
+\begin{enumerate}
+\item[(i)] $D_M(\Sigma)\subseteq\Phi(T_{2r})$ and $D_{M'}(\Sigma')\subseteq T_{2r}$;
+\item[(ii)] $\psi(D_M(\Sigma))=D_{M'}(\Sigma')$;
+\item[(iii)] $N=\operatorname{int}D_M(\Sigma)$ is causally convex in $M$,
+globally hyperbolic, connected, and contains $x,b$; likewise
+$\psi(N)=\operatorname{int}D_{M'}(\Sigma')$ in $M'$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\emph{Escape paths.} Let $q\in\partial T_{2r}$ with $0<t(q)\le2r$. If the
+projection $(s_q,y_q)$ is not in $B_0$, follow the vertical segment down to
+$t=0$. Otherwise $q$ lies on the lid $t=2r$ with $|y_q|\le r/2$; move with
+velocity $(dt,dy)=(-1,\tfrac\mu2\hat y)$ for coordinate time $2r$, where $\hat y$
+is a unit vector ($y_q/|y_q|$ if $y_q\neq0$), ending at $|y|\in(r/2,3r)$
+because $\mu r>r/2$ and $r/2+\mu r<3r$. Either path lies in $T_{3r}$, has
+coordinate speed $<\mu$, so is timelike for $\Phi^*g$ and for $g'$
+(Lemma~\ref{lem:C}), and ends at a point of $\{t=0\}$ outside $\Sigma'$, i.e.\ on
+$S\setminus\Sigma$ in $M$ ($\Phi$ is injective). A past-directed causal curve
+starting on a Cauchy hypersurface never returns to it. The time-reversed paths
+serve points with $t(q)<0$.
+
+(i) Let $p\in D^+_M(\Sigma)$ with $p\notin\Phi(T_{2r})$, and let $\gamma$ be a
+past-inextendible causal curve from $p$. It meets $\Sigma$; let $\sigma_1$ be
+its first point on $\Sigma$, and $q$ the last point of $\partial\Phi(T_{2r})$ on
+the segment from $p$ to $\sigma_1$. After $q$ the segment lies in
+$\Phi(T_{2r})$, where $t$ increases along future causal curves, so $t(q)>0$.
+The segment $p\to q$, the escape path from $q$, and any past-inextendible
+continuation form a past-inextendible causal curve from $p$ missing $\Sigma$, a
+contradiction. Time-reverse for $D^-$. The same argument works in $M'$, where
+$\{t=0\}$ is a Cauchy hypersurface.
+
+(ii) Let $p\in D^+_M(\Sigma)$, so $p\in\Phi(T_{2r})$ by (i), and let
+$\gamma'$ be a past-inextendible $g'$-causal curve from $\psi(p)$. Along it
+$t\to-\infty$, so it leaves $\overline{T_{2r}}$ or reaches $t=0$. Consider the
+first of these events. If it first reaches $\{t=0\}$, at $z'$, inside $T_{2r}$:
+were $z'\notin\Sigma'$, the segment pulled back by $\Phi$ and continued past $S$
+would be a past-inextendible $M$-curve from $p$ missing $\Sigma$ (points with
+$t>0$ are not on $S$). If it first meets $\partial T_{2r}$, at $q'$ with
+$t(q')>0$, then the pulled-back segment followed by the escape path in $M$
+would again miss $\Sigma$. Both contradict $p\in D^+_M(\Sigma)$, so $\gamma'$
+meets $\Sigma'$. The reverse inclusion is the same argument with $M$ and $M'$
+exchanged, using $D_{M'}(\Sigma')\subseteq T_{2r}$; $D^-$ is time-reversed.
+
+(iii) For $q\in D^+(\Sigma)$, $\Jm(q)\cap\Jp(\Sigma)\subseteq D^+(\Sigma)$: a
+past-inextendible curve from $r$ in this set, prefixed by a causal curve
+$q\to r$, meets $\Sigma$; if only on the prefix, at $z$, then $\sigma\le r\le z$
+for some $\sigma\in\Sigma$, and acausality gives $r=z\in\Sigma$. Hence $D(\Sigma)$
+is causally convex: if $p,q\in D(\Sigma)$, $r$ lies on a causal curve $p\to q$,
+and an inextendible causal curve $\lambda$ through $r$ misses $\Sigma$, then in
+the mixed case $p\in D^-$, $q\in D^+$ the curves $(p\to r)\cdot\lambda^+$ and
+$\lambda^-\cdot(r\to q)$ meet $\Sigma$ on $p\to r$ and on $r\to q$, and
+acausality forces both meeting points to be $r$; the cases $p,q\in D^\pm$
+follow from the inclusion just proved. For interior points choose $p^-\ll p$
+and $q^+\gg q$ in $\operatorname{int}D$; then
+$J(p,q)\subseteq\Ifut(p^-)\cap\Ichr(q^+)\subseteq D(\Sigma)$, an open set (MS
+Props.~2.16, 2.31), so $N$ is causally convex, its causal diamonds are the
+compact diamonds of $M$, and $N$ is globally hyperbolic (MS Def.~3.70). In
+$M'$,
+$D_{\eta_\lambda}(\Sigma')\subseteq D_{g'}(\Sigma')\subseteq D_{\eta_\mu}(\Sigma')$
+(narrower cones give larger domains of dependence). The first inclusion puts
+every relative-interior point of $\Sigma'$, in particular $x$ and $b$, in the
+interior; the second puts the projection of every interior point with $t\neq0$
+into $\operatorname{int}B_0$, so its vertical segment to $\{t=0\}$ lies in
+$\Ichr(q^+)\cap\Ifut(z^-)\subseteq N'$ for suitable $q^+$, $z^-$, joining it
+inside $N'$ to the connected set $\operatorname{int}\Sigma'$. Transfer by (ii).
+\end{proof}
+
+By Lemma~\ref{lem:D}, $N$ is an object of $\GH$ and the inclusion $N\hookrightarrow
+M$ and $\psi|_N:N\to M'$ are morphisms. By (LC),
+\begin{equation}\label{eq:transfer}
+x\,B_M\,b\iff x\,B_N\,b\iff\psi(x)\,B_{M'}\,\psi(b).
+\end{equation}
+
+\begin{lemma}[Flat detour]\label{lem:F}
+Let $P,Q$ lie in the flat region of $M'$, be $\eta_\lambda$-spacelike, and be
+joined by a smooth embedded arc $\kappa$ contained in a hyperplane
+$H=\{t=f(s)\}$ with $f$ affine, $|f'|<1/\lambda$, and at positive distance from
+$\overline{T_{3r}}$. Then $P,Q$ are spacelike-separated in $M'$, and there is a
+compact acausal slab $\Sigma''\subset H$, containing $P,Q$ in its relative
+interior, such that $N''=\operatorname{int}D_{M'}(\Sigma'')$ lies in the flat
+region, equals $\operatorname{int}D_\Mink(\Sigma'')$ under the identity, and is
+an object of $\GH$ whose inclusions into $M'$ and $\Mink$ are morphisms. Hence
+$P\,B_{M'}\,Q\iff P\,B_\Mink\,Q$.
+\end{lemma}
+
+\begin{proof}
+A $g'$-causal curve between $P,Q$ would be $\eta_\lambda$-causal. Along
+$g'$-causal curves $\tfrac{d}{d\tau}(t-f(s))\ge\dot t(1-\lambda|f'|)>0$ and
+$t-f(s)\to\pm\infty$, so $H$ is a Cauchy hypersurface for $g'$ and for $\eta$.
+Extend $\kappa$ slightly past $P$ and $Q$ and let $\Sigma''$ be its closed
+$\delta$-neighbourhood in $H$, with $\delta$ small compared with the distance from
+$\kappa$ to $\overline{T_{3r}}$ and with the curvature radius of $\kappa$ in $H$.
+A Lorentz boost (an isometry of $\eta$) makes $H$ horizontal; there the metric
+is exactly $\eta$ on a $C\delta$-neighbourhood of $\Sigma''$, and the argument of
+Lemma~\ref{lem:D}, with the straight tube replaced by the $2\delta$-tube about the
+boosted arc and outward escape along the gradient of the distance to the arc,
+applies with $(M,M')$ replaced by $(M',\Mink)$. It shows that both domains of
+dependence lie in that neighbourhood, that they coincide, and that their
+interiors are connected, causally convex and globally hyperbolic.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{thm:main}]
+(a) Suppose $B_\Mink\neq\U$; by Theorem~\ref{thm:flat}, $B_\Mink\subseteq\Jm$
+relates no spacelike pair. Let $x\,B_M\,b$ with $x,b$ spacelike-separated, and
+transfer by \eqref{eq:transfer}. Take $w=(-4r,0,0,0)$, $v=(4r,L,0,0)$ and the arc
+$t(s)=-4r+(8r/L)s$, $y(s)=(10r\sin(\pi s/L),0)$, $0\le s\le L$: where $|t|\le3r$,
+$s/L\in[1/8,7/8]$ and $|y|\ge10r\sin(\pi/8)>3r$, elsewhere $|t|>3r$, and the
+slope $8r/L<1/\lambda$. Vertical segments are $\eta_\mu$-timelike, so
+$w\ll'\psi(x)$ and $\psi(b)\ll'v$; (CB) gives $w\,B'\,\psi(x)$ and
+$\psi(b)\,B'\,v$, and (T) gives $w\,B'\,v$. Lemma~\ref{lem:F} gives $w\,B_\Mink\,v$
+with $w,v$ spacelike, a contradiction. If $x\,B_M\,b$ with
+$x\in\Jp(b)\setminus\{b\}$, Lemma~\ref{lem:R} gives $e\ll x$ spacelike to $b$, and
+$e\,B_M\,b$ by (CB) and (T), reducing to the previous case.
+
+(b) Suppose $B_\Mink=\U$. For spacelike $x,b\in M$, transfer to $M'$ and use
+$x'=(4r,0,0,0)$, $b'=(-4r,L,0,0)$ with the arc $t(s)=4r-(8r/L)s$, same $y(s)$:
+$\psi(x)\,B'\,x'$ and $b'\,B'\,\psi(b)$ by (CB), and $x'\,B'\,b'$ by
+Lemma~\ref{lem:F}, since $B_\Mink=\U$; so $x\,B_M\,b$. By Lemma~\ref{lem:E} and
+(T), every pair is related.
+\end{proof}
+
+\section{Causal sets: an exact Stein theorem}\label{sec:causets}
+
+Let $\mathsf{CS}$ have locally finite posets as objects and order-embeddings
+with order-convex image as morphisms. A becoming theory on $\mathsf{CS}$ is
+defined as before, with (CB) read as $x\le b\Rightarrow x\,B\,b$.
+
+\begin{proposition}\label{prop:causets}
+Every becoming theory on $\mathsf{CS}$ is either the causal order in every
+causal set or the universal relation in every causal set.
+\end{proposition}
+
+\begin{proof}
+If $x,b$ are incomparable, $\{x,b\}$ is convex, so both embeddings of the
+two-element antichain are morphisms: the verdict on incomparable pairs is a
+single symmetric bit $\beta$, the same in every causal set. If $x>b$, the
+interval $I=[b,x]$ is finite and convex, so $x\,B\,b$ depends only on $I$. If
+$\beta=1$, in $I\sqcup\{z\}$ with $z$ incomparable to all, $x\,B\,z\,B\,b$; so
+every such verdict is positive and $B$ is universal. If $\beta=0$ and
+$x\,B\,b$ for some $x>b$, adjoin $e$ with $e<x$ only: $I$ remains convex, so
+$x\,B\,b$ there, $e\,B\,x$ by (CB), and $e\,B\,b$ with $e$ incomparable to $b$,
+contradicting $\beta=0$.
+\end{proof}
+
+Wüthrich and Callender state that ``The analogue of this theorem, however, is
+straightforwardly false in CST'' \citep[\S3]{WC2017}. Their counterexample, on
+the diamond causal set $d<b,c<a$, adds the incomparable pair $\{b,c\}$ to the
+causal order and is invariant under that causal set's automorphisms. It is not
+the restriction of any becoming theory in the present sense: relating $b$ to
+$c$ fixes $\beta=1$, and Proposition~\ref{prop:causets} then relates $b$ to $d$,
+which their relation excludes. Their own footnote~5 observes that the
+counterexample ``could be a small proper part of a much larger causet''; (LC) is
+exactly the requirement that the relation on such a part agree with the
+relation in the larger causal set. The diagnosis matches the continuum case:
+invariance within one structure is too weak, and locality across structures
+restores Stein's theorem, here with no residual freedom because a causal set
+has no light-cone boundary. Their claim is true on its own terms; the present
+result uses a stronger, cross-structure hypothesis. Note also that
+$\mathsf{CS}$ includes posets that are not manifoldlike (antichains, disjoint
+unions), and the proof uses them: this is the causal-set counterpart of the
+off-shell premise of Remark~\ref{rem:offshell}.
+
+\section{Gödel universes are isolated}\label{sec:godel}
+
+\begin{proposition}\label{prop:godel}
+Extend $\GH$ to all oriented, time-oriented spacetimes with the same
+morphisms. If $M$ is totally vicious ($p\ll p$ for all $p$), then every
+morphism into $M$ is onto, and every theory satisfying (CB) has $B_M=\U_M$.
+\end{proposition}
+
+\begin{proof}
+In a totally vicious spacetime $\Ichr(p)=\Ifut(p)=M$ for every $p$ (MS \S3.1).
+Let $V$ be nonempty, open and causally convex, $p\in V$ and $q\in M$. There are
+timelike curves $p\to q$ and $q\to p$; their concatenation is a causal curve
+with both endpoints in $V$, so it lies in $V$, and $q\in V$. Thus $V=M$
+(compare MS Remark~2.12).
+\end{proof}
+
+Gödel's universe is totally vicious, so universal becoming there is forced;
+this is Gödel's first step, in Stein's terms. But local covariance transmits
+constraints only along morphisms, and the only morphisms into a totally
+vicious spacetime are its own isometries. Gödel's modal step, from what holds
+in such a universe to what holds in ours \citep[pp.~561--562]{Godel1949}, as
+quoted in \citep[\S6]{Monton2006}, requires that becoming be the same
+feature across nomologically possible universes. Local covariance is one
+precise way of requiring a rule to be the same across universes, and it does
+not transmit anything out of totally vicious ones by morphisms into them. (We
+have not shown that no morphisms lead out of them; Proposition~\ref{prop:godel}
+concerns morphisms into $M$.) A version of Gödel's step that does go through
+would need a different cross-universe link. Proposition~\ref{prop:nonlocal} shows what such links
+look like: natural but non-local. Compare the conceptual responses of
+\citet{Savitt2005}, \citet{Dieks2006} and \citet{Aames2022}, which locate
+becoming locally along worldlines.
+
+\section{Energy conditions}\label{sec:energy}
+
+Let $\GH_{\mathrm{DEC}}$ be the full subcategory of spacetimes whose Einstein
+tensor satisfies the dominant energy condition. It is closed under restriction
+to causally convex open subsets and contains $\Mink$.
+
+\begin{proposition}[The auxiliary spacetime is unavailable]\label{prop:dec}
+If $M\in\GH_{\mathrm{DEC}}$ is flat on a neighbourhood of some Cauchy surface,
+then $M$ is flat. In particular $M'$ above lies in $\GH_{\mathrm{DEC}}$ only if
+$g$ is flat on $T_{2r}$.
+\end{proposition}
+
+\begin{proof}
+On the Cauchy surface the metric is flat and the Einstein tensor vanishes. By the conservation theorem
+for matter obeying the dominant energy condition \citep[\S4.3]{HE1973}, the
+Einstein tensor vanishes on its domain of dependence, i.e.\ everywhere. For
+$M'$, any slice $\{t=c\}$ with $c<-3r$ has a flat neighbourhood.
+A vacuum globally hyperbolic spacetime with flat data $(\Sigma,h,0)$ on a
+Cauchy surface is a development of those data and so embeds isometrically in
+their maximal development \citep[Thm.~3]{CBG1969}. That maximal development is
+the flat static spacetime $\mathbb R\times\Sigma$, $-dt^2+h$ (not Minkowski in
+general; e.g.\ $\Sigma=T^3$): it is a development, and if a development
+properly extended it, a point $p$ outside its image would lie on a timelike
+geodesic from $\Sigma$ whose image under the extension coincides with the
+corresponding complete geodesic of $\mathbb R\times\Sigma$, so $p$ would lie in
+the image. Hence the spacetime is flat.
+\end{proof}
+
+The same reasoning constrains any repair that keeps the original spacetime and
+inserts small flat pockets near $w$, $v$ and the detour: in a vacuum region
+whose causal past on some Cauchy surface is vacuum and unmodified, the
+conservation theorem forces the modified spacetime to be vacuum there with the
+same data, so no pocket can be inserted. Pockets must be fed by matter brought
+in from the past and routed around $D(\Sigma)$ afterwards. The proof of
+Theorem~\ref{thm:main} goes through verbatim in $\GH_{\mathrm{DEC}}$ given
+the following sufficient condition, which we leave open.
+
+\begin{quote}
+\textbf{Pocket problem.} Given $M\in\GH_{\mathrm{DEC}}$ and $\Sigma$ as above,
+find $M''\in\GH_{\mathrm{DEC}}$ containing an isometric copy of a neighbourhood
+of $D_M(\Sigma)$ whose image is a domain of dependence, and exactly flat
+causally convex regions containing points $w\ll x$ and $v\gg b$ joined by the
+flat domain of dependence of a slab.
+\end{quote}
+
+The constraint is an inequality, not a field equation, so constructions can be
+kinematic, and explicit models with flat regions chronologically adjacent to
+curved dominant-energy regions exist (Vaidya spacetimes before an incoming, or
+after an outgoing, null-dust shell). Thin shells will not suffice in general,
+since null junctions require matching intrinsic geometry. A solution would
+give Theorem~\ref{thm:main} for spacetimes with physically reasonable matter;
+a vacuum version would require bounded interior flat regions adjacent to
+arbitrary curved vacuum regions, which we have not found in the gluing
+literature (an abstract-level survey: Carlotto--Schoen, Corvino--Schoen,
+Aretakis--Czimek--Rodnianski, Czimek--Rodnianski).
+
+\section{What this shows about becoming}\label{sec:phil}
+
+\paragraph{The robust part of Stein's theorem.} In general relativity, under
+locality, nothing outside an event's causal past can have become for it
+unless everything has. This holds in every globally hyperbolic spacetime,
+however asymmetric, and does not rely on any foliation. Those who want an
+extended, spacelike ``now'' as part of objective becoming face Stein's
+dilemma in general relativity too, unless they give up locality or enrich
+the spacetime structure itself, adding a preferred foliation or reference
+field so that becoming is local relative to the richer structure (in effect
+Monton's move). The theorem then does not apply, because the category, and
+with it the notion of an isometric embedding, has changed; the cost is the
+added structure.
+
+\paragraph{The fragile part.} Uniqueness does not survive. Minkowskian
+symmetry forced a choice between $\Ichr$ and $\Jm$; general relativity leaves
+open how lightlike-separated events stand, and a rule may let curvature along
+the light ray decide. Clifton and Hogarth's debate over causal versus
+chronological becoming \citep[pp.~364--365]{CH1995} thus acquires a third
+family of options; the choice between the endpoints is equivalent to a
+regularity requirement (Proposition~\ref{prop:reg}).
+
+\paragraph{Locality does the work symmetry did.} In a single curved spacetime,
+definability-style invariance constrains almost nothing
+(Proposition~\ref{prop:single}); natural global rules such as cosmological
+time violate only locality (Proposition~\ref{prop:nonlocal}). So the
+curved-spacetime case for ``only the past has become'' rests on a locality
+principle of the kind locally covariant field theory takes for granted and
+akin to Viglione's Causal Connection Condition \citep{Viglione2026} (which is
+stricter: (LC) allows dependence on spacelike events inside the convex region). Rejecting
+locality is a coherent option, but it is the option of global, cosmological
+becoming, with its own costs \citep{Dieks2006,Viglione2026}.
+
+\paragraph{Limits.} The theorem concerns relations of becoming, not
+ontology; it does not decide between presentism, the growing block and
+eternalism. It assumes that becoming is defined for every globally hyperbolic
+geometry (Remark~\ref{rem:offshell}); Section~\ref{sec:energy} shows that
+dropping this premise is not routine. Spacetimes that are not globally hyperbolic are not treated beyond
+Proposition~\ref{prop:godel}.
+
+\section{Prior work}\label{sec:prior}
+
+Stein's theorem and its Clifton--Hogarth form are the direct predecessors
+\citep{Stein1968,Stein1991,CH1995}. Point-based presents \citep{Rakic1997,Muller2006}
+and the causal-diamond present of Arthur and Savitt
+\citep{Arthur2006,Arthur2019,Savitt2009,Savitt2015}, with Dorato's critique
+\citep{Dorato2011} and Aames's application to Gödel universes \citep{Aames2022},
+are conceptual proposals without a curved-spacetime classification. In flat
+spacetime, definability of sets from relativistic structure is governed by
+automorphism groups \citep{MSS2025}. A citation sweep of
+\citet{CH1995} and \citet{Stein1991} (Semantic Scholar, 24 October 2026), and
+full-text reading of the works named here, found no prior extension of
+Stein's theorem to curved spacetime. This bounds, but does not certify,
+priority.
+
+\paragraph{Note on method.} This manuscript was developed with substantial
+assistance from large language models (Anthropic Claude and OpenAI Codex),
+including literature search, proof drafting and an independent cross-model
+proof check that found and repaired an error in an earlier draft. Quotations
+were checked against the primary texts; responsibility for errors is the
+author's.
+
+\begin{thebibliography}{99}
+\bibitem[Aames(2022)]{Aames2022} J. Aames, Temporal becoming in a relativistic
+universe: causal diamonds and Gödel's philosophy of time, \emph{Eur.\ J.\
+Philos.\ Sci.} 12 (2022) 44. doi:10.1007/s13194-022-00471-z.
+\bibitem[Andersson et al.(1998)]{AGH1998} L. Andersson, G. J. Galloway and
+R. Howard, The cosmological time function, \emph{Class.\ Quantum Grav.} 15
+(1998) 309--322. doi:10.1088/0264-9381/15/2/006.
+\bibitem[Arthur(2006)]{Arthur2006} R. T. W. Arthur, Minkowski spacetime and
+the dimensions of the present, in D. Dieks (ed.), \emph{The Ontology of
+Spacetime}, Elsevier, 2006, ch.~7. doi:10.1016/s1871-1774(06)01007-2.
+\bibitem[Arthur(2019)]{Arthur2019} R. T. W. Arthur, Relativity and the
+present, in \emph{The Reality of Time Flow}, Springer, 2019, ch.~6.
+doi:10.1007/978-3-030-15948-1\_6.
+\bibitem[Bernal and Sánchez(2006)]{BS2006} A. N. Bernal and M. Sánchez,
+Further results on the smoothability of Cauchy hypersurfaces and Cauchy time
+functions, arXiv:gr-qc/0512095.
+\bibitem[Brunetti et al.(2003)]{BFV2003} R. Brunetti, K. Fredenhagen and
+R. Verch, The generally covariant locality principle, \emph{Commun.\ Math.\
+Phys.} 237 (2003) 31--68. doi:10.1007/s00220-003-0815-7.
+\bibitem[Choquet-Bruhat and Geroch(1969)]{CBG1969} Y. Choquet-Bruhat and
+R. Geroch, Global aspects of the Cauchy problem in general relativity,
+\emph{Commun.\ Math.\ Phys.} 14 (1969) 329--335. doi:10.1007/bf01645389.
+\bibitem[Clifton and Hogarth(1995)]{CH1995} R. Clifton and M. Hogarth, The
+definability of objective becoming in Minkowski spacetime, \emph{Synthese} 103
+(1995) 355--387. doi:10.1007/BF01089733.
+\bibitem[Dieks(2006)]{Dieks2006} D. Dieks, Becoming, relativity and locality,
+in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006, ch.~8.
+doi:10.1016/s1871-1774(06)01008-4.
+\bibitem[Dorato(2011)]{Dorato2011} M. Dorato, The Alexandroff present and
+Minkowski spacetime: why it cannot do what it has been asked to do, in
+\emph{Explanation, Prediction, and Confirmation}, Springer, 2011.
+doi:10.1007/978-94-007-1180-8\_26.
+\bibitem[Fewster and Verch(2012)]{FV2012} C. J. Fewster and R. Verch,
+Dynamical locality and covariance: what makes a physical theory the same in
+all spacetimes?, arXiv:1106.4785.
+\bibitem[Gödel(1949)]{Godel1949} K. Gödel, A remark about the relationship
+between relativity theory and idealistic philosophy, in P. A. Schilpp (ed.),
+\emph{Albert Einstein: Philosopher-Scientist}, 1949, pp.~557--562.
+\bibitem[Hawking and Ellis(1973)]{HE1973} S. W. Hawking and G. F. R. Ellis,
+\emph{The Large Scale Structure of Space-Time}, Cambridge University Press,
+1973. doi:10.1017/cbo9780511524646.
+\bibitem[Madarász et al.(2025)]{MSS2025} J. Madarász, M. Stannett and
+G. Székely, Definable coordinate geometries over fields, part 1: theory,
+arXiv:2507.10279.
+\bibitem[Minguzzi and Sánchez(2008)]{MS2008} E. Minguzzi and M. Sánchez, The
+causal hierarchy of spacetimes, in \emph{Recent Developments in
+Pseudo-Riemannian Geometry}, ESI Lectures in Mathematics and Physics, EMS,
+2008, pp.~299--358. doi:10.4171/051-1/9;
+arXiv:gr-qc/0609119.
+\bibitem[Monton(2006)]{Monton2006} B. Monton, Presentism and quantum gravity,
+in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006, ch.~14
+(read in the author's 2005 preprint).
+\bibitem[Müller(2006)]{Muller2006} T. Müller, On the problem of defining the
+present in special relativity: a challenge for tense logic, in
+\emph{Time and History}, De Gruyter, 2006. doi:10.1515/9783110333213.441.
+\bibitem[Rakić(1997)]{Rakic1997} N. Rakić, Past, present, future, and special
+relativity, \emph{Brit.\ J.\ Philos.\ Sci.} 48 (1997) 257--280.
+doi:10.1093/bjps/48.2.257.
+\bibitem[Savitt(2005)]{Savitt2005} S. Savitt, Time travel and becoming,
+\emph{The Monist} 88 (2005) 413--422. doi:10.5840/monist200588323.
+\bibitem[Savitt(2009)]{Savitt2009} S. Savitt, The transient nows, in
+\emph{Quantum Reality, Relativistic Causality, and Closing the Epistemic
+Circle}, Springer, 2009. doi:10.1007/978-1-4020-9107-0\_18.
+\bibitem[Savitt(2015)]{Savitt2015} S. Savitt, I $\heartsuit$ $\Diamond$s,
+\emph{Stud.\ Hist.\ Philos.\ Mod.\ Phys.} 50 (2015) 19--24.
+doi:10.1016/j.shpsb.2015.02.001.
+\bibitem[Stein(1968)]{Stein1968} H. Stein, On Einstein--Minkowski space--time,
+\emph{J.\ Philos.} 65 (1968) 5--23. doi:10.2307/2024512.
+\bibitem[Stein(1991)]{Stein1991} H. Stein, On relativity theory and openness
+of the future, \emph{Philos.\ Sci.} 58 (1991) 147--167. doi:10.1086/289609.
+\bibitem[Viglione(2026)]{Viglione2026} F. Viglione, Not-so-absolute cosmic
+simultaneity, \emph{Erkenntnis} (2026). doi:10.1007/s10670-026-01075-2.
+\bibitem[Wüthrich and Callender(2017)]{WC2017} C. Wüthrich and C. Callender,
+What becomes of a causal set?, \emph{Brit.\ J.\ Philos.\ Sci.} 68 (2017)
+907--925. doi:10.1093/bjps/axv040; arXiv:1502.00018.
+\end{thebibliography}
+\end{document}
