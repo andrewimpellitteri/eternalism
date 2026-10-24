@@ -53,6 +53,15 @@ depend on choosing.
   transitivity).
 [THESIS]
 
+Why transitivity is not an extra assumption: read "x is real from b" as "x
+has happened by b". If y has happened by b, and x had happened by y, then x
+has happened by b; transitivity is part of what "having happened by" means.
+Clifton and Hogarth's worldline transitivity says the same thing for
+observers: two observers who meet agree on what has happened (pp. 362–363).
+Denying it means that something can have happened by an event that has
+happened by b without having happened by b, which is not a coherent notion of
+becoming.
+
 **P3. Locality.** Whether x is real from b's standpoint is settled by any
 causally convex region containing x and b, by the same rule in every
 spacetime. A standpoint is physical and local; no fact about b's fragment
@@ -60,13 +69,34 @@ turns on causally disconnected or distant structure. This is the "same theory
 in all spacetimes" principle of locally covariant QFT and is akin to
 Viglione's Causal Connection Condition. [THESIS, independently motivated]
 
+What the theorem actually uses is weaker (checked against every appeal to
+(LC) in the Stein paper): **(P3w)** one rule for every spacetime; invariance
+under isometries; and, whenever a thin compact acausal slab Σ contains x and b
+in its interior, the verdict on (x, b) depends only on int D(Σ) with its
+geometry. D(Σ) is exactly the region whose physics is fixed by data on Σ. So
+P3w says that *facts about what has happened supervene on the physics of any
+region that determines the two events*. A physicalist about becoming can
+hardly reject this. Someone who does reject it holds that whether x has
+happened by b turns on goings-on outside every region that physically
+determines x and b.
+
 **P4. Non-triviality.** Not everything is real from every standpoint. If it
 were, there would be no becoming, only the block. [THESIS]
 
 **P5. Invariance.** The absolute facts are those that hold from every
 standpoint. [THESIS]
 
-**P6. Limit closure.** Being real from b does not switch off at a limit: if
+**P6. Causal sufficiency.** Whatever can causally influence b is real from b.
+This is Clifton and Hogarth's own maxim: "if an event ... can causally
+influence b, that event must have become for b. Otherwise, how could an
+unsettled, unreal, event for b possibly contribute to bringing about an event
+that is settled for b, namely, b itself?" (1995, p. 364). Events on b's past
+light cone can influence b by light signals, so P6 gives J^-(b) ⊆ F(b).
+[THESIS] (Clifton and Hogarth also record a competing intuition, that null
+lines might be ontologically on a par, and they suggest that intuition may be
+the one to give up, ibid. pp. 364–365. Local fragmentalism gives it up.)
+
+**P6′. Limit closure (an independent route to the same result).** Being real from b does not switch off at a limit: if
 events x_n converge to x and each x_n is real from b, then x is real from b.
 That is, each fragment F(b) is a closed set. (This pointwise closedness is
 weaker than closedness of B_M in M×M, but it suffices: F(b) then contains the
@@ -121,9 +151,13 @@ reality accrues. Becoming is real and directed. [PROVED from R1.]
 are real for b is not fixed. A rule may even let curvature along the light ray
 decide. Requiring F(b) to be closed gives J^-(b), open gives I^-(b).
 [PROVED: Theorems 8–9 and Proposition 10.] With P6 the freedom closes:
-F(b) = J^-(b) exactly, in every globally hyperbolic spacetime, with no
-dependence on curvature. [PROVED from Proposition 10 given P6] The view is
-thereby fully determined: there is no remaining parameter.
+R1 gives F(b) ⊆ J^-(b) and P6 gives J^-(b) ⊆ F(b), so F(b) = J^-(b) exactly,
+in every globally hyperbolic spacetime, with no dependence on curvature.
+P6′ gives the same result by a topological route (Proposition 10). Two
+independent principles, one causal and one topological, agree, which makes
+the choice of J^- over I^- principled rather than chosen to exclude the
+Weyl-gated rules. [PROVED given P6 or P6′] The view is thereby fully
+determined: there is no remaining parameter.
 
 **R5. The discrete case is exact.** In causal set theory, fragments are
 exactly causal pasts, with no freedom. [PROVED: Proposition 17, using
@@ -156,6 +190,13 @@ such as cosmological time (Proposition 5), or add global structure such as a
 preferred foliation or reference field (Monton's move). That inherits
 Wüthrich's and Viglione's objections. [PROVED for the first horn; the second
 is THESIS.]
+
+**R9. Uniqueness.** Among views on which (i) reality is standpoint-relative
+with events as standpoints, (ii) becoming is transitive and includes the
+chronological past, (iii) the rule is local in the sense of P3w, (iv) becoming
+is non-trivial, and (v) potential causes are real, there is exactly one: F(b)
+= J^-(b). [PROVED given (i)–(v) and the off-shell premise of O4] Local fragmentalism is not one option among
+many; it is what is left once those five commitments are made.
 
 ## 4. Why this resolves the divide
 
@@ -202,8 +243,15 @@ fact that without it nothing at all is constrained (Proposition 4). Rejecting
 it is coherent, but it means paying R8's costs.
 
 **O4. "The off-shell premise."** Becoming is defined kinematically, as Stein's
-and Clifton–Hogarth's are. Restricting it to physically reasonable spacetimes
-is the open pocket problem. [OPEN]
+and Clifton–Hogarth's are. The premise that one rule governs every
+geometrically possible spacetime is a local cousin of Gödel's own modal
+premise, that whether time lapses should not depend on "the particular way in
+which matter and its motion are arranged in the world". Anyone who presses
+Gödel's argument is committed to something stronger. The view needs only the
+local version, which cannot reach out of Gödel universes (R7). Restricting
+the rule to physically reasonable spacetimes is the open pocket problem;
+energy conditions make it genuinely harder, not routinely true
+(`research/stein-gr/ENERGY_CONDITIONS.md`). [OPEN]
 
 **O5. "Transitivity and chronological inclusion are contestable"** (Sklar;
 Clifton–Hogarth's own discussion). Drop either and Stein-type results
@@ -334,7 +382,9 @@ recovers the eternalist's truths as the facts invariant across all standpoints
 | Locality as a metaphysical requirement | THESIS (independently motivated) |
 | On-shell / energy-condition version | OPEN |
 | Compatibility with quantum nonlocality | OPEN |
-| Exact fragment F(b) = J^-(b) | PROVED given P6 |
+| Exact fragment F(b) = J^-(b) | PROVED given P6 (causal) or P6′ (topological) |
+| Uniqueness among local standpoint views (R9) | PROVED given (i)–(v) and the off-shell premise |
+| Locality needed only in the weak form P3w | CHECKED against every use of (LC) |
 | Classification of locally covariant standpoint frames (§2b) | PROVED given the identification |
 | View from the whole = block (R6′) | PROVED given P7 |
 | Novelty against the fragmentalism literature | PARTLY CHECKED (Fine 2005/2006, Lipman 2018/2023, Hofweber–Lange, Savitt; Lipman 2026 and Iaquinto–Torrengo ch. 4 unread) |
@@ -357,8 +407,11 @@ recovers the eternalist's truths as the facts invariant across all standpoints
    regularity is motivated.
 8. Priority: do Lipman 2026 (chs. 4, 6) or Iaquinto & Torrengo (ch. 4)
    already contain R1–R3 or §2b?
-9. Is P6 (limit closure) motivated, or chosen to remove the Weyl-gated
-   alternatives?
+9. P6 rests on causal influence along light rays. Is a light-like influence
+   enough for "having happened by", or should only timelike connections
+   count (which would give I^-)?
+11. P3w: can a defender of a shared present reject supervenience on domains
+    of dependence without rejecting physicalism about becoming?
 10. With P7, is the view just Lipman's pluralism with physics added? If so, is
     that a defect or the point?
 
