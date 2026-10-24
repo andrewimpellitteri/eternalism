@@ -16,9 +16,12 @@ or derivation. Fine 2006 (read in full) already allows
 spacetime-location standpoints, each giving "its own reality" (p. 412), and
 Lipman (2018, n. 1) notes single-event fragments after Stein. So the frame,
 including event-indexing, is Fine's. What may be new is the *content* of the
-fragments, fixed by a locality theorem as causal pasts (§3), and the replies
-below. Fine 2005 now read (§§9–11). Still unread: Lipman 2026 (chs. 4 and 6)
-and Iaquinto & Torrengo 2022, ch. 4 "Relativity".
+fragments, fixed by a locality theorem as causal pasts (§3), the
+classification of locally covariant standpoint frames (§2b), and the replies
+below. Fine 2005 read (§§9–11): he rejects event standpoints on space/time
+grounds (pp. 304–305) and calls event-perspectives "decidedly odd" without
+argument (n. 36). Still unread: Lipman 2026 (chs. 4 and 6) and Iaquinto &
+Torrengo 2022, ch. 4 "Relativity" (requested from the authors).
 
 ## 1. Thesis
 
@@ -63,6 +66,42 @@ were, there would be no becoming, only the block. [THESIS]
 **P5. Invariance.** The absolute facts are those that hold from every
 standpoint. [THESIS]
 
+**P6. Limit closure.** Being real from b does not switch off at a limit: if
+events x_n converge to x and each x_n is real from b, then x is real from b.
+That is, each fragment F(b) is a closed set. (This pointwise closedness is
+weaker than closedness of B_M in M×M, but it suffices: F(b) then contains the
+closure of I^-(b), which is J^-(b) in globally hyperbolic spacetimes, so the
+argument of Proposition 10 goes through.) This expresses that reality from a
+standpoint has no gaps at its own boundary, and it agrees with Stein's
+principle that whatever can causally influence b has become for b. [THESIS]
+
+**P7. Extended standpoints (optional).** A region R may also count as a
+standpoint, with fragment F(R) = ⋃_{b∈R} F(b). [THESIS; the view is stated
+with and without it below]
+
+## 2b. The formal frame
+
+Lipman's standpoint logic (*J. Phil.* 2023, read in full) works with models
+⟨D, W, R, v⟩: W ⊆ D are the standpoints, "w1Rw2 represents the claim that,
+from the standpoint of w1, w2 is a standpoint", R is reflexive, v(w) ⊆ D
+"represents entities that exist from the perspective of w", and "if w1Rw2 then
+w2 ∈ v(w1)". Local fragmentalism is the following class of such models, one
+for every globally hyperbolic spacetime M:
+
+- D = W = the events of M (with P7, also its regions);
+- v(b) = F(b), the events real from b;
+- R(b, x) iff x ∈ v(b): from b, x is a standpoint just when it exists from b.
+
+Lipman's constraint and the reflexivity of R hold by construction (b ∈ F(b)).
+P2 adds transitivity of R and chronological inclusion; P3 says the assignment
+M ↦ (W, R, v) is locally covariant. The Stein-GR theorem is then a
+**classification of locally covariant standpoint frames**: every such family
+that is non-universal on Minkowski spacetime has I^-(b) ⊆ v(b) ⊆ J^-(b) in
+every spacetime, and with P6, v(b) = J^-(b) exactly. [PROVED, given the
+identification; the identification itself is THESIS] This puts the physics
+in the metaphysicians' own formalism, and it says what Lipman's framework
+leaves open: which frames relativity permits.
+
 ## 3. What follows
 
 **R1. Fragments are causal pasts.** In every globally hyperbolic spacetime,
@@ -81,20 +120,29 @@ reality accrues. Becoming is real and directed. [PROVED from R1.]
 **R4. The light cone is the only freedom.** Which lightlike-separated events
 are real for b is not fixed. A rule may even let curvature along the light ray
 decide. Requiring F(b) to be closed gives J^-(b), open gives I^-(b).
-[PROVED: Theorems 8–9 and Proposition 10.] The view's natural choice is
-closed: whatever can causally influence b is real for b (Stein's "causal
-becoming"). [THESIS]
+[PROVED: Theorems 8–9 and Proposition 10.] With P6 the freedom closes:
+F(b) = J^-(b) exactly, in every globally hyperbolic spacetime, with no
+dependence on curvature. [PROVED from Proposition 10 given P6] The view is
+thereby fully determined: there is no remaining parameter.
 
 **R5. The discrete case is exact.** In causal set theory, fragments are
 exactly causal pasts, with no freedom. [PROVED: Proposition 17, using
 non-manifoldlike posets.]
 
-**R6. The universe has no standpoint.** The totality is not an event, so it
-has no fragment and no present. The union of all fragments is the whole
-spacetime. [CONDITIONAL on P1 restricting standpoints to events.] This turns
-the "shape problem" of the Brading paper (`paper/main.tex`), which asks what
-fixes the universe's present, from an objection into a prediction: nothing
-does, because there is none.
+**R6. The universe has no present.** Without P7, the totality is not an
+event and has no standpoint at all. With P7, the totality is a standpoint, and
+its fragment is F(M) = ⋃_b J^-(b) = M: *the view from the whole is the block.*
+Either way it has no present, since co-presence is defined among events and is
+trivial (R2). [PROVED given P7's definition] This turns the "shape problem" of
+the Brading paper (`paper/main.tex`), which asks what fixes the universe's
+present, from an objection into a prediction: nothing does, because there is
+none.
+
+**R6′. The eternalist's standpoint is derived, not posited.** With P7, the
+atemporal standpoint of Lipman's pluralist theory of time is recovered as the
+totality's fragment, without adding a primitive atemporal standpoint. The
+block is not an alternative to the fragments; it is their union, seen from
+the whole. [PROVED given P7]
 
 **R7. In Gödel universes fragmentation collapses.** In totally vicious
 spacetimes every fragment is everything, and the view coincides with
@@ -135,12 +183,18 @@ question is whether the relativist reading still deserves the name
 "resolution".
 
 **O2. "This is eternalism with tensed vocabulary."** This is the deepest
-objection. Reply: the view denies that there is a standpoint-free fact that
-the future exists; the eternalist asserts it. Concession: the two are
-empirically equivalent, and the difference lies in the status of
-standpoint-free existence claims. The view's claim is that this is the *only*
-remaining difference, and that it is the difference the debate was really
-about.
+objection. In the frame of §2b the disagreement becomes exact. The eternalist
+holds that there is a single standpoint, or a privileged one, from which every
+event exists. The presentist holds that only event standpoints exist and that
+the future exists from none of them. Local fragmentalism (with P7) holds that
+both kinds of standpoint exist: from every event, its future does not exist
+(v(b) = J^-(b)); from the whole, everything does (v(M) = M). So each side is
+right about the standpoints it recognizes and wrong to deny the other's. That
+is a statable thesis about which standpoints exist and what they contain, not
+a relabelling. It is also not "anything goes": the theorem fixes what each
+event standpoint contains. Concession: the parties remain empirically
+equivalent, and someone who denies that standpoints are part of reality at
+all will see no difference.
 
 **O3. "Locality begs the question against presentism."** It is motivated
 independently: by locally covariant QFT, by Viglione's condition, and by the
@@ -173,8 +227,13 @@ window), not a co-reality class. Diamonds are not fragments.
 **O8. "Denying the universe a present is a cost."** Only for views, like
 Brading's, that need a present for the totality. Here it is a prediction (R6).
 
-**O9. "Fine already said this."** Possibly the frame; not, as far as we know,
-the derivation. This must be audited before any novelty claim.
+**O9. "Fine already said this."** Fine has the frame, including event
+standpoints (2006, pp. 411–412). He rejects them on space/time grounds
+(2005, pp. 304–305; see O11) and dismisses event-perspectives as "decidedly
+odd" without argument (2005, n. 36). He never says what an event's reality
+contains. The derivation (R1, §2b) and the general-relativistic reply to his
+objection (O11b) are, as far as the sources read go, new. Lipman 2026 and
+Iaquinto & Torrengo ch. 4 remain unread.
 
 **O10. "Fragments must be coordinated somehow, and the coordination is brute"**
 (Hofweber & Lange's objection to Fine, *Noûs* 2016: frame fragments leave the
@@ -241,23 +300,25 @@ spacetimes), consistent with Fine's negative result about equivalences.
 **O12. "Fragmentalist passage is anaemic: from the totality of fragments
 nothing moves"** (Andreoletti's review of Iaquinto & Torrengo 2022, *Organon F*
 32 (2025), §3: "from a global perspective, reality (the totality of fragments)
-features no passage at all"). Reply: on this view there *is* no global
-perspective (R6: the totality is not a standpoint), so the objection asks for
-the view from a standpoint the view denies exists. Passage is the growth of
-fragments along each worldline (R3), a standpoint-internal fact. The cost is
-real, though: anyone who thinks passage must be visible "from outside" will
-call this anaemic. [THESIS; a central red-team target alongside O2]
+features no passage at all"). Reply: passage is the growth of fragments along each worldline (R3), a
+standpoint-internal fact. With P7, the view from the whole is the block
+(R6′), and the block is indeed static: that is the eternalist's truth, and
+the view grants it. What the objection wants is passage visible *from the
+whole*. The view's answer is that passage is not the kind of fact that
+obtains from the whole, just as "here" is not a fact from nowhere. The cost
+remains for anyone who thinks real passage must be standpoint-independent.
+[THESIS; a central red-team target alongside O2]
 
 **O13. "Why not add an atemporal standpoint, as Lipman does?"** Lipman's
 pluralist theory of time (*J. Phil.* 2023) reconciles the parties by positing
 an atemporal standpoint from which the eternalist's picture is literally the
-view, alongside temporal standpoints. That would answer O12 at once. Reply: an
-atemporal standpoint is a standpoint of the totality, and R6 says the totality
-has none; positing one reintroduces, at the level of standpoints, exactly the
-non-local "view of the whole" that P3 excludes for becoming. Local
-fragmentalism instead recovers the eternalist's truths as the facts invariant
-across all standpoints (P5). This is a genuine choice point between the two
-views, and the red team should press on it. [THESIS]
+view, alongside temporal standpoints. That would answer O12 at once. Reply: with P7 we have it, and derived rather than posited. The totality's
+fragment is the union of the event fragments, which is the block (R6′). So
+local fragmentalism contains Lipman's atemporal standpoint as a consequence and
+adds what his framework leaves open, namely what the temporal (here: event)
+standpoints contain, fixed by physics (§2b). Without P7 the view instead
+recovers the eternalist's truths as the facts invariant across all standpoints
+(P5). [THESIS; P7 is the stronger version]
 
 ## 6. What is proved versus assumed
 
@@ -273,7 +334,10 @@ views, and the red team should press on it. [THESIS]
 | Locality as a metaphysical requirement | THESIS (independently motivated) |
 | On-shell / energy-condition version | OPEN |
 | Compatibility with quantum nonlocality | OPEN |
-| Novelty against the fragmentalism literature | OPEN (unread) |
+| Exact fragment F(b) = J^-(b) | PROVED given P6 |
+| Classification of locally covariant standpoint frames (§2b) | PROVED given the identification |
+| View from the whole = block (R6′) | PROVED given P7 |
+| Novelty against the fragmentalism literature | PARTLY CHECKED (Fine 2005/2006, Lipman 2018/2023, Hofweber–Lange, Savitt; Lipman 2026 and Iaquinto–Torrengo ch. 4 unread) |
 
 ## 7. Where to aim the red team
 
@@ -291,5 +355,30 @@ views, and the red team should press on it. [THESIS]
 7. Is the null-boundary choice (R4) a problem? A view whose fragments can
    depend on Weyl curvature at the light cone looks unprincipled unless
    regularity is motivated.
-8. Priority: does Fine, or the fragmentalism-and-relativity literature,
-   already contain R1–R3?
+8. Priority: do Lipman 2026 (chs. 4, 6) or Iaquinto & Torrengo (ch. 4)
+   already contain R1–R3 or §2b?
+9. Is P6 (limit closure) motivated, or chosen to remove the Weyl-gated
+   alternatives?
+10. With P7, is the view just Lipman's pluralism with physics added? If so, is
+    that a defect or the point?
+
+## 8. Where the view sticks its neck out
+
+These would count against it:
+
+1. **A physically privileged foliation.** If physics turned out to have a
+   preferred global time (a dynamical preferred frame, as in some quantum
+   gravity proposals), P3's motivation would weaken and a shared present
+   would come back on the table.
+2. **Real nonlocal collapse.** If quantum state reduction is a physical,
+   nonlocal process, Clifton and Hogarth's argument pushes fragments toward
+   everything (O6). The view needs no-collapse or local readings.
+3. **Locally definable spacelike co-reality.** Any well-motivated local
+   relation of co-presence between spacelike-separated events would refute
+   the view's premises, since R2 says there is none.
+4. **Closed timelike curves in our universe.** In totally vicious regions
+   fragments are everything (R7). A universe with such regions would make the
+   view coincide with eternalism there.
+
+None of these is currently supported, but each is the kind of physical result
+that could tell against the view.
