@@ -124,6 +124,16 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `observer-local-control` — Test whether growth-transition controls can depend only on an observer causal past | 10 | observer-sequential-dilation | native-local-control |
 | done | `observer-growth-intertwiner` — Determine whether sequential dilation descends to a symmetry-compatible quotient | 10 | observer-sequential-dilation | native-growth-intertwiner |
 | done | `observer-control-resources` — Bound memory and control precision for the sequential observer protocol | 9 | observer-sequential-dilation | native-control-resources |
+| open | `stein-core-repairs` — Prepare exact repairs for chronology conventions and first-exit cases | 10 | — | — |
+| open | `stein-gluing-audit` — Independently challenge domain transfer and the flat detour | 10 | — | — |
+| open | `stein-null-boundary-audit` — Verify residual null freedom and construct a mixed-curvature example | 9 | — | — |
+| open | `stein-causet-audit` — Audit the convex-embedding causal-set theorem and its prior-work contrast | 9 | — | — |
+| open | `stein-priority-audit` — Try to defeat novelty of cross-spacetime becoming classifications | 10 | — | — |
+| open | `stein-energy-rigidity-audit` — Check energy-condition rigidity and isolate a legitimate extension problem | 9 | — | — |
+| open | `stein-interpretation-audit` — Audit what the covariance theorem says about locality and becoming | 8 | — | — |
+| blocked | `stein-paper-integration` — Integrate accepted Stein-GR repairs into one source and verification record | 10 | stein-core-repairs, stein-gluing-audit, stein-null-boundary-audit, stein-causet-audit, stein-priority-audit, stein-energy-rigidity-audit, stein-interpretation-audit | — |
+| blocked | `stein-final-referee` — Independently referee the frozen integrated Stein-GR manuscript | 10 | stein-paper-integration | — |
+| blocked | `stein-energy-pocket-probe` — Test one bounded route to energy-compatible flat-pocket gluing | 7 | stein-energy-rigidity-audit, stein-final-referee | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
