@@ -1,0 +1,444 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Is}{I^-_{\mathrm s}}
+\newcommand{\Isp}{I^+_{\mathrm s}}
+\newcommand{\Set}{\mathrm{Set}}
+
+\title{Horizons and Becoming:\\ what an event's past settles, how its
+standpoint reasons, and where grounding matters}
+\author{Andrew Impellitteri}
+\date{25 October 2026 (draft)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A companion paper shows that, under a locality principle, what has become
+for an event in a globally hyperbolic spacetime lies between its
+chronological and its causal past. We ask what this fixes and what it
+leaves open, and find that the answers are governed by horizon structure.
+First, being settled from an event (fixed, under deterministic laws, by what
+is real from it) differs from being real from it; the settled region is
+essentially Geroch's domain of prediction. We characterize it by a condition
+on Cauchy slices and show that it can jump: in
+a closed dust universe nothing outside an event's causal past is settled
+from it while the universe expands, and everything is settled from every
+event after maximum expansion. Second, the modal logic of the standpoint
+frame validates S4 but, at a given standpoint, validates the confluence
+axiom .2 exactly when any two events in its past have a common past. In
+big-bang cosmologies .2 therefore fails at every standpoint; the cosmological
+horizon problem is this failure for our own standpoint, and inflation repairs
+it only for the observed pairs. Third, if the standpoints that exist are the
+events on matter worldlines, regions beyond every such worldline's event
+horizon are real from no standpoint and not fixed by anything real from one.
+There, and only there, an eternalist and a standpoint-first ontology disagree
+about what facts there are. For a lone observer in de Sitter spacetime this
+region is half the universe.
+\end{abstract}
+
+\section{Introduction}
+
+Stein's theorem says that in Minkowski spacetime a transitive,
+symmetry-invariant relation of becoming that makes some past event definite
+is the causal order or trivial \citep{Stein1968,Stein1991,CH1995}. A
+companion paper \citep{SteinGR} extends this to general relativity, replacing
+symmetry by local covariance: for any non-universal locally covariant
+becoming theory, $\Is(b)\subseteq F(b)\subseteq J^-(b)$ in every globally
+hyperbolic spacetime, where $F(b)$ is what has become for $b$; with the
+principle that whatever can signal to $b$ has become for it, $F(b)=J^-(b)$.
+
+That result fixes the content of an event's ``fragment'' of reality. It leaves
+three questions open, each of which a philosopher of time will press.
+\begin{enumerate}
+\item If the future is not real from $b$, is it at least open from $b$, or
+can deterministic laws settle it from what is real?
+\item What is the logic of reasoning \emph{from} a standpoint about other
+standpoints real from it?
+\item The view that reality is standpoint-relative agrees with eternalism on
+every tenseless truth. Is there anywhere the two disagree about what facts
+there are?
+\end{enumerate}
+The answers turn on horizons: on whether past cones wrap round space, on
+whether two events in a past cone share a common past, and on whether some
+regions lie in the past of no matter at all.
+
+We work throughout with smooth, connected, time-oriented, globally hyperbolic
+spacetimes $(M,g)$. $\Is(p)$ and $\Isp(p)$ are the strict chronological past
+and future (via timelike curves), $J^\pm(p)$ the causal past and future,
+$x\le y$ means $x\in J^-(y)$, and $x\ll y$ means $x\in\Is(y)$. We use the
+standard facts that $\le$ is closed in $M\times M$, that $J^-(x)\cap S$ is
+compact for every Cauchy surface $S$, and push-up: if $y\le z$ and $z\ll b$
+then $y\ll b$ \citep{MS2008}. By Bernal and S\'anchez \citep{BS2005} there
+is a Cauchy temporal function $t$; we write $S_c=t^{-1}(c)$.
+
+\section{Settled versus real}\label{sec:settled}
+
+\begin{definition}
+An event $x$ is \emph{settled from} $b$ if every past-inextendible causal curve
+from $x$ meets $\Is(b)$. Write $\Set(b)$ for the set of such events.
+\end{definition}
+
+If the fields obey deterministic laws with the domain-of-dependence property
+(data on a region fix the fields at every event all of whose
+past-inextendible causal curves meet that region), then what happens at a
+settled event is fixed by what happens in $\Is(b)$, which is real from $b$.
+Trivially $\Is(b)\subseteq\Set(b)$. The notion is not new. Geroch's
+\emph{domain of prediction} $P(q)$ is the set of $x$ such that every
+past-directed timelike curve from $x$ without past endpoint enters $I^-(q)$,
+but $I^-(x)\not\subseteq I^-(q)$ \citep[sec.~3]{Geroch1977}; so, up to the use
+of causal rather than timelike curves, $\Set(b)$ is $\Is(b)\cup P(b)$. What is
+new here is the reading: $\Set(b)$ is what is settled from $b$, as opposed to
+what is real from $b$. The definition uses the open set $\Is(b)$
+rather than $J^-(b)$; points of the null cone of $b$ are then not settled from
+$b$ in Minkowski spacetime (Proposition~\ref{prop:conformal}), matching the
+light-cone freedom of the companion theorem.
+
+\begin{theorem}\label{thm:char}
+$x\in\Set(b)$ if and only if there is $c<t(x)$ with $J^-(x)\cap S_c\subseteq
+\Is(b)$.
+\end{theorem}
+
+\begin{proof}
+($\Leftarrow$) A past-inextendible causal curve from $x$ crosses the Cauchy
+surface $S_c$, at a point of $J^-(x)\cap S_c\subseteq\Is(b)$.
+
+($\Rightarrow$) Suppose that for every $c<t(x)$ the compact set
+$K_c=(J^-(x)\cap S_c)\setminus\Is(b)$ is nonempty (it is compact because
+$\Is(b)$ is open). Fix $c_1>c_2>\dots\to-\infty$ with $c_1<t(x)$. For each $n$
+let
+\[P_n=\{(z_1,\dots,z_n)\in K_{c_1}\times\dots\times K_{c_n}:
+x\ge z_1\ge z_2\ge\dots\ge z_n\}.\]
+$P_n$ is compact, since $\le$ is closed. It is nonempty: pick $y\in K_{c_n}$
+and a causal curve from $x$ to $y$; it crosses each $S_{c_i}$, $i<n$, at a
+point $z_i$ with $z_i\le x$, and $z_i\notin\Is(b)$, for otherwise $y\le z_i\ll b$
+would give $y\ll b$ by push-up. The projections $P_{n+1}\to P_n$ forgetting
+the last coordinate are continuous, so by the standard compactness argument
+(an inverse limit of nonempty compact Hausdorff spaces is nonempty) there is
+an infinite sequence $x\ge z_1\ge z_2\ge\cdots$ with $z_n\in K_{c_n}$. Join
+consecutive terms by causal curves and concatenate. Each segment avoids
+$\Is(b)$ by push-up as before, and $t\to-\infty$ along the concatenation, so it
+has no past endpoint: it is a past-inextendible causal curve from $x$ that
+misses $\Is(b)$. Hence $x\notin\Set(b)$.
+\end{proof}
+
+\begin{corollary}\label{cor:cauchy}
+If $\Is(b)$ contains a Cauchy surface, then $\Set(b)=M$.
+\end{corollary}
+
+\begin{proof}
+If $S_c\subseteq\Is(b)$, then every $x$ with $t(x)>c$ satisfies the condition
+of Theorem~\ref{thm:char}, and every $x$ with $t(x)\le c$ lies in $\Is(b)$,
+since $\Is(b)$ is a past set: a point to the past of $S_c$ is in the past of
+some point of $S_c$.
+\end{proof}
+
+Settledness is defined by causal curves alone, so it is invariant under
+conformal rescaling of the metric. Conformal diagrams decide it.
+
+\begin{lemma}\label{lem:balls}
+Let $(\Sigma,d)$ be Euclidean space $\mathbb R^3$, or the unit round sphere
+$S^3$ with $r_2\le\pi$. Then the closed ball $\bar B(X,r_1)$ lies in the open
+ball $B(Y,r_2)$ if and only if $d(X,Y)+r_1<r_2$.
+\end{lemma}
+
+\begin{proof}
+($\Leftarrow$) is the triangle inequality. ($\Rightarrow$) Suppose
+$d(X,Y)+r_1\ge r_2$. If $d(X,Y)+r_1\le\pi$ (always so in $\mathbb R^3$),
+follow a minimizing geodesic from $Y$ through $X$ (any geodesic from $X$ if
+$X=Y$) a further distance $r_1$ beyond $X$; the endpoint is in $\bar B(X,r_1)$ at
+distance $d(X,Y)+r_1\ge r_2$ from $Y$. If $d(X,Y)+r_1>\pi$ on $S^3$, the
+antipode of $Y$ is at distance $\pi-d(X,Y)<r_1$ from $X$ and at distance
+$\pi\ge r_2$ from $Y$.
+\end{proof}
+
+\begin{proposition}\label{prop:conformal}
+Let $M$ be conformal to $\{(\eta,X):\eta\in(\eta_-,\eta_+),\ X\in\Sigma\}$ with
+metric $-d\eta^2+d\Sigma^2$, where $\Sigma$ is $\mathbb R^3$, or the unit
+$S^3$ with $\eta_+-\eta_-\le\pi$. Then $\Set(b)=\Is(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+Write $x=(\eta_x,X)$, $b=(\eta_b,Y)$. Here $x\ll b$ iff $d(X,Y)<\eta_b-\eta_x$
+(on $S^3$ the bound $\eta_+-\eta_-\le\pi$ keeps $\eta_b-\eta_x<\pi$). For
+$\eta_-<c<\eta_x$, $J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ and
+$\Is(b)\cap S_c=B(Y,\eta_b-c)$, with $\eta_b-c<\pi$ on $S^3$. By
+Lemma~\ref{lem:balls} the inclusion holds iff
+$d(X,Y)+\eta_x-c<\eta_b-c$, i.e.\ iff $x\ll b$. Apply
+Theorem~\ref{thm:char}.
+\end{proof}
+
+This covers Minkowski spacetime, spatially flat FLRW universes with a big
+bang (conformal to $\eta\in(0,\eta_+)$), the closed radiation universe
+$a(\eta)=a_0\sin\eta$, $\eta\in(0,\pi)$, and global de Sitter spacetime
+(conformal to $\eta\in(-\pi/2,\pi/2)$ with $\Sigma=S^3$) \citep{HE1973}. In
+all of them, nothing outside an event's chronological past is ever settled
+from it.
+
+\begin{proposition}[The future closes at maximum expansion]\label{prop:dust}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times S^3$ with $\eta_+-\eta_->\pi$.
+Then $\Set(b)=\Is(b)$ if $\eta_b\le\eta_-+\pi$, and $\Set(b)=M$ if
+$\eta_b>\eta_-+\pi$. In particular, in the closed dust FLRW universe,
+$a(\eta)=\tfrac12 a_m(1-\cos\eta)$, $\eta\in(0,2\pi)$, the transition is at
+$\eta=\pi$, the moment of maximum expansion. In the Einstein static universe
+($\eta_\pm=\pm\infty$), $\Set(b)=M$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+If $\eta_b>\eta_-+\pi$, choose $c\in(\eta_-,\eta_b-\pi)$. Then $\Is(b)\cap S_c$
+is the open ball of radius $\eta_b-c>\pi$, i.e.\ all of $S_c$, and
+Corollary~\ref{cor:cauchy} applies. If $\eta_b\le\eta_-+\pi$, every admissible
+$c>\eta_-$ has $\eta_b-c<\pi$, and the argument of
+Proposition~\ref{prop:conformal} applies verbatim.
+\end{proof}
+
+\begin{remark}
+Under deterministic laws, then, the closed dust universe has a sharp
+\emph{closing of the future}. While it expands, what is real from an event
+(its past) settles nothing beyond itself. From every event after maximum
+expansion, the entire future, indeed the entire spacetime, is settled. The
+closed radiation universe and de Sitter spacetime never close; the Einstein
+static universe is closed from every event. Whether ``the future is open''
+is thus not a question for logic or for temporal ontology alone; given the
+laws, it is a question about the global causal structure, and it can have
+different answers at different cosmic epochs.
+\end{remark}
+
+\paragraph{Relation to prior work.} Geroch gives an equivalent form of his
+definition, by an achronal surface $S\subseteq I^-(q)$ with $x\in D^+(S)$
+\citep[sec.~3]{Geroch1977}; Theorem~\ref{thm:char} is a slicing version of this
+for globally hyperbolic spacetimes. Geroch already notes the Einstein static
+universe, where prediction reaches everything \citep[Fig.~5]{Geroch1977}, and
+conjectured that prediction of an event to the future of $q$ requires a
+compact spacelike slice; that conjecture was refined and proved by Manchak
+\citep{Manchak2008} (see also \citep{Lesourd2021}). Proposition~\ref{prop:dust} is
+consistent with it: the future closes only in spatially closed universes. We
+have not found the dust threshold at maximum expansion, or the contrast
+between settled and real, in the sources read. Manchak also shows that an
+observer who does not already know the spacetime cannot verify such
+predictions \citep{Manchak2008}; $\Set(b)$ is a nomological notion given $M$,
+not an epistemic one.
+
+\section{The logic of standpoints}\label{sec:logic}
+
+Read $\Box A$ at $b$ as ``from every standpoint real from $b$, $A$'', i.e.\
+$A$ holds at every $x\le b$. The standpoint frame is $(M,R)$ with $bRx$ iff
+$x\le b$. It is reflexive and transitive, so S4 is valid, and in causal
+spacetimes $R$ is antisymmetric. Goldblatt proved that for the causal order of
+Minkowski spacetime the valid formulas are exactly the theorems of S4.2
+\citep{Goldblatt1980}; by time reversal this applies to $R$.
+
+The axiom .2 is $\Diamond\Box A\to\Box\Diamond A$. On reflexive transitive
+frames it is valid iff the frame is directed: whenever $bRx$ and $bRy$ there is
+$z$ with $xRz$ and $yRz$ \citep{BdRV2001}. Applied to the subframe generated
+by $b$ (the events $x\le b$), this gives:
+
+\begin{proposition}\label{prop:dot2}
+.2 is valid on the subframe generated by $b$ if and only if any two events in
+$J^-(b)$ have a common causal past: $J^-(x)\cap J^-(y)\ne\emptyset$ for all
+$x,y\le b$.
+\end{proposition}
+
+\begin{proof}
+Directedness of the generated subframe requires, for every $u\le b$ and all
+$x,y\le u$, some $z\le x,y$; since $x,y\le u\le b$, this is the stated
+condition, and conversely the stated condition gives it for every $u$.
+\end{proof}
+
+In standpoint terms, .2 says that any two standpoints real from $b$ share a
+common ground. Its failure means that $b$'s fragment contains standpoints whose
+own fragments are disjoint: histories with no common origin, coordinated
+only by having $b$ in their common future.
+
+\begin{proposition}\label{prop:horizon}
+Let $M$ be conformal to $(\eta_-,\infty)\times\mathbb R^3$ with $\eta_->-\infty$,
+for instance a spatially flat FLRW universe with a big bang ($\eta_-=0$), or
+one preceded by a finite inflationary era (more negative $\eta_-$). Then
+$x,y\in M$ have a common past iff $|X-Y|<(\eta_x-\eta_-)+(\eta_y-\eta_-)$. Hence
+.2 fails on the subframe generated by every event. If $\eta_-=-\infty$, .2 is
+valid everywhere.
+\end{proposition}
+
+\begin{proof}
+$J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ for $c>\eta_-$. Two such balls meet for
+some $c>\eta_-$ iff $|X-Y|\le(\eta_x-c)+(\eta_y-c)$ for some such $c$, i.e.\ iff
+$|X-Y|<\eta_x+\eta_y-2\eta_-$, and a common point of the balls is a common past
+event. For any $b$, $J^-(b)\cap S_c$ is a ball of radius $\eta_b-c$, so for
+$c$ close to $\eta_-$ it contains points $x,y\in S_c$ with
+$|X-Y|=2(\eta_b-c)>2(c-\eta_-)$ once $c<(\eta_b+\eta_-)/2$; these have no common
+past. If $\eta_-=-\infty$ the bound is never violated.
+\end{proof}
+
+This is the horizon problem of standard cosmology in modal dress
+\citep{Rindler1956,Guth1981}. Without inflation, two points of the last
+scattering surface in our past light cone, at comoving separation up to
+$2(\eta_0-\eta_{\rm ls})$, have a common past only if
+$2(\eta_0-\eta_{\rm ls})<2\eta_{\rm ls}$, which fails by a large factor:
+\emph{the logic of our own standpoint is S4 but not S4.2}. An inflationary era
+lowers $\eta_-$ enough that every pair of observed points has a common past;
+this restores .2 for the observed pairs, which is exactly what inflation was
+introduced to do. It does not restore .2 for all pairs in our past unless the
+inflationary era extends without past limit, which the Borde--Guth--Vilenkin
+theorem makes doubtful \citep{BGV2003}. So even with inflation, our standpoint
+logic is S4 without .2, with .2 holding on a sub-domain large enough to
+contain everything we can observe.
+
+\begin{remark}
+Validity of S4 alone on all globally hyperbolic standpoint frames is
+immediate. Causal modal logics of general spacetimes are studied by Lewis and van der
+Schaaf \citep{vdSchaaf2026}, mostly for the future-directed relation, where
+confluence asks for a common \emph{future}; the past-directed frame used here
+can behave differently (Proposition~\ref{prop:horizon} has common futures for
+every pair). Whether S4 is exactly the logic of the class of all past-directed
+frames, and which logics arise from natural classes (compact Cauchy surfaces,
+black holes, causal sets), we leave open. We have not found the
+identification of the horizon problem with the failure of .2 in the sources
+read.
+\end{remark}
+
+\section{Where grounding matters}\label{sec:grounding}
+
+A standpoint-first ontology says that what is real is real from standpoints,
+and that the tenseless geometry is what the standpoints agree on. A
+block-first ontology says that the geometry of a single block is basic, and
+what is real from $b$ is the restriction of the block to $b$'s past. When every
+event is a standpoint, the two agree on every fact: every event lies in its
+own fragment, so the fragments cover $M$ and their agreement fixes the
+geometry \citep{Earman2008}. Suppose instead that the standpoints that exist
+are the events on matter worldlines, a natural restriction if a standpoint is
+a place where something happens. Let $\Gamma$ be the union of those worldlines.
+
+\begin{definition}
+The \emph{grounded region} is $G=\bigcup_{s\in\Gamma}J^-(s)=J^-(\Gamma)$, the
+events real from some existing standpoint. The \emph{determined region} is
+$D=G\cup\Set(\Gamma)$, where $\Set(\Gamma)$ is the set of events all of whose
+past-inextendible causal curves meet $\bigcup_{s\in\Gamma}\Is(s)$. The
+\emph{shadow} is $M\setminus D$.
+\end{definition}
+
+$G$ is a past set, so no future-directed causal curve from outside $G$ enters
+$G$, and data in $G$ fix nothing to their past beyond $G$; deterministic laws
+extend $G$ only by $\Set(\Gamma)$. On the shadow, the two ontologies
+disagree. The block-first ontology says the shadow has a geometry and
+contents, as definite as anything else. The standpoint-first ontology says
+nothing there is real from any standpoint, and nothing real from a
+standpoint fixes it; so, unless the laws carry more than domain-of-dependence
+information, there is no fact about it.
+
+\begin{proposition}[A lone observer in de Sitter]\label{prop:ds}
+Let $M$ be global de Sitter spacetime and $\Gamma$ a single inextendible
+timelike geodesic. Then $D=J^-(\Gamma)$ up to its null boundary, and the shadow
+contains the nonempty open set $M\setminus J^-(\Gamma)$, which is the region
+beyond the observer's future event horizon.
+\end{proposition}
+
+\begin{proof}
+Conformally, $M$ is $(-\pi/2,\pi/2)\times S^3$ and $\Gamma$ is the curve $X=N$,
+a pole. Then $\bigcup_{s\in\Gamma}\Is(s)=\{d(X,N)<\pi/2-\eta\}$, the open region below the
+future event horizon \citep{GibbonsHawking1977}. For $x$ outside it and
+$\eta_-<c<\eta_x$, $J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ lies in
+$B(N,\pi/2-c)$ iff $d(X,N)+\eta_x<\pi/2$ by Lemma~\ref{lem:balls}, i.e.\ iff $x$
+is below the horizon. The proof of Theorem~\ref{thm:char} applies with
+$\bigcup_{s}\Is(s)$, an open past set, in place of $\Is(b)$. So no event beyond
+the horizon is settled.
+\end{proof}
+
+Half of global de Sitter spacetime is thus real from no standpoint and not
+fixed by anything real from one. By contrast, in a homogeneous universe with
+matter everywhere, every event lies on or in the past of a matter worldline,
+the shadow is empty, and the two ontologies agree on every fact.
+
+\paragraph{What this shows.} The strongest objection to standpoint-first
+ontologies of time is that they agree with eternalism on everything and
+differ only in a claim about fundamentality, which may be idle. The shadow
+gives that claim a precise locus. The disagreement is real exactly when some
+region is in the past of no matter and is not fixed from such pasts by the
+laws. It is empty in the idealized homogeneous model of our universe, and
+large in sparse universes with event horizons. Earman's discussion of
+observational indistinguishability \citep{Earman2008,Malament1977} is the
+epistemic shadow of the same structure; the point here is that for a
+standpoint-first ontology the underdetermination is ontic, and its extent is
+computable.
+
+\paragraph{Limits.} Three caveats. The restriction of standpoints to matter is
+an extra premise; with every event a standpoint the shadow is empty. Laws that
+carry more than domain-of-dependence information, notably analyticity, would
+fix the shadow; Einstein's equations do not impose analyticity, and
+Manchak's results on observationally indistinguishable extensions
+\citep{Manchak2008} suggest that even the region we have called determined is
+fixed only given the spacetime, not from the grounded data alone. And test
+matter is an idealization: a real lone body in de Sitter would be a
+Schwarzschild--de Sitter spacetime, where the same horizon structure appears.
+
+\section{Conclusion}
+
+The companion theorem fixes the content of an event's fragment. Horizons then
+decide three further things: whether that fragment settles anything beyond
+itself, whether the standpoints in it share common ground, and whether a
+standpoint-first ontology differs from eternalism at all. The answers are
+computable from conformal structure. In our idealized universe they are:
+nothing beyond the past is settled; the standpoint logic is S4 without .2,
+with .2 restored by inflation on the observable domain; and the grounding
+dispute has an empty shadow.
+
+\begin{thebibliography}{99}
+\bibitem{BGV2003} A. Borde, A. H. Guth and A. Vilenkin, Inflationary
+spacetimes are incomplete in past directions, \emph{Phys.\ Rev.\ Lett.} 90
+(2003) 151301.
+\bibitem{BS2005} A. N. Bernal and M. S\'anchez, Smoothness of time functions
+and the metric splitting of globally hyperbolic spacetimes, \emph{Commun.\
+Math.\ Phys.} 257 (2005) 43--50.
+\bibitem{BdRV2001} P. Blackburn, M. de Rijke and Y. Venema, \emph{Modal Logic}
+(Cambridge University Press, 2001).
+\bibitem{CH1995} R. Clifton and M. Hogarth, The definability of objective
+becoming in Minkowski spacetime, \emph{Synthese} 103 (1995) 355--387.
+\bibitem{Earman2008} J. Earman, Reassessing the prospects for a growing block
+model of the universe, \emph{Int.\ Stud.\ Phil.\ Sci.} 22 (2008) 135--164.
+\bibitem{Geroch1977} R. Geroch, Prediction in general relativity, in J. Earman,
+C. Glymour and J. Stachel (eds.), \emph{Foundations of Space-Time Theories},
+Minnesota Studies in the Philosophy of Science 8 (University of Minnesota
+Press, 1977) 81--93.
+\bibitem{GibbonsHawking1977} G. W. Gibbons and S. W. Hawking, Cosmological
+event horizons, thermodynamics, and particle creation, \emph{Phys.\ Rev.\ D}
+15 (1977) 2738--2751.
+\bibitem{Goldblatt1980} R. Goldblatt, Diodorean modality in Minkowski
+spacetime, \emph{Studia Logica} 39 (1980) 219--236.
+\bibitem{Guth1981} A. H. Guth, Inflationary universe: a possible solution to
+the horizon and flatness problems, \emph{Phys.\ Rev.\ D} 23 (1981) 347--356.
+\bibitem{HE1973} S. W. Hawking and G. F. R. Ellis, \emph{The Large Scale
+Structure of Space-Time} (Cambridge University Press, 1973).
+\bibitem{Malament1977} D. Malament, Observationally indistinguishable
+space-times, in \emph{Foundations of Space-Time Theories} (see Geroch 1977)
+61--80.
+\bibitem{Manchak2008} J. B. Manchak, Is prediction possible in general
+relativity?, \emph{Found.\ Phys.} 38 (2008) 317--321,
+doi:10.1007/s10701-008-9204-6.
+\bibitem{MS2008} E. Minguzzi and M. S\'anchez, The causal hierarchy of
+spacetimes, in \emph{Recent Developments in Pseudo-Riemannian Geometry}
+(EMS, 2008) 299--358, arXiv:gr-qc/0609119.
+\bibitem{Rindler1956} W. Rindler, Visual horizons in world-models,
+\emph{Mon.\ Not.\ R. Astron.\ Soc.} 116 (1956) 662--677.
+\bibitem{Lesourd2021} M. Lesourd, Observations and predictions from past
+lightcones, arXiv:2101.08324 (2021).
+\bibitem{vdSchaaf2026} M. Lewis and N. van der Schaaf, Some results on causal
+modalities in general spacetimes, arXiv:2601.14029v2 (2026).
+\bibitem{Stein1968} H. Stein, On Einstein--Minkowski space--time, \emph{J.\
+Phil.} 65 (1968) 5--23.
+\bibitem{Stein1991} H. Stein, On relativity theory and openness of the future,
+\emph{Phil.\ Sci.} 58 (1991) 147--167.
+\bibitem{SteinGR} A. Impellitteri, Stein's theorem in general relativity:
+locality, not symmetry, fixes what has become, preprint (2026).
+\end{thebibliography}
+
+\end{document}
