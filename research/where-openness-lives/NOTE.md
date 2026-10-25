@@ -15,6 +15,17 @@
 >   F_L(b) = J⁻(b) there too. The contrast with the massless field depends on
 >   the decay class, not on mass alone. §3 item 1 is therefore an exposition
 >   of known results, conditional on finite energy, and not a novelty claim.
+> - **T1 read at source (FULL-TEXT, Sadowski & Woronowicz, Rep. Math. Phys. 2
+>   (1971) 113–120, doi:10.1016/0034-4877(71)90024-3).** Theorem 2 (p. 116):
+>   with a mass gap, the past light cone V₋ satisfies their condition (T), and
+>   Corollary 1 (p. 117) shows x₀ + V₋ is a total set. The Remark on p. 116 says:
+>   "It is known that any solution of the Klein-Gordon equation, with positive
+>   mass vanishing in the past light cone, vanishes identically [5]", where [5]
+>   is R. Goodman, doctoral dissertation, MIT, 1963 (not read). Their class is
+>   Fourier transforms of finite measures on the mass shell. So T1 is a
+>   classical result going back at least to 1963, and is cited here, not
+>   claimed. Corollary 2 (a neighbourhood of a timelike half-line from past
+>   infinity is total) is the quantum form of the test-dust remark.
 > - T2 (beyond the cut-order claim) and T5 have not been checked.
 > - Priority on T3/T4 is still unresolved: Ellis–Sciama 1972 pp. 41–42 and
 >   Earman 1995 pp. 125–130 have not been read.
