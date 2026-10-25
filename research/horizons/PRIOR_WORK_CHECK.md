@@ -189,3 +189,17 @@ Next steps: read Earman 1995 (prediction and closed universes chapters), Hogarth
 and Norton on indistinguishability; compute the dust threshold independently; read
 the full Shehtman/Shapirovsky papers and Goldblatt before asserting the horizon-problem
 correspondence is unreported.
+
+## Addendum, 2026-10-25 (draft 3)
+
+- Manchak 2008 re-read in full (FULL-TEXT, PDFKit extraction of the LSE copy,
+  4 pp.). Pinned: theorem p. 319 ("If there are points q,p such that
+  p in P(q) ∩ I+(q), then (M,g) admits a compact, spacelike slice"; slice =
+  closed achronal edgeless set, n. 9); genuine-prediction theorem p. 320
+  (genuine domain contained in the boundary of J-(q)), robust under any local
+  conditions (p. 321). Footnote 15 cites Earman 1995 pp. 125-130 and
+  Ellis-Sciama 1972 pp. 41-42 for the view that Maxwell's equations allow
+  prediction in some spacetimes: a lead for prior work on law-relative
+  fixedness (F_L). Those two sources NOT read.
+- Draft 3 wording now follows these locators; "compact Cauchy surface"
+  replaced by "compact spacelike slice".

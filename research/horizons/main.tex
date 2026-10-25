@@ -142,8 +142,8 @@ open.
 of $x$ such that every past-directed timelike curve from $x$ without past
 endpoint enters $I^-(q)$, but $I^-(x)\not\subseteq I^-(q)$ \citep[sec.~3]{Geroch1977}.
 $\Det(b)$ is the causal-curve analogue of the union of $P(b)$ with the
-events whose pasts lie in that of $b$; the two differ at most on null
-boundaries. Geroch gives an equivalent form by achronal surfaces in $I^-(q)$
+events whose pasts lie in that of $b$; we expect the two to differ at most
+on null boundaries, but have not proved it. Geroch gives an equivalent form by achronal surfaces in $I^-(q)$
 \citep[sec.~3]{Geroch1977}; Theorem~\ref{thm:char} is a slicing form for
 globally hyperbolic spacetimes.
 
@@ -272,12 +272,18 @@ maximum expansion, so that an observer can then in principle see the whole
 universe, is known \citep{GronJohannesen2011,BolotinTanatarov2013}; the
 Einstein static case is Geroch's \citep[Fig.~5]{Geroch1977}. What
 Proposition~\ref{prop:dust} adds is the consequence for determination: with
-Corollary~\ref{cor:cauchy}, the vanishing of the particle horizon is exactly
-the condition under which everything is guaranteed from $b$, so that every
-law with the domain-of-dependence property fixes everything from what is real
-from $b$. This is consistent with Manchak's result that prediction of events
-to the future of an observer requires a compact Cauchy surface
-\citep{Manchak2008}.
+Corollary~\ref{cor:cauchy}, once the particle horizon has vanished
+($\eta_b>\pi$), everything is guaranteed from $b$, so that every law with the
+domain-of-dependence property fixes everything from what is real from $b$.
+This fits Manchak's theorem that if some event of $b$'s timelike future lies
+in Geroch's domain of prediction of $b$, the spacetime admits a compact
+spacelike slice \citep[p.~319]{Manchak2008}. That theorem concerns the
+geometric notion. The flow law of Remark~\ref{rem:laws} shows that it has no
+analogue for what a particular law fixes: in Minkowski spacetime, which has no
+compact slice, that law fixes all of $b$'s timelike future. Manchak also
+records the view that ``Maxwell's equations constrain some spacetimes in such
+a way as to allow for prediction'' \citep[p.~321 and n.~15]{Manchak2008}, so
+the law-relative notion has antecedents.
 
 Before maximum expansion a particular field can fix more than is guaranteed.
 Light leaving a point of the closed model refocuses at its antipode after
@@ -296,7 +302,8 @@ $\eta_b\le\pi$ it is nonempty and disjoint from $\Det(b)$.
 \begin{proof}
 Here $\psi=a\phi$ solves the conformally invariant equation of the Einstein
 static universe, $\partial_\eta^2\psi=\Delta\psi-\psi$ on the unit $S^3$
-\citep[app.~D]{Wald1984}, and extends uniquely to $\mathbb R\times S^3$.
+\citep[app.~D]{Wald1984}, and by global well-posedness extends uniquely to
+$\mathbb R\times S^3$.
 Expanding in spherical harmonics of degree $n$, which have frequency $n+1$
 and parity $(-1)^n$ under the antipodal map, each mode, and so every smooth
 solution, satisfies $\psi(\eta+\pi,-X)=-\psi(\eta,X)$. Two solutions that agree on $\Is(b)$ agree, by continuity, on $J^-(b)$, and
@@ -315,7 +322,8 @@ this field first fixes anything beyond the past.
 
 For a law whose fixed set itself changes at the threshold, take the comoving
 flow $u=a^{-1}\partial_\eta$ of the closed dust model with the equations of
-Remark~\ref{rem:laws}. The comoving line through $X$ meets $\Is(b)$ iff
+Remark~\ref{rem:laws}; here $u$ is the dust's own four-velocity, so the law
+adds no structure the model lacks. The comoving line through $X$ meets $\Is(b)$ iff
 $d(X,Y)<\eta_b$, so, by continuity in $X$ and by choosing data supported off
 the closed ball, $F_{\mathcal L}(b)=(0,2\pi)\times\bar B(Y,\eta_b)$. This is a
 proper subset of $M$, containing events in $b$'s timelike future, if
@@ -382,8 +390,10 @@ indeterministic laws, about which $\Det(b)$ and $F_{\mathcal L}(b)$ are
 silent. Second, the closed
 dust result concerns an idealized model with deterministic, classical
 dynamics; it is not a claim about our universe, which on current evidence is
-not of that kind. Third, Manchak shows that an observer who does not already
-know the spacetime cannot verify such predictions \citep{Manchak2008};
+not of that kind. Third, Manchak shows that \emph{genuine} prediction, required to
+hold in every inextendible spacetime into which the observer's causal past
+embeds isometrically, reaches no further than the boundary of that past, even
+under any local conditions on matter \citep[pp.~320--321]{Manchak2008};
 $\Det(b)$ and $F_{\mathcal L}(b)$ are nomological notions given $M$, not
 epistemic ones.
 
