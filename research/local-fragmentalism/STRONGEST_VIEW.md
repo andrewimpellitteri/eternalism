@@ -101,7 +101,7 @@ events x_n converge to x and each x_n is real from b, then x is real from b.
 That is, each fragment F(b) is a closed set. (This pointwise closedness is
 weaker than closedness of B_M in M×M, but it suffices: F(b) then contains the
 closure of I^-(b), which is J^-(b) in globally hyperbolic spacetimes, so the
-argument of Proposition 10 goes through.) This expresses that reality from a
+argument of Proposition 12 (Regularity) goes through.) This expresses that reality from a
 standpoint has no gaps at its own boundary, and it agrees with Stein's
 principle that whatever can causally influence b has become for b. [THESIS]
 
@@ -135,7 +135,7 @@ leaves open: which frames relativity permits.
 ## 3. What follows
 
 **R1. Fragments are causal pasts.** In every globally hyperbolic spacetime,
-I^-(b) ⊆ F(b) ⊆ J^-(b). [PROVED: Theorems 7 and 8 of the paper, given P2–P4
+I^-(b) ⊆ F(b) ⊆ J^-(b). [PROVED: Theorems 7 and 10 (main theorem; classification) of the paper, given P2–P4
 as the axioms (CB), (T), (LC) and non-universality, plus the off-shell premise.]
 
 **R2. There is no shared present.** Co-presence (each real for the other) is
@@ -150,17 +150,17 @@ reality accrues. Becoming is real and directed. [PROVED from R1.]
 **R4. The light cone is the only freedom.** Which lightlike-separated events
 are real for b is not fixed. A rule may even let curvature along the light ray
 decide. Requiring F(b) to be closed gives J^-(b), open gives I^-(b).
-[PROVED: Theorems 8–9 and Proposition 10.] With P6 the freedom closes:
+[PROVED: Theorems 10–11 and Proposition 12.] With P6 the freedom closes:
 R1 gives F(b) ⊆ J^-(b) and P6 gives J^-(b) ⊆ F(b), so F(b) = J^-(b) exactly,
 in every globally hyperbolic spacetime, with no dependence on curvature.
-P6′ gives the same result by a topological route (Proposition 10). Two
+P6′ gives the same result by a topological route (Proposition 12). Two
 independent principles, one causal and one topological, agree, which makes
 the choice of J^- over I^- principled rather than chosen to exclude the
 Weyl-gated rules. [PROVED given P6 or P6′] The view is thereby fully
 determined: there is no remaining parameter.
 
 **R5. The discrete case is exact.** In causal set theory, fragments are
-exactly causal pasts, with no freedom. [PROVED: Proposition 17, using
+exactly causal pasts, with no freedom. [PROVED: Proposition 19 (causal sets), using
 non-manifoldlike posets.]
 
 **R6. The universe has no present.** Without P7, the totality is not an
@@ -181,7 +181,7 @@ the whole. [PROVED given P7]
 **R7. In Gödel universes fragmentation collapses.** In totally vicious
 spacetimes every fragment is everything, and the view coincides with
 eternalism. Locality isolates such universes, so this does not reach ours.
-[PROVED: Proposition 18; the "does not reach ours" part covers morphisms into
+[PROVED: Proposition 20 (Gödel isolation); the "does not reach ours" part covers morphisms into
 them only.]
 
 **R8. A shared present costs locality or structure.** Any view with a shared,
