@@ -26,6 +26,19 @@
 >   classical result going back at least to 1963, and is cited here, not
 >   claimed. Corollary 2 (a neighbourhood of a timelike half-line from past
 >   infinity is total) is the quantum form of the test-dust remark.
+> - **Ellis–Sciama and Earman: unavailable; worked around.** Neither text
+>   could be obtained. Indirect evidence (FULL-TEXT, Ellis, "Cosmology and
+>   local physics", arXiv:gr-qc/0102017, which revisits the Ellis–Sciama
+>   topics): Ellis summarizes [Ellis–Sciama 1972] as treating Olbers' paradox,
+>   Mach's principle, the arrow of time, local-to-global relations, and how
+>   "instantaneous" constraint equations fit relativistic field equations. He
+>   does not mention light refocusing or Huygens-type determination in closed
+>   universes. This suggests, *but does not show*, that the pp. 41–42 point
+>   about Maxwell's equations concerns constraints, not refocusing. A
+>   secondary summary of Earman ch. 5 describes it as about the explanatory
+>   status of the horizon problem (discovery only). The horizons paper now
+>   says explicitly that these works were not consulted and may overlap with
+>   Theorem "diamonds". An expert reader should be asked.
 > - T2 (beyond the cut-order claim) and T5 have not been checked.
 > - Priority on T3/T4 is still unresolved: Ellis–Sciama 1972 pp. 41–42 and
 >   Earman 1995 pp. 125–130 have not been read.
