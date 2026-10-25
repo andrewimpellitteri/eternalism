@@ -136,6 +136,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | blocked | `stein-energy-pocket-probe` — Test one bounded route to energy-compatible flat-pocket gluing | 7 | stein-energy-rigidity-audit, stein-final-referee | — |
 | review | `horizons-independent-redteam` — Independently red-team Unreal Is Not Open before expert circulation | 10 | — | codex-horizons-referee |
 | review | `book-exploration-samples` — Park prose book concept and two exploratory chapter samples while keeping paper priority | 2 | — | codex-book-exploration |
+| open | `horizons-echo-exactness` — Determine or sharply bound the conformal scalar fixed region on closed dust | 9 | — | — |
+| open | `horizons-scalar-priority` — Audit prior work and exact sources for scalar sharpness and antipodal echo | 9 | — | — |
+| open | `horizons-echo-robustness` — Test how narrowly the antipodal scalar identity depends on its field equation | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
