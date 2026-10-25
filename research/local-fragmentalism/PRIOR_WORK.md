@@ -20,6 +20,9 @@ certificate of priority.
 | Rovelli 2019/20, "Neither Presentism nor Eternalism", arXiv:1910.02474v2 | Full text (subagent) | "Fundamental becoming is real, but local and unoriented"; present "well defined, but relative to a location"; temporal structure = light-cone causal structure | Close in spirit; no causal-past identification, no fragmentalism, no theorem |
 | Slavov 2020, "Eternalism and Perspectival Realism About the 'Now'", *Found. Phys.* 50, DOI 10.1007/s10701-020-00385-x | Full text (subagent) | Perspectival truthmaking for "now"; explicitly rejects fragmentalism ("Events ... are not perspectival or separated into different fragments") | Opposing frame |
 | Wüthrich (arXiv:1207.1490, "The fate of presentism in modern physics") | Snippet | Past-light-cone presentism discussed; past-cone co-presence non-transitive | Light-cone presentism known as a separate proposal |
+| Whitehead, *Process and Reality* (1929), via Stapp, *Process Studies* 7(3) (1977) 173–182, and Hättich, *Quantum Processes* (2004) | **Discovery / secondary snippets only** (red team 07) | Reported: an actual occasion's "actual world" is its backward light cone; contemporaries are causally independent | **Possible anticipation of the philosophical content** (event-relative world = causal past). Primary text and locator unverified. Must read before any novelty claim about the fragment's content |
+| Čapek, *The Philosophical Impact of Contemporary Physics* (1961); "Relativity and the status of becoming", *Found. Phys.* (1975) | **From memory / unverified** (red team 07) | Probably argues that relativity makes becoming local, with no cosmic now | Possible anticipation; must read |
+| Earman 2008, "Reassessing the prospects for a growing block model of the universe", *Int. Stud. Phil. Sci.* 22, DOI 10.1080/02698590802496680 | **Title only** (project knowledge base) | Growing block in relativistic spacetimes | Highest-risk unread item for the GR extension itself; must read |
 | Stein 1968, 1991; Clifton & Hogarth 1995 | Full text | Becoming = causal past (point-relative), Minkowski only | The physics core; our GR extension is the paper in research/stein-gr |
 
 ## Verdict (updated after Fine 2006, Lipman, Dieks 2025)
@@ -38,6 +41,10 @@ certificate of priority.
 - Fine 2005 read: event standpoints considered and rejected on space/time
   asymmetry grounds; frame fragments preferred. The view's distinctive reply is
   general-relativistic (no global frames), see STRONGEST_VIEW O11.
+- New leads from the red team (unverified): Whitehead's "actual world" read as
+  the causal past (Stapp 1977), Čapek 1961/1975, and Earman 2008. Until these
+  are read, the claim "apparently new" covers only the derivation of the
+  fragment's content by a locality theorem, not the content itself.
 - Still unread: Lipman 2026 chs. 4 ("A Fragmentalist Theory of Time") and 6
   ("Spacetime and the Lessons of Relativistic Physics"); Iaquinto & Torrengo
   2022 ch. 4 "Relativity" (request-a-copy via the UniUPO repository).
