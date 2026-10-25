@@ -531,7 +531,14 @@ openness would consist in.
    with a completion semantics for future-tensed claims.
 5. Priority: Whitehead's own text, Lipman 2026, Iaquinto–Torrengo ch. 4
    (Earman 2008, Čapek 1975, Stapp 1977, Belnap 1992, Goldblatt 1980 now read).
-6. Not yet red-teamed: historical and non-Western traditions; experience,
+6. Grounding at horizons (tried and set aside, `research/horizons/PHIL_REVIEW.md`
+   §3): if only matter events are standpoints, regions beyond every matter
+   worldline's event horizon are real from no standpoint, and the view and
+   eternalism disagree there. Referee objections: the restriction conflicts
+   with O16 and is ad hoc on a field ontology; a restricted eternalist can
+   mimic it; the difference concerns the extent of spacetime, not time.
+   Not pursued unless these are answered.
+7. Not yet red-teamed: historical and non-Western traditions; experience,
    theology and social time (`redteam/METHOD.md`, groups 08–09).
 
 ## 8. Where the view sticks its neck out
