@@ -40,8 +40,12 @@ spacetime and the flat universes no local law need fix more than the causal
 past: a conformally coupled scalar field is fixed from an event exactly
 there. In the closed dust model everything is guaranteed from every event
 after maximum expansion, the known moment at which the particle horizon
-disappears; before it, the same scalar field is already fixed on an
-antipodal echo of the past, which lies outside the event's timelike future.
+disappears. Before it, the same scalar field is already fixed on three
+diamonds: the event's past, an antipodal echo of it, and a region of the
+event's own timelike future just before the big crunch, while the
+intervening future stays open. For this field, which travels on light rays
+alone, what is fixed is decided by null geodesics rather than by all causal
+curves.
 Other local laws fix more: one with a preferred flow fixes everything even in
 Minkowski spacetime. So unreality does not entail openness. How much of the
 unreal future is fixed from an event depends on the spacetime's causal
@@ -316,9 +320,67 @@ instance at $A(\eta_b/2,Y)$ when $b=(\eta_b,Y)$.
 \end{proof}
 
 The echo events are unreal from $b$ and fixed from $b$, but they lie beside
-$b$ or on its future light cone, not in its timelike future. So the geometric
-threshold at maximum expansion marks when everything is guaranteed, not when
-this field first fixes anything beyond the past.
+$b$ or on its future light cone, not in its timelike future. The field fixes
+more than the echo, including part of $b$'s timelike future. Let
+$\Diamond_b=\{(\eta,X)\in\mathbb R\times S^3:d(X,Y)+|\eta|<\eta_b\}$, the double
+cone in the Einstein static universe between $b$ and its mirror image
+$(-\eta_b,Y)$, and $U_b=\Diamond_b\cup A\Diamond_b\cup A^2\Diamond_b$.
+
+\begin{theorem}\label{thm:diamonds}
+In the setting of Proposition~\ref{prop:echo}, let $0<\eta_b<\pi$. Then
+$M\cap U_b\subseteq F_{\mathcal L}(b)\subseteq M\cap\overline{U_b}$. In
+particular $F_{\mathcal L}(b)$ contains the nonempty set
+$\{(\eta,X)\in M:d(X,Y)<\eta+\eta_b-2\pi\}$, which lies in $\Isp(b)$.
+\end{theorem}
+
+\begin{proof}
+For data $(f,g)$ at $\eta=0$, the Einstein static solution is
+$\psi(\eta,X)=\partial_\eta[\sin\eta\,M_f(X,\eta)]+\sin\eta\,M_g(X,\eta)$, where
+$M_h(X,r)$ is the mean of $h$ over the geodesic sphere of radius $r$ about
+$X$; one checks this on each mode, using that the zonal function of degree $n$
+on $S^3$ is $\sin((n+1)r)/((n+1)\sin r)$. So $\psi(x)$ depends on the data only
+near the sphere $\Sigma_x=S(X,\eta_x)$, which is the point $-X$ when $\eta_x=\pi$.
+
+\emph{Sufficiency.} Solutions agreeing on $\Is(b)$ agree on the ball
+$B(Y,\eta_b-\epsilon)$ in the slice $\eta=\epsilon$, hence on its domain of
+dependence in the Einstein static universe; the union over $\epsilon>0$ is
+$\Diamond_b$. The identities $\psi\circ A=-\psi$ and $\psi\circ A^2=\psi$ carry
+the agreement to $A\Diamond_b$ and $A^2\Diamond_b$.
+
+\emph{Necessity.} Let $x\in M\setminus\overline{U_b}$. Replacing $x$ by
+$A^{-1}x$ if $\eta_x>\pi$, assume $\eta_x\le\pi$. Let $C=\bar B(Y,\eta_b)$.
+Data supported off $C$ give a solution vanishing on $\Is(b)$: if $z\in\Is(b)$
+lay in its support, then $w\le z\ll b$ for some $w$ in the support of the data,
+so $d(w,Y)<\eta_b$. If $\eta_x=\pi$, then $d(-X,Y)>\eta_b$, and data
+$(f,0)$ with $f$ a bump at $-X$ off $C$ give $\psi(x)=-f(-X)\neq0$. If
+$\eta_x<\pi$, then $\Sigma_x\not\subseteq C$: otherwise the connected set
+$S^3\setminus C$ lies in one of the two open balls bounded by $\Sigma_x$, so
+the other closed ball lies in $C$, which by the argument of
+Lemma~\ref{lem:balls} means
+$d(X,Y)+\eta_x\le\eta_b$ or $d(-X,Y)+\pi-\eta_x\le\eta_b$, that is,
+$x\in\overline{\Diamond_b}\cup\overline{A\Diamond_b}$. Take $p\in\Sigma_x\setminus C$
+and data $(0,g)$ with $g\ge0$ supported near $p$ off $C$ and $g(p)>0$; then
+$\psi(x)=\sin\eta_x\,M_g(X,\eta_x)>0$.
+
+Finally, if $d(X,Y)<\eta+\eta_b-2\pi$, then $d(X,Y)<\eta-\eta_b$ because
+$\eta_b<\pi$, so $(\eta,X)\in\Isp(b)$; the set contains $(\eta,Y)$ for
+$\eta>2\pi-\eta_b$.
+\end{proof}
+
+On $b$'s comoving geodesic $X=Y$, the field is fixed from $b$ for
+$\eta\le\eta_b$ and for $\eta>2\pi-\eta_b$, and open in between: the end is
+fixed before the middle. The reason is that the past light cone of an event
+just before the crunch wraps around the universe and refocuses near $Y$ at the
+big bang, inside what is real from $b$. The same sphere argument shows that,
+up to boundary, $M\cap U_b$ is the set
+of events all of whose past-inextendible null geodesics meet $\Is(b)$, so for
+this field, which propagates on light rays alone, the null geodesics decide
+what is fixed. The same argument applies to global de Sitter spacetime,
+conformal to the slab $(-\pi/2,\pi/2)$, where the field is fixed from $b$ on the
+antipodal comoving geodesic for all $\eta>-\eta_b$, although no signal from that
+geodesic ever reaches the comoving geodesic of $b$. So the geometric threshold
+at maximum expansion marks when everything is guaranteed, not when this field
+first fixes anything beyond the past.
 
 For a law whose fixed set itself changes at the threshold, take the comoving
 flow $u=a^{-1}\partial_\eta$ of the closed dust model with the equations of
@@ -331,9 +393,8 @@ $\eta_b<\pi$, and all of $M$ if $\eta_b\ge\pi$. Under this law the answer to
 ``is the future fixed from here?'' differs between events before and after
 maximum expansion.
 
-For the conformal scalar, whether $F_{\mathcal L}(b)$ is exactly the set in
-Proposition~\ref{prop:echo} for $\eta_b\le\pi$, and whether in the closed models some local law fixes no
-more than $\Det(b)\cup J^-(b)$, we leave open.
+Whether in the closed models some local law fixes no more than
+$\Det(b)\cup J^-(b)$ we leave open.
 
 \section{Unreality and openness}\label{sec:phil}
 
@@ -357,10 +418,11 @@ Einstein static universe, everything is. So:
 \item \emph{Unreality does not entail openness.} An event can be unreal from
 $b$ and guaranteed from $b$: in the closed dust model, every future event is
 so from every event after maximum expansion. Under particular laws, events
-can be unreal and fixed without being guaranteed: the echo of the conformal
-scalar in the closed dust model before maximum expansion
-(Proposition~\ref{prop:echo}), and, in $b$'s timelike future, the flow law of
-Remark~\ref{rem:laws} even in Minkowski spacetime. This is the relativistic
+can be unreal and fixed without being guaranteed: the conformal scalar in
+the closed dust model before maximum expansion fixes the echo and part of
+$b$'s timelike future near the crunch (Theorem~\ref{thm:diamonds}), and the
+flow law of Remark~\ref{rem:laws} fixes all of $b$'s timelike future even in
+Minkowski spacetime. This is the relativistic
 form of the growing block combined with determinism, and on our reading it is
 also where Rak\'ic's intuition belongs \citep{Rakic1997}: her sea-fight is, at
 most, fixed from the observer, not real from her.
@@ -444,9 +506,10 @@ lower bound on what any particular law fixes. In most standard models nothing be
 event's past is guaranteed, and in Minkowski spacetime and the flat universes
 a conformal scalar field shows that nothing more need be fixed; in the closed
 dust model everything is guaranteed from every event after maximum
-expansion. Particular fields can fix more than is guaranteed, in the closed
-dust model before maximum expansion and, with a preferred flow, even in
-Minkowski spacetime. The question whether the future is open from a
+expansion. Particular fields can fix more than is guaranteed: in the closed dust
+model before maximum expansion, a conformal scalar is fixed on part of an
+event's far future while its nearer future stays open, and with a preferred
+flow a field is fixed everywhere even in Minkowski spacetime. The question whether the future is open from a
 standpoint thus divides into a question about the causal structure of the
 spacetime, which settles the guarantee, and a question about the fields,
 which that structure does not settle.

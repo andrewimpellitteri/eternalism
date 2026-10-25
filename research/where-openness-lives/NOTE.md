@@ -1,5 +1,24 @@
 # Where the open future lives
 
+> **Verification update (25 Oct 2026, see VERIFY.md).**
+> - **T3 (closed dust) and T4 (de Sitter): PROVED and numerically confirmed.**
+>   Exact statement: N(b) = M ∩ U and M ∩ U ⊆ F_L(b) ⊆ M ∩ cl(U), where U is the
+>   union of the three diamonds. The gap at η_x = π is closed with data (f, 0).
+>   The spherical-means formula ψ = ∂_η[sin η·M_f] + sin η·M_g replaces the
+>   Penrose-patch argument. Now in the horizons paper as Theorem "diamonds".
+> - **T1 ("mass closes the future"): ALREADY KNOWN in quantum form, and
+>   class-dependent.** Camassa, arXiv:math-ph/0607057 §4.4.1 (full text of that
+>   section), citing Sadowski–Woronowicz 1971: in the massive case the algebra
+>   of the forward or backward light cone is the total algebra. The massless
+>   contrast, timelike duality, is credited to Buchholz 1978. In the *smooth*
+>   class a massive solution can vanish on a null half-space, so massive
+>   F_L(b) = J⁻(b) there too. The contrast with the massless field depends on
+>   the decay class, not on mass alone. §3 item 1 is therefore an exposition
+>   of known results, conditional on finite energy, and not a novelty claim.
+> - T2 (beyond the cut-order claim) and T5 have not been checked.
+> - Priority on T3/T4 is still unresolved: Ellis–Sciama 1972 pp. 41–42 and
+>   Earman 1995 pp. 125–130 have not been read.
+
 Draft research note, 25 October 2026. Status labels on every claim:
 **PROVED** (full argument given here), **SKETCH** (argument given, standard
 analytic steps not written out or checked), **CONJECTURE**, **LEAD** (prior work
