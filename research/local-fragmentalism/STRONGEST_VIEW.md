@@ -28,8 +28,14 @@ argues it is not definable from Minkowski causal geometry and adds it as a
 primitive. Whitehead reportedly makes an occasion's "actual world" its
 backward light cone (via Stapp 1977; secondary, unverified). Branching
 space-times and causal-set "becoming" (Dowker, Sorkin) have related
-structures. Still unread: Earman 2008, Čapek 1961/1975, Lipman 2026 chs. 4 and
-6, Iaquinto & Torrengo 2022 ch. 4. So the content "an event's reality is its
+structures. Čapek (1975, read) already holds that an event's present is
+itself alone and that its absolute future need not be postulated, on
+epistemic grounds. Earman (2008, read §§5–7) builds worldline becoming from
+causal pasts and states that "once the symmetries of Minkowski spacetime are
+lost, the Clifton-Hogarth results on the unique definability of the Becoming
+relation no longer apply" (p. 151); he does not attempt a GR result. Still
+unread: Whitehead's own text, Lipman 2026 chs. 4 and 6, Iaquinto & Torrengo
+2022 ch. 4. So the content "an event's reality is its
 causal past" may well not be new. What no source checked so far contains is
 the *derivation* of that content from a locality principle across curved
 spacetimes (§3), and the replies below that depend on it.
@@ -166,9 +172,10 @@ for every globally hyperbolic spacetime M:
 Lipman's constraint and reflexivity hold by construction (b ∈ F(b)). P2 adds
 transitivity, so R is a preorder, and with antisymmetry in causal spacetimes
 (R2) a partial order: the frame is an S4 frame (with F(b) = J^-(b), R is the
-converse of the causal order). Goldblatt (1980; bibliographic details from
-memory, not read) studied the modal logic of the Minkowski causal order, so
-the logic of "from every standpoint real from here" is a known object; the
+converse of the causal order). Goldblatt (1980, *Studia Logica*, abstract and
+main theorem read) proved that the modal logic of the reflexive Minkowski
+causal order is S4.2; by time reversal the same holds for "from every
+standpoint real from here". So the logic of the frame is a known object; the
 view adds which frame physics selects. P3 says the assignment M ↦ (W, R, v) is
 locally covariant. The Stein-GR theorem is then a **classification of locally
 covariant standpoint frames**: every non-universal such family has
@@ -365,8 +372,9 @@ Brading's, that need one. Here it is a consequence (R6).
 Fine has the frame; Rakić has event-relative realization; causal-set
 theorists have growth of causal pasts; Whitehead may have the content. The
 view's claim to novelty is the locality derivation across curved spacetimes
-and its consequences (R1, R4, R8, R10, O11b). [Pending Earman 2008, Čapek,
-Lipman 2026, Iaquinto–Torrengo ch. 4]
+and its consequences (R1, R4, R8, R10, O11b). Earman 2008 explicitly leaves that
+derivation undone (p. 151). [Pending Whitehead's own text, Lipman 2026,
+Iaquinto–Torrengo ch. 4]
 
 **O10. "Coordination between fragments is brute"** (Hofweber & Lange against
 Fine, *Noûs* 2016). On the official relativist core, the fragments are
@@ -462,7 +470,14 @@ not an extra cost of the view.
 that host observers. A standpoint is a location of possible becoming, not of
 consciousness. Anyone who prefers observers' worldlines as the only
 standpoints gets the same fragments from the worldline form of the theorem
-(Corollary 9).
+(Corollary 9). But that alternative has a cost the event version avoids.
+Earman (2008, §6) notes that with worldline standpoints the union of what has
+become along a worldline can miss part of spacetime (accelerated observers;
+event horizons, as in de Sitter), and that observationally indistinguishable
+spacetimes (Malament 1977) then leave the global geometry unfixed by the
+standpoints. With every event a standpoint, the fragments jointly cover M
+(every b lies in F(b)), so the agreement of standpoints (P5) fixes the whole
+geometry.
 
 **O17. "Not real is not open"** (Hartshorne, Čapek, Prigogine, Deleuze; the
 open-future logicians). Granted. R10 separates the two questions: the future
@@ -505,8 +520,8 @@ openness would consist in.
    curved spacetimes?
 4. §2b: give an explicit object language (hybrid S4 over the causal order)
    with a completion semantics for future-tensed claims.
-5. Priority: Earman 2008, Whitehead (and Stapp 1977), Čapek, Lipman 2026,
-   Iaquinto–Torrengo ch. 4.
+5. Priority: Whitehead's own text, Lipman 2026, Iaquinto–Torrengo ch. 4
+   (Earman 2008, Čapek 1975, Stapp 1977, Belnap 1992, Goldblatt 1980 now read).
 6. Not yet red-teamed: historical and non-Western traditions; experience,
    theology and social time (`redteam/METHOD.md`, groups 08–09).
 
