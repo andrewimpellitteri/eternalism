@@ -293,8 +293,8 @@ pp.~125--130), and Theorem~\ref{thm:diamonds} below may overlap with them.
 
 Before maximum expansion a particular field can fix more than is guaranteed.
 Light leaving a point of the closed model refocuses at its antipode after
-conformal time $\pi$, and the conformally coupled scalar returns there with
-its sign reversed.
+conformal time $\pi$, and the rescaled conformal scalar $\psi=a\phi$ returns
+there with its sign reversed.
 
 \begin{proposition}\label{prop:echo}
 Let $M$ be the closed dust model, $g=a(\eta)^2(-d\eta^2+d\Omega_3^2)$ with
@@ -314,15 +314,16 @@ Expanding in spherical harmonics of degree $n$, which have frequency $n+1$
 and parity $(-1)^n$ under the antipodal map, each mode, and so every smooth
 solution, satisfies $\psi(\eta+\pi,-X)=-\psi(\eta,X)$. Two solutions that agree on $\Is(b)$ agree, by continuity, on $J^-(b)$, and
 hence on $A(J^-(b))\cap M$. If $(\eta,X)\in J^-(b)$ and $\eta+\pi<2\pi$, then
-$d(X,Y)\le\eta_b-\eta$, so $d(-X,Y)=\pi-d(X,Y)\ge(\eta+\pi)-\eta_b$, while
-$0<(\eta+\pi)-\eta_b<\pi$; so $A(\eta,X)\notin\Isp(b)$. If $\eta_b\le\pi$, then
+$d(X,Y)\le\eta_b-\eta$, so $d(-X,Y)=\pi-d(X,Y)\ge(\eta+\pi)-\eta_b$;
+thus $A(\eta,X)\notin\Isp(b)$. If $\eta_b\le\pi$, then
 $\Det(b)=\Is(b)$ by Proposition~\ref{prop:dust}, which lies in
 $\{\eta<\eta_b\}$, while $A(J^-(b))$ lies in $\{\eta>\pi\}$ and meets $M$, for
 instance at $A(\eta_b/2,Y)$ when $b=(\eta_b,Y)$.
 \end{proof}
 
-The echo events are unreal from $b$ and fixed from $b$, but they lie beside
-$b$ or on its future light cone, not in its timelike future. The field fixes
+For $\eta_b\le\pi$, the echo events are unreal from $b$ and fixed from $b$,
+but they lie beside $b$ or on its future light cone, not in its timelike
+future. The field fixes
 more than the echo, including part of $b$'s timelike future. Let
 $\Diamond_b=\{(\eta,X)\in\mathbb R\times S^3:d(X,Y)+|\eta|<\eta_b\}$, the double
 cone in the Einstein static universe between $b$ and its mirror image
@@ -330,9 +331,9 @@ $(-\eta_b,Y)$, and $U_b=\Diamond_b\cup A\Diamond_b\cup A^2\Diamond_b$.
 
 \begin{theorem}\label{thm:diamonds}
 In the setting of Proposition~\ref{prop:echo}, let $0<\eta_b<\pi$. Then
-$M\cap U_b\subseteq F_{\mathcal L}(b)\subseteq M\cap\overline{U_b}$. In
+$F_{\mathcal L}(b)=M\cap\overline{U_b}$. In
 particular $F_{\mathcal L}(b)$ contains the nonempty set
-$\{(\eta,X)\in M:d(X,Y)<\eta+\eta_b-2\pi\}$, which lies in $\Isp(b)$.
+$\{(\eta,X)\in M:d(X,Y)\le\eta+\eta_b-2\pi\}$, which lies in $\Isp(b)$.
 \end{theorem}
 
 \begin{proof}
@@ -348,6 +349,10 @@ $B(Y,\eta_b-\epsilon)$ in the slice $\eta=\epsilon$, hence on its domain of
 dependence in the Einstein static universe; the union over $\epsilon>0$ is
 $\Diamond_b$. The identities $\psi\circ A=-\psi$ and $\psi\circ A^2=\psi$ carry
 the agreement to $A\Diamond_b$ and $A^2\Diamond_b$.
+Moreover, $F_{\mathcal L}(b)$ is relatively closed in $M$: it is the
+intersection of the zero sets of all smooth difference solutions vanishing
+on $\Is(b)$. Since $M$ is open in the Einstein cylinder, taking the relative
+closure gives $M\cap\overline{U_b}\subseteq F_{\mathcal L}(b)$.
 
 \emph{Necessity.} Let $x\in M\setminus\overline{U_b}$. Replacing $x$ by
 $A^{-1}x$ if $\eta_x>\pi$, assume $\eta_x\le\pi$. Let $C=\bar B(Y,\eta_b)$.
@@ -364,13 +369,13 @@ $x\in\overline{\Diamond_b}\cup\overline{A\Diamond_b}$. Take $p\in\Sigma_x\setmin
 and data $(0,g)$ with $g\ge0$ supported near $p$ off $C$ and $g(p)>0$; then
 $\psi(x)=\sin\eta_x\,M_g(X,\eta_x)>0$.
 
-Finally, if $d(X,Y)<\eta+\eta_b-2\pi$, then $d(X,Y)<\eta-\eta_b$ because
+Finally, if $d(X,Y)\le\eta+\eta_b-2\pi$, then $d(X,Y)<\eta-\eta_b$ because
 $\eta_b<\pi$, so $(\eta,X)\in\Isp(b)$; the set contains $(\eta,Y)$ for
-$\eta>2\pi-\eta_b$.
+$\eta\ge2\pi-\eta_b$.
 \end{proof}
 
-On $b$'s comoving geodesic $X=Y$, the field is fixed from $b$ for
-$\eta\le\eta_b$ and for $\eta>2\pi-\eta_b$, and open in between: the end is
+On $b$'s comoving geodesic $X=Y$, the field is fixed from $b$ exactly for
+$\eta\le\eta_b$ and for $\eta\ge2\pi-\eta_b$, and open in between: the end is
 fixed before the middle. The reason is that the past light cone of an event
 just before the crunch wraps around the universe and refocuses near $Y$ at the
 big bang, inside what is real from $b$. The same sphere argument shows that,

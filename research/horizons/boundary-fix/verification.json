@@ -1,0 +1,16 @@
+{
+  "just_before": {
+    "time_in_pi_units": "149/100",
+    "fixed": false
+  },
+  "at_onset": {
+    "time_in_pi_units": "3/2",
+    "fixed": true
+  },
+  "just_after": {
+    "time_in_pi_units": "151/100",
+    "fixed": true
+  },
+  "post_max_echo_can_be_real": true,
+  "assumptions": "0<tau<pi, unrestricted smooth conformal scalar; analytical closure proof in manuscript"
+}
