@@ -101,8 +101,9 @@ or spacelike claims; a Belnap-style completion semantics is missing.
 2. **Make the view without P7 the official one;** keep P7 only as an optional
    add-on and state the stating problem openly (answers B).
 3. **Replace P5** by persistence along ≤ plus agreement on overlaps, and give
-   an explicit object language. Hybrid S4 over the causal order (Goldblatt's
-   S4.2) is a natural base (answers C).
+   an explicit object language. Hybrid S4 over the causal order is the
+   general base; Goldblatt's S4.2 holds only for Minkowski spacetime and fails
+   with particle horizons (NEW_PAPERS_CHECK.md) (answers C).
 4. **Restrict P6 to signalling influence,** and say plainly that Bell-nonlocal
    dynamics would be a falsifier (answers D-Bell).
 5. **Add a scope paragraph:** neutral on lived time, the open future, the arrow

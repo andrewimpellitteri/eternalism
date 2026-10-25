@@ -175,8 +175,12 @@ transitivity, so R is a preorder, and with antisymmetry in causal spacetimes
 converse of the causal order). Goldblatt (1980, *Studia Logica*, abstract and
 main theorem read) proved that the modal logic of the reflexive Minkowski
 causal order is S4.2; by time reversal the same holds for "from every
-standpoint real from here". So the logic of the frame is a known object; the
-view adds which frame physics selects. P3 says the assignment M ↦ (W, R, v) is
+standpoint real from here" in Minkowski spacetime. It does not carry over to
+all globally hyperbolic frames: in the half-spacetime t > 0 of Minkowski, two
+events in b's past can have no common past, and the S4.2 axiom ◇□A → □◇A
+fails (counterexample in NEW_PAPERS_CHECK.md). The failure is a particle
+horizon, so in big-bang cosmologies the standpoint logic is S4 without .2.
+The general frame is S4; the view adds which frames physics selects. P3 says the assignment M ↦ (W, R, v) is
 locally covariant. The Stein-GR theorem is then a **classification of locally
 covariant standpoint frames**: every non-universal such family has
 I^-(b) ⊆ v(b) ⊆ J^-(b) in every spacetime, and with P6, v(b) = J^-(b).
