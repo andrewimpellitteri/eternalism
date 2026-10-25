@@ -274,6 +274,11 @@ local laws, data real from b fix what happens at x.
   {t = c} with c ≤ t(b) − π. These are Cauchy surfaces, so every event is
   settled from b. [PROVED here]
 - The general criterion is OPEN; containing a Cauchy surface is sufficient.
+  Likely prior work for the general question (from memory, unread): Geroch,
+  "Prediction in general relativity" (1977), and Manchak, "Is prediction
+  possible in general relativity?" (*Found. Phys.* 2008), on when an
+  observer's past determines future events. Check before claiming anything
+  beyond the two examples.
 So "is the future open from b?" has a precise structural answer separate from
 "is the future real from b?": the second is always no; the first depends on
 the spacetime and the laws. This answers Rakić's sea-fight case (O14) and the
