@@ -137,8 +137,12 @@ uniqueness of the answer, which was an artefact of Minkowskian symmetry.
 Spacetimes are smooth, connected, four-dimensional, oriented and
 time-oriented Lorentzian manifolds. We follow Clifton and Hogarth in taking
 $\Ichr,\Jm$ to be reflexive \citep[p.~360]{CH1995}, write $x\ll y$ for
-$x\in\Ichr(y)$, $x\neq y$, and $x\le y$ for $x\in\Jm(y)$. Standard causal facts
-are cited from Minguzzi and Sánchez \citep{MS2008}, abbreviated MS.
+$x\in\Ichr(y)$, $x\neq y$, and $x\le y$ for $x\in\Jm(y)$. We write
+$\Ifut_{\mathrm s},\Ichr_{\mathrm s}$ for the strict chronological future and
+past (defined by timelike curves, so $x\in\Ichr_{\mathrm s}(y)\iff x\ll y$ in
+causal spacetimes); thus $\Ichr=\Ichr_{\mathrm s}\cup\Delta$. Standard causal facts
+are cited from Minguzzi and Sánchez \citep{MS2008}, abbreviated MS, whose
+$I^\pm$ are our strict sets.
 
 \begin{definition}
 $\GH$ is the category whose objects are globally hyperbolic spacetimes and
@@ -305,8 +309,9 @@ $B=\Jm$. If every $B_M\setminus\Delta_M$ is open, then $B=\Ichr$.
 
 \subsection{Theorem \ref{thm:class}, Theorem \ref{thm:weyl}, Proposition \ref{prop:reg}}
 
-We use: $\Ifut$ is open in $M\times M$ (MS Prop.~2.16); $\overline{\Jp}=
-\overline{\Ifut}$ and $\operatorname{Int}\Jp=\Ifut$ (MS Prop.~2.17); if $p\ll r\le q$
+We use: $\Ifut_{\mathrm s}$ is open in $M\times M$ (MS Prop.~2.16);
+$\overline{\Jp}=\overline{\Ifut_{\mathrm s}}$ and $\operatorname{Int}\Jp=
+\Ifut_{\mathrm s}$ (MS Prop.~2.17), and likewise for the pasts; if $p\ll r\le q$
 or $p\le r\ll q$ then $p\ll q$, and if $r\in E^+(p)$, $q\in E^+(r)$ then
 $q\in E^+(p)$ or $p\ll q$ (MS Prop.~2.31); a causal curve that is not an
 unbroken lightlike pregeodesic can be deformed to a timelike curve with the
@@ -340,9 +345,10 @@ and unparametrized lightlike pregeodesics are conformally invariant (MS
 
 \begin{proof}[Proof of Proposition \ref{prop:reg}]
 If $B_M$ is closed and contains $\Ichr$, it contains
-$\overline{\Ichr}=\overline{\Jm}\supseteq\Jm$, so $B=\Jm$ by
-Theorem~\ref{thm:main}(a). If $B_M\setminus\Delta$ is open and contained in
-$\Jm$, it lies in $\operatorname{Int}\Jm=\Ichr$.
+$\overline{\Ichr}=\overline{\Ichr_{\mathrm s}}=\overline{\Jm}\supseteq\Jm$, so
+$B=\Jm$ by Theorem~\ref{thm:main}(a). If $B_M\setminus\Delta$ is open and
+contained in $\Jm$, it lies in $\operatorname{Int}\Jm=\Ichr_{\mathrm s}$, so
+$B_M\subseteq\Ichr_{\mathrm s}\cup\Delta=\Ichr$, and (CB) gives $B=\Ichr$.
 \end{proof}
 
 \begin{proof}[Proof of Corollary \ref{cor:worldline}]
@@ -508,16 +514,23 @@ contradiction. Time-reverse for $D^-$. The same argument works in $M'$, where
 $\{t=0\}$ is a Cauchy hypersurface.
 
 (ii) Let $p\in D^+_M(\Sigma)$, so $p\in\Phi(T_{2r})$ by (i), and let
-$\gamma'$ be a past-inextendible $g'$-causal curve from $\psi(p)$. Along it
-$t\to-\infty$, so it leaves $\overline{T_{2r}}$ or reaches $t=0$. Consider the
-first of these events. If it first reaches $\{t=0\}$, at $z'$, inside $T_{2r}$:
-were $z'\notin\Sigma'$, the segment pulled back by $\Phi$ and continued past $S$
-would be a past-inextendible $M$-curve from $p$ missing $\Sigma$ (points with
-$t>0$ are not on $S$). If it first meets $\partial T_{2r}$, at $q'$ with
-$t(q')>0$, then the pulled-back segment followed by the escape path in $M$
-would again miss $\Sigma$. Both contradict $p\in D^+_M(\Sigma)$, so $\gamma'$
+$\gamma'$ be a past-inextendible $g'$-causal curve from $\psi(p)$. If
+$\psi(p)\in\Sigma'$ there is nothing to prove; otherwise $t(\psi(p))>0$. Along
+$\gamma'$, $t\to-\infty$; let $\tau_0$ be the first parameter at which $t=0$ and
+$\tau_{\rm exit}$ the first at which $\gamma'$ meets $\partial T_{2r}$. The chart
+and the agreement $g'=\Phi^*g$ extend to a neighbourhood of
+$\overline{T_{2r}}$, so segments of $\gamma'$ up to either time pull back by
+$\Phi$. If $\tau_0\le\tau_{\rm exit}$ (equality included): were
+$\gamma'(\tau_0)\notin\Sigma'$, the pulled-back segment ends on $S\setminus\Sigma$
+and, continued past $S$, is a past-inextendible $M$-curve from $p$ missing
+$\Sigma$ (points with $t>0$ are not on $S$). If $\tau_{\rm exit}<\tau_0$, then
+$t>0$ at the exit point, and the pulled-back segment followed by the escape
+path in $M$ again misses $\Sigma$. Both contradict $p\in D^+_M(\Sigma)$, so $\gamma'$
 meets $\Sigma'$. The reverse inclusion is the same argument with $M$ and $M'$
-exchanged, using $D_{M'}(\Sigma')\subseteq T_{2r}$; $D^-$ is time-reversed.
+exchanged, using $D_{M'}(\Sigma')\subseteq T_{2r}$: no global coordinate $t$ on
+$M$ is needed, since a past-inextendible $M$-curve from a point of
+$\Phi(T_{2r})$ either leaves $\Phi(T_{2r})$ or reaches the Cauchy surface $S$,
+and the same two cases apply. $D^-$ is time-reversed.
 
 (iii) For $q\in D^+(\Sigma)$, $\Jm(q)\cap\Jp(\Sigma)\subseteq D^+(\Sigma)$: a
 past-inextendible curve from $r$ in this set, prefixed by a causal curve
@@ -530,8 +543,8 @@ $\lambda^-\cdot(r\to q)$ meet $\Sigma$ on $p\to r$ and on $r\to q$, and
 acausality forces both meeting points to be $r$; the cases $p,q\in D^\pm$
 follow from the inclusion just proved. For interior points choose $p^-\ll p$
 and $q^+\gg q$ in $\operatorname{int}D$; then
-$J(p,q)\subseteq\Ifut(p^-)\cap\Ichr(q^+)\subseteq D(\Sigma)$, an open set (MS
-Props.~2.16, 2.31), so $N$ is causally convex, its causal diamonds are the
+$J(p,q)\subseteq\Ifut_{\mathrm s}(p^-)\cap\Ichr_{\mathrm s}(q^+)\subseteq
+D(\Sigma)$, an open set (MS Props.~2.16, 2.31), so $N$ is causally convex, its causal diamonds are the
 compact diamonds of $M$, and $N$ is globally hyperbolic (MS Def.~3.70). In
 $M'$,
 $D_{\eta_\lambda}(\Sigma')\subseteq D_{g'}(\Sigma')\subseteq D_{\eta_\mu}(\Sigma')$
