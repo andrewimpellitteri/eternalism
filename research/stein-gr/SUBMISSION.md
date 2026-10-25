@@ -8,7 +8,7 @@ Prepared 25 October 2026. Nothing has been submitted.
 - **Author:** Andrew Impellitteri (independent)
 - **Primary category:** gr-qc
 - **Cross-list:** physics.hist-ph
-- **Comments:** 13 pages
+- **Comments:** 14 pages
 - **License:** author's choice (CC BY 4.0 is the most permissive common option)
 - **Also suitable:** PhilSci-Archive (General Relativity; Philosophy of Time)
 
@@ -24,7 +24,7 @@ Stein proved that in Minkowski spacetime a transitive, symmetry-invariant relati
 | Final end-to-end read | Done (FINAL_READ.md): no mathematical errors; must-fix and should-fix prose items applied |
 | Expert read (mathematical relativity / philosophy of physics) | Not yet |
 | Priority sweep | Done at bounded depth (citations of Clifton–Hogarth and Stein 1991; papers named in the bibliography) |
-| Hawking & Ellis §4.3 (conservation theorem) | Cited, not re-read; book unavailable |
+| Conservation theorem | Hawking & Ellis §4.3 still unread, but the step now rests on Minguzzi 2015 Thm 1 (full text read), localized to compact regions J^-(p)∩J^+(S); Bernal–Sánchez Thms 1.1, 1.2 and Rem 4.14 checked |
 | Builds cleanly, no undefined references | Yes |
 | AI-assistance disclosure | In the "Note on method" paragraph; keep or edit before submission |
 

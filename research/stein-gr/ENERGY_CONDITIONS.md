@@ -35,8 +35,13 @@ Choquet-Bruhat & Geroch 1969 (CMP 14, 329–335; full text read), Theorem 3
 (every development embeds isometrically in the unique maximal development),
 it embeds in the maximal development of flat data, which is Minkowski space
 (listed among their examples of maximal developments, after Corollary 1).
-VERIFIED. The DEC step (Hawking–Ellis §4.3) is still unverified: the book was
-not available. Contradiction with curvature on T_{2r}.
+VERIFIED. The DEC step: Hawking–Ellis §4.3 is still unread, but Minguzzi,
+"The vacuum conservation theorem", GRG 47 (2015) 32, arXiv:1406.5915v3 (full
+text read), Theorem 1, proves vanishing on any open relatively compact region
+whose closure is a union of timelike integral segments from S1 to S2, with no
+time function assumed. Applied to J^-(p) ∩ J^+(S) with the gradient of a Cauchy
+temporal function (Bernal–Sánchez gr-qc/0512095, Thm 1.2), it gives the
+needed step at every p. VERIFIED (localization argument ours; in main.tex). Contradiction with curvature on T_{2r}.
 
 For GH_NEC there is no conservation theorem, but rigidity results for
 compactly supported NEC perturbations of Minkowski are expected
