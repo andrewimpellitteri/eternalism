@@ -1,0 +1,16 @@
+{
+  "source_commit": "6a4502652e625ac53f3b64ba18e6f66e4fb7ac58",
+  "manuscript_sha256": "33b20287794633003ac731361d2c06d3881f383dd484edb927bddced1506f065",
+  "replacement_sha256": "5c83d41899cb26a3da44138597c3a8ec38272a832e9fe199ab4fe9c2390507b6",
+  "assembled_source": "/private/tmp/stein-detour-proof-ejh_2owt/main.tex",
+  "exact_witness": {
+    "vertical_endpoint_inside_slab": true,
+    "combined_escape_squared_norm": "-55/64",
+    "transverse_displacement": "3/4"
+  },
+  "scope": "Exact negative control and local escape arithmetic; compilation does not prove the global theorem.",
+  "compiler": "Codex desktop LaTeX compiler",
+  "compile_status": "success",
+  "duplicate_labels": 0,
+  "unresolved_internal_references": []
+}

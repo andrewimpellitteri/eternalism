@@ -1,0 +1,51 @@
+\begin{proof}
+A $g'$-causal curve between $P,Q$ would be $\eta_\lambda$-causal. Along
+future $g'$-causal curves,
+$\frac{d}{d\tau}(t-f(s))\ge\dot t(1-\lambda|f'|)>0$; the uniform speed
+bound also gives $t-f(s)\to\pm\infty$ along inextendible causal curves.
+Thus $H$ is Cauchy for $g'$ and for $\eta$.
+
+Make $H$ horizontal by a proper orthochronous Lorentz transformation.
+Extend the embedded arc slightly beyond $P,Q$, retaining a compact flat
+neighbourhood, and parametrize it by Euclidean arclength $u$, with the
+distinguished points at $u=0,\ell$. Choose an oriented orthonormal normal
+frame along the arc in $H$. Euclidean normal coordinates $(u,z)$ in $H$,
+together with the time coordinate $\theta$ normal to $H$, give a common
+coordinate chart for the two ambient metrics near the arc. In this chart
+both metrics equal $-d\theta^2+h(u,z)$, with $h(u,0)$ the identity.
+By smoothness on the compact extended arc, for sufficiently small $a>0$
+the closure of
+\[
+ W_{3a}=\{|\theta|<3a,\ -3a<u<\ell+3a,\ |z|<3a\}
+\]
+lies in the common flat neighbourhood, the coordinates are injective
+there, and every vector with future time component $1$ and spatial speed
+at most a fixed $\mu\in(1/2,1)$ is timelike for the common metric.
+Shrink $a$ also to fit the longitudinal extension of the arc. Set
+\[
+ A=\{\theta=0,\ -a/2\le u\le\ell+a/2,\ |z|\le a/2\}.
+\]
+It is a compact acausal slab in the common Cauchy surface, with $P,Q$ in
+its relative interior.
+
+The local proof of Lemma~\ref{lem:D} applies to this product tube and slab
+in each ambient spacetime. To make the escape construction explicit: at
+a positive-time point of $\partial W_{2a}$ whose spatial projection is
+outside $A$, descend vertically to $H\setminus A$. Otherwise the point is
+on the lid $\theta=2a$; descend while moving transversely outwards at
+coordinate speed $\mu/2$. The transverse displacement is $\mu a>a/2$,
+and the path stays inside $W_{3a}$. These paths are timelike; after reaching
+$H\setminus A$ a past continuation cannot meet $A$, since $H$ is Cauchy.
+The negative-time construction is the time reverse.
+
+Consequently both domains of dependence of $A$ lie inside $W_{2a}$.
+For transfer between the ambients, stop a causal curve at the first of its
+$\theta=0$ crossing or its shell crossing. Assign a simultaneous crossing
+to the former case. A curve missing $A$ would, in the first case, reach
+$H\setminus A$, or, in the second, admit the escape continuation just
+constructed. Either contradicts membership in the other domain. Thus the
+two domains coincide. As in Lemma~\ref{lem:D}(iii), their common interior
+is connected, globally hyperbolic, causally convex in both ambients, and
+contains $P,Q$. Its inclusions are the required morphisms; (LC) yields
+$P\,B_{M'}\,Q\iff P\,B_\Mink\,Q$.
+\end{proof}
