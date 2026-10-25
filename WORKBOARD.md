@@ -135,6 +135,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | blocked | `stein-final-referee` — Independently referee the frozen integrated Stein-GR manuscript | 10 | stein-paper-integration | — |
 | blocked | `stein-energy-pocket-probe` — Test one bounded route to energy-compatible flat-pocket gluing | 7 | stein-energy-rigidity-audit, stein-final-referee | — |
 | review | `horizons-independent-redteam` — Independently red-team Unreal Is Not Open before expert circulation | 10 | — | codex-horizons-referee |
+| review | `book-exploration-samples` — Park prose book concept and two exploratory chapter samples while keeping paper priority | 2 | — | codex-book-exploration |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
