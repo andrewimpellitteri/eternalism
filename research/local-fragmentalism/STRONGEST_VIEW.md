@@ -140,8 +140,10 @@ as the axioms (CB), (T), (LC) and non-universality, plus the off-shell premise.]
 
 **R2. There is no shared present.** Co-presence (each real for the other) is
 trivial: from b, b alone is present. [PROVED corollary of R1: x ≤ b and
-b ≤ x force x = b in causal spacetimes.] This is Stein's "pluralistic extreme
-solipsism", now in every curved spacetime, and it is not solipsism about
+b ≤ x force x = b in causal spacetimes; Corollary 8 of the Stein paper.]
+It echoes Stein's remark that the converse of Putnam's premise yields "a
+peculiarly extreme (but pluralistic!) form of solipsism" (1968, p. 18), now
+in every curved spacetime, and it is not solipsism about
 reality: the whole causal past is real from b.
 
 **R3. Fragments grow.** If b ≤ b', then F(b) ⊆ F(b'): along any worldline,
@@ -181,8 +183,8 @@ the whole. [PROVED given P7]
 **R7. In Gödel universes fragmentation collapses.** In totally vicious
 spacetimes every fragment is everything, and the view coincides with
 eternalism. Locality isolates such universes, so this does not reach ours.
-[PROVED: Proposition 20 (Gödel isolation); the "does not reach ours" part covers morphisms into
-them only.]
+[PROVED: Proposition 20 (Gödel isolation): no morphism connects a totally
+vicious spacetime with a causal one, in either direction.]
 
 **R8. A shared present costs locality or structure.** Any view with a shared,
 extended present must either violate P3, using natural but non-local rules
@@ -376,7 +378,7 @@ recovers the eternalist's truths as the facts invariant across all standpoints
 | Trivial co-presence; fragment growth | PROVED corollaries |
 | Null-boundary classification; regularity | PROVED |
 | Causal sets, exact | PROVED (non-manifoldlike posets used) |
-| Gödel isolation | PROVED (morphisms into M only) |
+| Gödel isolation | PROVED (no morphism in either direction) |
 | Reading "has become" as "real from b" | THESIS (the bridge premise) |
 | Fragmentalism or relativism about facts | THESIS |
 | Locality as a metaphysical requirement | THESIS (independently motivated) |
