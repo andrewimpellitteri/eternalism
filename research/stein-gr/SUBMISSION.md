@@ -21,7 +21,7 @@ Stein proved that in Minkowski spacetime a transitive, symmetry-invariant relati
 | Gate | Status |
 |---|---|
 | Proof reviews | Done: INDEPENDENT_REVIEW (cross-model), REVIEW_MAIN_PROOF, REVIEW_OTHER_RESULTS, SECOND_PASS_REVIEW; all repairs applied |
-| Final end-to-end read | Running (FINAL_READ.md) |
+| Final end-to-end read | Done (FINAL_READ.md): no mathematical errors; must-fix and should-fix prose items applied |
 | Expert read (mathematical relativity / philosophy of physics) | Not yet |
 | Priority sweep | Done at bounded depth (citations of Clifton–Hogarth and Stein 1991; papers named in the bibliography) |
 | Hawking & Ellis §4.3 (conservation theorem) | Cited, not re-read; book unavailable |

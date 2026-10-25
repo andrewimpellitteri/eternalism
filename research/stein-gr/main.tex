@@ -23,7 +23,7 @@
 \title{Stein's Theorem in General Relativity:\\[2pt]
 \large locality, not symmetry, fixes what has become}
 \author{Working manuscript}
-\date{24 October 2026}
+\date{25 October 2026}
 \begin{document}
 \maketitle
 
@@ -48,12 +48,12 @@ spacetime, or in every spacetime becoming lies between the chronological and
 the causal past; the worldline-dependent form follows. The residual freedom is exactly the status of
 lightlike-separated pairs, and we classify it: it can depend on curvature
 along the connecting light ray, so uniqueness fails even for relations
-determined by causal structure alone; topological regularity removes it. In
+determined by conformal structure alone; topological regularity removes it. In
 causal set theory the same hypothesis yields an exact Stein theorem,
 although the analogue fails, as Wüthrich and Callender showed, under
 invariance within a single causal set. Locality also isolates
-Gödel-type universes, so that universal becoming there constrains nothing
-here. Finally we show why the result does not transfer routinely to
+Gödel-type universes: no morphism connects them to globally hyperbolic
+spacetimes, so universal becoming there constrains nothing in those. Finally we show why the result does not transfer routinely to
 spacetimes restricted by energy conditions, and isolate the open problem on
 which such a transfer depends.
 \end{abstract}
@@ -108,7 +108,7 @@ between $\Ichr$ and $\Jm$. The worldline-dependent version follows
 Theorem~\ref{thm:weyl}, Proposition~\ref{prop:reg}). What remains open is
 exactly which lightlike-separated pairs count. We classify the possibilities;
 they can depend on Weyl curvature along the connecting light ray, so
-uniqueness fails even for relations fixed by causal structure. Closedness or
+uniqueness fails even for relations fixed by conformal structure. Closedness or
 openness of the relation selects $\Jm$ or $\Ichr$.
 \item \textbf{Locality is indispensable} (Propositions~\ref{prop:single} and
 \ref{prop:nonlocal}). Natural but non-local rules, such as ordering by a
@@ -118,11 +118,11 @@ events become.
 hypothesis Stein's theorem holds exactly: becoming is the causal order or
 universal. Discreteness removes the light-cone freedom.
 \item \textbf{Gödel universes are isolated} (Proposition~\ref{prop:godel}).
-Totally vicious spacetimes have no proper causally convex regions, so local
-covariance transmits nothing from them.
+Totally vicious spacetimes have no proper causally convex regions and embed
+in no causal spacetime, so local covariance transmits nothing from them.
 \item \textbf{Energy conditions} (Section~\ref{sec:energy}). The proof uses
 arbitrary globally hyperbolic metrics. Under the dominant energy condition the
-key construction is provably unavailable, and the transfer reduces to an open
+specific auxiliary spacetime of the proof is provably unavailable, and the transfer reduces to an open
 gluing problem that we state.
 \end{itemize}
 
@@ -200,9 +200,8 @@ $P\circ P$ would need some $q$ with $b\le q\le x$, which is impossible. The
 pair $(b,x)$ is not in $R$, so $R\neq\U$.
 \end{proof}
 
-So for a single generic spacetime, Stein-type uniqueness fails completely; the
-dust-cosmology ordering by scalar curvature (in $a(t)=t^{2/3}$ dust, curvature
-fixes cosmic time) is a symmetric instance. The next example shows that
+So for a single generic spacetime, Stein-type uniqueness fails completely. The
+next example shows that
 uniformity across spacetimes is still not enough without locality.
 
 \begin{proposition}\label{prop:nonlocal}
@@ -256,6 +255,10 @@ Let $B$ be a becoming theory.
 Hence either $B$ is universal everywhere, or $\Ichr_M\subseteq
 B_M\subseteq\Jm_M$ for every $M$.
 \end{theorem}
+
+Call $B$ \emph{universal} if $B_M=\U_M$ for every $M$. By
+Theorem~\ref{thm:main} this holds if and only if $B_\Mink=\U$, and if $B_M=\U_M$
+for one $M$ then it holds for all; otherwise $B$ is \emph{non-universal}.
 
 \begin{corollary}[No shared present]\label{cor:nopresent}
 Call $x$ and $b$ \emph{co-present} in $M$ if $x\,B_M\,b$ and $b\,B_M\,x$. For
@@ -325,9 +328,11 @@ We use: $\Ifut_{\mathrm s}$ is open in $M\times M$ (MS Prop.~2.16);
 $\overline{\Jp}=\overline{\Ifut_{\mathrm s}}$ and $\operatorname{Int}\Jp=
 \Ifut_{\mathrm s}$ (MS Prop.~2.17), and likewise for the pasts; if $p\ll r\le q$
 or $p\le r\ll q$ then $p\ll q$, and if $r\in E^+(p)$, $q\in E^+(r)$ then
-$q\in E^+(p)$ or $p\ll q$ (MS Prop.~2.31); a causal curve that is not an
-unbroken lightlike pregeodesic can be deformed to a timelike curve with the
-same endpoints (MS Thm.~2.30).
+$q\in E^+(p)$ or $p\ll q$ (MS Prop.~2.31); two events joined by a causal
+curve that is not a maximizing lightlike curve are joined by a timelike curve,
+and a maximizing lightlike curve is a lightlike geodesic (MS Thm.~2.30(i),
+(ii)); so a causal curve between horismotically related events is a lightlike
+geodesic.
 
 \begin{proof}[Proof of Theorem \ref{thm:class}]
 By Theorem~\ref{thm:main}(a), $B=\Ichr\cup N$. Timelike and causal curves
@@ -461,17 +466,18 @@ $c$; the estimate is smoothness on a compact set.
 \end{proof}
 
 \begin{lemma}[Cone control]\label{lem:C}
-Let $\eta_c=-c^2dt^2+ds^2+|dy|^2$ and $\tfrac12<\mu<1<\lambda$. If
-$\|h-\eta_1\|\le\varepsilon<\min\{(1-\mu^2)/(1+\mu^2),(\lambda^2-1)/(\lambda^2+1)\}$
-(operator norm), then $h$ is Lorentzian with $\partial_t$ timelike, and for
-$v=(1,u)$: $|u|\le\mu\Rightarrow h(v,v)<0$, $|u|\ge\lambda\Rightarrow
-h(v,v)>0$. The bound is preserved by $\chi h+(1-\chi)\eta_1$, $0\le\chi\le1$.
+Let $\eta_c=-c^2dt^2+ds^2+|dy|^2$, $\tfrac12<\mu<1<\lambda$, and let $k$ be a
+symmetric bilinear form on $\mathbb R^4$. If
+$\|k-\eta_1\|\le\varepsilon<\min\{(1-\mu^2)/(1+\mu^2),(\lambda^2-1)/(\lambda^2+1)\}$
+(operator norm), then $k$ is Lorentzian with $\partial_t$ timelike, and for
+$v=(1,u)$: $|u|\le\mu\Rightarrow k(v,v)<0$, $|u|\ge\lambda\Rightarrow
+k(v,v)>0$. The bound is preserved by $\chi k+(1-\chi)\eta_1$, $0\le\chi\le1$.
 \end{lemma}
 
 \begin{proof}
-$h(v,v)\le-1+|u|^2+\varepsilon(1+|u|^2)$ and $h(v,v)\ge(1-\varepsilon)|u|^2-
+$k(v,v)\le-1+|u|^2+\varepsilon(1+|u|^2)$ and $k(v,v)\ge(1-\varepsilon)|u|^2-
 (1+\varepsilon)$. The spatial block is $\ge(1-\varepsilon)I>0$ and
-$h(\partial_t,\partial_t)<0$, which forces signature $(-,+,+,+)$.
+$k(\partial_t,\partial_t)<0$, which forces signature $(-,+,+,+)$.
 \end{proof}
 
 \paragraph{Constants and the auxiliary spacetime.} In this order: fix
@@ -667,8 +673,10 @@ off-shell premise of Remark~\ref{rem:offshell}.
 
 \begin{proposition}\label{prop:godel}
 Extend $\GH$ to all oriented, time-oriented spacetimes with the same
-morphisms. If $M$ is totally vicious ($p\ll p$ for all $p$), then every
-morphism into $M$ is onto, and every theory satisfying (CB) has $B_M=\U_M$.
+morphisms. If $M$ is totally vicious ($p\in\Ichr_{\mathrm s}(p)$ for all $p$),
+then every morphism into $M$ is onto, every theory satisfying (CB) has
+$B_M=\U_M$, and there is no morphism between $M$ and any causal spacetime, in
+either direction.
 \end{proposition}
 
 \begin{proof}
@@ -676,20 +684,21 @@ In a totally vicious spacetime $\Ichr(p)=\Ifut(p)=M$ for every $p$ (MS \S3.1).
 Let $V$ be nonempty, open and causally convex, $p\in V$ and $q\in M$. There are
 timelike curves $p\to q$ and $q\to p$; their concatenation is a causal curve
 with both endpoints in $V$, so it lies in $V$, and $q\in V$. Thus $V=M$
-(compare MS Remark~2.12).
+(compare MS Remark~2.12). (CB) gives $B_M\supseteq\Ichr_M=M\times M$. A morphism
+$N\to M$ from a causal $N$ would be onto, hence an isometry, which is
+impossible since $M$ has closed timelike curves; a morphism $M\to N$ would map
+a closed timelike curve of $M$ to one of $N$.
 \end{proof}
 
 Gödel's universe is totally vicious, so universal becoming there is forced;
 this is Gödel's first step, in Stein's terms. But local covariance transmits
-constraints only along morphisms, and the only morphisms into a totally
-vicious spacetime are its own isometries. Gödel's modal step, from what holds
+constraints only along morphisms, and by Proposition~\ref{prop:godel} no
+morphism connects a totally vicious spacetime with a globally hyperbolic one. Gödel's modal step, from what holds
 in such a universe to what holds in ours \citep[pp.~561--562]{Godel1949}, as
 quoted in \citep[\S6]{Monton2006}, requires that becoming be the same
 feature across nomologically possible universes. Local covariance is one
-precise way of requiring a rule to be the same across universes, and it does
-not transmit anything out of totally vicious ones by morphisms into them. (We
-have not shown that no morphisms lead out of them; Proposition~\ref{prop:godel}
-concerns morphisms into $M$.) A version of Gödel's step that does go through
+precise way of requiring a rule to be the same across universes, and it
+transmits nothing out of totally vicious ones. A version of Gödel's step that does go through
 would need a different cross-universe link. Proposition~\ref{prop:nonlocal} shows what such links
 look like: natural but non-local. Compare the conceptual responses of
 \citet{Savitt2005}, \citet{Dieks2006} and \citet{Aames2022}, which locate
@@ -702,8 +711,8 @@ tensor satisfies the dominant energy condition. It is closed under restriction
 to causally convex open subsets and contains $\Mink$.
 
 \begin{proposition}[The auxiliary spacetime is unavailable]\label{prop:dec}
-If $M\in\GH_{\mathrm{DEC}}$ is flat on a neighbourhood of some Cauchy surface,
-then $M$ is flat. In particular $M'$ above lies in $\GH_{\mathrm{DEC}}$ only if
+If $M\in\GH_{\mathrm{DEC}}$ is flat on a neighbourhood of some totally geodesic
+Cauchy surface, then $M$ is flat. In particular $M'$ above lies in $\GH_{\mathrm{DEC}}$ only if
 $g$ is flat on $T_{2r}$.
 \end{proposition}
 
@@ -711,7 +720,8 @@ $g$ is flat on $T_{2r}$.
 On the Cauchy surface the metric is flat and the Einstein tensor vanishes. By the conservation theorem
 for matter obeying the dominant energy condition \citep[\S4.3]{HE1973}, the
 Einstein tensor vanishes on its domain of dependence, i.e.\ everywhere. For
-$M'$, any slice $\{t=c\}$ with $c<-3r$ has a flat neighbourhood.
+$M'$, any slice $\{t=c\}$ with $c<-3r$ is totally geodesic and has a flat
+neighbourhood.
 A vacuum globally hyperbolic spacetime with flat data $(\Sigma,h,0)$ on a
 Cauchy surface is a development of those data and so embeds isometrically in
 their maximal development \citep[Thm.~3]{CBG1969}. That maximal development is
@@ -727,7 +737,7 @@ The same reasoning constrains any repair that keeps the original spacetime and
 inserts small flat pockets near $w$, $v$ and the detour: in a vacuum region
 whose causal past on some Cauchy surface is vacuum and unmodified, the
 conservation theorem forces the modified spacetime to be vacuum there with the
-same data, so no pocket can be inserted. Pockets must be fed by matter brought
+same data, so no such pocket can be inserted there. Pockets must be fed by matter brought
 in from the past and routed around $D(\Sigma)$ afterwards. The proof of
 Theorem~\ref{thm:main} goes through verbatim in $\GH_{\mathrm{DEC}}$ given
 the following sufficient condition, which we leave open.
@@ -765,12 +775,17 @@ Monton's move). The theorem then does not apply, because the category, and
 with it the notion of an isometric embedding, has changed; the cost is the
 added structure.
 
-\paragraph{A trilemma.} Corollary~\ref{cor:nopresent} can be read as a
+\paragraph{A trilemma.} Suppose a shared present is understood as a set of
+distinct events each of which has become for each other, the sense in which
+Stein's dilemma is posed. Then Corollary~\ref{cor:nopresent} can be read as a
 trilemma for dynamic ontologies in general relativity: locality, a shared
 (extended) present, and non-trivial becoming cannot all be had. Defenders of
 a shared now give up locality or add structure; local becoming theorists get
-point-like presents, as Stein's ``pluralistic'' reading already suggested in
-Minkowski spacetime; and giving up non-triviality is the block. The corollary
+point-like presents, which recalls Stein's remark that the converse of
+Putnam's premise leads to ``a peculiarly extreme (but pluralistic!) form of
+solipsism'' \citep[p.~18]{Stein1968}; and giving up non-triviality is the
+block. Other notions of a present, for instance a set of events none of which
+has become for another, are not addressed by the corollary. The corollary
 says nothing about which horn to take.
 
 \paragraph{The fragile part.} Uniqueness does not survive. Minkowskian
