@@ -36,4 +36,3 @@ The original checklist above is retained for its original manuscripts. For Stein
 - [ ] For each selected manuscript record source status and safe wording at the frozen release commit. Unresolved overlap risk is disclosed rather than converted into a blanket novelty claim.
 
 Evidence: [current source checks and limits](https://github.com/andrewimpellitteri/eternalism/blob/8724079/research/horizons/continuation-2026-10-27/GATES.md), plus the current manuscripts' explicit unread-source disclosures. New GLM gap-check work will be a submission for review, not automatic closure.
-

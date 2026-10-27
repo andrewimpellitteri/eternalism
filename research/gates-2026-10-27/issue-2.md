@@ -31,4 +31,3 @@ The rebuilt paper still ends as a prospectus, or the core Brading/existence argu
 This remains the **legacy article** gate for `paper/main.tex`, not the gate for the newer Stein-GR or horizons manuscripts. The local `paper/READINESS.md` records later changes to a universe/problem-of-time draft, stale verification and pending independent review/priority work. The original reframe checklist is historical context, not a claim that those later requirements are satisfied. Keep this gate open and outside the current bundle unless that article is explicitly selected.
 
 Current work is tracked separately in #7 (Stein-GR), #8 (horizons), #9 (philosophical bridge), #10 (optional mass extension), and #4 (sources). No earlier internal drafting completion supplies release clearance.
-

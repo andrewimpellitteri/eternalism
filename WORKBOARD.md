@@ -130,7 +130,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `stein-causet-audit` — Audit the convex-embedding causal-set theorem and its prior-work contrast | 9 | — | — |
 | review | `stein-priority-audit` — Try to defeat novelty of cross-spacetime becoming classifications | 10 | — | glm-stein-priority-audit |
 | open | `stein-energy-rigidity-audit` — Check energy-condition rigidity and isolate a legitimate extension problem | 9 | — | — |
-| open | `stein-interpretation-audit` — Audit what the covariance theorem says about locality and becoming | 8 | — | — |
+| claimed | `stein-interpretation-audit` — Audit what the covariance theorem says about locality and becoming | 8 | — | glm-stein-interpretation-audit |
 | blocked | `stein-paper-integration` — Integrate accepted Stein-GR repairs into one source and verification record | 10 | stein-core-repairs, stein-gluing-audit, stein-null-boundary-audit, stein-causet-audit, stein-priority-audit, stein-energy-rigidity-audit, stein-interpretation-audit | — |
 | blocked | `stein-final-referee` — Independently referee the frozen integrated Stein-GR manuscript | 10 | stein-paper-integration | — |
 | blocked | `stein-energy-pocket-probe` — Test one bounded route to energy-compatible flat-pocket gluing | 7 | stein-energy-rigidity-audit, stein-final-referee | — |
@@ -142,9 +142,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `horizons-boundary-fix` — Fix closed fixed-region boundary and nearby echo scope errors | 10 | — | codex-horizons-boundary |
 | review | `horizons-perturbation-continuation` — Close primary-source gaps and test actual fixed-event loss under a small field perturbation | 10 | — | codex-horizons-continuation |
 | claimed | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | glm-horizons-perturbation-referee |
-| claimed | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
-| open | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | — |
-| open | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | — |
+| review | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
+| claimed | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | glm-horizons-philosophy-contract |
+| claimed | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | glm-horizons-priority-gap-check |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
