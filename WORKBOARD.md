@@ -152,7 +152,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `native-time-bridge-recovery` — Recover precise philosophical contract after GLM quota interruption | 10 | — | native-bridge-recovery |
 | review | `native-horizons-source-recovery` — Recover bounded original-source gap audit after GLM quota interruption | 10 | — | native-source-recovery |
 | review | `horizons-mass-review-recovery` — Finish interrupted scalar mass proof review and repair its independent control | 10 | — | codex-mass-recovery |
-| claimed | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
+| review | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
