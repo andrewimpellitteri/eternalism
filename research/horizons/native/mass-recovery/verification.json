@@ -1,0 +1,101 @@
+{
+  "exact_constant_potential_solver_control": "passed k=1,7,19",
+  "weights_midpoint": {
+    "1": 0.9817477042468049,
+    "2": 0.2945243112740395,
+    "3": 0.1308996938995787,
+    "5": 0.047123889803847574,
+    "7": 0.024042800920330235
+  },
+  "kernel_min_on_grid": 0.01989436788537273,
+  "green_normalization": 0.9999999999999999,
+  "h_identity": {
+    "h_radial": 0.03732654898505963,
+    "h_spectral_fine": 0.037325164191635105,
+    "h_spectral_coarse": 0.037335491833708545,
+    "abs_error_fine": 1.384793424527575e-06,
+    "abs_error_coarse": 8.942848648912927e-06
+  },
+  "constant_delta": {
+    "unperturbed_residual_fine": 1.5956200589127137e-05,
+    "unperturbed_residual_coarse": 8.682510696087383e-05,
+    "derivative_central_rk4": 0.1172603249527328,
+    "exact_finite_sum_derivative": 0.11726032679374411,
+    "pi_h_spectral_limit_reference": 0.11726046161847366,
+    "support_cancellation_truncation_gap": -1.3482472954740032e-07,
+    "samples": [
+      {
+        "delta": 0.001,
+        "raw_value": 0.00013319210219700576,
+        "raw_sign_matches_delta": true,
+        "perturbation_increment": 0.00011723590160787862,
+        "increment_sign_matches_delta": true
+      },
+      {
+        "delta": -0.001,
+        "raw_value": -0.00010132817110835489,
+        "raw_sign_matches_delta": true,
+        "perturbation_increment": -0.00011728437169748204,
+        "increment_sign_matches_delta": true
+      },
+      {
+        "delta": 0.0001,
+        "raw_value": 2.7681990731657796e-05,
+        "raw_sign_matches_delta": true,
+        "perturbation_increment": 1.1725790142530659e-05,
+        "increment_sign_matches_delta": true
+      },
+      {
+        "delta": -0.0001,
+        "raw_value": 4.229925741111235e-06,
+        "raw_sign_matches_delta": false,
+        "perturbation_increment": -1.1726274848015902e-05,
+        "increment_sign_matches_delta": true
+      }
+    ]
+  },
+  "dust_mass": {
+    "lam_samples": [
+      {
+        "lam": 0.01,
+        "raw_value": 0.00036729174864978393,
+        "perturbation_increment": 0.0003513355480606568,
+        "increment_positive": true
+      },
+      {
+        "lam": 0.001,
+        "raw_value": 5.0922282397017315e-05,
+        "perturbation_increment": 3.496608180789018e-05,
+        "increment_positive": true
+      },
+      {
+        "lam": 0.0001,
+        "raw_value": 1.9451117039058347e-05,
+        "perturbation_increment": 3.4949164499312094e-06,
+        "increment_positive": true
+      }
+    ],
+    "w_period_rk4": 0.033551284072567626,
+    "w_period_operator_identity": 0.03355128420318395,
+    "w_tstar_rk4": 0.034947282697202674,
+    "relative_shift_tstar_vs_period": 0.04160790047750984
+  },
+  "resolution_probe": {
+    "w_period_same_modes_coarse_time": 0.03355128456950765,
+    "fixed_cutoff_time_refinement_change": 4.969400238530319e-10,
+    "w_period_coarse": 0.03356345096443758,
+    "solver_abs_change": 1.2166891869953844e-05,
+    "modes": [
+      48,
+      96
+    ],
+    "steps": [
+      4096,
+      8192
+    ]
+  },
+  "status": "pass",
+  "truncation_caution": "The finite-mode unperturbed target residual need not be zero and can reverse the raw sign for small negative delta. Increment controls remove that baseline; exact zero past and the full-solution sign require proof.",
+  "runtime_seconds": 55.2,
+  "scope": "RK4 modal time-stepping controls of signs, derivative values and closed identities at fixed truncation; exact past vanishing and kernel positivity are analytic results, not numerical ones"
+}
