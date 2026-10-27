@@ -1,0 +1,8 @@
+{
+  "scope": "finite extensional controls, not metaphysical/PDE verification",
+  "assignments_examined": 4096,
+  "constant_fibre_iff_assignment": true,
+  "past_signature_insufficient_for_chosen_future_outcome": true,
+  "enriched_signature_extensionally_sufficient": true,
+  "one_proposition_need_not_select_whole_model": true
+}

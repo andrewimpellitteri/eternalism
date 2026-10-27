@@ -156,6 +156,11 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `horizons-reviewed-integration` — Integrate reviewed mass contrast, norm bounds and philosophical contract into horizons paper | 10 | — | codex-horizons-integration |
 | done | `horizons-mass-all-fixing` — Investigate complete loss or survival of extra fixing at positive mass | 10 | — | codex-mass-classification |
 | done | `future-truth-preliminary` — Preliminary audit of future truth, existence and event-relative settledness | 9 | — | codex-future-truth |
+| done | `future-ground-growing-block` — Audit complete grounds in strongest law-based growing-block account | 9 | — | codex-future-growing |
+| done | `future-ground-objections` — Audit objections to truthmaker and local-ground completeness demands | 9 | — | codex-future-objections |
+| done | `future-ground-tense-domain` — Reconstruct and test stage-sensitive tense and existence semantics | 9 | — | codex-future-tense |
+| done | `future-ground-relativistic-branching` — Audit whether causal-past alternatives constitute branching physical possibilities | 9 | — | codex-future-branching |
+| done | `future-ground-coordinator` — Synthesize and red-team a future-truth grounds contract | 9 | — | codex-future-coordinator |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
