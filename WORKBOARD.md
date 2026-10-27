@@ -155,6 +155,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
 | done | `horizons-reviewed-integration` — Integrate reviewed mass contrast, norm bounds and philosophical contract into horizons paper | 10 | — | codex-horizons-integration |
 | done | `horizons-mass-all-fixing` — Investigate complete loss or survival of extra fixing at positive mass | 10 | — | codex-mass-classification |
+| done | `future-truth-preliminary` — Preliminary audit of future truth, existence and event-relative settledness | 9 | — | codex-future-truth |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
