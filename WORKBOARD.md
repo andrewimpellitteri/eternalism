@@ -145,6 +145,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
 | claimed | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | glm-horizons-philosophy-contract |
 | claimed | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | glm-horizons-priority-gap-check |
+| review | `horizons-bounded-ambiguity` — Quantify bounded hidden-field ambiguity without confusing exact openness and practical prediction | 9 | — | codex-bounded-ambiguity |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
