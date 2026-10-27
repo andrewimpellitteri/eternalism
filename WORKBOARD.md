@@ -154,6 +154,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `horizons-mass-review-recovery` — Finish interrupted scalar mass proof review and repair its independent control | 10 | — | codex-mass-recovery |
 | review | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
 | done | `horizons-reviewed-integration` — Integrate reviewed mass contrast, norm bounds and philosophical contract into horizons paper | 10 | — | codex-horizons-integration |
+| done | `horizons-mass-all-fixing` — Investigate complete loss or survival of extra fixing at positive mass | 10 | — | codex-mass-classification |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
