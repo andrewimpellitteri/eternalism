@@ -3,12 +3,14 @@
     {
       "issue": 1,
       "name": "Theorem note external review",
-      "local_tasks": ["paper-novel-result"],
+      "local_tasks": [
+        "paper-novel-result"
+      ],
       "area": "paper"
     },
     {
       "issue": 2,
-      "name": "Article reframe and substantive application",
+      "name": "Legacy article reframe and substantive application",
       "local_tasks": [
         "article-reframe-scope",
         "brading-existence-bridge",
@@ -24,13 +26,18 @@
     {
       "issue": 3,
       "name": "Rank-only no-go independent audit",
-      "local_tasks": ["rank-renewal-convergence"],
+      "local_tasks": [
+        "rank-renewal-convergence"
+      ],
       "area": "rank"
     },
     {
       "issue": 4,
       "name": "Source closure and correspondence",
-      "local_tasks": ["paper-source-gates"],
+      "local_tasks": [
+        "paper-source-gates",
+        "horizons-priority-gap-check"
+      ],
       "area": "source"
     },
     {
@@ -38,6 +45,47 @@
       "name": "Submission decision and release sign-off",
       "local_tasks": [],
       "area": "release"
+    },
+    {
+      "issue": 7,
+      "name": "Stein-GR proof scope and locality premise",
+      "local_tasks": [
+        "stein-core-repairs",
+        "stein-gluing-audit",
+        "stein-null-boundary-audit",
+        "stein-priority-audit",
+        "stein-interpretation-audit"
+      ],
+      "area": "stein-gr"
+    },
+    {
+      "issue": 8,
+      "name": "Horizons determination and claim correspondence",
+      "local_tasks": [
+        "horizons-independent-redteam",
+        "horizons-boundary-fix",
+        "horizons-philosophy-contract"
+      ],
+      "area": "horizons"
+    },
+    {
+      "issue": 9,
+      "name": "Philosophical bridge and strongest opponents",
+      "local_tasks": [
+        "horizons-philosophy-contract",
+        "stein-interpretation-audit"
+      ],
+      "area": "philosophy"
+    },
+    {
+      "issue": 10,
+      "name": "Optional mass-extension proof and scope",
+      "local_tasks": [
+        "horizons-perturbation-continuation",
+        "horizons-perturbation-referee",
+        "horizons-priority-gap-check"
+      ],
+      "area": "horizons"
     }
   ]
 }

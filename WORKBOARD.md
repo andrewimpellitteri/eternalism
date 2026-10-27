@@ -141,7 +141,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `horizons-echo-robustness` — Test how narrowly the antipodal scalar identity depends on its field equation | 9 | — | glm-horizons-echo-robustness |
 | review | `horizons-boundary-fix` — Fix closed fixed-region boundary and nearby echo scope errors | 10 | — | codex-horizons-boundary |
 | review | `horizons-perturbation-continuation` — Close primary-source gaps and test actual fixed-event loss under a small field perturbation | 10 | — | codex-horizons-continuation |
-| open | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | — |
+| claimed | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | glm-horizons-perturbation-referee |
+| claimed | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
+| open | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | — |
+| open | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
