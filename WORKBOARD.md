@@ -143,10 +143,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `horizons-perturbation-continuation` — Close primary-source gaps and test actual fixed-event loss under a small field perturbation | 10 | — | codex-horizons-continuation |
 | claimed | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | glm-horizons-perturbation-referee |
 | review | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
-| review | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | glm-horizons-philosophy-contract |
-| review | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | glm-horizons-priority-gap-check |
+| claimed | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | glm-horizons-philosophy-contract |
+| claimed | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | glm-horizons-priority-gap-check |
 | review | `horizons-bounded-ambiguity` — Quantify bounded hidden-field ambiguity without confusing exact openness and practical prediction | 9 | — | codex-bounded-ambiguity |
 | review | `horizons-noisy-record-control` — Separate noisy field records from exact pointwise determination | 9 | — | codex-noisy-record |
+| review | `runner-fresh-submission` — Reject inherited reports as new worker submissions | 10 | — | codex-runner-fresh |
+| claimed | `native-horizons-norm-review` — Independently review quantitative ambiguity and noisy-record controls | 10 | — | native-norm-review |
+| claimed | `native-time-bridge-recovery` — Recover precise philosophical contract after GLM quota interruption | 10 | — | native-bridge-recovery |
+| claimed | `native-horizons-source-recovery` — Recover bounded original-source gap audit after GLM quota interruption | 10 | — | native-source-recovery |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

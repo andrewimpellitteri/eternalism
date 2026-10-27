@@ -336,15 +336,9 @@ def worker(args):
             time.sleep(30)
     slot.close()
     report = wt / "AGENT_REPORT.md"
-    delivered = report.is_file() and committed_and_clean(wt, "AGENT_REPORT.md")
-    if code == 0 and report.is_file():
-        outcome, reason = "review", "exit 0 with report"
-    elif delivered:
-        outcome, reason = "review", f"exit {code} after a committed report and clean tree"
-    else:
-        outcome = "failed"
-        reason = (f"provider usage quota exhausted: {quota}" if quota else
-                  "provider rate limit, retries exhausted" if limited else f"exit {code}")
+    record = snapshot().get(tid, {})
+    outcome, reason = worker_outcome(wt, record.get("base"), tasks()[tid]["owns"],
+                                     code, quota, limited)
     atomic_json(run / "result.json", {"exit_code": code, "outcome": outcome, "reason": reason,
                                       "attempts": attempt, "finished_at": timestamp()})
     if outcome == "review":
@@ -408,10 +402,44 @@ def scan_events(path, start, session):
     return session, limited, quota
 
 
-def committed_and_clean(wt, name):
-    tracked = git("ls-files", "--error-unmatch", name, cwd=wt, check=False).returncode == 0
-    dirty = git("status", "--porcelain", cwd=wt, check=False).stdout.strip()
-    return tracked and not dirty
+def submission_problem(wt, base, owns):
+    """Fail closed unless this task, not its baseline, supplied a clean handback."""
+    if not base or not re.fullmatch(r"[0-9a-f]{40,64}", base):
+        return "missing or invalid launch base"
+    ancestor = git("merge-base", "--is-ancestor", base, "HEAD", cwd=wt, check=False)
+    if ancestor.returncode:
+        return "launch base is not an ancestor of the submission"
+    status = git("status", "--porcelain", "--untracked-files=all", cwd=wt, check=False)
+    if status.returncode or status.stdout.strip():
+        return "worktree is dirty or its status is unavailable"
+    diff = git("diff", "--name-only", "-z", base, "HEAD", "--", cwd=wt, check=False)
+    if diff.returncode:
+        return "submission diff is unavailable"
+    changed = [name for name in diff.stdout.split("\0") if name]
+    if "AGENT_REPORT.md" not in changed or not (wt / "AGENT_REPORT.md").is_file():
+        return "no fresh committed AGENT_REPORT.md relative to launch base"
+    outputs = [name for name in changed if name != "AGENT_REPORT.md"]
+    if not outputs:
+        return "no task-owned output changed relative to launch base"
+    if any(not any(name == own.rstrip("/") or
+                   (own.endswith("/") and name.startswith(own)) for own in owns)
+           for name in outputs):
+        return "submission includes out-of-scope files"
+    if not any((wt / name).is_file() for name in outputs):
+        return "submission has no surviving task-owned output file"
+    return None
+
+
+def worker_outcome(wt, base, owns, code, quota=None, limited=False):
+    problem = submission_problem(wt, base, owns)
+    if problem is None:
+        reason = f"exit {code} after fresh committed task output and report; clean tree"
+        if quota:
+            reason += f"; provider quota reported after handback: {quota}"
+        return "review", reason
+    failure = (f"provider usage quota exhausted: {quota}" if quota else
+               "provider rate limit, retries exhausted" if limited else f"exit {code}")
+    return "failed", f"{failure}; incomplete submission: {problem}"
 
 
 def status():
