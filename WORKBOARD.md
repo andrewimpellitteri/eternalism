@@ -139,7 +139,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `horizons-echo-exactness` — Determine or sharply bound the conformal scalar fixed region on closed dust | 9 | — | glm-horizons-echo-exactness |
 | review | `horizons-scalar-priority` — Audit prior work and exact sources for scalar sharpness and antipodal echo | 9 | — | glm-horizons-scalar-priority |
 | review | `horizons-echo-robustness` — Test how narrowly the antipodal scalar identity depends on its field equation | 9 | — | glm-horizons-echo-robustness |
-| review | `horizons-boundary-fix` — Fix closed fixed-region boundary and nearby echo scope errors | 10 | — | codex-horizons-boundary |
+| done | `horizons-boundary-fix` — Fix closed fixed-region boundary and nearby echo scope errors | 10 | — | codex-horizons-boundary |
 | review | `horizons-perturbation-continuation` — Close primary-source gaps and test actual fixed-event loss under a small field perturbation | 10 | — | codex-horizons-continuation |
 | claimed | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | glm-horizons-perturbation-referee |
 | review | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
@@ -153,6 +153,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `native-horizons-source-recovery` — Recover bounded original-source gap audit after GLM quota interruption | 10 | — | native-source-recovery |
 | review | `horizons-mass-review-recovery` — Finish interrupted scalar mass proof review and repair its independent control | 10 | — | codex-mass-recovery |
 | review | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
+| done | `horizons-reviewed-integration` — Integrate reviewed mass contrast, norm bounds and philosophical contract into horizons paper | 10 | — | codex-horizons-integration |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

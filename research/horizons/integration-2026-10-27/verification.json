@@ -1,0 +1,32 @@
+{
+  "baseline_commit": "1326b89",
+  "source_sha256": "ff095411f7080b01cf5046ed127c4e73b188c0265e4445c524f0f79822734769",
+  "pdf_sha256": "cfca87d3506c8fc7dff75c5e5a05d377d15b48ceb70835a7f4a2775c0ee21878",
+  "pages": 12,
+  "build": "Two successful final pdflatex passes after reviewer wording changes",
+  "undefined_citations_or_references": false,
+  "overfull_boxes": false,
+  "underfull_boxes": "One pre-existing bibliography line, badness 1087; no clipping",
+  "existing_theorems_and_proofs_unchanged": {
+    "thm:char": true,
+    "cor:cauchy": true,
+    "prop:conformal": true,
+    "prop:sharp": true,
+    "prop:dust": true,
+    "prop:echo": true,
+    "thm:diamonds": true
+  },
+  "source_labels_unique": true,
+  "source_references_resolved": true,
+  "independent_integration_reviews": [
+    "math-review/MATH_REVIEW.md",
+    "phil-review/PHIL_REVIEW.md"
+  ],
+  "visual_qa": "Final 12-page contact sheet and affected proof/prose pages inspected; see AGENT_REPORT.md",
+  "limitations": [
+    "Build and finite controls do not establish correctness or novelty",
+    "Ellis-Sciama original pages unread; Wald primary locator remains unverified in recovery lane",
+    "No detector, interacting, quantum or backreaction result",
+    "No selected-bundle release or external expert approval"
+  ]
+}
