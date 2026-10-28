@@ -168,6 +168,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `future-rival-original-chapters` — Reconstruct original bivalent and relativistic rival from essential chapters | 9 | — | claude-rival-chapters |
 | review | `future-ground-temporal-asymmetry` — Test principled asymmetry between past-directed and future-directed grounding | 9 | — | codex-ground-asymmetry |
 | open | `future-gr-dust-atlas` — Extend dust history correspondence to local patches and manifold postulates | 7 | — | — |
+| done | `future-domain-persistence` — Test persistence and edge objections to causal-past existence | 9 | — | codex-domain-persistence |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
