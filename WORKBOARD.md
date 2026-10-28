@@ -169,6 +169,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `future-ground-temporal-asymmetry` — Test principled asymmetry between past-directed and future-directed grounding | 9 | — | codex-ground-asymmetry |
 | open | `future-gr-dust-atlas` — Extend dust history correspondence to local patches and manifold postulates | 7 | — | — |
 | done | `future-domain-persistence` — Test persistence and edge objections to causal-past existence | 9 | — | codex-domain-persistence |
+| open | `lawful-completions-priority` — Kill-test priority and scope of past-preserving Einstein completions | 10 | — | — |
+| open | `lawful-completions-constraints` — Audit constraint-preserving local control of coupled Einstein futures | 10 | — | — |
+| open | `lawful-completions-relational` — Define invariant future outcomes and pointed observer matching | 10 | — | — |
+| claimed | `lawful-completions-coordinator` — Integrate lawful-completion theorem target and exact past-preservation baseline | 10 | — | codex-lawful-coordinator |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
