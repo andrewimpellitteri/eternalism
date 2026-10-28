@@ -169,10 +169,15 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `future-ground-temporal-asymmetry` — Test principled asymmetry between past-directed and future-directed grounding | 9 | — | codex-ground-asymmetry |
 | open | `future-gr-dust-atlas` — Extend dust history correspondence to local patches and manifold postulates | 7 | — | — |
 | done | `future-domain-persistence` — Test persistence and edge objections to causal-past existence | 9 | — | codex-domain-persistence |
-| claimed | `lawful-completions-priority` — Kill-test priority and scope of past-preserving Einstein completions | 10 | — | glm-lawful-completions-priority |
-| claimed | `lawful-completions-constraints` — Audit constraint-preserving local control of coupled Einstein futures | 10 | — | glm-lawful-completions-constraints |
-| claimed | `lawful-completions-relational` — Define invariant future outcomes and pointed observer matching | 10 | — | glm-lawful-completions-relational |
+| review | `lawful-completions-priority` — Kill-test priority and scope of past-preserving Einstein completions | 10 | — | glm-lawful-completions-priority |
+| review | `lawful-completions-constraints` — Audit constraint-preserving local control of coupled Einstein futures | 10 | — | glm-lawful-completions-constraints |
+| done | `lawful-completions-relational` — Define invariant future outcomes and pointed observer matching | 10 | — | native-lawful-relational |
 | claimed | `lawful-completions-coordinator` — Integrate lawful-completion theorem target and exact past-preservation baseline | 10 | — | codex-lawful-coordinator |
+| review | `bowtie-horizon-rationale` — Test whether a common-future rationale recovers bow-tie domains under horizons | 8 | — | claude-native-bowtie |
+| open | `past-shadow-lemma` — Prove the past-shadow criterion for entire-past matching by Cauchy data | 9 | — | — |
+| open | `past-shadow-ltb-numerics` — Numerically check an exact Einstein-dust LTB pair outside the past shadow | 9 | — | — |
+| open | `past-shadow-ltb-sources` — Source audit for LTB embedding, Weyl formula, shell crossing and Einstein-dust well-posedness | 8 | — | — |
+| open | `bowtie-horizon-review` — Independent adversarial review of the bow-tie horizon propositions | 8 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
