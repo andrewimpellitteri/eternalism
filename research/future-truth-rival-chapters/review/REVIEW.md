@@ -1,0 +1,45 @@
+# Independent review: Correia–Rosenkranz chapter reconstruction
+
+28 October 2026. I checked the claims in the parent `CLAUSES.md` and `RESULT.md` against the user-supplied chapter PDFs, and checked the comparison against the explicitly defined contracts in `research/future-truth-rivals/coordinator/PAIRED_CONTRACTS.md`. PDF text was extracted with macOS PDFKit through `osascript`; no packages were installed. This review covers selected passages central to the assigned claims, not the unavailable chapters 1–5 or Appendices 2–3, nor the full book.
+
+## Main finding: the bow-tie Cauchy result does not, as written, settle Contract S
+
+The geometric/PDE implication in RESULT §5 is sound under its stated assumptions. At any standpoint `b=(τ_b,Y_b)`, the bow-tie existence region is the complement of the causal future of `b` (with `b` retained). Every point with `τ<τ_b` is outside that future. Thus it contains an open slab `U_b`; choose `c<τ_b`, so the entire level `τ=c` is a smooth spacelike Cauchy surface of the open closed-dust cylinder. If two smooth solutions of the same linear massive scalar equation agree throughout `U_b`, they agree in particular on that Cauchy surface and hence, by Cauchy uniqueness on the globally hyperbolic background, agree everywhere. This establishes uniqueness from agreement on bow-tie-domain field values, conditional on the usual well-posedness assumptions.
+
+The next inference in RESULT §5 does not follow for Contract S as it is actually defined. `PAIRED_CONTRACTS.md` defines `C_b(s*)` as solutions agreeing with `s*` on `I^−(b)`, and Contract S supervaluates over that class. Agreement on `I^−(b)` is weaker than agreement on the bow-tie existence domain. For early `b` (in particular `0<τ_b<π`), the parent’s own reviewed result says that `C_b(s*)` contains solutions with differing values at future targets outside `J^−(b)`. The new Cauchy argument does not shrink this already-defined class: it shows that agreement on the additional bow-tie data would shrink it to a singleton.
+
+Therefore the claims “The bow-tie compatibility class is the singleton `{s*}`,” “Contract S therefore returns the same bivalent verdicts,” and “the L/S disagreement … vanishes” are unsupported as written. They conflate two bases:
+
+- `C_b(s*)`, agreement on the causal past, used by Contract S;
+- a new class of solutions agreeing on field values throughout the bow-tie existence region.
+
+There are two clean repairs. Keep Contract S unchanged and withdraw the conclusion that L/S disagreement vanishes at early standpoints. Or define and analyze a new bow-tie-conditioned compatibility class based on agreement over `E_b`; then the Cauchy argument gives a singleton and a settled verdict, but this is a changed settlement contract and must be labeled as such. In either repair, the conditional statement that field data *on the bow-tie domain* determine the solution remains valid. This is the review’s principal correction.
+
+The bridge premise also needs the exact scope already partly acknowledged in RESULT: the field values on existing points must count among the intrinsic natural features available as grounds, and the stipulated laws/Cauchy problem must be admissible in the grounding account. Cauchy uniqueness establishes mathematical determination; it does not by itself establish metaphysical grounding or that field-value facts exhaust what exists.
+
+## Chapter 7 attribution
+
+The chapter-7 clauses in `CLAUSES.md` accurately report the checked core passages:
+
+- The authors define the target future contingents on p.100 by whether their present truth-values are settled by present/past things in their natural, non-future-directed, non-Cambridge-like respects. If true, their truth is not thereby inevitable or predetermined by facts strictly about present/past goings-on. Preserve these qualifications: the chapter does not establish that no richer present/past fact, including a Lucretian or Cambridge-like fact, could settle a future truth. The authors expressly leave the Lucretian debate undecided and proceed under an assumption for argument (p.101).
+- The distance analogy and parity with the past are correctly located on pp.107–108. In particular, the authors say GBT has no automatic grounding advantage for past truths; their example is Nero’s past madness absent tropes/events. This supports RESULT’s statement that they do not posit a principled grounding asymmetry.
+- The (E1)–(E3) derivation and (GR) transcription match pp.109–110. “Sometimes” scopes over the existence and because-clause, while `Now` returns evaluation to the utterance time. The chapter’s conclusion is a general temporalized grounding requirement and compatibility argument; it does not identify a unique future event, require that the later ground be the event described, or prove that a particular future contingent is true. RESULT’s warning that Contract L’s one-point field witness and the relativistic `(GR_R)` are project extrapolations is necessary and correct.
+- The p.111 discussion of `¬Fnφ`, `¬Fφ`, the last-moment assumption, generalizations, and negative existentials is faithfully qualified. RESULT should retain the explicit caveat: the chapter’s “if time does not go on indefinitely” case assumes a last moment and flags that assumption as non-innocent. A bounded interval with no terminal event is outside that case analysis; the closed-dust example illustrates the structural gap, not a refutation of (GR).
+- The supervaluation objection on pp.104–105 is correctly distinguished from Contract S’s fixed-manifold solution class. C&R describe histories as maximal linear sets of times and argue that, if now is the last time, only one history remains. The claim that this objection does not directly refute Contract S is apt, provided the separate reference/ersatz-domain debt stays explicit as it does in RESULT.
+- “Truth need not factor through past data” in the Contract L correspondence table is slightly too broad unless it inherits the p.100 restriction to the relevant natural, non-future-directed, non-Cambridge-like respects. Tighten the table entry to say that future-contingent truth is not settled by those specified respects; avoid suggesting that C&R establish failure to supervene on every possible present/past fact.
+
+## Chapter 9 attribution and persistence objection
+
+The inspected chapter-9 passages support the parent’s central distinctions. On pp.148–150, relativistic GBT consists of (P1R) and (P2R), while (PO) yields pointy relativistic GBT and (BO) yields bow-tie relativistic GBT. The authors identify the pointy view with Stein’s proposal and call it the best-supported/defended account; they state, cautiously, that to their knowledge bow-tie relativistic GBT had not been defended in print and argue that it is the best version. The parent preserves this attribution and does not mistake `(BO+)` for `(BO)`.
+
+The persistence objection on pp.151–152 is represented fairly in `CLAUSES.md` and RESULT §4. Its force is conditional on the authors’ setup: an embodied perceiver at a point receives light from distinct causal-past locations; the limbs are treated as persisting, spatially extended fusions whose parts are located where those parts are; and persistence at issue means continuing to exist while located. On pointy views, the authors argue, the causal past lacks enough points for the limbs to remain located while existing here-now. Bow-tie views supply points in the elsewhere region, including points in the causal future of the perceived past locations, and so avoid this particular objection. This is an argument the project owes a substantive reply to if it adopts the pointy domain; it is not a formal contradiction or a proof that every pointy theory fails. RESULT correctly says the project has not supplied that reply and does not claim that bow-tie is thereby true.
+
+The p.160 “edge becomes a point” concern is also accurately attributed to the authors’ recapture discussion, with the chapter’s bridge assumptions kept visible. Appendix 3 contains the detailed translation proof and remains unread, so no independent proof audit is implied here.
+
+The parent’s statement that chapter 9 contains no relativistic grounding clause, no future-contingent/bivalence treatment, and no determinism discussion is consistent with the checked main-text passages. Do not attribute `(GR_R)` or chapter-7’s future-truth account to chapter 9.
+
+## Assessment
+
+`CLAUSES.md` is a useful, source-faithful reconstruction of the checked chapter-7 and chapter-9 main-text claims, with the qualifications above. Most attribution in `RESULT.md` is careful about author claims versus project derivation. The major substantive correction is local to RESULT §5: the Cauchy uniqueness result uses agreement on bow-tie-domain data, whereas Contract S uses causal-past agreement. Until the contract is changed or that conclusion withdrawn, the claimed disappearance of the L/S disagreement must not be relied on.
+
+No verdict is offered on the full semantics of the book, the chapter-9 axiom system’s complete interpretation, novelty, or the preferred temporal ontology.

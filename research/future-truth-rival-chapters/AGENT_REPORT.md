@@ -53,3 +53,12 @@ superscript layout of ω_t^loc/ω_t^ex was reconstructed from line breaks.
   before relying on E_b=J⁻(b).
 - Whether a causal-past ontology can motivate refusing the bow-tie domain
   without begging the question against C&R.
+
+## Coordinator integration, 28 October 2026
+
+Independent selected-source review is in review/REVIEW.md. Applied the
+conditioning-base correction in RESULT §5 (new S_bow versus original S),
+restricted the supervenience conclusion to one-point field claims, removed
+a determination-to-grounding inference, and tightened p.100 attribution.
+REVIEW_RESOLUTION.md records scope and remaining gates. Original report
+above is the historical submission; this addendum updates its review status.

@@ -3,8 +3,9 @@
 27 October 2026. Coordinator reconstruction after the user supplied the
 original chapter PDFs. Exact clauses and page locators are in CLAUSES.md.
 This closes the chapter 7/9 SOURCE-NEEDED gate in
-`research/future-truth-rivals/coordinator/SOURCE_GATE.md`. It is not yet
-independently reviewed. No novelty or ontology claim is made, and no
+`research/future-truth-rivals/coordinator/SOURCE_GATE.md`. Independent selected
+source review and its corrections are recorded in review/REVIEW.md and
+REVIEW_RESOLUTION.md (28 October 2026). No novelty or ontology claim is made, and no
 manuscript was edited.
 
 Attribution key: **[C&R]** = the authors' stated claim, with page.
@@ -63,7 +64,7 @@ explanandum to the utterance time. 'Because' is asymmetric and transitive
 |---|---|---|
 | Bivalent outcome-matching truth at b | Bivalence for future contingents (pp.111–112) | Matches |
 | Later witness at c with x∈E_c | (GR): sometimes ∃X(Now ψ is true because X exist) | Matches in structure; L is a one-point field instance |
-| Truth need not factor through past data | Future contingents' truth not settled by present/past natural respects (p.100) | Matches; their definition *is* this failure |
+| Truth need not factor through intrinsic classical past data | Future-contingent truth not settled by present/past natural, non-future-directed, non-Cambridge-like respects (p.100) | Matches only for this restricted base; richer present facts are not excluded |
 | Witness = field-value fact at x | Plural grounds of any admitted kind | L is a special case |
 | Point label x for a non-existent event | Tensed operators ↑, F; no point names in ch.7 | **Differs.** L uses spacetime-point reference; ch.7 uses tense operators that cancel commitment (p.107) |
 | Relativistic standpoint b | Ch.9 has @m, but no truth or grounding clause | **Our extrapolation.** C&R give no relativistic (GR) |
@@ -139,7 +140,7 @@ Consequences:
    The computation above needs only the named axioms. One frame fact is
    useful anyway (§7).
 
-## 5. Under C&R's preferred bow-tie domain, the dust obstruction disappears
+## 5. Bow-tie data determine the field; this changes the settlement base
 
 This is the main new consequence of reading chapter 9.
 
@@ -167,16 +168,25 @@ natural (non-Lucretian) features of what exists:
 
 - Under bow-tie relativistic GBT, every one-point predicate Q_(x,q) is
   extensionally fixed by the intrinsic field content of what exists at b,
-  together with the laws. Bivalent truth needs no later grounds in this model.
-- The bow-tie compatibility class is the singleton {s*}. Contract S therefore
-  returns the same bivalent verdicts as Contract L, and **the L/S disagreement
-  in our dust example vanishes.**
-- The supervenience principle isolated in POINT_OF_DISAGREEMENT.md is
-  *satisfied* by bow-tie GBT for this deterministic field. Our model puts no
-  pressure on C&R's preferred relativistic view.
+  together with the laws. Mathematical determination alone does not supply
+  a metaphysical grounding explanation.
+- Define a NEW compatibility class C_b^bow(s*) = {s in Ω : s agrees with
+  s* throughout E_b^bow}, with E_b^bow = M \ (J⁺(b) \ {b}). It is the
+  singleton {s*}. A new contract S_bow, supervaluating over C_b^bow, returns
+  the same bivalent verdicts as L for the stipulated one-point language.
+  **The original Contract S still uses C_b(s*) defined by I⁻(b) agreement.
+  Its class has not changed, and its disagreement with L remains wherever
+  the causal-past fibre varies.** The coincidence is L/S_bow, not L/S.
+- The field-restricted version of the supervenience principle isolated in
+  POINT_OF_DISAGREEMENT.md is satisfied on the bow-tie base for this
+  one-point language. This does not establish supervenience of every truth,
+  or a complete model of C&R's preferred relativistic view.
 
-[ours] So the past-data obstruction is an obstruction for **pointy**
-domains (Stein; our E_b), not for growing-block views as such. The choice
+[ours] So the past-data obstruction challenges completeness of **pointy**
+domains (Stein; our E_b) as an intrinsic determining base. It still applies
+to a causal-past settlement policy even under a larger ontology. It does
+not establish failure of determination by the bow-tie domain, or by
+growing-block views as such. The choice
 between pointy and bow-tie is the hinge. Bow-tie buys determination by
 admitting existents at b that are causally inaccessible from b and not
 causally upstream of it. That is C&R's "intransitivity of being" (§9.4), and
@@ -218,11 +228,12 @@ C&R's second argument against (BO+) uses the converse of (AR2), ⚪φ → ◃◃
 They say it "presumably" holds in many well-behaved GR spacetimes (p.155).
 
 [derived] On the closed-dust frame it is invalid. Take b=(2π−ε,Y) and
-z=(ε,−Y) with ε<π/2, so z≺b. A point y=(σ,W) spacelike to both would need
-2π−ε−σ < d(W,Y) and σ−ε < π−d(W,Y). Adding the two gives 2π−2ε<π, which
-fails; the boundary cases σ≥2π−ε and σ≤ε fail directly. So no point is
-spacelike to both. A valuation true only at z makes ⚪φ true at b and ◃◃φ
-false there.
+z=(ε,−Y) with 0<ε<π/2, so z≺b. Put D=d(W,Y). A point y=(σ,W)
+spacelike to both would require D>|σ−(2π−ε)| and π−D>|σ−ε|, since
+antipodality gives d(W,−Y)=π−D. Adding yields
+π>|σ−(2π−ε)|+|σ−ε|≥2π−2ε>π, a contradiction by the triangle inequality
+on the real time coordinates. Thus no point is spacelike to both. A
+valuation true only at z makes ⚪φ true at b and ◃◃φ false there.
 
 Their first argument, from causally related pairs inside the elsewhere
 region, still applies in closed dust. Their conclusion against (BO+) is
@@ -272,8 +283,9 @@ pointy/bow-tie choice as §5.
 
 ## Remaining gates
 
-1. Independent review of attribution (CLAUSES.md against the PDFs) and of
-   §§4–7 (done_when item 3). Not yet done.
+1. Independent selected-source review is recorded in review/REVIEW.md. Its
+   compatibility-class correction is applied above; see REVIEW_RESOLUTION.md.
+   Full book semantics and complete frame validation remain unchecked.
 2. Chapters 1–5 (free logic, the reference of @m to non-existents, 𝒯,
    classical (P1)–(P3)) and Appendices 2–3, if a formal correspondence is
    pursued.
