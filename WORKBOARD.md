@@ -161,6 +161,13 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `future-ground-tense-domain` — Reconstruct and test stage-sensitive tense and existence semantics | 9 | — | codex-future-tense |
 | done | `future-ground-relativistic-branching` — Audit whether causal-past alternatives constitute branching physical possibilities | 9 | — | codex-future-branching |
 | done | `future-ground-coordinator` — Synthesize and red-team a future-truth grounds contract | 9 | — | codex-future-coordinator |
+| done | `future-rival-gr-compatibility` — Test existing generalized GR history definition against closed dust | 9 | — | codex-rival-gr |
+| done | `future-rival-retrospection` — Audit truth of earlier future-tense utterances without a selected history | 9 | — | codex-rival-retrospection |
+| done | `future-rival-selection` — Test whether a covariant actual-history selector can come from same-past data | 9 | — | codex-rival-selection |
+| done | `future-rival-coordinator` — Construct paired future-truth interpretations and source access gate | 9 | — | codex-rival-coordinator |
+| review | `future-rival-original-chapters` — Reconstruct original bivalent and relativistic rival from essential chapters | 9 | — | claude-rival-chapters |
+| open | `future-ground-temporal-asymmetry` — Test principled asymmetry between past-directed and future-directed grounding | 9 | — | — |
+| open | `future-gr-dust-atlas` — Extend dust history correspondence to local patches and manifold postulates | 7 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
