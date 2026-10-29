@@ -91,10 +91,17 @@ cross-check, neither affecting the census. The completeness claim rests on
 the analytic orbit/chain argument of §§2–3; the grid is witnesses only.
 
 With reflection added, the 16 collapse to 10 mirror orbits (4 symmetric
-patterns and 6 pairs). With causal persistence P_c in place of P_t, J⁻(0)
-becomes mandatory and the per-side options reduce to 3, giving 9 — derived
-here but not script-checked; treat as a coordinator conjecture pending the
-same style of verification.
+patterns and 6 pairs). Under causal persistence P_c (with F_c), the
+picture differs: J⁻(0) = I⁻∪N⁻∪{0} is mandatory, both future-null
+branches are forbidden, and only the two wedges stay free, so exactly
+**4** assignments survive — J itself, J+RW, J+LW, J+RW∪LW — and I (I⁻
+alone) fails P_c. This is consistent with the n≥2 collapse to J under
+boundedness and P_c: J remains the minimum, but in 1+1 without parity
+wedge freedom survives. Correction log: an earlier coordinator conjecture
+announced 9 (per-side (wedge, past-null) option triples); it was wrong
+because the past-null options are never free — the script caught it
+before any checked status was recorded, and `check_1plus1_pc_census.py`
+verifies the count 4.
 
 ## 5. What this does and does not show
 

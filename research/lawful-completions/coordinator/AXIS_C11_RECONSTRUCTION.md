@@ -279,6 +279,16 @@ assignment at the axis.
   reconstructed; a defect there would weaken the pure-third-derivative
   inputs, not the lifting lemma. The lift review's O1–O19 verdicts are
   coordinator-inspected; its REPAIR-N1/N2/N3 are applied above.
+* **Recent-literature leads (29 October, see
+  RECENT_LITERATURE_2026_10_29.md):** LOY exists in published form
+  (Ann. PDE 4:3, 2018) — the published §3–§4 should be checked against
+  the v1 audit before the sketch-fidelity residual is treated as final.
+  Kilgore's higher-derivative bounds for the same global SSESF class
+  (arXiv:2108.13377, published AHP) and Luk–Oh's global nonlinear
+  stability of that class (arXiv:2108.13379, published AHP 2022) are
+  the named routes toward replacing the finite-order inputs at higher
+  order and toward the smooth-common-development gate; both need
+  full-text reads before any gate movement.
 * **Sharp target:** bounded weak Hessians do not establish their continuity.
   A model scalar radial function H(ρ)=ρ² sin(log ρ), H(0)=0, is C¹,¹
   after Cartesian lifting and has H_ρ(0)=0, but its Hessian has no center
