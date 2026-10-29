@@ -103,3 +103,21 @@ Whether to accept the three review tasks, queue the proposed follow-ups
 a dedicated census prior-art audit and the 1+1 census are separate tasks),
 and whether the repaired C¹,¹ note may be cited downstream. Nothing above
 should be quoted as an accepted result until those decisions are recorded.
+
+## Addendum (same day, later): complete 1+1 census
+
+The review's flagged gap "complete 1+1 no-parity census not completed" is
+now closed at coordinator level: exactly 16 covariant, self-inclusive,
+chronologically persistent, F_t assignments exist in 1+1 without parity —
+per side the monotone chain (future-null ⊆ wedge ⊆ past-null), sides
+independent. I, J, B, C, the review's fifth family and its mirror are
+among them; the mechanism explains why the n≥2 census holds (saturation
+kills the chain freedom there). See
+[ONE_PLUS_ONE_CENSUS.md](ONE_PLUS_ONE_CENSUS.md) and
+`check_1plus1_census.py` (exact checks, 0.03 s; two checker defects of the
+coordinator found and fixed during development are logged in the note).
+The census is a coordinator deduction pending independent review; the
+P_c variant (expected 9) is a labelled conjecture, not checked. The
+discovery-level prior-art sweep in §7 of the note (Bigaj 2008 cumulativity
+as nearest B-type relative; no census-form statement found) feeds, but does
+not replace, the proposed dedicated audit.

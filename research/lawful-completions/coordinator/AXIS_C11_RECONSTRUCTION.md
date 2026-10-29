@@ -51,6 +51,19 @@ B=φ_uu+ν_uψ+(Kr)_uψ, every term of which is bounded by printed inputs
 re-proves parity (3) for φ without the expansion used there: ν=−λ on Γ
 gives φ_u=λψ=φ_v there.
 
+Two regularity points in this lemma are worth making explicit. First, c
+extends continuously to Γ: each cone solution is C¹ up to Γ (Definition
+2.1 with the axis identities (2.4)), so φ_u, ν and ψ=λ⁻¹φ_v are continuous
+there (λ ≥ 1/3 removes any division problem), and K=2mν/[(1−μ)r²]=O(r)
+by (3.11), extending continuously with value 0 on Γ. The log-divergence
+step uses only this continuity: |c|≥|c(t₀,t₀)|/2 near (t₀,t₀) and
+∫du/r against r≍v−u diverges. Second, the bound on B is a term-by-term
+account: φ_uu=ν²(ν⁻¹∂_u)²φ+ν_u·(ν⁻¹∂_u)φ, bounded by (3.55) with (3.29)
+and |ν|≤2/3 from (1.8); |ν_u|≤Cε from (1.9); |ψ|≤Cε from (3.9); and
+(Kr)_u=K_u r+Kν with K=O(r), K_u bounded through m_u=O(r²), ν_u≤Cε,
+μ_u=O(r) and the m=O(r³) cancellation of the r⁻², r⁻³ factors. No term
+consumes φ_uv.
+
 Pure third derivatives of r follow from (3.45), (3.47) and the lower-order
 bounds. Mixed third derivatives follow by differentiating
 r_uv=2mνλ/[(1−μ)r²] once: every resulting term is bounded using the weighted
