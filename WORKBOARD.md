@@ -174,10 +174,17 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `lawful-completions-relational` — Define invariant future outcomes and pointed observer matching | 10 | — | native-lawful-relational |
 | claimed | `lawful-completions-coordinator` — Integrate lawful-completion theorem target and exact past-preservation baseline | 10 | — | codex-lawful-coordinator |
 | review | `bowtie-horizon-rationale` — Test whether a common-future rationale recovers bow-tie domains under horizons | 8 | — | claude-native-bowtie |
-| open | `past-shadow-lemma` — Prove the past-shadow criterion for entire-past matching by Cauchy data | 9 | — | — |
-| open | `past-shadow-ltb-numerics` — Numerically check an exact Einstein-dust LTB pair outside the past shadow | 9 | — | — |
-| open | `past-shadow-ltb-sources` — Source audit for LTB embedding, Weyl formula, shell crossing and Einstein-dust well-posedness | 8 | — | — |
-| open | `bowtie-horizon-review` — Independent adversarial review of the bow-tie horizon propositions | 8 | — | — |
+| claimed | `past-shadow-lemma` — Prove the past-shadow criterion for entire-past matching by Cauchy data | 9 | — | glm-past-shadow-lemma |
+| claimed | `past-shadow-ltb-numerics` — Numerically check an exact Einstein-dust LTB pair outside the past shadow | 9 | — | glm-past-shadow-ltb-numerics |
+| review | `past-shadow-ltb-sources` — Source audit for LTB embedding, Weyl formula, shell crossing and Einstein-dust well-posedness | 8 | — | glm-past-shadow-ltb-sources |
+| claimed | `bowtie-horizon-review` — Independent adversarial review of the bow-tie horizon propositions | 8 | — | glm-bowtie-horizon-review |
+| done | `lawful-collapse-geometry` — Derive a causal barrier from the supplied Einstein-scalar collapse theorem | 10 | — | native-collapse-geometry |
+| review | `lawful-collapse-extension` — Audit complete-past extension of the scalar cone-collapse construction | 10 | — | native-collapse-extension |
+| review | `lawful-scattering-regularity` — Close or isolate the smooth-metric and scattering-map regularity gate | 10 | — | native-scattering-regularity |
+| review | `lawful-scattering-energy` — Derive exact incoming energy and test a later-pulse compensation mechanism | 10 | — | native-scattering-energy |
+| review | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
+| review | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
+| open | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

@@ -54,6 +54,15 @@ against brute force (360/360). H recovers bow-tie in Minkowski, de Sitter
 (patch and global) and the Vaidya pair; fails in flat ΛCDM beyond 2η_total.
 Verdict split: KILL for instantaneous potential, CONDITIONAL for historical.
 
+## Addendum: SCREENING.md (evening, same day)
+
+Lemma 1: D_pot(b) = J⁻(J⁺(b)) \ (J⁺(b)\{b}). Theorem 2: a realm screens b's
+future on every Cauchy slice avoiding it iff it contains D_pot(b). Theorem 3:
+isometric open potential realms (with homeomorphic extension to the mark)
+have J⁺(b) in matched domains of dependence; under localized MGHD uniqueness
+(premise L, unverified) the futures are isometric. Classification table and
+relation to coordinator NEXT_STRONGEST_PATH.md included. Unreviewed.
+
 ## Unresolved questions / proposed next tasks
 
 1. Replace null dust with spherically symmetric Einstein–scalar collapse
