@@ -51,3 +51,23 @@ separate. The LOY C¹,¹ reconstruction remains unaccepted until its source
 orders and analytic lifting are independently audited. No smooth MGHD or
 pointwise axis curvature upgrade follows from the proposed C¹,¹ argument.
 Existing Claude PDF and local-fragmentalism source changes were preserved.
+
+## Primary-clause follow-up and philosophical bridge
+
+Three GLM review runs were launched from `634988e` in disjoint worktrees;
+live outcomes remain in the runner. Independently of those reviews, added
+RIVAL_PROFILE_AND_REGULARITY_BRIDGE.md. Directly reread C&R Chapter9
+pp137,144,148–149; visually checked pp148–149 and recorded the exact input
+hash. Their causal order includes null directions, (A23R) gives self-existence,
+(P1R) full causal persistence, (P2R) causal-future exclusion, and (PO)/(BO)
+distinguish the elsewhere. At the limited point-profile level this gives
+J versus B, not the workers' invalid I/J binary. This is not a complete
+free-logic, location/fusion or grounding reconstruction.
+
+The note isolates the philosophical premise that closed existence realms
+would select the pointy profile. Smooth spacetime geometry supplies no such
+requirement. It also proves why full continuity of a binary point inventory
+on connected space is much stronger: with self-inclusion it forces the
+entire frame into that inventory. The aim is to avoid disguising either
+ontological selector as physical regularity. The independent philosophical
+payoff of either existence assignment remains open.
