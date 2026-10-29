@@ -1,5 +1,7 @@
 # Essential source gate: Correia–Rosenkranz
 
+> **Superseding status, 28 October 2026:** The user supplied chapters 7 and 9; their main texts have since been read and independently reviewed. The chapter-main-text access gate described below is CLOSED. See [original clauses](../../future-truth-rival-chapters/CLAUSES.md) and [review resolution](../../future-truth-rival-chapters/REVIEW_RESOLUTION.md). Chapters 1–5 and Appendices 2–3 remain unread; full formal-semantic correspondence is still open. The account below records the earlier access limitation, not a current request for those two PDFs.
+
 27 October 2026. The original main arguments remain unread. This gate is
 OPEN and must not be replaced by interpreting abstracts as a completed
 reconstruction of the authors' view.

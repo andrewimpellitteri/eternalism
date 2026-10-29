@@ -1,5 +1,7 @@
 # First round: retained results and next proof obligations
 
+> **Current-status note:** Historical round-one checkpoint. The differentiable scattering-map requirement below belongs to the earlier inverse-function route; [FINITE_CONTROL.md](FINITE_CONTROL.md) uses the later degree-before-limit route. Incoming boundary mass has since passed review, while finite-cone continuity and classical-axis regularity remain open. Current integrated status: [project synthesis](../../CURRENT_SYNTHESIS.md).
+
 28 October 2026. No novelty or paper-readiness verdict.
 
 ## Retained, bounded mathematical work

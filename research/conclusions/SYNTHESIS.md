@@ -1,5 +1,7 @@
 # Bounded synthesis: what is established, excluded and undecided
 
+> **Current-status note:** This is the 21 October snapshot. For integration through 28 October, including Stein--GR, horizons, rival truth theories and repaired screening, use [CURRENT_SYNTHESIS.md](../CURRENT_SYNTHESIS.md) and [CLAIM_STATUS.md](../CLAIM_STATUS.md). Historical claims and gates below are not all current; later source/argument dispositions take precedence.
+
 Coordinator synthesis, 2026-10-21. This document states the project's current
 verdict at the narrowest defensible scope. It is not a new theorem, a survey
 substitute, or an ontology claim. Each substantive item names a verified

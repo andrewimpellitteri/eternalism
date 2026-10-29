@@ -1,5 +1,7 @@
 # Research paths after the Stein-GR theorem
 
+> **Current-status note:** Historical brainstorm, 25 October. Unqualified novelty, ontology and feasibility language below is proposal-stage language, not the current verdict. The [current synthesis](CURRENT_SYNTHESIS.md) and [claim ledger](CLAIM_STATUS.md) record the subsequent source checks, counterexamples and repairs.
+
 25 October 2026. Big ideas for discussion before narrowing. Arguments marked
 [draft] are unreviewed proof sketches written here; nothing below has had an
 independent check. Prior work flagged "from memory" is unread.

@@ -1,5 +1,7 @@
 # Two interpretations tested against the same future field claim
 
+> **Integration update, 28 October 2026:** Original chapters 7 and 9 have since been supplied, read and reviewed in [the chapter lane](../../future-truth-rival-chapters/REVIEW_RESOLUTION.md). The contracts below remain limited coordinator constructions, not the full book semantics. In particular the original causal-past base and the later bow-tie base must remain distinct. See the [current project synthesis](../../CURRENT_SYNTHESIS.md).
+
 27 October 2026. Candidate contracts for comparison, not new temporal
 ontologies and not reconstructions of Correia–Rosenkranz's full theory.
 The source gate remains open. All conclusions below are conditional on

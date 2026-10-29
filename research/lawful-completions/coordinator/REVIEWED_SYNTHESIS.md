@@ -33,3 +33,13 @@ LOCAL_PERSISTENCE.md proves that H contains the bow-tie portion of a neighborhoo
 The two inspected motivations can support local thickness and a persistent causal extension, but they do not by themselves derive universal elsewhere existence across the tested curved spacetimes. A bow-tie advocate can retain (BO) as a primitive or offer further composition/location principles. The remaining dispute concerns whether those added principles independently explain the selected realm. It is not an argument that the view is inconsistent, that relativity proves eternalism, or that unknowable future outcomes lack truth values.
 
 The scalar fixed-incoming-mass interpolation project remains mathematically distinct. Its incoming mass identity passed independent review; four-dimensional axis regularity and finite-cone continuity still gate a full classical theorem. It addresses outcome determination from the accessible past, not equality of the entire bow-tie realm.
+
+
+## Later screening repair and project integration
+
+The [repaired result](REPAIR_RESULT.md) adds smooth screening, fixed-background
+field determination, vacuum common-duration geometric-readout agreement and the
+explicit completeness strengthening. It separates these from the unverified
+restricted-maximality route. The [current project synthesis](../../CURRENT_SYNTHESIS.md)
+and [claim ledger](../../CLAIM_STATUS.md) connect these results with the earlier
+causal-set, observer, Stein--GR, horizon and truth-grounding work.
