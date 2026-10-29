@@ -152,8 +152,22 @@ C from the stricter future-exclusion cases. Nothing here defines those
 philosophical premises as neutral.
 
 The n≥2 assumption can be weakened to n=1 if spatial reflection is included
-in the covariance group. Without reflection in 1+1 the left/right orbit
-argument changes; no census for that subgroup is asserted here.
+in the covariance group. Without reflection in 1+1 additional assignments
+exist, so n≥2 is load-bearing for the census statement itself: the
+independent persistence review (29 October 2026,
+`ontology-persistence-review`) constructed and machine-checked a fifth
+candidate A'={0}∪{a∉I⁻(0): t_a+x_a>0} (with E_b={x:b−x∈A'}), which is
+Poincaré-covariant, self-inclusive, chronologically persistent and F_t
+because t+x scales by e^η>0 under boosts and grows along timelike futures.
+Its standpoint-0 membership pattern differs from I, J, B and C; its mirror
+gives a sixth, and combinations of null branches likely give more, so the
+complete 1+1 no-parity census is a separate larger classification, open as
+of this date. Coordinator second read (29 October 2026) re-derived the
+future-set and covariance steps and confirmed distinctness from all four
+candidates at the set level; two cosmetic print-label typos in the review
+script's summary output (B and C probe patterns) do not affect its
+assertions. This strengthens the earlier hedge; it does not affect the n≥2
+census, which was asserted only where the orbit argument holds.
 
 ## 5. Removing future exclusion restores many closed persistent rules
 

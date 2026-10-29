@@ -24,12 +24,52 @@ outgoing mass equation, ν<0, and r_uv=2mνλ/[(1−μ)r²]≤0. Hence λ≤1/2
 from its initial-cone normalization. Theorem 1.1 bounds −ν above and
 below. No small upper bound on r's first derivatives is inferred.
 
-For mixed derivatives we use §4's explicit assertion following its displayed
-pure-derivative bounds. Pure third derivatives of r follow from (3.45),
-(3.47) and the lower-order bounds. Mixed third derivatives can also be
-checked directly by differentiating r_uv=2mνλ/[(1−μ)r²], using the weighted
-mass bounds below. Do not use §4's apparently erroneous small bound for
-first derivatives of r; Theorem 1.1 supplies their actual boundedness.
+The field equations are exact inputs in their own right, not consequences of
+the bounds: r_uv=2mνλ/[(1−μ)r²] and (rφ)_uv=r_uvφ (the SSESF system), with
+the mass equations (2.12)–(2.13). The parity identity (3) below needs the
+second equation explicitly: the axis-odd lift φ=ρ satisfies the mass
+equations and every derivative bound but violates (rφ)_uv=r_uvφ, and lifts
+to |x|, which is not C¹. Omitting these equations from the input list would
+make the statement false; the independent lift review demonstrated exactly
+this failure mode.
+
+The mixed members of the displayed order sets are not printed estimates in
+LOY. The axis-inclusive u₀-uniform bound |φ_uv|≤C is supplied by the
+following derivation, which uses only printed estimates and was verified
+term-by-term by the independent source audit (29 October 2026,
+`lawful-axis-source-review`, lemma O7) and re-derived by the coordinator the
+same day. Let ψ=λ⁻¹φ_v and K=λ_u/λ=2mν/[(1−μ)r²]; expanding ∂_u(λφ+rφ_v)
+and cancelling λ_uφ against r_uvφ gives ∂_u(φ+rψ)=−Krψ. Hence ψ_u=−c/r with
+c:=φ_u+νψ+Krψ. If c(t₀,t₀)≠0, then ψ_u≈−c/r near the axis and du=dr/ν
+makes ψ grow like log r, contradicting the printed axis-inclusive bound
+(3.9); so c≡0 on Γ. Differentiating, ∂_u(rc)=rB−cKr with
+B=φ_uu+ν_uψ+(Kr)_uψ, every term of which is bounded by printed inputs
+(|φ_uu| from (3.55) plus nondegeneracy, |ν_u|≤Cε from (1.9), |ψ|≤Cε from
+(3.9), and (Kr)_u≤C from the weighted mass bounds below); no step consumes
+φ_uv, so there is no circularity. Gronwall from the axis, where rc=0, gives
+|rc|≤Cr², hence |ψ_u|≤C and φ_uv=λ_uψ+λψ_u≤C. As a byproduct, c≡0 on Γ
+re-proves parity (3) for φ without the expansion used there: ν=−λ on Γ
+gives φ_u=λψ=φ_v there.
+
+Pure third derivatives of r follow from (3.45), (3.47) and the lower-order
+bounds. Mixed third derivatives follow by differentiating
+r_uv=2mνλ/[(1−μ)r²] once: every resulting term is bounded using the weighted
+mass bounds below, |ν_u|,|λ_v|≤Cε from (1.9), and m=O(r³) to kill the r⁻²
+and r⁻³ quotients; the weighted mass bounds themselves consume no third
+derivative of anything, so there is no circularity. This derivation was
+checked term-by-term in the source audit.
+
+Two source-fidelity caveats, recorded by the audit and respected here.
+First, §4's displayed line claiming small first derivatives of r contains a
+confirmed typo in its k=0 part (it contradicts (1.8) and the gauge); the
+k=1,2 parts are consistent with (1.9) and Proposition 3.18, and nothing
+below uses the k=0 part — Theorem 1.1 supplies the actual first-derivative
+bounds. Second, the u-side halves of Proposition 3.18 are proof sketches in
+v1 ("roles of u and v interchanged"); an error hidden there would degrade
+the pure-third-derivative inputs to v-side statements only. The audit also
+noted that §4's displayed k≥2 suprema are proved on domain-of-derivation
+blocks rather than the full printed domain; on compact sets this is
+harmless for the Arzelà–Ascoli argument.
 
 The convergent subsequence has r_n→r in C² and φ_n→φ, m_n→m in C¹ on
 compact quotient sets, including the axis. Thus the limit is C²,¹ for r
@@ -60,9 +100,10 @@ dr=λ dv. It follows by differentiating μ off the axis that
 
     |μ| ≤ C r²,       |μ_a| ≤ C r.
 
-Differentiate the displayed mass equations once. Every term is O(r):
-derivatives of λ,ν are bounded; derivatives of φ_u,φ_v are bounded by the
-second-order field input; derivatives of 1−μ are O(r). Hence
+Differentiate the displayed mass equations once. The dominant term is the
+r_aφ_b² product, which is O(r); the remaining terms are O(r²) or smaller
+(derivatives of λ,ν are bounded; derivatives of φ_u,φ_v are bounded by the
+second-order field input; derivatives of 1−μ are O(r)). Hence
 
     |m_ab| ≤ C r,       |μ_ab| ≤ C.                       (1)
 
@@ -94,9 +135,14 @@ Since m=O(r³), the equation for r_uv gives r_uv=O(r). Therefore
     r_ρρ(t,0)=r_tt(t,0)−4r_uv(t,0)=0.                 (2)
 
 Similarly p=rφ has p_uv=r_uv φ. Expand p_uv at the axis, using bounded
-φ_uv for the approximants. The surviving term is νφ_v+λφ_u, so
+φ_uv for the approximants — supplied by the derivation in §1, which is
+what makes this expansion legitimate rather than an appeal to §4's prose
+sentence. The surviving term is νφ_v+λφ_u, so
 
     φ_ρ(t,0)=0.                                      (3)
+
+(The §1 lemma also re-proves (3) independently: c≡0 on Γ with ν=−λ there
+gives φ_u=φ_v=λψ on the axis.)
 
 These identities pass to the limit under the stated C²/C¹ convergence.
 They are precisely the finite-order identities needed below. We do not
@@ -152,8 +198,16 @@ and tends to zero there too. All second spatial derivatives are sums of
 bounded angular factors times D_ρρ, D_ρ/ρ, or D/ρ². Mixed derivatives use
 D_tρ and D_t/ρ; temporal second derivatives use D_tt. All are bounded.
 Thus E_ij is C¹ across the axis with bounded weak Hessian, hence C¹,¹.
-For instance a line-segment argument for the continuous gradient proves
-the Lipschitz estimate across the axis as well as off it. This avoids
+The Lipschitz estimate across the axis follows from the same two facts by a
+two-case segment argument (the proof is inserted here following the
+independent lift review, REPAIR-N3; the earlier sentence version asserted it
+without proof). Let G=∇_{(t,x)}E and P=(t,x), Q=(s,y) in a compact ball.
+Case 1: the segment PQ avoids the axis. G is C¹ on it with
+|dG/ds|≤|Hess E|≤C, so |G(P)−G(Q)|≤C|P−Q|. Case 2: the segment meets the
+axis at some (z*,0). Then |G(P)|+|G(Q)|≤C(ρ_P+ρ_Q)≤C(|x−z*|+|y−z*|)≤C|P−Q|,
+using |G|≤Cρ from (5) and z* lying between P and Q on the segment. Hence G
+is globally Lipschitz with a uniform constant and E∈C¹,¹ on the closed
+half-plane, using only |∇E|≤Cρ and the off-axis Hessian bound. This avoids
 assuming that D/ρ² itself has two continuous derivatives.
 
 All constants are uniform in the finite-cone approximants. The induced
@@ -199,10 +253,19 @@ assignment at the axis.
 
 ## 6. Remaining gates and strongest objections
 
-* **Source correspondence:** independently verify that §4's mixed-derivative
-  assertion supplies the axis-inclusive uniform second derivatives of φ
-  used in (1), and third derivatives of r. These are the full required
-  source orders; no silent appeal to all-order smoothness is permitted.
+* **Source correspondence:** closed on 29 October 2026. The
+  `lawful-axis-source-review` lane read the verbatim v1 LaTeX at full-text
+  depth and verified every consumed locator, the u₀-uniformity statements,
+  the typo, and the axis-inclusive availability of the mixed and third
+  derivatives needed here; its O7 lemma replaces §4's prose sentence as the
+  source of |φ_uv|≤C, and the coordinator has since re-derived it. Residual
+  risks are recorded below rather than in this bullet.
+* **Second-reader residuals:** the O7 lemma and the mixed-third-derivative
+  derivation now have two readings each (source lane, coordinator). The
+  u-side halves of Prop 3.18 remain proof sketches in LOY v1 and were not
+  reconstructed; a defect there would weaken the pure-third-derivative
+  inputs, not the lifting lemma. The lift review's O1–O19 verdicts are
+  coordinator-inspected; its REPAIR-N1/N2/N3 are applied above.
 * **Sharp target:** bounded weak Hessians do not establish their continuity.
   A model scalar radial function H(ρ)=ρ² sin(log ρ), H(0)=0, is C¹,¹
   after Cartesian lifting and has H_ρ(0)=0, but its Hessian has no center
