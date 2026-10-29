@@ -73,3 +73,7 @@ The normal launch is:
 Do not launch until both current tasks have been inspected, integrated as appropriate and accepted. Commit updated board and required inputs first; inspect Claude's intervening changes and active claims. Workers use isolated worktrees and the configured GLM model. They write only their owns directory plus the runner's root handback. No shared manuscripts, seed sources, workboard, runner changes, installs, child agents or pushes.
 
 At handback, verify primary locators and source depth, check owned scope, inspect counterexamples, and review claims before acceptance. Archive root reports into their lanes during integration. Phase 2 is not delegated to worker consensus.
+
+## Coordinator preparation while workers run
+
+[Premise stress test](coordinator/PREMISE_STRESS_TEST.md) checks two surviving assignments, a flat-spacetime restriction counterexample, and the gap between mathematical reconstruction and grounding. It is preliminary coordinator work, not an accepted worker result. Workers retain independent briefs; use this note at reconciliation to challenge their conclusions.
