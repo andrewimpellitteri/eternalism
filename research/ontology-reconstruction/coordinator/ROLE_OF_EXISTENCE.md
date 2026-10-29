@@ -1,5 +1,7 @@
 # What work does existence do? A provisional argument for event realism
 
+> **Version-2 correction:** [EXPLANATORY_ROLE_TEST.md](EXPLANATORY_ROLE_TEST.md) replaces the suggestion that event realism has earned a default advantage with a symmetric test of particular explanatory claims. The conditional argument below remains a candidate, not a justified overall ranking.
+
 29 October 2026. Coordinator philosophical argument for adversarial review. It is neither a physical theorem nor an accepted ontology verdict. No novelty claim. Source depths are recorded in sources.jsonl; the central comparative argument is ours.
 
 ## 1. The positive hypothesis

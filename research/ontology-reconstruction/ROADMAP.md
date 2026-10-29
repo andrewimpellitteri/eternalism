@@ -79,3 +79,5 @@ At handback, verify primary locators and source depth, check owned scope, inspec
 [Premise stress test](coordinator/PREMISE_STRESS_TEST.md) checks two surviving assignments, a flat-spacetime restriction counterexample, and the gap between mathematical reconstruction and grounding. It is preliminary coordinator work, not an accepted worker result. Workers retain independent briefs; use this note at reconciliation to challenge their conclusions.
 
 [What work does existence do?](coordinator/ROLE_OF_EXISTENCE.md) develops a conditional abductive preference for event realism and its strongest objections. This is a coordinator proposal for adversarial comparison, not an accepted conclusion or an instruction for workers to favor that view. Source depths and unread gates remain explicit.
+
+[Version-2 explanatory-role test](coordinator/EXPLANATORY_ROLE_TEST.md) corrects the default-preference claim, supplies a restricted domain-insensitivity example, and asks which explanatory step depends on a disputed ontology. This is preliminary coordinator work to challenge, not a new accepted theorem or a full model of any named rival.
