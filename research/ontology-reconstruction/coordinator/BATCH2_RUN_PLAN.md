@@ -30,3 +30,12 @@ require coordinator source, proof and scope review before integration.
 The coordinator's C¹,¹ Cartesian axis reconstruction is a separate pending
 proof. This batch does not certify it. Neither worker agreement nor model
 availability selects a temporal ontology.
+
+## Dispatch confirmed
+
+All four runs started with `zai-coding-plan/glm-5.3-flash`. The classification
+lane resumed its preserved checkout; the three repair lanes launched from
+committed baseline `0c6b383` into new isolated worktrees. New text/tool events
+confirm that model requests are working after the reported reset. Existing
+review submissions retain their review status. Live process details and
+outcomes remain in the runner's runtime logs.

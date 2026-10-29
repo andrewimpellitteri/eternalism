@@ -195,9 +195,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | glm-ontology-natural-assignments |
 | review | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | — | glm-ontology-bridge-premises |
 | review | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | — | glm-ontology-expansion-equivalence |
-| open | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | — |
-| open | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | — |
-| open | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | — |
+| claimed | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | glm-ontology-equivalence-repair |
+| claimed | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | glm-ontology-bridges-repair |
+| claimed | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | glm-ontology-rivals-repair |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
