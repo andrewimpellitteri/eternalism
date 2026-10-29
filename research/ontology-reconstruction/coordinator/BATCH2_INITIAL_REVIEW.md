@@ -3,6 +3,13 @@
 29 October 2026. Coordinator inspection, not acceptance or full integration.
 The C¹,¹ axis reconstruction remains separately pending independent review.
 
+**Further correction:** [PERSISTENCE_CONVENTIONS.md](PERSISTENCE_CONVENTIONS.md)
+finds an additional premise error shared by the classification and equivalence
+submissions: self-inclusion plus causal persistence forces causal-past inclusion.
+Their claimed two-case census under causal boundedness is therefore one case.
+The corrected broader census distinguishes timelike from null advancement and
+is itself pending independent review. Do not use the worker tables unchanged.
+
 ## Submissions inspected
 
 * Classification: `3abcacb3b87283c0786fa5f572e7f85ae27b8481`.

@@ -192,12 +192,15 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `lawful-finite-cone-continuity` — Prove the finite-cone continuity needed by fixed-energy scalar control | 10 | — | glm-lawful-finite-cone-continuity |
 | review | `lawful-scalar-common-extension` — Extend repaired common-development argument to smooth Einstein scalar matter | 10 | — | glm-lawful-scalar-common-extension |
 | review | `ontology-rival-contracts` — Source-faithful rival temporal ontology contracts | 10 | — | glm-ontology-rival-contracts |
-| claimed | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | glm-ontology-natural-assignments |
+| review | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | glm-ontology-natural-assignments |
 | review | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | — | glm-ontology-bridge-premises |
 | review | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | — | glm-ontology-expansion-equivalence |
-| claimed | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | glm-ontology-equivalence-repair |
-| claimed | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | glm-ontology-bridges-repair |
-| claimed | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | glm-ontology-rivals-repair |
+| review | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | glm-ontology-equivalence-repair |
+| review | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | glm-ontology-bridges-repair |
+| review | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | glm-ontology-rivals-repair |
+| open | `lawful-axis-source-review` — Audit exact LOY finite-order inputs for Cartesian axis reconstruction | 10 | — | — |
+| open | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | — |
+| open | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

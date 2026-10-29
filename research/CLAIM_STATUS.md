@@ -34,6 +34,7 @@
 | Smooth Einstein–scalar common-duration readings | Coordinator source check/corollary, review pending | Field-preserving common larger GHD, corrected open-domain argument; smooth category only | [Correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) |
 | Restricted partial-data domains are always maximal developments | Separate unresolved premise | Lprime not needed for repaired common-duration theorem; do not mark it proved | [Claude draft](bowtie-horizons/SCREENING.md) |
 | Physics here selects eternalism, GBT or fragmentalism | Not established | Existence/truth/grounding bridges remain defended philosophical premises | [Current synthesis](CURRENT_SYNTHESIS.md) |
+| Persistent covariant flat-space realms under explicit future exclusion | Coordinator reconstruction, review pending | Chronological versus causal persistence changes null-boundary choices; no transitivity assumed; future exclusion is substantive | [Persistence correction](ontology-reconstruction/coordinator/PERSISTENCE_CONVENTIONS.md) |
 
 ## Dependency map
 
