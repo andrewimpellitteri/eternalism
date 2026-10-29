@@ -1,59 +1,63 @@
-# Agent report: stein-gluing-audit
+# Agent report: ontology-persistence-review
 
-25 October 2026. Claimed by `claude-head` (head session, direct user request);
-read-only adversarial proof lane.
+29 October 2026. Independent adversarial review of the coordinator's
+persistence/census deduction. Submission for coordinator inspection — not
+accepted completion. Branch `agent/ontology-persistence-review`, audited
+content at commit `634988e`.
 
-## Task
+(Note: the root `AGENT_REPORT.md` previously on this branch belonged to the
+`stein-gluing-audit` lane, commit `6a45026`; it remains in git history and on
+that lane's branches. This file is the authorized report for the present
+task only.)
 
-Independently challenge domain transfer and the flat detour in
-`research/stein-gr/main.tex` (audited at commit `498de2f3`): Lemmas B, C, D,
-F, the constants paragraph, both transfer embeddings, and their assembly into
-Theorem 7(a).
+## Verdict in brief
 
-## Deliverable
+- **Collapse claim verified.** S + P_c ⇒ J⁻(b) ⊆ E_b is a correct one-line
+  argument; with causal boundedness the earlier two-case census is one case
+  (J). I⁻∪{b} fails P_c on the exact null step (0,0)→(1,1) while satisfying
+  P_t. Retractions R1–R3 specified in RESULT.md §7.
+- **Census audited, no material error found.** All 24 proof obligations of
+  PERSISTENCE_CONVENTIONS.md verify analytically and by exact rational
+  witnesses: covariance reduction, future-set lemma, saturation bridge
+  (q_Z ≪ p_S ⇔ 2ZS > R²+S²), null-orbit arguments, exhaustive four-case
+  partition (I, J, B, C), all converse clauses, all ten added-premise table
+  rows, and the proper-time collar counterfamily.
+- **New finding (candidate result, unreviewed):** in 1+1 Minkowski without
+  parity, a fifth covariant, self-inclusive, chronologically persistent,
+  F_t-respecting assignment exists
+  (A′ = {0} ∪ {a ∉ I⁻(0) : t_a + x_a > 0}, E_b = b − A′; analytic case
+  analysis + exact checks). The coordinator's n ≥ 2 hypothesis is therefore
+  necessary for the census statement itself; his 1+1 caveat should be
+  strengthened from "the orbit argument changes" to "additional assignments
+  exist". This does not refute the census, which is asserted only for n ≥ 2.
+- **Prior art and scope.** Clifton–Hogarth 1995 Theorem 1 ({I, J, U} under
+  transitivity) interlocks with the census (adding transitivity gives {I, J};
+  dropping F_t admits U); Thyssen's bowtie present is elsewhere-only and is
+  neither B nor C; no prior statement of the census found at the searched
+  depth; no novelty claim made or implied.
 
-`research/stein-gr/tasks/gluing-audit/PROOF_AUDIT.md` — dependency-by-
-dependency verdict with a findings ledger, counterexample attempts, and
-primary locators for imported causal facts.
+## Files
 
-## Evidence and checks
+- `research/ontology-reconstruction/persistence-review/RESULT.md` —
+  line-by-line proof-obligation verdicts (O1–O24), retractions, notes.
+- `research/ontology-reconstruction/persistence-review/sources.jsonl` —
+  source register per the knowledge-base schema, honest read depths.
+- `research/ontology-reconstruction/persistence-review/AGENT_REPORT.md` —
+  full report (search capability check, coverage, commands, limitations).
+- `research/ontology-reconstruction/persistence-review/check_independent.py`
+  and `check_1plus1_fifth.py` — exact witness checks (0.26 s, 0.48 s).
 
-- Every embedding and transfer hypothesis traced: Lemma B (tubular coordinates,
-  Lipschitz estimate), Lemma C (cone-control algebra re-derived, inequalities
-  match the hypotheses exactly), constants paragraph (no circularity; 6Kr
-  controls T_{3r}; 8λr < L is the tilt-slope constraint), Lemma D (escape
-  paths re-derived with the inequalities checked: μ > 1/2, μ < 5/2, μr vs
-  r/2; both D-inclusions; both stopping-event cases), Lemma F (boost/pullback
-  argument reconstructed and validated), morphisms (x, b lie in rel-int Σ′ by
-  the arc construction; N and ψ(N) are GH objects).
-- SECOND_PASS_REVIEW repairs treated as proposals and verified in the audited
-  source: strict-diamond openness in Lemma D(iii), and the τ₀ ≤ τ_exit
-  equality case in Lemma D(ii). Both correctly applied.
-- Counterexample attempts (brief requirement): boundary tie q = p; boosted
-  end-cap escape; disconnected interior; r-chauvinism. All resolved; one
-  produced a minor manuscript repair (F1).
-- Both localization directions and detour acausality have complete quantified
-  arguments; no failure exhibited.
+## Checks
 
-## Findings
-
-- No blocking findings.
-- F1 (minor, fix at integration): Lemma F's "escape along the gradient of the
-  distance to the arc" is spacelike at end caps; replace with uniform
-  past-directed vertical descent and state C ≥ 2.
-- Two cosmetic precision items (χ ≡ 1 on a neighborhood; η_c vestigial) and
-  one imported citation to verify at integration (Bernal–Sánchez Thm 1.1/
-  Rem 4.14 as stated for a compact acausal submanifold with boundary).
+`check_persistence_witnesses.py` (coordinator) reproduced: PASS, 0.08 s.
+Independent scripts: all assertions PASS, ~0.8 s total compute, standard
+library only, within the 10 s/15 s/30 s compute budget. Witness checks only;
+the census exhaustiveness remains an analytic claim, independently
+re-derived here.
 
 ## Limitations
 
-- Lemma-level audit of the geometry; not a re-derivation of the
-  Minguzzi–Sánchez or Bernal–Sánchez source results (locators recorded;
-  Bernal–Sánchez flagged for integration).
-- Did not audit Theorems 8–9, Propositions 10/17/18 (other lanes), and did
-  not draft any notation patch (core-repairs lane).
-
-## Unresolved questions
-
-- Whether the energy-rigidity lane's pocket problem admits a bounded ansatz
-  (hand-off; out of scope here).
+No Lean formalization; CH primary not reread (inherited full-text audit
+used); Thyssen 2019 partially read (abstract, §§1–2, bowtie excerpt);
+prior-art search is a discovery-level negative result, not a novelty
+verdict; the 1+1 fifth-assignment finding is my own and awaits review.
