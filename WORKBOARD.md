@@ -182,9 +182,12 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `lawful-collapse-extension` — Audit complete-past extension of the scalar cone-collapse construction | 10 | — | native-collapse-extension |
 | review | `lawful-scattering-regularity` — Close or isolate the smooth-metric and scattering-map regularity gate | 10 | — | native-scattering-regularity |
 | review | `lawful-scattering-energy` — Derive exact incoming energy and test a later-pulse compensation mechanism | 10 | — | native-scattering-energy |
-| review | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
-| review | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
-| open | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | — |
+| done | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
+| done | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
+| claimed | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
+| open | `prior-art-prediction` — Prior-art audit: prediction and domain-of-dependence literature vs screening claims | 9 | — | — |
+| open | `prior-art-bst` — Prior-art audit: branching space-times settledness vs screening claims | 9 | — | — |
+| open | `prior-art-becoming` — Prior-art audit: relativistic becoming literature vs horizon and causal-potential claims | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
