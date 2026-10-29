@@ -29,7 +29,7 @@ Each rival contract must state: concrete inventory; standpoint status; existence
 | ontology-bridge-premises | bridges/ | Which defensible bridge principles could turn a physical constraint into an ontological preference, and do they survive symmetric criticism? |
 | ontology-expansion-equivalence | equivalence/ | When do apparently different ontological expansions represent a genuine additional commitment rather than interchangeable descriptions? |
 
-Read each WORKBOARD brief before work. All four tasks have scheduling dependencies on lawful-finite-cone-continuity and lawful-scalar-common-extension being reviewed and accepted. Acceptance may record an honest negative result or exact open gate; it does not require a successful theorem. Failure or quota exhaustion does not silently free claims. Coordinator inspects and preserves those outputs before deciding any dependency amendment.
+Read each WORKBOARD brief before work. **Scheduling update, 29 October:** the user explicitly authorized immediate launch of all four tasks while the coordinator repairs the two technical submissions. The scheduling dependencies were removed; there was never a logical dependence. Neither submission is accepted as a theorem. See ../lawful-completions/coordinator/BATCH2_INITIAL_REVIEW.md. Failure or quota exhaustion does not silently free claims; preserve all outputs.
 
 These four lanes are independent: none may assume another worker's unfinished definitions or conclusions. Each must state its own provisional comparison contract. Coordinator reconciles disagreements after submission rather than averaging conclusions.
 
@@ -70,7 +70,7 @@ The normal launch is:
 
     python3 scripts/agents.py launch --from-committed-head ontology-rival-contracts ontology-natural-assignments ontology-bridge-premises ontology-expansion-equivalence
 
-Do not launch until both current tasks have been inspected, integrated as appropriate and accepted. Commit updated board and required inputs first; inspect Claude's intervening changes and active claims. Workers use isolated worktrees and the configured GLM model. They write only their owns directory plus the runner's root handback. No shared manuscripts, seed sources, workboard, runner changes, installs, child agents or pushes.
+The user has now authorized launching before the two technical reviews are resolved. Commit updated board and required inputs first; inspect Claude's intervening changes and active claims. Keep technical repairs separate and do not upgrade unaccepted results. Workers use isolated worktrees and the configured GLM model. They write only their owns directory plus the runner's root handback. No shared manuscripts, seed sources, workboard, runner changes, installs, child agents or pushes.
 
 At handback, verify primary locators and source depth, check owned scope, inspect counterexamples, and review claims before acceptance. Archive root reports into their lanes during integration. Phase 2 is not delegated to worker consensus.
 
