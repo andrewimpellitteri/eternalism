@@ -6,6 +6,10 @@
 
 The [29 October roadmap](ontology-reconstruction/ROADMAP.md) makes the ontological bridge the main research target: charitable rival contracts, bounded classification, justification of bridge premises, and tests for additional structure versus redescription. Four disjoint GLM tasks are prepared on the workboard and gated on review of the two current technical runs. These are proposed investigations, not new accepted results or an ontology verdict.
 
+## Technical repairs, 29 October
+
+The two technical GLM submissions entered review; their claims were not accepted wholesale. [Compactness plus uniqueness](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) replaces a rejected continuity proof. The [smooth scalar correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) verifies the field-preserving common-development source and corrects the worker's geometric obstruction. These coordinator proofs await independent review and do not close classical-axis regularity. The four ontology GLM workers were explicitly authorized and launched independently of those gates.
+
 ## The unifying question and present answer
 
 Which mathematical or physical structures fix a specified outcome, and what additional premise would turn that fixation into a claim about existence, truth or becoming?

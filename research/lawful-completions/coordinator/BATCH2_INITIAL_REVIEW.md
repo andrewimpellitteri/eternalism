@@ -35,3 +35,7 @@ Status: common-development primary-source claim awaits direct inspection; assemb
 ## Queue
 
 Four ontology tasks are prepared and still dependency-gated pending proper disposition of these submissions. A reviewed negative result can satisfy the scheduling gate when integrated and accepted as a bounded report with corrections; an invalid theorem cannot be accepted as proved simply to start the next batch.
+
+## Coordinator repair follow-up, 29 October
+
+[COMPACTNESS_CONTINUITY_REPAIR.md](COMPACTNESS_CONTINUITY_REPAIR.md) replaces the invalid estimate with compactness plus source uniqueness. [SMOOTH_SCALAR_REPAIR.md](SMOOTH_SCALAR_REPAIR.md) directly checks Ringstrom's scalar-preserving common-extension chain and the standard domain statement, corrects the geometric objection, and assembles the bounded smooth scalar corollary. Both are coordinator integrations awaiting independent review. The user subsequently authorized launching all four ontology workers immediately; their scheduling dependencies were removed without accepting either flawed technical submission.

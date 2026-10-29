@@ -191,10 +191,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `lawful-screening-repair` — Red-team repaired smooth screening and fixed-background determination | 10 | — | native-screening-repair |
 | review | `lawful-finite-cone-continuity` — Prove the finite-cone continuity needed by fixed-energy scalar control | 10 | — | glm-lawful-finite-cone-continuity |
 | review | `lawful-scalar-common-extension` — Extend repaired common-development argument to smooth Einstein scalar matter | 10 | — | glm-lawful-scalar-common-extension |
-| open | `ontology-rival-contracts` — Source-faithful rival temporal ontology contracts | 10 | — | — |
-| open | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | — |
-| open | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | — | — |
-| open | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | — | — |
+| claimed | `ontology-rival-contracts` — Source-faithful rival temporal ontology contracts | 10 | — | glm-ontology-rival-contracts |
+| claimed | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | glm-ontology-natural-assignments |
+| claimed | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | — | glm-ontology-bridge-premises |
+| claimed | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | — | glm-ontology-expansion-equivalence |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
