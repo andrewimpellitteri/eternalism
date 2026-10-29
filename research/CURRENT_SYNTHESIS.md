@@ -4,11 +4,13 @@
 
 ## Next programme: temporal ontology reconstruction
 
-The [29 October roadmap](ontology-reconstruction/ROADMAP.md) makes the ontological bridge the main research target: charitable rival contracts, bounded classification, justification of bridge premises, and tests for additional structure versus redescription. Four disjoint GLM tasks are prepared on the workboard and gated on review of the two current technical runs. These are proposed investigations, not new accepted results or an ontology verdict.
+The [29 October roadmap](ontology-reconstruction/ROADMAP.md) makes the ontological bridge the main research target: charitable rival contracts, bounded classification, justification of bridge premises, and tests for additional structure versus redescription. Four disjoint GLM tasks were launched on the user's authorization independently of review of the two technical submissions. These are investigations, not new accepted results or an ontology verdict.
 
 ## Technical repairs, 29 October
 
 The two technical GLM submissions entered review; their claims were not accepted wholesale. [Compactness plus uniqueness](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) replaces a rejected continuity proof. The [smooth scalar correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) verifies the field-preserving common-development source and corrects the worker's geometric obstruction. These coordinator proofs await independent review and do not close classical-axis regularity. The four ontology GLM workers were explicitly authorized and launched independently of those gates.
+
+A further [finite-order axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md), also awaiting independent review, derives a C¹,¹ metric and scalar in ordinary Cartesian coordinates from LOY's uniform bounds. Weighted mass estimates and two first parity identities control the apparent axis singularities. This would supply unique geodesics and the scalar proper-time readouts without requiring C² curvature. It leaves smooth common-development applicability and pointwise central Ricci readings open; it is not an acceptance of the full smooth interpolation theorem.
 
 ## The unifying question and present answer
 
