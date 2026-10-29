@@ -1,59 +1,38 @@
-# Agent report: stein-gluing-audit
+# AGENT_REPORT — lawful-axis-lift-review (root summary)
 
-25 October 2026. Claimed by `claude-head` (head session, direct user request);
-read-only adversarial proof lane.
+29 October 2026. Red-team review of the coordinator claim in
+`research/lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md` (LOY-limit
+locally C^{1,1} Cartesian four-metric and scalar). This is a worker submission
+for coordinator review — unaccepted, not a vote.
 
-## Task
+**Verdict:** the analytic argument survives line-by-line attack; no fatal gap.
+Three repairs required, all small:
 
-Independently challenge domain transfer and the flat detour in
-`research/stein-gr/main.tex` (audited at commit `498de2f3`): Lemmas B, C, D,
-F, the constants paragraph, both transfer embeddings, and their assembly into
-Theorem 7(a).
+1. **REPAIR-N2 (load-bearing):** the hypothesis list must include the two SSESF
+   equations `r_uv = 2mνλ/[(1−μ)r²]` and `(rφ)_uv = r_uv φ`. The parity
+   identity `φ_ρ(t,0)=0` needs the second equation and is not derivable from
+   the mass equations; counterexample `φ = ρ` (lifts to `|x| ∉ C¹`) shows the
+   gap. Both equations are verbatim in LOY v1 (verified against the ar5iv
+   primary text), so the repair is trivial but must be made.
+2. **REPAIR-N3:** the cross-axis Lipschitz claim for `E_ij = D n_i n_j` is
+   asserted, not proved. A complete two-case proof is supplied (RESULT.md
+   §5/O12); it uses only `|∇E| ≤ Cρ` and bounded off-axis Hessian, with no
+   derivatives of `D/ρ²`.
+3. **REPAIR-N1 (cosmetic):** "every term is O(r)" — two terms are O(r²);
+   conclusion `m_ab = O(r)` stands.
 
-## Deliverable
+Consequence verdicts (separate layers): geodesic IVP uniqueness — correct,
+conditional, known methodology (Minguzzi 2014); central proper-time clock —
+correct locally, global unboundedness conditional on unaudited global inputs;
+a.e./distributional 4D Einstein–scalar — correct as a weak statement, no axis
+δ-terms, no pointwise axis Ricci. No C² upgrade, no ontology, no smooth-MGHD
+upgrade, no novelty claim.
 
-`research/stein-gr/tasks/gluing-audit/PROOF_AUDIT.md` — dependency-by-
-dependency verdict with a findings ledger, counterexample attempts, and
-primary locators for imported causal facts.
+**Full deliverables:** `research/lawful-completions/axis-lift-review/`
+(`RESULT.md` — obligation-by-obligation verdicts O1–O19 with derivative
+budgets; `sources.jsonl` — 6 schema-compliant records with honest depths;
+`verify_checks.py` — pure-stdlib, 14/14 pass, 0.04 s; full `AGENT_REPORT.md`).
 
-## Evidence and checks
-
-- Every embedding and transfer hypothesis traced: Lemma B (tubular coordinates,
-  Lipschitz estimate), Lemma C (cone-control algebra re-derived, inequalities
-  match the hypotheses exactly), constants paragraph (no circularity; 6Kr
-  controls T_{3r}; 8λr < L is the tilt-slope constraint), Lemma D (escape
-  paths re-derived with the inequalities checked: μ > 1/2, μ < 5/2, μr vs
-  r/2; both D-inclusions; both stopping-event cases), Lemma F (boost/pullback
-  argument reconstructed and validated), morphisms (x, b lie in rel-int Σ′ by
-  the arc construction; N and ψ(N) are GH objects).
-- SECOND_PASS_REVIEW repairs treated as proposals and verified in the audited
-  source: strict-diamond openness in Lemma D(iii), and the τ₀ ≤ τ_exit
-  equality case in Lemma D(ii). Both correctly applied.
-- Counterexample attempts (brief requirement): boundary tie q = p; boosted
-  end-cap escape; disconnected interior; r-chauvinism. All resolved; one
-  produced a minor manuscript repair (F1).
-- Both localization directions and detour acausality have complete quantified
-  arguments; no failure exhibited.
-
-## Findings
-
-- No blocking findings.
-- F1 (minor, fix at integration): Lemma F's "escape along the gradient of the
-  distance to the arc" is spacelike at end caps; replace with uniform
-  past-directed vertical descent and state C ≥ 2.
-- Two cosmetic precision items (χ ≡ 1 on a neighborhood; η_c vestigial) and
-  one imported citation to verify at integration (Bernal–Sánchez Thm 1.1/
-  Rem 4.14 as stated for a compact acausal submanifold with boundary).
-
-## Limitations
-
-- Lemma-level audit of the geometry; not a re-derivation of the
-  Minguzzi–Sánchez or Bernal–Sánchez source results (locators recorded;
-  Bernal–Sánchez flagged for integration).
-- Did not audit Theorems 8–9, Propositions 10/17/18 (other lanes), and did
-  not draft any notation patch (core-repairs lane).
-
-## Unresolved questions
-
-- Whether the energy-rigidity lane's pocket problem admits a bounded ansatz
-  (hand-off; out of scope here).
+Search capability: `scholar_search` worked (recorded); primary text fetched via
+exa/ar5iv after arxiv.org/html returned a stub; `web-search-prime` not retried
+per brief. Compute: one 0.04 s stdlib script; no installs; no child agents.
