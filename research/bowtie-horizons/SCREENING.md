@@ -85,14 +85,22 @@ function with t₁(b₁) = 0, Σ₁ = {t₁ = −1} and K₁ = Σ₁ ∩ W₁. T
 carrying the fields. Every well-defined proper-time reading along a
 matched future geodesic from (b, u) therefore agrees.
 
-**Premise (L), localized maximal development.** In the fixed deterministic
-theory, both M_i are maximal globally hyperbolic developments. For an open
-subset K of a smooth Cauchy surface, the domain of dependence D_M(K) is
-the maximal globally hyperbolic development of the restricted data, unique
-up to isometry. This is a standard-looking but nontrivial localization of
-Choquet-Bruhat–Geroch. Leads, not checked here: Ringström's Cauchy-problem
-monograph; Sbierski arXiv:1309.7591, which the coordinator's rigidity
-reviewer is reading.
+**Premise (L′), localized maximal development for partial hypersurfaces.**
+In the fixed deterministic theory, both M_i are maximal globally hyperbolic
+developments. For every smooth, spacelike, acausal hypersurface S in such
+an M (not necessarily part of a global Cauchy surface), D_M(S) is the
+maximal globally hyperbolic development of the data induced on S, unique up
+to isometry.
+
+The partial-hypersurface form is needed. Part (a) shows only that h(K₁) is
+a smooth acausal hypersurface screening J⁺(b₂), not that it is an open
+subset of a Cauchy surface of M₂. A noncompact acausal spacelike
+hypersurface need not extend to one: in 1+1 Minkowski space,
+t = √(1 + x²) cannot be enlarged to a Cauchy surface (coordinator review,
+CLAUDE_SCREENING_REVIEW.md, Finding 2). Two repair routes: prove that h(K₁)
+lies in a Cauchy surface of M₂, or source/prove (L′). (L′) is a nontrivial
+localization of Choquet-Bruhat–Geroch and is **unverified**. Leads:
+Ringström's Cauchy-problem monograph; Sbierski arXiv:1309.7591.
 
 *Proof of (a).*
 
@@ -127,7 +135,7 @@ reviewer is reading.
      Since t₁ → −∞ along γ to the past, γ crosses Σ₁ at a point of K₁.
    In every case c meets h(K₁), so z ∈ D⁺(h(K₁)). ∎
 
-*Proof of (b).* By (L), D_{M₁}(K₁) and D_{M₂}(h(K₁)) are both the maximal
+*Proof of (b).* By (L′), D_{M₁}(K₁) and D_{M₂}(h(K₁)) are both the maximal
 development of the same data. So there is an isometry Ψ between them that
 agrees with h near K₁, and hence (first-order rigidity of isometries) on the
 connected overlap containing J⁻(b₁) near b₁. Continuity gives Ψ(b₁) = b₂.
@@ -171,19 +179,26 @@ RESULT.md Proposition 8 (common past ⇒ x ∈ H(s)).
 
 PHILOSOPHICAL_SCOPE.md separates three bases: observer-accessible past data,
 the ontology's existing concrete realm, and total admitted facts. Theorem 2
-locates the dividing line inside the second base exactly:
+locates a **geometric screening boundary** inside the second base. Under the
+uniqueness premises it is sufficient for physical determination, but it is
+not the minimal physically determining set. Remove one interior point x
+from W: smooth data agreeing on W \ {x} agree at x by continuity, so
+determination is unaffected, yet screening fails (coordinator review,
+Finding 1). With that caution:
 
 - Taken literally, C&R's stated motivation for bow-tie ("what has the causal
   potential to shape the future") defines the minimal realm that screens off
   b's future. Under deterministic globally hyperbolic evolution (with the
-  mark-extension and localization premise (L)), that realm already fixes the whole of J⁺(b). So on their
+  mark-extension and localization premise (L′)), that realm already fixes
+  the whole of J⁺(b). So on their
   motivation, "nothing to come" coexists with full nomic determination of
   what is to come by what exists. Openness of the future cannot then be
   physical underdetermination by the existing realm. It must be purely
   ontological (non-existence) or come from non-deterministic dynamics.
 - The pointy realm is the one that leaves the future undetermined relative
   to what exists. That is the content of the lawful-completion results.
-- The line falls at D_pot, not at D_BT. Rigidity therefore does not favour
+- The screening boundary falls at D_pot, not at D_BT. Rigidity therefore
+  does not favour
   bow-tie over the causal-potential realm or its historical repair H. In
   ΛCDM these three differ (D_pot ⊊ H ⊊ D_BT; RESULT.md §§4, 7), yet all
   screen.
@@ -225,7 +240,7 @@ persistent unless spacetime is future-directed (coordinator lemma).
 
 1. Theorem 3, step 2 (closedness and push-up) and step 4 (inner continuity
    of I⁻; the endpoint case analysis).
-2. Premise (L): locate an exact statement, or a counterexample to it, in
+2. Premise (L′) (or a proof that h(K₁) lies in a Cauchy surface of M₂): locate an exact statement, or a counterexample to it, in
    the MGHD literature (Sbierski 1309.7591; Ringström).
 3. Rigidity of H without a matched slice.
 4. Whether the matching of the open realm W (rather than D_pot including

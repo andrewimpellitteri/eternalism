@@ -51,7 +51,11 @@ explicit future exclusion, and causal potential does no selecting.
 | Restricted composition (e.g. persisting bodies) | D_pot plus locations of bodies with potent stages | Matter-dependent; not uniform over the elsewhere; (P1R) still fails at a threshold in ΛCDM (RESULT §6) |
 
 No reading both respects (P2R) and makes causal potential select exactly
-D_BT. This covers the readings we could identify, not every conceivable
+D_BT. Independent agreement: the coordinator derived the same future leak
+(LOCATION_CLOSURE.md). Its FUSION_MODEL.md gives an explicit model of (A25R)–
+(A27R), (D21) and finite fusion in which the realm can equally be J⁻, H or
+D_BT. So the chapter's location and fusion clauses alone do not select the
+bow-tie realm. This covers the readings we could identify, not every conceivable
 composition principle. A reviewer should look for a principled restricted
 composition that yields exactly D_BT; we know of none.
 
@@ -99,7 +103,7 @@ Limits:
 | X1 instantaneous potential violates (P1R) without pairwise common futures | Holds for the point-level reading. The location clause cannot rescue it without D1 or stipulation |
 | X2 historical repair misses D_BT \ H in dust + Λ | Holds. Reached only by primitive (BO) (§2) |
 | X3 D_pot is the minimal screening realm | Mathematical; prior-art audit pending (likeliest overlap: Geroch prediction, BST) |
-| X4 rigidity line at D_pot | Conditional on premise L; review pending |
+| X4 screening boundary at D_pot suffices for determination | Conditional on premise L′ (partial-hypersurface localization). Not a minimal-determining-set claim (puncture test). Review pending |
 
 Needed from the user: C&R *Nothing to Come* Appendix 3, and any other
 chapter where the bow-tie preference is argued, to close the remaining
