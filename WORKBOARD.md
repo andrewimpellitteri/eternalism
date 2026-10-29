@@ -189,6 +189,12 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `prior-art-bst` — Prior-art audit: branching space-times settledness vs screening claims | 9 | — | glm-prior-art-bst |
 | review | `prior-art-becoming` — Prior-art audit: relativistic becoming literature vs horizon and causal-potential claims | 9 | — | glm-prior-art-becoming |
 | done | `lawful-screening-repair` — Red-team repaired smooth screening and fixed-background determination | 10 | — | native-screening-repair |
+| claimed | `lawful-finite-cone-continuity` — Prove the finite-cone continuity needed by fixed-energy scalar control | 10 | — | glm-lawful-finite-cone-continuity |
+| claimed | `lawful-scalar-common-extension` — Extend repaired common-development argument to smooth Einstein scalar matter | 10 | — | glm-lawful-scalar-common-extension |
+| blocked | `ontology-rival-contracts` — Source-faithful rival temporal ontology contracts | 10 | lawful-finite-cone-continuity, lawful-scalar-common-extension | — |
+| blocked | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | lawful-finite-cone-continuity, lawful-scalar-common-extension | — |
+| blocked | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | lawful-finite-cone-continuity, lawful-scalar-common-extension | — |
+| blocked | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | lawful-finite-cone-continuity, lawful-scalar-common-extension | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

@@ -2,6 +2,10 @@
 
 28 October 2026. Project integration of the existing research ledgers and the repaired screening results. This is a current navigation and scope document, not a new theorem, systematic fresh literature review, or acceptance of every source report. Historical documents retain their dates and may contain superseded proposals. Detailed status and falsifiers: [claim status](CLAIM_STATUS.md).
 
+## Next programme: temporal ontology reconstruction
+
+The [29 October roadmap](ontology-reconstruction/ROADMAP.md) makes the ontological bridge the main research target: charitable rival contracts, bounded classification, justification of bridge premises, and tests for additional structure versus redescription. Four disjoint GLM tasks are prepared on the workboard and gated on review of the two current technical runs. These are proposed investigations, not new accepted results or an ontology verdict.
+
 ## The unifying question and present answer
 
 Which mathematical or physical structures fix a specified outcome, and what additional premise would turn that fixation into a claim about existence, truth or becoming?
