@@ -29,9 +29,10 @@ derivative, and coefficient differences gain one derivative in L².
 Localized H³ existence, weak–strong uniqueness and the tame continuation
 estimate propagate the early smooth data throughout the known solution.
 The explicit mass/lapse formulas give a smooth Cartesian metric at the
-axis. The retained m_T equation and the wave/spatial constraints verify
-the full Einstein equations off the axis, and smoothness extends them
-to it. No distributional Ricci transformation under the initial C¹,¹
+axis. The m_T equation and spatial constraints give the T,R Einstein
+components off the axis, the contracted Bianchi identity with the wave
+equation gives the angular component, and smoothness extends them to
+it. No distributional Ricci transformation under the initial C¹,¹
 change of coordinates is presumed.
 
 The smooth atlas is (T,X). Its relation to the original low-regularity
@@ -64,6 +65,13 @@ not require uniqueness of a scattering map. Thus the parameter-subsequence
 limit, whose limiting profile has the same hypotheses and which retains
 the bounds, is covered as well. This is an external theorem input, not
 a new proof of the full geodesic-completeness argument here.
+
+The past half is a single sentence in LOY §6, which calls it "completely
+identical" after reversing time orientation; no reversed proof is
+printed. Both directions are used below. The inputs are two-sided: (1.8)
+bounds λ and −ν above and below, and (1.9) bounds ∂_u(rφ), ∂_v(rφ), φ and
+both pure second r derivatives. The reversed proof with its changed
+constants has not been written out here.
 
 The initial C¹,¹ coordinate change does not change affine completeness.
 An affinely parametrized geodesic of the smooth representative, viewed

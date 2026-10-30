@@ -14,7 +14,7 @@
 > **30 October update:** Three bounded reviews are now integrated; see
 > [disposition and corrections](ontology-reconstruction/coordinator/REVIEW_DISPOSITION_2026_10_30.md).
 > The Cartesian C¹,¹ metric/scalar reconstruction and n≥2 persistence
-> census have internal review. Finite-control continuity/degree,
+> census have internal review.
 > The later smoothness repair above supersedes the former regularity gate;
 > integrated control review and novelty remain separate gates.
 > The later 1+1 classification has a corrected refinement table and a new

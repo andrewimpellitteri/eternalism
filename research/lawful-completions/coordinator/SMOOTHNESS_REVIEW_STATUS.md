@@ -57,9 +57,14 @@ then ∇c for the derivative gain. This correction is recorded beside
 the raw report and in the proof. No high Sobolev norm is in the tame
 constant.
 
-The coordinator also retained and derived m_T=cfR²P Q_r. This is needed
-to recover all metric equations; the initial bounded worker check did
-not itself certify that final complete-system reconstruction.
+The coordinator also retained and derived m_T=cfR²P Q_r. The initial
+bounded worker check did not itself certify that final complete-system
+reconstruction. The equation is also implied by the polar system
+(Bootstrap §3), and the angular Einstein component uses the contracted
+Bianchi identity (Bootstrap §6). Those two points and the past-completeness
+label in SMOOTH_FINITE_CONTROL.md §2 come from a second-reader note,
+../claude-polar-identity-check/NOTE.md, applied at the user's request;
+they await coordinator inspection.
 
 ## Persistence audit and repairs
 
@@ -93,6 +98,8 @@ LOY Theorem 1.7/§6, Galloway–Ling–Sbierski v4 Theorem 1, and the already
 checked field-preserving Ringström common-extension construction. The
 full proofs of those external theorems were not independently reproduced.
 Their hypotheses and normalization are displayed in the corollary note.
+LOY's past completeness is a one-sentence time-reversal step; the note
+records the two-sided inputs and that the reversed proof was not written out.
 
 The independent integrated continuity/degree/readout audit remains open
 after the GLM quota interruption. These native audits do not accept that

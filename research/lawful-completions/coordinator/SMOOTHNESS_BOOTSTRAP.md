@@ -157,15 +157,17 @@ The reduced mass equations give directly
     m_R=(fR²/2)e,
     f_R=(1−f)/R−Rf e.
 
-The other independent metric evolution equation is retained as well:
+The metric evolution equation is also recorded:
 
     ∂_T=(c/2)(−ν⁻¹∂_u+λ⁻¹∂_v),
     m_T=cfR² P Q_r,       f_T=−2cfR P Q_r.
 
 For m_T substitute the two mass equations into ∂_T m and use
-[(Q_r+P)²−(Q_r−P)²]/4=P Q_r. This matters when recovering the full
-Einstein equations: mass/lapse spatial constraints and the wave equation
-alone have not been substituted for all the original equations.
+[(Q_r+P)²−(Q_r−P)²]/4=P Q_r. This is the momentum constraint. It is
+also implied by the scalar system with the m_R and lapse equations: put
+M=m_T−cfR² P Q_r. Those equations and f_T=−2m_T/R give M_R=−R e M, and
+M(T,0)=0, so M≡0. A smooth radial solution of the auxiliary system thus
+satisfies it without reference to the low-regularity solution.
 
 For the lapse, write D=∂_ρ−b∂_t. Differentiating T_ρ=bT_t a.e. gives
 D log T_t=b_t. Hence
@@ -295,10 +297,12 @@ atlas the original metric and scalar therefore have
 These are manifestly smooth at the center; all division/parity issues are
 resolved by the integral formulas. To recover the full classical field
 equations, use the mass/lapse constraints, m_T equation and scalar system
-derived in §3. Off the center these are the complete polar Einstein–scalar
-system (with Ric=2dφ⊗dφ); substitution in the smooth metric verifies the
-field equations there. Continuity of the smooth tensor equations then
-extends them to the center. This avoids using transformation of
+derived in §3. Off the center, with Ric=2dφ⊗dφ written as E=G−2T=0,
+substitution in the smooth metric gives E^T_T=E^R_T=E^R_R=0. E^θ_θ has
+second time derivatives of the metric, so it needs one more step. Put
+s=E^θ_θ=E^φ_φ. Since ∇_μG^μ_ν=0 and ∇_μT^μ_ν=(□φ)∂_νφ=0, we get
+∇_μE^μ_R=−2s/R=0, hence s=0 for R>0. Continuity of the smooth tensor
+equations then extends them to the center. This avoids using transformation of
 distributional Ricci under the preliminary C¹,¹ chart. The polar chart agrees with the
 old Cartesian chart on the entire flat wedge, and T is precisely central
 proper time, so the causal-past and finite-readout identities are preserved.
