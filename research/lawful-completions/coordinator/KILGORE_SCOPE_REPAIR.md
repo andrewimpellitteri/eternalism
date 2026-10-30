@@ -1,5 +1,12 @@
 # Why the higher-order cone theorem does not automatically upgrade our limit
 
+> **Later 30 October resolution:** The warning about direct applicability
+> remains valid. The alternative local route has now been supplied in
+> [SMOOTHNESS_BOOTSTRAP.md](SMOOTHNESS_BOOTSTRAP.md) and
+> [LOCAL_POLAR_PERSISTENCE.md](LOCAL_POLAR_PERSISTENCE.md).
+> It regularizes the selected limit directly on finite physical regions;
+> it does not bound all global weighted norms of the receding cones.
+
 30 October 2026. Selected primary-source scope audit and coordinator
 calculation; not a full proof audit or a smoothness impossibility theorem.
 
@@ -72,6 +79,7 @@ past-null-infinity solution. A fixed-data future stability theorem does
 not supply either statement just by changing its name to "global".
 
 Status: the direct-applicability question is answered negatively at the
-stated source scope; the stronger smoothness bridge remains open. The
+stated source scope; the alternative direct-limit smoothness bridge is
+now written and has bounded internal audits (SMOOTHNESS_REVIEW_STATUS.md). The
 finite-order C¹,¹ argument and candidate scalar-readout theorem do not
 require this upgrade. No novelty claim is made for the norm calculation.

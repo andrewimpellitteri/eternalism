@@ -1,5 +1,13 @@
 # A finite-order repair: a C¹,¹ metric across the scattering axis
 
+> **30 October followup:** This remains the finite-order input theorem.
+> A separate [local bootstrap](SMOOTHNESS_BOOTSTRAP.md), with
+> [bounded audit disposition](SMOOTHNESS_REVIEW_STATUS.md), now supplies
+> smooth representatives for the compact smooth profile family.
+> [Exact category and control consequence](SMOOTH_FINITE_CONTROL.md).
+> The stronger-regularity warnings below describe what this finite-order
+> proof alone establishes; they are not the current combined status.
+
 29 October 2026; proof repair 30 October. Coordinator deduction with source
 and analytic reviews inspected; bounded internal acceptance remains separate
 from smooth-development applicability and novelty.

@@ -167,3 +167,68 @@ point. Each individual norm is finite; no common bound follows. This is not
 a nonsmoothness proof, and possible decay-weight cancellations are explicitly
 unaudited. Updated the abstract-level sweep and axis note to prevent direct
 misapplication, with selected primary source record and exact remaining lemma.
+
+## Local smoothness repair and bounded red team, 30 October
+
+User requested a rigorous smoothness repair before their later review.
+Added SMOOTHNESS_BOOTSTRAP.md, LOCAL_POLAR_PERSISTENCE.md,
+SMOOTH_FINITE_CONTROL.md and SMOOTHNESS_REVIEW_STATUS.md. The proof uses
+all-order estimates only in the integrable exterior, an explicit initially
+C¹,¹ polar/Cartesian chart, and a regular symmetric-hyperbolic scalar
+system. The radial constraint coefficient gains one spatial derivative;
+its L² difference gains one derivative as well. These permit localized
+H³ Picard existence, weak–strong identification and tame higher-order
+continuation. The retained m_T equation, spatial constraints and wave
+system verify the full smooth Einstein–scalar equations, including the
+center by continuity. The selected compact smooth-profile limits thus
+have smooth representatives in the regular atlas. The old atlas is not
+asserted C∞ without a separate coordinate regularity argument.
+
+Native tasks lawful-smooth-exterior-native and lawful-smooth-polar-native
+supplied disjoint bounded audits. The persistence audit was assigned to
+lawful-smooth-persistence-native while the coordinator checked external
+completeness and maximality inputs. All three reports were inspected.
+Integration repairs explicitly include the Cartesian flow/inverse
+regularity, nested ray-integral scaling, replacement of an invalid generic
+point-value Poincaré justification, commuted-energy strong H³ time
+continuity, and a quantitative one-restart spatial buffer. The persistence
+worker independently rechecked its two requested repairs. No audit is
+treated as a vote or as covering the entire proof chain. Added RESULT.md
+navigation for the exterior report and a coordinator erratum beside the
+raw polar report, preserving their source depth and bounded scope.
+
+The category corollary proves polar Cauchy slices, uses LOY's two-sided
+causal completeness, applies Galloway–Ling–Sbierski v4 Theorem1 to obtain
+C⁰-inextendibility, and combines that with Ringström's field-preserving
+common extension to obtain the MGHD universal property for each
+completion's own data. Exact normalizations, source locators, versions
+and limits are displayed. The full proofs of the external theorems were
+not independently reproduced. Five source records were added, including
+the familiar polar formulation as prior methodology. Métivier's 2009
+author PDF was downloaded, SHA256 pinned and its p26 rendered/inspected;
+the source does not supply a ready-made nonlocal theorem. The cached
+Ringström PDF hash was rechecked; live refetch timed out.
+
+Updated the current synthesis, claim ledger and older regularity/control
+notes with explicit supersession pointers. The full degree/continuity/
+limit control assembly still awaits its independent integrated audit and
+nearest-prior-result comparison. The native regularity work does not
+accept or release any of the four quota-stopped GLM tasks. No ADM claim,
+bare-metric nonisometry, curvature interpolation, manuscript insertion,
+novelty verdict, or ontology selection follows.
+
+Verification: analytic dependency/regularity checks, three bounded native
+audits and recorded corrections, exact primary clauses, source contract
+validation, local links, workboard validation and whitespace checks.
+No numerical grid can certify the all-order regularity assertion; no
+simulation, dependency install, push or manuscript build was needed.
+
+Final validation: 201 tasks/path/dependency records pass; 110 local
+Markdown targets across 20 changed/new Markdown files resolve; all five
+new full-text source records pass the strict contract with zero warnings.
+The whole coordinator register has zero errors and six pre-existing
+metadata-completeness warnings on older records, which were not silently
+upgraded or rewritten. Whitespace checks pass. A newly appearing
+claude-polar-identity-check/polar_checks.py was inspected as concurrent
+work in progress; no report existed yet, so it is neither relied upon
+as evidence nor included in this integration.

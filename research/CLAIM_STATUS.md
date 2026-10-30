@@ -16,7 +16,7 @@ Updated 30 October 2026. Integration ledger; status is inherited from the named 
 | Exact nonfixing implies practical unpredictability | Rejected implication | O(m^2) bounded ambiguity and noisy records require separate norm/measurement contracts | [Bounded ambiguity](horizons/bounded-ambiguity/RESULT.md) |
 | Bivalent GBT secretly requires present concrete future grounds | Rejected as a generic critique | Strong rival allows later grounds and additional future-directed facts | [Disagreement](future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md) |
 | Same causal past means same existing bow-tie realm | Rejected | Spacelike exterior matter can differ and already belong to that realm | [Philosophical scope](lawful-completions/coordinator/PHILOSOPHICAL_SCOPE.md) |
-| Smooth coupled same-past finite-reading interpolation at fixed incoming mass | Candidate, not complete | Degree route; replacement continuity/compactness proof awaiting independent review; regular four-metric/axis category remains open | [Finite control](lawful-completions/coordinator/FINITE_CONTROL.md) |
+| Smooth coupled same-past finite-reading interpolation at fixed incoming mass | Candidate; regularity bridge supplied | Smooth complete MGHD category from separate bootstrap; integrated continuity/degree/limit review and priority comparison remain open | [Smooth category and control corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md) |
 | C¹,¹ coupled finite readout range at fixed incoming mass | Coordinator conditional proof assembled; independent integrated review open | Same full pointed causal past; open ball of radius c√E at any fixed finite sample schedule; weak 4D equations, not smooth MGHD or ADM equality | [Direct assembly](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
 | Every finite sign pattern of those scalar readouts | Conditional corollary of the preceding candidate | N-dependent smallness and amplitudes; no exchange of finite-N and fixed-resolution quantifiers | [Quantifiers and corollary](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
 | Actual incoming boundary mass equals quarter profile norm | Independently reviewed deduction in reduced scattering class | Exact pre-pulse flatness and source uniform estimates; no ADM identification | [Mass proof](lawful-completions/coordinator/INCOMING_MASS.md), [review](lawful-completions/energy/REVIEW_INCOMING_MASS.md) |
@@ -33,6 +33,8 @@ Updated 30 October 2026. Integration ledger; status is inherited from the named 
 | Equal potential realms give onto future isometry | Reviewed with extra hypothesis | All future timelike/causal geodesics from both marks complete, respectively; coupled category still needs theorem | [Completeness corollary](lawful-completions/coordinator/COMMON_EXTENSION_REPAIR.md) |
 | Finite-cone readout continuity | Coordinator replacement proof, review pending | Compactness plus characteristic uniqueness; no claimed Lipschitz bound or global scattering selection | [Replacement](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) |
 | Scattering metric and scalar are C¹,¹ in Cartesian axis charts | Internally reviewed finite-order reconstruction | Audited source inputs and repaired mixed-derivative/Cartesian proof; unique geodesics and weak equations; no C² curvature or smooth MGHD upgrade | [Axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md) |
+| Compact-profile scattering limits have smooth regular representatives | Coordinator proof with three bounded audits and repairs integrated | Exterior all-order estimates, C¹,¹ polar chart, constraint derivative gain, local nonlocal H³ persistence; finite physical points, not conformal infinity | [Proof and disposition](lawful-completions/coordinator/SMOOTHNESS_REVIEW_STATUS.md) |
+| Those smooth representatives are complete, C⁰-inextendible MGHDs | Coordinator corollary with checked external theorem inputs | LOY causal completeness, explicit polar Cauchy slices, Galloway–Ling–Sbierski v4 Theorem1, field-preserving Ringström common extension; each has its own full Cauchy data | [Category corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md) |
 | Smooth Einstein–scalar common-duration readings | Coordinator source check/corollary, review pending | Field-preserving common larger GHD, corrected open-domain argument; smooth category only | [Correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) |
 | Restricted partial-data domains are always maximal developments | Separate unresolved premise | Lprime not needed for repaired common-duration theorem; do not mark it proved | [Claude draft](bowtie-horizons/SCREENING.md) |
 | Physics here selects eternalism, GBT or fragmentalism | Not established | Existence/truth/grounding bridges remain defended philosophical premises | [Current synthesis](CURRENT_SYNTHESIS.md) |
@@ -61,8 +63,9 @@ records integrated raw commits, corrections and accepted internal scope.
 C¹,¹ regularity now supports unique centered geodesic scalar readouts; the
 finite-control compactness/degree chain still awaits its own full review.
 The complete 1+1 refinement table remains a separate coordinator deduction;
-its corrected nine-versus-four counts keep F_t and F_c explicit. No smooth
-common-development, pointwise axis Ricci or novelty gate is closed.
+its corrected nine-versus-four counts keep F_t and F_c explicit. The later
+smoothness followup below supersedes the regularity gate; it does not
+close integrated control review or novelty.
 
 
 ## Direct recovery after quota, 30 October
@@ -75,3 +78,13 @@ transitive+F_c rules. The full independent review remains open. The
 [scale argument](ontology-reconstruction/coordinator/SCALE_AND_FUTURE_EXCLUSION.md)
 now exposes nonuniversality's semantic cost: a proper causal-availability
 relation does not exhaust concrete existence without a separate bridge.
+
+## Local smoothness followup, 30 October
+
+The [regularity disposition](lawful-completions/coordinator/SMOOTHNESS_REVIEW_STATUS.md)
+records three bounded native audits, the point-trace/Poincaré correction,
+explicit flow regularity, and the repaired energy/continuation passage.
+The compact smooth-profile limits now have smooth complete MGHD
+representatives under the named source inputs. This does not accept
+the interrupted GLM finite-control review, establish independent control
+of curvature readouts, or supply an ontological bridge.

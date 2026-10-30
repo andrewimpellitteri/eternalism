@@ -205,6 +205,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
 | claimed | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
 | claimed | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
+| done | `lawful-smooth-exterior-native` — Red-team exterior all-order Goursat bootstrap for compact incoming data | 10 | — | native-smooth-exterior |
+| done | `lawful-smooth-polar-native` — Check polar chart, weak constraint algebra and Sobolev smoothing operators | 10 | — | native-smooth-polar |
+| done | `lawful-smooth-persistence-native` — Adversarial check of localized nonlocal polar persistence lemma | 10 | — | native-smooth-persistence |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

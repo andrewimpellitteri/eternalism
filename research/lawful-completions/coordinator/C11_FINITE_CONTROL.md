@@ -1,5 +1,12 @@
 # Finite scalar readouts at fixed incoming mass in a C¹,¹ category
 
+> **Later 30 October smoothness repair:**
+> [SMOOTH_FINITE_CONTROL.md](SMOOTH_FINITE_CONTROL.md) upgrades the category
+> of the selected compact-profile limits to smooth, complete MGHDs using
+> a separate localized proof and checked completeness/inextendibility inputs.
+> The continuity/degree assembly here still needs its independent
+> integrated review; the native regularity audits do not accept it.
+
 30 October 2026. Coordinator proof assembly and direct audit after the GLM
 quota stop. **Candidate theorem; independent integrated review remains
 open.** The source/axis reviews are accepted only at their named scopes.
@@ -229,8 +236,10 @@ The coordinator has rechecked the analytic chain and primary loci, supplied
 the flat-wedge proof, explicit family smallness and quantifiers, and the
 global Cauchy-time argument. The quota-interrupted review supplied no
 finished handback. This note therefore does not convert that task to done
-or certify an independent review. Remaining gates: integrated adversarial
-proof review; exact nearest-predecessor comparison (the control/degree
-argument may be a familiar scattering corollary); stronger regularity if
-a smooth-MGHD theorem or pointwise axis curvature is wanted. The bounded
-input audits remain valid without those stronger conclusions.
+or certify an independent review. Remaining control gates: integrated
+adversarial proof review and exact nearest-predecessor comparison (the
+control/degree argument may be a familiar scattering corollary). The
+separate smoothness bridge is now supplied in SMOOTHNESS_BOOTSTRAP.md;
+its precise category upgrade and external inputs are recorded in
+SMOOTH_FINITE_CONTROL.md. The finite-order proof above does not itself
+establish those stronger conclusions.

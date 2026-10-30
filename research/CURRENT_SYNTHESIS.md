@@ -1,11 +1,22 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **Latest 30 October: smoothness repaired.**
+> The [local bootstrap](lawful-completions/coordinator/SMOOTHNESS_BOOTSTRAP.md)
+> and [persistence proof](lawful-completions/coordinator/LOCAL_POLAR_PERSISTENCE.md)
+> supply smooth representatives for the compact-profile scattering limits.
+> [Three bounded audits and repairs](lawful-completions/coordinator/SMOOTHNESS_REVIEW_STATUS.md)
+> record the internal scope. The [category corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md)
+> uses checked completeness/inextendibility inputs to obtain smooth complete
+> MGHDs. The full fixed-mass interpolation theorem still needs integrated
+> independent review and prior-result comparison. No ontology is selected.
+
 
 > **30 October update:** Three bounded reviews are now integrated; see
 > [disposition and corrections](ontology-reconstruction/coordinator/REVIEW_DISPOSITION_2026_10_30.md).
 > The Cartesian C¹,¹ metric/scalar reconstruction and n≥2 persistence
 > census have internal review. Finite-control continuity/degree,
-> smooth-development applicability and novelty remain separate gates.
+> The later smoothness repair above supersedes the former regularity gate;
+> integrated control review and novelty remain separate gates.
 > The later 1+1 classification has a corrected refinement table and a new
 > independent review task; it inherits no acceptance from the n≥2 audit.
 
@@ -29,9 +40,9 @@ A [selected primary-clause check](ontology-reconstruction/coordinator/RIVAL_PROF
 
 ## Technical repairs, 29 October
 
-The two technical GLM submissions entered review; their claims were not accepted wholesale. [Compactness plus uniqueness](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) replaces a rejected continuity proof. The [smooth scalar correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) verifies the field-preserving common-development source and corrects the worker's geometric obstruction. These coordinator proofs await independent review and do not close classical-axis regularity. The four ontology GLM workers were explicitly authorized and launched independently of those gates.
+The two technical GLM submissions entered review; their claims were not accepted wholesale. [Compactness plus uniqueness](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) replaces a rejected continuity proof. The [smooth scalar correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) verifies the field-preserving common-development source and corrects the worker's geometric obstruction. Those arguments do not by themselves close classical-axis regularity; the separate 30 October bootstrap above supplies that bridge. The four ontology GLM workers were explicitly authorized and launched independently of those gates.
 
-A further [finite-order axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md), also awaiting independent review, derives a C¹,¹ metric and scalar in ordinary Cartesian coordinates from LOY's uniform bounds. Weighted mass estimates and two first parity identities control the apparent axis singularities. This would supply unique geodesics and the scalar proper-time readouts without requiring C² curvature. It leaves smooth common-development applicability and pointwise central Ricci readings open; it is not an acceptance of the full smooth interpolation theorem.
+A further [finite-order axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md), now internally reviewed, derives a C¹,¹ metric and scalar in ordinary Cartesian coordinates from LOY's uniform bounds. Weighted mass estimates and first parity identities control the apparent axis singularities. It supplies unique geodesics and scalar proper-time readouts without requiring C² curvature. It is the low-order input to the later smoothness bootstrap, rather than by itself a smoothness theorem or acceptance of the full interpolation theorem.
 
 ## The unifying question and present answer
 
@@ -89,11 +100,11 @@ Project anchors: [original chapter clauses](future-truth-rival-chapters/CLAUSES.
 
 The fixed-background field countermodels motivated moving to coupled Einstein--matter solutions. Work retained from that move includes covariant marked-geodesic readouts, an exact actual incoming-mass identity in the audited reduced scattering class, uniform cubic central-trace estimates, a degree-before-limit finite-interpolation strategy, and a conditional nonisometry counting result in the centered category.
 
-The general smooth coupled interpolation theorem is NOT yet accepted. The internally reviewed C¹,¹ reconstruction now supplies unique centered geodesic scalar readouts. C²/smooth regularity and independent review of finite-cone continuous dependence remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
+The general smooth coupled interpolation theorem is NOT yet accepted. The C¹,¹ reconstruction now feeds a local smoothness proof with bounded audits, and the selected compact-profile limits have smooth complete MGHD representatives under the checked source inputs. Independent integrated review of the finite-cone continuity/degree/limit assembly and exact nearest-prior-result comparison remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
 
 The one-reading re-marking construction is a useful nonprediction baseline but can occur inside one unmarked spacetime. A genuine open range of at least two scalar readings would rule out explanation by only countably many centered-isometry classes under the stated C1 trace assumptions; bare-metric nonisometry remains stronger.
 
-Project anchors: [finite control candidate](lawful-completions/coordinator/FINITE_CONTROL.md), [incoming mass](lawful-completions/coordinator/INCOMING_MASS.md), [regularity gate](lawful-completions/regularity/RESULT.md), [nonisometry lemma](lawful-completions/coordinator/NONISOMETRY_LEMMA.md).
+Project anchors: [smooth category and control candidate](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md), [incoming mass](lawful-completions/coordinator/INCOMING_MASS.md), [regularity review disposition](lawful-completions/coordinator/SMOOTHNESS_REVIEW_STATUS.md), [nonisometry lemma](lawful-completions/coordinator/NONISOMETRY_LEMMA.md).
 
 ## 7. The bow-tie work now gives both a classification and a repaired rigidity result
 
@@ -126,4 +137,4 @@ Keep the manuscripts distinct. The causal-set note carries its exact measure res
 
 Before any manuscript incorporates new theorem statements: pin the exact source/review version, provide the relevant coupled-matter theorem if used, check scope/priority, and obtain review of the integrated prose. A bounded section on the agreement realm and fixed-background sufficiency has now been integrated into horizons draft5; [integration details and build checks](horizons/INTEGRATION_2026_10_28.md) identify its exact scope. The broader new results remain companions, not silently added manuscript theorems. No publication gate is closed. The separate shared Brading-article PDF has unrelated concurrent edits and is preserved.
 
-Next substantive gates are: finite-cone continuity/degree review and stronger-than-C¹,¹ regularity for smooth coupled control; the separate partial-development maximality question if full rigidity without completeness is still sought; intrinsic-center/bare-metric scope; and a focused novelty audit of the exact cylinder classification. The repaired common-duration proof does not depend on completing the partial-maximality question.
+Next substantive gates are: integrated finite-control continuity/degree/limit review and focused priority comparison; the separate partial-development maximality question if full rigidity without completeness is still sought; intrinsic-center/bare-metric scope; and a focused novelty audit of the exact cylinder classification. The local smoothness bridge is now supplied. The repaired common-duration proof does not depend on completing the partial-maximality question.

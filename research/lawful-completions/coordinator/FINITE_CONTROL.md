@@ -1,5 +1,12 @@
 # Candidate finite scalar interpolation at fixed actual incoming mass
 
+> **Latest 30 October followup:**
+> [Smooth category repair](SMOOTH_FINITE_CONTROL.md) supplies the local
+> regularity bridge and the complete-MGHD corollary for the selected
+> compact-profile limits. The assembled interpolation argument still
+> needs independent integrated review and nearest-prior-result comparison.
+> Earlier regularity warnings below retain their historical scope.
+
 2026-10-28. Proof synthesis under explicit audit gates; not yet accepted as a smooth four-dimensional GR theorem, and not a novelty claim.
 
 > **29 October repair update:** The GLM Lipschitz proof was rejected. [COMPACTNESS_CONTINUITY_REPAIR.md](COMPACTNESS_CONTINUITY_REPAIR.md) supplies a replacement continuity/compactness proof using the primary uniform bounds and characteristic uniqueness. It is a coordinator proof awaiting independent review; gates 1-2 below are not accepted solely on the worker submission. Classical four-dimensional axis reconstruction remains open.

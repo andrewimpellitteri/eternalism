@@ -1,5 +1,10 @@
 # Corrected smooth Einstein–scalar common-development application
 
+> **Later 30 October followup:** The scattering category is addressed
+> by a separate [local smoothness proof](SMOOTHNESS_BOOTSTRAP.md) and
+> [category corollary](SMOOTH_FINITE_CONTROL.md). It is not upgraded
+> merely by analogy with the common-development theorem checked here.
+
 29 October 2026. Coordinator source check and correction of worker submission 779cc91. Ordinary smooth GR; distinct from the reduced low-regularity scattering construction. Bounded corollary under the existing screening-transport hypotheses. Independent review of this integration pending; no novelty or ontology claim.
 
 ## Preserve the useful source contribution
