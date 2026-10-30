@@ -10,10 +10,19 @@
 > [Review disposition](coordinator/ARGUMENT_REVIEW_2026_10_30.md) records the two
 > bounded audits and corrections. [Three next contracts](coordinator/NEXT_PHILOSOPHICAL_TESTS.md)
 > are on the board. The modal-category and constitutive-extent GLM runs
-> launched from `1d1102a` and are active in separate worktrees; the prefix-energy
+> launched from `1d1102a` in separate worktrees; the modal handback is now
+> in review and the constitutive task remains claimed. The prefix-energy
 > task still awaits its dependency. Earlier quota-stopped GLM
 > tasks retain their claims. The smoothness bridge is now supplied at its
 > stated class, not an open precondition for this philosophical work.
+
+**Subsequent handback:** the modal-category run delivered commit `5ddb63d`.
+It remains in review. [Coordinator inspection](coordinator/MODAL_CATEGORY_REVIEW.md)
+rejects its anti-trivialization-to-maximality inference, corrects the
+cumulative-region/bow-tie inclusion, and separates empty continued time
+from a terminal-time world. Its source work does not close the translation
+gate. The constitutive-extent run is separate and has encountered GLM
+request-rate errors; its outputs and claim are preserved.
 
 29 October 2026. Coordinator research roadmap; proposals, not accepted theorems or a novelty verdict.
 

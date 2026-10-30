@@ -203,14 +203,14 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
 | claimed | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | glm-ontology-null-refinements-review |
 | claimed | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
-| claimed | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
-| claimed | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
+| review | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
+| review | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
 | done | `lawful-smooth-exterior-native` — Red-team exterior all-order Goursat bootstrap for compact incoming data | 10 | — | native-smooth-exterior |
 | done | `lawful-smooth-polar-native` — Check polar chart, weak constraint algebra and Sobolev smoothing operators | 10 | — | native-smooth-polar |
 | done | `lawful-smooth-persistence-native` — Adversarial check of localized nonlocal polar persistence lemma | 10 | — | native-smooth-persistence |
 | done | `lawful-smooth-realm-contrast` — Audit causal-past freedom versus full bow-tie rigidity in smooth scattering class | 10 | — | native-smooth-realm-contrast |
 | done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
-| claimed | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
+| review | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
 | claimed | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
 | blocked | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | — |
 | done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |

@@ -1,5 +1,34 @@
 # Coordinator continuation: persistence correction and proof-review dispatch
 
+## Incoming modal handback and concurrent prefix-energy candidate
+
+GLM modal-category commit `5ddb63d` returned cleanly. Read its complete
+report and RESULT.md but withheld acceptance. MODAL_CATEGORY_REVIEW.md
+rejects the proposed inference from failed full-state determination to a
+trivial nomological box, and its attribution to the p114 information ban.
+It proves the paired cumulative region is contained in the bow tie,
+separates empty continuation from final-time semantics, and narrows the
+claim that there can be no relativistic analogue. Directly reread primary
+chapter7 pp111,114–116 and added an exact selected-reading source record.
+The unchanged submission/root handback remain in their isolated clean
+worktree/branch; no worker outputs or shared root report were overwritten.
+
+Claude added research/lawful-completions/claude-prefix-energy/RESULT.md
+during this continuation, explicitly without replacing the gated task.
+Read its conditional joint degree/mass construction and order-ε³ sharpness
+discussion. It is a candidate strengthening: finitely many incoming-cut
+masses, distinguished from local energy and ADM mass. This was only an
+initial scope inspection, not its integrated independent proof/source
+review or acceptance. The blocked prefix-energy task is unchanged. Claude's
+candidate, polar NOTE.md and trace script are outside these commits.
+
+The runtime subsequently returned clean handbacks for
+`lawful-higher-regularity-audit` and `ontology-persistence-priorart`.
+Their status is now review; this turn did not inspect or accept those
+reports. The constitutive-extent task has no completed handback. The
+generated board reflects these actual transitions; no older ownership
+was silently released or transferred.
+
 ## Latest continuation: unity robustness, 30 October
 
 Added WEAK_COUPLING_AND_TEMPORAL_EXTENT.md and three selected-primary-reading

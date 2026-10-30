@@ -9,6 +9,12 @@
 > flags vacuous lawful-alternative comparisons. That addition is coordinator
 > argument outside the audit. Neither selects a temporal ontology.
 
+> **Modal handback:** [inspection of the GLM submission](ontology-reconstruction/coordinator/MODAL_CATEGORY_REVIEW.md)
+> found a failed anti-trivialization bridge and incorrect region comparison.
+> Non-determination of complete future states does not trivialize the laws;
+> for temporal T and t=T(b), {T≤t} is contained in the bow tie. The submission
+> remains in review and does not close the source-to-physics correspondence.
+
 > **Latest philosophical continuation, 30 October:**
 > [The review and new arguments](ontology-reconstruction/coordinator/ARGUMENT_REVIEW_2026_10_30.md)
 > distinguish a growing stage from an ended world, local equations from

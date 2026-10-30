@@ -146,3 +146,21 @@ the new audit**. It is not a newly reviewed physical theorem, a full theory
 of counterfactual constitution, or a refutation of counterpossible semantics.
 Its positive target is an organizing activity distinguished from an enabling
 condition and from a completed activity token.
+
+## Modal-category handback: withheld acceptance
+
+Isolated GLM commit `5ddb63d` completed cleanly and entered review.
+[Coordinator inspection](MODAL_CATEGORY_REVIEW.md) found substantive errors:
+failure of every full-future-state prediction does not trivialize the
+nomological operator; the p114 source example does not force maximality;
+the paired cumulative region is contained in the bow tie; empty continued
+time is not terminal time; and p111's grounding assumption is not a full
+model-theoretic ban on open-ended time. The claimed impossibility of a
+relativistic empty-content analogue is also unproved at the stated depth.
+
+The original submission and report are preserved unchanged in their clean
+worktree/branch. No worker path or shared root report was overwritten. The
+task remains in review. The coordinator directly reread chapter7 printed
+pp111,114–116 and supplied an elementary ODE counterexample and geometric
+inclusion proof. These corrections do not select an ontology or complete
+the positive modal bridge; acceptance requires an actual repaired report.

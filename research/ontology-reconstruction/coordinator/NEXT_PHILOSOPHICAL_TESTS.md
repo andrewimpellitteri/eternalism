@@ -95,8 +95,10 @@ The new geometric realm audit and the bounded philosophy audit from this
 round are separate finished handbacks with coordinator corrections recorded
 in ARGUMENT_REVIEW_2026_10_30.md. The contracts above are prepared workboard
 tasks. The modal-category and constitutive-extent tasks launched from
-`1d1102a` and have active isolated GLM runs, verified by their supervisors
-and fresh model/tool events. The prefix-energy task remains blocked by its
+`1d1102a`. The modal run returned `5ddb63d` and is in review with substantive
+corrections required; see MODAL_CATEGORY_REVIEW.md. The constitutive task
+remains claimed and has encountered provider request-rate errors. The
+prefix-energy task remains blocked by its
 finite-control review dependency. The default GLM workflow remains the
 configured route when the provider is available and dependencies pass. Existing
 quota-stopped claims and worktrees are preserved. Review means exact
