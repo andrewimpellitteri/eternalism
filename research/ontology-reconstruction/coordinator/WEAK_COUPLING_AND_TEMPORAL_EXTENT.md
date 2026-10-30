@@ -1,6 +1,7 @@
 # How sharp must a law-constitutive present be?
 
-30 October 2026. Coordinator argument, initially unreviewed. This is a
+30 October 2026. Coordinator argument with a bounded analytic audit and
+scope repairs integrated; see the [audit](../unity-robustness-review/RESULT.md). This is a
 robustness test adjacent to, rather than a replacement for, the isolated
 `ontology-constitutive-extent-test` worker. Its bounded target is the move
 from physical individuation to an exact boundary of concrete existence.
@@ -30,9 +31,11 @@ motivate the question; they do not contain our model or lemma.
 
 ## 2. An exact material-autonomy test
 
-Take four equal masses on a line, with displacements x_i from fixed
-equilibrium positions and momenta p_i. In units with mass and the two
-internal spring constants equal to one, let
+Take four equal masses on a line. Fix reference mass m_0 equal to their
+mass, internal spring constant k_0, and length L_0, all independently of κ.
+Measure time in t_0=√(m_0/k_0), displacements from equilibrium in L_0,
+momenta in m_0 L_0/t_0 and energy in k_0 L_0². Denote these dimensionless
+variables by t,x_i,p_i and the bridge stiffness ratio by κ. Then let
 
     H_κ = (1/2)Σ_i p_i² + (1/2)(x_2−x_1)²
           + (1/2)(x_4−x_3)² + (κ/2)(x_3−x_2)²,
@@ -43,6 +46,10 @@ external anchoring potentials. The whole is translation invariant.
 This is a finite Newtonian model, not an Einstein–matter spacetime or
 an empirical model of the universe. Its constituent material variables
 are stipulated in advance, rather than derived from the Hamiltonian.
+Varying κ compares this family of Hamiltonians; it is not a pair of
+solutions of one fixed Hamiltonian with the same complete initial state.
+An actual removal experiment under fixed deeper laws would also have
+to model the coupling mechanism and its alteration.
 
 Define *exact autonomous material subsystem*: a nonempty set S of these
 masses whose equations for (x_i,p_i), i∈S, depend only on those variables

@@ -16,8 +16,20 @@ claim, while preserving approximate unities, interacting components and
 scale-relative ontology as live alternatives. Brading2015 §§4–5 pp16–18 and
 Brading2013 §4 pp1104–1105 were directly reread; Butterfield1106.0702v1
 selected introductory argument provides prior context, not an ontology result.
-No novelty claim or manuscript edit. Independent audit is prepared on the
-board and the coordinator note remains unreviewed until that audit is inspected.
+No novelty claim or manuscript edit. The new GLM audit queued behind six
+workers before any model event or output. Coordinator stopped that queued
+supervisor, inspected its clean worktree, preserved it and explicitly
+reassigned the claim to authorized native Luna. The bounded native report
+was inspected and accepted after fixed nondimensionalization and explicit
+Hamiltonian-family scope repairs. Reviewer source depth is inherited from
+the coordinator ledger; it is not an independent full primary-source audit.
+
+Added a distinct §8 to CONSTITUTION_IS_NOT_PREDICTION.md: a universal
+lawful-alternative necessity test is vacuous when its background excludes
+every absence case. Distinguish manifold deletion, interaction alteration
+and denial of future existence from the original standpoint. This section
+is outside the bounded audit; it is elementary coordinator reasoning,
+not a complete counterfactual account or a source-attributed argument.
 
 Checked current shared changes and both new isolated GLM supervisors. Their
 modal-category and constitutive-extent claims belong to the existing runs;

@@ -213,7 +213,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
 | claimed | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
 | blocked | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | — |
-| open | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | — |
+| done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

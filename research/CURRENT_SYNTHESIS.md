@@ -1,5 +1,14 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **Later philosophy, 30 October:** the [weak-coupling test](ontology-reconstruction/coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md)
+> and its bounded audit separate exact material autonomy, approximate unity
+> and an exact temporal boundary. Restriction-hereditary tests select no
+> minimal positive temporal thickness; activity-based alternatives survive.
+> A separate [necessity test](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md)
+> distinguishes physical deletion from nonexistence at a standpoint and
+> flags vacuous lawful-alternative comparisons. That addition is coordinator
+> argument outside the audit. Neither selects a temporal ontology.
+
 > **Latest philosophical continuation, 30 October:**
 > [The review and new arguments](ontology-reconstruction/coordinator/ARGUMENT_REVIEW_2026_10_30.md)
 > distinguish a growing stage from an ended world, local equations from

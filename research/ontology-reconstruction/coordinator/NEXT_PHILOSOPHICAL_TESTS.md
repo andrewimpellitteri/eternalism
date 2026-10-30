@@ -104,7 +104,9 @@ source and argument inspection, not a vote or a publication gate.
 
 The coordinator's separate WEAK_COUPLING_AND_TEMPORAL_EXTENT.md tests
 robustness, the physical decomposition and temporal refinement. Its prepared
-adversarial task is `ontology-unity-robustness-review`; neither it nor this
+adversarial task `ontology-unity-robustness-review` has a bounded native
+audit integrated after its queued GLM launch was stopped before any model
+work. Its clean worktree is preserved. Neither the audit nor this
 note replaces the two workers' independent contracts. A sustaining-process
 proposal must distinguish a system's continued existence from the completion
 of an activity before its duration is interpreted as a present.

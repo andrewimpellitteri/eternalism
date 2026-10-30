@@ -157,7 +157,73 @@ of actual occurrence now carry the burden. This is a reason to change
 the philosophical target, rather than to abandon the mathematical work
 or to claim that all ontologies are equally good.
 
-## 8. Concrete next tests
+## 8. Make “necessary to sustain” a contrast, not a deletion slogan
+
+The [weak-coupling test](WEAK_COUPLING_AND_TEMPORAL_EXTENT.md) gives one
+concrete reason to separate a unity criterion from its temporal extent.
+There is a second, logical issue to resolve before the next positive test:
+what is held fixed when a sustaining region is removed?
+
+Consider a proposed *lawful-alternative test*, not a semantics of all
+natural-language counterfactuals. Let W be its admitted models, B(w) the
+background held fixed, A_R(w) the stipulated absence of R, and S(w) the
+survival of the target unity. The proposed necessity condition is
+
+    for every w in W: [B(w) and A_R(w)] implies not S(w).
+
+If no w satisfies B and A_R, this condition is true vacuously. It does
+not distinguish a constitutive region from any other region whose
+removal is excluded by the background. A counterpossible semantics
+might supply a different test; this observation does not refute it.
+
+Our physical results make this risk concrete. In the smooth complete
+MGHD comparison, fixing full earlier Cauchy data fixes the represented
+development up to the appropriate field isometry. Requiring a later
+marked physical occurrence to be absent, while holding those data and
+that maximal category fixed, may leave no alternatives. Admitting an
+open nonmaximal cut changes the category. Permitting other incoming
+data changes the background. Neither change is automatically wrong,
+but it must be stated. Same causal past is also weaker than same full
+existing realm; the first cannot silently stand in for the second.
+
+Three different absence tests must therefore be distinguished:
+
+* Remove an event from the mathematical spacetime or truncate its duration.
+* Change a material constituent, interaction or boundary input while
+  preserving the underlying physical laws at the claimed level.
+* Retain the represented physical process but deny that a later occurrence
+  is concrete from the original standpoint.
+
+The last is an ontological expansion, not necessarily a deletion of the
+occurrence at its own time. A growing account can deny future existence
+now while allowing the later process. A physical truncation does not
+automatically model that account. Conversely, changing the Hamiltonian
+parameter κ in the weak-coupling example compares a model family; it is
+not a same-fixed-Hamiltonian removal experiment.
+
+A nonvacuous physical necessity test should specify at least one admitted
+alternative in which the proposed constituent or activity is absent,
+what unity fails there, and why the retained background is the right
+contrast. This is a requirement on that test, not a requirement that all
+constitution reduce to counterfactual dependence. It also does not imply
+that every necessary condition is constitutive: background oxygen, a
+preparation event or a remote enabling condition could pass a dependence
+test without being part of the unity in the asserted sense.
+
+The positive next move is to identify the distinctive organizing role:
+which activity binds or sustains these parts as this system, rather than
+merely enabling it or encoding its future? Then ask why the temporal
+extent of that role exhausts the system's concrete present. A strong
+rival must receive the same organization and the same physical contrasts;
+the proposed ontological explanation can then be compared on its merits.
+It need not earn a new prediction to be philosophically substantive.
+
+This section is a new coordinator inference, outside the bounded
+weak-coupling audit. The vacuity observation is elementary logic, not a
+new result or an attribution to Brading. It adds a precise correspondence
+obligation; it does not select an ontology or complete the positive test.
+
+## 9. Concrete next tests
 
 First choose one physical unity and one agreed explanatory target. State
 the constitutive criterion before selecting its present region. Test

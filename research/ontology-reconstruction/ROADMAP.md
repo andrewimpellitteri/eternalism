@@ -78,7 +78,12 @@ adds a bounded coordinator argument: exact material autonomy changes under
 arbitrarily weak coupling while compact-time behaviour converges; autonomy
 alone selects no minimal positive temporal thickness. It preserves interacting
 and approximate unities and does not identify Brading's view with exact
-isolation. An independent audit is prepared as `ontology-unity-robustness-review`.
+isolation. The bounded native audit `ontology-unity-robustness-review` is
+integrated with fixed-unit and Hamiltonian-family qualifications after the
+new GLM review queued without starting. Other GLM claims are preserved.
+The constitution note adds a separately unreviewed, nonvacuity test for
+lawful-alternative necessity and distinguishes physical deletion from
+nonexistence at a standpoint.
 The next positive target is the difference between a continuing system and a
 completed activity alleged to constitute its present. This note does not
 duplicate the isolated worker's concrete constitutive-system test.

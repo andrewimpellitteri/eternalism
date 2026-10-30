@@ -111,3 +111,38 @@ existence conclusion. The constitutive bridge, mapping of C&R modality,
 integrated finite control and priority remain open. NEXT_PHILOSOPHICAL_TESTS.md
 prepares three precise tasks, none launched here; quota-stopped GLM claims
 and their outputs are preserved.
+
+## Later continuation: bounded unity-robustness audit
+
+The two philosophical tasks subsequently launched in isolated GLM worktrees
+from `1d1102a`. Their own handbacks remain separate from this disposition.
+The prefix-energy task is still gated by integrated finite-control review.
+
+The coordinator added WEAK_COUPLING_AND_TEMPORAL_EXTENT.md at `ce8f589`.
+The new GLM audit queued behind six active worker slots before producing
+any model event or output. It was stopped, its clean worktree preserved,
+and its claim explicitly released and reassigned to the authorized native
+Luna fallback. This does not release any of the other GLM claims.
+
+The [bounded audit](../unity-robustness-review/RESULT.md) checks the exact
+material-autonomy iff, spring-force signs, Laplacian norms, two-sided
+compact-time estimate, normal-mode counts, hereditary-interval lemma and
+finite overlap-agreement witness. Its requested fixed nondimensionalization
+has been supplied. The family-of-Hamiltonians caveat was added during the
+audit and the reviewer inspected it. These are elementary conditional
+deductions; no grid, physical novelty or ontology verdict is inferred.
+
+The reviewer inherited Brading attribution from the coordinator's exact
+selected-primary-reading records; it did not independently reread those
+sources. Coordinator direct reading controls that attribution. Exact
+isolation is not identified with Brading's interacting unity; approximate
+unities, plural extents and scale-relative ontology remain live.
+
+CONSTITUTION_IS_NOT_PREDICTION.md now adds a distinct §8: a lawful-alternative
+necessity test is vacuous if its background excludes every absence case;
+physical truncation, interaction change and nonexistence-from-a-standpoint
+must be distinguished. This elementary coordinator argument was **outside
+the new audit**. It is not a newly reviewed physical theorem, a full theory
+of counterfactual constitution, or a refutation of counterpossible semantics.
+Its positive target is an organizing activity distinguished from an enabling
+condition and from a completed activity token.
