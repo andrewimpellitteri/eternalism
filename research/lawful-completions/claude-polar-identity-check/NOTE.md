@@ -87,9 +87,9 @@ about the equations; the staggered conservative scheme replaced it.
 
 ## Read depth and limits
 
-- LOY arXiv:1605.03893v1 HTML: Theorem 1.1 with (1.7)–(1.9) and §§6.2–6.4 from
-  Lemma 6.5 onward read directly as full text. Theorem 1.7, (1.20) and Lemmas
-  6.1–6.4 seen through a fetch summary only, so abstract-level for those loci.
+- LOY arXiv:1605.03893v1 HTML: Theorem 1.1 with (1.7)–(1.9), Theorem 1.7 with
+  (1.20), §4 through (4.1), and §§6.2–6.4 from Lemma 6.5 onward read directly as
+  full text. Lemmas 6.1–6.4 seen through a fetch summary only.
 - Galloway–Ling–Sbierski arXiv:1704.00353v4: Theorems 1 and 2 through a fetch
   summary only. That summary reports no formal definition of timelike complete
   in either direction.
@@ -98,6 +98,40 @@ about the equations; the staggered conservative scheme replaced it.
   C¹,¹ input.
 - Out of scope, and still open on the board: the integrated continuity, degree
   and limit review, and the prior-result comparison.
+
+## Later read of the finite-control assembly
+
+Read C11_FINITE_CONTROL.md, COMPACTNESS_CONTINUITY_REPAIR.md, CUBIC_TRACE.md,
+INCOMING_MASS.md and FINITE_CONTROL.md at 0f73ad1. This is a second reading, not
+the independent integrated review, which remains open on the board.
+
+No break found in the norm compensation, E=ε²K²/4 and c=ρ/K, the Brouwer
+homotopy, the Boolean corollary, the flat-wedge Gronwall step, the mass-flux
+identity or the AXIS §1 w identity.
+
+The cubic remainder has an independent derivation. From p_uv=Qφ, the difference
+p_v(u,v)−Φ(v)/2 equals ∫Qφ du along fixed v, and log λ−log ½ equals
+∫2mν/(fr²)du. The bounds on m and φ then reproduce the printed ε³ and ε² forms.
+The LOY §4 displays and the normalization λ⁻¹∂_v(rφ)(u_n,v)=Φ(v) match
+CUBIC_TRACE.md. trace_check.py marches the system on one bump profile:
+
+| ε | e=\|φ−Φ\| at T=1.7 | e/ε³ | grid change |
+|---|---|---|---|
+| 0.2 | 1.29e−3 | 0.161 | 6.1e−6 |
+| 0.4 | 1.08e−2 | 0.168 | 5.2e−5 |
+| 0.8 | 1.05e−1 | 0.205 | 7.5e−5 |
+
+This is one profile on one finite cone, so it is a sanity check only. An earlier
+run of the script had a clock off-by-one, and its numbers were discarded.
+
+**Scope point, not an error.** G lies after the readout window, so by domain of
+dependence H_n does not depend on G or β(x). The energy lane already uses this
+late-tail decoupling. C11_FINITE_CONTROL.md and PHILOSOPHICAL_SCOPE.md do not
+draw the consequence: E is fixed only as the total. The mass received by readout
+time, m_-(V) for V before supp G, varies with the target. So "R does not factor
+through (P,E)" holds with E including radiation that reaches the center after
+every reading. Any claim phrased as readings varying at fixed energy should say
+this. Decoupling also gives H_n(−x)=−H_n(x), which fits a cubic remainder.
 
 ## Applied at the user's request
 
