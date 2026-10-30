@@ -53,8 +53,9 @@ Exact timelike witnesses (null coordinates):
   −2a < −a′ < 0; boost invariance upgrades to the whole branch.
 * N⁺L ⇒ LW ⇒ N⁻L by the mirror.
 * No cross-side implication: the chronological past of a right-wedge
-  point can meet only I⁻, RW and N⁻R; the chronological past of N⁺R can
-  additionally meet N⁺R. The past of N⁻R is contained in I⁻. These sign
+  point or an N⁺R point meets exactly I⁻, RW and N⁻R. It cannot meet N⁺R
+  itself: that would require its zero u_L coordinate to decrease strictly
+  while staying zero. The past of N⁻R is contained in I⁻. These sign
   statements follow directly from both coordinates strictly decreasing.
   The left-side statement is identical with coordinates interchanged.
   They prove sufficiency of every pair of monotone triples, not merely
@@ -142,6 +143,52 @@ Indeed E is transitive iff P+P⊆P by translation covariance.
 
 The uniqueness of J under closedness+F_c is an assumption-sensitive
 corollary here. It is not evidence that existence realms must be closed.
+
+### Complete transitivity refinement, coordinator audit on 30 October
+
+Translation covariance makes transitivity equivalent to P+P⊆P. Exactly
+**twelve** of the sixteen rules have this property: precisely those not
+containing both RW and LW. If both wedges are present, their sum is the
+whole plane. For any target (u,v), choose a point (−a,b) in RW with
+a>max(0,−u) and b>max(0,v); the difference (u+a,v−b) lies in LW.
+Additivity would therefore force I⁺ into P, contradicting F_t.
+
+For sufficiency, if neither wedge is present, P is I⁻+self with either
+past-null ray optionally added. Both coordinates of every member are
+nonpositive. A sum can lie on an optional null ray only when both summands
+already lie on that same ray or are zero, so P is additive. These are four
+cases. If RW alone is present, P has the form
+
+    {u_L<0} ∪ ({0}×D),
+
+where D is {0}, [0,∞), (−∞,0] or R, according to the two null-boundary
+bits. All four D are additive, and adding an interior half-plane point
+keeps u_L<0. These four cases and their four left/right mirrors exhaust
+the other eight. This proves both directions without a numerical grid.
+
+| Additional premises to the sixteen-case base | Count |
+|---|---:|
+| Transitivity | 12 |
+| Transitivity and closedness | 3 (J and the two closed null half-spaces) |
+| Transitivity and P_c | 5 |
+| Transitivity and F_c | 8 |
+| Transitivity, P_c and F_c | 3 (J, J+RW, J+LW) |
+
+[check_null_region_algebra.py](check_null_region_algebra.py) implements exact
+sums and closures of whole sign intervals. It checks all 64 region unions,
+recovering the sixteen past sets and every refinement above. Unlike the
+earlier grid checks, it is a finite symbolic certificate for the reduced
+region algebra; the continuous-domain saturation reduction is still the
+analytic step in §2. It imports no interrupted worker code.
+
+The quota-interrupted worker's unfinished checker contains the same
+transitivity idea, but is not executable as submitted: its initial sign-grid
+assertion omits null regions; its interval-containment helper compares
+interval tuples with string names; a later spot-check unpacks a region-name
+string as two region names. It also asserts seven for transitivity+F_c,
+although nine F_c cases minus the single both-wedges case B gives eight.
+The original is preserved unchanged; this continuation is coordinator work,
+not a completed independent review or acceptance of that submission.
 
 ## 5. What this does and does not show
 

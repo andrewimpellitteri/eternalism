@@ -139,3 +139,31 @@ Read depth: LOY v1 selected equations, Definition2.1, Proposition3.18 and sectio
 Checked all four ontology GLM event logs and supervisor processes. No fresh handback yet. Rival, bridge and equivalence lanes have source activity. The natural-assignment classification lane had no new event for approximately seventeen minutes despite a live process and clean worktree; stopped it through the runner and resumed its authorized GLM task in that same preserved worktree. Existing logs and claim were retained; no second writer or substitute model was launched. Live status remains in the runner, not this dated report.
 
 Separately, the user explicitly authorized immediate launch of four ontology GLM tasks. Scheduling dependencies were removed without accepting the technical submissions; the four isolated runs are active. Claude's PDF and local-fragmentalism changes were not included in these repairs.
+
+
+## C¹,¹ finite-control assembly, 30 October
+
+After the four GLM follow-ups stopped at quota, directly reread primary
+LOY v1 characteristic uniqueness, finite-order uniformity and section4
+compactness/incoming recovery statements. Added C11_FINITE_CONTROL.md:
+precise E/N/sample-time quantifiers, explicit compact-family smallness,
+a bounded-potential Volterra/Gronwall proof of the entire flat past,
+per-cone continuity and degree before limit, uniform incoming-mass recovery,
+and the four-dimensional Cauchy-time bound. Added conditional finite
+Boolean-independence and centered-isometry corollaries with all restrictions.
+The full assembly is coordinator work awaiting independent integrated
+review and nearest-predecessor comparison; no quota-interrupted submission
+is accepted from it. Source omissions/sketches remain external inputs.
+C²/smooth MGHD, ADM equality, pointwise axis Ricci and ontology selection
+remain unestablished. Added a selected-full-text source record and pointers
+from finite-control/continuity notes; no manuscript or worker-tree edits.
+
+
+Directly resolved the higher-regularity source-scope tension in
+KILGORE_SCOPE_REPAIR.md: Kilgore v1 footnote1 excludes direct control of
+LOY's scattering models, and the translated finite-cone family has a
+weighted-data lower bound growing like |u_n|^omega at a fixed nonzero tail
+point. Each individual norm is finite; no common bound follows. This is not
+a nonsmoothness proof, and possible decay-weight cancellations are explicitly
+unaudited. Updated the abstract-level sweep and axis note to prevent direct
+misapplication, with selected primary source record and exact remaining lemma.

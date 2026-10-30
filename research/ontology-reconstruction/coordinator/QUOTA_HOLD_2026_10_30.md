@@ -23,7 +23,10 @@ The partial checker has an additional ignored recovery copy under
 
     6357469860a39c25deb0a550d276983726aa2b20e46ef2bf73ab8dcca8f2de69
 
-It has not been executed or accepted. The other clean worktrees have no
+At the time of this hold record it had not been executed or accepted.
+The later [direct recovery](DIRECT_RECOVERY_2026_10_30.md) records its
+first execution failure and the separate coordinator certificate.
+The other clean worktrees have no
 new task-owned files. Their useful primary-source fetches survive in
 runtime events; they do not constitute reviewed source reports.
 

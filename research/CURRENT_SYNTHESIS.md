@@ -9,6 +9,14 @@
 > The later 1+1 classification has a corrected refinement table and a new
 > independent review task; it inherits no acceptance from the n≥2 audit.
 
+
+> **Direct continuation after the quota stop:** The four follow-up GLM
+> reviews did not complete. [Recovery and exact scope](ontology-reconstruction/coordinator/DIRECT_RECOVERY_2026_10_30.md)
+> records the separate coordinator sign-region certificate and the
+> [C¹,¹ finite-control candidate](lawful-completions/coordinator/C11_FINITE_CONTROL.md).
+> The latter now has explicit flat-past, Cauchy-time and finite-sign-pattern
+> proofs, but still needs integrated independent review and prior-art comparison.
+
 28 October 2026. Project integration of the existing research ledgers and the repaired screening results. This is a current navigation and scope document, not a new theorem, systematic fresh literature review, or acceptance of every source report. Historical documents retain their dates and may contain superseded proposals. Detailed status and falsifiers: [claim status](CLAIM_STATUS.md).
 
 ## Next programme: temporal ontology reconstruction

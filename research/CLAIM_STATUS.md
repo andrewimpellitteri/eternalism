@@ -17,6 +17,8 @@ Updated 30 October 2026. Integration ledger; status is inherited from the named 
 | Bivalent GBT secretly requires present concrete future grounds | Rejected as a generic critique | Strong rival allows later grounds and additional future-directed facts | [Disagreement](future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md) |
 | Same causal past means same existing bow-tie realm | Rejected | Spacelike exterior matter can differ and already belong to that realm | [Philosophical scope](lawful-completions/coordinator/PHILOSOPHICAL_SCOPE.md) |
 | Smooth coupled same-past finite-reading interpolation at fixed incoming mass | Candidate, not complete | Degree route; replacement continuity/compactness proof awaiting independent review; regular four-metric/axis category remains open | [Finite control](lawful-completions/coordinator/FINITE_CONTROL.md) |
+| C¹,¹ coupled finite readout range at fixed incoming mass | Coordinator conditional proof assembled; independent integrated review open | Same full pointed causal past; open ball of radius c√E at any fixed finite sample schedule; weak 4D equations, not smooth MGHD or ADM equality | [Direct assembly](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
+| Every finite sign pattern of those scalar readouts | Conditional corollary of the preceding candidate | N-dependent smallness and amplitudes; no exchange of finite-N and fixed-resolution quantifiers | [Quantifiers and corollary](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
 | Actual incoming boundary mass equals quarter profile norm | Independently reviewed deduction in reduced scattering class | Exact pre-pulse flatness and source uniform estimates; no ADM identification | [Mass proof](lawful-completions/coordinator/INCOMING_MASS.md), [review](lawful-completions/energy/REVIEW_INCOMING_MASS.md) |
 | Finite control needs a differentiable global scattering selection | Superseded proof requirement | Sufficient for IFT route, not necessary for degree-before-limit route | [Degree route](lawful-completions/coordinator/DEGREE_ROUTE.md) |
 | Christodoulou cone theorem provides entire-past collapse pair and causal barrier | Not established | Smooth annular data verified; global extension and required coordinate barrier missing | [Source audit](lawful-completions/coordinator/CHRISTODOULOU1991.md) |
@@ -61,3 +63,15 @@ finite-control compactness/degree chain still awaits its own full review.
 The complete 1+1 refinement table remains a separate coordinator deduction;
 its corrected nine-versus-four counts keep F_t and F_c explicit. No smooth
 common-development, pointwise axis Ricci or novelty gate is closed.
+
+
+## Direct recovery after quota, 30 October
+
+The [recovery record](ontology-reconstruction/coordinator/DIRECT_RECOVERY_2026_10_30.md)
+separates coordinator deductions from the four incomplete GLM handbacks.
+An exact sign-region certificate checks the 1+1 refinements after the
+analytic saturation reduction, including twelve transitive rules and eight
+transitive+F_c rules. The full independent review remains open. The
+[scale argument](ontology-reconstruction/coordinator/SCALE_AND_FUTURE_EXCLUSION.md)
+now exposes nonuniversality's semantic cost: a proper causal-availability
+relation does not exhaust concrete existence without a separate bridge.

@@ -107,3 +107,13 @@ has an independent explanatory justification. Neither is supplied merely
 by Lorentz covariance or smooth spacetime geometry. Audit this exact bridge
 and its nearest predecessors before extending to on-shell matter or
 advocating a positive ontology.
+
+
+**Quota/recovery update, same day:** all four follow-up runs stopped at the
+provider's five-hour usage quota before a complete handback. Their claims,
+worktrees and logs remain preserved. [Direct coordinator recovery](coordinator/DIRECT_RECOVERY_2026_10_30.md)
+provides an exact reduced-region certificate and the full twelve-case
+transitivity proof, and assembles the C¹,¹ finite-readout candidate. These
+are not completed independent worker reviews. The scale note now identifies
+an additional burden: why the proper relation should exhaust concrete
+existence, rather than track causal availability inside a universal inventory.

@@ -1,5 +1,13 @@
 # Recent-literature sweep bearing on the open C¹,¹-reconstruction gates
 
+
+> **30 October source correction:** The abstract-based Kilgore lead below
+> is superseded for direct applicability by
+> [KILGORE_SCOPE_REPAIR.md](KILGORE_SCOPE_REPAIR.md). Introduction footnote1
+> excludes direct control of LOY's scattering models; the actual translated
+> cone sequence also has divergent weighted initial-data bounds. This is
+> a missing uniformity argument, not a proof that smoothness is impossible.
+
 29 October 2026, later. Discovery-to-abstract depth unless stated; every
 item below was opened at the arXiv abstract page this session. Purpose:
 map 2021–2026 work that bears on the two open mathematical gates of

@@ -98,3 +98,22 @@ known transitivity pattern as a consistency check; no novelty claimed.
 Exact rational hyperboloid and nonadditivity witnesses pass. This later
 coordinator note is outside the launched workers' input baseline and
 remains independently unreviewed. The roadmap records that distinction.
+
+
+## Direct recovery after quota, 30 October
+
+Read the incomplete 20,476-byte checker, verified its preserved hash, and
+ran it with a hard timeout; it fails its first region-partition assertion.
+Wrote check_null_region_algebra.py independently using exact whole-ray
+operations, exhaustively checking the 64 reduced unions. Sixteen are past
+sets; twelve are additive/transitive; eight satisfy transitivity+F_c,
+correcting the interrupted script's asserted seven. Added the full analytic
+transitivity proof and corrected chronological-null wording in the census.
+Direct source/proof rechecking assembled lawful coordinator/C11_FINITE_CONTROL.md
+with explicit compact-family bounds, exact flat-wedge and Cauchy-slice
+proofs, fixed incoming mass and finite Boolean-independence quantifiers.
+Added nonuniversality's semantic cost to the scale note. Full details,
+source depth, checks and outstanding review gates: DIRECT_RECOVERY_2026_10_30.md.
+No failed task accepted or restarted, no worker output rewritten, and no
+smooth-MGHD, novelty or ontology-selection upgrade. Updated roadmap and
+current ledger at these exact scopes.

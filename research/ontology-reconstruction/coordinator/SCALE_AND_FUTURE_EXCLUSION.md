@@ -102,6 +102,30 @@ Changing measurement units while transforming all quantities is not the
 same requirement as keeping one rule invariant under δ_s at fixed data.
 The scale premise therefore needs its own justification and category.
 
+### A further semantic cost: what does nonuniversality mean?
+
+If E_b is intended as the **entire concrete inventory** at b, requiring
+E_b≠M already excludes the universal-inventory interpretation of eternalism.
+It is therefore not a neutral physical premise from which that interpretation
+has been defeated. The scale implication classifies proper inventories;
+it supplies no independent reason why the concrete inventory is proper.
+
+If E_b instead denotes events locally available, settled, or having become
+for b, nonuniversality can be accepted by an eternalist. One can assign
+concrete existence C_b=M and local causal availability A_b=J⁻(b) on the same
+physical model. A satisfies all the scale, persistence, exclusion and
+closedness clauses selecting J, while C remains universal. This is a
+counterinterpretation to an inference from the shape of A to the extent
+of C, not a claim that all ontologies are equivalent or a gauge symmetry.
+
+Thus two bridges must be separated: (i) why a proper relation is physically
+or explanatorily significant, and (ii) why its members exhaust concrete
+existence. An access/determination argument may address (i) without
+establishing (ii). The finite-readout programme strengthens a particular
+failure of causal-past determination; it cannot supply this identification
+by itself. The next positive ontological argument must defend that semantic
+and explanatory role against the universal-inventory counterinterpretation.
+
 ## 4. What regularity would and would not add
 
 P_a^≤ is closed: its complement {x∈I⁺:τ>a} is open. P_a^< is open: the
@@ -129,9 +153,9 @@ An omitted Lorentz-invariant past set, a failed saturation step, or a
 collar counterexample to a claimed converse would refute this classification.
 The direct scale implication can be checked independently of the census.
 An existing Lorentz-invariant past-set classification may make the entire
-calculation an immediate corollary; the active prior-art lane is already
-searching that lineage, but has not reviewed this later note. No claim here
-is accepted merely because those agents are running.
+calculation an immediate corollary; the quota-interrupted prior-art lane had begun
+searching that lineage but produced no completed review of this later note.
+No claim here is accepted from the interrupted dispatch.
 
 No curved-space, matter-enriched, complete free-logic or global temporal
 ontology classification follows. In particular the proof says nothing

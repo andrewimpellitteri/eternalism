@@ -57,3 +57,14 @@ Compact convergence of phi and lambda passes the normalized central clocks, thei
 5. **Novelty and substantive strength:** compare with known scattering/control corollaries. Exclude timing/marking freedom if the intended result is nonisometric unmarked completions, and do not claim independent physical control merely from an unexamined solution selection.
 
 This route removes the need for a differentiable scattering map from the finite-interpolation proof architecture. It does not establish arbitrary function-space record control, ADM equality, or a detector model.
+
+
+## Stronger bounded assembly, 30 October
+
+[C11_FINITE_CONTROL.md](C11_FINITE_CONTROL.md) states the full C¹,¹ candidate,
+including the external input list, explicit profile smallness, exact
+flat-wedge proof, parameter/vertex limit order, actual incoming mass,
+Cauchy-time bound and finite Boolean-independence corollary. The integrated
+adversarial review stopped at GLM quota; direct coordinator rechecking
+supplies no completed independent review. Smooth MGHD, pointwise axis
+curvature and novelty remain separate gates.

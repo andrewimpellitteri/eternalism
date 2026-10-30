@@ -297,12 +297,14 @@ assignment at the axis.
   RECENT_LITERATURE_2026_10_29.md):** LOY exists in published form
   (Ann. PDE 4:3, 2018) — the published §3–§4 should be checked against
   the v1 audit before the sketch-fidelity residual is treated as final.
-  Kilgore's higher-derivative bounds for the same global SSESF class
-  (arXiv:2108.13377, published AHP) and Luk–Oh's global nonlinear
-  stability of that class (arXiv:2108.13379, published AHP 2022) are
-  the named routes toward replacing the finite-order inputs at higher
-  order and toward the smooth-common-development gate; both need
-  full-text reads before any gate movement.
+  The subsequent [selected source-scope check](KILGORE_SCOPE_REPAIR.md)
+  corrects the Kilgore lead: his v1 introduction footnote1 explicitly
+  does not directly control LOY's past-null-infinity models. Our translated
+  cone sequence has no common bound for Definition2.5's weighted initial
+  norm. A localized/uniform higher-order bridge remains to be proved;
+  its failure to be supplied is not a smoothness impossibility theorem.
+  The full published-version and Luk–Oh stability hypotheses remain
+  unaudited for the present scattering class.
 * **Sharp target:** bounded weak Hessians do not establish their continuity.
   A model scalar radial function H(ρ)=ρ² sin(log ρ), H(0)=0, is C¹,¹
   after Cartesian lifting and has H_ρ(0)=0, but its Hessian has no center
