@@ -23,13 +23,12 @@ Hence the only free bits are the two wedges, and the census is exactly
 J+RW+LW (= B's region set). Note I = I^- u {0} does NOT satisfy P_c (null
 steps force the past nulls), consistent with the coordinator's n>=2
 collapse "boundedness and P_c give J only": in 1+1 without parity J is
-still the minimum, but wedge freedom survives, so 4 assignments survive.
+still the minimum, but wedge freedom survives, so 4 assignments survive under F_c.
 
-Correction log: an earlier coordinator conjecture announced 9 (per-side
-(wedge, past-null) options (0,0),(0,1),(1,1)); the script refuted it
-because the past-null options are never free - J^-(0) is mandatory. The
-script caught the slip before any note recorded it as checked; the census
-note addendum has been corrected.
+Correction log (30 October): nine is the correct count under P_c + F_t.
+This script strengthens exclusion to F_c and checks four. It does not refute
+nine under the original F_t premise; that comparison changed premises.
+See check_1plus1_refinements.py for both counts and closed half-spaces.
 
 Script checks: distinctness, causal-past closure, S, F_c, boost
 invariance on the witness grid; the closure-breaking witness; mandatory-

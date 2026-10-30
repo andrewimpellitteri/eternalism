@@ -1,6 +1,7 @@
 # The complete 1+1 no-parity census: exactly sixteen assignments
 
-29 October 2026. Coordinator deduction, **pending independent review**. This
+29 October 2026; corrected 30 October. Coordinator deduction, **pending
+independent review of the complete census and its refinements**. This
 closes the gap flagged by `ontology-persistence-review` ("a complete 1+1
 no-parity census not completed; only one explicit fifth family"). It extends
 that lane's fifth-assignment finding; it is conditional mathematics on flat
@@ -11,7 +12,7 @@ prior-art sweep is recorded in §7.
 ## 1. Reduction to a boost-invariant past set
 
 Fix the reference standpoint 0 and write P := E_0. Poincaré covariance
-(animations plus boosts, no spatial reflection) gives E_b = b + P, so
+(translations plus boosts, no spatial reflection) gives E_b = b + P, so
 
 * S holds iff 0 ∈ P;
 * P_t holds iff P is a past set (d ≪ x ∈ P ⟹ d ∈ P);
@@ -27,19 +28,20 @@ Use null coordinates u_L = t−x, u_R = t+x. Boosts act by
 strictly increase. The eight regions are: I⁻, I⁺, the right and left
 wedges RW = {u_L<0<u_R}, LW = {u_R<0<u_L}, and four null branches
 N⁺R = {u_L=0<u_R}, N⁺L = {u_L>0,u_R=0}, N⁻R = {u_L<0=u_R},
-N⁻L = {u_L=0<u_R} — the origin apart.
+N⁻L = {u_L=0,u_R<0} — the origin apart.
 
 ## 2. Mandatory, forbidden, and all-or-nothing regions
 
-* I⁻(0) ∪ {0} ⊆ P: past-closure plus 0 ∈ P (this is the J⁻ core shared
-  with the n≥2 census, without any symmetry input).
+* I⁻(0) ∪ {0} ⊆ P: past-closure plus 0 ∈ P. Past nulls are not yet
+  forced; they become mandatory under causal persistence or closedness.
 * I⁺(0) ∩ P = ∅: F_t.
 * Null branches are single boost orbits, so P meets each in all or none.
-* Wedge membership is all-or-nothing: the timelike past of an RW point
-  (u_L,u_R) covers every RW point of every proper distance, since inside
-  its past u_R′ ranges over (0,u_R) — arbitrarily small, driving the
-  product −u_L′u_R′ to 0 — and u_L′ → −∞ drives it to ∞; LW is symmetric.
-  So P ∩ RW is a boost-invariant past-closed set, hence ∅ or all of RW.
+* Wedge membership is all-or-nothing. Given p=(−a,b) in RW and any
+  q=(−A,B) in RW, all a,b,A,B>0, a boost sends p to (−a/h,bh).
+  Choose h>max(a/A,B/b); then q≪(−a/h,bh). Boost invariance and past
+  closure put q in P. The left wedge follows by the same calculation
+  with the two null coordinates interchanged. No dilation is used.
+
 
 ## 3. Chain implications (no cross-side coupling)
 
@@ -48,11 +50,15 @@ Exact timelike witnesses (null coordinates):
 * N⁺R ⇒ RW: (0,2a) has (−a,2a′) ∈ RW in its timelike past whenever
   −a < 0 < 2a′ < 2a; saturation upgrades one point to all of RW.
 * RW ⇒ N⁻R: (−2a,0) ∈ N⁻R is timelike-past of (−a′,u_R) ∈ RW whenever
-  −2a < −a′ < 0; transitivity upgrades to the whole branch.
+  −2a < −a′ < 0; boost invariance upgrades to the whole branch.
 * N⁺L ⇒ LW ⇒ N⁻L by the mirror.
-* No cross-side implication: timelike separation forces both null
-  coordinates to move the same direction, and the witnesses above never
-  mix sides; checked on the witness grid.
+* No cross-side implication: the chronological past of a right-wedge
+  point can meet only I⁻, RW and N⁻R; the chronological past of N⁺R can
+  additionally meet N⁺R. The past of N⁻R is contained in I⁻. These sign
+  statements follow directly from both coordinates strictly decreasing.
+  The left-side statement is identical with coordinates interchanged.
+  They prove sufficiency of every pair of monotone triples, not merely
+  absence of a cross-side witness on a finite grid.
 
 Hence, writing each side's triple as (future-null, wedge, past-null) ∈
 {0,1}³, a valid assignment satisfies n⁺ ≤ w ≤ n⁻ per side: including the
@@ -67,7 +73,7 @@ Per side there are exactly four monotone triples
 **exactly 16 assignments** satisfy S, P_t, F_t and boost+translation
 covariance on 1+1 Minkowski space:
 
-| pattern (R | L) | region set | relative to the census |
+| pattern (R, L) | region set | relative to the census |
 |---|---|---|
 | (000\|000) | I⁻∪{0} | I (Stein/CH survivor) |
 | (001\|001) | I⁻∪N⁻∪{0} | J |
@@ -90,18 +96,52 @@ written as Δx ≤ 0 instead of Δt² ≥ Δx² — both caught by the candidate
 cross-check, neither affecting the census. The completeness claim rests on
 the analytic orbit/chain argument of §§2–3; the grid is witnesses only.
 
-With reflection added, the 16 collapse to 10 mirror orbits (4 symmetric
-patterns and 6 pairs). Under causal persistence P_c (with F_c), the
-picture differs: J⁻(0) = I⁻∪N⁻∪{0} is mandatory, both future-null
-branches are forbidden, and only the two wedges stay free, so exactly
-**4** assignments survive — J itself, J+RW, J+LW, J+RW∪LW — and I (I⁻
-alone) fails P_c. This is consistent with the n≥2 collapse to J under
-boundedness and P_c: J remains the minimum, but in 1+1 without parity
-wedge freedom survives. Correction log: an earlier coordinator conjecture
-announced 9 (per-side (wedge, past-null) option triples); it was wrong
-because the past-null options are never free — the script caught it
-before any checked status was recorded, and `check_1plus1_pc_census.py`
-verifies the count 4.
+### Additional premises: hold the exclusion convention fixed
+
+Every row below starts with S, P_t, F_t and boost+translation covariance.
+F_c means no nonzero causal-future member; P_c includes null advancement.
+
+| Additional premise | Number | Surviving patterns |
+|---|---:|---|
+| None | 16 | four monotone triples independently on each side |
+| Reflection invariance | 4 | identical right/left triples: I, J, B, C |
+| P_c | 9 | past-null bit 1 on each side; 001, 011 or 111 per side |
+| F_c | 9 | future-null bit 0 on each side; 000, 001 or 011 per side |
+| P_c and F_c | 4 | 001 or 011 per side; J, J+RW, J+LW, B |
+| Closedness | 4 | 001 or 111 per side; J, two null half-spaces, C |
+| Closedness and F_c | 1 | J |
+
+Reflection **invariance** requires equal triples and gives four assignments.
+Merely identifying each assignment with its mirror produces ten equivalence
+classes among the sixteen; it does not make the asymmetric rules invariant.
+
+For P_c, J⁻(0) is mandatory by S. Conversely, once both past-null bits
+are present, the chronological past-set rule is causally past-closed: a
+causal past of an included N⁺R can add RW and N⁻L, and a causal past of an
+included RW can add N⁻R; all are present. The mirror cases are the same.
+Thus there are nine cases with F_t retained. F_c removes both future-null
+bits and leaves four. The earlier claim that a script refuted the count
+nine changed F_t to F_c at the same time; it was not a refutation under
+fixed premises. `check_1plus1_pc_census.py` checks the four-case P_c+F_c
+statement only. The separate refinement checker records both counts.
+
+For closedness, cl(I⁻) forces both past-null branches. Inclusion of a wedge
+forces its future-null boundary; conversely a future-null branch already
+forces its wedge by past closure. Hence each side must be 001 or 111.
+The two asymmetric closed cases have particularly simple descriptions:
+
+    P_L={u_L≤0},       P_R={u_R≤0}.
+
+They are closed null half-spaces, boost-invariant, causally past-closed,
+self-inclusive and F_t. Each contains one future-null branch, so both fail
+F_c. These counterexamples correct the earlier claim that only J and C
+were closed among all sixteen. They also show why the n≥2 transitivity
+row cannot be transferred to the asymmetric 1+1 family: a null half-space
+is additive, hence its relation E is transitive, while distinct from I,J.
+Indeed E is transitive iff P+P⊆P by translation covariance.
+
+The uniqueness of J under closedness+F_c is an assumption-sensitive
+corollary here. It is not evidence that existence realms must be closed.
 
 ## 5. What this does and does not show
 
@@ -111,13 +151,11 @@ exception but by a controlled 16-fold family, and the mechanism (per-side
 monotone chains where saturation used to kill all freedom) explains both
 the failure and the n≥2 classification's correctness.
 
-It does not show: anything for n ≥ 2 (where the review's census holds and
-was re-verified); anything under transitivity of the existence relation
-(where the census table's row 7 applies, leaving I and J); any closedness
-refinement (closedness selects J and C among the four n≥2 candidates, and
-among the 16 it selects the patterns whose region sets are closed — J and
-C again, by cl(I)=J, cl(B)=C); anything about curved spacetime; any
-philosophical selection; any novelty.
+It does not establish a curved-spacetime or on-shell Einstein–matter
+classification, a philosophical selection, or novelty. Refinements in §4
+have a coordinator analytic proof and exact finite witnesses; they still
+need an independent review. The n≥2 transitivity/closedness rows apply to
+that four-case family, not to this sixteen-case family.
 
 ## 6. Nearest predecessors
 
@@ -153,3 +191,14 @@ verdict and does not close that audit.
   escaping the wedge saturation) would shrink or reshape the 16.
 * An earlier statement of the 16-fold census in print would remove any
   residual interest; the dedicated prior-art audit remains open.
+
+## 9. Correction provenance, 30 October
+
+The continuation audit found a duplicated future/past null definition, a
+"J⁻ core" label where only I⁻+self was forced, an unjustified grid-based
+sufficiency sentence, the reflection-invariance/mirror-quotient confusion,
+the closed-half-space omissions, and an implicit transfer of the n≥2
+transitivity row. These are corrected above. The sixteen-case base count
+is unchanged. The causal-persistence refinement must specify F_t (nine)
+versus F_c (four); the earlier nine-to-four correction was a premise change.
+No version of this note supplies a novelty verdict.

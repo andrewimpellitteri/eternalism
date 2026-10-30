@@ -121,3 +121,27 @@ P_c variant (expected 9) is a labelled conjecture, not checked. The
 discovery-level prior-art sweep in §7 of the note (Bigaj 2008 cumulativity
 as nearest B-type relative; no census-form statement found) feeds, but does
 not replace, the proposed dedicated audit.
+
+## Continuation audit, 30 October: corrections to the inspection itself
+
+The O7 argument is now replaced by its exact integrating-factor formula in
+AXIS_C11_RECONSTRUCTION.md. Since w=rc vanishes at the axis merely from
+bounded c, the logarithmic contradiction is unnecessary. K≤0 bounds the
+integrating factor by one, giving |w|≤Cr² directly. The mixed-derivative
+bound therefore does not assume scalar parity. The off-axis gradient is
+locally Lipschitz, not necessarily C¹, and the corrected segment argument
+uses |x|+|y|=|x−y| when a segment meets the axis. The earlier expression
+subtracting a spacetime axis coordinate from spatial x,y is superseded.
+HTML v1 mass equations are (2.10)–(2.11), distinct from the raw-TeX review's
+numbering; the input list now records this explicitly.
+
+The complete 1+1 census retains sixteen base cases, but its refinements had
+errors. Reflection invariance leaves four rules; identifying mirrors gives
+ten equivalence classes. Four rules are closed, including two asymmetric
+null half-spaces; those also refute transferring the n≥2 transitivity row.
+P_c with F_t retained gives nine cases, whereas P_c+F_c gives four. Thus
+the later claim that a script refuted nine changed the exclusion premise.
+ONE_PLUS_ONE_CENSUS.md and check_1plus1_refinements.py record the repairs.
+The new full 1+1 classification and refinements remain coordinator
+deductions awaiting a dedicated independent review; the earlier persistence
+review audited the n≥2 four-case theorem, not these later extensions.

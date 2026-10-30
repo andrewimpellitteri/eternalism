@@ -1,6 +1,8 @@
 # A finite-order repair: a C¹,¹ metric across the scattering axis
 
-29 October 2026. Coordinator deduction, **awaiting independent review**.
+29 October 2026; proof repair 30 October. Coordinator deduction with source
+and analytic reviews inspected; bounded internal acceptance remains separate
+from smooth-development applicability and novelty.
 This supplies a weaker, useful target than smoothness: the LOY limit has a
 locally C¹,¹ four-metric and scalar in the Cartesian chart constructed below.
 Consequently the geodesic initial-value problem is locally unique, including
@@ -26,43 +28,52 @@ below. No small upper bound on r's first derivatives is inferred.
 
 The field equations are exact inputs in their own right, not consequences of
 the bounds: r_uv=2mνλ/[(1−μ)r²] and (rφ)_uv=r_uvφ (the SSESF system), with
-the mass equations (2.12)–(2.13). The parity identity (3) below needs the
-second equation explicitly: the axis-odd lift φ=ρ satisfies the mass
-equations and every derivative bound but violates (rφ)_uv=r_uvφ, and lifts
-to |x|, which is not C¹. Omitting these equations from the input list would
-make the statement false; the independent lift review demonstrated exactly
-this failure mode.
+the two mass equations displayed in §2 below (HTML v1 (2.10)–(2.11)).
+The parity identity (3) below needs the wave equation explicitly. An
+axis-odd scalar φ=ρ lifts to |x|, which is not C¹. The lift review's example
+satisfies the bounds and suitably chosen mass equations, but not the full
+coupled system; it is a counterexample to a bounds-and-mass-only lemma.
+The field equations must therefore be explicit hypotheses.
 
 The mixed members of the displayed order sets are not printed estimates in
 LOY. The axis-inclusive u₀-uniform bound |φ_uv|≤C is supplied by the
-following derivation, which uses only printed estimates and was verified
-term-by-term by the independent source audit (29 October 2026,
-`lawful-axis-source-review`, lemma O7) and re-derived by the coordinator the
-same day. Let ψ=λ⁻¹φ_v and K=λ_u/λ=2mν/[(1−μ)r²]; expanding ∂_u(λφ+rφ_v)
-and cancelling λ_uφ against r_uvφ gives ∂_u(φ+rψ)=−Krψ. Hence ψ_u=−c/r with
-c:=φ_u+νψ+Krψ. If c(t₀,t₀)≠0, then ψ_u≈−c/r near the axis and du=dr/ν
-makes ψ grow like log r, contradicting the printed axis-inclusive bound
-(3.9); so c≡0 on Γ. Differentiating, ∂_u(rc)=rB−cKr with
-B=φ_uu+ν_uψ+(Kr)_uψ, every term of which is bounded by printed inputs
-(|φ_uu| from (3.55) plus nondegeneracy, |ν_u|≤Cε from (1.9), |ψ|≤Cε from
-(3.9), and (Kr)_u≤C from the weighted mass bounds below); no step consumes
-φ_uv, so there is no circularity. Gronwall from the axis, where rc=0, gives
-|rc|≤Cr², hence |ψ_u|≤C and φ_uv=λ_uψ+λψ_u≤C. As a byproduct, c≡0 on Γ
-re-proves parity (3) for φ without the expansion used there: ν=−λ on Γ
-gives φ_u=λψ=φ_v there.
+following derivation. It sharpens the source review's lemma O7 by replacing
+its logarithmic contradiction and Gronwall step with an exact integral.
+Use the normalized wave equation and log-λ equation in HTML v1 (2.6),
+(2.8); the raw-TeX review uses different numerical equation labels.
+Let
 
-Two regularity points in this lemma are worth making explicit. First, c
-extends continuously to Γ: each cone solution is C¹ up to Γ (Definition
-2.1 with the axis identities (2.4)), so φ_u, ν and ψ=λ⁻¹φ_v are continuous
-there (λ ≥ 1/3 removes any division problem), and K=2mν/[(1−μ)r²]=O(r)
-by (3.11), extending continuously with value 0 on Γ. The log-divergence
-step uses only this continuity: |c|≥|c(t₀,t₀)|/2 near (t₀,t₀) and
-∫du/r against r≍v−u diverges. Second, the bound on B is a term-by-term
-account: φ_uu=ν²(ν⁻¹∂_u)²φ+ν_u·(ν⁻¹∂_u)φ, bounded by (3.55) with (3.29)
-and |ν|≤2/3 from (1.8); |ν_u|≤Cε from (1.9); |ψ|≤Cε from (3.9); and
-(Kr)_u=K_u r+Kν with K=O(r), K_u bounded through m_u=O(r²), ν_u≤Cε,
-μ_u=O(r) and the m=O(r³) cancellation of the r⁻², r⁻³ factors. No term
-consumes φ_uv.
+    ψ=φ_v/λ,       K=λ_u/λ=2mν/[(1−μ)r²]≤0,
+    c=φ_u+(ν+Kr)ψ,
+    B=φ_uu+[ν_u+(Kr)_u]ψ,       w=rc.
+
+The wave equation gives ∂_u(φ+rψ)=−Krψ, hence
+
+    rψ_u=−c,     c_u=B−(ν+Kr)c/r,     w_u+Kw=rB.
+
+All terms of B are bounded **before** obtaining φ_uv. The printed pure
+second-φ estimate gives φ_uu (HTML (3.57), Proposition 3.18); the first
+geometry estimates give ν_u, λ and λ⁻¹. First field derivatives give ψ.
+The first-order part of §2 gives m=O(r³), m_u=O(r²), μ=O(r²), μ_u=O(r).
+Since Kr=μν/(1−μ),
+
+    (Kr)_u=νμ_u/(1−μ)²+μν_u/(1−μ),
+
+which is bounded using only those first-order mass estimates. No bound for
+m_ab, mixed φ derivatives, or third r derivatives enters this step.
+
+On a fixed-v segment ending at (v,v), c is bounded and continuous: the
+cone solution is C¹ up to Γ, λ is bounded away from zero, and K=O(r)
+extends with value zero. Thus w(v,v)=0 automatically; **c(v,v)=0 need not
+be assumed**. Solve the displayed scalar linear ODE backwards:
+
+    w(u,v)=−∫_u^v exp(∫_u^s K(z,v)dz) r(s,v)B(s,v) ds.
+
+K≤0 makes the exponential at most one. The uniform ν bounds imply
+r(s,v)≍v−s, so |w(u,v)|≤C(v−u)²≤C′r(u,v)². Therefore c=O(r), ψ_u is
+bounded, and φ_uv=λ_uψ+λψ_u is bounded uniformly in the cone vertex.
+Continuity now gives c(v,v)=0 as a conclusion. With ν=−λ and Kr=0 on Γ,
+this also yields φ_u=φ_v there, independently proving parity (3).
 
 Pure third derivatives of r follow from (3.45), (3.47) and the lower-order
 bounds. Mixed third derivatives follow by differentiating
@@ -215,12 +226,15 @@ The Lipschitz estimate across the axis follows from the same two facts by a
 two-case segment argument (the proof is inserted here following the
 independent lift review, REPAIR-N3; the earlier sentence version asserted it
 without proof). Let G=∇_{(t,x)}E and P=(t,x), Q=(s,y) in a compact ball.
-Case 1: the segment PQ avoids the axis. G is C¹ on it with
-|dG/ds|≤|Hess E|≤C, so |G(P)−G(Q)|≤C|P−Q|. Case 2: the segment meets the
-axis at some (z*,0). Then |G(P)|+|G(Q)|≤C(ρ_P+ρ_Q)≤C(|x−z*|+|y−z*|)≤C|P−Q|,
-using |G|≤Cρ from (5) and z* lying between P and Q on the segment. Hence G
-is globally Lipschitz with a uniform constant and E∈C¹,¹ on the closed
-half-plane, using only |∇E|≤Cρ and the off-axis Hessian bound. This avoids
+Case 1: the segment PQ avoids the axis. On its compact neighborhood the
+weak Hessian bound makes the continuous gradient G locally Lipschitz,
+with uniform constant C. A finite segment subdivision gives
+|G(P)−G(Q)|≤C|P−Q|; G need not be C¹. Case 2: the segment meets the axis.
+If it lies in the axis, G=0 throughout. Otherwise its spatial endpoints
+are on opposite rays (or one is zero), so |x|+|y|=|x−y|. The estimate
+|G|≤Cρ gives |G(P)−G(Q)|≤C(|x|+|y|)≤C|P−Q|. Thus G is Lipschitz on the
+Cartesian ball and E∈C¹,¹ there, using only |∇E|≤Cρ and the off-axis
+weak Hessian bound. This avoids
 assuming that D/ρ² itself has two continuous derivatives.
 
 All constants are uniform in the finite-cone approximants. The induced
