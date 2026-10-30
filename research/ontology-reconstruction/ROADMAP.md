@@ -81,3 +81,29 @@ At handback, verify primary locators and source depth, check owned scope, inspec
 [What work does existence do?](coordinator/ROLE_OF_EXISTENCE.md) develops a conditional abductive preference for event realism and its strongest objections. This is a coordinator proposal for adversarial comparison, not an accepted conclusion or an instruction for workers to favor that view. Source depths and unread gates remain explicit.
 
 [Version-2 explanatory-role test](coordinator/EXPLANATORY_ROLE_TEST.md) corrects the default-preference claim, supplies a restricted domain-insensitivity example, and asks which explanatory step depends on a disputed ontology. This is preliminary coordinator work to challenge, not a new accepted theorem or a full model of any named rival.
+
+## 30 October: reviewed baseline and the next bridge test
+
+The [review disposition](coordinator/REVIEW_DISPOSITION_2026_10_30.md)
+integrates three bounded reviews. The n≥2 four-case census and conditional
+Cartesian C¹,¹ reconstruction have internal review. The later 1+1 census
+and its corrected refinements are separate coordinator deductions. Smooth
+MGHD applicability, novelty and philosophical selection remain open.
+
+Four disjoint GLM tasks launched from fb02d2a: the complete 1+1 refinements,
+finite-control compactness/degree proof, higher-regularity source scope,
+and exact persistence-census prior art. Fresh model/tool events confirm
+that all four runs started; submission still requires inspection.
+
+[Scale and future exclusion](coordinator/SCALE_AND_FUTURE_EXCLUSION.md)
+is the next coordinator bridge test, written after that launch and not
+reviewed by those workers. It proposes a complete homogeneous classification
+without F_t: the four old rules, open/closed proper-time collars, and the
+universal rule. A short separate argument shows that persistence,
+dilation invariance and nonuniversality entail timelike-future exclusion.
+Transitivity provides another route, recovering the known I/J/universal
+pattern. The substantive question is which scale or transitivity premise
+has an independent explanatory justification. Neither is supplied merely
+by Lorentz covariance or smooth spacetime geometry. Audit this exact bridge
+and its nearest predecessors before extending to on-shell matter or
+advocating a positive ontology.

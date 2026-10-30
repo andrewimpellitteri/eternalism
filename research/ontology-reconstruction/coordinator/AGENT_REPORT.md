@@ -88,3 +88,13 @@ pointwise central Ricci, novelty or ontology selection upgrade. Prepared
 four disjoint GLM tasks on refinements, finite-control proof, stronger
 regularity/source domain and prior art. Existing source additions and
 article PDF were preserved; Claude committed them during this continuation.
+
+
+All four follow-up runs launched from fb02d2a; fresh model/tool events
+confirm they started. Added SCALE_AND_FUTURE_EXCLUSION.md after launch:
+a candidate complete classification without future exclusion, and a short
+separate scale-invariance/nonuniversality implication. It recovers the
+known transitivity pattern as a consistency check; no novelty claimed.
+Exact rational hyperboloid and nonadditivity witnesses pass. This later
+coordinator note is outside the launched workers' input baseline and
+remains independently unreviewed. The roadmap records that distinction.

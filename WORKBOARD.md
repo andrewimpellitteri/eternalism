@@ -201,10 +201,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `lawful-axis-source-review` — Audit exact LOY finite-order inputs for Cartesian axis reconstruction | 10 | — | glm-lawful-axis-source-review |
 | done | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | glm-lawful-axis-lift-review |
 | done | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
-| open | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | — |
-| open | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | — |
-| open | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | — |
-| open | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | — |
+| claimed | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | glm-ontology-null-refinements-review |
+| claimed | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
+| claimed | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
+| claimed | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
