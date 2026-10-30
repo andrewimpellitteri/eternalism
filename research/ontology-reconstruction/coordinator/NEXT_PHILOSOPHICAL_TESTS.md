@@ -94,7 +94,17 @@ the philosophical tasks until it succeeds.
 The new geometric realm audit and the bounded philosophy audit from this
 round are separate finished handbacks with coordinator corrections recorded
 in ARGUMENT_REVIEW_2026_10_30.md. The contracts above are prepared workboard
-tasks; they have not been launched. The default GLM workflow remains the
+tasks. The modal-category and constitutive-extent tasks launched from
+`1d1102a` and have active isolated GLM runs, verified by their supervisors
+and fresh model/tool events. The prefix-energy task remains blocked by its
+finite-control review dependency. The default GLM workflow remains the
 configured route when the provider is available and dependencies pass. Existing
 quota-stopped claims and worktrees are preserved. Review means exact
 source and argument inspection, not a vote or a publication gate.
+
+The coordinator's separate WEAK_COUPLING_AND_TEMPORAL_EXTENT.md tests
+robustness, the physical decomposition and temporal refinement. Its prepared
+adversarial task is `ontology-unity-robustness-review`; neither it nor this
+note replaces the two workers' independent contracts. A sustaining-process
+proposal must distinguish a system's continued existence from the completion
+of an activity before its duration is interpreted as a present.

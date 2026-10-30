@@ -9,7 +9,9 @@
 > identifies the positive ontological bridge that remains.
 > [Review disposition](coordinator/ARGUMENT_REVIEW_2026_10_30.md) records the two
 > bounded audits and corrections. [Three next contracts](coordinator/NEXT_PHILOSOPHICAL_TESTS.md)
-> are prepared on the board; they have not been launched. The stopped GLM
+> are on the board. The modal-category and constitutive-extent GLM runs
+> launched from `1d1102a` and are active in separate worktrees; the prefix-energy
+> task still awaits its dependency. Earlier quota-stopped GLM
 > tasks retain their claims. The smoothness bridge is now supplied at its
 > stated class, not an open precondition for this philosophical work.
 
@@ -70,6 +72,16 @@ Choose a bounded target whose hypotheses are both mathematically precise and phi
 Deliver: exact statement, source/novelty comparison, proof or counterexample, assumption-independence witnesses, strongest surviving rival, and a separate philosophical argument for the bridge premise. Run an independent adversary after the target is fixed. Formalization is useful only after statement correspondence is audited.
 
 A structural impossibility theorem cannot by itself show metaphysical impossibility. Definability, explanatory economy and physical relevance must each be argued separately.
+
+The later [weak-coupling test](coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md)
+adds a bounded coordinator argument: exact material autonomy changes under
+arbitrarily weak coupling while compact-time behaviour converges; autonomy
+alone selects no minimal positive temporal thickness. It preserves interacting
+and approximate unities and does not identify Brading's view with exact
+isolation. An independent audit is prepared as `ontology-unity-robustness-review`.
+The next positive target is the difference between a continuing system and a
+completed activity alleged to constitute its present. This note does not
+duplicate the isolated worker's concrete constitutive-system test.
 
 ## Phase 4: positive ontology and external challenge
 

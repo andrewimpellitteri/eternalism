@@ -1,5 +1,34 @@
 # Coordinator continuation: persistence correction and proof-review dispatch
 
+## Latest continuation: unity robustness, 30 October
+
+Added WEAK_COUPLING_AND_TEMPORAL_EXTENT.md and three selected-primary-reading
+records. A four-mass spring model separates exact material autonomy from
+robust finite-duration behaviour; an explicit two-sided operator bound gives
+compact-time convergence as coupling vanishes. Normal modes expose the need
+to specify the physical parts. A restricted interval-refinement lemma shows
+why restriction-hereditary tests cannot select a minimal positive thickness;
+it does not rule out activity-based criteria or force a whole history.
+Overlap agreement is separately distinguished from inventory transitivity.
+
+The philosophical argument requires warrant appropriate to a sharp exclusion
+claim, while preserving approximate unities, interacting components and
+scale-relative ontology as live alternatives. Brading2015 §§4–5 pp16–18 and
+Brading2013 §4 pp1104–1105 were directly reread; Butterfield1106.0702v1
+selected introductory argument provides prior context, not an ontology result.
+No novelty claim or manuscript edit. Independent audit is prepared on the
+board and the coordinator note remains unreviewed until that audit is inspected.
+
+Checked current shared changes and both new isolated GLM supervisors. Their
+modal-category and constitutive-extent claims belong to the existing runs;
+neither is taken over or duplicated. The earlier four quota-stopped claims
+are preserved. Claude's polar NOTE.md and trace_check.py remain separate.
+
+Board validation: 207 tasks, safe paths and acyclic dependencies. Mechanics
+and interval claims have direct arguments, not grid-based verification.
+The main unresolved question is whether a nonhereditary sustaining-process
+criterion independently selects the present of a persisting system.
+
 29 October 2026. Research work pending independent review, no ontology or
 novelty verdict. The preceding committed review is `dde8b4d`.
 
