@@ -1,5 +1,15 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **Latest philosophical continuation, 30 October:**
+> [The review and new arguments](ontology-reconstruction/coordinator/ARGUMENT_REVIEW_2026_10_30.md)
+> distinguish a growing stage from an ended world, local equations from
+> maximal-world admissibility, and eventual resolution from truth now.
+> [The same smooth class](lawful-completions/coordinator/REALM_CONTRAST_IN_SMOOTH_CLASS.md)
+> is future-directed and has whole-realm rigidity under the exact field/germ
+> matching contract. Its causal-past open-range claim still needs its own audit.
+> The fixed total incoming mass includes radiation after the readouts;
+> incoming prefix masses and local energy are not held fixed.
+
 > **Latest 30 October: smoothness repaired.**
 > The [local bootstrap](lawful-completions/coordinator/SMOOTHNESS_BOOTSTRAP.md)
 > and [persistence proof](lawful-completions/coordinator/LOCAL_POLAR_PERSISTENCE.md)
@@ -94,6 +104,16 @@ Direct chapter/reply reading shows why intrinsic past-field agreement does not e
 
 The repaired criticism therefore targets a NAMED supervenience/grounding premise. It does not impose present-ground completeness on a rival that rejects it. Supervaluation/settlement is a different semantic policy, not forced by the PDE construction. Nor is matching the causal past equivalent to matching the bow-tie realm, which includes spacelike exterior events and may already distinguish incoming radiation.
 
+The [passage test](ontology-reconstruction/coordinator/PASSAGE_AND_EARLIER_TRUTH.md)
+grants conditional later grounding and separates it from an independent
+argument for current bivalence. A restricted L/S counterinterpretation
+holds eventual occurrence and inventory growth fixed while changing the
+truth policy; it is not a full model of either named theory. The
+[maximality argument](ontology-reconstruction/coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md)
+also keeps C&R's explicitly nomological modality in view. Its correspondence
+to Einstein–scalar development categories remains an open bridge; it cannot
+be assumed either identical to MGHD admissibility or wholly extra-physical.
+
 Project anchors: [original chapter clauses](future-truth-rival-chapters/CLAUSES.md), [point of disagreement](future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md), [paired contracts](future-truth-rivals/coordinator/PAIRED_CONTRACTS.md), [updated philosophical scope](lawful-completions/coordinator/PHILOSOPHICAL_SCOPE.md).
 
 ## 6. Coupled lawful completions remain an ambitious separate programme
@@ -101,6 +121,14 @@ Project anchors: [original chapter clauses](future-truth-rival-chapters/CLAUSES.
 The fixed-background field countermodels motivated moving to coupled Einstein--matter solutions. Work retained from that move includes covariant marked-geodesic readouts, an exact actual incoming-mass identity in the audited reduced scattering class, uniform cubic central-trace estimates, a degree-before-limit finite-interpolation strategy, and a conditional nonisometry counting result in the centered category.
 
 The general smooth coupled interpolation theorem is NOT yet accepted. The C¹,¹ reconstruction now feeds a local smoothness proof with bounded audits, and the selected compact-profile limits have smooth complete MGHD representatives under the checked source inputs. Independent integrated review of the finite-cone continuity/degree/limit assembly and exact nearest-prior-result comparison remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
+
+The fixed incoming mass is a total over the profile, including a compensating
+tail after every readout. Earlier cumulative incoming mass can differ. A
+prepared stronger control task would fix incoming boundary prefix masses
+as well; no such result has been proved. The new smooth-class cone argument
+shows every two events share a chronological future, so the particular
+point-potential criterion recovers the bow tie here. This does not remove
+the independently studied cosmological horizon obstruction.
 
 The one-reading re-marking construction is a useful nonprediction baseline but can occur inside one unmarked spacetime. A genuine open range of at least two scalar readings would rule out explanation by only countably many centered-isometry classes under the stated C1 trace assumptions; bare-metric nonisometry remains stronger.
 
@@ -136,5 +164,12 @@ An eternalist, a deterministic growing-block theorist, a later-grounded bivalent
 Keep the manuscripts distinct. The causal-set note carries its exact measure result. Stein--GR carries its conditional relational classification. Horizons carries background/law-relative determination and may gain a bounded comparison with other realm choices. The Brading article in `paper/` concerns law-constitutive existence and the universe-stage issue; these results constrain its inference from dynamical sufficiency to existence, but do not answer that question for it.
 
 Before any manuscript incorporates new theorem statements: pin the exact source/review version, provide the relevant coupled-matter theorem if used, check scope/priority, and obtain review of the integrated prose. A bounded section on the agreement realm and fixed-background sufficiency has now been integrated into horizons draft5; [integration details and build checks](horizons/INTEGRATION_2026_10_28.md) identify its exact scope. The broader new results remain companions, not silently added manuscript theorems. No publication gate is closed. The separate shared Brading-article PDF has unrelated concurrent edits and is preserved.
+
+The [constitutive bridge note](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md)
+now makes three distinct obligations explicit: predictive sufficiency,
+constitution of a physical unity, and interpretation as a concrete present.
+The first does not establish the other two. The existing Brading article's
+U and S premises remain philosophical bridges; neither its manuscript nor
+its priority/source gates are revised by the new determination results.
 
 Next substantive gates are: integrated finite-control continuity/degree/limit review and focused priority comparison; the separate partial-development maximality question if full rigidity without completeness is still sought; intrinsic-center/bare-metric scope; and a focused novelty audit of the exact cylinder classification. The local smoothness bridge is now supplied. The repaired common-duration proof does not depend on completing the partial-maximality question.

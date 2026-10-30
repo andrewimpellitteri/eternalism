@@ -1,5 +1,13 @@
 # Sharpening the argument: which explanatory step needs the ontology?
 
+> **30 October application:**
+> [PASSAGE_AND_EARLIER_TRUTH.md](PASSAGE_AND_EARLIER_TRUTH.md) applies this
+> test to eventual fulfilment, and
+> [CONSTITUTION_IS_NOT_PREDICTION.md](CONSTITUTION_IS_NOT_PREDICTION.md)
+> applies it to the unity/present bridge. Selected primary Wawer and C&R
+> reply reading is now recorded; the Correia–Merlo full-text gate below
+> remains open.
+
 29 October 2026. Coordinator version 2. Elementary restricted construction and philosophical proposal; no novelty claim, full-theory consistency result, or accepted ontology preference. This strengthens and narrows ROLE_OF_EXISTENCE.md. It retracts any presumption that calling a view 'event realism' already earns it a default advantage.
 
 ## 1. Correction to the earlier argument

@@ -1,5 +1,14 @@
 # What the lawful-completion result would and would not establish
 
+> **30 October followup:** The smooth category is now supplied in
+> [SMOOTH_FINITE_CONTROL.md](SMOOTH_FINITE_CONTROL.md); the full control
+> assembly retains its independent-review gate. The new
+> [realm comparison](REALM_CONTRAST_IN_SMOOTH_CLASS.md),
+> [maximality argument](../../ontology-reconstruction/coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md),
+> and [passage/truth test](../../ontology-reconstruction/coordinator/PASSAGE_AND_EARLIER_TRUTH.md)
+> sharpen the philosophical question. The incoming-mass identity has
+> bounded review; the older review-status language below is historical.
+
 2026-10-28. Conditional philosophical analysis. Mathematical dependencies: FINITE_CONTROL.md (not yet fully accepted), INCOMING_MASS.md (independent review pending), NONISOMETRY_LEMMA.md (conditional on finite control). Prior philosophical source assessment: research/future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md and PAIRED_CONTRACTS.md. No new source interpretation or novelty claim.
 
 ## The exact mathematical content
@@ -11,6 +20,17 @@ The proposed finite-control theorem says a fiber
  F={x in X: P(x)=p_0, E(x)=e_0}
 
 has R(F) containing an open ball. In particular R does not factor through (P,E): there is no function f on those past-and-mass data with R=f(P,E) throughout X. The relevant class X and regularity are substantive physical/mathematical premises, not metaphysical possibilities established by definition.
+
+**Energy timing qualification.** E here is the total iterated incoming
+Hawking mass, including the compensating pulse placed after all readouts.
+The incoming mass received by a fixed earlier advanced time V,
+m_-(V)=¼∫_{−∞}^V Φ², generally varies across the family. Neither local energy
+nor the sequence of incoming masses by each reading is held fixed. E is
+an extra global comparison datum; it is not asserted to be a fact contained
+in the launch's causal past, an accessible measurement, or ADM mass.
+The late-tail domain-of-dependence clarification is recorded by Claude in
+../claude-polar-identity-check/NOTE.md. This limits the proposed
+fixed-energy interpretation without changing the stated (P,E) theorem.
 
 For N>=2, C1 central traces and center-preserving comparisons yield an additional consequence: F contains uncountably many centered-isometry classes, if finite interpolation passes its gates. This follows from NONISOMETRY_LEMMA.md, not merely from counting targets. It rules out one-history time shifts as an explanation of the entire open range in that comparison category. Bare-spacetime nonisometry needs an intrinsic-center argument.
 

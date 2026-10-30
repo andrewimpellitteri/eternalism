@@ -232,3 +232,39 @@ upgraded or rewritten. Whitespace checks pass. A newly appearing
 claude-polar-identity-check/polar_checks.py was inspected as concurrent
 work in progress; no report existed yet, so it is neither relied upon
 as evidence nor included in this integration.
+
+## Smooth-class realm contrast and philosophy, 30 October
+
+Read Claude's second-reader note and confirmed its separately committed
+0f73ad1 repairs before editing: the explicit angular Bianchi equation,
+momentum-constraint propagation and current-synthesis wording are already
+integrated. No conflicting rewrite of that commit. Added
+REALM_CONTRAST_IN_SMOOTH_CLASS.md: the global old-coordinate cone bounds
+give uniform timelike speed1/4 and a common chronological future for every
+pair. The exact potential criterion therefore equals the bow tie in this
+class. An earlier full Cauchy surface belongs to its open realm; an onto
+field-preserving realm isometry carries it to an ambient Cauchy surface,
+and scalar-MGHD uniqueness gives the global field isometry, with marked
+extension and observer germ explicit. This specializes existing rigidity
+work, not a new general theorem or the finite-control proof.
+
+Assigned and inspected native lawful-smooth-realm-contrast. It checked
+the cone, potential-domain and ambient Cauchy steps under the stated
+inputs. Corrected the strict causal/null convention it identified; a
+chronological convention would give the wrong null boundary. Accepted
+only this bounded geometric audit, not the control/novelty gates.
+
+Claude's continuing control reading identifies the late compensator as
+part of total E; earlier cumulative incoming mass need not be fixed.
+Added this exact energy-timing qualification to C11_FINITE_CONTROL.md,
+SMOOTH_FINITE_CONTROL.md and PHILOSOPHICAL_SCOPE.md. The trace script is
+not used as a proof, not rerun here, and not included in this commit.
+
+Linked the geometric distinction to three philosophical arguments in
+ontology-reconstruction/coordinator/: local equations versus maximal-world
+admissibility; eventual resolution versus current truth; predictive
+sufficiency versus constitutive unity/current concrete existence. Their
+source depths and separate bounded review are in that lane. The full
+interpolation candidate remains open, and none of these steps selects
+a temporal ontology. Prepared a stronger prefix-boundary-mass control
+task after the existing full-control review; not launched at quota.

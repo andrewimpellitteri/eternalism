@@ -1,5 +1,10 @@
 # Correia–Merlo manuscript search: extended pass
 
+> **30 October followup:** The Wawer route below has now been used for
+> direct main-argument reading and a page-image check. The updated source
+> record and [argument review](ARGUMENT_REVIEW_2026_10_30.md) distinguish
+> that progress from the still-open Correia–Merlo full-text gate.
+
 29 October 2026. Task: find a public preprint, accepted manuscript or full text of Correia and Merlo, Cross-temporal grounding, DOI 10.1111/phib.12287. Publication metadata: Analytic Philosophy 65(3) (2024), 333–352; first online 22 February 2023.
 
 ## Result

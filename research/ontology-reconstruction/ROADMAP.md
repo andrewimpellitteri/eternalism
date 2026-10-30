@@ -1,5 +1,18 @@
 # From physical constraints to a defended temporal ontology
 
+> **Latest 30 October: the philosophical target is now sharper.**
+> [Maximality and existential openness](coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md)
+> separates local lawfulness from the category of complete possible histories.
+> [Passage and earlier truth](coordinator/PASSAGE_AND_EARLIER_TRUTH.md)
+> tests the inference from eventual resolution to present bivalence.
+> [Constitution versus prediction](coordinator/CONSTITUTION_IS_NOT_PREDICTION.md)
+> identifies the positive ontological bridge that remains.
+> [Review disposition](coordinator/ARGUMENT_REVIEW_2026_10_30.md) records the two
+> bounded audits and corrections. [Three next contracts](coordinator/NEXT_PHILOSOPHICAL_TESTS.md)
+> are prepared on the board; they have not been launched. The stopped GLM
+> tasks retain their claims. The smoothness bridge is now supplied at its
+> stated class, not an open precondition for this philosophical work.
+
 29 October 2026. Coordinator research roadmap; proposals, not accepted theorems or a novelty verdict.
 
 ## Objective and success conditions

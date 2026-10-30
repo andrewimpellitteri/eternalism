@@ -117,3 +117,52 @@ source depth, checks and outstanding review gates: DIRECT_RECOVERY_2026_10_30.md
 No failed task accepted or restarted, no worker output rewritten, and no
 smooth-MGHD, novelty or ontology-selection upgrade. Updated roadmap and
 current ledger at these exact scopes.
+
+## Philosophy after smoothness, 30 October
+
+Added MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md, PASSAGE_AND_EARLIER_TRUTH.md,
+CONSTITUTION_IS_NOT_PREDICTION.md, ARGUMENT_REVIEW_2026_10_30.md and
+NEXT_PHILOSOPHICAL_TESTS.md. The first argument makes the model-category
+bridge explicit: local equations permit same-data nonmaximal restrictions;
+selecting maximal complete histories is a defensible methodological
+premise, not a proof that continuation must become concrete. It preserves
+C&R's nomological operator and leaves its correspondence to MGHDs open.
+The second gives a restricted L/S counterinterpretation to eventual
+resolution implying earlier bivalence; conditional later grounding,
+actual-world index and assessment time are kept distinct. The third
+separates prediction, constitutive unity and the concrete present, with
+the existing Brading article's U/S premises visible and its manuscript
+unchanged. No philosophical preference is reported as established.
+
+Read Wawer main-argument text and C&R Replies §§6–7 directly, upgraded the
+former abstract record with preserved reading history, and added exact
+source metadata. Downloaded institutional Wawer PDF, checked SHA256 and
+rendered/inspected printedp419; selected paper/source limits remain
+explicit. The actual-future question is known prior work; no new credit
+claimed for it. Correia–Merlo full text remains inaccessible in this run;
+no second-hand reconstruction was substituted.
+
+Native bounded geometry and philosophy audits ran in disjoint owned
+directories while the coordinator developed the other argument. Reports
+were inspected and corrections integrated: causal/null notation, the
+maximality bridge as controlling qualification, same-data nonmaximal
+solution status, nomological/source-category distinction, explicit toy
+evaluation parameters and conditional grounding scope. The philosophy
+worker rechecked the repairs. The coordinator also caught two reviewer
+source/wording errors, which were corrected. Full disposition and
+unreviewed constitution scope are in the new review note.
+
+Prepared three workboard contracts for modal-category correspondence,
+one genuine constitutive-extent comparison, and a stronger prefix-mass
+control target after the existing integrated-control gate. None launched;
+no quota-stopped GLM claim was freed or accepted. Updated roadmap/current
+navigation and law-completion interpretation with exact remaining gates.
+
+Validation for this round: 206 workboard tasks/path/dependency records
+pass; 131 local Markdown targets across 22 coordinator/reviewer files
+resolve. The two new/upgraded coordinator source records and the two
+reviewer source records pass the strict full-text contract with zero
+errors/warnings. The whole ontology coordinator register has one
+pre-existing metadata-completeness warning on the older MacFarlane record;
+it was not silently upgraded. No numerical check was needed for these
+arguments, and none could replace their modal/semantic premises.

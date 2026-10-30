@@ -127,6 +127,11 @@ classical axis curvature expressions, but independent control of curvature
 values or derivative readouts has not been proved by the scalar-value
 interpolation argument.
 
+The fixed mass is a total over incoming radiation, including the norm-
+compensating tail after all readouts. It does not fix incoming mass at
+each earlier reading or a local energy budget. This timing qualification
+does not change the total-mass theorem; it matters to its interpretation.
+
 ## 4. What this resolves and what it leaves
 
 The local smoothness bridge no longer rests on applying Kilgore's

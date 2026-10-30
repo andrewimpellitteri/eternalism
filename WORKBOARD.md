@@ -208,6 +208,11 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `lawful-smooth-exterior-native` — Red-team exterior all-order Goursat bootstrap for compact incoming data | 10 | — | native-smooth-exterior |
 | done | `lawful-smooth-polar-native` — Check polar chart, weak constraint algebra and Sobolev smoothing operators | 10 | — | native-smooth-polar |
 | done | `lawful-smooth-persistence-native` — Adversarial check of localized nonlocal polar persistence lemma | 10 | — | native-smooth-persistence |
+| done | `lawful-smooth-realm-contrast` — Audit causal-past freedom versus full bow-tie rigidity in smooth scattering class | 10 | — | native-smooth-realm-contrast |
+| done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
+| open | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | — |
+| open | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | — |
+| blocked | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

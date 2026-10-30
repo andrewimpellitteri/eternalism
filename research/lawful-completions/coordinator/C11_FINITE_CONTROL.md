@@ -6,6 +6,10 @@
 > a separate localized proof and checked completeness/inextendibility inputs.
 > The continuity/degree assembly here still needs its independent
 > integrated review; the native regularity audits do not accept it.
+>
+> **Energy timing:** the fixed total incoming mass includes the compensating
+> tail after the complete readout window. Incoming mass by each reading
+> time is not fixed. See [philosophical scope](PHILOSOPHICAL_SCOPE.md).
 
 30 October 2026. Coordinator proof assembly and direct audit after the GLM
 quota stop. **Candidate theorem; independent integrated review remains
