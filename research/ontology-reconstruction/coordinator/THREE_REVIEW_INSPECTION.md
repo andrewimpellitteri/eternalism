@@ -1,6 +1,7 @@
 # Inspection of the three 29 October review submissions
 
-Coordinator inspection record, 29 October 2026. The three adversarial
+Historical inspection record, 29 October 2026. Its deferred acceptance
+decision is superseded by [the 30 October disposition](REVIEW_DISPOSITION_2026_10_30.md). The three adversarial
 reviews dispatched in `BATCH2_RUN_PLAN.md` have submitted. This record
 states what was inspected, what was reproduced, what was re-derived by the
 coordinator, and what was integrated. It does not accept the tasks and does

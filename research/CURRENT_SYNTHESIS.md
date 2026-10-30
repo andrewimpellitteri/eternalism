@@ -1,12 +1,21 @@
 # Current synthesis: completion, access, becoming and determination
 
+
+> **30 October update:** Three bounded reviews are now integrated; see
+> [disposition and corrections](ontology-reconstruction/coordinator/REVIEW_DISPOSITION_2026_10_30.md).
+> The Cartesian C¹,¹ metric/scalar reconstruction and n≥2 persistence
+> census have internal review. Finite-control continuity/degree,
+> smooth-development applicability and novelty remain separate gates.
+> The later 1+1 classification has a corrected refinement table and a new
+> independent review task; it inherits no acceptance from the n≥2 audit.
+
 28 October 2026. Project integration of the existing research ledgers and the repaired screening results. This is a current navigation and scope document, not a new theorem, systematic fresh literature review, or acceptance of every source report. Historical documents retain their dates and may contain superseded proposals. Detailed status and falsifiers: [claim status](CLAIM_STATUS.md).
 
 ## Next programme: temporal ontology reconstruction
 
 The [29 October roadmap](ontology-reconstruction/ROADMAP.md) makes the ontological bridge the main research target: charitable rival contracts, bounded classification, justification of bridge premises, and tests for additional structure versus redescription. Four disjoint GLM tasks were launched on the user's authorization independently of review of the two technical submissions. These are investigations, not new accepted results or an ontology verdict.
 
-The [second review](ontology-reconstruction/coordinator/BATCH2_INITIAL_REVIEW.md) records concrete repairs rather than accepting the resulting submissions wholesale. A further [persistence correction](ontology-reconstruction/coordinator/PERSISTENCE_CONVENTIONS.md) shows that self-inclusion plus persistence along the full causal order already forces causal-past inclusion. The advertised two-option bounded census therefore fails under its written premises. A replacement flat-space census separates timelike persistence, null advancement, future exclusion, closure and transitivity, while retaining past-plus-elsewhere alternatives. It awaits independent review and is not an ontology selector.
+The [second review](ontology-reconstruction/coordinator/BATCH2_INITIAL_REVIEW.md) records concrete repairs rather than accepting the resulting submissions wholesale. A further [persistence correction](ontology-reconstruction/coordinator/PERSISTENCE_CONVENTIONS.md) shows that self-inclusion plus persistence along the full causal order already forces causal-past inclusion. The advertised two-option bounded census therefore fails under its written premises. A replacement flat-space census separates timelike persistence, null advancement, future exclusion, closure and transitivity, while retaining past-plus-elsewhere alternatives. The n≥2 theorem has now received internal review; the later 1+1 extension remains separately under review. Neither is an ontology selector.
 
 A [selected primary-clause check](ontology-reconstruction/coordinator/RIVAL_PROFILE_AND_REGULARITY_BRIDGE.md) confirms that C&R's growth order includes null directions. Their pointy/bow-tie comparison is causal past versus past-plus-elsewhere, at the limited point-profile level. Requiring those existence realms to be closed would favor the pointy profile, but that is a philosophical bridge premise; metric regularity does not provide it. Full continuity of a binary inventory would be a much stronger selector and cannot be invoked neutrally.
 
@@ -72,7 +81,7 @@ Project anchors: [original chapter clauses](future-truth-rival-chapters/CLAUSES.
 
 The fixed-background field countermodels motivated moving to coupled Einstein--matter solutions. Work retained from that move includes covariant marked-geodesic readouts, an exact actual incoming-mass identity in the audited reduced scattering class, uniform cubic central-trace estimates, a degree-before-limit finite-interpolation strategy, and a conditional nonisometry counting result in the centered category.
 
-The general smooth coupled interpolation theorem is NOT yet accepted. Classical four-metric regularity at the center and finite-cone continuous dependence remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
+The general smooth coupled interpolation theorem is NOT yet accepted. The internally reviewed C¹,¹ reconstruction now supplies unique centered geodesic scalar readouts. C²/smooth regularity and independent review of finite-cone continuous dependence remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
 
 The one-reading re-marking construction is a useful nonprediction baseline but can occur inside one unmarked spacetime. A genuine open range of at least two scalar readings would rule out explanation by only countably many centered-isometry classes under the stated C1 trace assumptions; bare-metric nonisometry remains stronger.
 
@@ -109,4 +118,4 @@ Keep the manuscripts distinct. The causal-set note carries its exact measure res
 
 Before any manuscript incorporates new theorem statements: pin the exact source/review version, provide the relevant coupled-matter theorem if used, check scope/priority, and obtain review of the integrated prose. A bounded section on the agreement realm and fixed-background sufficiency has now been integrated into horizons draft5; [integration details and build checks](horizons/INTEGRATION_2026_10_28.md) identify its exact scope. The broader new results remain companions, not silently added manuscript theorems. No publication gate is closed. The separate shared Brading-article PDF has unrelated concurrent edits and is preserved.
 
-Next substantive gates are: classical-axis and finite-cone continuity for coupled control; the separate partial-development maximality question if full rigidity without completeness is still sought; intrinsic-center/bare-metric scope; and a focused novelty audit of the exact cylinder classification. The repaired common-duration proof does not depend on completing the partial-maximality question.
+Next substantive gates are: finite-cone continuity/degree review and stronger-than-C¹,¹ regularity for smooth coupled control; the separate partial-development maximality question if full rigidity without completeness is still sought; intrinsic-center/bare-metric scope; and a focused novelty audit of the exact cylinder classification. The repaired common-duration proof does not depend on completing the partial-maximality question.

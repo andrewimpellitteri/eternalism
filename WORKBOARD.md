@@ -198,9 +198,13 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | glm-ontology-equivalence-repair |
 | review | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | glm-ontology-bridges-repair |
 | review | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | glm-ontology-rivals-repair |
-| claimed | `lawful-axis-source-review` — Audit exact LOY finite-order inputs for Cartesian axis reconstruction | 10 | — | glm-lawful-axis-source-review |
-| claimed | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | glm-lawful-axis-lift-review |
-| claimed | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
+| done | `lawful-axis-source-review` — Audit exact LOY finite-order inputs for Cartesian axis reconstruction | 10 | — | glm-lawful-axis-source-review |
+| done | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | glm-lawful-axis-lift-review |
+| done | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
+| open | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | — |
+| open | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | — |
+| open | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | — |
+| open | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

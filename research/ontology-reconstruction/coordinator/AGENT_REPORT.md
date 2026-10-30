@@ -71,3 +71,20 @@ on connected space is much stronger: with self-inclusion it forces the
 entire frame into that inventory. The aim is to avoid disguising either
 ontological selector as physical regularity. The independent philosophical
 payoff of either existence assignment remains open.
+
+
+## Continuation, 30 October
+
+Integrated and accepted three bounded review reports; exact commits and
+errata are in REVIEW_DISPOSITION_2026_10_30.md. Strengthened O7 with its
+signed integrating-factor formula, corrected the cross-axis weak-Hessian
+argument and equation numbering. Corrected the later 1+1 refinements:
+reflection invariance versus mirror quotient, four closed cases including
+two null half-spaces, and nine P_c+F_t versus four P_c+F_c cases. The base
+sixteen-case theorem is unchanged but independently unreviewed. Exact new
+refinement witnesses and integrated small checks pass. Updated the claim
+ledger/current synthesis at those bounded scopes; no C²/smooth MGHD,
+pointwise central Ricci, novelty or ontology selection upgrade. Prepared
+four disjoint GLM tasks on refinements, finite-control proof, stronger
+regularity/source domain and prior art. Existing source additions and
+article PDF were preserved; Claude committed them during this continuation.

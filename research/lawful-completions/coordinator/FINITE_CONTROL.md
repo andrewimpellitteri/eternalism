@@ -4,6 +4,15 @@
 
 > **29 October repair update:** The GLM Lipschitz proof was rejected. [COMPACTNESS_CONTINUITY_REPAIR.md](COMPACTNESS_CONTINUITY_REPAIR.md) supplies a replacement continuity/compactness proof using the primary uniform bounds and characteristic uniqueness. It is a coordinator proof awaiting independent review; gates 1-2 below are not accepted solely on the worker submission. Classical four-dimensional axis reconstruction remains open.
 
+
+> **30 October category update:** The source and Cartesian lift reviews
+> are integrated. AXIS_C11_RECONSTRUCTION.md now supplies a conditional,
+> internally reviewed C¹,¹ four-metric/scalar and unique centered geodesics.
+> This repairs the geometric interpretation of scalar clock readouts at
+> that regularity. It supplies no C²/smooth MGHD upgrade. A new independent
+> finite-control review must still audit continuity, degree, varying-profile
+> compactness and the complete interpolation statement below.
+
 ## Precise proposed statement
 
 Fix a finite N and proper times 0<T_1<...<T_N. For sufficiently small pulse scale epsilon, seek an open ball of signed scalar reading vectors near zero realized by global LOY reduced solutions with:

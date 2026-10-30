@@ -1,6 +1,8 @@
 # Persistence, null boundaries, and a corrected flat-space census
 
-29 October 2026. Coordinator deduction, **pending independent review**.
+29 October 2026; reviewed 30 October. **Internally reviewed conditional
+census for n≥2**, with the scope and errata recorded in
+[the review disposition](REVIEW_DISPOSITION_2026_10_30.md).
 This corrects a common premise error in the classification and both
 equivalence submissions. No ontology or novelty verdict is claimed.
 
@@ -68,7 +70,7 @@ Work on all of Minkowski spacetime R^(1+n), n≥2. Assume:
 No closure, causal boundedness, null-future exclusion, transitivity,
 dilation symmetry or cross-spacetime restriction is assumed.
 
-**Candidate theorem.** Exactly the following four assignments satisfy the
+**Internally reviewed theorem at the stated scope.** Exactly the following four assignments satisfy the
 conditions:
 
     I_b = I⁻(b)∪{b},
@@ -160,14 +162,12 @@ candidate A'={0}∪{a∉I⁻(0): t_a+x_a>0} (with E_b={x:b−x∈A'}), which is
 Poincaré-covariant, self-inclusive, chronologically persistent and F_t
 because t+x scales by e^η>0 under boosts and grows along timelike futures.
 Its standpoint-0 membership pattern differs from I, J, B and C; its mirror
-gives a sixth, and combinations of null branches likely give more, so the
-complete 1+1 no-parity census is a separate larger classification, open as
-of this date. Coordinator second read (29 October 2026) re-derived the
-future-set and covariance steps and confirmed distinctness from all four
-candidates at the set level; two cosmetic print-label typos in the review
-script's summary output (B and C probe patterns) do not affect its
-assertions. This strengthens the earlier hedge; it does not affect the n≥2
-census, which was asserted only where the orbit argument holds.
+gives a sixth. The later coordinator [complete 1+1 census](ONE_PLUS_ONE_CENSUS.md)
+gives sixteen cases and a separate refinement table. That extension was
+outside this review and awaits its own audit. Its corrections on 30 October
+are essential: reflection invariance versus mirror classes, four closed
+rules including two null half-spaces, and nine P_c+F_t cases versus four
+P_c+F_c cases. No n≥2 table row should be transferred without checking.
 
 ## 5. Removing future exclusion restores many closed persistent rules
 
@@ -198,8 +198,8 @@ topologically closed or transitive. Each choice eliminates a specific rival
 for an identifiable reason. The census exposes these costs; it does not
 justify the choices or prove that a changing concrete inventory is needed.
 
-Next checks: independent audit of the saturation proof, all quantifiers and
-the table; focused comparison against earlier becoming/persistence results;
+Completed check: independent audit of the saturation proof, quantifiers and
+table at n≥2. Next: focused comparison against earlier becoming/persistence results;
 then a source-faithful test of which named rival actually accepts which
 premise. No curved, on-shell Einstein–matter, or arbitrary enriched-category
 classification follows from the flat-space calculation.

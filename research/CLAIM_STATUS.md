@@ -1,6 +1,6 @@
 # Current claim and dependency ledger
 
-28 October 2026. Integration ledger; status is inherited from the named accepted review unless explicitly marked as newly derived or open. 'Reviewed' means internal research review, not external refereeing or unrestricted novelty. Read alongside [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md).
+Updated 30 October 2026. Integration ledger; status is inherited from the named accepted review unless explicitly marked as newly derived or open. 'Reviewed' means internal research review, not external refereeing or unrestricted novelty. Read alongside [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md).
 
 | Claim | Current status | Essential scope / remaining gate | Evidence |
 |---|---|---|---|
@@ -30,11 +30,11 @@
 | Equal potential realms imply equal lifetimes in arbitrary GHDs | Refuted | Clipped Minkowski counterexample; nonmaximal class only | [Sharpness example](lawful-completions/coordinator/COMMON_EXTENSION_REPAIR.md) |
 | Equal potential realms give onto future isometry | Reviewed with extra hypothesis | All future timelike/causal geodesics from both marks complete, respectively; coupled category still needs theorem | [Completeness corollary](lawful-completions/coordinator/COMMON_EXTENSION_REPAIR.md) |
 | Finite-cone readout continuity | Coordinator replacement proof, review pending | Compactness plus characteristic uniqueness; no claimed Lipschitz bound or global scattering selection | [Replacement](lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md) |
-| Scattering metric and scalar are C¹,¹ in Cartesian axis charts | Coordinator finite-order reconstruction, review pending | Uniform third derivatives of r, second derivatives of φ, weighted mass equations and first parity identities; unique geodesics, no C² curvature or smooth MGHD upgrade | [Axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md) |
+| Scattering metric and scalar are C¹,¹ in Cartesian axis charts | Internally reviewed finite-order reconstruction | Audited source inputs and repaired mixed-derivative/Cartesian proof; unique geodesics and weak equations; no C² curvature or smooth MGHD upgrade | [Axis reconstruction](lawful-completions/coordinator/AXIS_C11_RECONSTRUCTION.md) |
 | Smooth Einstein–scalar common-duration readings | Coordinator source check/corollary, review pending | Field-preserving common larger GHD, corrected open-domain argument; smooth category only | [Correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) |
 | Restricted partial-data domains are always maximal developments | Separate unresolved premise | Lprime not needed for repaired common-duration theorem; do not mark it proved | [Claude draft](bowtie-horizons/SCREENING.md) |
 | Physics here selects eternalism, GBT or fragmentalism | Not established | Existence/truth/grounding bridges remain defended philosophical premises | [Current synthesis](CURRENT_SYNTHESIS.md) |
-| Persistent covariant flat-space realms under explicit future exclusion | Coordinator reconstruction, review pending | Chronological versus causal persistence changes null-boundary choices; no transitivity assumed; future exclusion is substantive | [Persistence correction](ontology-reconstruction/coordinator/PERSISTENCE_CONVENTIONS.md) |
+| Persistent covariant flat-space realms under explicit future exclusion | Internally reviewed at n≥2 | Four-case theorem and premise table; future exclusion is substantive. Later 1+1 sixteen-case/refinement extension awaits its separate review | [Persistence correction](ontology-reconstruction/coordinator/PERSISTENCE_CONVENTIONS.md) |
 
 ## Dependency map
 
@@ -51,3 +51,13 @@
 - The original present-ground dilemma was narrowed after full rival-source reading.
 - Original screening rigidity via L/Lprime remains a separate conditional route. The repaired vacuum readout result bypasses it; it does not prove it.
 - Source access, task acceptance, proof checking, novelty clearance, manuscript integration and publication authorization are distinct statuses.
+
+## 30 October review disposition
+
+The [three-review disposition](ontology-reconstruction/coordinator/REVIEW_DISPOSITION_2026_10_30.md)
+records integrated raw commits, corrections and accepted internal scope.
+C¹,¹ regularity now supports unique centered geodesic scalar readouts; the
+finite-control compactness/degree chain still awaits its own full review.
+The complete 1+1 refinement table remains a separate coordinator deduction;
+its corrected nine-versus-four counts keep F_t and F_c explicit. No smooth
+common-development, pointwise axis Ricci or novelty gate is closed.
