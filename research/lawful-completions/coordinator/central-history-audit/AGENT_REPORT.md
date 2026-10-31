@@ -27,9 +27,11 @@ Original worker files, Claude's candidate, manuscripts, indexes, runner,
 source seeds, shared claims and worktrees were not edited by this work.
 Claude was concurrently changing other files. This coordinator submission
 contains only the audit files. Claude subsequently included it with the separate
-triage work in commit 40db683; no dedicated Codex commit was completed. The final
+triage work in commit 40db683; no separate Codex commit was made in that initial
+pass. The final
 explicit cut-off bound remained as a saved working-tree clarification after the
-automatic approval reviewer exhausted its usage quota.
+automatic approval reviewer exhausted its usage quota. The user later restored
+approvals, and the follow-up clarification was committed in 8b59565.
 
 ## Findings and evidence
 

@@ -1,7 +1,9 @@
 # Adversarial checks of the finite-prefix candidate
 
 31 October 2026. Coordinator self-audit, not an independent worker review.
-This records falsifiers and limitations alongside the proposed proof.
+This records falsifiers and limitations alongside the proposed proof. Later
+bounded native review and formal acceptance are recorded in
+[REVIEW_DISPOSITION.md](REVIEW_DISPOSITION.md); they retain the limits here.
 
 ## First kill test: zero or saturated budgets
 

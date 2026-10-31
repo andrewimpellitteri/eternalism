@@ -1,8 +1,8 @@
 # Coordinator disposition of the finite-prefix review
 
 31 October 2026. This is bounded internal review, not external verification or
-historical priority. The prefix task is in review; formal acceptance and scoped
-Git integration are still pending.
+historical priority. The prefix task was accepted at its displayed conditional
+scope after the inspected review and scoped Git integration below.
 
 The coordinator read the complete
 [native review](../../prefix-energy-control/REVIEW_COORDINATOR_CANDIDATE.md)
@@ -58,12 +58,17 @@ part of the native review assignment.
 
 ## Formal integration status
 
-The original GLM task branch/worktree metadata still points to the failed,
-no-output run. The new native submission is in the shared checkout under the
-owned prefix-energy-control lane. This distinction is recorded instead of
-clearing provenance or bypassing the runner's acceptance checks. Safe scoped
-integration must reconcile those locations before formal task acceptance.
-Automatic approval review exhausted its usage quota during the earlier Git
-staging step, so this pass performs no further Git mutation. All new files
-remain saved for review and integration. No reset, merge or branch removal was
-attempted.
+The coordinator proof and native review copies were committed in 8b59565. The
+three hash-verified native worker files were also committed on the existing
+same-task branch as 3e204362c07aa1752306858178762a8ac46217bf. Merge
+b4b40180fd59b9dfca00e7f373acea88fcac30a2 integrated that exact reviewed branch without
+changing the main file contents. The task then passed the runner's ordinary
+acceptance checks: reviewed status, branch ancestry, clean same-task worktree,
+and nonempty committed changes confined to its three owned paths.
+
+The earlier failed-run base and logs remain preserved. The branch was not reset,
+its provenance was not cleared, and no acceptance guard was bypassed. The initial
+automatic-approval quota failure was resolved after the user restored approvals;
+Git integration was then performed through the normal approved tools. The central-
+history whole-function submission remains in review. No manuscript, shared seed,
+paused Stein claim or unrelated worktree was changed by this integration.

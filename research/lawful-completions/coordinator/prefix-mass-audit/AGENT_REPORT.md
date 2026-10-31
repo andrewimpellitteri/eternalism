@@ -31,7 +31,8 @@ geometric prefix mass. The auxiliary leading-prefix parameters correct the
 proper-clock cut shift through a joint 2N degree argument before the global
 limit. The final limits identify actual Hawking boundary masses, rather than
 masses on moving finite cones. Exact quantifiers and category gates are in
-RESULT.md and REVIEW_DISPOSITION.md; this is not yet a formally accepted task.
+RESULT.md and REVIEW_DISPOSITION.md; formal acceptance is bounded to this
+conditional construction and its inspected review.
 
 The product corollary for N>=2 yields 2^(N-1) distinct marked reading-product
 patterns under the same constraints. It survives an overall scalar sign or
@@ -63,7 +64,8 @@ ontological upper bound.
 
 ## Coordination and limits
 
-Prefix task moved to review after inspection, not accepted. The central-history
+The prefix task was formally accepted at bounded conditional scope after
+inspection and scoped integration. The central-history
 incomplete submission also moved to review with its rejected objections and
 missing source register explicit. The earlier process-explanation review was
 formally accepted only at its already committed bounded scope; it proves no
@@ -72,8 +74,10 @@ reflects those transitions. The paused Stein claims were untouched.
 
 Claude had already integrated the earlier central audit in 40db683. This pass
 corrected its integration note and retained the final explicit cut-off bound.
-New changes remain uncommitted because automatic approval review could not run
-at its usage limit. Original failed-run branches/worktrees and native shared-
-checkout output provenance remain preserved; runner checks were not bypassed.
-The prefix result still requires scoped integration and retains every named
+Automatic approval review initially could not run at its usage limit. After the
+user restored approvals, the proof was committed in 8b59565 and the exact native
+submission 3e204362c07aa1752306858178762a8ac46217bf was integrated in merge
+b4b40180fd59b9dfca00e7f373acea88fcac30a2. Original failed-run history, worktrees and
+native shared-checkout output provenance remain preserved; the normal runner
+checks passed without bypass. The accepted prefix result retains every named
 source, category, prior-result and philosophical limit in its disposition.

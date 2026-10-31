@@ -1,12 +1,13 @@
 # Finite readouts with matching incoming mass at every sampled cut
 
-31 October 2026. Direct coordinator candidate proof, not an accepted worker
-submission, new physics, priority verdict or temporal ontology. This advances the
-prepared prefix-energy question after the failed GLM/native runs; no worker was
-restarted. It leaves the original task's claim and empty worker lane untouched.
+31 October 2026. Coordinator proof with bounded internal acceptance under its
+named source inputs. No new physics, priority verdict or temporal ontology is
+asserted. It advances the prepared prefix question after the failed runs; a fresh
+native reviewer checked the finite-dimensional argument in its disjoint owned
+lane. Original failed-run logs and history are preserved.
 
-A [bounded second reading](REVIEW_DISPOSITION.md) supports the displayed chain
-under its inherited inputs. Formal task acceptance remains pending.
+The [review and integration disposition](REVIEW_DISPOSITION.md) records the
+bounded second reading and formal task acceptance after scoped Git integration.
 
 ## 1. Target and nearest existing work
 
@@ -23,7 +24,8 @@ and Kehle–Unger readings are inherited at their stated depths, not upgraded he
 The method and general past-indistinguishability claim are established prior
 territory. No priority is claimed for this specific constrained corollary.
 
-**Conditional candidate.** Fix a finite schedule 0<T_1<...<T_N and fractions
+**Conditional corollary, internally reviewed.** Fix a finite schedule
+0<T_1<...<T_N and fractions
 
     0<alpha_1<...<alpha_N<1.
 
@@ -224,5 +226,6 @@ chart and possibly the admissible threshold. No bound uniform in N, dense-cut
 limit, full incoming mass-function matching, local energy equality, ADM equality,
 common full Cauchy data, intervention procedure or temporal ontology follows.
 This is a stronger finite comparison than total-mass-only matching, subject to
-the inherited inputs. Fresh technical review and a nearest-result comparison
-are required before promoting it to the accepted ledger or a manuscript theorem.
+the inherited inputs. The disposition records the bounded review and task
+acceptance. The nearest-result comparison and external-source gates remain open; this does not
+accept a manuscript theorem or establish historical priority.

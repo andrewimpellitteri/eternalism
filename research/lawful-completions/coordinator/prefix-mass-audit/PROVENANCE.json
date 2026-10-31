@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-31",
   "role": "direct coordinator recovery, not a GLM/native worker submission",
-  "status": "conditional candidate; independent integrated review outstanding",
+  "status": "internally accepted conditional finite-prefix corollary; external-input and priority gates retained",
   "project_inputs": [
     {
       "path": "research/lawful-completions/coordinator/C11_FINITE_CONTROL.md",
@@ -55,12 +55,12 @@
   ],
   "external_version": "arXiv:1605.03893v1",
   "source_depth": "selected primary HTML plus inherited project arguments, not complete external proof verification",
-  "coordination": "No workboard transition, agent restart, worker-lane edit or manuscript change.",
+  "coordination": "Coordinator proof and disjoint native review integrated; no GLM retry, reset, worktree removal or manuscript edit.",
   "native_review": {
     "agent_id": "01a193b0-39f7-7562-9f6a-e0a11388b3bf",
     "nickname": "Dewey",
     "model": "gpt-6-luna",
-    "status": "completed and closed; task in review",
+    "status": "completed and closed; task accepted at bounded conditional scope",
     "scope": "algebra, joint degree, clock-endpoint scaling, ordered mass-limit passage; external PDE/category inputs held as black boxes",
     "files": [
       {
@@ -80,5 +80,12 @@
       }
     ]
   },
-  "formal_integration": "Pending; failed-run branch metadata preserved; new native output in shared checkout; no Git mutation during this continuation."
+  "formal_integration": {
+    "coordinator_proof_commit": "8b59565",
+    "native_review_commit": "3e204362c07aa1752306858178762a8ac46217bf",
+    "review_merge_commit": "b4b40180fd59b9dfca00e7f373acea88fcac30a2",
+    "task_status": "done",
+    "scope": "conditional finite-dimensional prefix/readout construction; inherited source and category hypotheses retained",
+    "guards": "Normal branch-ancestry, clean-worktree and changed-path acceptance checks passed."
+  }
 }
