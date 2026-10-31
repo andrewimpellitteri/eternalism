@@ -31,6 +31,12 @@ before b and0 after. The very response formula cited in the submission gives
 
     y(b+s)=1−s/τ,    0<s<τ.
 
+This exact formula uses an ideal step boundary and its weak transport
+solution. With a continuous nonnegative switch starting at b, the response
+is still at least1−s/τ for0<s<τ, from the unchanged earlier input alone.
+The failure of immediate cessation therefore persists in the continuous
+input class used by the benchmark.
+
 The channel continues to carry its earlier input until the transit time has
 elapsed. Afterward the unloaded apparatus can still transmit a newly applied
 signal. Cessation of a particular transmission is not destruction of the

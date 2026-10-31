@@ -90,6 +90,9 @@ automatically a result about physically realistic relativistic histories.
 source-faithful rival. Track three different predicates: temporally constituting
 a process, being concrete, and being present from a standpoint. A translation
 that collapses them by definition does not resolve the disagreement.
+The [completed correspondence card](result-search-round1/CORRESPONDENCE.md)
+gives the first concrete tests, including the difference between a complete-
+solution identity and preservation of the physical intervention protocol.
 
 First-round success is one surviving claim worth a referee packet. If none
 survives, the output is the exact obstruction and the next changed question.

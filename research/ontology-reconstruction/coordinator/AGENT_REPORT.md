@@ -1,5 +1,20 @@
 # Coordinator continuation: persistence correction and proof-review dispatch
 
+## First result-search round launched
+
+Committed the operating plan, pilot review, primary clauses and two task
+cards as `cb64c0a`. Both default GLM supervisors launched successfully from
+that baseline in disjoint worktrees; their claims are preserved. No worker
+research output or success is inferred merely from launch.
+
+Completed the separate coordinator CORRESPONDENCE.md card: distinguish
+apparatus, operation and token; preserve boundary/intervention roles in
+the channel's past-inlet/future-outlet identity; distinguish constituting,
+concrete and present. This also qualifies the scope of Claude's concurrent
+reversal candidate without editing it or treating it as accepted. The
+conditional symmetry lemma requires a symmetry-fixed full model, not
+just reversible equations or a field history with roles omitted.
+
 ## 31 October: a result-directed search process
 
 The user requested an actionable process against the contribution criteria.

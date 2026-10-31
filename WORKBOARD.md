@@ -221,8 +221,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | blocked | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | — |
 | review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
-| open | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | — |
-| open | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | — |
+| claimed | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
+| claimed | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
