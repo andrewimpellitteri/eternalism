@@ -1,5 +1,9 @@
 # Adversarial review of SCREENING.md (causal-potential screening and rigidity)
 
+> **Status, 31 October 2026.** The claimed refutation of premise (L′) in §§6.1–6.5 is incorrect, as
+> [the owner handoff](../lawful-completions/coordinator/SCREENING_OWNER_HANDOFF.md) shows. The text
+> below is kept as handed back. Theorem 3(b) of SCREENING.md stays conditional.
+
 31 October 2026. Task `screening-review`, analytic red-team of
 `research/bowtie-horizons/SCREENING.md` (read-only), lines cited as L<nn>.
 No installs, no child agents, no board or manuscript edits. No novelty claim.

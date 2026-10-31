@@ -1,5 +1,11 @@
 # Echo exactness: the fixed region of the conformal scalar on closed dust
 
+> **Refuted, 31 October 2026. Do not cite the theorem below.** The stated fixed set is too large.
+> Step 2.3(ii) identifies the echo of the past with all of `J⁻(b̂)`, but the echo holds only after
+> η = π. Exact solutions vanishing on `b`'s past are nonzero at points this theorem calls fixed:
+> run [refutation_check.py](refutation_check.py). The comoving-line statements survive, and the
+> correct set is Theorem `thm:diamonds` of the unified paper. The text below is kept as handed back.
+
 Task `horizons-echo-exactness`. Frozen inputs:
 `research/horizons/coordinator-review/dispatch-2026-10-25/main.tex` (draft 3,
 SHA-256 `bbd59269…`) and `SOURCE.md`; leads: `coordinator-review/REVIEW.md`,

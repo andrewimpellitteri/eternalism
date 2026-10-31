@@ -14,6 +14,7 @@ Groups are editorial and say nothing about whether a result is correct. For that
 |---|---|
 | [The unified paper](what-the-past-can-fix/what-the-past-can-fix.pdf) | The main output: 42 pages, four parts |
 | [Paper red-team](what-the-past-can-fix/REVIEW.md) | What is tight and what is only a survey |
+| [Rescued-results triage](what-the-past-can-fix/TRIAGE_RESCUED.md) | Whether worker results affect the paper |
 | [Claim ledger](CLAIM_STATUS.md) | Status of each claim and its dependencies |
 | [Current synthesis](CURRENT_SYNTHESIS.md) | The dated narrative, newest first |
 | [Parity map](PARITY_MAP.md) | How far the repo is from the field of time, and the order of work |

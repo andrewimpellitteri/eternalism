@@ -11,6 +11,9 @@ was built by search, not by reading the notes.
 Board state lives in the ignored `.agent-runtime/`, so this file is a dated copy. Refresh the state
 with `python3 scripts/agents.py status`.
 
+The 33 rescued tasks have been [triaged against the paper](what-the-past-can-fix/TRIAGE_RESCUED.md).
+That triage accepts nothing, but it marks one worker theorem as refuted and one claim as wrong.
+
 ## Accepting a task
 
 `accept` needs the branch to be an ancestor of `HEAD`, and it needs the task's worktree. Files rescued
