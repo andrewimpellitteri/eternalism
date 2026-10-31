@@ -53,6 +53,12 @@ are useful, but a claim about what the *whole physics* fixes must include
 the boundary and role assignments. No wholesale acceptance or historical
 novelty is inferred here; its files remain under Claude's ownership.
 
+The subsequent [coordinator review](../coordinator-reversal-review/REVIEW.md)
+checks Claude's revised notes after he withdrew the general width-without-side
+claim. It retains the lemma and identities, but the remaining pilot mirror
+finding still needs symmetry of the full drive/readout/intervention contract.
+Its claimed forced choice between P2 and deflated unity remains unproved.
+
 ## 3. Keep three philosophical predicates separate
 
 - A phase temporally constitutes the process.
