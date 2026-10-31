@@ -219,8 +219,10 @@ First milestone: prior work → theory map → independent novelty audit.
 | open | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | — |
 | open | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | — |
 | blocked | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | — |
-| claimed | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
+| review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
+| open | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | — |
+| open | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

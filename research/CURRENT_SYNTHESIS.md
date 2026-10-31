@@ -1,5 +1,14 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **Result-search update, 31 October:** the
+> [operating plan](agentic-philosophy/RESULT_SEARCH.md) converts the contribution
+> criteria into two bounded source-based investigations. The GLM bridge
+> handback returned; [inspection](agentic-philosophy/PILOT_REVIEW.md) rejects
+> its premise-laundering, cessation test and global-collapse conclusions.
+> A process-presence premise and a published modal-present nontriviality
+> inference are the next exact hinges. No positive ontology or new theorem
+> is asserted by preparing these tests.
+
 > **31 October: frontier and contribution audit.**
 > [What would count as a breakthrough?](agentic-philosophy/BREAKTHROUGH_TEST.md)
 > separates historical originality, argument quality, significance and AI

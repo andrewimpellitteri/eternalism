@@ -1,5 +1,11 @@
 # Agentic philosophy: state of play and a swarm playbook
 
+**Current execution plan:** [one philosophical result](RESULT_SEARCH.md)
+specifies a bounded source-first search, two workers plus coordinator,
+one revision, stopping rules and a referee packet. The
+[first round](result-search-round1/QUESTION.md) is instantiated; this is not
+a claim that the process has been experimentally validated.
+
 Status: updated 2026-10-22. A short working note, not a literature review. It records
 what “agentic philosophy” currently means, the closest prior art, where agents
 help, where they fail, and a concrete swarm design for producing something

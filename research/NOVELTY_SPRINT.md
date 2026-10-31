@@ -1,5 +1,13 @@
 # Novelty sprint — one real result, not more infrastructure
 
+> **31 October scope update:** The mathematical sprint below remains the
+> historical contract for its named bets. It does not govern the new
+> [philosophical result search](agentic-philosophy/RESULT_SEARCH.md), which
+> admits a substantive new argument, counterexample, explanatory preference
+> or conceptual revision without requiring a new mathematical theorem.
+> The former exclusion of an ontology essay solely for lacking new mathematics
+> is not the gate for that user-authorized philosophical programme.
+
 Status: 2026-10-20. This replaces the open-ended literature pipeline as the main
 line after the first selection gate. The goal is **one genuinely new,
 defensible mathematical result** (plus its bounded philosophical audit), or an

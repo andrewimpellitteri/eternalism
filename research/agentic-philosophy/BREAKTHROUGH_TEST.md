@@ -218,3 +218,9 @@ refute every explanatory preference for it. A separate GLM pilot launched
 from committed question card `e59467a`; its unreturned proposal is not used
 to claim a result here. This is execution of a case, not measured workflow
 improvement or historical discovery.
+
+The GLM handback `ccb40b5` subsequently returned. Its
+[coordinator review](PILOT_REVIEW.md) rejects the claimed forced revisions
+and universal exhaustiveness obstruction, and identifies a physical cessation
+error. The next [result search](RESULT_SEARCH.md) uses explicit source hinges
+and candidate ancestry rather than requesting another unrestricted bridge essay.

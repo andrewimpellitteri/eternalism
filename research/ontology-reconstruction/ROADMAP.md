@@ -1,5 +1,13 @@
 # From physical constraints to a defended temporal ontology
 
+> **Current operating plan:** [one philosophical result](../agentic-philosophy/RESULT_SEARCH.md)
+> now specifies source hinges, distinct mechanisms, one targeted repair,
+> an independent consequence and a referee packet. The returned bridge
+> pilot is [not accepted](../agentic-philosophy/PILOT_REVIEW.md). Its disputed
+> P2 receives one source-based recovery attempt; a separate published
+> modal-present claim receives a dense-branching stress test. These are
+> investigations, not findings of novelty or a selected ontology.
+
 > **31 October: assess the philosophical contribution itself.**
 > The [breakthrough test](../agentic-philosophy/BREAKTHROUGH_TEST.md)
 > distinguishes originality, validity, significance and AI attribution.

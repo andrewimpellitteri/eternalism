@@ -1,5 +1,37 @@
 # Coordinator continuation: persistence correction and proof-review dispatch
 
+## 31 October: a result-directed search process
+
+The user requested an actionable process against the contribution criteria.
+Read the returned GLM pilot `ccb40b5` completely with its source/report files.
+PILOT_REVIEW.md rejects the unsupported P2/common-ground move, zero-input
+cessation claim, universal exhaustiveness obstruction and local-to-global
+collapse. The original worktree/claim remain in review; no source claim or
+worker conclusion was accepted merely because its handback was clean.
+
+RESULT_SEARCH.md operationalizes the existing method: select an actual
+source hinge, generate different mechanisms, execute the cheapest decisive
+test, challenge a survivor, make one bounded repair, require a second
+consequence and assemble a referee packet. It expressly supersedes the
+old mathematical-only gate for this philosophical programme. Added the
+round1 question and three exact-depth source records; no new software or
+benchmark was created, and no discovery-rate improvement is claimed.
+
+Directly read selected primary Guarino–Guizzardi2024 §§2–3 and Müller2019/2020
+BT/BST definitions, co-presentness claims and notes23–26. A bounded
+erratum/dense-choice/comb query and project search found no exact matched
+correction within that scope; this is not a priority verdict. The original
+Belnap archive landing was rejected; its body remains unread here.
+
+Prepared two disjoint GLM contracts: one last source-based recovery of
+the old occurrence-presence premise, and a separate dense-branching test
+of the published modal nontriviality inference. These are candidate
+investigations, not asserted new theorems or a positive temporal ontology.
+The coordinator retains entity/semantic correspondence review rather than
+duplicating those worker proofs. Read the opening scope of Claude's new
+untracked reversal test/review; these remain separate candidate work and
+are excluded from this commit.
+
 ## 31 October: executed argument and independent proposal
 
 Committed the previous integration and question card as `e59467a`. Launched
