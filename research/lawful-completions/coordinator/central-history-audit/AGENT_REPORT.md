@@ -25,8 +25,11 @@ All files are new and confined to this central-history-audit subdirectory:
 
 Original worker files, Claude's candidate, manuscripts, indexes, runner,
 source seeds, shared claims and worktrees were not edited by this work.
-Claude was concurrently changing other files; those are excluded from this
-submission and its commit.
+Claude was concurrently changing other files. This coordinator submission
+contains only the audit files. Claude subsequently included it with the separate
+triage work in commit 40db683; no dedicated Codex commit was completed. The final
+explicit cut-off bound remained as a saved working-tree clarification after the
+automatic approval reviewer exhausted its usage quota.
 
 ## Findings and evidence
 

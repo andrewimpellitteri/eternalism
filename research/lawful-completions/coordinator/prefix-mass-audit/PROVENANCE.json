@@ -1,0 +1,84 @@
+{
+  "checked_on": "2026-10-31",
+  "role": "direct coordinator recovery, not a GLM/native worker submission",
+  "status": "conditional candidate; independent integrated review outstanding",
+  "project_inputs": [
+    {
+      "path": "research/lawful-completions/coordinator/C11_FINITE_CONTROL.md",
+      "sha256": "8bbae6259c44fa10bdba9e5b509d1091faf51521ea2d51aee6bc221166d6a032",
+      "bytes": 13233,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md",
+      "sha256": "7963b1fe9ce0ca15a052d9ec36a446c3d17ff58a434e1ec1ceabe9ee53d55bc2",
+      "bytes": 4848,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/CUBIC_TRACE.md",
+      "sha256": "b582e3303e2f4da042775c9206df707a1b1bd0d592e0482761bb55e1b6f96464",
+      "bytes": 3967,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/INCOMING_MASS.md",
+      "sha256": "c6bbd2e372ea8ae38df2457fe72a20ced9509ad6d1770d17ba673eb7f1351fac",
+      "bytes": 2962,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md",
+      "sha256": "86969582faa4ea55ac3c603890636b3d40f94311e29bfbfd0076a806636faa8b",
+      "bytes": 9209,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md",
+      "sha256": "174cbeddefc8b48bb56508c794c1b6c91aa950fe776d0a4e4e7b604d8514d0af",
+      "bytes": 8922,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    },
+    {
+      "path": "research/lawful-completions/claude-central-history/PRIOR_WORK.md",
+      "sha256": "570e4f87f3e809a6f12209b3654b8b7b9a38f5ac1dfb0b6d7454976f27212f1b",
+      "bytes": 6195,
+      "repository_commit": "40db683c2b80e7f9f9f811956ca5434e41cc32de",
+      "read_depth": "selected full-text project argument; inherited external depths stay as stated"
+    }
+  ],
+  "external_version": "arXiv:1605.03893v1",
+  "source_depth": "selected primary HTML plus inherited project arguments, not complete external proof verification",
+  "coordination": "No workboard transition, agent restart, worker-lane edit or manuscript change.",
+  "native_review": {
+    "agent_id": "01a193b0-39f7-7562-9f6a-e0a11388b3bf",
+    "nickname": "Dewey",
+    "model": "gpt-6-luna",
+    "status": "completed and closed; task in review",
+    "scope": "algebra, joint degree, clock-endpoint scaling, ordered mass-limit passage; external PDE/category inputs held as black boxes",
+    "files": [
+      {
+        "path": "research/lawful-completions/prefix-energy-control/REVIEW_COORDINATOR_CANDIDATE.md",
+        "sha256": "868a54cb38cd9fb2d94e1c69291a976c1be260d82cb9a357afdee2ee303aeae2",
+        "bytes": 5852
+      },
+      {
+        "path": "research/lawful-completions/prefix-energy-control/AGENT_REPORT.md",
+        "sha256": "e938e4cd53f5b1531ecd99ffbb075562ed328277a5c60a721289e031c40169c6",
+        "bytes": 2115
+      },
+      {
+        "path": "research/lawful-completions/prefix-energy-control/sources.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    ]
+  },
+  "formal_integration": "Pending; failed-run branch metadata preserved; new native output in shared checkout; no Git mutation during this continuation."
+}

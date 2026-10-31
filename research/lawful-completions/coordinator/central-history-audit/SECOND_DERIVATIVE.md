@@ -108,7 +108,8 @@ the vanishing neighborhoods in the target hypothesis. Set
     T_n f=chi [Lambda y(tau)-I],       tau'=Lambda,
     a=2Y+1.
 
-The smooth cut-off chi equals 1 up to tbar=3T_max/2 and vanishes past tbar+1.
+Choose the smooth cut-off with 0<=chi<=1 and a fixed C2 bound. It equals 1 up to
+tbar=3T_max/2 and vanishes past tbar+1.
 Its derivatives meet only y(tau)=0, since tau(tbar)>=T_max. On chi=1,
 
     (Lambda y(tau))''
