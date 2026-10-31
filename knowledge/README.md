@@ -1,8 +1,9 @@
 # Prior-work knowledge base
 
-Status: initial seed, 2026-10-19. The seed contains source-page and abstract-level
+The seed dates from 2026-10-19 and contains source-page and abstract-level
 screening, not a systematic review or completed proof audit. The initial search
 found relevant existing work; it does not establish that any proposed gap is new.
+Later lanes read further at the depths their own records state.
 
 ## Current integration
 

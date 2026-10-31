@@ -1,5 +1,20 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **31 October consolidation:** the proved results are now gathered in one paper,
+> [What the Past Can Fix](what-the-past-can-fix/). Read it first. This file remains the dated
+> narrative. [REVIEW_QUEUE.md](REVIEW_QUEUE.md) lists worker results with no sign-off, including
+> results rescued from local branches, none of which this synthesis accepts by being adjacent to them.
+
+> **31 October process-explanation test:** a
+> [controlled operation and its timed replay](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_TEST.md)
+> share an actual output history but differ under changed inputs. The
+> organizing mechanism supplies explanatory content that both a growing
+> account and a stronger event-realist account can retain. The bounded
+> [review and disposition](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md)
+> reject the displayed exclusive-inventory-advantage argument; sufficient
+> metaphysical unity remains open. Direct Stout/Steward reading also locates
+> predecessors of the interruption and happening/presence distinctions.
+
 > **31 October metaontology check:** the
 > [review of Claude's new reading](agentic-philosophy/CLAUDE_METAONTOLOGY_REVIEW.md)
 > retains the need to specify E_b's content, but rejects the inference that a

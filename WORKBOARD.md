@@ -212,19 +212,20 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
 | review | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
 | review | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
-| claimed | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | glm-lawful-prefix-energy-control |
+| open | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | glm-lawful-prefix-energy-control |
 | done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
 | done | `ontology-response-memory-priorart` — Challenge novelty of response-memory support versus small-mass norm contrast | 10 | — | glm-ontology-response-memory-priorart |
 | done | `ontology-response-memory-review` — Red-team retarded response support, norm limit and transport-window benchmark | 10 | — | native-response-memory |
 | review | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
 | review | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | glm-ontology-cycle-recovery-test |
-| claimed | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | glm-lawful-central-history-review |
+| open | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | glm-lawful-central-history-review |
 | review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
 | review | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
 | review | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
 | done | `ontology-occurrence-countermodel-review` — Audit the explicit rival to occurrence-to-current-concreteness | 12 | — | native-occurrence-countermodel-review |
 | done | `ontology-modal-counterexample-review` — Independently test the dense-comb counterexample to modal nontriviality | 12 | — | native-modal-counterexample-review |
+| claimed | `ontology-process-explanation-review` — Audit the controlled-process explanatory comparison and its modal scope | 10 | — | native-process-explanation-review |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

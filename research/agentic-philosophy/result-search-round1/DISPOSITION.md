@@ -25,6 +25,15 @@ the worker's claimed formal support. No independently warranted bridge
 emerged in the family's permitted recovery, so it receives no further
 renamed recovery and no positive-ontology referee packet.
 
+**Subsequent primary-source check, 31 October:** Steward2013 §3, manuscript
+pp15–16, directly diagnoses the inference from a whole process's happening
+to the whole process's presence. The
+[later explanatory comparison](../../ontology-reconstruction/coordinator/PROCESS_EXPLANATION_TEST.md)
+records this exact predecessor and tests a different claim about explanatory
+advantage. It does not reopen the occurrence family. No novelty is claimed
+for that philosophical distinction; priority of the particular formal
+counterinterpretation has not been established.
+
 ## What the modal route now contributes
 
 The source excludes histories consisting wholly of choice points. The
