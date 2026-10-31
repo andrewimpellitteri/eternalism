@@ -168,7 +168,7 @@ Each item: obligation → what the source actually prints (locator) → verdict.
   and |log λ_n(u,v) − log(1/2)| ≲ ε² max(v−u,1)^{−δc}. Notation note: the
   notes' "γ" is the source's δc (the (1.7) exponent); the source's separate γ
   in (1.9)/(3.16) is a different exponent. Constants: from proofs "proceeding
-  as in the proof of Proposition 3.8" and "Proposition 3.10" — bootstrap-level
+  as in the proof of Proposition 3.8" and "Proposition 3.11" in the HTML rendering — bootstrap-level
   constants depending only on δc (member-uniform by O2).
 - Axis specialization: at u=v=t, ∂_v(rφ) = λφ (boundary tangentiality),
   |φ_n(t,t) − Φ(t)| ≤ Cε³ and |2λ_n(t,t) − 1| ≤ C′ε²; the timing correction
@@ -295,7 +295,7 @@ Not owned, correctly separated:
 | ADM existence/equality | Open (INCOMING_MASS is incoming-boundary only) |
 | Uniqueness at past null infinity | Not claimed, not used (the selection is subsequence-based; §4 prints existence of a limit, not uniqueness) |
 | Continuous global scattering selection | Not claimed; the degree route exists precisely because it is unnecessary for the existential statement |
-| Bare-metric nonisometry | Separate lemma (NONISOMETRY_LEMMA), conditional dependency only |
+| Bare-metric nonisometry | Not established here; NONISOMETRY_LEMMA controls centered field-preserving classes only |
 | Pointwise axis curvature | Open at C¹,¹ |
 | Novelty / nearest-prior | Open gate; nothing here is a priority claim. From the source side: LOY themselves construct, for each fixed admissible profile, a two-sided-complete global solution with that profile (Theorem 1.7/§4); what they do not do is prescribe finitely many axis readings through a compact parameter family at fixed incoming mass — the degree/interpolation layer is the candidate new step, and it awaits the nearest-prior comparison |
 
