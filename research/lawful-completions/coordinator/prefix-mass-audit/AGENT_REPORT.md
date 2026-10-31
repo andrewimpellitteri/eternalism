@@ -77,7 +77,7 @@ corrected its integration note and retained the final explicit cut-off bound.
 Automatic approval review initially could not run at its usage limit. After the
 user restored approvals, the proof was committed in 8b59565 and the exact native
 submission 3e204362c07aa1752306858178762a8ac46217bf was integrated in merge
-b4b40180fd59b9dfca00e7f373acea88fcac30a2. Original failed-run history, worktrees and
+c9620762adc5adf9918c430962d4fb2336b5fa0d. Original failed-run history, worktrees and
 native shared-checkout output provenance remain preserved; the normal runner
 checks passed without bypass. The accepted prefix result retains every named
 source, category, prior-result and philosophical limit in its disposition.

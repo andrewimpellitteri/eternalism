@@ -83,9 +83,13 @@
   "formal_integration": {
     "coordinator_proof_commit": "8b59565",
     "native_review_commit": "3e204362c07aa1752306858178762a8ac46217bf",
-    "review_merge_commit": "b4b40180fd59b9dfca00e7f373acea88fcac30a2",
+    "review_merge_commit": "c9620762adc5adf9918c430962d4fb2336b5fa0d",
     "task_status": "done",
     "scope": "conditional finite-dimensional prefix/readout construction; inherited source and category hypotheses retained",
-    "guards": "Normal branch-ancestry, clean-worktree and changed-path acceptance checks passed."
+    "guards": "Normal branch-ancestry, clean-worktree and changed-path acceptance checks passed.",
+    "merge_parents": [
+      "8b59565db088094b3218f648759169e3a3ad7b8e",
+      "3e204362c07aa1752306858178762a8ac46217bf"
+    ]
   }
 }

@@ -61,7 +61,7 @@ part of the native review assignment.
 The coordinator proof and native review copies were committed in 8b59565. The
 three hash-verified native worker files were also committed on the existing
 same-task branch as 3e204362c07aa1752306858178762a8ac46217bf. Merge
-b4b40180fd59b9dfca00e7f373acea88fcac30a2 integrated that exact reviewed branch without
+c9620762adc5adf9918c430962d4fb2336b5fa0d integrated that exact reviewed branch without
 changing the main file contents. The task then passed the runner's ordinary
 acceptance checks: reviewed status, branch ancestry, clean same-task worktree,
 and nonempty committed changes confined to its three owned paths.
