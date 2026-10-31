@@ -18,7 +18,7 @@ Groups are editorial and say nothing about whether a result is correct. For that
 | [Claim ledger](CLAIM_STATUS.md) | Status of each claim and its dependencies |
 | [Current synthesis](CURRENT_SYNTHESIS.md) | The dated narrative, newest first |
 | [Parity map](PARITY_MAP.md) | How far the repo is from the field of time, and the order of work |
-| [Review queue](REVIEW_QUEUE.md) | The 62 tasks with no sign-off |
+| [Review queue](REVIEW_QUEUE.md) | Tasks with no sign-off |
 
 ## The paper and its two source manuscripts
 

@@ -5,10 +5,14 @@ the [review queue](../REVIEW_QUEUE.md): does it contradict or weaken something t
 It accepts nothing, and the board is unchanged. It is the same model family as the paper's assistant,
 so it is not independent review.
 
+Corrected the same evening. The first version missed coordinator reviews of three tasks, and it
+miscounted the script repairs. The [coordinator's handoff](../lawful-completions/coordinator/central-history-audit/CLEANUP_HANDOFF.md)
+raised most of these points, and the tables below now reflect them.
+
 ## Outcome
 
 No theorem or proposition in the paper changed. One worker theorem is false, one attribution was
-missing, and two scripts needed repair.
+missing, and one script needed two repairs.
 
 | Finding | Effect |
 |---|---|
@@ -58,16 +62,18 @@ a coordinator review of them. Depth is what this triage read, not what the worke
 | `horizons-echo-exactness` | Full to step 2.3 | Refuted above |
 | `screening-review` | Verdict | (L′) refutation wrong. Its other confirmations stand as worker claims |
 
-### Rejected in part by the coordinator; the paper does not use the rejected part (13)
+### Rejected in part by the coordinator; the paper does not use the rejected part (15)
 
 | Task | Depth | What was rejected | Paper |
 |---|---|---|---|
 | `lawful-completions-constraints` | Verdict | Lemma P's whole-past inference | Not used |
 | `lawful-completions-priority` | Verdict | The kill verdicts for the exact target | Keeps Manchak and Geroch as known prior |
-| `lawful-finite-cone-continuity` | Verdict | Theorem 2's false Grönwall step | States that no uniform continuity is used |
+| `lawful-finite-cone-continuity` | Verdict | Theorem 2's false Grönwall step | Uses the [replacement proof](../lawful-completions/coordinator/COMPACTNESS_CONTINUITY_REPAIR.md), [accepted at finite-control scope](../lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md). No uniform continuity is used |
+| `lawful-central-history-review` | Verdict, plus [the audit](../lawful-completions/coordinator/central-history-audit/RESULT.md) §1 | Its assembly and smooth-input objections. The worker confused the fixed point with the smoothed profile. I checked that algebra | Unaffected: `thm:same-past` is finite. The whole-history theorem is not accepted either |
 | `lawful-scalar-common-extension` | Verdict | The geometric audit | `thm:rigidity` works inside its class, where Σ is Cauchy by `lem:cones` |
 | `ontology-modal-category-bridge` | Verdict | The anti-trivialization argument | Treats maximality as a choice, not a theorem |
 | `ontology-constitutive-extent-test` | Verdict | The reconstruction dilemma | Not used |
+| `ontology-constitutive-bridge-pilot` | Scope section, plus [the review](../agentic-philosophy/PILOT_REVIEW.md) | Premise P2 and the cessation test | Not used |
 | `ontology-natural-assignments` | Verdict | Two scope errors and the census table | `prop:sp` has the corrected form |
 | `ontology-equivalence-repair` | Verdict | Two textual errors and the same table | Not used |
 | `ontology-bridges-repair` | Verdict | Reversed direction of fixing in §6.2 | Not used |
@@ -88,8 +94,8 @@ a coordinator review of them. Depth is what this triage read, not what the worke
 | `horizons-perturbation-referee` | Full | Independent derivation agrees with `prop:mass`, with the limits it states |
 | `horizons-scalar-priority` | Verdict | The paper uses Manchak's corrected theorem and not Geroch's printed claim |
 | `ontology-null-refinements-review` | Verdict | The census verifies under its premises |
-| `lawful-central-history-review` | Verdict | Finds a gap in a stronger claim about whole histories. `thm:same-past` is finite, so it is unaffected |
 | `lawful-higher-regularity-audit` | Verdict | Kilgore does not upgrade the family. The paper does not use that route |
+| `ontology-modal-density-search` | Via [the review](../agentic-philosophy/result-search-round1/modal-density-audit/WORKER_REVIEW.md) | The comb survives, with its offshoot calculation repaired. The paper's modal comb rests on that repaired form |
 
 ### Attribution (1)
 
@@ -97,14 +103,12 @@ a coordinator review of them. Depth is what this triage read, not what the worke
 |---|---|---|
 | `ontology-persistence-priorart` | Verdict | Bigaj cited. The citation was checked against Crossref, which lists no author. The extraction is the worker's: printed pages are unverified, and the audit's own falsifier 2 asks whether "future light cone" means the timelike interior. Check the printed chapter before submission |
 
-### No bearing on the paper's claims (7)
+### No bearing on the paper's claims (5)
 
 | Task | Depth | Note |
 |---|---|---|
 | `ontology-coordination-unity` | Summary | Operational contrast, no constitutive licence |
 | `ontology-cycle-recovery-test` | Summary | Fits the paper's closed deductive route |
-| `ontology-constitutive-bridge-pilot` | Scope section | Bounded pilot |
-| `ontology-modal-density-search` | Via round disposition | Superseded by the audited modal comb |
 | `ontology-occurrence-warrant-search` | Via round disposition | The family stopped |
 | `past-shadow-ltb-sources` | Verdict | Source locators for a lane the paper does not use |
 | `prior-art-becoming` | Verdict table | No full predecessor at the depth read. Absence is not evidence of novelty |
@@ -114,10 +118,21 @@ a coordinator review of them. Depth is what this triage read, not what the worke
 All 16 rescued scripts were run with a 45-second limit. Fifteen passed and the referee script failed as
 described. Most check only their own encodings, so a pass says little, as the echo case shows.
 
+## Preservation and source records
+
+The coordinator's [preservation audit](../lawful-completions/coordinator/central-history-audit/RESCUE_AUDIT.json)
+compared 116 committed file occurrences across the 33 tasks. It found 112 identical, and four that
+differ only in Markdown link destinations, which are the link repairs made during the rescue. That
+comparison is bounded and does not cover every ignored file in every worktree.
+
+`check_sources.py --strict` reports three errors in the `screening-review` register and one in the
+`finite-cone-continuity` register, all missing fields or versions. The default run does not report
+them. They are schema errors, not findings about the results, and they stay as handed back.
+
 ## Not done
 
 - No rescued task is accepted, and only the coordinator-level reading above was done on most of them.
 - Tasks marked verdict or heading depth could hold further errors that this triage did not see.
-- `central-history-review` raises two gaps for a stronger result. They matter only if the paper
-  ever claims whole central histories.
-- The 21 tasks already in the tree, and their coordinator notes, were not triaged here.
+- The whole-history theorem remains unaccepted. It matters only if the paper ever claims whole
+  central histories.
+- The other tasks without sign-off, and their coordinator notes, were not triaged here.

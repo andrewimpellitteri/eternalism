@@ -1,8 +1,9 @@
 # Review queue
 
-Snapshot of 31 October 2026, taken from the local board after the coordinator stopped. It lists the
-62 tasks still in `claimed` or `review`. **Nothing here is accepted.** Inclusion in the tree
-means a file is preserved, not that its claims hold.
+Snapshot of the local board, refreshed on the evening of 31 October 2026. A coordinator session was
+still working at that point, so this copy can go stale quickly. It lists the 60 tasks in `claimed` or
+`review`: 12 and 48. **Nothing here is accepted.** Inclusion in the tree means a file is preserved, not
+that its claims hold.
 
 "Coordinator notes" lists documents that mention the task or its folder. A mention can be a rejection
 or a request for repair, and "none found" means only that a text search found nothing. The list
@@ -16,8 +17,18 @@ That triage accepts nothing, but it marks one worker theorem as refuted and one 
 
 ## Accepting a task
 
-`accept` needs the branch to be an ancestor of `HEAD`, and it needs the task's worktree. Files rescued
-below were copied, not merged, so accepting one of those tasks still needs `git merge agent/<task>`.
+Copying a branch's files into the tree does not make a task ready to accept. `accept` needs all of:
+
+- `review` state, so the 12 `claimed` tasks cannot be accepted as they stand.
+- The branch as an ancestor of `HEAD`. Rescued files were copied, not merged, so this still needs
+  `git merge agent/<task>`.
+- A clean task worktree.
+- Nonempty committed output inside the task's owned paths.
+
+The last condition rules out a task whose branch has no commits of its own. Merging is a no-op there,
+as with `lawful-central-history-review`, whose work was left as uncommitted drafts. Finish and review
+such a task, or record its rejection or incompleteness, rather than bulk-accepting it.
+
 Branches are all kept. If a worktree has been removed, restore it first:
 
 ```bash
@@ -35,7 +46,7 @@ Treat these as unreviewed worker submissions unless a coordinator note says othe
 | `horizons-echo-robustness` | review | [horizons/glm/echo-robustness](horizons/glm/echo-robustness/) | none found |
 | `horizons-perturbation-referee` | claimed | [horizons/glm/perturbation-referee](horizons/glm/perturbation-referee/) | none found |
 | `horizons-scalar-priority` | review | [horizons/glm/scalar-priority](horizons/glm/scalar-priority/) | none found |
-| `lawful-central-history-review` | claimed | [lawful-completions/central-history-review](lawful-completions/central-history-review/) | [FINITE_CONTROL_ACCEPTANCE.md](lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md), [NEXT_FRONTIER_TASKS.md](ontology-reconstruction/coordinator/NEXT_FRONTIER_TASKS.md) |
+| `lawful-central-history-review` | review | [lawful-completions/central-history-review](lawful-completions/central-history-review/) | [central-history-audit](lawful-completions/coordinator/central-history-audit/RESULT.md) rejects its main objections. [CLEANUP_HANDOFF.md](lawful-completions/coordinator/central-history-audit/CLEANUP_HANDOFF.md) |
 | `lawful-completions-constraints` | review | [lawful-completions/constraints](lawful-completions/constraints/) | [CONSTRAINTS_REVIEW.md](lawful-completions/coordinator/CONSTRAINTS_REVIEW.md), [BASELINE_NOTES.md](lawful-completions/coordinator/BASELINE_NOTES.md) |
 | `lawful-completions-priority` | review | [lawful-completions/priority](lawful-completions/priority/) | [PRIORITY_REVIEW.md](lawful-completions/coordinator/PRIORITY_REVIEW.md), [BASELINE_NOTES.md](lawful-completions/coordinator/BASELINE_NOTES.md) |
 | `lawful-finite-cone-continuity` | review | [lawful-completions/finite-cone-continuity](lawful-completions/finite-cone-continuity/) | [BATCH2_INITIAL_REVIEW.md](lawful-completions/coordinator/BATCH2_INITIAL_REVIEW.md) |
@@ -67,7 +78,7 @@ Treat these as unreviewed worker submissions unless a coordinator note says othe
 
 ## Already in the tree, never formally accepted
 
-21 tasks.
+20 tasks.
 
 | Task | State | Output | Coordinator notes |
 |---|---|---|---|
@@ -86,25 +97,25 @@ Treat these as unreviewed worker submissions unless a coordinator note says othe
 | `native-horizons-norm-review` | review | [horizons/native/norm-review](horizons/native/norm-review/) | none found |
 | `native-horizons-source-recovery` | review | [horizons/native/source-recovery](horizons/native/source-recovery/) | none found |
 | `native-time-bridge-recovery` | review | [horizons/native/bridge-recovery](horizons/native/bridge-recovery/) | none found |
-| `ontology-process-explanation-review` | claimed | [agentic-philosophy/process-explanation-review](agentic-philosophy/process-explanation-review/) | [PROCESS_EXPLANATION_REPORT.md](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md), [PROCESS_EXPLANATION_TEST.md](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_TEST.md) |
 | `prior-art-bst` | review | [bowtie-horizons-prior-art/bst](bowtie-horizons-prior-art/bst/) | none found |
 | `prior-art-prediction` | review | [bowtie-horizons-prior-art/prediction](bowtie-horizons-prior-art/prediction/) | none found |
 | `refocus-selection-integration` | claimed | [refocus-2026-10-21/coordinator](refocus-2026-10-21/coordinator/) | none found |
 | `runner-fresh-submission` | review | `scripts/agents.py` | none found |
 | `stein-gluing-audit` | review | [stein-gr/tasks/gluing-audit](stein-gr/tasks/gluing-audit/) | none found |
 
-## Stale claims with no output
+## Claims with no output
 
-8 tasks hold a claim but left no files in their owned paths. No worker process is running
-for any of them. They are candidates for `python3 scripts/agents.py release`, which needs a note.
+7 tasks hold a claim and left no files in their owned paths. These claims differ, and a missing process
+does not make any of them safe to release. Check the run and its worktree first, as AGENTS.md requires.
 
-| Task | State | Owned path |
-|---|---|---|
-| `bowtie-horizon-review` | claimed | `research/bowtie-horizons-review/` |
-| `horizons-philosophy-contract` | claimed | `research/horizons/glm/philosophy-contract/` |
-| `horizons-priority-gap-check` | claimed | `research/horizons/glm/priority-gap-check/` |
-| `lawful-prefix-energy-control` | claimed | `research/lawful-completions/prefix-energy-control/` |
-| `past-shadow-lemma` | claimed | `research/lawful-completions/past-shadow/lemma/` |
-| `past-shadow-ltb-numerics` | claimed | `research/lawful-completions/past-shadow/ltb/` |
-| `stein-causet-audit` | claimed | `research/stein-gr/tasks/causet-audit/` |
-| `stein-energy-rigidity-audit` | claimed | `research/stein-gr/tasks/energy-rigidity/` |
+| Task | Owned path | Why it has no output | What to do |
+|---|---|---|---|
+| `stein-causet-audit` | `research/stein-gr/tasks/causet-audit/` | **Paused on purpose** | Do not release or resume without a decision |
+| `stein-energy-rigidity-audit` | `research/stein-gr/tasks/energy-rigidity/` | **Paused on purpose** | Do not release or resume without a decision |
+| `horizons-philosophy-contract` | `research/horizons/glm/philosophy-contract/` | Quota failure | Do not retry. `native-time-bridge-recovery` took over the work |
+| `horizons-priority-gap-check` | `research/horizons/glm/priority-gap-check/` | Quota failure | Do not retry. `native-horizons-source-recovery` took over the work |
+| `bowtie-horizon-review` | `research/bowtie-horizons-review/` | Run failed on 28 October | Candidate for release with a note |
+| `past-shadow-lemma` | `research/lawful-completions/past-shadow/lemma/` | Run failed on 28 October | Candidate for release with a note |
+| `past-shadow-ltb-numerics` | `research/lawful-completions/past-shadow/ltb/` | Run failed on 28 October | Candidate for release with a note |
+
+The Stein pause is recorded in [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md), not in the board's notes.
