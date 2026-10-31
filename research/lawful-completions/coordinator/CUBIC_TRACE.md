@@ -1,6 +1,6 @@
 # Uniform cubic central trace estimate
 
-2026-10-28. Coordinator source-backed deduction, awaiting independent red team. Primary input: Luk--Oh--Yang arXiv:1605.03893v1, Proposition 3.3, Proposition 3.4 (3.16), Lemma 3.1, Proposition 3.8 (3.25), and section 4 immediately following (4.1). Source depth: selected full text. Source register: coordinator/sources.jsonl, lawful-coord-luk-oh-yang2016.
+2026-10-28. Coordinator source-backed deduction; O7 of the finite-control audit was inspected and accepted at bounded scope on 31 October ([disposition](FINITE_CONTROL_ACCEPTANCE.md)). Primary input: Luk--Oh--Yang arXiv:1605.03893v1, Proposition 3.3, Proposition 3.4 (3.16), Lemma 3.1, Proposition 3.8 (3.25), and section 4 immediately following (4.1). Source depth: selected full text. Source register: coordinator/sources.jsonl, lawful-coord-luk-oh-yang2016.
 
 ## Corrected gate
 
@@ -46,7 +46,7 @@ This compares actual central proper-time readings, subject to the regular-axis i
 1. A nonzero profile Phi=epsilon F with F(t_*) nonzero and fixed F yields a nonzero central trace for sufficiently small epsilon. Exact flatness earlier and the source's C1 scalar trace give a later nonzero derivative. This avoids relying exclusively on sideways timelike-boundary uniqueness to establish central visibility.
 2. For a fixed finite-dimensional smooth compact profile class, normalize fixed F_k so F_k(t_b+T_j)=delta_kj and place the tail after the common readout window. If the family obeys LOY hypotheses with smallness parameter C_0 epsilon uniformly in its parameters, then H_n(x)=epsilon x+O(epsilon^3) uniformly. Replacing epsilon by C_0 epsilon changes constants only. The degree route therefore has its proposed quantitative remainder from the printed source estimates.
 
-Not yet concluded here: continuity of every finite-cone readout map on the chosen parameter ball in the exact regularity class, compactness with n-dependent profiles including recovery of their incoming limits, or fixed physical mass of the global limits. Those are the remaining obligations for DEGREE_ROUTE.md. A charge calculated from profiles is not automatically a spacetime charge.
+Not concluded by this estimate alone: continuity of every finite-cone readout map, compactness with n-dependent profiles including recovery of their incoming limits, or fixed physical mass of the global limits. Those separate obligations are now assembled and internally reviewed in C11_FINITE_CONTROL.md. A charge calculated from profiles is not automatically a spacetime charge.
 
 ## Audit correction
 

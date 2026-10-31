@@ -1,5 +1,13 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **31 October finite-control acceptance:** the resumed
+> [finite-control audit is integrated and accepted at bounded scope](lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md).
+> Its arithmetic diagnostics were repaired before acceptance. This supplies
+> the pending continuity/degree/limit component, conditional on the named LOY
+> inputs. The separate smoothness bridge applies to the same selected limits.
+> Exact prefix masses, whole-history control and priority remain open; the
+> prepared prefix-mass and central-history tasks are unblocked, not launched.
+
 > **Result-search disposition, 31 October:** the
 > [completed round](agentic-philosophy/result-search-round1/DISPOSITION.md)
 > stops the occurrence-to-current-concreteness family as a positive candidate:
@@ -43,7 +51,8 @@
 > maximal-world admissibility, and eventual resolution from truth now.
 > [The same smooth class](lawful-completions/coordinator/REALM_CONTRAST_IN_SMOOTH_CLASS.md)
 > is future-directed and has whole-realm rigidity under the exact field/germ
-> matching contract. Its causal-past open-range claim still needs its own audit.
+> matching contract. Its causal-past finite open-range component now has the
+> bounded audit recorded above.
 > The fixed total incoming mass includes radiation after the readouts;
 > incoming prefix masses and local energy are not held fixed.
 
@@ -54,8 +63,9 @@
 > [Three bounded audits and repairs](lawful-completions/coordinator/SMOOTHNESS_REVIEW_STATUS.md)
 > record the internal scope. The [category corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md)
 > uses checked completeness/inextendibility inputs to obtain smooth complete
-> MGHDs. The full fixed-mass interpolation theorem still needs integrated
-> independent review and prior-result comparison. No ontology is selected.
+> MGHDs. The finite-control component now has a separate accepted bounded
+> review; the combined smooth corollary inherits both component audits.
+> Prior-result comparison remains open. No ontology is selected.
 
 
 > **30 October update:** Three bounded reviews are now integrated; see
@@ -63,17 +73,19 @@
 > The Cartesian C¹,¹ metric/scalar reconstruction and n≥2 persistence
 > census have internal review.
 > The later smoothness repair above supersedes the former regularity gate;
-> integrated control review and novelty remain separate gates.
+> the integrated finite-control review is now supplied above; novelty remains
+> a separate gate.
 > The later 1+1 classification has a corrected refinement table and a new
 > independent review task; it inherits no acceptance from the n≥2 audit.
 
 
-> **Direct continuation after the quota stop:** The four follow-up GLM
-> reviews did not complete. [Recovery and exact scope](ontology-reconstruction/coordinator/DIRECT_RECOVERY_2026_10_30.md)
+> **Direct continuation after the quota stop:** At that time the four follow-up
+> GLM reviews had not completed. [Recovery and exact scope](ontology-reconstruction/coordinator/DIRECT_RECOVERY_2026_10_30.md)
 > records the separate coordinator sign-region certificate and the
 > [C¹,¹ finite-control candidate](lawful-completions/coordinator/C11_FINITE_CONTROL.md).
 > The latter now has explicit flat-past, Cauchy-time and finite-sign-pattern
-> proofs, but still needs integrated independent review and prior-art comparison.
+> proofs. Its resumed review is now accepted at bounded scope; prior-art
+> comparison remains open.
 
 28 October 2026. Project integration of the existing research ledgers and the repaired screening results. This is a current navigation and scope document, not a new theorem, systematic fresh literature review, or acceptance of every source report. Historical documents retain their dates and may contain superseded proposals. Detailed status and falsifiers: [claim status](CLAIM_STATUS.md).
 
@@ -157,7 +169,7 @@ Project anchors: [original chapter clauses](future-truth-rival-chapters/CLAUSES.
 
 The fixed-background field countermodels motivated moving to coupled Einstein--matter solutions. Work retained from that move includes covariant marked-geodesic readouts, an exact actual incoming-mass identity in the audited reduced scattering class, uniform cubic central-trace estimates, a degree-before-limit finite-interpolation strategy, and a conditional nonisometry counting result in the centered category.
 
-The general smooth coupled interpolation theorem is NOT yet accepted. The C¹,¹ reconstruction now feeds a local smoothness proof with bounded audits, and the selected compact-profile limits have smooth complete MGHD representatives under the checked source inputs. Independent integrated review of the finite-cone continuity/degree/limit assembly and exact nearest-prior-result comparison remain gates. Incoming boundary mass is not ADM mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
+The finite-control chain now has bounded internal acceptance. The C¹,¹ reconstruction feeds a separately reviewed local smoothness proof, and the selected compact-profile limits have smooth complete MGHD representatives under the checked source inputs. The combined corollary inherits those component audits; exact nearest-prior-result comparison remains open. Incoming boundary mass is not ADM mass or fixed prefix mass. Smooth cone-collapse data satisfying Christodoulou's criterion are not a proof of entire-past completion or a finite incoming-coordinate causal barrier. Weak scattering and strong collapse are different families.
 
 The fixed incoming mass is a total over the profile, including a compensating
 tail after every readout. Earlier cumulative incoming mass can differ. A

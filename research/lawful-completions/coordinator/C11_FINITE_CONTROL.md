@@ -4,17 +4,19 @@
 > [SMOOTH_FINITE_CONTROL.md](SMOOTH_FINITE_CONTROL.md) upgrades the category
 > of the selected compact-profile limits to smooth, complete MGHDs using
 > a separate localized proof and checked completeness/inextendibility inputs.
-> The continuity/degree assembly here still needs its independent
-> integrated review; the native regularity audits do not accept it.
+> The continuity/degree assembly now has a separate
+> [bounded accepted review](FINITE_CONTROL_ACCEPTANCE.md), 31 October.
+> The native regularity audits and finite-control audit retain their scopes.
 >
 > **Energy timing:** the fixed total incoming mass includes the compensating
 > tail after the complete readout window. Incoming mass by each reading
 > time is not fixed. See [philosophical scope](PHILOSOPHICAL_SCOPE.md).
 
 30 October 2026. Coordinator proof assembly and direct audit after the GLM
-quota stop. **Candidate theorem; independent integrated review remains
-open.** The source/axis reviews are accepted only at their named scopes.
-No smooth-MGHD, mathematical priority or ontological conclusion is claimed.
+quota stop. **Finite-control chain internally reviewed, 31 October.**
+The [acceptance disposition](FINITE_CONTROL_ACCEPTANCE.md) records repairs
+and the external inputs retained. This finite-order proof alone gives no
+smooth-MGHD, mathematical priority or ontological conclusion.
 
 ## 1. Exact proposed theorem and quantifier order
 
@@ -221,8 +223,8 @@ claim, and does not exchange ∀N∃E_* with ∃E_*∀N.
 For N≥2, the open target ball and the C¹ central scalar trace meet the
 hypotheses of [NONISOMETRY_LEMMA.md](NONISOMETRY_LEMMA.md). Its accepted
 bounded measure argument implies uncountably many centered,
-field-preserving isometry classes, conditional on this interpolation
-theorem passing review. Re-marking a countable set of centered histories
+field-preserving isometry classes, using this now internally reviewed
+interpolation theorem. Re-marking a countable set of centered histories
 cannot cover the ball. No bare-metric nonisometry is inferred.
 
 Philosophically the target is exact non-supervenience of those finite
@@ -236,13 +238,12 @@ across lawful completions with ontic openness or nonexistence of the future.
 
 ## 9. Current review disposition
 
-The coordinator has rechecked the analytic chain and primary loci, supplied
-the flat-wedge proof, explicit family smallness and quantifiers, and the
-global Cauchy-time argument. The quota-interrupted review supplied no
-finished handback. This note therefore does not convert that task to done
-or certify an independent review. Remaining control gates: integrated
-adversarial proof review and exact nearest-predecessor comparison (the
-control/degree argument may be a familiar scattering corollary). The
+The resumed GLM review supplied an O1–O13 audit. After direct inspection,
+source checks and repairs to its arithmetic diagnostics, the coordinator
+accepted its bounded finite-control scope on 31 October; see
+[the disposition](FINITE_CONTROL_ACCEPTANCE.md). The exact nearest-predecessor
+comparison remains open (the control/degree argument may be a familiar
+scattering corollary). The
 separate smoothness bridge is now supplied in SMOOTHNESS_BOOTSTRAP.md;
 its precise category upgrade and external inputs are recorded in
 SMOOTH_FINITE_CONTROL.md. The finite-order proof above does not itself

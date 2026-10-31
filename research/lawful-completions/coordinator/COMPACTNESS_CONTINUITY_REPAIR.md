@@ -68,12 +68,12 @@ For a sequence of degree roots x_n in X, extract x_n -> x_*. The same source bou
 
 At each fixed (u,v), the Section 4 remainder bounds pass to the limit along with Phi_xn(v)->Phi_x*(v). Only THEN send u->minus infinity to recover the incoming profile Phi_x*. Uniform clock and axis convergence on the fixed readout interval pass the root equations exactly. This is existential, target-by-target interpolation, not continuity of a global scattering map.
 
-With the separate reviewed incoming-mass calculation and uniform cubic remainder retained, this repairs the named continuity obstacle and the profile-uniform compactness step at the reduced-solution level. It does not close smooth axis reconstruction, source novelty, or unmarked nonisometry. The replacement argument itself should receive independent review before the acceptance ledger is upgraded.
+With the separate reviewed incoming-mass calculation and uniform cubic remainder retained, this repairs the named continuity obstacle and the profile-uniform compactness step at the reduced-solution level. It does not by itself close smooth axis reconstruction, source novelty, or unmarked nonisometry. The replacement argument received bounded review in O1–O4 and O8–O10 of the finite-control audit, accepted on 31 October; see [the disposition](FINITE_CONTROL_ACCEPTANCE.md).
 
 
 ## Direct continuation, 30 October
 
-The quota-interrupted GLM review supplied no completed handback. The
+At that date the quota-interrupted GLM review had supplied no completed handback. The
 coordinator has directly rechecked the source loci and this compactness/
 uniqueness chain for the compact smooth family actually used in
 [C11_FINITE_CONTROL.md](C11_FINITE_CONTROL.md). That note adds an explicit
@@ -81,3 +81,7 @@ flat-wedge proof and the exact weak four-dimensional category. This is
 additional coordinator verification, not an independent-review upgrade.
 The accepted C¹,¹ axis reconstruction supplies the proper-time geodesic
 interpretation at that regularity; no smooth category follows.
+
+The resumed review was subsequently integrated and accepted on 31 October
+at the [finite-control scope](FINITE_CONTROL_ACCEPTANCE.md). This supersedes
+the historical pending-review status, without changing the external inputs.

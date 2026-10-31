@@ -2,9 +2,11 @@
 
 30 October 2026. Coordinator integration, with three bounded native audits.
 The regularity proof is in SMOOTHNESS_BOOTSTRAP.md and
-LOCAL_POLAR_PERSISTENCE.md. This does not accept the quota-interrupted
-integrated interpolation review or settle priority. It records precisely
-what the new regularity argument adds to C11_FINITE_CONTROL.md.
+LOCAL_POLAR_PERSISTENCE.md. The separate finite-control review was integrated
+and accepted at bounded scope on 31 October; see
+[FINITE_CONTROL_ACCEPTANCE.md](FINITE_CONTROL_ACCEPTANCE.md). Neither review
+settles priority. This note records precisely what the regularity argument
+adds to C11_FINITE_CONTROL.md.
 
 ## 1. Regularity theorem for the selected compact-profile limits
 
@@ -109,9 +111,9 @@ Apply §1 to each limit selected by the degree-before-limit argument of
 C11_FINITE_CONTROL.md. All its profile families are compact and smooth;
 the new proof is uniform on that family on each fixed exterior window
 and each finite interior region. Its previously stated target values
-and incoming mass are unchanged. Thus, **conditional on the remaining
-integrated review of that interpolation argument**, its category can be
-strengthened as follows:
+and incoming mass are unchanged. The finite-control component now has its
+own bounded accepted audit. Combining these two reviewed components, with
+their stated external inputs, strengthens the category as follows:
 
 For each finite sample schedule 0<T₁<⋯<T_N there are E_*>0 and c₀>0
 such that, for each fixed 0<E<E_* and every |y|<c₀√E, there is a smooth,
@@ -140,12 +142,12 @@ data norms. The new argument uses finite physical regions and a regular
 center chart. The bounded audits and their coordinator corrections are
 listed in SMOOTHNESS_REVIEW_STATUS.md.
 
-The remaining control gate is a full independent audit of the assembled
-continuity/degree/radiation-limit theorem, followed by a focused nearest
-prior-result comparison. That task was interrupted at provider quota;
-the regularity reviews do not stand in for it. No manuscript theorem,
-novelty claim, ADM identity, bare-metric nonisometry, or temporal ontology
-has been accepted by this note.
+The continuity/degree/radiation-limit component has a separate accepted audit;
+the regularity reviews do not stand in for it. The combined smooth corollary
+inherits the bounded component audits, rather than a new independent audit
+of the whole smooth theorem. A focused nearest prior-result comparison
+remains open. No manuscript theorem, novelty claim, ADM identity, bare-metric
+nonisometry, or temporal ontology has been accepted by this note.
 
 Philosophically the strengthened category removes a possible artificial
 source of ambiguity: under the stated construction, the differing future
