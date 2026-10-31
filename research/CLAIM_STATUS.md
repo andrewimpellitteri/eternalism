@@ -1,5 +1,15 @@
 # Current claim and dependency ledger
 
+## 31 October: completed source-hinge round
+
+The [round disposition](agentic-philosophy/result-search-round1/DISPOSITION.md)
+closes the occurrence bridge as a positive candidate and retains the
+repaired modal correction for priority/significance review. The regular-open
+counterinterpretation is bounded to a typed constitution fragment; it is
+not a complete presentist rival. The rational comb defeats the journal's
+every-history nontriviality claim in its abstract hypothesis class. It
+does not refute the later BST_NF theorem or select an ontology.
+
 ## 31 October: response review and philosophical contribution gate
 
 The [response benchmark](ontology-reconstruction/coordinator/RESPONSE_MEMORY_BENCHMARK.md),
@@ -17,10 +27,12 @@ methodological proposals, not a validated benchmark, philosophical breakthrough
 or AI capability result. No new ontology is selected; historical priority
 and external philosophical review remain separate questions.
 
-Updated 30 October 2026. Integration ledger; status is inherited from the named accepted review unless explicitly marked as newly derived or open. 'Reviewed' means internal research review, not external refereeing or unrestricted novelty. Read alongside [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md).
+Updated 31 October 2026. Integration ledger; status is inherited from the named accepted review unless explicitly marked as newly derived or open. 'Reviewed' means internal research review, not external refereeing or unrestricted novelty. Read alongside [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md).
 
 | Claim | Current status | Essential scope / remaining gate | Evidence |
 |---|---|---|---|
+| Displayed constitution clauses plus event-part inheritance force current concreteness of all elapsed phases | Not entailed in the tested sorted fragment | Added inventory predicate unconstrained; unity is stipulated and full ontology remains open | [Counterinterpretation](agentic-philosophy/result-search-round1/occurrence-countermodel/RESULT.md) |
+| Every non-featureless journal-Definition6 BST history has nontrivial modal co-presentness | Counterexample internally checked | Nonempty-chain convention; abstract comb, not physical manifold; later BST_NF scope and priority separate | [Clean proof](agentic-philosophy/result-search-round1/modal-density-audit/RESULT.md) |
 | Prescribed scalar doubly-principal extension iff p in [0,1] | Internally reviewed; narrow priority assessment retained | Exact labelled algebra and prescribed values; external review/priority limits | [Claim ledger](paper-novel/CLAIM_LEDGER.md) |
 | Covariant post-value companion iff 0<p<=1 | Conditional reviewed result | All-principal common-factor rule and infinite-post normalization; not covariance alone | [Companion](creative/COVARIANT_RESULT.md) |
 | Vector/norm alternatives evade scalar conclusion unchanged | Rejected implication | Norm realizations can alter interference and the underlying value problem | [Prior synthesis](conclusions/SYNTHESIS.md) |

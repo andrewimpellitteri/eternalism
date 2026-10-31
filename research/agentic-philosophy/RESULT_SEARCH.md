@@ -104,3 +104,17 @@ It is not a fresh independent discovery. This is its one targeted recovery
 attempt; if it repeats the same unsupported premise, stop that family.
 The modal-density route comes from a different primary argument. Renaming
 a branch never resets its revision allowance or erases a failed gate.
+
+## First-round disposition, 31 October
+
+The [completed round](result-search-round1/DISPOSITION.md) stops the
+occurrence family as the positive candidate. Its counterinterpretation
+and independent audit establish a fragment-level independence result,
+with stipulated unity and an added inventory predicate; no full rival
+ontology is claimed. The modal route retains a repaired counterexample
+to the journal's every-history nontriviality theorem in its abstract
+written class, plus an exact density criterion within the comb family.
+The later BST_NF formulation, physical relevance and historical priority
+remain gates. Neither route has earned a new-ontology verdict or an
+external submission. The two GLM originals remain review; bounded native
+audits are integrated separately.

@@ -127,9 +127,9 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `stein-core-repairs` — Prepare exact repairs for chronology conventions and first-exit cases | 10 | — | glm-stein-core-repairs |
 | review | `stein-gluing-audit` — Independently challenge domain transfer and the flat detour | 10 | — | claude-head |
 | claimed | `stein-null-boundary-audit` — Verify residual null freedom and construct a mixed-curvature example | 9 | — | glm-stein-null-boundary-audit |
-| open | `stein-causet-audit` — Audit the convex-embedding causal-set theorem and its prior-work contrast | 9 | — | — |
+| claimed | `stein-causet-audit` — Audit the convex-embedding causal-set theorem and its prior-work contrast | 9 | — | glm-stein-causet-audit |
 | review | `stein-priority-audit` — Try to defeat novelty of cross-spacetime becoming classifications | 10 | — | glm-stein-priority-audit |
-| open | `stein-energy-rigidity-audit` — Check energy-condition rigidity and isolate a legitimate extension problem | 9 | — | — |
+| claimed | `stein-energy-rigidity-audit` — Check energy-condition rigidity and isolate a legitimate extension problem | 9 | — | glm-stein-energy-rigidity-audit |
 | claimed | `stein-interpretation-audit` — Audit what the covariance theorem says about locality and becoming | 8 | — | glm-stein-interpretation-audit |
 | blocked | `stein-paper-integration` — Integrate accepted Stein-GR repairs into one source and verification record | 10 | stein-core-repairs, stein-gluing-audit, stein-null-boundary-audit, stein-causet-audit, stein-priority-audit, stein-energy-rigidity-audit, stein-interpretation-audit | — |
 | blocked | `stein-final-referee` — Independently referee the frozen integrated Stein-GR manuscript | 10 | stein-paper-integration | — |
@@ -184,7 +184,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `lawful-scattering-energy` — Derive exact incoming energy and test a later-pulse compensation mechanism | 10 | — | native-scattering-energy |
 | done | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
 | done | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
-| open | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
+| claimed | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
 | review | `prior-art-prediction` — Prior-art audit: prediction and domain-of-dependence literature vs screening claims | 9 | — | glm-prior-art-prediction |
 | review | `prior-art-bst` — Prior-art audit: branching space-times settledness vs screening claims | 9 | — | glm-prior-art-bst |
 | review | `prior-art-becoming` — Prior-art audit: relativistic becoming literature vs horizon and causal-potential claims | 9 | — | glm-prior-art-becoming |
@@ -216,13 +216,15 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
 | done | `ontology-response-memory-priorart` — Challenge novelty of response-memory support versus small-mass norm contrast | 10 | — | glm-ontology-response-memory-priorart |
 | done | `ontology-response-memory-review` — Red-team retarded response support, norm limit and transport-window benchmark | 10 | — | native-response-memory |
-| open | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | — |
-| open | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | — |
+| claimed | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
+| review | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | glm-ontology-cycle-recovery-test |
 | blocked | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | — |
 | review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
-| claimed | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
-| claimed | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
+| review | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
+| review | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
+| done | `ontology-occurrence-countermodel-review` — Audit the explicit rival to occurrence-to-current-concreteness | 12 | — | native-occurrence-countermodel-review |
+| done | `ontology-modal-counterexample-review` — Independently test the dense-comb counterexample to modal nontriviality | 12 | — | native-modal-counterexample-review |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

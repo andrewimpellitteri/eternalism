@@ -1,12 +1,12 @@
 # From physical constraints to a defended temporal ontology
 
-> **Current operating plan:** [one philosophical result](../agentic-philosophy/RESULT_SEARCH.md)
-> now specifies source hinges, distinct mechanisms, one targeted repair,
-> an independent consequence and a referee packet. The returned bridge
-> pilot is [not accepted](../agentic-philosophy/PILOT_REVIEW.md). Its disputed
-> P2 receives one source-based recovery attempt; a separate published
-> modal-present claim receives a dense-branching stress test. These are
-> investigations, not findings of novelty or a selected ontology.
+> **Current result-search disposition:** the
+> [completed round](../agentic-philosophy/result-search-round1/DISPOSITION.md)
+> stops the P2 occurrence family after its one recovery and countermodel audit.
+> The modal route retains a repaired abstract counterexample to the journal's
+> nontriviality theorem. Next gates are priority, the later BST_NF scope and
+> an independently warranted physical/modal exclusion of the comb. No full
+> ontology follows from either route, and no extra proposal batch is launched.
 
 > **31 October: assess the philosophical contribution itself.**
 > The [breakthrough test](../agentic-philosophy/BREAKTHROUGH_TEST.md)

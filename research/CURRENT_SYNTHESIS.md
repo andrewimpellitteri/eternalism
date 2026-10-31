@@ -1,13 +1,15 @@
 # Current synthesis: completion, access, becoming and determination
 
-> **Result-search update, 31 October:** the
-> [operating plan](agentic-philosophy/RESULT_SEARCH.md) converts the contribution
-> criteria into two bounded source-based investigations. The GLM bridge
-> handback returned; [inspection](agentic-philosophy/PILOT_REVIEW.md) rejects
-> its premise-laundering, cessation test and global-collapse conclusions.
-> A process-presence premise and a published modal-present nontriviality
-> inference are the next exact hinges. No positive ontology or new theorem
-> is asserted by preparing these tests.
+> **Result-search disposition, 31 October:** the
+> [completed round](agentic-philosophy/result-search-round1/DISPOSITION.md)
+> stops the occurrence-to-current-concreteness family as a positive candidate:
+> its reviewed counterinterpretation preserves only the displayed constitution
+> fragment, not a full rival metaphysics. The separate
+> [modal audit](agentic-philosophy/result-search-round1/modal-density-audit/RESULT.md)
+> retains an internally checked counterexample to Müller's journal Theorem1
+> under its written abstract BST assumptions, with a sharp comb-family
+> density criterion. The later BST_NF theorem, physical manifolds and
+> historical priority remain separate gates. No temporal ontology is selected.
 
 > **31 October: frontier and contribution audit.**
 > [What would count as a breakthrough?](agentic-philosophy/BREAKTHROUGH_TEST.md)
