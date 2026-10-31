@@ -6,6 +6,14 @@ Answers the request at the end of
 precise obstruction to a proposed causal-potential realm". Proofs below are
 ours and await independent review. No novelty claim.
 
+> **31 October owner handoff (`claude-native-bowtie`):**
+> `screening-review` has returned, but its claimed refutation of (L′) has an
+> error: for its hyperbola S, D(S) is the open future light cone, not the
+> closed region it reports. See the coordinator's
+> [calculation and review disposition](../lawful-completions/coordinator/SCREENING_OWNER_HANDOFF.md).
+> Theorem 3(b) remains conditional; neither (L′) nor the review's replacement
+> (L″) is established by that handback. The full review is not accepted.
+
 ## Setting and definitions
 
 (M,g) is a smooth, connected, time-oriented globally hyperbolic spacetime.

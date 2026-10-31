@@ -184,7 +184,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | review | `lawful-scattering-energy` — Derive exact incoming energy and test a later-pulse compensation mechanism | 10 | — | native-scattering-energy |
 | done | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
 | done | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
-| claimed | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
+| review | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
 | review | `prior-art-prediction` — Prior-art audit: prediction and domain-of-dependence literature vs screening claims | 9 | — | glm-prior-art-prediction |
 | review | `prior-art-bst` — Prior-art audit: branching space-times settledness vs screening claims | 9 | — | glm-prior-art-bst |
 | review | `prior-art-becoming` — Prior-art audit: relativistic becoming literature vs horizon and causal-potential claims | 9 | — | glm-prior-art-becoming |
@@ -202,7 +202,7 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | glm-lawful-axis-lift-review |
 | done | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
 | review | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | glm-ontology-null-refinements-review |
-| review | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
+| done | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
 | review | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
 | review | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
 | done | `lawful-smooth-exterior-native` — Red-team exterior all-order Goursat bootstrap for compact incoming data | 10 | — | native-smooth-exterior |
@@ -212,13 +212,13 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
 | review | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
 | review | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
-| blocked | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | — |
+| open | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | — |
 | done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
 | done | `ontology-response-memory-priorart` — Challenge novelty of response-memory support versus small-mass norm contrast | 10 | — | glm-ontology-response-memory-priorart |
 | done | `ontology-response-memory-review` — Red-team retarded response support, norm limit and transport-window benchmark | 10 | — | native-response-memory |
-| claimed | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
+| review | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
 | review | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | glm-ontology-cycle-recovery-test |
-| blocked | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | — |
+| open | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | — |
 | review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
 | review | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |

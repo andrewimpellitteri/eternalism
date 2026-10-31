@@ -1,5 +1,11 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **31 October screening handoff:** the new review's claimed refutation of
+> premise (L′) contains a domain-of-dependence error. The
+> [owner handoff and corrected hyperbola calculation](lawful-completions/coordinator/SCREENING_OWNER_HANDOFF.md)
+> preserve the conditional status of the bow-tie note's Theorem 3(b).
+> The handed-back review is not accepted wholesale.
+
 > **31 October finite-control acceptance:** the resumed
 > [finite-control audit is integrated and accepted at bounded scope](lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md).
 > Its arithmetic diagnostics were repaired before acceptance. This supplies
