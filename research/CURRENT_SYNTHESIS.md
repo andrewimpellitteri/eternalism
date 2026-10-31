@@ -1,5 +1,20 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **31 October causal-production investigation:** the
+> [selected Tooley1997 reconstruction](ontology-reconstruction/coordinator/causal-production/RESULT.md)
+> tests the actual causal-law/logical-probability argument rather than the
+> simple production gloss. A finite model and its
+> [bounded audit](ontology-reconstruction/causal-production-review/RESULT.md)
+> check the ordinary probability identities; their assumed directional
+> independence prevents a full countermodel claim. A stronger
+> [law-variation comparison](ontology-reconstruction/coordinator/causal-production/LAW_VARIATION_TEST.md)
+> distinguishes persistence within a history from invariance across law
+> changes. Whether temporal actuality or a non-Humean governing relation better
+> explains the privileged comparison remains open. The source-led route is a
+> live alternative to the previously stopped constitution-to-inventory route,
+> not a selecting argument already won. Later Tooley treatments remain
+> abstract-depth gates; no external expert or priority verdict is supplied.
+
 > **Current position, 31 October:** use the revised
 > [roadmap](ontology-reconstruction/ROADMAP.md) for present milestones and next
 > decisions. The dated launch/status notices below are historical where they

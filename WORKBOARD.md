@@ -228,6 +228,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-process-explanation-review` — Audit the controlled-process explanatory comparison and its modal scope | 10 | — | native-process-explanation-review |
 | done | `research-roadmap-audit-2026-10-31` — Reconcile the current roadmap with accepted scope and substantive research gaps | 10 | — | codex-roadmap-audit |
 | done | `temporal-arrow-contract-review` — Audit the new time-reversal fixing contract and its philosophical scope | 10 | — | native-temporal-arrow-review |
+| review | `ontology-causal-production-test` — Reconstruct and test the causal-law argument for temporal actuality | 10 | — | codex-causal-production |
+| review | `ontology-causal-production-review` — Red-team the causal-law to temporal-actuality comparison | 10 | — | native-causal-production-review |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

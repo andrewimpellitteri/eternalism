@@ -41,8 +41,10 @@ advances and the philosophical bottleneck are not interchangeable units.
    Its surname counts diagnose coverage; they do not measure philosophical
    competence or novelty. [Totality](../agentic-philosophy/claude-literature-gaps/TOTALITY_READ.md)
    clarifies what a negative truth needs but supplies no reason to accept the
-   negative. Tooley's causal argument and Forrest's full argument remain
-   important incomplete reads. Armstrong has subsequently been read in part.
+   negative. The new [causal-production test](coordinator/causal-production/RESULT.md)
+   directly reconstructs selected Tooley1997 passages; his later
+   logical-probability treatment and Forrest's full argument remain incomplete
+   reads. Armstrong has subsequently been read in part.
 3. **Direction versus determination.** The [arrow read](../time-direction/ARROW_READ.md)
    has now entered the paper, so “read something about entropy” is no longer
    the next task. Audit its reversal contract, base and comparison class first.
@@ -88,7 +90,18 @@ needed to complete that handoff.
 has a precise manuscript handoff. The new audit is internal, not independent
 expert review.
 
-### 2. Test one substantive ontology premise: causal production
+### 2. Follow the completed causal-production test to its remaining premise
+
+The [first source-led test](coordinator/causal-production/RESULT.md) and
+[worked law-variation comparison](coordinator/causal-production/LAW_VARIATION_TEST.md)
+are now written, with a bounded
+[native audit](causal-production-review/RESULT.md). Tooley's actual1997 route
+uses causal-law logical probabilities, not a simple definition of production.
+A finite ordinary-probability model reproduces the displayed asymmetry, but
+assumes the directed dependence and is not a countermodel to the whole theory.
+Bare growth likewise supplies no cross-law invariance by itself. The stronger
+claim that actuality explains that invariance remains a live explanatory
+proposal. No ontology is selected.
 
 The proposed question is:
 
@@ -96,16 +109,21 @@ The proposed question is:
 > time in a way that a rival retaining the relevant physical organization,
 > counterfactual dependencies and records cannot also explain?
 
-Start with Tooley's own causal argument and its dependence on temporal
-actuality and absolute simultaneity, using the locally available book. Read the
-exact argument before deciding its premises; chapter headings and later reports
-are insufficient. Compare a source-faithful opposing account, with Albert/Price
-as leads rather than a complete menu of theories. Do not assume every party
-already accepts the same causal metaphysics or even the same physical category.
+The [argument card](coordinator/causal-production/ARGUMENT_CARD.md) now reconstructs
+the relevant1997 premise and the strongest recovery. Next, inspect the later
+logical-probability treatment and one serious published non-Humean reply before
+claiming to answer the strongest current version. The2024 and2025/26 Tooley
+sources are abstract-depth leads; Mellor1998's full review remains inaccessible.
+The sharper question is what warrants preserving a root fact or distribution
+under a law change, and whether indexed actuality is needed to ground that
+comparison. Do not substitute empirical conditional probabilities for the
+source's logical probabilities, or assume every party already accepts the same
+causal metaphysics or physical category.
 
-The first deliverable is one argument card: explanandum; primary premises and
-locators; strongest rival; the exact point of disagreement; what each account
-would have to change; and whether the support is deductive or explanatory.
+The next deliverable should extend the completed argument card at that exact
+premise: explanandum; primary premises and locators; strongest rival; the point
+of disagreement; what each account would have to change; and whether the support
+is deductive or explanatory.
 If both accounts retain the claimed explanation, record that failure of
 selection. If a primitive causal/actuality premise does the work, state the
 independent reason to accept it; do not reject primitives just for being
@@ -115,8 +133,9 @@ prediction, but its costs and benefits must be compared symmetrically.
 **Exit:** a completed argument with a substantive defended premise, or an exact
 failure that narrows the next question. One bounded revision, then disposition;
 no renamed recovery of the stopped occurrence-to-exhaustiveness family. This is
-a proposed next source-led investigation, not a launched worker or a claim that
-it will settle ontology.
+the limit on a further source-led comparison, not a claim that it will settle
+ontology. The first attempt and recovery are completed; a full-theory refutation
+or explanation of the direction has not been obtained.
 
 ### 3. Earn significance for one surviving mathematical claim
 
