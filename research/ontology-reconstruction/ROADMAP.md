@@ -11,6 +11,12 @@
 > constitutive submission's reconstruction dilemma was rejected; its task
 > remains in review. Three prepared contracts remain unlaunched.
 
+The coordinator's [worked attempt](../agentic-philosophy/CONSTITUTIVE_GROUNDING_TEST.md)
+now has bounded analytic review. It separates making constituting events
+concrete from excluding other events. A separate GLM philosophical pilot
+launched from `e59467a` and has not supplied a handback at this update.
+An entailment failure does not settle the remaining explanatory comparison.
+
 > **Latest 30 October: the philosophical target is now sharper.**
 > [Maximality and existential openness](coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md)
 > separates local lawfulness from the category of complete possible histories.

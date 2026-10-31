@@ -125,6 +125,29 @@ whose consequences substantially reorganize a live problem. That assessment
 needs informed scrutiny beyond this project's agents and may remain disputed.
 No scalar originality score or unanimous agent vote replaces it.
 
+### Ways this test could suppress a real advance
+
+The protocol itself needs criticism. It can favor checkable but unimportant
+deductions, punish speculative conceptual work too early, or confuse a rival's
+ability to accommodate a result with equal explanatory merit. An expansion
+countermodel defeats a particular entailment; it does not settle an abductive
+comparison. An event realist's ability to recognize processes does not earn
+event realism a default preference, and a process account's ability to name
+its realizers does not earn exclusion of other events.
+
+A transformative contribution may expose a false presupposition in the
+original question and replace the question. Record that as a new proposed
+contribution, with reasons why the reformulation retains what mattered;
+do not reject it merely for failing to answer the old question literally.
+Conversely, silently substituting an easier problem is not a transformation
+we should reward. The distinction requires philosophical judgment.
+
+Nor must every contribution take the form of a deductive proof. A defended
+explanatory preference may survive disputed premises. Its reasons and costs
+must be assessed symmetrically, rather than hidden in our choice of shared
+description, admissibility conditions or a scoring rule. This is a fallible
+research discipline, not an ontology-neutral algorithm for recognizing truth.
+
 ## 5. First application to our actual outputs
 
 These are retrospective, unblinded case assessments, not benchmark results.
@@ -185,3 +208,13 @@ prospective comparison with fixed questions, sources, model/tool budgets,
 human assistance and selection rules. That experiment has not been run.
 External human philosophical review remains a distinct future step; nobody
 has been contacted or entered into a competition through this note.
+
+**31 October execution:** the coordinator has now carried through
+[one argument and revision](CONSTITUTIVE_GROUNDING_TEST.md), with a bounded
+[native analytic review](grounding-inclusion-review/RESULT.md). The argument
+fails to turn an inclusion requirement into an exhaustive inventory; the
+revision remains a possible process-mereological proposal. This does not
+refute every explanatory preference for it. A separate GLM pilot launched
+from committed question card `e59467a`; its unreturned proposal is not used
+to claim a result here. This is execution of a case, not measured workflow
+improvement or historical discovery.
