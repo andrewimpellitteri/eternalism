@@ -1,5 +1,16 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **31 October: frontier and contribution audit.**
+> [What would count as a breakthrough?](agentic-philosophy/BREAKTHROUGH_TEST.md)
+> separates historical originality, argument quality, significance and AI
+> attribution, and applies those tests to current outputs. No new temporal
+> ontology is established. The [response/feedback round](ontology-reconstruction/coordinator/RESPONSE_MEMORY_BENCHMARK.md)
+> has bounded analytic review, including source budgets and a sufficient
+> field-energy upper bound; its mathematics is an elementary application of
+> known results. The [constitutive submission's central inference](ontology-reconstruction/coordinator/CONSTITUTIVE_SUBMISSION_REVIEW.md)
+> was rejected. The next [bounded philosophical attempt](agentic-philosophy/PILOT_QUESTION.md)
+> must complete the constitutive-to-existence bridge rather than add examples.
+
 > **Later philosophy, 30 October:** the [weak-coupling test](ontology-reconstruction/coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md)
 > and its bounded audit separate exact material autonomy, approximate unity
 > and an exact temporal boundary. Restriction-hereditary tests select no

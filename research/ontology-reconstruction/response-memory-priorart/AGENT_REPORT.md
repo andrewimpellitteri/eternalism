@@ -4,6 +4,16 @@ Date: 2026-10-30. Branch: `agent/ontology-response-memory-priorart`.
 Bounded prior-result challenge for the response-memory contract. Submission for
 independent review; not an accepted completion and not a temporal-ontology verdict.
 
+**Coordinator disposition:** the runner marked this exit incomplete because
+the root AGENT_REPORT.md was unchanged, although this fresh committed lane
+report and both research files were present and clean. Coordinator inspected
+all three and fast-forwarded`fc5d3f2`; the root report remains unchanged.
+Acceptance is limited to the corrected prior-result challenge, with source
+locator corrections in RESULT.md. Worker numerical sanity checks below are
+historical reports, not reproduced or used for acceptance. Theorem6 is the
+unique-steady-state result; realization independence is stated in the
+preceding §8.2 discussion. Finite-argument Bessel bounds use DLMF10.9.4.
+
 ## Done and files
 
 - Compared the three nearest primary works at hypothesis/result level, at the
@@ -19,7 +29,7 @@ independent review; not an accepted completion and not a temporal-ontology verdi
   consequences** (three-line derivation from the printed kernel + folklore
   kernel-norm identity + DLMF 10.7.3/10.17.3; full derivation in RESULT.md §3).
 - Kernel normalization checked against (A.1): exact match, including 1/(4πr).
-- Verified fading-memory realization invariance is Boyd–Chua Thm 6 (already known);
+- Verified fading-memory realization invariance is Boyd–Chua §8.2's discussion preceding Thm6 (already known);
   not claimed as new anywhere in the outputs.
 - Philosophical linkage checked at primary-access level: Brading 2013 law-constitutive
   present (Phil. Sci. 80(5):1101–1111, DOI 10.1086/673897); public PDF accessibility
@@ -130,8 +140,9 @@ handbooks) are recorded above rather than resolved by assumption.
 
 ## Proposed next tasks
 
-1. Access Polyanin (2016) retarded-solution section and Gradshteyn–Ryzhik (2007) §6.6xx
-   in print/library; look for the kernel statement and any |J₁|/z-type printed integral.
+1. Access Polyanin (2016) and Gradshteyn–Ryzhik (2007) in print/library;
+   exact relevant sections are unverified. Look for the kernel statement and
+   any |J₁|/z-type printed integral; the cited bibliography gives books, not sections.
 2. If the coordinator's benchmark proceeds, state it as a kernel-norm-identity
    corollary of (A.1) with the explicit "elementary consequence" label from RESULT.md,
    citing Salnikov et al. 2021 App. A + DLMF 10.7.3/10.17.3 + Boyd–Chua Thm 5 as

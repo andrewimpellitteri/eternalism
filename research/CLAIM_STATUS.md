@@ -1,5 +1,22 @@
 # Current claim and dependency ledger
 
+## 31 October: response review and philosophical contribution gate
+
+The [response benchmark](ontology-reconstruction/coordinator/RESPONSE_MEMORY_BENCHMARK.md),
+[feedback calculation](ontology-reconstruction/coordinator/FEEDBACK_CONSTITUTIVE_TEST.md)
+and source-budget extensions have bounded native analytic review. The
+prior-result audit classifies the norm/support contrast as elementary;
+no mathematical novelty is claimed. Its missing fresh root handback was
+recovered from clean lane-report commit `fc5d3f2`, integrated and corrected
+by the coordinator. Both bounded response tasks are accepted within that scope.
+
+The constitutive-extent submission remains in review; its reconstruction-to-
+constitution dilemma is rejected. The [contribution test](agentic-philosophy/BREAKTHROUGH_TEST.md)
+and [single-attempt question card](agentic-philosophy/PILOT_QUESTION.md) are
+methodological proposals, not a validated benchmark, philosophical breakthrough
+or AI capability result. No new ontology is selected; historical priority
+and external philosophical review remain separate questions.
+
 Updated 30 October 2026. Integration ledger; status is inherited from the named accepted review unless explicitly marked as newly derived or open. 'Reviewed' means internal research review, not external refereeing or unrestricted novelty. Read alongside [CURRENT_SYNTHESIS.md](CURRENT_SYNTHESIS.md).
 
 | Claim | Current status | Essential scope / remaining gate | Evidence |

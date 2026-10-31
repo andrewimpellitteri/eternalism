@@ -5,6 +5,14 @@ Bounded prior-result audit for the coordinator contract
 (`research/ontology-reconstruction/coordinator/RESPONSE_MEMORY_CONTRACT.md`, 30 Oct 2026).
 This is a novelty-challenge submission for independent review, not a verdict.
 
+**Coordinator integration,30October:** accepted only as a bounded
+prior-result challenge after the corrections below. Realization independence
+is the discussion in §8.2 preceding Theorem6; Theorem6 itself concerns
+unique steady state. A finite-argument Bessel bound uses DLMF10.9.4, not
+the small-argument asymptotic alone. Exploratory numerical values are not
+used in the accepted argument. No exact printed predecessor found within
+this search is a coverage statement, not a positive novelty finding.
+
 ## 1. The candidate claim audited
 
 Fix r>0; the fixed-r 3+1 retarded channel acting on bounded source histories f:
@@ -16,7 +24,7 @@ with the three-part claim:
 (b) ‖R_m−R₀‖_{L∞→L∞} ≤ C_*·m/(4π), C_* = ∫₀^∞ |J₁(z)|/z dz < ∞, and for fixed r the
     ratio ‖R_m−R₀‖/m → C_*/(4π) as m→0;
 (c) for a fixed finite time-lag window the error is instead O(m²).
-Fading-memory realization invariance is already known (Boyd–Chua §8.2, Theorem 6) and is
+Fading-memory realization invariance is already known (Boyd–Chua §8.2 discussion preceding Theorem6) and is
 not treated as a candidate.
 
 ## 2. Three nearest primary works, compared at hypothesis/result level
@@ -48,8 +56,9 @@ not treated as a candidate.
   signal sets, uniformly for all time (peak error, worst case over K).
 - Result level: Theorem 5(I) (p. 1157): A: C(ℝ)→C(ℝ) is LTI + fading memory iff it has a
   convolution representation A u(t) = ∫₀^∞ u(t−τ) h(dτ) with **h a bounded measure on ℝ₊**
-  (may contain δ-functions). Theorem 6 (§8.2): fading memory is an input/output property,
-  independent of realization.
+  (may contain δ-functions). The discussion preceding Theorem6 (§8.2) states
+  that fading memory is an input/output property, independent of realization;
+  Theorem6 then concerns unique steady state under its stated hypotheses.
 - Match/mismatch: our R_m, R₀ are instances of their class (bounded convolution measures;
   the light-cone δ is a measure atom; the J₁ tail is absolutely continuous with finite
   mass). The paper supplies the framework and the already-known realization invariance —
@@ -87,11 +96,13 @@ not treated as a candidate.
    - Substitute z = m√(s²−r²):
        ‖R_m−R₀‖ = ∫_r^∞ m|J₁(m√(s²−r²))|/(4π√(s²−r²)) ds
                  = (1/4π)∫₀^∞ |J₁(z)|/√(r²+z²/m²) dz ≤ (m/4π)∫₀^∞ |J₁(z)|/z dz,
-     since √(r²+z²/m²) ≥ z/m. Finiteness: |J₁(z)| ≤ z/2 for 0≤z≤2 (series first term;
-     DLMF 10.7.3 small-z form) and |J₁(z)| ≲ z^{−1/2} at large z (DLMF 10.17.3 Hankel
+     since √(r²+z²/m²) ≥ z/m. Finiteness: J₁(z)=O(z) near zero
+     (DLMF10.7.3) and |J₁(z)| ≲ z^{−1/2} at large z (DLMF 10.17.3 Hankel
      expansions), so C_* < ∞. Ratio limit: ‖R_m−R₀‖/m = (1/4π)∫₀^∞ |J₁(z)|/√(r²m²+z²) dz
      → C_*/(4π) by dominated convergence (dominating function |J₁(z)|/z).
-   - (c) similarly: |J₁(u)| ≤ u/2 gives window error ≤ m²W/(8π) for a window of width W;
+   - (c) similarly: |J₁(u)| ≤ u/2, u≥0, follows from the Poisson integral
+     DLMF10.9.4 with ν=1, inspected directly by the coordinator. It gives
+     window error ≤ m²W/(8π) for a window of width W;
      the harmonic-source phase comparison in Salnikov (A.2)–(A.3) already shows O(m²)
      for single frequencies.
    Accordingly: **do not claim mathematical novelty** for (a), (b), or (c). The exact
@@ -121,28 +132,28 @@ requirement of an independently specified organizing criterion.
 ## 5. Kernel normalization check (contract kill criterion)
 
 Contract kernel vs Salnikov (A.1) with s = t−t′, r = R: δ(s−r)/(4πr) −
-θ(s−r)(m/u)J₁(mu), u = √(s²−r²) — **exact match**, including the 1/(4πr) normalization of
+θ(s−r)mJ₁(mu)/(4πu), u = √(s²−r²) — **exact match**, including the 1/(4πr) normalization of
 the light-cone term. Retarded/no-free-field and point-detector idealizations remain the
 coordinator's to handle (outside this lane's scope).
 
-## 6. Numerical sanity check (within budget: 0.06 s)
+## 6. Exploratory numbers excluded from acceptance
 
-`python3 /private/tmp/opencode/rm-priorart/verify.py` (series for |z|≤30, DLMF-10.17.3
-asymptotic beyond; Simpson):
-- C_* ≈ 1.536 on z∈[0,200], analytic tail bound for z>200 ≤ 0.113 ⇒ C_* ≈ 1.5–1.65
-  (only finiteness is load-bearing; value not needed for the verdict);
-- ratio ‖R_m−R₀‖/m ÷ C_* at r=1: m=0.5 → 0.866; m=0.2 → 0.950; m=0.1 → 0.986;
-  m=0.05 → 1.004 (last value within the few-per-mille accuracy of the asymptotic
-  approximation used) — consistent with the dominated-convergence limit C_*/(4π).
+The worker reported a 0.06-second numerical sanity check from temporary
+code not included in its submission. It was not reproduced by the coordinator
+and is not needed for the proof. In particular, a reported normalized ratio
+above1 is an approximation artifact, not a feature of the exact formula,
+whose integrand bounds the ratio by1. The original numbers remain in
+commit`fc5d3f2`; no numerical constant or accuracy estimate is accepted here.
 
 ## 7. Bounded next steps
 
 1. Coordinator may state the benchmark as: "kernel-norm identity applied to the printed
    (A.1) kernel", citing Salnikov et al. (A.1) + DLMF 10.7.3/10.17.3, marked "elementary
    consequence; no exact printed predecessor found within audit limits".
-2. The single unchecked printed neighborhood: Polyanin (2016) retarded-solution section
-   and Gradshteyn–Ryzhik (2007) §6.6xx Bessel integrals (both paywalled print; locators
-   from Salnikov's bibliography [48],[49]). A library/print check for the L¹ constant or
+2. An unchecked printed neighborhood: Polyanin (2016) and
+   Gradshteyn–Ryzhik (2007), cited in Salnikov's bibliography [48],[49].
+   Neither book nor an exact relevant section was checked; the bibliography
+   does not supply those section locators. A library/print check for the L¹ constant or
    a related norm there is the highest-value remaining search.
 3. If the contrast is promoted philosophically, position it explicitly against Brading
    (2013) and Savitt (both recorded), not as a new bridge.

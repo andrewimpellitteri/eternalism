@@ -1,5 +1,16 @@
 # From physical constraints to a defended temporal ontology
 
+> **31 October: assess the philosophical contribution itself.**
+> The [breakthrough test](../agentic-philosophy/BREAKTHROUGH_TEST.md)
+> distinguishes originality, validity, significance and AI attribution.
+> A [single question card](../agentic-philosophy/PILOT_QUESTION.md) requires a
+> completed constitutive-to-existence argument and its strongest rival response
+> before more supporting examples. This extends earlier admissibility work;
+> it is not a demonstrated discovery method. The response/feedback round has
+> bounded analytic review and an elementary prior-result verdict. The
+> constitutive submission's reconstruction dilemma was rejected; its task
+> remains in review. Three prepared contracts remain unlaunched.
+
 > **Latest 30 October: the philosophical target is now sharper.**
 > [Maximality and existential openness](coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md)
 > separates local lawfulness from the category of complete possible histories.

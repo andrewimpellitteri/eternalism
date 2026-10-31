@@ -5,6 +5,13 @@ what “agentic philosophy” currently means, the closest prior art, where agen
 help, where they fail, and a concrete swarm design for producing something
 new.
 
+**30 October extension:** [What would count as a breakthrough?](BREAKTHROUGH_TEST.md)
+separates useful output, historical originality, philosophical advance and AI
+attribution. It applies an additional consequential-inference test to this
+project's actual results and proposes one bounded ontology pilot. Six selected
+primary readings are recorded. This is a methodological proposal, not evidence
+that our workflow improves discovery rates or has produced a new ontology.
+
 The implemented extension is [the creative-search protocol](creativity-loop/PROTOCOL.md),
 with [recent mathematics examples](creativity-loop/RECENT_MATH.md) and an
 [executed observer-access pilot](creativity-loop/pilot/RESULT.md). It adds
