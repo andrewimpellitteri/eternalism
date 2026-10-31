@@ -13,8 +13,8 @@ ontology proposals was launched.
 
 The most useful new sidecar was a bounded audit of the time-direction section
 that had been added after the main red-team. The coordinator read the complete
-native report, repaired its stale description of its own constant-solution
-example, and checked the corrected mirror proof and quantifiers. The disposition
+native report, requested and verified repair of its stale description of its own
+constant-solution example, and checked the mirror proof and quantifiers. The disposition
 adds a separate direct wave-equation example where a coarse energy restriction
 strictly enlarges the fixing set while leaving a continuum of histories. That
 example corrects a general rationale only; it establishes nothing about physical
