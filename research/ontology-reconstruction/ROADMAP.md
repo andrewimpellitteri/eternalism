@@ -1,5 +1,184 @@
 # From physical constraints to a defended temporal ontology
 
+Updated 31 October 2026. This section sets current priorities. The earlier
+plans and launch notices are preserved below as history. The project has no
+preferred temporal ontology; internal acceptance, novelty and external review
+remain different gates.
+
+## Where we are
+
+**We have several internally reviewed physical and mathematical constraints.
+We have not established a temporal ontology or a comparative explanatory
+preference for one.** In the original programme, Phase 2 (reconciliation and
+falsification) has produced useful corrections, and Phase 3 has mathematical
+results but no independently defended selecting bridge. Phase 4, a positive
+account surviving external challenge, has not been reached. The four original
+rival/classification/bridge/equivalence worker submissions remain in review;
+completed bounded coordinator audits do not accept those submissions wholesale.
+
+| Milestone | Present position | Evidence and missing step |
+|---|---|---|
+| Separate becoming, fixing, truth and existence | Working comparison framework; sources uneven | [Unified paper](../what-the-past-can-fix/main.tex), [claim ledger](../CLAIM_STATUS.md). A represented history is not already an admitted concrete inventory |
+| Relativistic constraints and lawful comparisons | Several results internally reviewed under named assumptions | Stein–GR is conditional on cross-spacetime locality and the off-shell category. Scalar-control results inherit external PDE and regularity inputs. No general physical impossibility theorem for rival inventories |
+| Stronger matched-data control | Conditional finite-prefix corollary accepted at bounded scope | [Disposition](../lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md). Same pointed past, total incoming mass and finitely many cumulative masses; future scalar readouts still vary. Not full incoming data, ADM or practical prediction |
+| Whole-function control | Candidate remains in review | [Coordinator audit](../lawful-completions/coordinator/central-history-audit/RESULT.md) repairs two worker objections; combined inverse/limit/category obligations remain. No limit from arbitrary finite samples |
+| Ontological selection | Still open; several proposed bridges failed their stated tests | [Stopped occurrence family](../agentic-philosophy/result-search-round1/DISPOSITION.md), [process-explanation audit](coordinator/PROCESS_EXPLANATION_REPORT.md). Constitution and organization have not supplied exhaustive inventory |
+| Novelty and external challenge | Unfinished | [Paper review](../what-the-past-can-fix/REVIEW.md), [gates](../../GATES.md). Source access, nearest-result comparison, internal review, external criticism and release are separate |
+
+No percentage of “ontology solved” follows from this table. The mathematical
+advances and the philosophical bottleneck are not interchangeable units.
+
+## Where the repository is lacking
+
+1. **The positive philosophical step.** We have effective tests of proposed
+   inferences, but no completed argument explaining why a particular inventory
+   is required or preferable. The first remaining process question is why the
+   organizing relation constitutes a real unity. A further argument would be
+   needed to get from that unity to its temporal inventory. Event realism does
+   not earn a default preference merely because a restricted account fails.
+2. **Source depth at that step.** The [literature audit](../agentic-philosophy/claude-literature-gaps/LITERATURE_AUDIT.md)
+   exposes gaps in causal production, composition, grounding and abduction.
+   Its surname counts diagnose coverage; they do not measure philosophical
+   competence or novelty. [Totality](../agentic-philosophy/claude-literature-gaps/TOTALITY_READ.md)
+   clarifies what a negative truth needs but supplies no reason to accept the
+   negative. Tooley's causal argument and Forrest's full argument remain
+   important incomplete reads. Armstrong has subsequently been read in part.
+3. **Direction versus determination.** The [arrow read](../time-direction/ARROW_READ.md)
+   has now entered the paper, so “read something about entropy” is no longer
+   the next task. Audit its reversal contract, base and comparison class first.
+   Then distinguish exact agreement from probabilities over alternatives and
+   a low-entropy boundary condition from an existence premise. Reversible
+   equations alone do not settle all of these questions.
+4. **Integration and review debt.** The accepted prefix corollary is missing
+   from the paper and was absent from the ledger. The ledger is repaired in
+   this update; manuscript integration needs a source-owner handoff. The
+   [review queue](../REVIEW_QUEUE.md) is a snapshot, not a verdict: some rows
+   have substantive rejection or repair notes, some lack a complete report,
+   and two Stein audits are deliberately paused. Preserve them, rather than
+   restarting or bulk-accepting them. Dated planning notices below are not
+   instructions to relaunch old batches.
+5. **A frozen claim for scrutiny outside the project.** The unified paper is
+   assembled, but its internal review and source-depth table do not constitute
+   external validation. The older [gate contract](../../GATES.md) also needs an
+   explicit submission-unit decision before it can govern the newer unified
+   paper. Resolve the nearest prior result and source correspondence for one
+   selected claim before treating the full programme as ready for release.
+
+## Next work, in order
+
+### 1. Finish the current contract audit and repair the handoff
+
+Task `temporal-arrow-contract-review` has returned a bounded native review.
+The coordinator's [disposition and manuscript handoff](coordinator/roadmap-audit-2026-10-31/ARROW_DISPOSITION.md)
+retain the class-invariant mirror formula, distinguish the transformed event
+from the original event, and reject a general inference from a coarse boundary
+condition to little exact information. A coordinator wave-equation example
+shows strict enlargement of a fixing set under a coarse energy restriction;
+it is not a physical Past-Hypothesis model. Exact input hashes and replacement
+wording are recorded. Claude's manuscript and reading notes remain with their
+author. Source-owner application and a source/PDF check remain; the informal
+Past-Hypothesis expectation is not a result.
+
+For the finite-prefix result, hand over its exact finite-schedule statement,
+source-conditional assumptions and review disposition. Keep it a sidecar until
+source-owner integration and a source/PDF check. No whole-function theorem is
+needed to complete that handoff.
+
+**Exit:** navigation and ledger agree with the accepted scope; any arrow repair
+has a precise manuscript handoff. The new audit is internal, not independent
+expert review.
+
+### 2. Test one substantive ontology premise: causal production
+
+The proposed question is:
+
+> Does a source-faithful account of causal production support actuality at a
+> time in a way that a rival retaining the relevant physical organization,
+> counterfactual dependencies and records cannot also explain?
+
+Start with Tooley's own causal argument and its dependence on temporal
+actuality and absolute simultaneity, using the locally available book. Read the
+exact argument before deciding its premises; chapter headings and later reports
+are insufficient. Compare a source-faithful opposing account, with Albert/Price
+as leads rather than a complete menu of theories. Do not assume every party
+already accepts the same causal metaphysics or even the same physical category.
+
+The first deliverable is one argument card: explanandum; primary premises and
+locators; strongest rival; the exact point of disagreement; what each account
+would have to change; and whether the support is deductive or explanatory.
+If both accounts retain the claimed explanation, record that failure of
+selection. If a primitive causal/actuality premise does the work, state the
+independent reason to accept it; do not reject primitives just for being
+primitive. A possible explanatory preference need not produce a new empirical
+prediction, but its costs and benefits must be compared symmetrically.
+
+**Exit:** a completed argument with a substantive defended premise, or an exact
+failure that narrows the next question. One bounded revision, then disposition;
+no renamed recovery of the stopped occurrence-to-exhaustiveness family. This is
+a proposed next source-led investigation, not a launched worker or a claim that
+it will settle ontology.
+
+### 3. Earn significance for one surviving mathematical claim
+
+Select one submission unit. For the Stein–GR core, put the exact theorem beside
+Stein, Clifton–Hogarth and the nearest applicable deformation/naturality result
+at their real hypotheses. For a scalar-control submission, compare the actual
+marked observable and matched mass data with the nearest prediction/scattering
+construction, not the phrase “different future”. These are alternative bounded
+priority assignments; do not launch both automatically.
+
+Deliver one predecessor/result matrix, the proof dependencies and a standalone
+proof readable without trusting a project review. If the result is a known
+corollary, credit it and narrow the contribution to what survives. Do not make
+the paused energy-condition or causal-set audits prerequisites of a smaller
+core claim unless that selected submission actually uses them.
+
+**Exit:** a frozen, source-traceable claim and an exact question suitable for an
+outside specialist. Preparing the packet is local work. Sending it or submitting
+it remains a separate user-authorized action; no contact has been made here.
+
+### 4. Reconcile rather than expand
+
+Inspect the already returned coordination-unity and cycle/recovery submissions
+before any fresh toy-model batch. Distinguish a real organizing mechanism,
+a useful grouping, a process's duration and an exhaustive concrete realm.
+Finish central-history control only against its remaining written obligations;
+its success would strengthen the physical comparison, not supply the missing
+philosophical premise. The modal comb correction has its own priority and
+BST_NF-scope gate; it does not become an ontology argument by proximity.
+
+If causal production yields no differential support, the next candidate must
+name a different explanandum with primary support, for example temporal
+experience or a theory of grounding. Broadening reading without selecting that
+question is not progress on the bridge. At most one positive philosophical
+candidate and one supporting technical audit should be active in this programme
+at once; this is a coordination limit, not a limit on Claude's separate work.
+
+## Conditions for a positive result
+
+A candidate must state inventory, standpoint/actuality, persistence, truth and
+grounding, the role of passage, its physical category and its strongest rival.
+It must execute the consequential inferential step, and distinguish an
+independently defended bridge from a definition that already selects the view.
+An abductive argument is allowed, with explicit comparative reasons. A genuine
+classification or underdetermination result is also an admissible outcome.
+
+Stop an alleged advance when it only renames established machinery, changes
+the fixed comparison base, imposes the conclusion as a premise, or infers
+existence from representation/predictive sufficiency. Preserve the narrower
+result when it has value. No agent vote, formal build or quantity of folders
+establishes historical novelty, external acceptance or a temporal ontology.
+
+## Planning history
+
+The following is the earlier roadmap, preserved for provenance. Its dated
+status and launch instructions are superseded by the current section above.
+
+<details>
+<summary>Earlier plans and handbacks, 29–31 October 2026</summary>
+
+# Earlier programme
+
 > **Current result-search disposition:** the
 > [completed round](../agentic-philosophy/result-search-round1/DISPOSITION.md)
 > stops the P2 occurrence family after its one recovery and countermodel audit.
@@ -181,3 +360,5 @@ transitivity proof, and assembles the C¹,¹ finite-readout candidate. These
 are not completed independent worker reviews. The scale note now identifies
 an additional burden: why the proper relation should exhaust concrete
 existence, rather than track causal availability inside a universal inventory.
+
+</details>

@@ -3,6 +3,19 @@
 The [unified paper](what-the-past-can-fix/) restates the proved results. This ledger still governs
 their status. Files listed in [REVIEW_QUEUE.md](REVIEW_QUEUE.md) gain no status by being in the tree.
 
+## Current roadmap and latest bounded acceptance, 31 October
+
+The [current roadmap](ontology-reconstruction/ROADMAP.md) separates the reviewed
+physical results from the unresolved philosophical selection. The
+[finite-prefix corollary](lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md)
+is now accepted at its named conditional scope: it matches total incoming mass
+and finitely many geometric cumulative incoming masses while retaining an open
+range of future scalar readings. It is not yet integrated into the unified
+manuscript. Whole central-history control remains in review; the coordinator
+[audit](lawful-completions/coordinator/central-history-audit/RESULT.md) rejects
+two worker objections without accepting the full theorem. Earlier dated updates
+below retain their historical scope.
+
 ## 31 October: completed source-hinge round
 
 The [round disposition](agentic-philosophy/result-search-round1/DISPOSITION.md)
@@ -46,10 +59,13 @@ Updated 31 October 2026. Integration ledger; status is inherited from the named 
 | Closed-dust massless determination/refocusing | Reviewed fixed-background result | Conformal scalar, exact stated global class and boundary conventions; priority gate | [Horizons](horizons/main.tex), [verification](where-openness-lives/VERIFY.md) |
 | Closed-dust positive-mass classification | Accepted research sidecar | All smooth real solutions, physical m>0; F=Jpast for tau<pi, F=M for tau>=pi; not yet new manuscript theorem | [Review disposition](horizons/mass-classification/REVIEW_STATUS.md) |
 | Exact nonfixing implies practical unpredictability | Rejected implication | O(m^2) bounded ambiguity and noisy records require separate norm/measurement contracts | [Bounded ambiguity](horizons/bounded-ambiguity/RESULT.md) |
+| Time reversal makes past- and future-based fixing identical at every event | Not established; corrected mirror contract has bounded analytic review | Entire admissible class must be transported bijectively; relates b to theta(b). A symmetry fixing b still transports the fixing set. Boundary-conditioned physical and chance claims need separate analysis; manuscript repair pending | [Audit and handoff](ontology-reconstruction/coordinator/roadmap-audit-2026-10-31/ARROW_DISPOSITION.md) |
 | Bivalent GBT secretly requires present concrete future grounds | Rejected as a generic critique | Strong rival allows later grounds and additional future-directed facts | [Disagreement](future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md) |
 | Same causal past means same existing bow-tie realm | Rejected | Spacelike exterior matter can differ and already belong to that realm | [Philosophical scope](lawful-completions/coordinator/PHILOSOPHICAL_SCOPE.md) |
 | Smooth coupled same-past finite-reading interpolation at fixed incoming mass | Corollary of bounded reviewed components | Separate smooth-category and finite-control audits; inherited external inputs, no new whole-theorem audit; priority comparison open | [Smooth category and control corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md) |
 | C¹,¹ coupled finite readout range at fixed incoming mass | Finite-control audit accepted at bounded scope, 31 October | Same full pointed causal past; open ball of radius c√E at each fixed finite schedule; actual total incoming mass, not prefix or ADM equality; external LOY inputs retained | [Acceptance and corrections](lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md) |
+| Finite scalar readout range at fixed total and sampled cumulative incoming masses | Conditional finite-prefix corollary accepted at bounded internal scope, 31 October | Same entire pointed causal past; fixed finite proper-time schedule and strictly increasing mass fractions; radius c√E with schedule/fraction-dependent constants. Geometric incoming null cuts, not local energy, ADM, full mass function or Cauchy data. Smooth MGHD category inherits its separate bridge | [Proof](lawful-completions/coordinator/prefix-mass-audit/RESULT.md), [review disposition](lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md) |
+| Whole prescribed central scalar history at fixed incoming mass | Incomplete conditional candidate; task remains in review | Coordinator repairs two worker objections and expands derivative/mass estimates; combined function-space limit and category obligations remain. Finite samples do not imply this theorem | [Current audit](lawful-completions/coordinator/central-history-audit/RESULT.md) |
 | Every finite sign pattern of those scalar readouts | Corollary of the bounded reviewed finite-control chain | N-dependent smallness and amplitudes; no exchange of finite-N and fixed-resolution quantifiers | [Quantifiers and corollary](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
 | Actual incoming boundary mass equals quarter profile norm | Independently reviewed deduction in reduced scattering class | Exact pre-pulse flatness and source uniform estimates; no ADM identification | [Mass proof](lawful-completions/coordinator/INCOMING_MASS.md), [review](lawful-completions/energy/REVIEW_INCOMING_MASS.md) |
 | Finite control needs a differentiable global scattering selection | Superseded proof requirement | Sufficient for IFT route, not necessary for degree-before-limit route | [Degree route](lawful-completions/coordinator/DEGREE_ROUTE.md) |

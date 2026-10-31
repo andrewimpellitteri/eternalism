@@ -226,6 +226,8 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-occurrence-countermodel-review` — Audit the explicit rival to occurrence-to-current-concreteness | 12 | — | native-occurrence-countermodel-review |
 | done | `ontology-modal-counterexample-review` — Independently test the dense-comb counterexample to modal nontriviality | 12 | — | native-modal-counterexample-review |
 | done | `ontology-process-explanation-review` — Audit the controlled-process explanatory comparison and its modal scope | 10 | — | native-process-explanation-review |
+| review | `research-roadmap-audit-2026-10-31` — Reconcile the current roadmap with accepted scope and substantive research gaps | 10 | — | codex-roadmap-audit |
+| review | `temporal-arrow-contract-review` — Audit the new time-reversal fixing contract and its philosophical scope | 10 | — | native-temporal-arrow-review |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

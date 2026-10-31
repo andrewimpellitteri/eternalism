@@ -1,5 +1,25 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **Current position, 31 October:** use the revised
+> [roadmap](ontology-reconstruction/ROADMAP.md) for present milestones and next
+> decisions. The dated launch/status notices below are historical where they
+> conflict with this update. The conditional
+> [finite-prefix corollary](lawful-completions/coordinator/prefix-mass-audit/RESULT.md)
+> now has bounded internal acceptance: the entire pointed causal past, total
+> incoming mass and a finite list of geometric cumulative incoming masses can
+> agree while future scalar readings vary over a small open ball. This result
+> is not yet in the unified manuscript. It supplies neither a whole incoming
+> mass function nor an ontological verdict. The separate
+> [whole central-history audit](lawful-completions/coordinator/central-history-audit/RESULT.md)
+> repairs two objections but leaves that theorem in review. The
+> [process-explanation disposition](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md)
+> retains no exclusive inventory advantage. The new
+> [time-direction audit and handoff](ontology-reconstruction/coordinator/roadmap-audit-2026-10-31/ARROW_DISPOSITION.md)
+> retain the model-class-invariant reversal formula, correct its fixed-base
+> scope, and leave the physical Past-Hypothesis question open. Its manuscript
+> corrections await the source owner; earlier manuscript reviews do not accept
+> that new discussion automatically.
+
 > **31 October consolidation:** the proved results are now gathered in one paper,
 > [What the Past Can Fix](what-the-past-can-fix/). Read it first. This file remains the dated
 > narrative. [REVIEW_QUEUE.md](REVIEW_QUEUE.md) lists worker results with no sign-off, including
