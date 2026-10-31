@@ -1,0 +1,107 @@
+\subsection{A norm bound for hidden alternatives}
+
+Exact fixing quantifies over every admissible difference, however small.
+To ask about its size, a restriction on alternatives must be supplied. Use
+the conformal Cauchy-data norm
+\[
+ N(f,v)^2=\|\Lambda f\|_2^2+\|v\|_2^2
+\]
+at the auxiliary slice $\eta=0$, with unit-$S^3$ volume $2\pi^2$.
+This is not an observer's measured physical-energy budget.
+
+\begin{proposition}\label{prop:norm}
+Let $\psi_\lambda$ and $\psi_0$ have the same smooth data $(f,v)$ and solve
+the cylinder equation with spatially homogeneous smooth real potential
+$\lambda q(\eta)$ and with zero potential, respectively. For $\eta\ge0$, put
+$Q(\eta)=\int_0^\eta |q(u)|\,du$. Then
+\begin{equation}\label{eq:norm}
+ \sup_X|\psi_\lambda(\eta,X)-\psi_0(\eta,X)|
+ \le \frac{|\lambda|Q(\eta)e^{|\lambda|Q(\eta)}}{\sqrt6}\,N(f,v).
+\end{equation}
+If $f=0$, the denominator improves to $\sqrt{12}$.
+\end{proposition}
+
+\begin{proof}
+Let $C_{\lambda,k}$ and $S_{\lambda,k}$ be the fundamental solutions with
+data $(1,0)$ and $(0,1)$ at frequency $k\ge1$. Their Volterra equations and
+Gronwall's inequality imply
+$|C_{\lambda,k}|\le e^{|\lambda|Q/k}$ and
+$|S_{\lambda,k}|\le e^{|\lambda|Q/k}/k$. Substitution back into those
+equations bounds the differences from the free multipliers by
+\[
+ |C_{\lambda,k}-\cos k\eta|\le B/k,\qquad
+ |S_{\lambda,k}-\sin(k\eta)/k|\le B/k^2,
+ \quad B=|\lambda|Qe^{|\lambda|Q}.
+\]
+Acting on $\Lambda f$ rather than $f$, the first multiplier acquires another
+$1/k$. The addition identity for an orthonormal harmonic basis is
+$\sum_j|Y_{kj}(X)|^2=k^2/(2\pi^2)$, since the eigenspace has dimension
+$k^2$ and its diagonal projector is rotation-invariant. Joint
+Cauchy--Schwarz on the coefficients of $(\Lambda f,v)$ bounds the squared
+evaluation norm by
+\[
+ \sum_{k=1}^\infty\frac{k^2}{2\pi^2}
+       \left(\frac{B^2}{k^4}+\frac{B^2}{k^4}\right)
+ =\frac{B^2}{6}.
+\]
+Removing the position-data term halves this bound. The argument concerns
+smooth solutions and the bounded difference functional; it does not assign
+point values to arbitrary individual finite-energy fields.
+\end{proof}
+
+Apply this to any rescaled difference $h_m=a(\phi_1-\phi_2)$ of two massive
+solutions agreeing exactly on $\Is(b)$, with data $(f,v)$. Smooth extension to zero
+implies that both data vanish on $B(Y,\tau)$. The massless solution $h_0$
+with the same data vanishes on $\Is(b)$ by finite propagation. Thus
+$h_0(x)=0$ for every $x\in F_0(b)$, and \eqref{eq:norm} gives
+\begin{equation}\label{eq:hidden}
+ |h_m(\eta,X)|\le
+ \frac{m^2Q(\eta)e^{m^2Q(\eta)}}{\sqrt6}N(f,v),
+ \qquad (\eta,X)\in F_0(b),
+\end{equation}
+where, for dust,
+\[
+ Q(\eta)=\frac{a_m^2}{4}
+ \left(\frac{3\eta}{2}-2\sin\eta+\frac{\sin2\eta}{4}\right).
+\]
+The bound controls all such smooth alternatives with $N\le1$, not just the
+witness in Proposition~\ref{prop:mass}. At fixed targets their rescaled
+ambiguity is $O(m^2)$. For physical fields divide by $a(\eta)>0$; uniform
+physical-field control requires staying away from the singular endpoints.
+Without a norm bound any nonzero hidden solution can instead be scaled to
+an arbitrarily large target difference. Neither convention is an observation
+model supplied by the geometry.
+
+\subsection{Errors in records are a different question}
+
+Equation~\eqref{eq:hidden} retains exact agreement on the whole past while
+changing the law. It is not a stability theorem for noisy records under a
+fixed law. Even at a massless-fixed target, an aggregate field-error norm
+need not control a point value. To see the regularity issue explicitly, fix
+any interior target $(\eta_*,Y)$ and let $Z_k$ be the real unit-$L^2$ zonal
+harmonic centered at $Y$, with $Z_k(Y)=k/\sqrt{2\pi^2}$. The smooth massless
+solutions
+\[
+ \psi_K(\eta,X)=\frac1{\sqrt K}
+  \sum_{k=K}^{2K-1}\frac{\cos(k(\eta-\eta_*))}{k}Z_k(X)
+\]
+have conserved conformal norm $N=1$ and target value
+$\sqrt{K/(2\pi^2)}$, but
+\[
+ \|\psi_K\|_{L^2((0,2\pi)\times S^3)}^2
+ =\frac\pi K\sum_{k=K}^{2K-1}\frac1{k^2}\le\frac\pi{K^2}.
+\]
+Their error on $\Is(b)$ is even smaller. They do not agree \emph{exactly}
+there. This is unbounded point evaluation under a specified norm, already
+present with records of the entire strip, not a causal-horizon or detector
+failure. Every fixed spatial average with profile $\chi\in L^2(S^3)$ instead
+satisfies $|\langle\chi,\psi_K(\eta)\rangle|\le\|\chi\|_2/K$.
+No general past-record stability theorem for such averages is asserted.
+
+A common finite spectral cutoff changes the exact question too: every
+solution in that restricted massless class is a finite real-analytic sum,
+so agreement on any nonempty open region entails agreement everywhere.
+Its fixing set is all of $M$. Thus finite mode sums cannot establish exact
+past agreement with a nonzero future difference in the unrestricted smooth
+theory. These are classical regularity observations, not further priority
+claims or results about the physical measurement process.

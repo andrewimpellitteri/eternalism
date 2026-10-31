@@ -1,0 +1,75 @@
+\subsection{Causal sets}\label{sec:causets}
+
+Let $\mathsf{CS}$ have locally finite posets as objects and order-embeddings
+with order-convex image as morphisms. A becoming theory on $\mathsf{CS}$ is
+defined as before, with (CB) read as $x\le b\Rightarrow x\,B\,b$.
+
+\begin{proposition}\label{prop:causets}
+Every becoming theory on $\mathsf{CS}$ is either the causal order in every
+causal set or the universal relation in every causal set.
+\end{proposition}
+
+\begin{proof}
+If $x,b$ are incomparable, $\{x,b\}$ is convex, so both embeddings of the
+two-element antichain are morphisms: the verdict on incomparable pairs is a
+single symmetric bit $\beta$, the same in every causal set. If $x>b$, the
+interval $I=[b,x]$ is finite and convex, so $x\,B\,b$ depends only on $I$. If
+$\beta=1$, in $I\sqcup\{z\}$ with $z$ incomparable to all, $x\,B\,z\,B\,b$; so
+every such verdict is positive and $B$ is universal. If $\beta=0$ and
+$x\,B\,b$ for some $x>b$, adjoin $e$ with $e<x$ only: $I$ remains convex, so
+$x\,B\,b$ there, $e\,B\,x$ by (CB), and $e\,B\,b$ with $e$ incomparable to $b$,
+contradicting $\beta=0$.
+\end{proof}
+
+Wüthrich and Callender state that ``The analogue of this theorem, however, is
+straightforwardly false in CST'' \citep[\S3]{WC2017}. Their counterexample, on
+the diamond causal set $d<b,c<a$, adds the incomparable pair $\{b,c\}$ to the
+causal order and is invariant under that causal set's automorphisms. It is not
+the restriction of any becoming theory in the present sense: relating $b$ to
+$c$ fixes $\beta=1$, and Proposition~\ref{prop:causets} then relates $b$ to $d$,
+which their relation excludes. Their own footnote~5 observes that the
+counterexample ``could be a small proper part of a much larger causet''; (LC) is
+exactly the requirement that the relation on such a part agree with the
+relation in the larger causal set. The diagnosis matches the continuum case:
+invariance within one structure is too weak, and locality across structures
+restores Stein's theorem, here with no residual freedom because a causal set
+has no light-cone boundary. Their claim is true on its own terms; the present
+result uses a stronger, cross-structure hypothesis. Note also that
+$\mathsf{CS}$ includes posets that are not manifoldlike (antichains, disjoint
+unions), and the proof uses them: this is the causal-set counterpart of the
+off-shell premise of Remark~\ref{rem:offshell}.
+
+\subsection{Gödel universes are isolated}\label{sec:godel}
+
+\begin{proposition}\label{prop:godel}
+Extend $\GH$ to all oriented, time-oriented spacetimes with the same
+morphisms. If $M$ is totally vicious ($p\in\Ichr_{\mathrm s}(p)$ for all $p$),
+then every morphism into $M$ is onto, every theory satisfying (CB) has
+$B_M=\U_M$, and there is no morphism between $M$ and any causal spacetime, in
+either direction.
+\end{proposition}
+
+\begin{proof}
+In a totally vicious spacetime $\Ichr(p)=\Ifut(p)=M$ for every $p$ (MS \S3.1).
+Let $V$ be nonempty, open and causally convex, $p\in V$ and $q\in M$. There are
+timelike curves $p\to q$ and $q\to p$; their concatenation is a causal curve
+with both endpoints in $V$, so it lies in $V$, and $q\in V$. Thus $V=M$
+(compare MS Remark~2.12). (CB) gives $B_M\supseteq\Ichr_M=M\times M$. A morphism
+$N\to M$ from a causal $N$ would be onto, hence an isometry, which is
+impossible since $M$ has closed timelike curves; a morphism $M\to N$ would map
+a closed timelike curve of $M$ to one of $N$.
+\end{proof}
+
+Gödel's universe is totally vicious, so universal becoming there is forced;
+this is Gödel's first step, in Stein's terms. But local covariance transmits
+constraints only along morphisms, and by Proposition~\ref{prop:godel} no
+morphism connects a totally vicious spacetime with a globally hyperbolic one. Gödel's modal step, from what holds
+in such a universe to what holds in ours \citep[pp.~561--562]{Godel1949}, as
+quoted in \citep[\S6]{Monton2006}, requires that becoming be the same
+feature across nomologically possible universes. Local covariance is one
+precise way of requiring a rule to be the same across universes, and it
+transmits nothing out of totally vicious ones. A version of Gödel's step that does go through
+would need a different cross-universe link. Proposition~\ref{prop:nonlocal} shows what such links
+look like: natural but non-local. Compare the conceptual responses of
+\citet{Savitt2005}, \citet{Dieks2006} and \citet{Aames2022}, which locate
+becoming locally along worldlines.

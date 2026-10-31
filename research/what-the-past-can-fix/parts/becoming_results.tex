@@ -1,0 +1,89 @@
+\begin{theorem}[Clifton--Hogarth]\label{thm:flat}
+For every becoming theory, $B_\Mink\in\{\Ichr,\Jm,\U\}$.
+\end{theorem}
+
+\begin{proof}
+Proper orthochronous Poincaré maps are automorphisms of $\Mink$ in $\GH$, so
+$B_\Mink$ is invariant under them by (LC). Clifton and Hogarth's Theorem~1
+\citep[p.~365]{CH1995} gives the conclusion from this invariance,
+transitivity and chronological becoming. Its proof (pp.~365--367) uses only
+point-preserving spatial rotations, boosts and translations, and they note
+that it does not use spatial reflections (pp.~385--386). Their stated
+hypothesis is invariance under all time-orientation-preserving isometries,
+reflections included; using only the proper orthochronous subgroup is a
+weakening whose adequacy rests on their proof, not their statement.
+\end{proof}
+
+\begin{theorem}[No becoming outside the causal past]\label{thm:main}
+Let $B$ be a becoming theory.
+\begin{enumerate}
+\item[(a)] If $B_\Mink\neq\U$, then $B_M\subseteq\Jm_M$ for every $M\in\GH$.
+\item[(b)] If $B_\Mink=\U$, then $B_M=\U_M$ for every $M\in\GH$.
+\end{enumerate}
+Hence either $B$ is universal everywhere, or $\Ichr_M\subseteq
+B_M\subseteq\Jm_M$ for every $M$.
+\end{theorem}
+
+Call $B$ \emph{universal} if $B_M=\U_M$ for every $M$. By
+Theorem~\ref{thm:main} this holds if and only if $B_\Mink=\U$, and if $B_M=\U_M$
+for one $M$ then it holds for all; otherwise $B$ is \emph{non-universal}.
+
+\begin{corollary}[No shared present]\label{cor:nopresent}
+Call $x$ and $b$ \emph{co-present} in $M$ if $x\,B_M\,b$ and $b\,B_M\,x$. For
+every non-universal becoming theory, co-presence is the identity relation in
+every $M\in\GH$. Equivalently, no becoming theory is local, non-trivial and
+admits two distinct co-present events in some globally hyperbolic spacetime.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:main}(a), $x\le b$ and $b\le x$, and globally hyperbolic
+spacetimes are causal, so $x=b$.
+\end{proof}
+
+\begin{corollary}[Worldline-dependent becoming]\label{cor:worldline}
+Suppose that for each $M\in\GH$, each inextendible timelike curve $\lambda$ in
+$M$ and each $b\in\lambda$ a set $B_{M,\lambda}(b)$ is given, satisfying
+Clifton--Hogarth's worldline becoming ($\Ichr(b)\cap\lambda\subseteq
+B_{M,\lambda}(b)$) and worldline transitivity ($a\in B_{M,\lambda}(b)$ and
+$b\in B_{M,\lambda'}(c)$ imply $a\in B_{M,\lambda'}(c)$) \citep[pp.~362--363]{CH1995},
+and local covariance in the form: for a morphism $\psi:N\to M$, an inextendible
+timelike $\lambda_N$ in $N$ and any inextendible timelike $\lambda$ in $M$
+extending $\psi\circ\lambda_N$, $a\in B_{N,\lambda_N}(b)\iff\psi(a)\in
+B_{M,\lambda}(\psi(b))$. Then $B_{M,\lambda}(b)$ does not depend on $\lambda$, and
+the resulting relation is a becoming theory. Hence Theorem~\ref{thm:main}
+applies to worldline-dependent becoming.
+\end{corollary}
+
+Clifton and Hogarth anticipated that extending their Theorem~2 would be
+harder still (``much less to extend Theorem 2'', p.~385). Under local
+covariance it is not: as they themselves note (p.~363), worldline transitivity
+makes observers whose worldlines cross agree, and the remaining work is done by
+Theorem~\ref{thm:main}.
+
+Write $E^-=\Jm\setminus\Ichr$ for the horismos (lightlike-only relation).
+
+\begin{theorem}[Classification of the residual freedom]\label{thm:class}
+Let $B$ be a non-universal becoming theory and $N_M=B_M\cap E^-_M$. Then $N$
+is locally covariant and satisfies
+\begin{enumerate}
+\item[(NC)] if $(x,y),(y,b)\in N_M$ and $(x,b)\in E^-_M$, then $(x,b)\in N_M$.
+\end{enumerate}
+Conversely, if $N\subseteq E^-$ is locally covariant and satisfies (NC), then
+$B=\Ichr\cup N$ is a becoming theory. On $\Mink$, $N$ is empty or all of $E^-$.
+\end{theorem}
+
+\begin{theorem}[Non-uniqueness]\label{thm:weyl}
+Let $N_M(x,b)$ hold iff $x\in E^-(b)$, $x\neq b$, and some lightlike geodesic
+segment from $x$ to $b$ contains a point at which the Weyl tensor is nonzero.
+Then $\Ichr\cup N$ is a becoming theory equal to $\Ichr$ on $\Mink$, equal to
+$\Jm$ on any spacetime with nowhere-vanishing Weyl tensor (such as the
+Schwarzschild exterior), and strictly between $\Ichr$ and $\Jm$ on spacetimes
+that are flat on a nonempty causally convex open set and have nonzero Weyl
+tensor somewhere. It depends only on the conformal structure (not merely the
+curvature: conformally flat spacetimes such as FLRW give $\Ichr$).
+\end{theorem}
+
+\begin{proposition}[Regularity]\label{prop:reg}
+Let $B$ be non-universal. If every $B_M$ is closed in $M\times M$, then
+$B=\Jm$. If every $B_M\setminus\Delta_M$ is open, then $B=\Ichr$.
+\end{proposition}

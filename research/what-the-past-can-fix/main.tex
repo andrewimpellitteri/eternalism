@@ -1,0 +1,872 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1.05in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype,booktabs,array,tabularx}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\GH}{\mathsf{GH}}
+\newcommand{\Mink}{\mathbb M}
+\newcommand{\U}{\mathcal U}
+\newcommand{\Ifut}{I^{+}}
+\newcommand{\Ichr}{I^{-}}
+\newcommand{\Jp}{J^{+}}
+\newcommand{\Jm}{J^{-}}
+\newcommand{\B}{\mathcal B}
+\newcommand{\Is}{I^-_{\mathrm s}}
+\newcommand{\Isp}{I^+_{\mathrm s}}
+\newcommand{\Det}{\mathrm{Det}}
+\newcommand{\partheading}[1]{\bigskip\begin{center}\large\bfseries #1\end{center}\addcontentsline{toc}{section}{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\title{What the Past Can Fix:\\[2pt]
+\large becoming, determination and existence in general relativity}
+\author{Andrew Impellitteri}
+\date{31 October 2026 (working draft)}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Four questions about the future are often run together: whether it has become,
+whether it is fixed, whether it exists, and whether claims about it are already
+true. We separate them, with theorems where the question is mathematical and with countermodels to stated inferences where it is not. Under a locality premise, what has become
+for an event in any globally hyperbolic spacetime lies between its chronological
+and causal past, unless everything has become for everything, and a transitive local relation of becoming defined from the metric alone admits no shared present. What is fixed
+from an event is a different set. It contains what the causal structure
+guarantees, which we characterize by slices and compute in the standard models,
+and a particular law can fix more. In the closed dust model a massless field is
+fixed on part of an event's far future while its near future stays open, and every
+massive field is fixed exactly on the past before maximum expansion and
+everywhere from then on. In a smooth complete class of Einstein--scalar
+spacetimes, conditional on named external estimates, the whole pointed causal
+past and the total incoming mass leave an open ball of future central readings
+free, while agreement on everything outside the causal future fixes the entire
+development. So whether the future is open depends on which base is held fixed and on the law. Given a base and a law, the answer is the same whatever one says about whether the future exists; if the base is taken to be what exists from an event, the answer varies with the ontology. Fixing also has no arrow of its own: for time-reversal invariant laws every such result has a mirror image, so the slogan that the past is fixed and the future open needs another source. We then ask what would be needed to reach existence. Stated bridges about constitution and persistence supply lower bounds on what is concrete from an event. A restricted ontology needs an upper bound, an
+unrestricted one a stronger lower bound, and neither comes from the results
+above. We sort the stated candidates, and record which inferences fail.
+No temporal ontology is selected.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}\label{sec:intro}
+
+Is the future real? Is it already fixed? Is what we say about it already true?
+Has it become? In ordinary thought these are nearly one question. An open future
+is one that does not yet exist, whose outcome nothing settles, about which there
+is no fact yet. Philosophers of time have long known that the pieces can be
+pulled apart in principle. A growing block in Broad's sense \citep{Broad1923}, with deterministic laws added, has an unreal future that is settled. A later-grounded bivalent theory has
+truths about what does not yet exist \citep{CR2018}. What has been missing is an
+account, in general relativity, of how far apart the pieces actually lie, and of
+exactly what fixes what.
+
+This paper gives that account. It has one thesis:
+\begin{quote}
+What has become for an event, what is fixed from it, what exists from it and what
+is true from it are four different relations. General relativity constrains the
+first sharply under a locality premise. It makes the second a mathematical question, once a law and a comparison are named, and we answer it exactly in the models treated. Nothing here determines the third or the fourth, and the first two do not determine them.
+\end{quote}
+
+The thesis is defended by results of four kinds. We state them here with their
+conditions.
+
+\paragraph{Becoming (Part I).} Stein's theorem, with its contextual conditions, says that in Minkowski spacetime a transitive, symmetry-invariant relation of becoming that contains the causal past and leaves something unsettled is the causal past \citep{Stein1968,Stein1991}. Clifton and Hogarth give the form whose alternatives are the chronological past, the causal past and the universal relation \citep{CH1995}. A curved spacetime can have no
+symmetries, and the single-spacetime statement is then false. Replacing symmetry
+by the local covariance of quantum field theory restores the result: either
+everything has become for everything in every globally hyperbolic spacetime, or in
+every such spacetime becoming lies between the chronological and causal past
+(Theorem~\ref{thm:main}). The residual freedom is the light cone, and it can depend
+on curvature. For transitive relations that contain the chronological past and are defined from the metric alone, locality, a shared present and non-trivial becoming cannot all be had (Corollary~\ref{cor:nopresent}). Without transitivity they can: the bow tie of Section~\ref{sec:rigidity} has all three.
+A rival with a preferred clock changes the category and is not excluded
+(Section~\ref{sec:becoming-rival}).
+
+\paragraph{Determination on fixed backgrounds (Part II).} What the past fixes is a
+different set. Theorem~\ref{thm:char} characterizes what the causal structure
+guarantees, by a test on slices. Theorem~\ref{thm:map} then lays out what can
+happen. The fixed set can equal the causal past, exceed what is guaranteed on an
+isolated part of the far future, or be everything; the same metric gives different
+answers under different laws; and an exact verdict can flip while the hidden fields change by $O(m^2)$ in a stated norm (equation~\eqref{eq:hidden}). In one closed universe a massless field is fixed at the end of an
+event's worldline before the middle (Theorem~\ref{thm:diamonds}), and every massive
+field has no such islands (Theorem~\ref{thm:massive}).
+
+\paragraph{Determination with gravity (Part III).} Backreaction does not close the
+gap. In a smooth, complete, inextendible class of Einstein--scalar spacetimes, the
+entire pointed causal past of an event and the total incoming mass leave an open
+ball of future central scalar readings free (Theorem~\ref{thm:same-past}), yet
+agreement on the open region outside the event's causal future fixes the whole
+development (Theorem~\ref{thm:rigidity}). Both statements concern the same class. The
+first is conditional on external estimates of Luk, Oh and Yang. Its moral is already
+present for the linear wave equation; what coupling adds is that the moral survives
+gravity, a fixed mass and the axis. Which base is compared therefore matters more than
+any general slogan about openness.
+
+\paragraph{Existence and truth (Part IV).} None of this reaches existence. We show
+what would: a stated principle bounding what is concrete from an event. Stated bridges from the physics give lower bounds. A restricted ontology needs an upper bound, and an unrestricted
+one needs a stronger lower bound (Section~\ref{sec:bounds}). We sort the stated candidates. The useful result is a diagnostic for these candidates: an index on ``concrete from $b$'' is either defined, and then trivial and shared, or primitive, and then a thesis the event realist rejects. Three candidates need support of a different kind. Truth policies are independent again (Section~\ref{sec:truth}). Fixing has no arrow of its own, so the past as a base needs a separate account (Section~\ref{sec:direction}). Section~\ref{sec:revise} records which inferences fail.
+
+\paragraph{What is not claimed.} No temporal ontology is selected. The results are
+conditional as stated, and Appendix~\ref{app:status} gives the status of each. Parts
+of this material overlap prior work, which is credited where it is known; a claim of
+priority would need an audit this paper has not completed.
+
+\section{Setting}\label{sec:setting}
+
+Spacetimes are smooth, connected, four-dimensional, oriented and time-oriented.
+Unless stated otherwise they are globally hyperbolic. We follow Clifton and Hogarth
+in taking $\Ichr,\Jm$ to be reflexive \citep[p.~360]{CH1995}. We write $\Is(p)$ for the
+strict chronological past, so $\Ichr=\Is\cup\{p\}$, $x\ll y$ for $x\in\Is(y)$, and
+$x\le y$ for $x\in\Jm(y)$. Standard causal facts are cited from Minguzzi and Sánchez
+\citep{MS2008}, abbreviated MS, whose $I^\pm$ are our strict sets. A \emph{Cauchy time
+function} is a continuous surjection $t:M\to(\alpha,\beta)$ strictly increasing along
+future causal curves, with Cauchy level sets $S_c=t^{-1}(c)$ \citep{BS2005}.
+
+Fix an event $b$, which we call the standpoint. We attach to it the following.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lYl@{}}
+\toprule
+Object & Meaning & Decided by\\
+\midrule
+$B_M(b)$ & what has become for $b$ & a locality premise (Part I)\\
+$\Det(b)$ & what the causal structure guarantees from $\Is(b)$, fixed by every law with the domain-of-dependence property & causal structure (Part II)\\
+$F_{\mathcal L}(S)$ & $x\in F_{\mathcal L}(S)$ if any two solutions agreeing on $S$ agree at $x$; $F_{\mathcal L}(b):=F_{\mathcal L}(\Is(b))$ & law, class and base (Parts II, III)\\
+$E_b$ & what is concrete from $b$ & a bridge premise (Part IV)\\
+truth at $b$ & which claims about later events hold from $b$ & a semantic policy (Part IV)\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+These are not five names for one thing, and the paper is about the gaps between them.
+Three points of method follow from keeping them apart.
+
+\emph{First, name the comparison.} Agreement of accessible records, agreement of an
+intrinsic causal past, and agreement of an entire proposed realm are three different
+contracts. A failure under one is not a failure under another. Here we mostly compare exact agreement of classical fields on a named region.
+
+\emph{Second, separate physical premises, definitions and bridges.} A definition that
+already assumes an ontology cannot establish it. We mark bridge premises as such.
+
+\emph{Third, keep models in their domains.} A finite example or a closed dust universe
+shows what is possible under stated hypotheses. Neither is a claim about the actual
+cosmology.
+
+\partheading{Part I. Becoming}
+
+\section{Becoming under locality}\label{sec:becoming}
+
+\input{parts/becoming_framework.tex}
+
+\subsection{Why one spacetime is not enough}\label{sec:single}
+
+\input{parts/becoming_single.tex}
+
+\subsection{The classification}\label{sec:results}
+
+\input{parts/becoming_results.tex}
+
+Proofs are in Appendix~\ref{sec:proofs}.
+
+\subsection{Discrete and extreme cases}\label{sec:variants}
+
+\input{parts/becoming_causets.tex}
+
+\input{parts/becoming_energy.tex}
+
+\subsection{What the classification shows}\label{sec:becoming-rival}
+
+\input{parts/becoming_phil.tex}
+
+\subsection{Prior work on becoming}\label{sec:prior}
+
+\input{parts/becoming_prior.tex}
+
+A modal route to a relativistic present is related. M\"uller's branching-based proposal
+\citep{Muller2019} defines co-presentness from branching structure, and its Theorem~1 asserts
+non-trivial co-presentness on every history outside two featureless cases. Under the
+necessary nonempty-chain reading, a comb with a dense set of branch points on a real trunk
+satisfies that paper's Definition~6, is not featureless, and has identity co-presentness on
+its trunk. In the comb family with branch set $D$ a proper subset of $\mathbb R$, all
+histories have non-trivial co-presentness if and only if $D$ is not dense. That concerns an
+abstract order, not a relativistic manifold, and the later formulation of the theory lies
+outside the construction.
+
+\partheading{Part II. Determination on a fixed background}
+
+\section{What the causal structure guarantees}\label{sec:det}
+
+Grant Part I. Does the unreality of $b$'s future from $b$, on views that read having
+become as being real, make the future open from $b$? Openness in the relevant sense is a
+matter of what the past fixes, and that depends on the laws and on global causal
+structure. Geroch's domain of prediction supplies the tool \citep{Geroch1977}, and
+Manchak's work on prediction its limits \citep{Manchak2008}.
+
+\input{parts/fixing_guaranteed.tex}
+
+\section{The standard models}\label{sec:examples}
+
+\input{parts/fixing_models.tex}
+
+\section{Changing the law}\label{sec:mass}
+
+Write $\tau=\eta_b$ for the conformal time of a standpoint.
+
+
+\input{parts/fixing_mass.tex}
+
+\begin{theorem}[Massive fields, complete classification]\label{thm:massive}
+On the closed dust model, for each $m>0$ let $\mathcal L_m$ be all smooth real solutions of
+$(\Box_g-R_g/6-m^2)\phi=0$, and let $b=(\tau,Y)$. Then
+\[
+F_m(b)=\Jm(b)\quad\text{if }0<\tau<\pi,\qquad F_m(b)=M\quad\text{if }\pi\le\tau<2\pi.
+\]
+The second line also holds for $m=0$.
+\end{theorem}
+
+\begin{proof}[Outline]
+Put $\psi=a\phi$, so that $\psi_{\eta\eta}+(\Lambda^2+V(\eta))\psi=0$ with $V=m^2a^2$ entire and positive
+on $(0,2\pi)$. A successive-approximation construction gives a line Riemann function jointly
+analytic in its variables. Periodizing it gives the displacement and velocity kernels on
+$S^3$. The analytic pieces of the kernels are not identically zero, so the joint support of
+the two Cauchy kernels has no open holes. For $\tau<\pi$ and $x\notin\Jm(b)$, the kernel
+support therefore leaves the closed ball $\bar B(Y,\tau)$, and data supported off that ball
+give a solution vanishing on $\Is(b)$ and not at $x$; the reverse inclusion is continuity.
+For $\tau>\pi$ the trace of $\Is(b)$ on an early slice is the whole sphere. For $\tau=\pi$ it is
+the sphere minus a point, and smoothness forces both data to vanish.
+The full argument is in the project's public note (Appendix~\ref{app:status}).
+\end{proof}
+
+So before maximum expansion any positive mass removes every island of extra fixing, while
+the threshold itself does not move, and at the exact threshold $\tau=\pi$ the law fixes
+everything although $\Det(b)=\Is(b)$. Dense traces do this work there, not causal curves.
+
+\input{parts/fixing_norm.tex}
+
+\section{The fixing map}\label{sec:map}
+
+The results combine into a single picture. For a law class $\mathcal L$ of continuous fields
+with the domain-of-dependence property, and a non-universal becoming theory,
+\begin{equation}\label{eq:chain}
+\Is(b)\ \subseteq\ B(b)\ \subseteq\ \Jm(b)\ \subseteq\ F_{\mathcal L}(\Is(b)),
+\qquad \Is(b)\ \subseteq\ \Det(b)\ \subseteq\ F_{\mathcal L}(\Is(b)).
+\end{equation}
+
+\begin{theorem}[All patterns occur]\label{thm:map}
+Each row below holds, and each of $\Jm(b)\subseteq F$, $\Is(b)\subseteq\Det(b)$ and $\Det(b)\subseteq F$ can be strict or an equality. Here $B(b)=\{x:x\,B_M\,b\}$ and $F=F_{\mathcal L}(\Is(b))$.
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}Yll@{}}
+\toprule
+Spacetime, law, standpoint & $\Det(b)$ & $F(b)$\\
+\midrule
+Minkowski, conformal scalar & $\Is(b)$ & $\Jm(b)$\\
+Minkowski, preferred-flow law & $\Is(b)$ & $M$\\
+Closed dust, $\tau<\pi$, conformal scalar & $\Is(b)$ & $M\cap\overline{U_b}$, three diamonds\\
+Closed dust, $\tau<\pi$, comoving flow law & $\Is(b)$ & $(0,2\pi)\times\bar B(Y,\tau)$\\
+Closed dust, $\tau<\pi$, mass $m>0$ & $\Is(b)$ & $\Jm(b)$\\
+Closed dust, $\tau=\pi$, mass $m\ge0$ & $\Is(b)$ & $M$\\
+Closed dust, $\tau>\pi$, every law above & $M$ & $M$\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\end{theorem}
+
+\begin{proof}
+\eqref{eq:chain} is Remark~\ref{rem:laws} with Theorem~\ref{thm:main}. Row one is Propositions~\ref{prop:conformal} and~\ref{prop:sharp}; row two Proposition~\ref{prop:conformal} and Remark~\ref{rem:laws}; rows three
+and four Proposition~\ref{prop:dust}, Theorem~\ref{thm:diamonds} and the flow calculation after it;
+rows five and six Proposition~\ref{prop:dust} and Theorem~\ref{thm:massive}; row seven
+Proposition~\ref{prop:dust} with Corollary~\ref{cor:cauchy}.
+\end{proof}
+
+Read down the table. Reading having become as being real, being unreal from $b$ does not imply being open: rows two to four, six and
+seven. Being guaranteed is a lower bound that says nothing about what a law adds: rows two to four and six. The same metric gives different answers under different laws: rows three to five.
+Determinism does not make the future fixed from a standpoint: in row one the law has unique
+Cauchy evolution and nothing beyond the past is fixed. And an exact verdict can change while the
+fields barely do: by \eqref{eq:hidden}, the differences hidden at a massless-fixed target are
+$O(m^2)$ in a stated norm. Exact nonfixing and practical unpredictability are separate questions.
+
+\partheading{Part III. Determination with gravity}
+
+\section{Same past, different futures}\label{sec:coupled}
+
+A fixed background leaves room for a reply. Perhaps gravity ties things together: perhaps
+coupling, conserved mass or regularity at the center would make the past of an event determine
+what later happens there. Subject to the inputs below, it does not.
+
+Work with the spherically symmetric Einstein--real massless scalar system. Use double null coordinates $(u,v)$ with $t=(u+v)/2$ and a launch event $b$ at $t=0$ on the center, with future unit vector $n$ along it; $r$ is the area radius and $m$ the Hawking mass. Choose incoming characteristic data at past null infinity from a compact family: fix $0<A<T_1$, smooth $F_k$ with disjoint supports about $T_k$ inside $(A,2T_N+1)$ and $F_k(T_j)=\delta_{kj}$, and a smooth nonzero $G$ supported after $2T_N+1$. Take $x$ in a small closed ball on which $\beta$ below is smooth and positive. Set
+\[
+\Phi_{\varepsilon,x}=\varepsilon\Bigl(\sum_k x_kF_k+\beta(x)G\Bigr),\qquad
+\beta(x)=\Bigl(\beta_0^2-\sum_k x_k^2\|F_k\|_2^2/\|G\|_2^2\Bigr)^{1/2}.
+\]
+Disjoint supports make $\|\Phi_{\varepsilon,x}\|_2$ independent of $x$, so the total incoming
+mass does not depend on the target, and the tail $G$ pays for the change after every reading.
+
+\begin{theorem}[Same past, open readings]\label{thm:same-past}
+Fix $N\ge1$ and $0<T_1<\dots<T_N$. Subject to the external inputs below, there are $\mathcal E_*,c>0$ such that for every $0<\mathcal E<\mathcal E_*$ and every $y\in\mathbb R^N$ with $|y|<c\sqrt{\mathcal E}$ there is a spherically symmetric solution $(M,g,\phi,b,n)$ on $\mathbb R\times\mathbb R^3$ such that:
+\begin{enumerate}
+\item the entire pointed causal past $\Jm(b)$, with its field and launch tangent, is the same
+Minkowski past with $\phi=0$ for all $y$;
+\item the iterated incoming boundary mass $\lim_{V\to\infty}\lim_{u\to-\infty}m(u,V)$ equals $\mathcal E$;
+\item the central future unit geodesic $\gamma$ with $\gamma(0)=b$, $\gamma'(0)=n$ exists for all
+proper time, and $\phi(\gamma(T_j))-\phi(b)=y_j$ for each $j$.
+\end{enumerate}
+The selected solutions have smooth representatives that are future and past causally geodesically
+complete, $C^0$-inextendible maximal globally hyperbolic developments.
+\end{theorem}
+
+\begin{proof}[Structure of the proof]
+\emph{External inputs.} Theorem~1.1 and Definition~2.1 of \citet{LOY2016} give existence and
+uniqueness on finite cones. Their (1.7)--(1.9), Proposition~3.18 and Section~4 give estimates
+uniform in the cone vertex, and Theorem~1.7 with Section~6 gives causal completeness. Their local
+well-posedness proof and part of the $u$-side higher estimates are omitted or sketched in the
+source. The past half of their completeness theorem is stated in one sentence, and the extension to our compact family is our deduction from their uniform bounds. We retain all of these as inputs.
+
+\emph{Flat wedge.} On $v<A$ the regular function $p=r\phi$ satisfies $p_{uv}=Vp$ with bounded $V$,
+vanishing incoming data and a regular axis. An integral Grönwall argument gives $p=0$, hence
+$m=0$ and the Minkowski geometry there. Along a future causal curve $v$ does not decrease, so
+$\Jm(b)$ lies in the wedge.
+
+\emph{Degree before the limit.} On each finite cone with vertex $u_n$ let $H_n(x)$ be the $N$
+readings. Compactness and characteristic uniqueness make $H_n$ continuous. No uniform continuity in
+$n$ and no continuous global scattering map is used. Explicit estimates give
+$|\varepsilon^{-1}H_n(x)-x|\le C\varepsilon^2$ uniformly, so for small $\varepsilon$ the Brouwer degree
+gives a root of $H_n(x)=\varepsilon z$ for each $n$.
+
+\emph{Limits and mass.} Choose a convergent subsequence of roots and pass to a global reduced
+solution by compactness, taking the cone limit before $u\to-\infty$. On a fixed finite interval
+the exact mass flux identity then has integrand tending uniformly to $\Phi^2/4$, so
+$\mathcal E=\|\Phi\|_2^2/4$. Choosing constants gives the quantifier order stated.
+
+\emph{Regularity.} A finite-order reconstruction gives a $C^{1,1}$ metric and scalar in Cartesian
+charts with unique geodesics. An all-order induction on the early exterior gives a smooth entire
+slice. A polar-areal first-order system, with a constrained coefficient that gains a derivative,
+propagates smoothness by localized $H^3$ persistence, weak--strong uniqueness and a tame continuation
+estimate. Polar slices are Cauchy. Causal completeness with Theorem~1 of
+\citet{GLS2018} gives $C^0$-inextendibility, and a field-preserving common extension
+\citep{Ringstrom2009} gives maximality.
+\end{proof}
+
+Four qualifications matter. The constants depend on the schedule, so this is not one resolution for
+all $N$; every finite sign pattern of readings occurs at $N$-dependent amplitudes. The fixed mass is
+a total: the mass arriving by each reading time is not fixed. Incoming mass is not identified with
+ADM mass. And the argument is target by target, so no scattering map is selected.
+
+The readings differ because data from outside $\Jm(b)$ reach the center. That a past need not fix later readings is known in general \citep{Geroch1977,Manchak2008}. That is the expected mechanism, and the conclusion should not be oversold. For the linear wave equation on Minkowski
+spacetime, $\phi(t,0)=\Phi(t)$ exactly, and every small central history is prescribable with the same
+past. The class and its global regularity are in print \citep{Kehrberger2021}, and the method of
+finite control by disjoint bumps and a topological theorem is established \citep{KehleUnger2022}. In
+another category Carlotto and Schoen show that positive mass need not transmit data inward
+\citep{CarlottoSchoen2016}. What Theorem~\ref{thm:same-past} adds is an exact statement of the
+coupled form, with a mass and a complete maximal category held fixed.
+
+A worry remains: perhaps these are one spacetime viewed from different marks.
+
+\begin{proposition}\label{prop:uncountable}
+Compare solutions with their central geodesic as a distinguished unparametrized curve $\Gamma$,
+under time-orientation-preserving field isometries preserving $\Gamma$. If the central scalar trace is
+$C^1$ and $N\ge2$, an open ball of readings cannot be realized by countably many isometry classes.
+\end{proposition}
+
+\begin{proof}
+Such an isometry restricts to a translation of proper time on $\Gamma$. So every marked reading vector
+from a copy of one solution lies on the curve $\beta\mapsto
+(\phi(\gamma(\beta+T_j))-\phi(\gamma(\beta)))_j$, or its negative if sign reversal is allowed. That curve
+is locally Lipschitz in $\beta$, so it has $N$-dimensional measure zero for $N\ge2$. A countable union
+of null sets contains no ball.
+\end{proof}
+
+Bare metric nonisometry is a stronger claim and needs the center to be intrinsic.
+
+\section{Whole-realm rigidity}\label{sec:rigidity}
+
+Agreement on $\Jm(b)$ is not the only base a theory might hold fixed. Correia and Rosenkranz
+distinguish a pointy from a bow-tie relativistic growing block \citep[Chap.~9]{CR2018}. In the notation of Section~\ref{sec:realms}, these are $E_b=\Jm(b)$ and $E_b=M\setminus(\Jp(b)\setminus\{b\})$.
+The bow tie contains the elsewhere, and so contains exterior radiation that the causal past misses.
+A past-agreement counterexample is not a counterexample to determination by that larger realm.
+
+On a fixed background this is immediate. Put $W_b=\Ichr(\Ifut(b))\setminus\Jp(b)$. In general $W_b$ is smaller than the bow tie, which is why the sufficiency below is the stronger claim. If two solutions of a
+law with the domain-of-dependence property agree on $W_b$, they agree on $\Jp(b)$: every past-inextendible
+causal curve from a point of $\Jp(b)$ meets an early Cauchy slice at a point of $W_b$. This is
+sufficiency, not a claim that all of $W_b$ is needed; exact dense data already determine continuous
+fields, and the least region intercepting the relevant curves is not a minimal information base.
+
+With gravity the comparison is between two spacetimes, and the theorem needs care.
+
+\begin{lemma}\label{lem:cones}
+In the class of Theorem~\ref{thm:same-past}, every two events share a chronological future. Writing
+$W=M\setminus\Jp(b)$, every early level $\Sigma=\{t=t_0\}$ with $t_0<0$ is a Cauchy surface of $M$
+contained in $W$, and is Cauchy in $W$.
+\end{lemma}
+
+\begin{proof}
+In the global Cartesian coordinates of the $C^{1,1}$ reconstruction, whose causal curves are those of the smooth representative, the metric has $g_{tt}=-F$, no time--space terms, and spatial
+eigenvalues $F$ and $\mathcal A$ with $2/9\le F\le8/3$ and $4/9\le\mathcal A\le1$. So $(1,v)$ is timelike for
+$|v|\le1/4$, and straight paths to $(T,0)$ with $T$ large give a common chronological future. For the
+second claim, $t$ increases along future causal curves and $t(b)=0$, so $\Sigma\subset W$. The set $W$ is an
+open past set, so a past causal curve starting in it stays in it, and an inextendible curve of $W$
+cannot end at finite $t<t_0$, since the only ambient boundary of $W$ lies in $t\ge0$, nor escape to spatial infinity, by the cone bound.
+\end{proof}
+
+Since every two events share a chronological future, $W_b=W$ in this class, and $W$ is the bow tie minus $b$.
+
+\begin{theorem}[Whole-realm rigidity]\label{thm:rigidity}
+Let $M_1,M_2$ be smooth maximal developments in this class with marks $b_1,b_2$. Suppose
+$h:W_1\to W_2$ is an onto time-orientation-preserving isometry of metric and scalar. Then there is an onto smooth field-preserving isometry $\Psi:M_1\to M_2$ extending $h$, with $\Psi(b_1)=b_2$. If $h$ also matches the launch germ and tangent, all
+corresponding future proper-time readings agree.
+\end{theorem}
+
+\begin{proof}
+Let $\Sigma_1$ be as in Lemma~\ref{lem:cones} and $\Sigma_2=h(\Sigma_1)$. Then $\Sigma_2$ is Cauchy in $W_2$ and
+acausal in $M_2$, since $W_2$ is causally convex. Every ambient inextendible causal curve has a nonempty past
+tail in $W_2$, and its maximal connected portion there is inextendible in $W_2$, so it meets $\Sigma_2$. Hence
+$\Sigma_2$ is Cauchy in $M_2$. The isometry matches the induced metric, extrinsic curvature, scalar and its normal
+derivative on these surfaces. Both spacetimes are maximal developments of those data, so uniqueness \citep{CBG1969,Ringstrom2009}, in the scalar form of \citet{RingstromNote}, gives an onto smooth field-preserving isometry $\Psi$ with $\Psi|_{\Sigma_1}=h|_{\Sigma_1}$. $\Psi$ and $h$ have the same first jet there, so they agree on the connected set $W_1$, and $\Psi$ carries $\Jp(b_1)=M_1\setminus W_1$ onto $\Jp(b_2)$. Thus $\Jp(\Psi(b_1))=\Jp(b_2)$, and $\Psi(b_1)=b_2$ since $M_2$ is causal. The last claim follows from uniqueness of geodesics.
+\end{proof}
+
+In one physical class, with one deterministic law:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}Yl@{}}
+\toprule
+Held fixed & Future central readings\\
+\midrule
+Whole pointed causal past, and total incoming mass & Open ball\\
+Whole open realm $W$, with marked germ & Fixed, and so is the whole development\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The word ``present'' cannot be substituted for both bases. Neither result says which, if either, is
+what exists from $b$, and the second does not make the determined future exist. It does show that a theorist of the bow-tie realm has a future fixed by what exists from $b$, while a theorist of the pointy realm in the same class does not. That holds for the bow tie generally, since it contains a Cauchy slice; the theorem's added content is the transport between two spacetimes. Openness relative to a realm depends on the realm chosen and the law, and the choice of a realm is not forced by physics.
+
+\section{Realm structure}\label{sec:realms}
+
+Which realms are available? Write $E_b$ for a point-level assignment over a fixed causal frame.
+This is a metalinguistic device, and implies no claim that the frame is concrete. Two conditions do
+much of the work: $b\in E_b$, and persistence along the causal order, $b\le c\Rightarrow E_b\subseteq E_c$.
+
+\begin{proposition}\label{prop:sp}
+Self-inclusion and causal persistence imply $\Jm(b)\subseteq E_b$. With future exclusion
+$E_b\cap\Jp(b)=\{b\}$ and no elsewhere point this gives $E_b=\Jm(b)$; with every elsewhere point it gives
+the bow tie.
+\end{proposition}
+
+\begin{proof}
+If $x\le b$ then $x\in E_x\subseteq E_b$. The rest is the partition of $M$ into past, future and elsewhere.
+\end{proof}
+
+No field equation, Lorentz invariance or transitivity enters. The persistence condition matters:
+with persistence only along timelike order, $\Ichr(b)$ is available too. Correia and Rosenkranz's
+clauses use the full causal order \citep[pp.~144, 148--149]{CR2018}. A presentist denies persistence.
+Choosing between pointy and bow-tie needs further premises. Requiring existence realms to be closed
+would favour the pointy profile, but metric regularity does not supply that; it is a bridge.
+
+The bow tie is also not always what a natural criterion gives. Let $D(b)$ consist of $b$ and the points
+outside its strict causal future that share a strict causal successor with it. On connected causally simple spacetimes this is persistent exactly when every pair of events has a common strict causal future. In the class of
+Theorem~\ref{thm:same-past}, Lemma~\ref{lem:cones} gives $D(b)$ equal to the bow tie. Elsewhere it need
+not be: on a complete conformal cylinder of duration $L$ over a complete spatial manifold $S$, the least
+persistent enlargement of $D$ equals the bow tie at every standpoint exactly when
+$\operatorname{diam}(S)\le L$. Whether a horizon obstructs the criterion depends on the class.
+
+\partheading{Part IV. Existence and truth}
+
+\section{Stages, ended worlds and maximality}\label{sec:maximal}
+
+A truncated spacetime can represent two different things: what exists so far, on a growing view, or a
+whole world that stops. Conflating them makes an openness claim an artefact of representation.
+
+Let $(M,g,\phi)$ be a smooth member of the class above with global center-normalized time $T$, and fix
+$T_0<T_*$. Then $M_<=\{T<T_*\}$ is an open smooth solution with the same complete Cauchy data on $\{T=T_0\}$,
+whose constant-$T$ slices remain Cauchy, and for $T_*$ after $b$ the pointed past of $b$ is unchanged. The
+field equations fail nowhere on it. So three principles have different strengths:
+\begin{description}
+\item[Local lawfulness:] every included point satisfies the equations. Both $M$ and $M_<$ do.
+\item[Continuation is possible:] a regular end with no boundary obstruction admits a lawful extension.
+\item[Maximal-world admissibility:] complete histories representing physically possible worlds are maximal
+developments, unless a physical end rule is stated.
+\end{description}
+Only the third excludes $M_<$ as a complete world, and it is not a consequence of the first. It is a
+defensible methodological choice for comparisons that claim to hold a theory fixed: choosing a shorter
+domain adds a contingent restriction with no boundary mechanism. It is not a refutation of brute endings.
+
+Accepting maximality concedes no ontology. A growing theorist can use $M$ to represent everything that
+does, did or will happen while assigning a proper inventory to each standpoint. So growth with a physically
+determined future is consistent at this level, which refutes any inference from growth alone to
+indeterminism. A completed mathematical representation and an ontological completed history are different
+commitments. The causal-set case makes the same point sharply: the prescribed complex percolation values
+extend to a countably additive measure on the labelled doubly-principal cylinder algebra exactly when
+$p\in[0,1]$ \citep{ProjectPercolation}. A failure of completion in a growth theory is a mathematical fact about a
+measure. It neither refutes becoming nor, where it succeeds, establishes a block.
+
+\section{Truth}\label{sec:truth}
+
+Fix a claim $q$ at $b$ about a reading at a later event. Four claims should be separated. \emph{Outcome
+existence}: in each admitted complete realization the target occurs with a definite value.
+\emph{Settlement}: every realization admitted by the chosen base gives $q$ the same value. \emph{Truth now}:
+$q$ has an absolute truth value at $b$. \emph{Grounding}: an appropriate fact explains that truth, perhaps
+under a later temporal operator.
+
+Take two realizations sharing a stage at $b$, with the target absent from the inventory at $b$ and included
+when it occurs, and with the value differing between them. On policy L, evaluated in a designated realization,
+$q$ is bivalent at $b$, and its truth can be assigned a later ground. This is the restricted form of the later-grounded view \citep{CR2018}, which \citet{Wawer2021} challenges. On policy S, $q$ is evaluated over both realizations and is neither
+supertrue nor superfalse at $b$. Both policies have eventual occurrence, a definite eventual value and the
+same change of inventory. They disagree about truth now. So eventual resolution with growth does not entail
+truth now, and it does not exclude it. This is a restricted counterinterpretation, not a model of any named
+theory or a refutation of bivalence, and the logical point belongs to an established debate.
+
+The physics fixes the comparison and not the policy. Theorem~\ref{thm:same-past} supplies realizations sharing a
+pointed past. Which of them count as admitted, and whether one is designated, is the policy. Designating an
+actual realization is not derived from the past of $b$.
+
+\section{The direction of time}\label{sec:direction}
+
+Nothing so far says why the past should be the base. Write $F^-_{\mathcal L}(b)=F_{\mathcal L}(\Is(b))$ and $F^+_{\mathcal L}(b)=F_{\mathcal L}(\Isp(b))$, and let $\Det^+(b)$ be the set of events all of whose future-inextendible causal curves meet $\Isp(b)$.
+
+\begin{proposition}[Mirror]\label{prop:mirror}
+Let $\theta$ be an isometry of $M$ reversing time orientation, and let $\mathcal L$ be invariant under pullback by $\theta$. Then $\theta(F^-_{\mathcal L}(b))=F^+_{\mathcal L}(\theta(b))$ and $\theta(\Det(b))=\Det^+(\theta(b))$. Without such an isometry, every result of Parts~II and~III that is stated for a time-reversal invariant law holds for the same spacetime with its time orientation reversed.
+\end{proposition}
+
+\begin{proof}
+A difference of solutions vanishing on $\Is(b)$ pulls back to one vanishing on $\Isp(\theta(b))$, and $\theta$ exchanges past- and future-inextendible causal curves. The last claim holds because those results use the orientation only as a label.
+\end{proof}
+
+The proposition is elementary, and its consequences are not idle. In Minkowski spacetime the conformal scalar is fixed from $b$'s strict future exactly on $\Jp(b)$. In the closed dust model the reflection $\eta\mapsto2\pi-\eta$ is such an isometry, so $\Det^+(b)=M$ for $\eta_b<\pi$. The statement that the guarantee changes with cosmic epoch is true, and it has an exact mirror. The Einstein--scalar system is time-reversal invariant, so Theorem~\ref{thm:same-past} has a twin in which a causal future and total outgoing mass leave earlier central readings free. Theorem~\ref{thm:main} carries its orientation in (CB); reverse it and the same proof gives the future lobe.
+
+So exact fixing has no arrow of its own. Under equal bases each side is as fixed or unfixed from the other. ``The past is fixed and the future open'' cannot be read off the fixing relation, and the asymmetry needs another source. We know of three candidates, and the paper is neutral between them. Each gives (CB) a different meaning.
+
+\emph{Thermodynamic.} The dynamics is reversal invariant, and statistics over a present macrocondition make entropy higher on both temporal sides. So Albert adds a law-like posit, the Past-Hypothesis, that the world began in a particular low-entropy macrocondition \citep[p.~96]{Albert2000}. Prediction uses the dynamics and the statistical rule, while most of what we know of the past rests on records, and that asymmetry is meant to follow from the posit \citep[pp.~113--116]{Albert2000}. On this view the past is a natural base because it is what we have records of, and that is explained by a boundary condition and not by $\mathcal L$.
+
+\emph{Perspectival.} Price warns against accepting an argument in one temporal direction while rejecting its mirror \citep[chs.~1--4]{Price1996}. He separates the asymmetries of dependence, causation and agency \citep[pp.~132--133]{Price1996} and defends a perspectival view of causal asymmetry. He presupposes that the present and flow are perspectival, so he is a party to the dispute. Proposition~\ref{prop:mirror} is the fixing instance of his warning. His treatment of cosmology also bears on Part~II: if a low-entropy boundary needs explaining at one end, a time-symmetric Gold universe cannot be dismissed by arguments that assume the arrow \citep[p.~81ff]{Price1996}.
+
+\emph{Causal.} Tooley takes causal direction as basic and bases temporal direction on it \citep{Tooley1997}. A cause is actual as of its effect's time and not conversely \citep{Tooley2010}. On this view the asymmetry of openness would be ontological. He also defends absolute simultaneity, which is the clock-equipped horn of Section~\ref{sec:becoming-rival}.
+
+One question stays open. If $\mathcal L$ includes the Past-Hypothesis it is not reversal invariant, and Proposition~\ref{prop:mirror} fails. We expect exact fixing to change little, since a macrocondition does not fix exact values, and the asymmetry to appear in conditional probabilities over completions. If so, chance given a base belongs beside exact fixing, and much ordinary talk of openness may mean that. We have not proved it.
+
+\section{The upper bound and the lower bound}\label{sec:bounds}
+
+\subsection{What each side owes}
+
+Let $R_b$ be what a restricted view counts as concrete from $b$, and $H$ the represented history. Constitution gives $R\subseteq E_b$ for an activity region $R$, which may include events later than $b$ (Section~\ref{sec:process}). Persistence gives $\Jm(b)\subseteq E_b$ (Proposition~\ref{prop:sp}). A restricted view adds $R_b\subseteq E_b$. These are lower bounds, and every argument from physical organization that we have examined stops at one. Theorem~\ref{thm:main} gives an upper bound only by amplifying an assumed failure of universality, as discussed below. A lower bound cannot settle the matter, because $R_b\subseteq E_b$ is compatible with both $E_b=R_b$ and $E_b=H$.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lYYY@{}}
+\toprule
+ & Pointy restricted & Slice or bow-tie restricted & Event realist\\
+\midrule
+$E_b\subseteq H$ & Holds for every completion through $b$ & Only for completions agreeing on the slice & Holds of one $H$\\
+Selection owed & None & For that part & Which completion, where they differ\\
+Extra claim & $E_b\subseteq R_b$, negative, differs by $b$ & The same & $H\subseteq E_b$, positive, the same for every $b$\\
+Must say & Whether more will come, or why that is unsettled & The same & Why $H$ and not a truncation\\
+Supported by $R_b\subseteq E_b$? & No & No & No\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+So the two debts are not of one kind. Where $H$ is unique in a class all parties accept, the event realist's extra
+claim is a stronger lower bound. Where completions are not unique, the event realist's $E_b\subseteq H$ is a selection
+that a pointy theorist does not owe. Three views fall outside the table: on McCall's view as reported by \citet{Earman2008} $E_b$ lies
+in no single history, fragmentalists have no one $H$, and for a theorist whose $H$ has no referent beyond $R_b$,
+``nothing concrete lies outside $H$'' is the thesis itself. The positive claim carries more events and the negative
+one a changing limit. We know of no neutral way to price that exchange.
+
+\subsection{Totality}
+
+Is ``that's all'' an instance of a known problem? Armstrong's totality fact relates a mereological whole to a property when the whole comprises all things with the property, and serves as truthmaker for negative and general truths \citep[\S6.2]{Armstrong2004}. The property may be abundant and time-indexed, and he grants that the relation sets a limit \citep[pp.~72--73]{Armstrong2004}. Molnar argues it is a negative fact under another
+name \citep{Molnar2000}. The rival accounts differ only about the truthmaker: absences, the world with its contents
+essential \citep{Cameron2008}, the whole positive fact \citep{CheynePigden2006}, or no truthmaker, on optimalist views with Bigelow's supervenience of truth on being (both as reported in \citealp{MacBride2024}). All start from an accepted negative truth and ask what grounds it. None
+is a reason to accept it. Filled as $T(R_b,\text{concrete from }b)$, the slot restates the claim; if the property is
+membership in $R_b$, it is trivial. Forrest's use of general facts in a growing block \citep{Forrest2006} appears to do other work, but we have not read it beyond its abstract and one review, and it could change the first row of the table below.
+
+The neighbouring literature has the core points. Earman says a growing-block theorist cannot deny the future absolutely
+without fixing one truncated model and giving up growth, so the denial is perspectival, and a block theorist can
+say the perspectival version as a triviality \citep[pp.~144--145]{Earman2008}. He separates this rigid denial from a
+shifting one, that far enough beyond now nothing exists, which holds at every stage and fails in block models
+\citep[pp.~144, 159]{Earman2008}. His ``absolute'' is not Fine's: the standard realist holds a tensed denial absolutely
+and keeps growth through what will be, and Deng rejects the step from that view to one fixed block
+\citep[\S4]{Deng2017}. Deng also objects to Tooley that what is actual as of now includes that those facts are all the
+tenseless facts, and that this is tensed \citep[\S6]{Deng2017}. None of these sources discusses the inference from
+constitution to inventory, so they do not state the gap above. No priority audit has been run.
+
+\subsection{Persistence and the rigid claim}
+
+Persisting truths are closed under entailment, so a claim that fails to persist has no persisting entailers.
+``Everything lies in $R_b$'', with $R_b$ rigid, fails to persist wherever the inventory changes, on a growing block or on
+presentism. That is the reason behind Earman's rejection of a rigid denial. It does not touch the shifting form
+``everything is past or present''. The rigid instance follows from the shifting form plus self-location, so the only
+non-persisting ingredient is locational, and the debt moves to the shifting form with an unrestricted quantifier. The
+observation covers positive tenseless and past-tensed premises. It leaves open past-tensed conclusions and non-deductive
+support. It does not cover totality-form constitution claims or a presentist's present-tensed premises. It is close to the familiar point that tenseless premises do not yield tensed conclusions, and it says
+nothing against the event realist.
+
+\begin{proposition}\label{prop:tetrad}
+A growing-block theory cannot hold truthmaker maximalism, temporal necessitation, permanence of what exists, and a rigid
+``that's all'' truth at $b$ which growth falsifies.
+\end{proposition}
+
+\begin{proof}
+This is Loss's argument \citep[\S II]{Loss2022}, with growth in place of A-change. If $p$ is true at $b$ it has a
+truthmaker, which by permanence exists at a later stage, and by necessitation $p$ holds there, contrary to growth.
+\end{proof}
+
+Given the shifting form, the rigid claim is equivalent to ``$b$ is present'', which is Loss's own case, and his \S V treats
+presentness on the block as being at its edge. Presentism lacks permanence and the block view lacks change, so neither
+is touched. The exits are these.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+\toprule
+Member given up & Cost\\
+\midrule
+Permanence & A fact ceases at each step, against Broad's text and Loss's (GB2)\\
+Temporal necessitation & Truthmakers gain proper parts, the block is the truthmaker and mereological universalism goes
+\citep[\S\S V--VI]{Loss2022}. Molnar's rejection of contingent truthmaking \citeyearpar[\S IX]{Molnar2000} targets a primitive
+relation; whether it reaches this version is unargued\\
+Maximalism & Growth stays additive, and the upper bound is no fact at the fundamental level. Cameron and Cheyne and Pigden argue
+against the restriction\\
+Truth-value change & Index the proposition, as Tooley does \citeyearpar{Tooley1997}. Actuality as of a time is primitive, and Deng's
+objection applies\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Separately, each view takes a stance on Fine's four postulates \citep{Fine2005}, as Deng sets them out. Those stances are not exits
+from this table: relativizing every clause to standpoints reproduces the contradiction at the later standpoint, and a standard realist
+faces it with tense operators. Nothing above needs a foliation, since a fact ceases at $s$ if it holds at $s$ and fails at every later
+stage, which needs only a partial order. What relativity removes is a privileged chain of stages, and without one, parity pushes a view
+towards relativism. That would hold in Newtonian spacetime too.
+
+\subsection{Stated candidates}
+
+The following table sorts the stated upper-bound candidates we know. It covers these candidates only; it is not a theorem about
+all such principles.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}YlY@{}}
+\toprule
+Candidate & Index & Outcome\\
+\midrule
+Armstrong totality & None & Restates the claim\\
+Maximal-world admissibility & None & Bounds a complete history, not $E_b$\\
+Theorem~\ref{thm:main} via the reality bridge & Defined or primitive & Conclusion shared if defined; non-universality rejected if primitive\\
+Interaction closure \citep{Brading2015} & None & Inclusive as stated; with its converse it falls at $H$ if connected\\
+Causal criterion, tenseless \citep{Colyvan1998} & None & Later events pass\\
+Causal criterion, indexed & Defined or primitive & The same bound as Theorem~\ref{thm:main}, given the bridge and non-universality\\
+Tooley: an effect is not actual as of its cause's time & Primitive & Rival rejects. Support comes from an analysis of causation, and the direction it needs is disputed (Section~\ref{sec:direction}). Paired with absolute simultaneity\\
+No fact selects a completion, the reply Earman reports \citep[pp.~144, 154, 159]{Earman2008} & Primitive & Rival rejects the bridge. Silent in deterministic classes\\
+Least truthmaker base, given settled truth & Primitive & Abductive. Rival rejects the truth policy. Our construction\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Theorem~\ref{thm:main} is a real upper-bound derivation, of a conditional kind. It amplifies an assumed failure of universality into a
+sharp bound and does not supply the first negative. The bound is on what has happened by $b$, and an eternalist can accept that.
+Existence enters only at a bridge, which reads having become as being real.
+
+The causal criterion deserves a remark, because it is the closest thing to a sourced upper bound. The Eleatic principle admits only
+what has causal power. Read tenselessly it passes every later event with causes or effects, so it gives no restriction at the future.
+Only a standpoint index does: ``concrete from $b$ only if it can affect $b$''. That is the converse of Clifton and Hogarth's maxim,
+and the maxim's rationale, that an unreal event could not help bring $b$ about, gives no support to the converse. Colyvan notes that the
+epistemic motivation for the principle gives no reason to believe in future objects, and counts a similar exclusion of distant regions
+against that motivation \citep{Colyvan1998}.
+
+\begin{quote}
+\textbf{The diagnostic.} An index on ``concrete from $b$'' can be defined or primitive. Defined as a causal or temporal restriction, the
+claim is a triviality every party accepts. Primitive, it is a thesis the event realist rejects, indexed or not.
+\end{quote}
+So ``indexed'' sorts nothing. Correia and Rosenkranz's clause (P2R) and Tooley's actuality as of a time are indexed and rejected. Static
+views give no sense to indexed actuality \citep{Tooley2010}. For Fine's relativist, what is said from $b$ still carries the index, so
+``absolute'' is not available as a contrast. The missing argument lies between the defined and primitive readings. Three of the entries above, Tooley's,
+the no-fact principle and the least-base argument, offer support of a different kind, and they fall outside this sorting.
+
+\section{Constitution and process}\label{sec:process}
+
+One physical route to a restricted inventory runs through systems. If a genuine unity is constituted by an activity
+extending through a region $R$ \citep{Brading2015}, perhaps $R$ is what exists for that system. The inference fails at one identifiable step.
+Grant that the unity's realizing occurrences must be concrete. Compare $E_b=R$ with $E_b=H$. Both satisfy $R\subseteq E_b$, so an argument
+whose only inventory requirement is that constituting occurrences are concrete cannot distinguish them. It supplies a lower bound. A process can
+have exactly its own parts while other events are also concrete. So the route from constitution to an exhaustive inventory is closed as a deductive route unless a further exhaustiveness premise is supplied, and adding examples will not supply it. The revision that makes the activity the object's parts earns a process mereology, and
+the rival can accept that.
+
+An explanatory route remains: does a growing inventory explain process unity better? Take a feedback-controlled filling device with a sensor, a
+stored target and a valve, and compare a timed open-loop replay that closes at the same moment. For one supply rate the two have identical
+liquid height and flow histories. Under a changed rate the feedback device reaches its target later, and the replay stops short. So organized causal
+roles explain something a list of outputs does not, and a process is not a rigid aggregate of its actual events. But an event realist who
+identifies the operation with the causally organized execution, with an explicit participation rule, keeps all of that, and so does a growing
+theorist. The argument for an exclusive advantage assumed that event realism must identify a process with a rigid aggregate, and it need not
+\citep{Stout1997,Steward2013}. This is a comparison for one explanandum, not a verdict of parity, and whether a further form or grounding fact is
+needed remains open.
+
+\section{Which inferences fail}\label{sec:revise}
+
+The results license no ontology, but they do bear on particular inferences. None of what follows is claimed as new.
+
+\begin{description}
+\item[Metric-only shared presents.] Corollary~\ref{cor:nopresent}. A transitive relation containing the chronological past and defined from the metric alone has no shared present if it is local. Its defenders must name the premise they reject: locality on $\GH$, transitivity, the off-shell premise, or the category.
+\item[The causal past as a base for every rival.] Theorem~\ref{thm:rigidity}. A comparison must match the rival's realm. A past-agreement counterexample does not reach a bow-tie view, whose realm contains a Cauchy slice.
+\item[Causal limits on prediction read as openness.] Theorem~\ref{thm:map}. What is guaranteed does not bound what a law fixes, as \citet{Manchak2008} and \citet{Earman1995} partly anticipate.
+\item[``Past fixed, future open'' as evidence for growth.] Proposition~\ref{prop:mirror}. The slogan cannot be read off the fixing relation. The asymmetry of records has a candidate explanation that uses no inventory distinction, so it is not evidence for growth until that explanation is shown to fail. The growing theorist can reply that it does fail. This removes one support and refutes nothing.
+\item[Growing-block maximalists.] Proposition~\ref{prop:tetrad}. This is Loss's argument, and it fires through the rigid claim.
+\item[Unreality to law-relative openness.] Theorem~\ref{thm:map}, on the reading of having become as being real. The distinction is old; the models are exact. Openness of existence is untouched, since it concerns the modal class (Section~\ref{sec:maximal}).
+\item[Past-relative nonfixing to growth.] Theorem~\ref{thm:same-past} holds for an eternalist, since each model is one whole spacetime with its own exterior data. It is no evidence against indeterminist growth, and we know of no one who argues this way from it.
+\item[Reality to truth.] \citet[pp.~243--246]{Putnam1967} argues that future contingents already have truth values. That step needs a policy connecting outcomes to earlier truth (Section~\ref{sec:truth}). A block theorist can adopt the policy at no cost to the inventory, so the reason is to state it.
+\item[Constitution to inventory.] Section~\ref{sec:process}, against the argument as we reconstructed it.
+\item[Event realism as a default.] Where completions are not unique, the selection of $H$ is a debt. A selection principle preferring fewer primitives \citep{ProjectRole} needs a defence of its own.
+\end{description}
+
+One reading of \citet[pp.~148--149]{Stein1991} is also excluded. If ``definite'' and ``unsettled'' meant fixed by law, the relation would not be $\Jm$, since Theorem~\ref{thm:map} has $F=M$ in several rows with $B$ inside the causal past. Nothing we have read shows that Stein intends that reading, and his theorem does not need it.
+
+The positions compare as follows. Each row is a selected profile, not a reconstruction of a whole theory.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lYYY@{}}
+\toprule
+View & Concrete from $b$ & Premise denied or added & Future fixed from what exists?\\
+\midrule
+Presentism & Present only, however spatially read & Denies persistence; owes an upper bound & Depends on the spatial reading and the law: as the clock row for a Cauchy slice; past-grounding owed\\
+Pointy growing block & $\Jm(b)$ & Owes an upper bound & Open in Theorem~\ref{thm:same-past}; fixed in closed dust after maximum expansion\\
+Bow-tie growing block & Past and elsewhere & Rejects transitivity of existence-at; owes an upper bound & Fixed wherever the law has unique evolution, since the realm contains a Cauchy slice\\
+Standpoint relativism & $\Jm(b)$, relative to $b$ & Rejects Absolutism & As pointy; the geometry is agreement among standpoints\\
+Clock-equipped view & $\{T\le T(b)\}$, with a level of $T$ as present & Changes the category & Fixed if the law has unique Cauchy evolution\\
+Event realism & $H$ & Owes a lower bound, and selection where completions are not unique & Yes, trivially, and that says nothing about law\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{What would change these conclusions}\label{sec:defeat}
+
+A gluing counterexample, or a category mismatch in Part I. A proof that on-shell energy conditions change the classification; the
+pocket problem of Section~\ref{sec:energy} is the route. A failure of the external inputs of Theorem~\ref{thm:same-past}. A prior theorem with the same
+hypotheses, which would change credit and not content. In the philosophy: an independently defended tensed premise yielding the upper bound; an
+explanandum for which a growing inventory does exclusive work; or an argument that the defined/primitive contrast is unavailable, as a
+deflationist about the debate may hold \citep{Savitt2006,Dorato2006}. A successful deflation would remove the existence question and leave Parts I to III standing.
+
+\section{Conclusion}\label{sec:conclusion}
+
+The future can be unreal and fixed, real and unfixed from any standpoint, fixed at its end before its middle, and open or closed in one physical class
+according to what is held fixed. General relativity with a locality premise says sharply what can have become. Laws and comparisons say what is fixed, and in the models treated we can say it exactly. Neither says what exists, and neither says what is true. What the past can fix turns out to be a question physics can answer, and it is a
+different question from the one it is usually taken to answer.
+
+\paragraph{Note on method.} This manuscript was developed with substantial assistance from large language models (Anthropic Claude, OpenAI Codex and GLM models), including
+literature search, proof drafting and cross-model proof checks that found and repaired errors. Review by models is internal review. It is not expert or
+journal review, and agreement between models is not evidence of correctness. Responsibility for errors is the author's.
+
+\appendix
+
+\input{parts/becoming_proofs.tex}
+
+\section{Standpoint logic}\label{sec:logic}
+
+\input{parts/logic_remark.tex}
+
+\section{Status of the results}\label{app:status}
+
+``Reviewed'' means internal review with its record in the project repository, not refereeing. Every entry retains the
+conditions stated in the text.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+\toprule
+Result & Status\\
+\midrule
+Theorem~\ref{thm:main} and corollaries & Reviewed, conditional on (LC), (T), (CB) and the off-shell premise. Lemma~\ref{lem:F} reproved 31 October with one model review. Expert read pending\\
+Theorems~\ref{thm:class}, \ref{thm:weyl}, Proposition~\ref{prop:reg} & Reviewed. A planned independent null-boundary audit did not finish\\
+Causal-set and energy-condition sections & Reviewed in the manuscript's own reviews. Separate audits were stopped unfinished\\
+Theorem~\ref{thm:char}, models, Theorem~\ref{thm:diamonds} & Reviewed; proofs checked. Priority search bounded. Overlap with Geroch, Manchak and Earman noted\\
+Theorem~\ref{thm:massive} & Reviewed research note; outline only here. Full proof: \texttt{research/horizons/mass-classification/RESULT.md} in the project repository. Existing lacuna results may imply it\\
+Proposition~\ref{prop:mass} & Reviewed\\
+Theorem~\ref{thm:map} & Assembled from the cited results; rows checked by one model review\\
+Proposition~\ref{prop:norm} & Reviewed\\
+Theorem~\ref{thm:same-past} & Finite-control audit accepted at bounded scope; regularity audited. Inherits external LOY inputs, including omitted proofs. Full proof: \texttt{research/lawful-completions/coordinator/} in the project repository. Priority comparison incomplete; much of the setting is in print\\
+Lemma~\ref{lem:cones}, Theorem~\ref{thm:rigidity}, Proposition~\ref{prop:uncountable} & Bounded audit of a specialization. External uniqueness and common-extension theorems used at selected read depth\\
+Section~\ref{sec:realms} & Proposition~\ref{prop:sp} elementary; horizon lemma and cylinder classification reviewed\\
+Sections~\ref{sec:maximal}, \ref{sec:truth} & Coordinator arguments with bounded review; restricted counterinterpretation, not named theories\\
+Section~\ref{sec:direction} & New 31 October. Proposition~\ref{prop:mirror} elementary. Albert, Price and Tooley read in part. Not yet red-teamed\\
+Modal comb (Section~\ref{sec:prior}) & Internally checked counterexample at the abstract level. Later theory and priority separate\\
+Parts of Section~\ref{sec:bounds} & One red-team, by the same model family as the author's assistant. Armstrong read in part. Fine, Broad, McCall read only through reports, Forrest through an abstract and one review, and Carlotto--Schoen and Kehle--Unger at summary depth\\
+Section~\ref{sec:process} & Bounded review of the calculation\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{thebibliography}{99}
+\bibitem[Aames(2022)]{Aames2022} J. Aames, Temporal becoming in a relativistic universe: causal diamonds and Gödel's philosophy of time, \emph{Eur.\ J.\ Philos.\ Sci.} 12 (2022) 44. doi:10.1007/s13194-022-00471-z.
+\bibitem[Albert(2000)]{Albert2000} D. Z. Albert, \emph{Time and Chance}, Harvard University Press, 2000.
+\bibitem[Andersson et al.(1998)]{AGH1998} L. Andersson, G. J. Galloway and R. Howard, The cosmological time function, \emph{Class.\ Quantum Grav.} 15 (1998) 309--322. doi:10.1088/0264-9381/15/2/006.
+\bibitem[Armstrong(2004)]{Armstrong2004} D. M. Armstrong, \emph{Truth and Truthmakers}, Cambridge University Press, 2004.
+\bibitem[Arthur(2006)]{Arthur2006} R. T. W. Arthur, Minkowski spacetime and the dimensions of the present, in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006, ch.~7. doi:10.1016/s1871-1774(06)01007-2.
+\bibitem[Arthur(2019)]{Arthur2019} R. T. W. Arthur, Relativity and the present, in \emph{The Reality of Time Flow}, Springer, 2019, ch.~6. doi:10.1007/978-3-030-15948-1\_6.
+\bibitem[Belnap(1992)]{Belnap1992} N. Belnap, Branching space-time, \emph{Synthese} 92 (1992) 385--434. doi:10.1007/BF00414289.
+\bibitem[Bernal and Sánchez(2005)]{BS2005} A. N. Bernal and M. Sánchez, Smoothness of time functions and the metric splitting of globally hyperbolic spacetimes, \emph{Commun.\ Math.\ Phys.} 257 (2005) 43--50.
+\bibitem[Bernal and Sánchez(2006)]{BS2006} A. N. Bernal and M. Sánchez, Further results on the smoothability of Cauchy hypersurfaces and Cauchy time functions, arXiv:gr-qc/0512095.
+\bibitem[Blackburn et al.(2001)]{BdRV2001} P. Blackburn, M. de Rijke and Y. Venema, \emph{Modal Logic}, Cambridge University Press, 2001.
+\bibitem[Bolotin and Tanatarov(2013)]{BolotinTanatarov2013} Yu. L. Bolotin and I. V. Tanatarov, A thousand problems in cosmology: horizons, arXiv:1310.6329.
+\bibitem[Brading(2015)]{Brading2015} K. Brading, Physically locating the present: a case of reading physics as a contribution to philosophy, \emph{Stud.\ Hist.\ Philos.\ Sci.\ A} 50 (2015) 13--19.
+\bibitem[Broad(1923)]{Broad1923} C. D. Broad, \emph{Scientific Thought}, Kegan Paul, 1923.
+\bibitem[Brunetti et al.(2003)]{BFV2003} R. Brunetti, K. Fredenhagen and R. Verch, The generally covariant locality principle, \emph{Commun.\ Math.\ Phys.} 237 (2003) 31--68. doi:10.1007/s00220-003-0815-7.
+\bibitem[Callender(2000)]{Callender2000} C. Callender, Shedding light on time, \emph{Philos.\ Sci.} 67 (2000) S587--S599.
+\bibitem[Cameron(2008)]{Cameron2008} R. P. Cameron, How to be a truthmaker maximalist, \emph{Noûs} 42 (2008) 410--421.
+\bibitem[Carlotto and Schoen(2016)]{CarlottoSchoen2016} A. Carlotto and R. Schoen, Localizing solutions of the Einstein constraint equations, \emph{Invent.\ Math.} doi:10.1007/s00222-015-0642-4, arXiv:1407.4766.
+\bibitem[Cheyne and Pigden(2006)]{CheynePigden2006} C. Cheyne and C. Pigden, Negative truths from positive facts, \emph{Australas.\ J. Philos.} 84 (2006). doi:10.1080/00048400600759092.
+\bibitem[Choquet-Bruhat and Geroch(1969)]{CBG1969} Y. Choquet-Bruhat and R. Geroch, Global aspects of the Cauchy problem in general relativity, \emph{Commun.\ Math.\ Phys.} 14 (1969) 329--335. doi:10.1007/bf01645389.
+\bibitem[Clifton and Hogarth(1995)]{CH1995} R. Clifton and M. Hogarth, The definability of objective becoming in Minkowski spacetime, \emph{Synthese} 103 (1995) 355--387. doi:10.1007/BF01089733.
+\bibitem[Colyvan(1998)]{Colyvan1998} M. Colyvan, Can the Eleatic Principle be justified?, \emph{Can.\ J. Philos.} 28 (1998). doi:10.1080/00455091.1998.10715975.
+\bibitem[Correia and Rosenkranz(2018)]{CR2018} F. Correia and S. Rosenkranz, \emph{Nothing To Come: A Defence of the Growing Block Theory of Time}, Synthese Library 395, Springer, 2018. doi:10.1007/978-3-319-78704-6.
+\bibitem[Deng(2017)]{Deng2017} N. Deng, Making sense of the growing block view, \emph{Philosophia} (2017). doi:10.1007/s11406-017-9832-1.
+\bibitem[Dieks(2006)]{Dieks2006} D. Dieks, Becoming, relativity and locality, in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006, ch.~8. doi:10.1016/s1871-1774(06)01008-4.
+\bibitem[Dorato(2006)]{Dorato2006} M. Dorato, The irrelevance of the presentist/eternalist debate for the ontology of Minkowski spacetime, in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006.
+\bibitem[Dorato(2011)]{Dorato2011} M. Dorato, The Alexandroff present and Minkowski spacetime: why it cannot do what it has been asked to do, in \emph{Explanation, Prediction, and Confirmation}, Springer, 2011. doi:10.1007/978-94-007-1180-8\_26.
+\bibitem[Earman(1995)]{Earman1995} J. Earman, \emph{Bangs, Crunches, Whimpers, and Shrieks}, Oxford University Press, 1995.
+\bibitem[Earman(2008)]{Earman2008} J. Earman, Reassessing the prospects for a growing block model of the universe, \emph{Int.\ Stud.\ Phil.\ Sci.} 22 (2008) 135--164. doi:10.1080/02698590802496680.
+\bibitem[Fewster and Verch(2012)]{FV2012} C. J. Fewster and R. Verch, Dynamical locality and covariance: what makes a physical theory the same in all spacetimes?, \emph{Ann.\ Henri Poincaré} 13 (2012) 1613--1674, arXiv:1106.4785.
+\bibitem[Fine(2005)]{Fine2005} K. Fine, Tense and reality, in \emph{Modality and Tense}, Oxford University Press, 2005, pp.~261--320.
+\bibitem[Forrest(2006)]{Forrest2006} P. Forrest, General facts, physical necessity, and the metaphysics of time, \emph{Oxford Stud.\ Metaphys.} 2 (2006) 137--154. doi:10.1093/oso/9780199290581.003.0006.
+\bibitem[Galloway et al.(2018)]{GLS2018} G. J. Galloway, E. Ling and J. Sbierski, Timelike completeness as an obstruction to $C^0$-extensions, \emph{Commun.\ Math.\ Phys.} (2018). doi:10.1007/s00220-017-3019-2.
+\bibitem[Geroch(1977)]{Geroch1977} R. Geroch, Prediction in general relativity, in J. Earman, C. Glymour and J. Stachel (eds.), \emph{Foundations of Space-Time Theories}, Minnesota Studies in the Philosophy of Science 8, University of Minnesota Press, 1977, pp.~81--93.
+\bibitem[Gödel(1949)]{Godel1949} K. Gödel, A remark about the relationship between relativity theory and idealistic philosophy, in P. A. Schilpp (ed.), \emph{Albert Einstein: Philosopher-Scientist}, 1949, pp.~557--562.
+\bibitem[Goldblatt(1980)]{Goldblatt1980} R. Goldblatt, Diodorean modality in Minkowski spacetime, \emph{Studia Logica} 39 (1980) 219--236. doi:10.1007/BF00370321.
+\bibitem[Grøn and Johannesen(2011)]{GronJohannesen2011} Ø. Grøn and S. Johannesen, FRW universe models in conformally flat spacetime coordinates. III: universe models with positive spatial curvature, \emph{Eur.\ Phys.\ J. Plus} 126 (2011) 30, arXiv:1103.4753.
+\bibitem[Guth(1981)]{Guth1981} A. H. Guth, Inflationary universe: a possible solution to the horizon and flatness problems, \emph{Phys.\ Rev.\ D} 23 (1981) 347--356.
+\bibitem[Hawking and Ellis(1973)]{HE1973} S. W. Hawking and G. F. R. Ellis, \emph{The Large Scale Structure of Space-Time}, Cambridge University Press, 1973. doi:10.1017/cbo9780511524646.
+\bibitem[Impellitteri(2026a)]{ProjectPercolation} A. Impellitteri, Complex percolation on the principal and doubly-principal cylinder sigma-algebras, working manuscript, 2026.
+\bibitem[Impellitteri(2026b)]{ProjectRole} A. Impellitteri, What work does existence do?, project note, 2026.
+\bibitem[Kehle and Unger(2022)]{KehleUnger2022} C. Kehle and R. Unger, Gravitational collapse to extremal black holes and the third law of black hole thermodynamics, arXiv:2211.15742.
+\bibitem[Kehrberger(2021)]{Kehrberger2021} L. M. A. Kehrberger, The case against smooth null infinity I: heuristics and counter-examples, arXiv:2105.08079.
+\bibitem[Lewis and van der Schaaf(2026)]{vdSchaaf2026} M. Lewis and N. van der Schaaf, Some results on causal modalities in general spacetimes, arXiv:2601.14029v2.
+\bibitem[Lipman(2023)]{Lipman2023} M. A. Lipman, Standpoints: a study of a metaphysical picture, \emph{J. Philos.} 120 (2023) 117--138.
+\bibitem[Loss(2022)]{Loss2022} R. Loss, How the block grows, \emph{Am.\ Philos.\ Q.} 59 (2022) 377--389. doi:10.5406/21521123.59.4.04 (penultimate draft read).
+\bibitem[Luk et al.(2016)]{LOY2016} J. Luk, S.-J. Oh and S. Yang, Solutions to the Einstein-scalar-field system in spherical symmetry with large bounded variation norms, arXiv:1605.03893v1.
+\bibitem[MacBride(2024)]{MacBride2024} F. MacBride, Truthmakers, \emph{Stanford Encyclopedia of Philosophy}, 2024 revision.
+\bibitem[Madarász et al.(2025)]{MSS2025} J. Madarász, M. Stannett and G. Székely, Definable coordinate geometries over fields, part 1: theory, arXiv:2507.10279.
+\bibitem[Manchak(2008)]{Manchak2008} J. B. Manchak, Is prediction possible in general relativity?, \emph{Found.\ Phys.} 38 (2008) 317--321. doi:10.1007/s10701-008-9204-6.
+\bibitem[Minguzzi and Sánchez(2008)]{MS2008} E. Minguzzi and M. Sánchez, The causal hierarchy of spacetimes, in \emph{Recent Developments in Pseudo-Riemannian Geometry}, EMS, 2008, pp.~299--358, arXiv:gr-qc/0609119.
+\bibitem[Minguzzi(2015)]{Minguzzi2015} E. Minguzzi, The vacuum conservation theorem, \emph{Gen.\ Relativ.\ Gravit.} 47 (2015) 32, arXiv:1406.5915.
+\bibitem[Molnar(2000)]{Molnar2000} G. Molnar, Truthmakers for negative truths, \emph{Australas.\ J. Philos.} 78 (2000) 72--86. doi:10.1080/00048400012349361.
+\bibitem[Monton(2006)]{Monton2006} B. Monton, Presentism and quantum gravity, in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006, ch.~14.
+\bibitem[Müller(2006)]{Muller2006} T. Müller, On the problem of defining the present in special relativity: a challenge for tense logic, in \emph{Time and History}, De Gruyter, 2006. doi:10.1515/9783110333213.441.
+\bibitem[Müller(2019)]{Muller2019} T. Müller, Defining a relativity-proof notion of the present via spatio-temporal indeterminism, \emph{Found.\ Phys.} (2019). doi:10.1007/s10701-019-00267-x.
+\bibitem[Price(1996)]{Price1996} H. Price, \emph{Time's Arrow and Archimedes' Point}, Oxford University Press, 1996.
+\bibitem[Putnam(1967)]{Putnam1967} H. Putnam, Time and physical geometry, \emph{J. Philos.} 64 (1967) 240--247. doi:10.2307/2024493.
+\bibitem[Rakić(1997)]{Rakic1997} N. Rakić, Past, present, future, and special relativity, \emph{Brit.\ J. Philos.\ Sci.} 48 (1997) 257--280. doi:10.1093/bjps/48.2.257.
+\bibitem[Rindler(1956)]{Rindler1956} W. Rindler, Visual horizons in world-models, \emph{Mon.\ Not.\ R. Astron.\ Soc.} 116 (1956) 662--677.
+\bibitem[Ringström(n.d.)]{RingstromNote} H. Ringström, Existence of a maximal globally hyperbolic development, author note, https://people.kth.se/\textasciitilde hansr/mghd.pdf.
+\bibitem[Ringström(2009)]{Ringstrom2009} H. Ringström, \emph{The Cauchy Problem in General Relativity}, European Mathematical Society, 2009.
+\bibitem[Saunders(2002)]{Saunders2002} S. Saunders, How relativity contradicts presentism, \emph{R.\ Inst.\ Philos.\ Suppl.} 50 (2002) 277--292. doi:10.1017/S1358246100010602.
+\bibitem[Savitt(2005)]{Savitt2005} S. Savitt, Time travel and becoming, \emph{The Monist} 88 (2005) 413--422. doi:10.5840/monist200588323.
+\bibitem[Savitt(2006)]{Savitt2006} S. Savitt, Presentism and eternalism in perspective, in D. Dieks (ed.), \emph{The Ontology of Spacetime}, Elsevier, 2006.
+\bibitem[Savitt(2009)]{Savitt2009} S. Savitt, The transient nows, in \emph{Quantum Reality, Relativistic Causality, and Closing the Epistemic Circle}, Springer, 2009. doi:10.1007/978-1-4020-9107-0\_18.
+\bibitem[Savitt(2015)]{Savitt2015} S. Savitt, I $\heartsuit$ $\Diamond$s, \emph{Stud.\ Hist.\ Philos.\ Mod.\ Phys.} 50 (2015) 19--24. doi:10.1016/j.shpsb.2015.02.001.
+\bibitem[Stein(1968)]{Stein1968} H. Stein, On Einstein--Minkowski space--time, \emph{J. Philos.} 65 (1968) 5--23. doi:10.2307/2024512.
+\bibitem[Stein(1970)]{Stein1970} H. Stein, On the paradoxical time-structures of Gödel, \emph{Philos.\ Sci.} 37 (1970) 589--601. doi:10.1086/288328.
+\bibitem[Stein(1991)]{Stein1991} H. Stein, On relativity theory and openness of the future, \emph{Philos.\ Sci.} 58 (1991) 147--167. doi:10.1086/289609.
+\bibitem[Steward(2013)]{Steward2013} H. Steward, Processes, continuants, and individuals, \emph{Mind} 122 (2013) 781--812. doi:10.1093/mind/fzt080.
+\bibitem[Stout(1997)]{Stout1997} R. Stout, Processes, \emph{Philosophy} 72 (1997) 19--27. doi:10.1017/S0031819100056631.
+\bibitem[Tooley(1997)]{Tooley1997} M. Tooley, \emph{Time, Tense, and Causation}, Oxford University Press, 1997.
+\bibitem[Tooley(2010)]{Tooley2010} M. Tooley, Time, truth, actuality, and causation: on the impossibility of divine foreknowledge, \emph{Eur.\ J. Philos.\ Relig.} 2 (2010). doi:10.24204/ejpr.v2i1.355.
+\bibitem[Viglione(2026)]{Viglione2026} F. Viglione, Not-so-absolute cosmic simultaneity, \emph{Erkenntnis} (2026). doi:10.1007/s10670-026-01075-2.
+\bibitem[Wald(1984)]{Wald1984} R. M. Wald, \emph{General Relativity}, University of Chicago Press, 1984.
+\bibitem[Wawer(2021)]{Wawer2021} J. Wawer, Tensed metaphysics and non-local grounding of truth, \emph{Disputatio} (2021). doi:10.2478/disp-2021-0023.
+\bibitem[Wüthrich and Callender(2017)]{WC2017} C. Wüthrich and C. Callender, What becomes of a causal set?, \emph{Brit.\ J. Philos.\ Sci.} 68 (2017) 907--925. doi:10.1093/bjps/axv040; arXiv:1502.00018.
+\end{thebibliography}
+\end{document}

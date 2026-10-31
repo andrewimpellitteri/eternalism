@@ -1,0 +1,96 @@
+\begin{definition}
+An event $x$ is \emph{guaranteed from} $b$ if every past-inextendible causal
+curve from $x$ meets $\Is(b)$. Write $\Det(b)$ for the set of such events.
+Clearly $\Is(b)\subseteq\Det(b)$.
+\end{definition}
+
+$\Det(b)$ is a property of the spacetime and the event. To connect it with
+what the laws fix, let $\mathcal L$ be the set of solutions of some field
+equations on $M$. Say that $x$ is \emph{fixed from $b$ under $\mathcal L$},
+and write $x\in F_{\mathcal L}(b)$, if any two solutions in $\mathcal L$ that
+agree on $\Is(b)$ agree at $x$. The equations, background and globally
+admissible solution class are held fixed in this comparison; they are inputs
+to the definition, not data an observer is assumed to have measured in the
+past. Here agreement means equality of the specified classical fields on the
+whole open region, not equality of a finite collection of detector records.
+Say that $\mathcal L$ has the
+\emph{domain-of-dependence property} if, for every open $U\subseteq M$, any two
+solutions that agree on $U$ agree at every event all of whose
+past-inextendible causal curves meet $U$. We assume this uniqueness property
+explicitly; it is not inferred merely from an operational no-signalling
+condition.
+
+\begin{remark}[What is guaranteed and what is fixed]\label{rem:laws}
+If $\mathcal L$ has the domain-of-dependence property and consists of
+continuous fields, then
+\[\Det(b)\cup J^-(b)\subseteq F_{\mathcal L}(b),\]
+since $J^-(b)$ is the closure of $\Is(b)$ in a globally hyperbolic spacetime
+\citep{MS2008}. So $\Det(b)$ is fixed under every such law: it is what the
+causal structure guarantees, whatever the fields. The inclusion is in general
+strict, and nothing about $F_{\mathcal L}(b)$ beyond it follows from $\Det(b)$
+being small. For example, on Minkowski spacetime with the unit timelike
+field $u=\partial_t$, the local equations $u\cdot\nabla Q=P$,
+$u\cdot\nabla P=0$ have the solutions $Q=A(\vec X)+tB(\vec X)$, $P=B(\vec X)$
+for arbitrary smooth $A,B$. The values of $(Q,P)$ at one point of an integral curve fix them along
+it, and the past integral curve from $x$ is a past-inextendible causal curve,
+so the law has the domain-of-dependence property; and every integral curve
+of $u$ enters $\Is(b)$, so $F_{\mathcal L}(b)=M$ for every $b$. A law of this
+kind uses background structure beyond the metric, but nothing in the
+domain-of-dependence property excludes it. Neither notion is Belnap's
+settledness, on which a proposition is settled at a point event if it holds
+in every possible history through it \citep{Belnap1992}; under
+indeterministic laws they come apart from it, and we say nothing about such
+laws. We use $\Is(b)$, which every local becoming theory counts as real from
+$b$, rather than $J^-(b)$; the characterization below uses that $\Is(b)$ is
+open.
+\end{remark}
+
+\paragraph{Relation to Geroch.} Geroch's domain of prediction $P(q)$ is the set
+of $x$ such that every past-directed timelike curve from $x$ without past
+endpoint enters $I^-(q)$, but $I^-(x)\not\subseteq I^-(q)$ \citep[sec.~3]{Geroch1977}.
+$\Det(b)$ is the causal-curve analogue of the union of $P(b)$ with the
+events whose pasts lie in that of $b$; we expect the two to differ at most
+on null boundaries, but have not proved it. Geroch gives an equivalent form by achronal surfaces in $I^-(q)$
+\citep[sec.~3]{Geroch1977}; Theorem~\ref{thm:char} is a slicing form for
+globally hyperbolic spacetimes.
+
+\begin{theorem}\label{thm:char}
+Let $t:M\to(\alpha,\beta)$ be a Cauchy time function. Then $x\in\Det(b)$ if
+and only if there is $c\in(\alpha,t(x))$ with $J^-(x)\cap S_c\subseteq\Is(b)$.
+\end{theorem}
+
+\begin{proof}
+($\Leftarrow$) A past-inextendible causal curve from $x$ crosses the Cauchy
+surface $S_c$, at a point of $J^-(x)\cap S_c\subseteq\Is(b)$.
+
+($\Rightarrow$) Suppose that for every $c\in(\alpha,t(x))$ the set
+$K_c=(J^-(x)\cap S_c)\setminus\Is(b)$ is nonempty; it is compact, since
+$\Is(b)$ is open. Fix $t(x)>c_1>c_2>\dots$ with $c_n\to\alpha$, and let
+\[P_n=\{(z_1,\dots,z_n)\in K_{c_1}\times\dots\times K_{c_n}:
+x\ge z_1\ge z_2\ge\dots\ge z_n\}.\]
+$P_n$ is compact, since $\le$ is closed. It is nonempty: pick $y\in K_{c_n}$
+and a causal curve from $x$ to $y$; it crosses each $S_{c_i}$, $i<n$, at some
+$z_i\le x$, and $z_i\notin\Is(b)$, for otherwise $y\le z_i\ll b$ would give
+$y\ll b$. The maps $P_{n+1}\to P_n$ forgetting the last coordinate are
+continuous, so the inverse limit of the nonempty compact spaces $P_n$ is
+nonempty, giving $x\ge z_1\ge z_2\ge\cdots$ with $z_n\in K_{c_n}$. Join
+consecutive terms by causal curves and concatenate. Each segment avoids
+$\Is(b)$ by push-up, as before. Along the concatenation $t\to\alpha$, so it has
+no past endpoint in $M$: it is a past-inextendible causal curve from $x$
+missing $\Is(b)$.
+\end{proof}
+
+\begin{corollary}\label{cor:cauchy}
+If $\Is(b)$ contains a Cauchy surface $S$, then $\Det(b)=M$.
+\end{corollary}
+
+\begin{proof}
+If $x\in\Is(S)\cup S$, then $x\le s\ll b$ for some $s\in S$, so $x\in\Is(b)$.
+If $x\in\Isp(S)$, extend a past-inextendible causal curve from $x$ to an
+inextendible one; it meets $S$, and not to the future of $x$, since then
+$s'\ll x\le s$ for some $s,s'\in S$, contradicting achronality. So the curve
+from $x$ meets $S\subseteq\Is(b)$.
+\end{proof}
+
+Since $\Det(b)$ is defined by causal curves alone, it depends only on the
+conformal class of the metric; conformal diagrams decide it.
