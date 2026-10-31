@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "tau_over_pi": 0.25,
+  "target_over_pi": 1.8749999999999998,
+  "positive_resolvent_derivative": 0.0021074244562922545,
+  "spectral_derivative_at_target": 0.00210742445853799,
+  "spectral_derivative_at_full_period": 0.002107424458656605,
+  "unperturbed_truncation_residual": -5.455774121106029e-11,
+  "perturbed_samples": [
+    {
+      "delta": -0.001,
+      "value": -2.1088020474940323e-06,
+      "difference_quotient": 0.0021087474897528214
+    },
+    {
+      "delta": 0.001,
+      "value": 2.106038917815056e-06,
+      "difference_quotient": 0.002106093475556267
+    },
+    {
+      "delta": 0.0001,
+      "value": 2.1067461401710938e-07,
+      "difference_quotient": 0.002107291717583204
+    }
+  ],
+  "green_kernel_integral": 1.0000000000000018,
+  "ordinary_dust_mass": {
+    "am": 1,
+    "derivative_at_target": 0.0005489920329552562,
+    "derivative_at_period": 0.0005291114426938811,
+    "independent_mode_integrals": [
+      {
+        "k": 1,
+        "period_integral": 0.9817477042468102,
+        "expected": 0.9817477042468103
+      },
+      {
+        "k": 2,
+        "period_integral": 0.2945243112740431,
+        "expected": 0.2945243112740431
+      },
+      {
+        "k": 7,
+        "period_integral": 0.024042800920330044,
+        "expected": 0.024042800920330048
+      }
+    ]
+  },
+  "convergence": {
+    "coarse_modes": 256,
+    "fine_modes": 512,
+    "coarse_quadrature": 4096,
+    "fine_quadrature": 8192
+  },
+  "scope": "bounded quadrature/spectral controls; past agreement and nonzero interval proved analytically, not by finite truncation"
+}

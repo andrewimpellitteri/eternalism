@@ -1,0 +1,16 @@
+Finite growth-stage model:
+  s0: D=['a']
+  s1: D=['a', 'b']
+  s2: D=['a', 'b', 'c']
+
+At s0, frozen domain: F_g exists x not PastExists_g(x) = False
+  witness: None
+  source label: Loss 2021, §3, PMC HTML lines 212–222: his diagnosis that the fixed-timeline quantifier misses stage growth (Loss's reconstruction of B&F).
+
+At s0, shifting domain: F_g exists x not PastExists_g(x) = True
+  witness: ('s1', 'b')
+  source label: Loss 2021, §3, PMC HTML lines 223–241: stage/timeline shifts plus a timeline-sensitive quantifier (author's proposed repair).
+
+At terminal s2, shifting domain: F_g exists x not PastExists_g(x) = False
+  witness: None
+  source label: Finite toy consequence only: RESULT.md model ends at s2; it does not represent Loss's assumed ongoing growth.

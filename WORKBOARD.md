@@ -113,6 +113,118 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `refocus-cpobc-reproduction` — Independently reproduce a CPOBC obstruction and assess feasibility | 10 | — | luna-refocus-reproduction |
 | done | `refocus-rank-audit` — Audit the rank-dependent post theorem frame and priority | 10 | — | luna-refocus-rank |
 | claimed | `refocus-selection-integration` — Integrate refocus audits, repair inherited claims and select the next target | 10 | refocus-cpobc-correspondence, refocus-cpobc-reproduction, refocus-rank-audit | codex-refocus-coordinator |
+| done | `observer-effect-correspondence` — Separate class membership, coherent event filtering and completed-history covariance | 10 | — | codex-observer-effects |
+| done | `bc-all-stages-extension` — Extend Bell-causal phase holonomy to every stage with bounded scalar variation | 10 | — | codex-bc-all-stages |
+| done | `bc-phase-priority-and-invariants` — Audit phase-model priority and test an intrinsic completed-history quantity | 10 | bc-all-stages-extension, observer-effect-correspondence | codex-phase-invariants |
+| done | `bc-matched-cylinder-pair` — Test a two-phase pair with equal cylinder norms and different intrinsic completed values | 10 | bc-phase-priority-and-invariants | codex-matched-norms |
+| done | `bc-matched-diffuse-continuation` — Seek a non-atomic matched-cylinder pair beyond the unit-timid obstruction | 10 | bc-matched-cylinder-pair | codex-matched-diffuse |
+| done | `llm-creative-research-loop` — Apply recent LLM mathematics methods to a tested creative research loop | 10 | bc-matched-diffuse-continuation | codex-creative-loop |
+| done | `observer-postselection-boundary` — Derive observer access and its postselection cost from scalar history data | 10 | llm-creative-research-loop | codex-observer-postselect |
+| done | `observer-sequential-dilation` — Build coherent observer preparation and readout from individual growth transitions | 10 | observer-postselection-boundary | codex-sequential |
+| done | `observer-local-control` — Test whether growth-transition controls can depend only on an observer causal past | 10 | observer-sequential-dilation | native-local-control |
+| done | `observer-growth-intertwiner` — Determine whether sequential dilation descends to a symmetry-compatible quotient | 10 | observer-sequential-dilation | native-growth-intertwiner |
+| done | `observer-control-resources` — Bound memory and control precision for the sequential observer protocol | 9 | observer-sequential-dilation | native-control-resources |
+| review | `stein-core-repairs` — Prepare exact repairs for chronology conventions and first-exit cases | 10 | — | glm-stein-core-repairs |
+| review | `stein-gluing-audit` — Independently challenge domain transfer and the flat detour | 10 | — | claude-head |
+| claimed | `stein-null-boundary-audit` — Verify residual null freedom and construct a mixed-curvature example | 9 | — | glm-stein-null-boundary-audit |
+| claimed | `stein-causet-audit` — Audit the convex-embedding causal-set theorem and its prior-work contrast | 9 | — | glm-stein-causet-audit |
+| review | `stein-priority-audit` — Try to defeat novelty of cross-spacetime becoming classifications | 10 | — | glm-stein-priority-audit |
+| claimed | `stein-energy-rigidity-audit` — Check energy-condition rigidity and isolate a legitimate extension problem | 9 | — | glm-stein-energy-rigidity-audit |
+| claimed | `stein-interpretation-audit` — Audit what the covariance theorem says about locality and becoming | 8 | — | glm-stein-interpretation-audit |
+| blocked | `stein-paper-integration` — Integrate accepted Stein-GR repairs into one source and verification record | 10 | stein-core-repairs, stein-gluing-audit, stein-null-boundary-audit, stein-causet-audit, stein-priority-audit, stein-energy-rigidity-audit, stein-interpretation-audit | — |
+| blocked | `stein-final-referee` — Independently referee the frozen integrated Stein-GR manuscript | 10 | stein-paper-integration | — |
+| blocked | `stein-energy-pocket-probe` — Test one bounded route to energy-compatible flat-pocket gluing | 7 | stein-energy-rigidity-audit, stein-final-referee | — |
+| review | `horizons-independent-redteam` — Independently red-team Unreal Is Not Open before expert circulation | 10 | — | codex-horizons-referee |
+| review | `book-exploration-samples` — Park prose book concept and two exploratory chapter samples while keeping paper priority | 2 | — | codex-book-exploration |
+| review | `horizons-echo-exactness` — Determine or sharply bound the conformal scalar fixed region on closed dust | 9 | — | glm-horizons-echo-exactness |
+| review | `horizons-scalar-priority` — Audit prior work and exact sources for scalar sharpness and antipodal echo | 9 | — | glm-horizons-scalar-priority |
+| review | `horizons-echo-robustness` — Test how narrowly the antipodal scalar identity depends on its field equation | 9 | — | glm-horizons-echo-robustness |
+| done | `horizons-boundary-fix` — Fix closed fixed-region boundary and nearby echo scope errors | 10 | — | codex-horizons-boundary |
+| review | `horizons-perturbation-continuation` — Close primary-source gaps and test actual fixed-event loss under a small field perturbation | 10 | — | codex-horizons-continuation |
+| claimed | `horizons-perturbation-referee` — Independently try to break the actual-determination perturbation proof | 10 | — | glm-horizons-perturbation-referee |
+| review | `github-current-paper-gates` — Refresh GitHub release gates from current mathematical and philosophical critiques | 10 | — | codex-github-gates |
+| claimed | `horizons-philosophy-contract` — Draft a precise openness argument and strongest opponent replies | 10 | — | glm-horizons-philosophy-contract |
+| claimed | `horizons-priority-gap-check` — Bound the remaining original-source gaps and priority risk for horizons | 9 | — | glm-horizons-priority-gap-check |
+| done | `horizons-bounded-ambiguity` — Quantify bounded hidden-field ambiguity without confusing exact openness and practical prediction | 9 | — | codex-bounded-ambiguity |
+| done | `horizons-noisy-record-control` — Separate noisy field records from exact pointwise determination | 9 | — | codex-noisy-record |
+| review | `runner-fresh-submission` — Reject inherited reports as new worker submissions | 10 | — | codex-runner-fresh |
+| review | `native-horizons-norm-review` — Independently review quantitative ambiguity and noisy-record controls | 10 | — | native-norm-review |
+| review | `native-time-bridge-recovery` — Recover precise philosophical contract after GLM quota interruption | 10 | — | native-bridge-recovery |
+| review | `native-horizons-source-recovery` — Recover bounded original-source gap audit after GLM quota interruption | 10 | — | native-source-recovery |
+| review | `horizons-mass-review-recovery` — Finish interrupted scalar mass proof review and repair its independent control | 10 | — | codex-mass-recovery |
+| review | `native-horizons-mass-final-review` — Independently finish the small-mass proof audit after GLM quota failure | 10 | — | native-mass-final |
+| done | `horizons-reviewed-integration` — Integrate reviewed mass contrast, norm bounds and philosophical contract into horizons paper | 10 | — | codex-horizons-integration |
+| done | `horizons-mass-all-fixing` — Investigate complete loss or survival of extra fixing at positive mass | 10 | — | codex-mass-classification |
+| done | `future-truth-preliminary` — Preliminary audit of future truth, existence and event-relative settledness | 9 | — | codex-future-truth |
+| done | `future-ground-growing-block` — Audit complete grounds in strongest law-based growing-block account | 9 | — | codex-future-growing |
+| done | `future-ground-objections` — Audit objections to truthmaker and local-ground completeness demands | 9 | — | codex-future-objections |
+| done | `future-ground-tense-domain` — Reconstruct and test stage-sensitive tense and existence semantics | 9 | — | codex-future-tense |
+| done | `future-ground-relativistic-branching` — Audit whether causal-past alternatives constitute branching physical possibilities | 9 | — | codex-future-branching |
+| done | `future-ground-coordinator` — Synthesize and red-team a future-truth grounds contract | 9 | — | codex-future-coordinator |
+| done | `future-rival-gr-compatibility` — Test existing generalized GR history definition against closed dust | 9 | — | codex-rival-gr |
+| done | `future-rival-retrospection` — Audit truth of earlier future-tense utterances without a selected history | 9 | — | codex-rival-retrospection |
+| done | `future-rival-selection` — Test whether a covariant actual-history selector can come from same-past data | 9 | — | codex-rival-selection |
+| done | `future-rival-coordinator` — Construct paired future-truth interpretations and source access gate | 9 | — | codex-rival-coordinator |
+| done | `future-rival-original-chapters` — Reconstruct original bivalent and relativistic rival from essential chapters | 9 | — | claude-rival-chapters |
+| review | `future-ground-temporal-asymmetry` — Test principled asymmetry between past-directed and future-directed grounding | 9 | — | codex-ground-asymmetry |
+| open | `future-gr-dust-atlas` — Extend dust history correspondence to local patches and manifold postulates | 7 | — | — |
+| done | `future-domain-persistence` — Test persistence and edge objections to causal-past existence | 9 | — | codex-domain-persistence |
+| review | `lawful-completions-priority` — Kill-test priority and scope of past-preserving Einstein completions | 10 | — | glm-lawful-completions-priority |
+| review | `lawful-completions-constraints` — Audit constraint-preserving local control of coupled Einstein futures | 10 | — | glm-lawful-completions-constraints |
+| done | `lawful-completions-relational` — Define invariant future outcomes and pointed observer matching | 10 | — | native-lawful-relational |
+| claimed | `lawful-completions-coordinator` — Integrate lawful-completion theorem target and exact past-preservation baseline | 10 | — | codex-lawful-coordinator |
+| review | `bowtie-horizon-rationale` — Test whether a common-future rationale recovers bow-tie domains under horizons | 8 | — | claude-native-bowtie |
+| claimed | `past-shadow-lemma` — Prove the past-shadow criterion for entire-past matching by Cauchy data | 9 | — | glm-past-shadow-lemma |
+| claimed | `past-shadow-ltb-numerics` — Numerically check an exact Einstein-dust LTB pair outside the past shadow | 9 | — | glm-past-shadow-ltb-numerics |
+| review | `past-shadow-ltb-sources` — Source audit for LTB embedding, Weyl formula, shell crossing and Einstein-dust well-posedness | 8 | — | glm-past-shadow-ltb-sources |
+| claimed | `bowtie-horizon-review` — Independent adversarial review of the bow-tie horizon propositions | 8 | — | glm-bowtie-horizon-review |
+| done | `lawful-collapse-geometry` — Derive a causal barrier from the supplied Einstein-scalar collapse theorem | 10 | — | native-collapse-geometry |
+| review | `lawful-collapse-extension` — Audit complete-past extension of the scalar cone-collapse construction | 10 | — | native-collapse-extension |
+| review | `lawful-scattering-regularity` — Close or isolate the smooth-metric and scattering-map regularity gate | 10 | — | native-scattering-regularity |
+| review | `lawful-scattering-energy` — Derive exact incoming energy and test a later-pulse compensation mechanism | 10 | — | native-scattering-energy |
+| done | `lawful-bowtie-rigidity` — Red-team whole-bow-tie Cauchy rigidity and its ontological scope | 10 | — | native-bowtie-rigidity |
+| done | `lawful-historical-potential` — Test exact persistent causal-potential repair against the bow-tie realm | 10 | — | native-historical-potential |
+| review | `screening-review` — Adversarial review of the causal-potential screening and rigidity theorems | 9 | — | glm-screening-review |
+| review | `prior-art-prediction` — Prior-art audit: prediction and domain-of-dependence literature vs screening claims | 9 | — | glm-prior-art-prediction |
+| review | `prior-art-bst` — Prior-art audit: branching space-times settledness vs screening claims | 9 | — | glm-prior-art-bst |
+| review | `prior-art-becoming` — Prior-art audit: relativistic becoming literature vs horizon and causal-potential claims | 9 | — | glm-prior-art-becoming |
+| done | `lawful-screening-repair` — Red-team repaired smooth screening and fixed-background determination | 10 | — | native-screening-repair |
+| review | `lawful-finite-cone-continuity` — Prove the finite-cone continuity needed by fixed-energy scalar control | 10 | — | glm-lawful-finite-cone-continuity |
+| review | `lawful-scalar-common-extension` — Extend repaired common-development argument to smooth Einstein scalar matter | 10 | — | glm-lawful-scalar-common-extension |
+| review | `ontology-rival-contracts` — Source-faithful rival temporal ontology contracts | 10 | — | glm-ontology-rival-contracts |
+| review | `ontology-natural-assignments` — Bounded classification of covariant existence assignments | 10 | — | glm-ontology-natural-assignments |
+| review | `ontology-bridge-premises` — Adversarial audit of ontology-selecting bridge premises | 10 | — | glm-ontology-bridge-premises |
+| review | `ontology-expansion-equivalence` — Determine genuine extra ontological structure versus redescription | 10 | — | glm-ontology-expansion-equivalence |
+| review | `ontology-equivalence-repair` — Repair expansion examples and audit definability quantifiers | 10 | — | glm-ontology-equivalence-repair |
+| review | `ontology-bridges-repair` — Rebuild noncircular bridge arguments and their strongest objections | 10 | — | glm-ontology-bridges-repair |
+| review | `ontology-rivals-repair` — Repair the grounding and translation test for temporal rivals | 10 | — | glm-ontology-rivals-repair |
+| done | `lawful-axis-source-review` — Audit exact LOY finite-order inputs for Cartesian axis reconstruction | 10 | — | glm-lawful-axis-source-review |
+| done | `lawful-axis-lift-review` — Red-team finite-order mass, parity and Cartesian C1,1 lifting proof | 10 | — | glm-lawful-axis-lift-review |
+| done | `ontology-persistence-review` — Audit chronological versus causal persistence and corrected flat-space census | 10 | — | glm-ontology-persistence-review |
+| review | `ontology-null-refinements-review` — Red-team sixteen 1+1 realm rules and corrected topology/persistence refinements | 10 | — | glm-ontology-null-refinements-review |
+| done | `lawful-finite-control-review` — Audit compactness continuity and finite scalar interpolation at fixed incoming mass | 10 | — | glm-lawful-finite-control-review |
+| review | `lawful-higher-regularity-audit` — Check higher-regularity literature against two-sided LOY scattering limits | 9 | — | glm-lawful-higher-regularity-audit |
+| review | `ontology-persistence-priorart` — Challenge novelty of the exact persistence census against primary predecessors | 9 | — | glm-ontology-persistence-priorart |
+| done | `lawful-smooth-exterior-native` — Red-team exterior all-order Goursat bootstrap for compact incoming data | 10 | — | native-smooth-exterior |
+| done | `lawful-smooth-polar-native` — Check polar chart, weak constraint algebra and Sobolev smoothing operators | 10 | — | native-smooth-polar |
+| done | `lawful-smooth-persistence-native` — Adversarial check of localized nonlocal polar persistence lemma | 10 | — | native-smooth-persistence |
+| done | `lawful-smooth-realm-contrast` — Audit causal-past freedom versus full bow-tie rigidity in smooth scattering class | 10 | — | native-smooth-realm-contrast |
+| done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
+| review | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
+| review | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
+| claimed | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | glm-lawful-prefix-energy-control |
+| done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
+| done | `ontology-response-memory-priorart` — Challenge novelty of response-memory support versus small-mass norm contrast | 10 | — | glm-ontology-response-memory-priorart |
+| done | `ontology-response-memory-review` — Red-team retarded response support, norm limit and transport-window benchmark | 10 | — | native-response-memory |
+| review | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
+| review | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | glm-ontology-cycle-recovery-test |
+| claimed | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | glm-lawful-central-history-review |
+| review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
+| done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
+| review | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
+| review | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
+| done | `ontology-occurrence-countermodel-review` — Audit the explicit rival to occurrence-to-current-concreteness | 12 | — | native-occurrence-countermodel-review |
+| done | `ontology-modal-counterexample-review` — Independently test the dense-comb counterexample to modal nontriviality | 12 | — | native-modal-counterexample-review |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

@@ -1,4 +1,4 @@
-"""Finite observer-algebra comparison for the phase-aligned event.
+"""Finite class-membership and sum check; this does not test coherent-filter access.
 
 Standard library only. Labelled posets are tuples of bitmasks (past of each
 element); classes are canonical edge sets under all permutations.
@@ -81,6 +81,7 @@ def main():
             assert len({(r[0] - r[1]) % 8 for r in rows}) == 1
         selected = {k: rows for k, rows in classes.items()
                     if (rows[0][0] - rows[0][1]) % 8 in (0, 1)}
+        assert 0 < len(selected) < len(classes), "event must be a nonempty proper class union"
         total = Z
         for rows in selected.values():
             total = add(total, (rows[0][2][0] * len(rows),
@@ -99,9 +100,9 @@ def main():
         print(f"  n={n}: selected k={selected_k} reps={sum(comb(n,k) for k in selected_k)} "
               f"|sum|^2={total[0]**2 + total[1]**2}")
 
-    print("PASS: phase-aligned event is a proper union of classes in both models")
-    print("NOTE: the cardinality-only algebra sees only full levels, so the")
-    print("      selected event is outside its adjoint image.")
+    print("PASS: finite event membership is a proper union of classes in both models")
+    print("NOTE: class membership does not imply coherent-filter access or completed-history covariance.")
+    print("      Independent counterexamples: research/observer-access-audit/check.py")
 
 
 if __name__ == "__main__":

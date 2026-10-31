@@ -1,0 +1,875 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Is}{I^-_{\mathrm s}}
+\newcommand{\Isp}{I^+_{\mathrm s}}
+\newcommand{\Det}{\mathrm{Det}}
+
+\title{Unreal Is Not Open:\\ prediction, horizons and the future in
+relativistic becoming}
+\author{Andrew Impellitteri}
+\date{28 October 2026 (draft 5: research integration)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+An event-relative interpretation of local relativistic becoming places what
+is real from an event between its chronological and causal past. Does the
+unreality of the future from an event make the future
+open from it? We separate the two questions. Call an event guaranteed from
+$b$ if every past-inextendible causal curve from it meets $b$'s chronological
+past; then every deterministic law with the domain-of-dependence property
+fixes it from what is real from $b$. The notion is essentially Geroch's
+domain of prediction. We characterize it by a condition on the slices of any
+Cauchy time function, show that it is conformally invariant, and compute it
+for the standard cosmological models. In Minkowski spacetime, spatially flat
+and open big-bang universes, the closed radiation universe and de Sitter
+spacetime, nothing outside an event's past is guaranteed. In Minkowski
+spacetime and the flat universes no local law need fix more than the causal
+past: a conformally coupled scalar field is fixed from an event exactly
+there. In the closed dust model everything is guaranteed from every event
+after maximum expansion, the known moment at which the particle horizon
+disappears. Before it, the same scalar field is already fixed on three
+diamonds: the event's past, an antipodal echo of it, and a region of the
+event's own timelike future just before the big crunch, while the
+intervening future stays open. For this field, which travels on light rays
+alone, what is fixed is decided by null geodesics rather than by all causal
+curves.
+Adding an arbitrarily small ordinary physical mass can remove exact fixing at
+a selected interior future event on the same dust background. Yet the hidden
+target differences, under a stated conformal-data norm bound, are $O(m^2)$:
+loss of exact fixing is distinct from practical unpredictability.
+Other local laws fix more: one with a preferred flow fixes everything even in
+Minkowski spacetime. So unreality does not entail openness. How much of the
+unreal future is fixed from an event depends on the spacetime's causal
+structure, whose guarantee can change with cosmic epoch, and on the fields,
+which that structure does not decide. A closing remark
+records what the corresponding standpoint logic does and does not show about
+cosmological horizons.
+\end{abstract}
+
+\section{Introduction}
+
+Stein's theorem says that in Minkowski spacetime a transitive,
+symmetry-invariant relation of becoming that makes some past event definite
+is the causal order or trivial \citep{Stein1968,Stein1991,CH1995}. A
+companion paper \citep{SteinGR} classifies becoming relations assigned uniformly
+to globally hyperbolic metric spacetimes, assuming chronological becoming,
+transitivity and preservation and reflection under causally convex isometric
+embeddings. In its nontrivial branch, what has become for an event $b$
+includes its chronological past and never goes beyond its causal past.
+The domain includes geometries not required to solve particular Einstein--matter
+equations; the locality premise is therefore a uniform metric-only requirement,
+not merely the absence of superluminal signalling. On views that read
+``has become for $b$'' as ``is real from $b$'' \citep{Fine2005,Lipman2023},
+the future of $b$ is not real from $b$. A theory with an additional clock or
+foliation and only embeddings preserving that structure changes these
+assumptions; it is not excluded simply by calling it nonlocal. The present
+paper takes the event-relative interpretation as a premise, not as an ontology
+derived from physics.
+
+It is tempting to infer that the future is \emph{open} from $b$. The
+inference fails, and the way it fails is instructive. Openness in the sense
+relevant here is a matter of what the real fixes, and that depends on the
+laws and on the global causal structure. The point is old in outline: a
+growing block \citep{Broad1923} combined with deterministic laws makes the
+future unreal yet fixed, and Rak\'ic's sea-fight case turns on an event
+outside an observer's past that a decision inside it appears to settle
+\citep{Rakic1997}. We ask more precisely when, under specified relativistic
+laws and admissible solutions, what is real from an event fixes anything
+beyond itself.
+Geroch's domain of prediction supplies the tool \citep{Geroch1977}, and
+Manchak's work on prediction its limits \citep{Manchak2008}. We use them to
+answer four questions:
+\begin{enumerate}
+\item Which events does the causal structure alone guarantee to be fixed,
+under any deterministic local law, by what is real from $b$
+(Theorem~\ref{thm:char})?
+\item In the standard cosmological models, how much is that, and how much
+more can a particular field fix (Section~\ref{sec:examples})?
+\item Can changing the field equation change exact fixing without changing
+the causal structure, and what does that say about finite precision
+(Section~\ref{sec:mass})?
+\item What follows for the relation between unreality and openness
+(Section~\ref{sec:phil})?
+\end{enumerate}
+
+\paragraph{Conventions.} Spacetimes are smooth, connected, time-oriented and
+globally hyperbolic. $\Is(p)$ is the strict chronological past (via timelike
+curves), $J^-(p)$ the causal past; $x\le y$ means $x\in J^-(y)$, and $x\ll y$
+means $x\in\Is(y)$. We use that $\le$ is closed, that $J^-(x)\cap S$ is
+compact for every Cauchy surface $S$, push-up ($y\le z\ll b$ implies $y\ll b$),
+and that $M=\Is(S)\cup S\cup\Isp(S)$ for a Cauchy surface $S$ \citep{MS2008}.
+A \emph{Cauchy time function} is a continuous surjection $t:M\to(\alpha,\beta)$,
+$-\infty\le\alpha<\beta\le\infty$, strictly increasing along future-directed
+causal curves, whose level sets $S_c=t^{-1}(c)$ are Cauchy surfaces
+\citep{BS2005}.
+
+\section{Guaranteed from an event}\label{sec:det}
+
+\begin{definition}
+An event $x$ is \emph{guaranteed from} $b$ if every past-inextendible causal
+curve from $x$ meets $\Is(b)$. Write $\Det(b)$ for the set of such events.
+Clearly $\Is(b)\subseteq\Det(b)$.
+\end{definition}
+
+$\Det(b)$ is a property of the spacetime and the event. To connect it with
+what the laws fix, let $\mathcal L$ be the set of solutions of some field
+equations on $M$. Say that $x$ is \emph{fixed from $b$ under $\mathcal L$},
+and write $x\in F_{\mathcal L}(b)$, if any two solutions in $\mathcal L$ that
+agree on $\Is(b)$ agree at $x$. The equations, background and globally
+admissible solution class are held fixed in this comparison; they are inputs
+to the definition, not data an observer is assumed to have measured in the
+past. Here agreement means equality of the specified classical fields on the
+whole open region, not equality of a finite collection of detector records.
+Say that $\mathcal L$ has the
+\emph{domain-of-dependence property} if, for every open $U\subseteq M$, any two
+solutions that agree on $U$ agree at every event all of whose
+past-inextendible causal curves meet $U$. We assume this uniqueness property
+explicitly; it is not inferred merely from an operational no-signalling
+condition.
+
+\begin{remark}[What is guaranteed and what is fixed]\label{rem:laws}
+If $\mathcal L$ has the domain-of-dependence property and consists of
+continuous fields, then
+\[\Det(b)\cup J^-(b)\subseteq F_{\mathcal L}(b),\]
+since $J^-(b)$ is the closure of $\Is(b)$ in a globally hyperbolic spacetime
+\citep{MS2008}. So $\Det(b)$ is fixed under every such law: it is what the
+causal structure guarantees, whatever the fields. The inclusion is in general
+strict, and nothing about $F_{\mathcal L}(b)$ beyond it follows from $\Det(b)$
+being small. For example, on Minkowski spacetime with the unit timelike
+field $u=\partial_t$, the local equations $u\cdot\nabla Q=P$,
+$u\cdot\nabla P=0$ have the solutions $Q=A(\vec X)+tB(\vec X)$, $P=B(\vec X)$
+for arbitrary smooth $A,B$. The values of $(Q,P)$ at one point of an integral curve fix them along
+it, and the past integral curve from $x$ is a past-inextendible causal curve,
+so the law has the domain-of-dependence property; and every integral curve
+of $u$ enters $\Is(b)$, so $F_{\mathcal L}(b)=M$ for every $b$. A law of this
+kind uses background structure beyond the metric, but nothing in the
+domain-of-dependence property excludes it. Neither notion is Belnap's
+settledness, on which a proposition is settled at a point event if it holds
+in every possible history through it \citep{Belnap1992}; under
+indeterministic laws they come apart from it, and we say nothing about such
+laws. We use $\Is(b)$, which every local becoming theory counts as real from
+$b$, rather than $J^-(b)$; the characterization below uses that $\Is(b)$ is
+open.
+\end{remark}
+
+\paragraph{Relation to Geroch.} Geroch's domain of prediction $P(q)$ is the set
+of $x$ such that every past-directed timelike curve from $x$ without past
+endpoint enters $I^-(q)$, but $I^-(x)\not\subseteq I^-(q)$ \citep[sec.~3]{Geroch1977}.
+$\Det(b)$ is the causal-curve analogue of the union of $P(b)$ with the
+events whose pasts lie in that of $b$; we expect the two to differ at most
+on null boundaries, but have not proved it. Geroch gives an equivalent form by achronal surfaces in $I^-(q)$
+\citep[sec.~3]{Geroch1977}; Theorem~\ref{thm:char} is a slicing form for
+globally hyperbolic spacetimes.
+
+\begin{theorem}\label{thm:char}
+Let $t:M\to(\alpha,\beta)$ be a Cauchy time function. Then $x\in\Det(b)$ if
+and only if there is $c\in(\alpha,t(x))$ with $J^-(x)\cap S_c\subseteq\Is(b)$.
+\end{theorem}
+
+\begin{proof}
+($\Leftarrow$) A past-inextendible causal curve from $x$ crosses the Cauchy
+surface $S_c$, at a point of $J^-(x)\cap S_c\subseteq\Is(b)$.
+
+($\Rightarrow$) Suppose that for every $c\in(\alpha,t(x))$ the set
+$K_c=(J^-(x)\cap S_c)\setminus\Is(b)$ is nonempty; it is compact, since
+$\Is(b)$ is open. Fix $t(x)>c_1>c_2>\dots$ with $c_n\to\alpha$, and let
+\[P_n=\{(z_1,\dots,z_n)\in K_{c_1}\times\dots\times K_{c_n}:
+x\ge z_1\ge z_2\ge\dots\ge z_n\}.\]
+$P_n$ is compact, since $\le$ is closed. It is nonempty: pick $y\in K_{c_n}$
+and a causal curve from $x$ to $y$; it crosses each $S_{c_i}$, $i<n$, at some
+$z_i\le x$, and $z_i\notin\Is(b)$, for otherwise $y\le z_i\ll b$ would give
+$y\ll b$. The maps $P_{n+1}\to P_n$ forgetting the last coordinate are
+continuous, so the inverse limit of the nonempty compact spaces $P_n$ is
+nonempty, giving $x\ge z_1\ge z_2\ge\cdots$ with $z_n\in K_{c_n}$. Join
+consecutive terms by causal curves and concatenate. Each segment avoids
+$\Is(b)$ by push-up, as before. Along the concatenation $t\to\alpha$, so it has
+no past endpoint in $M$: it is a past-inextendible causal curve from $x$
+missing $\Is(b)$.
+\end{proof}
+
+\begin{corollary}\label{cor:cauchy}
+If $\Is(b)$ contains a Cauchy surface $S$, then $\Det(b)=M$.
+\end{corollary}
+
+\begin{proof}
+If $x\in\Is(S)\cup S$, then $x\le s\ll b$ for some $s\in S$, so $x\in\Is(b)$.
+If $x\in\Isp(S)$, extend a past-inextendible causal curve from $x$ to an
+inextendible one; it meets $S$, and not to the future of $x$, since then
+$s'\ll x\le s$ for some $s,s'\in S$, contradicting achronality. So the curve
+from $x$ meets $S\subseteq\Is(b)$.
+\end{proof}
+
+Since $\Det(b)$ is defined by causal curves alone, it depends only on the
+conformal class of the metric; conformal diagrams decide it.
+
+\section{The standard models}\label{sec:examples}
+
+\begin{lemma}\label{lem:balls}
+Let $(\Sigma,d)$ be $\mathbb R^3$, hyperbolic space $H^3$, or the unit sphere
+$S^3$ with $r_2\le\pi$. Then the closed ball $\bar B(X,r_1)$ lies in the open
+ball $B(Y,r_2)$ if and only if $d(X,Y)+r_1<r_2$.
+\end{lemma}
+
+\begin{proof}
+($\Leftarrow$) is the triangle inequality. ($\Rightarrow$) Let $r_1\ge0$ and suppose
+$d(X,Y)+r_1\ge r_2$. On $\mathbb R^3$ and $H^3$, where geodesics extend
+indefinitely and minimize, or on $S^3$ when $d(X,Y)+r_1\le\pi$, follow a minimizing geodesic from $Y$ through $X$ (any geodesic from
+$X$ if $X=Y$) a further distance $r_1$; the endpoint lies in $\bar B(X,r_1)$ at
+distance $d(X,Y)+r_1\ge r_2$ from $Y$. If $d(X,Y)+r_1>\pi$ on $S^3$, the
+antipode of $Y$ is at distance $\pi-d(X,Y)<r_1$ from $X$ and $\pi\ge r_2$ from
+$Y$.
+\end{proof}
+
+\begin{proposition}\label{prop:conformal}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times\Sigma$ with metric
+$-d\eta^2+d\Sigma^2$, where $\Sigma$ is $\mathbb R^3$, $H^3$, or the unit $S^3$
+with $\eta_+-\eta_-\le\pi$. Then $\Det(b)=\Is(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+Use $t=\eta$. For $x=(\eta_x,X)$, $b=(\eta_b,Y)$: $x\ll b$ iff
+$d(X,Y)<\eta_b-\eta_x$ (on $S^3$, $\eta_b-\eta_x<\pi$). For $\eta_-<c<\eta_x$,
+$J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ and $\Is(b)\cap S_c=B(Y,\eta_b-c)$, with
+$\eta_b-c<\pi$ on $S^3$. By Lemma~\ref{lem:balls} the inclusion holds iff
+$d(X,Y)<\eta_b-\eta_x$, i.e.\ iff $x\ll b$. Apply Theorem~\ref{thm:char}.
+\end{proof}
+
+This covers Minkowski spacetime, spatially flat and open FLRW universes with
+a big bang (conformal to $\eta>0$), the closed radiation universe
+($a\propto\sin\eta$, $\eta\in(0,\pi)$) and global de Sitter spacetime ($\Sigma=S^3$,
+$\eta\in(-\pi/2,\pi/2)$) \citep{HE1973}. In none of them is anything outside an
+event's chronological past guaranteed from it. In Minkowski spacetime and the
+spatially flat universes this bound is attained by a natural field.
+
+\begin{proposition}\label{prop:sharp}
+Let $M=(\eta_-,\eta_+)\times\mathbb R^3$ with $g=a(\eta)^2(-d\eta^2+d\vec X^2)$,
+$a>0$ smooth, and let $\mathcal L$ be the smooth solutions of the conformally
+coupled scalar equation $\Box_g\phi-\tfrac16R\phi=0$. Then
+$F_{\mathcal L}(b)=J^-(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+$J^-(b)\subseteq F_{\mathcal L}(b)$ by continuity, as in
+Remark~\ref{rem:laws}. Conversely, $\phi$ is a solution iff $\psi=a\phi$
+solves the flat wave equation $\partial_\eta^2\psi=\Delta\psi$ on $M$
+\citep[app.~D]{Wald1984}. Let $b=(\eta_b,\vec Y)$ and $x=(\eta_x,\vec X)\notin
+J^-(b)$, so $\eta_x-\eta_b+|\vec X-\vec Y|>0$, since the causal curves of $M$
+are those of the conformal Minkowski metric and the slab is causally convex in
+Minkowski spacetime. Choose a unit vector $\hat k$
+with $\hat k\cdot(\vec X-\vec Y)=-|\vec X-\vec Y|$, a smooth $f$ vanishing on
+$(-\infty,0]$ and positive on $(0,\infty)$, and put $\psi=f(u)$ with
+$u=\eta-\eta_b-\hat k\cdot(\vec Z-\vec Y)$ at $(\eta,\vec Z)$. This solves the
+wave equation. On $\Is(b)$, $\eta-\eta_b<-|\vec Z-\vec Y|$, so $u<0$ and
+$\psi=0$; at $x$, $u>0$ and $\psi\neq0$. So $\psi/a$ and $0$ are solutions that
+agree on $\Is(b)$ but not at $x$.
+\end{proof}
+
+
+\begin{proposition}\label{prop:dust}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times S^3$ with $\eta_+-\eta_->\pi$.
+Then $\Det(b)=\Is(b)$ if $\eta_b\le\eta_-+\pi$, and $\Det(b)=M$ if
+$\eta_b>\eta_-+\pi$. In the Einstein static universe ($\eta_\pm=\pm\infty$),
+$\Det(b)=M$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+If $\eta_b>\eta_-+\pi$, take $c\in(\eta_-,\eta_b-\pi)$: $\Is(b)\cap S_c$ is an open
+ball of radius greater than $\pi$, hence all of $S_c$, and
+Corollary~\ref{cor:cauchy} applies. If $\eta_b\le\eta_-+\pi$, every $c>\eta_-$
+has $\eta_b-c<\pi$, and the proof of Proposition~\ref{prop:conformal} applies.
+\end{proof}
+
+For the closed dust FLRW model, $a(\eta)=\tfrac12a_m(1-\cos\eta)$ with
+$\eta\in(0,2\pi)$, the threshold is $\eta=\pi$, the moment of maximum
+expansion. That the particle horizon of the closed dust model disappears at
+maximum expansion, so that an observer can then in principle see the whole
+universe, is known \citep{GronJohannesen2011,BolotinTanatarov2013}; the
+Einstein static case is Geroch's \citep[Fig.~5]{Geroch1977}. What
+Proposition~\ref{prop:dust} adds is the consequence for determination: with
+Corollary~\ref{cor:cauchy}, once the particle horizon has vanished
+($\eta_b>\pi$), everything is guaranteed from $b$, so that every law with the
+domain-of-dependence property fixes everything from what is real from $b$.
+This fits Manchak's theorem that if some event of $b$'s timelike future lies
+in Geroch's domain of prediction of $b$, the spacetime admits a compact
+spacelike slice \citep[p.~319]{Manchak2008}. That theorem concerns the
+geometric notion. The flow law of Remark~\ref{rem:laws} shows that it has no
+analogue for what a particular law fixes: in Minkowski spacetime, which has no
+compact slice, that law fixes all of $b$'s timelike future. Manchak also
+records the view that ``Maxwell's equations constrain some spacetimes in such
+a way as to allow for prediction'' \citep[p.~321 and n.~15]{Manchak2008}, so
+the law-relative notion has antecedents. Earman's discussion explicitly
+includes the Cauchy-surface exception and an electromagnetic-constraint
+example citing Ellis and Sciama \citep[pp.~125--130]{Earman1995}. We have checked
+these selected original Earman pages; Ellis and Sciama (1972, pp.~41--42)
+remain unread here and enter this comparison through Earman's discussion.
+The model-specific characterization below may overlap with those sources;
+we make no priority claim for it.
+
+Before maximum expansion a particular field can fix more than is guaranteed.
+Light leaving a point of the closed model refocuses at its antipode after
+conformal time $\pi$, and the rescaled conformal scalar $\psi=a\phi$ returns
+there with its sign reversed.
+
+\begin{proposition}\label{prop:echo}
+Let $M$ be the closed dust model, $g=a(\eta)^2(-d\eta^2+d\Omega_3^2)$ with
+$a=\tfrac12a_m(1-\cos\eta)$, $\eta\in(0,2\pi)$, and $\mathcal L$ as in
+Proposition~\ref{prop:sharp}. Let $A(\eta,X)=(\eta+\pi,-X)$, where $-X$ is the
+antipode of $X$. Then $J^-(b)\cup\bigl(A(J^-(b))\cap M\bigr)\subseteq
+F_{\mathcal L}(b)$. The set $A(J^-(b))\cap M$ is disjoint from $\Isp(b)$, and if
+$\eta_b\le\pi$ it is nonempty and disjoint from $\Det(b)$.
+\end{proposition}
+
+\begin{proof}
+Here $\psi=a\phi$ solves the conformally invariant equation of the Einstein
+static universe, $\partial_\eta^2\psi=\Delta\psi-\psi$ on the unit $S^3$
+\citep[app.~D]{Wald1984}, and by global well-posedness extends uniquely to
+$\mathbb R\times S^3$.
+Expanding in spherical harmonics of degree $n$, which have frequency $n+1$
+and parity $(-1)^n$ under the antipodal map, each mode, and so every smooth
+solution, satisfies $\psi(\eta+\pi,-X)=-\psi(\eta,X)$. Two solutions that agree on $\Is(b)$ agree, by continuity, on $J^-(b)$, and
+hence on $A(J^-(b))\cap M$. If $(\eta,X)\in J^-(b)$ and $\eta+\pi<2\pi$, then
+$d(X,Y)\le\eta_b-\eta$, so $d(-X,Y)=\pi-d(X,Y)\ge(\eta+\pi)-\eta_b$;
+thus $A(\eta,X)\notin\Isp(b)$. If $\eta_b\le\pi$, then
+$\Det(b)=\Is(b)$ by Proposition~\ref{prop:dust}, which lies in
+$\{\eta<\eta_b\}$, while $A(J^-(b))$ lies in $\{\eta>\pi\}$ and meets $M$, for
+instance at $A(\eta_b/2,Y)$ when $b=(\eta_b,Y)$.
+\end{proof}
+
+For $\eta_b\le\pi$, the echo events are unreal from $b$ and fixed from $b$,
+but they lie beside $b$ or on its future light cone, not in its timelike
+future. The field fixes
+more than the echo, including part of $b$'s timelike future. Let
+$\Diamond_b=\{(\eta,X)\in\mathbb R\times S^3:d(X,Y)+|\eta|<\eta_b\}$, the double
+cone in the Einstein static universe between $b$ and its mirror image
+$(-\eta_b,Y)$, and $U_b=\Diamond_b\cup A\Diamond_b\cup A^2\Diamond_b$.
+
+\begin{theorem}\label{thm:diamonds}
+In the setting of Proposition~\ref{prop:echo}, let $0<\eta_b<\pi$. Then
+$F_{\mathcal L}(b)=M\cap\overline{U_b}$. In
+particular $F_{\mathcal L}(b)$ contains the nonempty set
+$\{(\eta,X)\in M:d(X,Y)\le\eta+\eta_b-2\pi\}$, which lies in $\Isp(b)$.
+\end{theorem}
+
+\begin{proof}
+For data $(f,g)$ at $\eta=0$, the Einstein static solution is
+$\psi(\eta,X)=\partial_\eta[\sin\eta\,M_f(X,\eta)]+\sin\eta\,M_g(X,\eta)$, where
+$M_h(X,r)$ is the mean of $h$ over the geodesic sphere of radius $r$ about
+$X$; one checks this on each mode, using that the zonal function of degree $n$
+on $S^3$ is $\sin((n+1)r)/((n+1)\sin r)$. So $\psi(x)$ depends on the data only
+near the sphere $\Sigma_x=S(X,\eta_x)$, which is the point $-X$ when $\eta_x=\pi$.
+
+\emph{Sufficiency.} Solutions agreeing on $\Is(b)$ agree on the ball
+$B(Y,\eta_b-\epsilon)$ in the slice $\eta=\epsilon$, hence on its domain of
+dependence in the Einstein static universe; the union over $\epsilon>0$ is
+$\Diamond_b$. The identities $\psi\circ A=-\psi$ and $\psi\circ A^2=\psi$ carry
+the agreement to $A\Diamond_b$ and $A^2\Diamond_b$.
+Moreover, $F_{\mathcal L}(b)$ is relatively closed in $M$: it is the
+intersection of the zero sets of all smooth difference solutions vanishing
+on $\Is(b)$. Since $M$ is open in the Einstein cylinder, taking the relative
+closure gives $M\cap\overline{U_b}\subseteq F_{\mathcal L}(b)$.
+
+\emph{Necessity.} Let $x\in M\setminus\overline{U_b}$. Replacing $x$ by
+$A^{-1}x$ if $\eta_x>\pi$, assume $\eta_x\le\pi$. Let $C=\bar B(Y,\eta_b)$.
+Data supported off $C$ give a solution vanishing on $\Is(b)$: if $z\in\Is(b)$
+lay in its support, then $w\le z\ll b$ for some $w$ in the support of the data,
+so $d(w,Y)<\eta_b$. If $\eta_x=\pi$, then $d(-X,Y)>\eta_b$, and data
+$(f,0)$ with $f$ a bump at $-X$ off $C$ give $\psi(x)=-f(-X)\neq0$. If
+$\eta_x<\pi$, then $\Sigma_x\not\subseteq C$: otherwise the connected set
+$S^3\setminus C$ lies in one of the two open balls bounded by $\Sigma_x$, so
+the other closed ball lies in $C$, which by the argument of
+Lemma~\ref{lem:balls} means
+$d(X,Y)+\eta_x\le\eta_b$ or $d(-X,Y)+\pi-\eta_x\le\eta_b$, that is,
+$x\in\overline{\Diamond_b}\cup\overline{A\Diamond_b}$. Take $p\in\Sigma_x\setminus C$
+and data $(0,g)$ with $g\ge0$ supported near $p$ off $C$ and $g(p)>0$; then
+$\psi(x)=\sin\eta_x\,M_g(X,\eta_x)>0$.
+
+Finally, if $d(X,Y)\le\eta+\eta_b-2\pi$, then $d(X,Y)<\eta-\eta_b$ because
+$\eta_b<\pi$, so $(\eta,X)\in\Isp(b)$; the set contains $(\eta,Y)$ for
+$\eta\ge2\pi-\eta_b$.
+\end{proof}
+
+On $b$'s comoving geodesic $X=Y$, the field is fixed from $b$ exactly for
+$\eta\le\eta_b$ and for $\eta\ge2\pi-\eta_b$, and open in between: the end is
+fixed before the middle. The reason is that the past light cone of an event
+just before the crunch wraps around the universe and refocuses near $Y$ at the
+big bang, inside what is real from $b$. The same sphere argument shows that,
+up to boundary, $M\cap U_b$ is the set
+of events all of whose past-inextendible null geodesics meet $\Is(b)$, so for
+this field, which propagates on light rays alone, the null geodesics decide
+what is fixed. The same argument applies to global de Sitter spacetime,
+conformal to the slab $(-\pi/2,\pi/2)$, where the field is fixed from $b$ on the
+antipodal comoving geodesic for all $\eta>-\eta_b$, although no signal from that
+geodesic ever reaches the comoving geodesic of $b$. So the geometric threshold
+at maximum expansion marks when everything is guaranteed, not when this field
+first fixes anything beyond the past.
+
+For a law whose fixed set itself changes at the threshold, take the comoving
+flow $u=a^{-1}\partial_\eta$ of the closed dust model with the equations of
+Remark~\ref{rem:laws}; here $u$ is the dust's own four-velocity, so the law
+adds no structure the model lacks. The comoving line through $X$ meets $\Is(b)$ iff
+$d(X,Y)<\eta_b$, so, by continuity in $X$ and by choosing data supported off
+the closed ball, $F_{\mathcal L}(b)=(0,2\pi)\times\bar B(Y,\eta_b)$. This is a
+proper subset of $M$, containing events in $b$'s timelike future, if
+$\eta_b<\pi$, and all of $M$ if $\eta_b\ge\pi$. Under this law the answer to
+``is the future fixed from here?'' differs between events before and after
+maximum expansion.
+
+Whether in the closed models some local law fixes no more than
+$\Det(b)\cup J^-(b)$ we leave open.
+
+\section{Changing the law and changing the records}\label{sec:mass}
+
+The massless example is special. Its extra fixing can change even when the
+metric and its causal curves are held fixed. Let $\mathcal L_m$ consist of
+all smooth real solutions on the closed dust strip of
+\[
+ (\Box_g-R_g/6-m^2)\phi=0,
+\]
+with ordinary constant physical mass $m\ge0$, and write $F_m(b)$ for its
+fixing set. Set $\Lambda^2=-\Delta_{S^3}+1$ and $T=2\pi$. With
+$\psi=a\phi$ and $\lambda=m^2$, the rescaled equation is
+\begin{equation}\label{eq:mass}
+ \psi_{\lambda,\eta\eta}+(\Lambda^2+\lambda q(\eta))\psi_\lambda=0,
+ \qquad q(\eta)=a(\eta)^2.
+\end{equation}
+In particular a constant addition to the rescaled potential would be a
+different perturbation, corresponding to physical potential $\delta/a^2$.
+
+\begin{proposition}[Loss of exact fixing under ordinary mass]\label{prop:mass}
+Fix the dust amplitude $a_m>0$. For each $b=(\tau,Y)$ with $0<\tau<\pi$,
+there are a fixed event
+$x_*=(T-s,Y)$, $0<s<\tau$, and $m_*>0$ such that
+\[
+ x_*\in F_0(b)\cap\Isp(b),\qquad
+ x_*\notin F_m(b)\quad\text{for every }0<m<m_*.
+\]
+The background metric is the same for all these solution classes.
+\end{proposition}
+
+\begin{proof}
+Choose a nonzero smooth $v\ge0$ supported strictly outside
+$\bar B(Y,\tau)$, and solve \eqref{eq:mass} with data $(0,v)$ at the
+auxiliary cylinder slice $\eta=0$. The coefficient $q=a^2$ is smooth through
+$0$ and $T$, so ordinary smooth Cauchy evolution and parameter dependence
+apply on the extended cylinder. This is a device for constructing solutions
+on the open physical strip, not a physical continuation through its
+singularities. For $z=(\eta,Z)\in\Is(b)$, the initial ball
+$\bar B(Z,\eta)$ lies in $B(Y,\tau)$ by the triangle inequality. Finite
+propagation therefore gives $\psi_\lambda=0$ throughout $\Is(b)$ for every
+$\lambda$; the zero-order term does not change this conclusion.
+
+Put $S_0(u)=\sin(u\Lambda)/\Lambda$. The first variation
+$w=\partial_\lambda\psi_\lambda|_{\lambda=0}$ has zero initial data and source
+$-q(u)S_0(u)v$. Since $S_0(T-u)=-S_0(u)$, Duhamel's formula gives
+\[
+ w(T)=\int_0^T q(u)S_0(u)^2v\,du.
+\]
+The frequencies are $k=n+1$. Expanding
+$q=(a_m^2/4)(3/2-2\cos u+\tfrac12\cos2u)$ gives
+\[
+ \int_0^T q(u)\frac{\sin^2(ku)}{k^2}\,du
+ =\begin{cases}5\pi a_m^2/16,&k=1,\\
+                 3\pi a_m^2/(8k^2),&k\ge2.
+   \end{cases}
+\]
+Thus, with $\Pi_0$ the projection onto spatial constants,
+\[
+ w(T)=\left(\frac{3\pi a_m^2}{8}\Lambda^{-2}
+                -\frac{\pi a_m^2}{16}\Pi_0\right)v.
+\]
+The kernel of $\Lambda^{-2}$ on the unit $S^3$ is
+$G(r)=(\pi-r)/(4\pi^2\sin r)$: it solves the homogeneous radial equation
+away from its pole, is smooth at the antipode, and has the normalized
+singularity $1/(4\pi r)$. Since $\Pi_0$ has kernel $1/(2\pi^2)$, the kernel
+of the operator displayed above is
+\[
+ K(r)=\frac{a_m^2}{32\pi}
+       \left(\frac{3(\pi-r)}{\sin r}-1\right)>0\qquad(0<r\le\pi),
+\]
+using $(\pi-r)/\sin r\ge1$, with its continuous value at $r=\pi$.
+Consequently $w(T,Y)>0$. Continuity now permits a choice of a fixed
+$s\in(0,\tau)$ with $w(T-s,Y)>0$. Theorem~\ref{thm:diamonds} puts
+$x_*=(T-s,Y)$ in $F_0(b)\cap\Isp(b)$, so $\psi_0(x_*)=0$.
+Smooth dependence on $\lambda$ yields
+\[
+ \psi_{m^2}(x_*)=m^2w(x_*)+o(m^2)>0
+\]
+for every sufficiently small positive $m$. Because $a(x_*)>0$, the physical
+field and zero agree on $\Is(b)$ but differ at $x_*$. The event and data
+were chosen before the mass interval.
+\end{proof}
+
+This proves neither that all extra fixing is lost nor a formula for $F_m$.
+The mass threshold can depend on the target and data. The result concerns a
+linear classical field on a fixed background, without interactions,
+quantization or gravitational backreaction.
+
+\subsection{A norm bound for hidden alternatives}
+
+Exact fixing quantifies over every admissible difference, however small.
+To ask about its size, a restriction on alternatives must be supplied. Use
+the conformal Cauchy-data norm
+\[
+ N(f,v)^2=\|\Lambda f\|_2^2+\|v\|_2^2
+\]
+at the auxiliary slice $\eta=0$, with unit-$S^3$ volume $2\pi^2$.
+This is not an observer's measured physical-energy budget.
+
+\begin{proposition}\label{prop:norm}
+Let $\psi_\lambda$ and $\psi_0$ have the same smooth data $(f,v)$ and solve
+the cylinder equation with spatially homogeneous smooth real potential
+$\lambda q(\eta)$ and with zero potential, respectively. For $\eta\ge0$, put
+$Q(\eta)=\int_0^\eta |q(u)|\,du$. Then
+\begin{equation}\label{eq:norm}
+ \sup_X|\psi_\lambda(\eta,X)-\psi_0(\eta,X)|
+ \le \frac{|\lambda|Q(\eta)e^{|\lambda|Q(\eta)}}{\sqrt6}\,N(f,v).
+\end{equation}
+If $f=0$, the denominator improves to $\sqrt{12}$.
+\end{proposition}
+
+\begin{proof}
+Let $C_{\lambda,k}$ and $S_{\lambda,k}$ be the fundamental solutions with
+data $(1,0)$ and $(0,1)$ at frequency $k\ge1$. Their Volterra equations and
+Gronwall's inequality imply
+$|C_{\lambda,k}|\le e^{|\lambda|Q/k}$ and
+$|S_{\lambda,k}|\le e^{|\lambda|Q/k}/k$. Substitution back into those
+equations bounds the differences from the free multipliers by
+\[
+ |C_{\lambda,k}-\cos k\eta|\le B/k,\qquad
+ |S_{\lambda,k}-\sin(k\eta)/k|\le B/k^2,
+ \quad B=|\lambda|Qe^{|\lambda|Q}.
+\]
+Acting on $\Lambda f$ rather than $f$, the first multiplier acquires another
+$1/k$. The addition identity for an orthonormal harmonic basis is
+$\sum_j|Y_{kj}(X)|^2=k^2/(2\pi^2)$, since the eigenspace has dimension
+$k^2$ and its diagonal projector is rotation-invariant. Joint
+Cauchy--Schwarz on the coefficients of $(\Lambda f,v)$ bounds the squared
+evaluation norm by
+\[
+ \sum_{k=1}^\infty\frac{k^2}{2\pi^2}
+       \left(\frac{B^2}{k^4}+\frac{B^2}{k^4}\right)
+ =\frac{B^2}{6}.
+\]
+Removing the position-data term halves this bound. The argument concerns
+smooth solutions and the bounded difference functional; it does not assign
+point values to arbitrary individual finite-energy fields.
+\end{proof}
+
+Apply this to any rescaled difference $h_m=a(\phi_1-\phi_2)$ of two massive
+solutions agreeing exactly on $\Is(b)$, with data $(f,v)$. Smooth extension to zero
+implies that both data vanish on $B(Y,\tau)$. The massless solution $h_0$
+with the same data vanishes on $\Is(b)$ by finite propagation. Thus
+$h_0(x)=0$ for every $x\in F_0(b)$, and \eqref{eq:norm} gives
+\begin{equation}\label{eq:hidden}
+ |h_m(\eta,X)|\le
+ \frac{m^2Q(\eta)e^{m^2Q(\eta)}}{\sqrt6}N(f,v),
+ \qquad (\eta,X)\in F_0(b),
+\end{equation}
+where, for dust,
+\[
+ Q(\eta)=\frac{a_m^2}{4}
+ \left(\frac{3\eta}{2}-2\sin\eta+\frac{\sin2\eta}{4}\right).
+\]
+The bound controls all such smooth alternatives with $N\le1$, not just the
+witness in Proposition~\ref{prop:mass}. At fixed targets their rescaled
+ambiguity is $O(m^2)$. For physical fields divide by $a(\eta)>0$; uniform
+physical-field control requires staying away from the singular endpoints.
+Without a norm bound any nonzero hidden solution can instead be scaled to
+an arbitrarily large target difference. Neither convention is an observation
+model supplied by the geometry.
+
+\subsection{Errors in records are a different question}
+
+Equation~\eqref{eq:hidden} retains exact agreement on the whole past while
+changing the law. It is not a stability theorem for noisy records under a
+fixed law. Even at a massless-fixed target, an aggregate field-error norm
+need not control a point value. To see the regularity issue explicitly, fix
+any interior target $(\eta_*,Y)$ and let $Z_k$ be the real unit-$L^2$ zonal
+harmonic centered at $Y$, with $Z_k(Y)=k/\sqrt{2\pi^2}$. The smooth massless
+solutions
+\[
+ \psi_K(\eta,X)=\frac1{\sqrt K}
+  \sum_{k=K}^{2K-1}\frac{\cos(k(\eta-\eta_*))}{k}Z_k(X)
+\]
+have conserved conformal norm $N=1$ and target value
+$\sqrt{K/(2\pi^2)}$, but
+\[
+ \|\psi_K\|_{L^2((0,2\pi)\times S^3)}^2
+ =\frac\pi K\sum_{k=K}^{2K-1}\frac1{k^2}\le\frac\pi{K^2}.
+\]
+Their error on $\Is(b)$ is even smaller. They do not agree \emph{exactly}
+there. This is unbounded point evaluation under a specified norm, already
+present with records of the entire strip, not a causal-horizon or detector
+failure. Every fixed spatial average with profile $\chi\in L^2(S^3)$ instead
+satisfies $|\langle\chi,\psi_K(\eta)\rangle|\le\|\chi\|_2/K$.
+No general past-record stability theorem for such averages is asserted.
+
+A common finite spectral cutoff changes the exact question too: every
+solution in that restricted massless class is a finite real-analytic sum,
+so agreement on any nonempty open region entails agreement everywhere.
+Its fixing set is all of $M$. Thus finite mode sums cannot establish exact
+past agreement with a nonzero future difference in the unrestricted smooth
+theory. These are classical regularity observations, not further priority
+claims or results about the physical measurement process.
+
+\section{Unreality and openness}\label{sec:phil}
+
+Put together with the companion theorem, these results separate three
+properties of an event $x$ relative to a standpoint $b$:
+\begin{itemize}
+\item \emph{real from $b$}: $x$ is in $b$'s fragment, which a local becoming
+theory fixes to lie between $\Is(b)$ and $J^-(b)$;
+\item \emph{guaranteed from $b$}: $x\in\Det(b)$, so that every law with the
+domain-of-dependence property fixes $x$ from what is real from $b$;
+\item \emph{fixed from $b$ under given laws}: $x\in F_{\mathcal L}(b)$.
+\end{itemize}
+Every real event is fixed under any continuous law with the
+domain-of-dependence property, and every guaranteed event is fixed under
+each such law. The standard models exhibit two geometric regimes: in the
+flat, open, radiation and de Sitter models nothing beyond the fragment is
+guaranteed; in the closed dust model after maximum expansion, and in the
+Einstein static universe, everything is. So:
+
+\begin{enumerate}
+\item \emph{Unreality does not entail openness.} An event can be unreal from
+$b$ and guaranteed from $b$: in the closed dust model, every future event is
+so from every event after maximum expansion. Under particular laws, events
+can be unreal and fixed without being guaranteed: the conformal scalar in
+the closed dust model before maximum expansion fixes the echo and part of
+$b$'s timelike future near the crunch (Theorem~\ref{thm:diamonds}), and the
+flow law of Remark~\ref{rem:laws} fixes all of $b$'s timelike future even in
+Minkowski spacetime. These examples illustrate a compatibility claim made by
+deterministic growing-block views: an event can be absent from a standpoint's
+real fragment while its value is fixed under the stipulated laws and solution
+class. On our reading, Rak\'ic's sea-fight intuition belongs here
+\citep{Rakic1997}: at most, the outcome is fixed from the observer, not real
+from her.
+\item \emph{Determinism does not entail fixedness from each event.} For a law
+and admissible solution class with unique evolution from Cauchy data, those
+data fix the solution throughout spacetime; nevertheless, no single event's
+past contains a Cauchy surface in the flat,
+open, radiation or de Sitter models. For the conformal scalar in Minkowski
+spacetime and the flat universes, what is fixed from $b$ is exactly
+$J^-(b)$ (Proposition~\ref{prop:sharp}): from each standpoint the future is
+unfixed as well as unreal. In the open, closed radiation and de Sitter models
+we have shown only that nothing beyond the past is guaranteed.
+\item \emph{How much of the unreal future is fixed depends on two things.}
+The causal structure of the spacetime decides what is guaranteed, and the
+guarantee can change with cosmic epoch: in the closed dust model it is
+everything after maximum expansion and nothing beyond the past before it.
+The fields decide what is fixed beyond the guarantee; under the comoving
+flow law above, the answer to ``is the future fixed from here?'' differs
+between two events of the same spacetime. The causal structure of the given
+spacetime settles the first; it does not settle the second.
+\end{enumerate}
+
+These distinctions leave both major ontological replies available. A
+deterministic growing-block theorist can accept that an event is absent from
+the real fragment while its field values are fixed by the laws and the
+fragment, and regard the later addition of events as ontological openness.
+Whether such addition suffices for openness, or whether openness requires
+lawful alternatives or indeterminacy, is a philosophical and semantic
+question not decided here. An eternalist can accept exactly the same fixing
+relations while holding that all events exist. Neither the definition of
+$F_{\mathcal L}$ nor the calculations select between these interpretations.
+
+The positive constraint is on an inference: unreality from $b$ does not by
+itself secure lawful nonfixing from $b$, and lawful fixing does not establish
+existence in $b$'s fragment. Proposition~\ref{prop:mass} sharpens the dependence
+on laws: even the same geometry and the same exact past-agreement region
+allow different fixing verdicts when an ordinary mass is added. But
+\eqref{eq:hidden} shows why a discontinuous verdict about exact equality need
+not be a large change in bounded field differences. Practical prediction
+requires a measurement process, observable, error norm and tolerance beyond
+these definitions.
+
+\subsection{Which existing realm is held fixed?}\label{sec:realm}
+
+The agreement base must also be distinguished from the ontology's entire
+existing realm. The present comparison fixes $\Is(b)$; it does not thereby
+fix all spacelike events. For example, the bow-tie version of relativistic
+GBT admits the elsewhere region as well as the past and the standpoint
+\citep[Chap.~9]{CR2018}. Incoming radiation outside an observer's past can
+therefore distinguish two such realms even when the observer's entire past
+agrees. A past-agreement counterexample is not, without further argument, a
+counterexample to determination by that larger realm.
+
+A bounded consequence follows within the fixed-background framework already
+used here. Put
+\[
+ W_b=I^-(I^+(b))\setminus J^+(b).
+\]
+This is an open region: its events are outside the future cone of $b$ and
+share a future with $b$. If two solutions of a law with the stated
+domain-of-dependence property agree on $W_b$, they agree at every event of
+$J^+(b)$. To see this, choose a Cauchy temporal function $t$ with $t(b)=0$
+and an earlier level $\Sigma=\{t=-1\}$. Every past-inextendible causal curve
+from $z\in J^+(b)$ meets $\Sigma$ at some $y\leq z$. Such a $y$ lies outside
+$J^+(b)$ and shares a chronological future with $b$: extend $z$ slightly
+timelike and use push-up. Thus $y\in W_b$, and the domain-of-dependence
+property gives agreement at $z$.
+
+This is sufficiency, not a claim that every point of $W_b$ is necessary
+physical data. For continuous fields on a fixed common manifold, exact
+agreement on a dense subset already gives agreement on $W_b$. A separate
+causal-curve screening criterion may have a set-theoretically minimal
+realm without thereby finding a minimal physically determining data set.
+Nor does this argument compare two dynamical geometries: the background,
+operator and admissible global solution class remain fixed.
+
+The larger comparison reinforces the distinction at issue. Under the named
+dynamics, a realm may determine future field values while excluding future
+events. Whether that exclusion is compatible with bivalent future truth or
+with later grounding remains a further question. Correia and Rosenkranz's
+bivalent account explicitly distinguishes future truth from predetermination
+\citep[Chap.~7]{CR2018}; the present calculation does not refute that account.
+
+Three further limits matter. First, the comparison is conditional on the
+specified background and global solution class; the laws and that class are
+not derived from facts available in a past fragment. A fragmentalist may
+propose that standpoint-relative facts ground the tenseless structure rather
+than conversely. Without an independently defended explanatory asymmetry,
+that proposal adds no established truth-conditional or empirical consequence
+to the fixing relations. Second, the closed dust results concern an idealized
+model with linear classical fields on a fixed background; no claim about the
+actual cosmology or gravitational backreaction follows. Third, Manchak shows
+that \emph{genuine} prediction, required to
+hold in every inextendible spacetime into which the observer's causal past
+embeds isometrically, reaches no further than the boundary of that past, even
+under any local conditions on matter \citep[pp.~320--321]{Manchak2008};
+$\Det(b)$ and $F_{\mathcal L}(b)$ are nomological notions given $M$, not
+epistemic ones.
+
+\section{A remark on standpoint logic}\label{sec:logic}
+
+Read $\Box A$ at $b$ as ``at every event $x\le b$, $A$'' on the frame $(M,R)$
+with $bRx$ iff $x\le b$. If $A$ is a tenseless claim about what occurs at $x$,
+this is the reflexive past modality of Diodorean tense logic, and the
+standpoint reading of Fine and Lipman \citep{Fine2005,Lipman2023} adds no
+formal content. $R$ is reflexive and transitive, so S4 is valid, and in
+Minkowski spacetime the valid formulas are exactly those of S4.2
+\citep{Goldblatt1980}. The axiom .2, $\Diamond\Box A\to\Box\Diamond A$, is valid at a
+world for all valuations iff any two of its successors have a common
+successor \citep{BdRV2001}. So .2 is valid at $b$ iff the subframe generated
+by $b$ is directed, that is, iff any two events in $J^-(b)$ have a common
+causal past.
+
+In a model conformal to $(\eta_-,\eta_+)\times\mathbb R^3$, two events have a
+common past iff $|X-Y|<\eta_x+\eta_y-2\eta_-$, so if $\eta_->-\infty$ the
+directedness fails in the past of every event and .2 is valid at no event. This is the particle-horizon structure of Rindler
+\citep{Rindler1956} in modal form, and it holds equally with or without an
+inflationary era of finite conformal duration. The horizon problem of
+cosmology \citep{Guth1981} is therefore not the failure of .2, which occurs
+with and without inflation, but the failure of particular instances: pairs of points
+on our last-scattering surface, at comoving separation up to
+$2(\eta_0-\eta_{\rm ls})$, have no common past unless
+$\eta_0-\eta_{\rm ls}<\eta_{\rm ls}-\eta_-$, which fails without inflation and
+holds with enough of it. Two cautions. If persistence is imposed on suitable tenseless past-event
+facts, rather than on centered claims such as ``this event is present now,''
+the corresponding valuations are
+constrained along the future direction, and the frame property that matters
+may concern common futures, which these models have when $\eta_+=\infty$; the logic of persistent
+valuations is a separate question. And Lewis and van der Schaaf study causal
+modal logics of general spacetimes \citep{vdSchaaf2026}; we have not checked
+how their results bear on the past-directed frames used here. Whether S4 is
+exactly the logic of all past-directed globally hyperbolic frames we leave
+open.
+
+\section{Conclusion}
+
+The unreality of the future from an event, which local theories of
+relativistic becoming deliver, neither implies nor excludes its being fixed
+from that event. What the causal structure guarantees, that is, what every
+local deterministic law fixes by the domain-of-dependence property alone, is
+characterized by a slicing condition on Geroch's domain of prediction
+(Theorem~\ref{thm:char}) and computable from conformal diagrams; it is a
+lower bound on what any particular law fixes. In most standard models nothing beyond an
+event's past is guaranteed, and in Minkowski spacetime and the flat universes
+a conformal scalar field shows that nothing more need be fixed; in the closed
+dust model everything is guaranteed from every event after maximum
+expansion. Particular fields can fix more than is guaranteed: in the closed dust
+model before maximum expansion, a conformal scalar is fixed on part of an
+event's far future while its nearer future stays open, and with a preferred
+flow a field is fixed everywhere even in Minkowski spacetime.
+An arbitrarily small ordinary mass on the same dust background can remove
+fixing at a selected future event, while normalized hidden field differences
+there remain $O(m^2)$. Exact nonfixing, practical unpredictability and ontic
+addition are therefore separate questions. The question whether the future is open from a
+standpoint thus divides into a question about the causal structure of the
+spacetime, which settles the guarantee, and a question about the fields,
+which that structure does not settle.
+
+\begin{thebibliography}{99}
+\bibitem{BdRV2001} P. Blackburn, M. de Rijke and Y. Venema, \emph{Modal Logic}
+(Cambridge University Press, 2001).
+\bibitem{Belnap1992} N. Belnap, Branching space-time, \emph{Synthese} 92 (1992)
+385--434, doi:10.1007/BF00414289.
+\bibitem{BolotinTanatarov2013} Yu. L. Bolotin and I. V. Tanatarov, A thousand
+problems in cosmology: horizons, arXiv:1310.6329 (2013).
+\bibitem{Broad1923} C. D. Broad, \emph{Scientific Thought} (Kegan Paul, 1923).
+\bibitem{BS2005} A. N. Bernal and M. S\'anchez, Smoothness of time functions
+and the metric splitting of globally hyperbolic spacetimes, \emph{Commun.\
+Math.\ Phys.} 257 (2005) 43--50.
+\bibitem{CH1995} R. Clifton and M. Hogarth, The definability of objective
+becoming in Minkowski spacetime, \emph{Synthese} 103 (1995) 355--387.
+\bibitem{CR2018} F. Correia and S. Rosenkranz, \emph{Nothing To Come:
+A Defence of the Growing Block Theory of Time}, Synthese Library 395
+(Springer, 2018), Chaps.~7 and~9, doi:10.1007/978-3-319-78704-6.
+\bibitem{Earman1995} J. Earman, \emph{Bangs, Crunches, Whimpers, and Shrieks:
+Singularities and Acausalities in Relativistic Spacetimes}
+(Oxford University Press, 1995).
+\bibitem{Fine2005} K. Fine, Tense and reality, in \emph{Modality and Tense}
+(Oxford University Press, 2005) 261--320.
+\bibitem{Geroch1977} R. Geroch, Prediction in general relativity, in J. Earman,
+C. Glymour and J. Stachel (eds.), \emph{Foundations of Space-Time Theories},
+Minnesota Studies in the Philosophy of Science 8 (University of Minnesota
+Press, 1977) 81--93.
+\bibitem{Goldblatt1980} R. Goldblatt, Diodorean modality in Minkowski
+spacetime, \emph{Studia Logica} 39 (1980) 219--236, doi:10.1007/BF00370321.
+\bibitem{GronJohannesen2011} \O. Gr\o n and S. Johannesen, FRW universe models in
+conformally flat spacetime coordinates. III: universe models with positive
+spatial curvature, \emph{Eur.\ Phys.\ J. Plus} 126 (2011) 30,
+arXiv:1103.4753.
+\bibitem{Guth1981} A. H. Guth, Inflationary universe: a possible solution to
+the horizon and flatness problems, \emph{Phys.\ Rev.\ D} 23 (1981) 347--356.
+\bibitem{HE1973} S. W. Hawking and G. F. R. Ellis, \emph{The Large Scale
+Structure of Space-Time} (Cambridge University Press, 1973).
+\bibitem{Lipman2023} M. A. Lipman, Standpoints: a study of a metaphysical
+picture, \emph{J.\ Phil.} 120 (2023) 117--138.
+\bibitem{Manchak2008} J. B. Manchak, Is prediction possible in general
+relativity?, \emph{Found.\ Phys.} 38 (2008) 317--321,
+doi:10.1007/s10701-008-9204-6.
+\bibitem{MS2008} E. Minguzzi and M. S\'anchez, The causal hierarchy of
+spacetimes, in \emph{Recent Developments in Pseudo-Riemannian Geometry}
+(EMS, 2008) 299--358, arXiv:gr-qc/0609119.
+\bibitem{Rakic1997} N. Raki\'c, Past, present, future, and special relativity,
+\emph{Brit.\ J. Phil.\ Sci.} 48 (1997) 257--280.
+\bibitem{Rindler1956} W. Rindler, Visual horizons in world-models,
+\emph{Mon.\ Not.\ R. Astron.\ Soc.} 116 (1956) 662--677.
+\bibitem{Stein1968} H. Stein, On Einstein--Minkowski space--time, \emph{J.\
+Phil.} 65 (1968) 5--23.
+\bibitem{Stein1991} H. Stein, On relativity theory and openness of the future,
+\emph{Phil.\ Sci.} 58 (1991) 147--167.
+\bibitem{SteinGR} A. Impellitteri, Stein's theorem in general relativity:
+locality, not symmetry, fixes what has become, preprint (2026).
+\bibitem{Wald1984} R. M. Wald, \emph{General Relativity} (University of
+Chicago Press, 1984).
+\bibitem{vdSchaaf2026} M. Lewis and N. van der Schaaf, Some results on causal
+modalities in general spacetimes, arXiv:2601.14029v2 (2026).
+\end{thebibliography}
+
+\end{document}

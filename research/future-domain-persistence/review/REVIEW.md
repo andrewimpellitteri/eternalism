@@ -1,0 +1,45 @@
+# Independent review: future-domain persistence
+
+28 October 2026. Review of `research/future-domain-persistence/RESULT.md` against Correia & Rosenkranz, *Nothing To Come*, ch. 9 selected pp. 151–152 and 157–160, and “Replies to Critics” §8 selected pp. 486–488. The chapter was checked against the supplied PDFKit extraction at the requested page labels; the reply was checked in its public full-text rendering. This is a bounded source and mathematical review, not a reconstruction of the authors’ full free logic, and it makes no ontology or novelty claim.
+
+## Verdict
+
+The result is accurate and appropriately bounded on its central point: a causal-past domain contains an extended retarded history of a stationary limb point, yet it cannot meet the authors’ chosen, stronger criterion of persistence as location in the past and also at a location that is neither past nor future of the standpoint. The result correctly distinguishes this criterion from mere existence, observation, or possession of a located history. It also correctly keeps the “edge” objection to causal maximality distinct from a topological-boundary claim, and does not treat its Minkowski calculation as answering the book’s separate classical-recapture argument.
+
+One convention should be made explicit wherever the algebraic obstruction is stated: “strict causal past” must mean causal precedence excluding the event itself, with null-related events included. It must not mean chronological/timelike past. The source treats past-light-cone surface points as past points, and the singleton identity depends on that convention. The result states this convention in prose (“Cone-surface points count as strictly causally past”), so its intended proof is correct; replacing the terminology with “causal past excluding b” would remove avoidable ambiguity.
+
+## Source correspondence
+
+On pp. 151–152, C&R first reject the simple objection that pointy views cannot contain spatially or spatiotemporally extended residents: mereological fusions may be located wherever their parts are. They then make the distinct persistence objection. Their imagined perceiver receives signals from multiple limb locations in the causal past; they grant that this allows simultaneous signals from those distinct past locations. Their further claim is that persistence requires the limbs to exist here-now while located, and pointy views supply no such location for the distinct limbs. The passage explicitly distinguishes persistence from existence and glosses the relevant persistence as “continuing to exist while located.” The RESULT captures these qualifications and does not falsely claim that the causal past contains no extension or no duration.
+
+At pp. 486–488, §8 of “Replies to Critics,” C&R report Dorato and Hoefer’s suggestion that the limbs are “now” at the observed points on the past-light-cone surface. The authors reject defining persistence by existence alone (Socrates would then count as persisting on GBT), and give two location-based candidates: (i) location at some past point and at here-now; or (ii) location at some past point and at a point neither absolutely future nor absolutely past of here-now. They say the second captures the intuitive notion used in the book. They then answer that light-cone-surface points are in the absolute past, so those observations fail both criteria. The RESULT tracks this argument. It also appropriately says this records the authors’ preferred criterion; it does not establish that this criterion is uniquely correct.
+
+For §9.5, pp. 157–160, the RESULT accurately reports PR1 and PR2 as bridge principles for recapturing classical temporal theories, and the authors’ claim that PR1 fails in the relativistic setting because bow-tie regions have causal depth. The “pointy” objection on pp. 159–160 is specifically that pointy candidates collapse their classical simultaneity classes to singleton spatial points under the recapture constraints. This is separate from whether the topological boundary of a Minkowski past cone is singleton. The RESULT preserves that scope and explicitly leaves Appendix 3’s detailed translation proof unchecked. No correction is needed here.
+
+## Formalization and geometry audit
+
+The defined set `W_b = W ∩ E_b` is a set of event locations from an ambient mathematical worldline/tube. It is not itself a formalization of the authors’ object variable, unrestricted existence, location predicate, identity across events, or mereological fusion. The RESULT says this plainly and calls P_CR source-inspired rather than equivalent to the full language. That limitation is important and is handled responsibly. In particular, “W_b contains b” is a condition on the chosen support representation; it should not be silently read as proving that a person or limb exists simpliciter at b. The authors’ criterion also requires object-level location at the relevant events. The result’s support-set reading is a useful geometric proxy, not a semantic derivation.
+
+Let `b=(0,0)` and `γ(t)=(t,r e₁)`, `r>0`, in units `c=1`. Then `γ(t)∈J⁻(b)` iff `t≤−r`; hence `γ∩J⁻(b)` is the half-line segment parameterized by `t≤−r`. For each `δ>0`, `γ(−r−δ)≪γ(−r)`, so the represented material history contains a nonzero proper-time interval leading to the retarded endpoint. For every `ε>0`, `γ(−r+ε)∉J⁻(b)`. These statements are correct. For the later standpoint `b_h=(h,0)`, the condition is `t≤h−r`; thus the domain intersection extends monotonically as stated.
+
+For a stationary tube with spatial support `B(r e₁,ρ)`, `0<ρ<r`, event membership in `J⁻(b)` is exactly `t≤−|x|`. Its support stays away from the standpoint spatial location, and each fixed spatial constituent has a retarded cutoff. This is a valid kinematic illustration of extended spatial support. It does not establish anatomical unity, a person’s persistence, signal propagation from every point, or perception; the RESULT marks those limits.
+
+The null-boundary obstruction is also correct. If `p` is a nonvertex point with `p∈∂J⁻(b)` and `p≪q`, while `q≤b`, then the timelike separation from p to q plus causal separation from q to b would imply `p≪b` by transitivity, contradicting null separation. In Minkowski coordinates the same follows from the strict triangle inequality for the timelike leg. Thus no timelike continuation after direct null emission can remain in `J⁻(b)`. This proves a domain/criterion obstruction, not an observational contradiction or an ontological no-go.
+
+Under the causal-order convention `p<b` iff `p≤b` and `p≠b`, the set identity
+
+`J⁻(b) ∩ (M \ ((J⁻(b)\{b}) ∪ (J⁺(b)\{b}))) = {b}`
+
+is valid: every point in `J⁻(b)` other than b is causally past, including null-boundary points. If “strict past” were instead interpreted as chronological past `I⁻(b)`, the identity would be false: nonvertex points on the past null cone would remain in the intersection. Since both the chapter’s fourfold partition and the reply count those null points as past, use “causal past excluding b” or explicitly define the strict order as causal (not timelike).
+
+Finally, in Minkowski space b is a unique causal maximum of `J⁻(b)` under the full causal order, while the manifold-topological boundary is the entire null cone `t=−|x|`. The RESULT correctly distinguishes those notions and correctly avoids claiming that a non-singleton null boundary supplies the spacelike continuation demanded by P_CR.
+
+## Scope of the spacelike-location requirement
+
+The RESULT's added qualification is sound and relevant: satisfying the examined criterion for one stipulated element requires an appropriate location of that element outside the standpoint's strict causal past and future, but the criterion by itself does not require the entire elsewhere region to be populated. A full bow-tie domain makes a stronger, uniform assignment across the elsewhere region within the comparison of candidate views. The geometric obstruction establishes the minimum location requirement for the chosen element; it does not derive that broader domain choice or show that an intermediate domain satisfies C&R's other principles. This is a scope distinction from the existing comparison, not a new source claim.
+
+## Bounded correction
+
+No substantive correction to the geometric conclusion is required. For maximum precision, revise the equation’s surrounding label from “strict causal past” to “causal past excluding the event itself (including null-related points).” Keep the explicit warning that P_CR is a support-set proxy and not a theorem about the authors’ full object-language semantics. The RESULT now also correctly distinguishes the single-element location requirement from the broader uniform elsewhere assignment of the full bow-tie comparison.
+
+The acceptance limit is therefore: accept as a bounded Minkowski and source-correspondence review, with the causal-versus-chronological terminology fixed or retained explicitly; do not cite it as a full formal audit, an argument that pointy domains lack extended histories, a refutation of the bow-tie reply, or a resolution of the classical-recapture objection.

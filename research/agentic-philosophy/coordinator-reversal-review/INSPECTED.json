@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-10-31",
+  "scope": "Claude reversal notes and their same-model review; revised snapshot after headline withdrawal",
+  "files": [
+    {
+      "path": "research/agentic-philosophy/claude-reversal-test/PILOT_REVIEW.md",
+      "sha256": "c92479f614eb0fca788d2114ce34d542a88cf4f5ceb0b994daa806f76fa6b278",
+      "lines": 90
+    },
+    {
+      "path": "research/agentic-philosophy/claude-reversal-test/REVERSAL_TEST.md",
+      "sha256": "12eb8058116c5bdc6e888198824de867fcc92346b7075e3c4a785d104d8768b9",
+      "lines": 59
+    },
+    {
+      "path": "research/agentic-philosophy/claude-reversal-test/REVIEW.md",
+      "sha256": "394c61d41c9b2bcabe750d9b36e10915e98b4a4d29548726f09e6487b57aaba0",
+      "lines": 294
+    },
+    {
+      "path": "research/agentic-philosophy/claude-reversal-test/channel_check.py",
+      "sha256": "00d99e95ba5f03a86e26b095913b5332136198c31fd2b4a2e914c7d116fc0a75",
+      "lines": 44
+    }
+  ],
+  "pilot_submission": "ccb40b5 (ontology-constitutive-bridge-pilot); clean worker submission retained separately",
+  "checker": {
+    "path": "research/agentic-philosophy/claude-reversal-test/channel_check.py",
+    "exit_code": 0,
+    "elapsed_seconds_approx": 0.061,
+    "stdout": "identities hold exactly at the sampled points; wrong-side control differs; tau = 3/2",
+    "limits": "One successful bounded coordinator run earlier in this inspection. Finite quartic checks, not proof for every input or a reproduced grid from REVIEW.md."
+  }
+}

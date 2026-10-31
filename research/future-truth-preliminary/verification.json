@@ -1,0 +1,13 @@
+{
+  "scope": "finite illustrative semantic controls only",
+  "checks": {
+    "history_truth_is_not_settlement": true,
+    "excluded_middle_supertrue_without_either_disjunct": true,
+    "nonfixed_value_can_have_settled_sign": true,
+    "varying_coordinates_need_not_vary_relation": true,
+    "fixed_proposition_settlement_persists_under_refinement": true,
+    "same_grounds_outcome_matching_obstruction": true,
+    "bounded_ambiguity_can_preserve_threshold": true,
+    "empty_class_guard": true
+  }
+}

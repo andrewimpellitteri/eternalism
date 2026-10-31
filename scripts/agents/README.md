@@ -50,9 +50,14 @@ that before launching search-heavy lanes.
 1302) at once. Workers now hold one of `AGENT_MAX_CONCURRENT` slot locks
 (default 6) under `.agent-runtime/slots/`; extra workers queue with heartbeats.
 A run that hits a rate limit backs off and resumes the same OpenCode session,
-up to four attempts. A nonzero exit after a committed `AGENT_REPORT.md` and a
-clean tree enters review with the exit code noted, since OpenCode sometimes
-exits 1 after completing. `result.json` records the reason and attempt count.
+up to four attempts. Usage-quota exhaustion stops without a retry loop.
+Automatic review requires a clean tree, a new committed `AGENT_REPORT.md`
+relative to the recorded launch base, and new committed task-owned output.
+Inherited baseline reports, report-only changes, out-of-scope commits and
+missing launch bases do not qualify, even after exit 0. A nonzero exit after
+this complete handback can enter review with the exit code and any quota
+message noted, since OpenCode sometimes exits 1 after completing.
+`result.json` records the reason and attempt count.
 
 Workers use `opencode run --standalone --auto --format json`. Each writes a
 capability check for its MCP search access, research files, and AGENT_REPORT.md.
@@ -61,7 +66,8 @@ sandbox; allowed file scopes require review. A supervisor updates heartbeats.
 
 ## Review and integrate
 
-A successful process exit plus report moves the task to `review`, never `done`.
+A fresh committed handback meeting the checks above moves the task to `review`,
+never `done`. A successful process exit alone is not a submission.
 Inspect `.agent-runtime/runs/TASK/{events.jsonl,stderr.log,result.json,worker.log}`
 and `.worktrees/TASK/AGENT_REPORT.md`. Read the diff, confirm owned-file scope,
 inspect sources, and rerun relevant checks. Check `git status` in the worker

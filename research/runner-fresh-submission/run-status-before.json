@@ -1,0 +1,82 @@
+{
+  "horizons-philosophy-contract": {
+    "claim": {
+      "status": "review",
+      "agent": "glm-horizons-philosophy-contract",
+      "claimed_at": "2026-10-27T09:36:04+00:00",
+      "worktree": "/Users/andrew/eternalism/.worktrees/horizons-philosophy-contract",
+      "branch": "agent/horizons-philosophy-contract",
+      "model": "zai-coding-plan/glm-5.3-flash",
+      "base": "e30a37294c8fabf0a1f7b22c17d854091729e633",
+      "updated_at": "2026-10-27T09:51:41+00:00",
+      "notes": "Inspect /Users/andrew/eternalism/.worktrees/horizons-philosophy-contract/AGENT_REPORT.md; exit 1 after a committed report and clean tree; not yet accepted."
+    },
+    "result": {
+      "exit_code": 1,
+      "outcome": "review",
+      "reason": "exit 1 after a committed report and clean tree",
+      "attempts": 1,
+      "finished_at": "2026-10-27T09:51:41+00:00"
+    }
+  },
+  "horizons-priority-gap-check": {
+    "claim": {
+      "status": "review",
+      "agent": "glm-horizons-priority-gap-check",
+      "claimed_at": "2026-10-27T09:36:05+00:00",
+      "worktree": "/Users/andrew/eternalism/.worktrees/horizons-priority-gap-check",
+      "branch": "agent/horizons-priority-gap-check",
+      "model": "zai-coding-plan/glm-5.3-flash",
+      "base": "e30a37294c8fabf0a1f7b22c17d854091729e633",
+      "updated_at": "2026-10-27T09:50:16+00:00",
+      "notes": "Inspect /Users/andrew/eternalism/.worktrees/horizons-priority-gap-check/AGENT_REPORT.md; exit 1 after a committed report and clean tree; not yet accepted."
+    },
+    "result": {
+      "exit_code": 1,
+      "outcome": "review",
+      "reason": "exit 1 after a committed report and clean tree",
+      "attempts": 1,
+      "finished_at": "2026-10-27T09:50:16+00:00"
+    }
+  },
+  "horizons-perturbation-referee": {
+    "claim": {
+      "status": "claimed",
+      "agent": "glm-horizons-perturbation-referee",
+      "claimed_at": "2026-10-27T09:23:25+00:00",
+      "worktree": "/Users/andrew/eternalism/.worktrees/horizons-perturbation-referee",
+      "branch": "agent/horizons-perturbation-referee",
+      "model": "zai-coding-plan/glm-5.3-flash",
+      "base": "87240790e06df773702d26608f66ddf9f301c4eb",
+      "updated_at": "2026-10-27T09:49:29+00:00",
+      "notes": ""
+    },
+    "result": {
+      "exit_code": 1,
+      "outcome": "failed",
+      "reason": "provider usage quota exhausted: Usage limit reached for 5 hour. Your limit will reset at 2026-10-27 22:08:54",
+      "attempts": 1,
+      "finished_at": "2026-10-27T09:50:09+00:00"
+    }
+  },
+  "stein-interpretation-audit": {
+    "claim": {
+      "status": "claimed",
+      "agent": "glm-stein-interpretation-audit",
+      "claimed_at": "2026-10-27T09:36:05+00:00",
+      "worktree": "/Users/andrew/eternalism/.worktrees/stein-interpretation-audit",
+      "branch": "agent/stein-interpretation-audit",
+      "model": "zai-coding-plan/glm-5.3-flash",
+      "base": "e30a37294c8fabf0a1f7b22c17d854091729e633",
+      "updated_at": "2026-10-27T09:54:07+00:00",
+      "notes": ""
+    },
+    "result": {
+      "exit_code": 1,
+      "outcome": "failed",
+      "reason": "provider usage quota exhausted: Usage limit reached for 5 hour. Your limit will reset at 2026-10-27 22:08:54",
+      "attempts": 1,
+      "finished_at": "2026-10-27T09:54:26+00:00"
+    }
+  }
+}

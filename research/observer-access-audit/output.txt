@@ -1,0 +1,8 @@
+n=3: 7 labelled histories, 5 shape classes, event exactly V and Lambda (2 singleton classes).
+Identical pinched states and identical classical shape records; Q probabilities 1 and 0; membership probabilities both 1.
+Finite within-class permutation invariance: D, Q, plus and minus all pass.
+Sharp all-input probability-error floor 1/2: attained by D/2; exact squared error operator equals D/4.
+Actual normalized percolation state: membership=1/4; coherent-filter probability=1/4 before and 1/8 after class pinching.
+Completed-covariance counterexample: isomorphic prefixes (0,0,3,0) and (0,0,0,3) give opposite n=3 event values.
+Universal-top continuation: same exchange preserves every later relation; infinite conclusion uses the stated analytic construction.
+PASS: exact rational checks; no observer dynamics, general quantum measure, or novelty claim.

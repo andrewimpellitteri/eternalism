@@ -1,0 +1,183 @@
+# From physical constraints to a defended temporal ontology
+
+> **Current result-search disposition:** the
+> [completed round](../agentic-philosophy/result-search-round1/DISPOSITION.md)
+> stops the P2 occurrence family after its one recovery and countermodel audit.
+> The modal route retains a repaired abstract counterexample to the journal's
+> nontriviality theorem. Next gates are priority, the later BST_NF scope and
+> an independently warranted physical/modal exclusion of the comb. No full
+> ontology follows from either route, and no extra proposal batch is launched.
+
+> **31 October: assess the philosophical contribution itself.**
+> The [breakthrough test](../agentic-philosophy/BREAKTHROUGH_TEST.md)
+> distinguishes originality, validity, significance and AI attribution.
+> A [single question card](../agentic-philosophy/PILOT_QUESTION.md) requires a
+> completed constitutive-to-existence argument and its strongest rival response
+> before more supporting examples. This extends earlier admissibility work;
+> it is not a demonstrated discovery method. The response/feedback round has
+> bounded analytic review and an elementary prior-result verdict. The
+> constitutive submission's reconstruction dilemma was rejected; its task
+> remains in review. Three prepared contracts remain unlaunched.
+
+The coordinator's [worked attempt](../agentic-philosophy/CONSTITUTIVE_GROUNDING_TEST.md)
+now has bounded analytic review. It separates making constituting events
+concrete from excluding other events. A separate GLM philosophical pilot
+launched from `e59467a` and has not supplied a handback at this update.
+An entailment failure does not settle the remaining explanatory comparison.
+
+> **Latest 30 October: the philosophical target is now sharper.**
+> [Maximality and existential openness](coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md)
+> separates local lawfulness from the category of complete possible histories.
+> [Passage and earlier truth](coordinator/PASSAGE_AND_EARLIER_TRUTH.md)
+> tests the inference from eventual resolution to present bivalence.
+> [Constitution versus prediction](coordinator/CONSTITUTION_IS_NOT_PREDICTION.md)
+> identifies the positive ontological bridge that remains.
+> [Review disposition](coordinator/ARGUMENT_REVIEW_2026_10_30.md) records the two
+> bounded audits and corrections. [Three next contracts](coordinator/NEXT_PHILOSOPHICAL_TESTS.md)
+> are on the board. The modal-category and constitutive-extent GLM runs
+> launched from `1d1102a` in separate worktrees; the modal handback is now
+> in review and the constitutive task remains claimed. The prefix-energy
+> task still awaits its dependency. Earlier quota-stopped GLM
+> tasks retain their claims. The smoothness bridge is now supplied at its
+> stated class, not an open precondition for this philosophical work.
+
+**Subsequent handback:** the modal-category run delivered commit `5ddb63d`.
+It remains in review. [Coordinator inspection](coordinator/MODAL_CATEGORY_REVIEW.md)
+rejects its anti-trivialization-to-maximality inference, corrects the
+cumulative-region/bow-tie inclusion, and separates empty continued time
+from a terminal-time world. Its source work does not close the translation
+gate. The constitutive-extent run is separate and has encountered GLM
+request-rate errors; its outputs and claim are preserved.
+
+29 October 2026. Coordinator research roadmap; proposals, not accepted theorems or a novelty verdict.
+
+## Objective and success conditions
+
+Develop a positive, source-faithful account of what exists, how existence relates to standpoints and change, and why that account is preferable to its strongest rivals. The primary question is whether temporal ontology can be reconstructed from physical structure and independently defended bridge principles. A classification or underdetermination result is an intermediate achievement, not automatically the positive philosophical conclusion.
+
+Three possible outcomes must remain open: a defended preference under explicitly justified premises; a classification showing exactly which additional commitments distinguish surviving ontologies; or a robust equivalence/underdetermination result identifying what further evidence or argument could discriminate. Do not promise that physics alone selects an ontology.
+
+## Starting point
+
+Read research/CURRENT_SYNTHESIS.md and research/CLAIM_STATUS.md for accepted scope. Preserve the distinctions between prediction, lawful determination, semantic settlement, existence, grounding and passage. The present scalar-control and smooth-matter tasks address useful technical questions, but their success is not a logical premise of this new programme. The batch waits for their review to avoid overlapping coordination and to incorporate any relevant scope corrections.
+
+Existing leverage: causal-set completion and observer-access results; Stein--GR relation classification; local-fragmentalist strongest-view/red-team work; Brading unity/stage investigation; horizons and law-relative determination; source-checked C&R later grounding and bow-tie clauses; historical-potential classification; repaired screening and common-development proofs. These are tests of candidate ontologies, not proofs of one.
+
+## Model contract
+
+Start provisionally with a physical model P, lawful comparison category, standpoint b where required, and ontological expansion O. An expansion may specify an existence relation E(b,x), admissible entities beyond spacetime points, privileged structures, truth/grounding relations, and actualization/passage claims. This is a comparison instrument; it must not force every rival into a point-subset ontology or presuppose that all represented events concretely exist.
+
+Each rival contract must state: concrete inventory; standpoint status; existence-at versus absolute existence; persistence; future truth and grounds; determinism/openness; added structure and its physical role; empirical commitments; strongest objection; permissible translations. Include at least whole-history eternalism, a preferred-slicing growing block, C&R spatiotemporaryism/bow tie, and a local becoming/fragmentalist view. Distinguish ontologies from mere descriptions and do not identify mathematical growth with objective passage by definition.
+
+## Phase 1: four independent GLM lanes
+
+| Task | Owned output | Concrete question |
+|---|---|---|
+| ontology-rival-contracts | rivals/ | What do the strongest source-faithful rivals actually assert, and which comparisons preserve the disagreement? |
+| ontology-natural-assignments | classification/ | On explicit physical categories, what local existence assignments satisfy independently separated covariance, restriction and persistence conditions? |
+| ontology-bridge-premises | bridges/ | Which defensible bridge principles could turn a physical constraint into an ontological preference, and do they survive symmetric criticism? |
+| ontology-expansion-equivalence | equivalence/ | When do apparently different ontological expansions represent a genuine additional commitment rather than interchangeable descriptions? |
+
+Read each WORKBOARD brief before work. **Scheduling update, 29 October:** the user explicitly authorized immediate launch of all four tasks while the coordinator repairs the two technical submissions. The scheduling dependencies were removed; there was never a logical dependence. Neither submission is accepted as a theorem. See ../lawful-completions/coordinator/BATCH2_INITIAL_REVIEW.md. Failure or quota exhaustion does not silently free claims; preserve all outputs.
+
+These four lanes are independent: none may assume another worker's unfinished definitions or conclusions. Each must state its own provisional comparison contract. Coordinator reconciles disagreements after submission rather than averaging conclusions.
+
+## Phase 2: reconciliation and falsification gate
+
+Coordinator produces a premise-by-rival matrix from reviewed reports, preserving incompatible assumptions. Separate theorem hypotheses from philosophical reasons to accept them. Select one narrow classification target only after nearest-predecessor checks and explicit rival countermodels.
+
+Required checks:
+
+1. Eternalism is not inferred from the domain of a spacetime model. A functor or embedding between models does not automatically preserve concrete existence.
+2. Covariance under isometries is weaker than definability from physical structure. Automorphism invariance alone is not a general definability theorem.
+3. Naturality across subregions requires a justified comparison category. Boundaries, global topology, horizons and solutions of field equations can invalidate naive restriction conditions.
+4. Transitivity must not simply eliminate the bow tie by stipulation. Study failure/weakening and give independent arguments for the selected premise.
+5. Locality must not exclude global ontology merely by definition. On-shell versus off-shell model variation is explicit.
+6. Complete physical data, observer records, existing concrete reality and all admitted truths are different bases. Later-grounded bivalence receives its actual source-based formulation.
+7. Dynamical sufficiency is not constitution. Empirical equivalence is not identity of ontology. Parsimony is an argument requiring defense, not an arbitrary numerical score.
+8. Added structure can be explanatory without changing predictions. Conversely a preferred structure cannot be called physically real solely because it can be written down.
+
+Kill or narrow any proposed theorem immediately if a charitable rival satisfies its premises, a premise already encodes the desired conclusion, or the result is an immediate known corollary with no relevant extension. Preserve negative findings.
+
+## Phase 3: one substantive theorem and one defended bridge
+
+Choose a bounded target whose hypotheses are both mathematically precise and philosophically contestable. Candidate, not a conjecture already endorsed: classify existence/grounding assignments on a specified Einstein--matter category, then show precisely which alternatives require additional structure or violate a defended compatibility condition.
+
+Deliver: exact statement, source/novelty comparison, proof or counterexample, assumption-independence witnesses, strongest surviving rival, and a separate philosophical argument for the bridge premise. Run an independent adversary after the target is fixed. Formalization is useful only after statement correspondence is audited.
+
+A structural impossibility theorem cannot by itself show metaphysical impossibility. Definability, explanatory economy and physical relevance must each be argued separately.
+
+The later [weak-coupling test](coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md)
+adds a bounded coordinator argument: exact material autonomy changes under
+arbitrarily weak coupling while compact-time behaviour converges; autonomy
+alone selects no minimal positive temporal thickness. It preserves interacting
+and approximate unities and does not identify Brading's view with exact
+isolation. The bounded native audit `ontology-unity-robustness-review` is
+integrated with fixed-unit and Hamiltonian-family qualifications after the
+new GLM review queued without starting. Other GLM claims are preserved.
+The constitution note adds a separately unreviewed, nonvacuity test for
+lawful-alternative necessity and distinguishes physical deletion from
+nonexistence at a standpoint.
+The next positive target is the difference between a continuing system and a
+completed activity alleged to constitute its present. This note does not
+duplicate the isolated worker's concrete constitutive-system test.
+
+## Phase 4: positive ontology and external challenge
+
+Write a candidate account with concrete inventory, relations of coexistence/existence, objects and persistence, future truths, grounding, passage and observer situation. Explain which physical results support it and which philosophical premises do the selecting. Provide its best rival in equally strong terms, counterfactual consequences and conditions for revision.
+
+Obtain criticism independent of the proposing lane. External philosophical and mathematical review remains necessary before a priority or settled-ontology claim. A rigorous argument for underdetermination is an allowed research conclusion; it should specify what new premise or empirical discrimination would change it.
+
+## Batch execution and handoff
+
+The normal launch is:
+
+    python3 scripts/agents.py launch --from-committed-head ontology-rival-contracts ontology-natural-assignments ontology-bridge-premises ontology-expansion-equivalence
+
+The user has now authorized launching before the two technical reviews are resolved. Commit updated board and required inputs first; inspect Claude's intervening changes and active claims. Keep technical repairs separate and do not upgrade unaccepted results. Workers use isolated worktrees and the configured GLM model. They write only their owns directory plus the runner's root handback. No shared manuscripts, seed sources, workboard, runner changes, installs, child agents or pushes.
+
+At handback, verify primary locators and source depth, check owned scope, inspect counterexamples, and review claims before acceptance. Archive root reports into their lanes during integration. Phase 2 is not delegated to worker consensus.
+
+## Coordinator preparation while workers run
+
+[Premise stress test](coordinator/PREMISE_STRESS_TEST.md) checks two surviving assignments, a flat-spacetime restriction counterexample, and the gap between mathematical reconstruction and grounding. It is preliminary coordinator work, not an accepted worker result. Workers retain independent briefs; use this note at reconciliation to challenge their conclusions.
+
+[What work does existence do?](coordinator/ROLE_OF_EXISTENCE.md) develops a conditional abductive preference for event realism and its strongest objections. This is a coordinator proposal for adversarial comparison, not an accepted conclusion or an instruction for workers to favor that view. Source depths and unread gates remain explicit.
+
+[Version-2 explanatory-role test](coordinator/EXPLANATORY_ROLE_TEST.md) corrects the default-preference claim, supplies a restricted domain-insensitivity example, and asks which explanatory step depends on a disputed ontology. This is preliminary coordinator work to challenge, not a new accepted theorem or a full model of any named rival.
+
+## 30 October: reviewed baseline and the next bridge test
+
+The [review disposition](coordinator/REVIEW_DISPOSITION_2026_10_30.md)
+integrates three bounded reviews. The n≥2 four-case census and conditional
+Cartesian C¹,¹ reconstruction have internal review. The later 1+1 census
+and its corrected refinements are separate coordinator deductions. Smooth
+MGHD applicability, novelty and philosophical selection remain open.
+
+Four disjoint GLM tasks launched from fb02d2a: the complete 1+1 refinements,
+finite-control compactness/degree proof, higher-regularity source scope,
+and exact persistence-census prior art. Fresh model/tool events confirm
+that all four runs started; submission still requires inspection.
+
+[Scale and future exclusion](coordinator/SCALE_AND_FUTURE_EXCLUSION.md)
+is the next coordinator bridge test, written after that launch and not
+reviewed by those workers. It proposes a complete homogeneous classification
+without F_t: the four old rules, open/closed proper-time collars, and the
+universal rule. A short separate argument shows that persistence,
+dilation invariance and nonuniversality entail timelike-future exclusion.
+Transitivity provides another route, recovering the known I/J/universal
+pattern. The substantive question is which scale or transitivity premise
+has an independent explanatory justification. Neither is supplied merely
+by Lorentz covariance or smooth spacetime geometry. Audit this exact bridge
+and its nearest predecessors before extending to on-shell matter or
+advocating a positive ontology.
+
+
+**Quota/recovery update, same day:** all four follow-up runs stopped at the
+provider's five-hour usage quota before a complete handback. Their claims,
+worktrees and logs remain preserved. [Direct coordinator recovery](coordinator/DIRECT_RECOVERY_2026_10_30.md)
+provides an exact reduced-region certificate and the full twelve-case
+transitivity proof, and assembles the C¹,¹ finite-readout candidate. These
+are not completed independent worker reviews. The scale note now identifies
+an additional burden: why the proper relation should exhaust concrete
+existence, rather than track causal availability inside a universal inventory.

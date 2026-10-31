@@ -1,9 +1,28 @@
 # Agentic philosophy: state of play and a swarm playbook
 
-Status: 2026-10-20. A short working note, not a literature review. It records
+**Current execution plan:** [one philosophical result](RESULT_SEARCH.md)
+specifies a bounded source-first search, two workers plus coordinator,
+one revision, stopping rules and a referee packet. The
+[first round](result-search-round1/QUESTION.md) is instantiated; this is not
+a claim that the process has been experimentally validated.
+
+Status: updated 2026-10-22. A short working note, not a literature review. It records
 what “agentic philosophy” currently means, the closest prior art, where agents
 help, where they fail, and a concrete swarm design for producing something
 new.
+
+**30 October extension:** [What would count as a breakthrough?](BREAKTHROUGH_TEST.md)
+separates useful output, historical originality, philosophical advance and AI
+attribution. It applies an additional consequential-inference test to this
+project's actual results and proposes one bounded ontology pilot. Six selected
+primary readings are recorded. This is a methodological proposal, not evidence
+that our workflow improves discovery rates or has produced a new ontology.
+
+The implemented extension is [the creative-search protocol](creativity-loop/PROTOCOL.md),
+with [recent mathematics examples](creativity-loop/RECENT_MATH.md) and an
+[executed observer-access pilot](creativity-loop/pilot/RESULT.md). It adds
+representation changes, auxiliary objects, and recombination to the audit loop.
+The pilot demonstrates execution, not measured improvement over a baseline.
 
 ## 1. Two meanings
 
@@ -40,6 +59,10 @@ that fluent text is not understanding.
 - **Defeater-first prior art:** three closest predecessors before drafting.
 - **Countermodel/consistency search:** finite models, exact certificates.
 - **Translation:** map one framework’s assumptions onto another’s.
+- **Generative search:** invent auxiliary objects, change representations, and
+  attack strategic intermediate lemmas. Preserve different mechanisms.
+- **Recombination:** turn a failed route’s missing hypothesis into a bounded
+  child question; preserve the failed inference.
 - **Adversarial review:** different model family, fresh context.
 - **Drafting and teaching:** summaries, objections, examples, exposition.
 
@@ -54,9 +77,16 @@ that fluent text is not understanding.
 
 ## 5. A swarm that makes sense
 
-**Stage 0 — Human claim contract.** One page: exact question, proposed claim,
-three nearest predecessors, delta, smallest example, falsifier, novelty kind.
-No agent proceeds without it.
+**Stage 0 — Authorized question contract.** One page: exact question, nearest
+predecessors, smallest example, kill conditions, and evidence sought. The
+coordinator can supply it within the user-authorized scope. A candidate claim
+can emerge during search; do not require a preferred answer.
+
+**Generative round — Distinct mechanisms.** Produce bounded alternatives:
+representation change, auxiliary object, or inverted question. Run cheap
+discriminating tests and preserve failures. Each child changes one named
+mechanism or assumption. Return here when an audit reveals a productive
+missing hypothesis; use the linked protocol to retain ancestry and evidence.
 
 **Stage 1 — Cartographers.** Read primary texts; source records with locators
 and honest depth. Reuse IDs; no abstract-as-proof.
@@ -72,8 +102,10 @@ no opaque axioms; audit correspondence.
 **Stage 4 — Bridge auditor.** Separate mathematical, physical, and philosophical
 premises. A definition that assumes eternalism cannot establish it.
 
-**Stage 5 — Selection gate.** A human decides: primary target, fallback, or
-explicit no-selection. No agent votes, no weighted scores.
+**Stage 5 — Selection gate.** The coordinator retains supported results within
+the authorized scope and presents consequential premise choices to the user.
+Keep mathematical, source, physical, and philosophical gates separate.
+No agent votes, no weighted ontology scores.
 
 **Stage 6 — Independent replication.** Different model family, fresh context;
 spot-check citations, proofs, code. Same-model agents share failure modes.
@@ -84,7 +116,8 @@ a gate becomes noise.
 
 ## 6. Design rules
 
-- Use 2–3 model families, not ten copies of one model.
+- Prefer model-family diversity when available; fresh contexts in one family
+  provide bounded review, not independent model-family replication.
 - Roles over personas: cartographer, adversary, formalizer, auditor — not
   “Socrates” and “Hume”.
 - Novelty = assumption-level delta + named defeater, not “this sounds new”.
@@ -93,13 +126,20 @@ a gate becomes noise.
   or consensus.
 - Human owns the question and the gate; agents own the middle.
 
-## 7. A concrete first experiment
+## 7. An executed bounded pilot
 
-Pick one narrow question — e.g. *“which premise does the work in argument A,
-and is there a countermodel when it is dropped?”* Run six agents for two weeks.
-Deliver: a source map, three candidate claims, one countermodel or formal
-kernel, and a one-page selection memo. Success is a defensible **no** or a
-sharpened claim, not a paper.
+The [observer-access pilot](creativity-loop/pilot/RESULT.md) used a coordinator,
+a fresh-context proposer, and a separate reviewer. Three live mechanisms were
+considered: Hilbert representation, finite-memory stopping, and invariant event
+access. A false L1-to-L2 shortcut was a seeded control, not a spontaneous
+failed discovery. The actual densities admit an L2 bound supporting a
+conditional readout result; no physical instrument or ontology follows.
+
+The local helper validates ancestry and question-file hashes and emits review
+packets without proposer verdicts. It does not judge proofs or launch models.
+The methods defect-injection benchmark remains a proposal. A matched-budget
+comparison against one-shot and critique-only search would be needed to claim
+better performance.
 
 ## 8. Lessons from this repository
 
@@ -115,9 +155,9 @@ sharpened claim, not a paper.
   bridge premises separately; the philosophical work is usually in the premise,
   not the proof.
 
-## Bottom line
+## 9. Working aim
 
-The realistic near-term contribution is **adversarial formal philosophy**:
-agents compress the literature, attack claims, and check the mathematical
-spine; humans choose the question, judge significance, and own the bridge
-premises. A swarm is a better red team than a better philosopher.
+Use agents both to generate mathematical objects and to challenge them. Exact
+checks guide search where available; source correspondence, physical access,
+significance, and bridge premises require separate judgments. Preserve a
+useful conditional result when its grander interpretation fails.

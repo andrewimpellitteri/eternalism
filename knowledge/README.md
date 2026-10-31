@@ -4,6 +4,13 @@ Status: initial seed, 2026-10-19. The seed contains source-page and abstract-lev
 screening, not a systematic review or completed proof audit. The initial search
 found relevant existing work; it does not establish that any proposed gap is new.
 
+## Current integration
+
+The [28 October synthesis](../research/CURRENT_SYNTHESIS.md) and
+[claim ledger](../research/CLAIM_STATUS.md) connect later research and supersede
+outdated status summaries. Source depths remain controlled by each lane’s
+records; integration does not upgrade unread sources or close novelty gates.
+
 ## Files
 
 - `PHILOSOPHY_OF_TIME.md`: dense, source-linked map of ontology, tense, passage,

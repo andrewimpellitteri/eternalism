@@ -1,0 +1,96 @@
+{
+  "status": "PASS_OBSTRUCTION",
+  "early_with_explicit_B2": {
+    "depth": "2 -> 3",
+    "source": "antichain",
+    "source_multiplicity": 1,
+    "child": "one 2-chain plus isolated vertices",
+    "child_multiplicity": 3,
+    "representatives": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "prefix_signatures": [
+      "()",
+      "((0, 1),)"
+    ],
+    "nonzero_source_component": {
+      "A": {
+        "phase_real": "[0.212132034355964257, 0.212132034355964258]",
+        "phase_imag": "[0.282842712474619009, 0.282842712474619010]",
+        "positive": "[0.353553390593273762, 0.353553390593273763]",
+        "phase_norm_squared": "[0.124999999999999999, 0.125000000000000001]"
+      },
+      "B": {
+        "phase_real": "[0.212132034355964257, 0.212132034355964258]",
+        "phase_imag": "[0.282842712474619009, 0.282842712474619010]",
+        "positive": "[0.353553390593273762, 0.353553390593273763]",
+        "phase_norm_squared": "[0.124999999999999999, 0.125000000000000001]"
+      }
+    },
+    "other_component": "exactly zero: unique parent is outside source orbit",
+    "normalizer": "[2.000000000000000000, 2.000000000000000000]",
+    "counts": [
+      2,
+      7
+    ]
+  },
+  "late_original_B3": {
+    "depth": "3 -> 4",
+    "source": "antichain",
+    "source_multiplicity": 1,
+    "child": "one 2-chain plus isolated vertices",
+    "child_multiplicity": 6,
+    "representatives": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "prefix_signatures": [
+      "()",
+      "((0, 1),)"
+    ],
+    "nonzero_source_component": {
+      "A": {
+        "phase_real": "[0.000030542349977589, 0.000030542349977590]",
+        "phase_imag": "[0.000000000000000000, 0.000000000000000000]",
+        "positive": "[0.000030542349977589, 0.000030542349977590]",
+        "phase_norm_squared": "[0.000000000932835142, 0.000000000932835143]"
+      },
+      "B": {
+        "phase_real": "[0.000030542349977589, 0.000030542349977590]",
+        "phase_imag": "[0.000000000000000000, 0.000000000000000000]",
+        "positive": "[0.000030542349977589, 0.000030542349977590]",
+        "phase_norm_squared": "[0.000000000932835142, 0.000000000932835143]"
+      }
+    },
+    "other_component": "exactly zero: unique parent is outside source orbit",
+    "normalizer": "[1.072000779999999999, 1.072000780000000001]",
+    "counts": [
+      7,
+      40
+    ]
+  },
+  "predecessor_sha256": {
+    "research/longshots/bc-matched-diffuse/check.py": "5bf747bd828e48c0b26aba50af5d38643480b4df1a8591f39423a6cd3dfb99d3",
+    "research/longshots/bc-matched-norms/check.py": "c1d1ebbf13757001d57b87e8d4f93d3e4956a8c678015f46d03b1364247dc17d"
+  },
+  "scope": "Actual-model finite counterexamples for both models/maps. B2=2 is an explicit early-step extension; original sequential construction starts at depth3. No completed gauge result."
+}

@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "abstract_overlap_squared": "1/2",
+  "same_observer_record": {
+    "carrier": 2,
+    "closed_past_mask": 5,
+    "contexts": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ]
+  },
+  "actual_access_witness": {
+    "A": {
+      "available_global_precursors": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "conditional_mass_at_P2_first_context": "[0.000000000999999993, 0.000000000999999994]",
+      "conditional_mass_at_P2_second_context": "exactly zero: invalid ideal",
+      "restricted_normalized_row_equal_up_to_parent_phase": true
+    },
+    "B": {
+      "available_global_precursors": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "conditional_mass_at_P2_first_context": "[0.000000000999999993, 0.000000000999999994]",
+      "conditional_mass_at_P2_second_context": "exactly zero: invalid ideal",
+      "restricted_normalized_row_equal_up_to_parent_phase": true
+    }
+  },
+  "fixed_past_branch_mass": [
+    {
+      "global_size": 3,
+      "past_size": 3,
+      "local_step_success": "[0.932835145750326902, 0.932835145750326903]"
+    },
+    {
+      "global_size": 4,
+      "past_size": 3,
+      "local_step_success": "[0.000999744065264108, 0.000999744065264109]"
+    },
+    {
+      "global_size": 5,
+      "past_size": 3,
+      "local_step_success": "[0.000000999999203835, 0.000000999999203836]"
+    }
+  ],
+  "dependency_sha256": {
+    "research/longshots/bc-matched-diffuse/check.py": "5bf747bd828e48c0b26aba50af5d38643480b4df1a8591f39423a6cd3dfb99d3",
+    "research/longshots/bc-matched-norms/check.py": "c1d1ebbf13757001d57b87e8d4f93d3e4956a8c678015f46d03b1364247dc17d"
+  },
+  "scope": "Actual finite register contexts and analytic mass identity. Restricts which precursor branches of the global instrument are retained; no universal observer locality theorem."
+}

@@ -1,6 +1,6 @@
 Pinned source revision: ed2e721f11830fa0bb461b3374b1893b4a357b58
 Input hashes verified: 6
-Manuscript references: 22 labels; 5 bibliography entries
+Manuscript references: 25 labels; 6 bibliography entries
 
 Script: research/adversarial-review/coordinator/check_boundaries.py; exit 0
 n=1: 1 cylinder identities and partition normalization exact

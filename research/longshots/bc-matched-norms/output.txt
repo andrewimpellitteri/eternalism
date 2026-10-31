@@ -1,0 +1,17 @@
+Outward dyadic interval arithmetic: 256 bits; zero-S circle branch checked.
+Direct triangular-mask labelled counts: [1, 1, 2, 7, 40, 357]
+n=0: 1 cylinder enclosures match exact squared-norm factors; 1 isomorphism classes agree.
+n=1: 1 cylinder enclosures match exact squared-norm factors; 1 isomorphism classes agree.
+n=2: 2 cylinder enclosures match exact squared-norm factors; 2 isomorphism classes agree.
+n=3: 7 cylinder enclosures match exact squared-norm factors; 5 isomorphism classes agree.
+n=4: 40 cylinder enclosures match exact squared-norm factors; 16 isomorphism classes agree.
+n=5: 357 cylinder enclosures match exact squared-norm factors; 63 isomorphism classes agree.
+Per model: 51 MSR rows, 407 nonzero transitions, 1619 scalar BC pair residuals enclosed (parents through size 4).
+Exact early E2 amplitudes: {'A': (Fraction(1, 2), Fraction(0, 1)), 'B': (Fraction(1, 2), Fraction(-1, 5))} ; squared-modulus gap B-A = 1/25
+Full minimum-count polynomial checked: [(4-v)z+(4+v-u)z^2+uz^3]/8.
+Two-cylinder union values A=1/16, B=9/400: stronger union data do NOT match.
+Global rational TV bound: 2/2047
+Certified completed-event gap >= 3964839/104755225 > 18899/500000 > 0.
+n=4: finite minimum-count gap is positive by rational enclosure.
+n=5: finite minimum-count gap is positive by rational enclosure.
+PASS. Finite interval checks support, but do not replace, the analytic all-stage proof.

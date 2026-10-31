@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "domain": "finite depth-three chosen Hilbert readout",
+  "cylinders": 7,
+  "E2_prefix_cylinders": 4,
+  "K3": "15640775162500/998001",
+  "P0_prefix_E2": "500499/500000000",
+  "pointer_probabilities_identical": true,
+  "coherent_probabilities": {
+    "A": "3330000/208960756171",
+    "B": "3862800/208960756171"
+  },
+  "coherent_gap": "532800/208960756171",
+  "coherent_gap_not_raw_quantum_measure_gap": true,
+  "dephasing_removes_distinction": true,
+  "global_conjugation_control_preserves_coherent_probability": true,
+  "L2_bound_constants_checked": true,
+  "finite_prefix_decision_obstruction": true,
+  "analytic_controls": "NC1 L1/L2 and NC2 quotient arguments remain analytic, not empirically scored",
+  "limits": "No physical preparation, access, full covariance, novelty or ontology established."
+}

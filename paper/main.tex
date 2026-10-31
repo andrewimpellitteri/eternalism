@@ -4,62 +4,144 @@
 \usepackage{lmodern,amsmath,amssymb,amsthm,microtype,booktabs}
 \usepackage[round,authoryear]{natbib}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
-\newtheorem{proposition}{Proposition}
-\newtheorem{definition}[proposition]{Definition}
-\theoremstyle{definition}
-\newtheorem{remark}[proposition]{Remark}
 \newcommand{\W}{\mathcal W}
-\newcommand{\U}{\mathcal U}
-\newcommand{\Hh}{\mathcal H}
-\title{The universe as a dynamical system:\\ a problem of time for Brading's presentism}
+\title{Does the Universe Have a Present?\\[2pt]
+\large Law-Constitutive Presentism and the Problem of Time}
 \author{Working manuscript}
-\date{21 October 2026}
+\date{24 October 2026}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Brading's law-constitutive presentism locates the present of each thing in the
-spatiotemporal region needed to sustain it as a dynamical system, and she says
-that the principle of unity behind it applies ``all the way up to the material
-universe as a whole.'' Her P1\textsuperscript{**} requires every existing
-thing's present to be less than the whole history. This note asks what that
-requires of the universe itself. Within special relativity the universe's
-present is the whole history, a proper region whose cost Brading has not
-discussed, or absent; or the universe is outside the quantifier's domain. In
-general relativity the question becomes a version of the problem of time. For
-a spatially closed universe, the canonical options are: an internal time whose
-reduced Hamiltonian is time dependent, so that, on an energy reading, the
-universe fails Brading's conservation-based test of unity; an ideal clock that
-restores a conserved Hamiltonian but must be reference matter of a phantom kind,
-added for the purpose and, in the dust version, tunable to observational
-insignificance; cosmic time along the Hubble flow, which keeps standard
-cosmology but is fixed by an idealised model and a coordinative definition
-rather than by a sustaining system; or no time at all,
-in which case the universe has no present and P1\textsuperscript{**} must be
-restricted. Brading's local view avoids the Lorentz-symmetry objection that
-Wüthrich raises against Monton's foliation presentism, but it meets the
-problem of time at the universe. The result is conditional and does not refute
-presentism. Its core is that on none of these routes does the dynamics of a
-sustaining system fix the universe's present: the decisive question is not only
-whether there are genuine subsystems, but what the universe's own present is.
+Katherine Brading proposes that the present of each thing is the
+spatiotemporal region needed to sustain it as a dynamical system, and that
+the law-constitutive principle of unity behind this proposal applies ``all
+the way up to the material universe as a whole.'' Her formulation
+P1\textsuperscript{**} then requires the universe's own present to be less
+than its entire history. I argue that this requirement is where the view is
+under most strain. Subsystems face a problem of location: which of their
+sustaining regions is present. The universe faces in addition a problem of
+shape. It has no outside, so a stage of the universe must be bounded by
+global surfaces, and something must determine which ones. In special
+relativity the universe's total energy--momentum does this. In a spatially
+closed general-relativistic universe nothing in the dynamics does, unless
+the universe has what Brading, reading Newton, calls a true time: a time
+``unique and proper to the \ldots\ system of bodies in question.'' Whether a
+closed universe has such a time is the problem of time. The answers in
+canonical gravity and cosmology supply apparent times that disagree, a true
+time only for an enlarged system containing posited reference matter, a
+mathematical time constructed from an idealized model, or no time at all;
+the last remains a live candidate, and constant-mean-curvature time is a
+further one if the unity test is read as momentum conservation. Unless the
+defender can say which proper regions are the universe's presents, the only
+reading of its sustaining region that selects anything gives the whole
+history, which by Brading's own criterion returns the block universe.
+Restricting P1\textsuperscript{**} to proper subsystems is
+coherent, but it leaves a view on which the totality is a four-dimensional
+unity. Unlike Gödel's objection to cosmic time, this objection does not turn
+on contingency, which Brading's empiricism welcomes.
 \end{abstract}
 
-\section{The texts and the question}
+\section{Introduction}\label{sec:intro}
 
-Katherine Brading's \emph{Presentism as an Empirical Hypothesis} and
-\emph{Physically Locating the Present} offer one of the most careful attempts to
-keep a presentist ontology alive in relativistic physics
-\citep{Brading2013,Brading2015}. She rejects the assumption that spacetime is the
-ontological principle of unity of what exists, and replaces it with a
-law-constitutive principle: the dynamical laws constitute genuine unities, and
-the present of a system is the region needed to sustain its dynamics:
+Katherine Brading has proposed a version of presentism designed to take
+special relativity seriously without adding a preferred foliation
+\citep{Brading2013,Brading2015}. Its central move is to stop treating
+spacetime as the principle of ontological unity of what exists. Following
+what she reads as Newton's law-constitutive approach to bodies, she takes
+the genuine unities to be what exists and lets the dynamical laws say what
+the unities are. A thing's present is then ``a spatiotemporal region of
+whatever size is necessary to sustain the dynamical system in question''
+\citep[p.~1109]{Brading2013}. Presents so understood are local, dynamically
+individuated and need not be shared.
 
-\begin{quote}
-The present is a spatiotemporal region of whatever size is necessary to sustain
-the dynamical system in question \citep[p.~1109]{Brading2013}.
-\end{quote}
+The main objection in the literature is Savitt's. He grants that this yields
+a relativistic present but observes that ``every dynamical system that has
+existed, does exist or will exist had, has or will have a region of whatever
+size is necessary to sustain it''; the proposal is ``a characterization of a
+relativistic present, not relativistic presentism''
+\citep[sec.~3.3]{Savitt2021}. Call this the \emph{location problem}: nothing in
+the proposal says which of a system's sustaining regions is the present one.
 
-The 2015 paper states the position as P1\textsuperscript{**}:
+This paper raises a different problem, which arises at one scale only.
+Brading's principle of unity is meant to apply ``all the way up to the
+material universe as a whole'' \citep[p.~16]{Brading2015}, and her
+formulation P1\textsuperscript{**} requires every existing thing's present to
+be ``less than the entire spatiotemporal evolution of the universe''
+\citep[p.~17]{Brading2015}. If the universe is a thing, its present must be a
+proper part of its history. I argue that the universe faces, in addition to
+the location problem, a \emph{shape problem} that subsystems avoid. A stage of
+a subsystem is cut out by the subsystem's own world-tube and dynamics. A stage
+of the universe has no outside: it must be bounded by global surfaces, and
+something must determine which ones. In special relativity the universe's
+total energy--momentum does so. In a spatially closed general-relativistic
+universe nothing in the dynamics does so, unless the universe has what
+Brading herself, reading Newton, calls a \emph{true time}: a time ``unique
+and proper to the body (or system of bodies) in question''
+\citep[p.~20]{Brading2017}. Whether a closed universe has such a time is the
+problem of time. The answers on offer in canonical gravity and cosmology
+supply apparent times that disagree, a true time only for an enlarged system
+containing posited reference matter, a mathematical time constructed from an
+idealized model, or no time at all.
+
+The conclusion is conditional and targeted. It does not show that presentism
+is false, that eternalism is true, or that Brading's subsystem presents are
+incoherent. It shows that, applied to the totality, the law-constitutive
+account owes an account of what fixes the stages of the whole, and that by
+the account's own standards current physics does not supply one. If the debt
+cannot be paid, two options remain. One is to accept that the universe's
+present is its whole history, which Brading says returns us to the block
+universe. The other is to restrict P1\textsuperscript{**} to proper
+subsystems. That is coherent, but it leaves a view on which the totality is a
+four-dimensional unity; what survives is a dynamical account of the temporal
+extent of subsystems that an eternalist can accept. The argument thus arrives
+at Savitt's verdict by an independent route, and it relocates the empirical
+question on which Brading rests her view: not only whether there are genuine
+subsystems, but whether the system of the world has a true time.
+
+Two contrasts locate the argument. Gödel objected that if time's lapse
+depended on cosmic time, it would depend on ``the particular way in which
+matter and its motion are arranged in the world'' \citep[p.~562]{Godel1949}, as quoted by \citet[sec.~6]{Monton2006}. Contingency of that kind is no objection
+to Brading, whose view is avowedly empirical; the objection here concerns not
+whether the universe's time is contingent but whether it belongs to the
+universe at all (\S\ref{sec:godel}). And Wüthrich's Lorentz-symmetry objection
+to Monton's foliation presentism does not touch Brading's local presents, but
+it returns at the universe (\S\ref{sec:mw}).
+
+\section{Law-constitutive presentism}\label{sec:view}
+
+Brading's starting point is a reading of Newton. On the law-constitutive
+approach, ``to be a physical thing, be it simple or composite, is (in part) to
+conserve total quantity of motion (when isolated from other physical
+things)'' \citep[p.~1105]{Brading2013}. A collection of interacting bodies
+``forms a composite whole in virtue of conserving its total quantity of
+motion and its overall direction of motion,'' a principle of unity ``for a
+composite system, when that system as a whole is free from external
+interactions'' \citep[p.~16]{Brading2015}. The approach is offered as ``a
+principle of ontological unity that applies across the board to simple
+things, composite systems, and component parts of those systems, and which
+applies all the way up to the material universe as a whole. Insofar as what
+exists is what is one, the law-constitutive approach to unity is a
+metaphysical thesis about what exists'' \citep[p.~16]{Brading2015}.
+
+Spacetime is demoted to an epistemic role: it ``provide[s] the framework
+within which we organize our knowledge of the not-here and/or not-now''
+\citep[p.~17]{Brading2015}. The present is relocated accordingly. It is
+``the spatiotemporal region that is dynamically necessary to sustain'' a
+unity, so that ``what is `present' depends on what is real (i.e.\ what exists,
+the genuine unities), and what is real depends on the dynamical laws''
+\citep[p.~17]{Brading2015}. Such a present ``is extended in time just as it is
+extended in space'': ``there is no attempt to provide a unique foliation of
+this region into `spatial' and `temporal' components'' (ibid.). Being present
+``is relative to the dynamical system in question'' and ``is not transitive
+among systems and their subsystems'' (ibid.). The 2013 paper puts the
+quantity at issue as ``the spatiotemporal extent of the sufficient dynamical
+ground of a given unity,'' which ``might turn out to be much, much smaller than
+the abstract spatiotemporal structure within which the evolution of that
+unity is completely described, or it might be the size of the block
+universe'' \citep[p.~1109]{Brading2013}.
+
+The position is stated as follows:
 
 \begin{quote}
 (P1\textsuperscript{**}) For each and every thing that exists, that thing
@@ -70,460 +152,557 @@ spacetime, and (b) less than the entire spatiotemporal evolution of that thing
 as represented in Minkowski spacetime \citep[p.~17]{Brading2015}.
 \end{quote}
 
-She adds: ``In order to avoid the block universe, all we need is (a)''
-\citep[p.~17]{Brading2015}. And she places the decisive empirical question
-elsewhere, in the subsystems: whether there are genuine subsystems ``smaller in
-spatiotemporal extent than the entirety of spacetime'' is a matter of the
-details of the dynamics, and ``only if there are such can the version of
+``In order to avoid the block universe,'' she adds, ``all we need is (a)''
+(ibid.). If a system's sustaining region ``is the entire spatiotemporal
+history of the universe \ldots\ we are back to the block universe'' (ibid.).
+Whether there are genuine subsystems ``smaller in spatiotemporal extent than
+the entirety of spacetime'' is ``an empirical question, dependent on the
+details of the dynamical laws''; ``only if there are such can the version of
 presentism offered here survive'' \citep[p.~18]{Brading2015}.
 
-The scope of the principle is wider than the subsystems. Brading writes that
-the law-constitutive approach gives ``a principle of ontological unity that
-applies across the board to simple things, composite systems, and component
-parts of those systems, and which applies all the way up to the material
-universe as a whole. Insofar as what exists is what is one, the
-law-constitutive approach to unity is a metaphysical thesis about what exists''
-\citep[p.~16]{Brading2015}. This note asks what P1\textsuperscript{**} requires
-of the universe itself, first within special relativity, the setting of
-Brading's texts, and then in general relativity, where the universe is
-standardly treated as a dynamical system in its own right.
+Three further features matter below. First, local presents do not lead to
+solipsism, because ``we belong to the same world as whatever we interact with,
+and the rest of that world is as real as we are. The dynamics grounds the unity
+of what there is, both of the parts and of the whole (consisting of interacting
+parts), and this is what prevents the presentist from becoming a solipsist''
+\citep[p.~1110]{Brading2013}. Second, given genuine subsystems, ``the present
+is (at least in the first instance) local, not global'' (ibid.); the qualifier
+leaves room for a global present at some level. Third, Brading has a worked-out
+view of what it would be for a system to have a time of its own. Reading the
+scholium to the \emph{Principia}, she argues that ``just as true motion is
+unique and proper to the body (or system of bodies) in question, in contrast to
+being a property of the appearances, so too true time is unique and proper to
+the body (or system of bodies) in question, a property of the body or system
+itself rather than of the appearances'' \citep[p.~20]{Brading2017}. Her
+illustration is the Earth--Sun--Moon system. The apparent motions of Sun and
+Moon can each serve as a clock, ``[b]ut these `clocks' do not tick regularly
+with respect to one another, and therefore the true time of the Earth--Sun--Moon
+system (if any such exists) remains to be determined'' \citep[p.~21]{Brading2017}.
+Newton's project needs such a time: ``there must be a unique time parameter
+proper to the system of the world, for if there is not, then a second `time'
+might give different conclusions concerning the motions and forces''
+\citep[p.~27]{Brading2017}. Whether one exists is open: ``it is a contingent
+matter whether any such true motions exist,'' and the questions whether time is
+absolute, true or mathematical ``have become empirically tractable''
+\citep[p.~28]{Brading2017}.
 
-The contribution is a bridge, not a new objection family. Savitt has already
-objected that every dynamical system has a sustaining region and that it is
-unclear when two systems share a present \citep[\S3.3]{Savitt2021}. Monton and
-Wüthrich have debated whether presentism can live in quantum gravity through a
-preferred foliation \citep{Monton2006,Wuthrich2010}. Isham, Thiemann, and
-Bamonti and Thébault have analysed time for the universe in canonical gravity
-and cosmology \citep{Isham1991,Thiemann2006,BamontiThebault2025}. None of these
-discusses Brading's law-constitutive presentism or the universe's own present.
-The claim here is that, applied to the totality, Brading's own unity criterion
-meets the problem of time, and that the ways out each carry a definite cost.
+The 2017 discussion is not about presentism, and nothing below attributes to
+Brading a view about the universe's present. The argument uses her account of
+true time as the standard by which, on her own terms, a time could count as the
+universe's.
 
-\section{The universe as a genuine unity}\label{sec:unity}
+\section{The universe as a thing}\label{sec:unity}
 
-Brading's working premise is that ``what exists (what is real) are the genuine
-unities,'' and that ``what is `present' depends on what is real (i.e. what
-exists, the genuine unities), and what is real depends on the dynamical laws''
-\citep[p.~17]{Brading2015}. This note grants the premise. The question is what
-follows for the universe if it is granted.
-
-Two further claims are needed for the universe to be an existing thing. The
-first is that the universe is a genuine unity. The scope claim above gives the
-principle's intended reach, not a verdict; a principle of unity can apply to a
-collection and find that it is not one. The textual support for the verdict is
-elsewhere: ``The dynamics grounds the unity of what there is, both of the parts
-and of the whole (consisting of interacting parts)''
-\citep[p.~1110]{Brading2013}; and the 2013 footnote says the law-constitutive
-approach covers ``the unity of simple things, composite things, and the
-totality of existing things,'' while adding that ``different principles of unity
-might be used for the different cases'' \citep[p.~1105, n.~3]{Brading2013}.
-
-The second claim concerns the test. Brading associates unity with the
-conservation of total quantity of motion when a system is isolated from
-external interactions \citep[p.~1105]{Brading2013}, and with a composite whole
-that conserves its total quantity and direction of motion ``when that system as
-a whole is free from external interactions'' \citep[p.~16]{Brading2015}. The
-universe has no external interactions. In special relativity, a closed
-distribution of matter has a conserved total energy-momentum, so the universe
-passes the test. That is our application of her criterion, not her statement,
-and a reader may resist applying the isolation condition to the totality. If
-the premise is rejected, the universe falls outside the domain (\S\ref{sec:sr},
-option 3).
-
-For the general-relativistic discussion we need a regimentation of the test.
-
-\begin{definition}[Conservation test, regimented]\label{def:test}
-A system passes the conservation test relative to a time parameter $\tau$ if
-its evolution in $\tau$ is generated by a quantity that is conserved along that
-evolution, that is, by a Hamiltonian with no explicit $\tau$ dependence.
-\end{definition}
-
-This is a bridge premise. It extends Brading's Newtonian and special-relativistic
-criterion to a setting she does not discuss, and it is the most contestable
-step in the argument. Brading's ``quantity of motion'' is Newtonian momentum,
-not energy. Definition~\ref{def:test} reads the test through the generator of
-time evolution, because that is the quantity whose conservation is at issue
-when a time is chosen. On a momentum reading the test does no work for a
-spatially closed universe: the momentum constraints of canonical general
-relativity make its total momentum vanish identically, so it passes trivially.
-Section~\ref{sec:gr} therefore separates the costs that depend on the energy
-reading from the one that does not, namely that the dynamics does not single out
-the universe's present.
-
-\section{The universe's present in special relativity}\label{sec:sr}
-
-Grant that the universe is a genuine unity and an existing thing. P1\textsuperscript{**}
-is universal: ``for each and every thing that exists''
-\citep[p.~17]{Brading2015}. Write $\W$ for the whole history in the common
-Minkowski representation. Four cases are exhaustive. Following Brading, ``local''
-means a proper part of the block \citep[p.~17]{Brading2015}; below, (2) is split
-by whether the proper region is spatially global.
-
-\paragraph{(1) The present is $\W$.} If the region needed to sustain the universe
-is its entire evolution, clause (a) is false of the universe, and
-P1\textsuperscript{**} is false on its unrestricted reading. Brading herself says
-that if a system's needed region ``is the entire spatiotemporal history of the
-universe,'' then ``we are back to the block universe'' \citep[p.~17]{Brading2015}.
-
-\paragraph{(2) The present is a proper region.} \emph{(2a) Spatially global.}
-If ``needed to sustain'' means ``the data needed to determine the evolution,''
-a Cauchy slice or a thin global slab would do. The cost is Brading's rejection of
-a global present: ``the idea of a spatially global present common to all
-systems is not preserved in this version of presentism, but the rejection of a
-spatially global present is one of the central lessons of special relativity''
-\citep[p.~17]{Brading2015}. The qualifier ``common to all systems'' leaves room
-for a global present for the universe alone. In Minkowski spacetime the
-dynamics can even select one: a closed system with timelike total
-energy-momentum has a rest frame. But the result is a spatially global present,
-in tension with the second clause of the passage, and Brading does not say how
-it relates to the local presents of the subsystems. \emph{(2b) Local.} A patch might sustain the universe's unity if the
-laws determine the rest from it, but on Brading's account of aggregation ``the
-members must stand in relations to one another, and those relations must be
-necessary and sufficient for the collection to form a unity''
-\citep[p.~16]{Brading2015}. A local region must then encode the relations among
-all members; the text does not say how.
-
-\paragraph{(3) The universe is outside the domain.} Either (3a) it is not a
-genuine unity, and so, given the premise, does not exist, contrary to the scope
-claim; or (3b) ``thing'' is restricted to proper unities, and the quantifier no
-longer covers the whole of what exists. In both cases the view becomes a
-thesis about proper subsystems.
-
-\paragraph{(4) The universe has no present.} Brading's present is the region
-needed to sustain a \emph{dynamical system}. If the universe is a unity but not
-a dynamical system in her sense, it has no sustaining region, and
-P1\textsuperscript{**} is false or undefined for it. Brading's own defeat
-condition speaks against this option being free: it describes the scenario in
-which ``the only dynamical system that there is, is this entirety''
-\citep[p.~1109]{Brading2013}, so it treats the totality as a dynamical system
-with a sustaining region.
-
-Within special relativity, option (2a) is the natural home for a defender, and
-its cost is a global present for the universe. In special relativity the
-rest frame of the total energy-momentum supplies the slice. In general
-relativity there is no such frame for a closed universe, and the choice of
-slice becomes a specific physical problem.
-
-\section{The universe's present in general relativity}\label{sec:gr}
-
-In canonical general relativity the Hamiltonian of a spatially closed universe
-is a sum of constraints and vanishes on solutions; there is no external time,
-and ``nothing seems to happen'' until a time is extracted from the variables
-themselves \citep[\S1]{Thiemann2006}. A spatially global present for the universe,
-option (2a), is then a region bounded by leaves of some global time function.
-Which function? Isham distinguishes two broad strategies: reduce the theory to
-true canonical form by choosing a time before quantising, or quantise all
-variables and impose the constraints, leading to the Wheeler--DeWitt equation
-\citep[pp.~196--198]{Isham1991}. Combining these with the cosmological
-literature gives four routes for the universe's present. The question for each
-is whether the universe, so timed, passes the conservation test.
-
-\paragraph{(a) An internal time.} Choose a time variable from the gravitational
-or matter degrees of freedom and solve the constraint for its conjugate
-momentum, which becomes the reduced Hamiltonian. In a closed
-Friedmann--Lemaître--Robertson--Walker minisuperspace Isham does this for the
-radius of the universe, for its conjugate momentum, and for a scalar field, and
-lists among the general problems that ``the reduced Hamiltonian is time
-dependent'' \citep[pp.~199--200]{Isham1991}. He comments:
+The argument needs one premise.
 
 \begin{quote}
-A time-dependent Hamiltonian means that energy can be fed into, or taken out of,
-the quantum system. In a normal physical situation this arises because the
-system is not closed, and then the time-dependence of the Hamiltonian is
-determined by the environment. However, a compact three-manifold $\Sigma$ (the
-``universe'') has no external environment, and so the time-dependence is perhaps
-a little odd \citep[p.~200]{Isham1991}.
+(U) The material universe is a genuine unity, and therefore an existing thing
+within the scope of P1\textsuperscript{**}.
 \end{quote}
 
-Wüthrich reports the same point against the constant-mean-curvature route to a
-presentist foliation \citep[p.~274]{Wuthrich2010}. For Brading the oddity is
-more than odd. A universe whose evolution in its own global time is generated by
-a time-dependent Hamiltonian fails the conservation test of
-Definition~\ref{def:test}. It has a present, but by her criterion it is not the
-kind of isolated whole that conserves its total quantity of motion. Isham adds a
-second cost: ``There is no natural choice for the time variable and no reason to
-suppose that different choices will give equivalent quantum theories''
-\citep[p.~200]{Isham1991}.
+The scope claim quoted above gives the principle's intended reach, not a
+verdict; a principle of unity can apply to a collection and find that it is
+not one. The verdict has textual support elsewhere. The dynamics grounds the
+unity ``both of the parts and of the whole (consisting of interacting parts)''
+\citep[p.~1110]{Brading2013}. A 2013 footnote uses ``principle of unity'' to
+``cover the unity of simple things, composite things, and the totality of
+existing things,'' notes that ``[d]ifferent principles of unity might be used
+for the different cases,'' and adds: ``One feature of the law-constitutive
+approach discussed here is that it applies to all three''
+\citep[p.~1105, n.~3]{Brading2013}. The unity of the whole is also what does
+the anti-solipsist work: we belong to one world because the dynamics unifies
+it.
 
-\paragraph{(b) An ideal clock.} The time dependence is not universal. In Isham's
-own scalar-field example the reduced Hamiltonian,
-$H_\phi=\pm\bigl(a^2\pi_a^2/12+12a^4-2a^6V(t)\bigr)^{1/2}$ \citep[eq.~5.2.8]{Isham1991},
-has no explicit time dependence when the potential $V$ vanishes. Thiemann
-generalises the point: if the Lagrangian of a scalar field coupled to general
-relativity contains only derivatives, the theory deparametrises completely, and
-there is ``a distinguished notion of time generated by an invariant, positive and
-time independent physical Hamiltonian'' \citep[p.~20]{Thiemann2006}. On this
-route the universe has a global time and passes the conservation test.
+The unity criterion supports (U) as well. A composite is one when it conserves
+its total quantity of motion while ``free from external interactions.'' The
+universe has no external interactions. A closed distribution of matter in
+Minkowski spacetime with finite total energy--momentum conserves it. So, on
+its face, the universe passes the test. That is my application of her
+criterion, not her statement. A defender may deny (U); I return to that option
+in \S\ref{sec:exits}, where it turns out to carry the main cost.
 
-The cost is physical. To keep the physical Hamiltonian close to that of
-standard cosmology the clock Lagrangian must be of Dirac--Born--Infeld type,
-which for small gradients is a massless field ``with the wrong sign, i.e. it is
-a phantom,'' and ``non-trivial potentials are forbidden''
-\citep[p.~5]{Thiemann2006}. The phantom's negative energy must be compensated by
-other matter, and the concrete model implies that the universe recollapses
-\citep[pp.~9--10]{Thiemann2006}. Above all, Thiemann claims that ``whatever
-matter is used for deparametrisation, there will be corrections to the standard
-FRW equations. This should have observable consequences!''
-\citep[p.~9]{Thiemann2006}.
+\section{Location, shape, and the universe's stages}\label{sec:shape}
 
-That general claim is too strong as an empirical cost. Using pressureless dust
-as the clock, in the manner of Brown and Kuchař \citep{BrownKuchar1995}, Giesel,
-Hofmann, Thiemann and Winkler obtain a physical Hamiltonian that ``is simply the
-spatial integral of the energy density,'' and whose evolution equations match
-Einstein's ``up to modifications proportional to the energy momentum density''
-of the dust, so that ``the influence of the dust can be tuned away arbitrarily''
-\citep[p.~4]{GHTW2007a}. For a spatially flat
-Friedmann--Lemaître--Robertson--Walker background the resulting equations
-``formally agree with the standard FRW equations'' \citep[p.~11]{GHTW2007b}, and
-the corrections to linear perturbations ``decay in the late universe at least
-as $1/a$'' \citep[p.~4]{GHTW2007b}. What survives is the character of the clock.
-The dust ``must be a `phantom dust','' because with ordinary dust ``the physical
-Hamiltonian would come out negative definite rather than positive definite. Or
-equivalently, physical time would run backwards rather than forward''; its
-energy density can be arbitrarily small but ``must not vanish''
-\citep[p.~4]{GHTW2007a}. On route (b), then, the universe has a global present
-and passes the conservation test, but the present is fixed by a reference
-medium of negative energy, posited to serve as clocks and rods, whose
-observable trace can be made as small as one likes.
+\subsection{Two problems}
 
-None of this depends on spatial flatness. The framework of Giesel and
-co-authors is set up for a three-manifold ``of arbitrary topology,'' and the
-case without boundary, which includes the spatially closed universe, is the
-one they treat by default: ``As long as the dust space $\ldots$ has no
-boundary, $H$ is functionally differentiable, which we always assumed so far''
-\citep[pp.~12, 36]{GHTW2007a}. Thiemann's phantom scalar likewise works for
-compact $\sigma$ without boundary \citep[p.~26]{Thiemann2006}. Only their
-cosmological comparisons are made for flat backgrounds. In Isham's closed model
-the point is elementary. Add homogeneous comoving dust with proper time $T$ and
-conjugate momentum $P_T$. For homogeneous dust the Brown--Kuchař energy density
-reduces to $|P_T|$, so the constraint (5.2.5) becomes $C(a,\pi_a,\phi,\pi_\phi)
-\pm P_T=0$, where $C$ is Isham's left-hand side, curvature term included. The
-physical Hamiltonian $\mp P_T=C$ contains no $T$, for $k=1$ exactly as for $k=0$,
-and the sign is the one Giesel and co-authors show forces phantom dust. This
-extension to the closed case is ours, not stated in the sources. The empirical exposure is
-real for Thiemann's phantom scalar and arbitrarily weak for phantom dust. The
-cost that does not weaken is that the universe's present is fixed by an added
-reference system, not by the region needed to sustain the universe's own
-dynamics.
+Savitt's location problem arises for every system: each stage of a system's
+history has a sustaining region, and the proposal does not say which is
+present. I set it aside. Grant, for the sake of argument, that Brading can
+answer it, for instance by holding that each sustaining region is present for
+the stage of the system that it sustains, and that there is no further fact.
+The question here is what the stages of the universe are.
 
-\paragraph{(c) Cosmic time.} Bamonti and Thébault defend a conservative
-alternative: read the time in the Friedmann equations as proper time along the
-Hubble flow, in synchronous gauge, so that the equations describe the
-correlation between two partial observables, the Hubble parameter and cosmic
-time \citep[\S\S4--5]{BamontiThebault2025}. The cost is that ``there is no
+For a subsystem the question has a natural answer. An atom's sustaining
+region is fixed by the atom's world-tube and the timescale of its constitutive
+dynamics, approximately in its own rest frame. Its present is a region of
+spacetime, with no preferred split into space and time, exactly as Brading
+says. Nothing global is required to say which region it is.
+
+For the universe, two readings of ``sufficient dynamical ground'' are
+available.
+
+\emph{The constitutive reading.} The ground of a whole consisting of
+interacting parts is the region containing the interactions that make it one.
+For the universe these are all interactions among all its parts, throughout
+its history. The ground is the whole history $\W$.
+
+\emph{The stage reading.} The ground of the universe at a stage is a region
+sufficient, given the laws, for the dynamics of the whole at that stage. With
+deterministic dynamics a thickened Cauchy surface will do. Such regions are
+proper parts of $\W$. But unlike a subsystem's, they cannot be read off a
+world-tube: a stage of the universe has no boundary in space, so it must be
+bounded by global surfaces. There are as many candidate families of stages as
+there are ways of slicing the history. Which surfaces bound a stage of the
+universe is the \emph{shape problem}.
+
+The argument needs one further premise, and I state it explicitly:
+
+\begin{quote}
+(S) If the universe's present is a proper region, it is one member of a
+family of regions, selected by the dynamics of the whole, that orders the
+universe's history into stages.
+\end{quote}
+
+Given (S), the two readings are connected. If the dynamics of the universe
+selects no family of stages, the stage reading identifies no proper region as
+the universe's present, and the only reading that identifies any region at all
+is the constitutive one, which gives $\W$. So, given (S),
+P1\textsuperscript{**}(a), applied to the universe, requires a dynamically
+selected family of global stages. It does not require a preferred foliation of
+spacetime for the purposes of subsystems, and it does not require the universe's
+present to be thin. It requires that the dynamics of the whole determine what a
+stage of the whole is.
+
+Premise (S) is not trivial, and the conclusion is no stronger than it. A
+defender may deny it by offering a proper, dynamically constituted region that
+is the universe's present without being one of a sequence of stages. The next
+paragraph gives the reason to accept (S); a defender who rejects it owes a
+positive account of which such region is the universe's present and why.
+
+Could the defender instead count every such slab as a present of the
+universe? Then clause (a) is satisfied, but emptily. In any globally
+hyperbolic spacetime, eternalist or not, every event lies in many thickened
+Cauchy surfaces, and these cross one another in every direction; they do not
+order the universe's history into a succession of stages at all. A
+subsystem's sustaining regions at least form a sequence along its world-tube,
+which is why Savitt's problem for subsystems is one of location. The
+universe's candidate presents form no sequence, so ``the universe exists only
+presently'' would deny nothing that a block theorist asserts. Clause (a) can do
+the anti-block work Brading assigns it only if some principle picks out which
+proper regions are the universe's presents; ordering by stages is the natural
+candidate, and the one the problem of time concerns.
+
+\subsection{Special relativity}
+
+In special relativity the requirement can be met. A closed distribution of
+matter with timelike total energy--momentum $P$ has a rest frame, and the
+hyperplanes orthogonal to $P$ give a family of global stages fixed by the
+dynamics of the whole. The universe's present is then a slab bounded by two
+such hyperplanes. This fixes the orientation of the slab, not its thickness. For a
+subsystem the thickness is set by the timescale of its constitutive dynamics; for
+the universe nothing obviously plays that role, and I leave the question open. The
+location problem is left where it was.
+
+The price is a global present for the universe alone. Brading rejects ``a
+spatially global present common to all systems'' \citep[p.~17]{Brading2015},
+but presentness is system-relative and non-transitive, and the present is local
+only ``in the first instance.'' A global present for the whole, coexisting with
+non-transitive local presents for its parts, is not excluded by her text. She
+would need to say how the universe's slab relates to the presents of its
+subsystems, but the cost is modest. (If the matter content of Minkowski
+spacetime is infinite and homogeneous, $P$ is undefined and this solution
+fails; I set that case aside.) In Brading's own setting, then, the universe case
+does not refute the view. It becomes pressing when the universe is treated, as
+it is in general relativity, as a dynamical system whose spacetime geometry is
+itself part of the dynamics.
+
+\subsection{What general relativity removes}
+
+In canonical general relativity the Hamiltonian of a spatially closed universe
+is a sum of constraints that vanishes on solutions. There is no external time,
+and ``nothing seems to happen'' until a time is extracted from the variables
+themselves \citep[sec.~1]{Thiemann2006}. There is no asymptotic region and,
+generically, no time-translation symmetry, so there is no total energy--momentum
+whose rest frame could fix the stages of the whole. The special-relativistic
+solution has no counterpart. A family of stages must be given by a time
+function, and the question is whether the universe's dynamics fixes one.
+
+Brading's account of true time says what would count. Three conditions can be
+read off the passages in \S\ref{sec:view}. A time is the universe's own only if
+it is
+\begin{itemize}
+\item[(T1)] \emph{proper}: fixed by the dynamics of the material universe
+itself, ``a property of the body or system itself rather than of the
+appearances'';
+\item[(T2)] \emph{unique}: not one of several candidates that ``do not tick
+regularly with respect to one another,'' since otherwise ``a second `time'
+might give different conclusions'';
+\item[(T3)] \emph{empirically answerable}: its existence is ``a contingent
+matter,'' to be settled by the dynamics, not by stipulation.
+\end{itemize}
+There is also a link to the unity criterion. Newton's true time is the parameter
+in which the first law holds, that is, in which an isolated body conserves its
+quantity of motion. In Hamiltonian terms, the natural analogue for an isolated
+system is a time relative to which the generator of its evolution is conserved:
+a Hamiltonian without explicit time dependence. This regimentation is mine,
+and it is the most contestable bridge in the argument.\footnote{Brading's
+``quantity of motion'' is Newtonian momentum, not energy. On a momentum reading
+the conservation test does no work for a spatially closed universe, whose
+momentum constraints make its total momentum vanish identically. The argument of
+\S\ref{sec:routes} rests chiefly on (T1) and (T2), which do not depend on this
+reading; only the subsidiary point about time-dependent Hamiltonians in
+\S\ref{sec:internal} does.} If it is accepted, the universe passes Brading's
+unity test only relative to a time in which its own generator of evolution is
+conserved, and true time and unity stand or fall together.
+
+So the universe's present requires that a spatially closed universe have a
+true time. That is the problem of time, posed in Brading's terms.
+
+\section{Four answers from canonical gravity and cosmology}\label{sec:routes}
+
+Isham distinguishes two broad strategies: reduce the theory to true canonical
+form by choosing a time before quantizing, or quantize all variables and impose
+the constraints, leading to the Wheeler--DeWitt equation
+\citep[pp.~196--198]{Isham1991}. Together with the cosmological literature these
+give four answers.
+
+\subsection{Internal times: apparent times}\label{sec:internal}
+
+Choose a time variable from the gravitational or matter degrees of freedom and
+solve the constraint for its conjugate momentum, which becomes the reduced
+Hamiltonian. In closed Friedmann--Lemaître--Robertson--Walker minisuperspace,
+Isham does this for the radius of the universe, for its conjugate momentum and
+for a scalar field. Among the general problems he lists that ``[t]he reduced
+Hamiltonian is time dependent,'' and comments:
+
+\begin{quote}
+A time-dependent Hamiltonian means that energy can be fed into, or taken out
+of, the quantum system. In a normal physical situation this arises because the
+system is not closed, and then the time-dependence of the Hamiltonian is
+determined by the environment. However, a compact three-manifold $\Sigma$ (the
+``universe'') has no external environment, and so the time-dependence is
+perhaps a little odd \citep[p.~200]{Isham1991}.
+\end{quote}
+
+He adds: ``There is no natural choice for the time variable and no reason to
+suppose that different choices will give equivalent quantum theories'' (ibid.).
+
+In Brading's terms these are apparent times. There are several candidate clocks,
+each a feature of the universe's evolution, and they do not tick regularly with
+respect to one another; the quantum theories built on them need not even agree.
+This is the Earth--Sun--Moon situation at cosmological scale, and it fails (T2).
+On the energy regimentation, it also fails the unity test: relative to any such
+time the universe's generator of evolution is not conserved, so relative to that
+time the universe is not exhibited as the kind of isolated whole that conserves
+its total quantity of motion. What Isham calls ``a little odd'' is, for Brading,
+a sign that the parameter is not the universe's true time.
+
+One internal time is not merely one candidate among many. A constant-mean-curvature
+(York) time, where such a foliation exists, is fixed by the geometry of the
+spacetime itself rather than chosen from among competing clocks, so it is a
+serious candidate for (T1) and (T2). Its reduced Hamiltonian is again time
+dependent \citep[p.~274]{Wuthrich2010}. On the energy reading it therefore fails
+the unity test; on the momentum reading it does not, and the argument must concede
+that constant-mean-curvature time is then a live candidate for the universe's true
+time. Its scope is limited, since such foliations need not exist
+\citep[pp.~269--275]{Wuthrich2010}, but where it exists the shape problem has an
+answer.
+
+\subsection{Reference matter: a true time for an enlarged system}\label{sec:reference}
+
+The time dependence is not universal. In Isham's scalar-field example the
+reduced Hamiltonian,
+$H_\phi=\pm\bigl(a^2\pi_a^2/12+12a^4-2a^6V(t)\bigr)^{1/2}$
+\citep[eq.~5.2.8]{Isham1991}, has no explicit time dependence when the potential
+vanishes. Thiemann generalizes the point: if the Lagrangian of a scalar field
+coupled to general relativity contains only derivatives, the theory
+deparametrizes completely, and there is ``a distinguished notion of time
+generated by an invariant, positive and time independent physical
+Hamiltonian'' \citep[p.~20]{Thiemann2006}. Here (T2) and the conservation test
+are both satisfied.
+
+The cost is in the clock. To keep the physical Hamiltonian close to that of
+standard cosmology, the clock Lagrangian must be of Dirac--Born--Infeld type,
+which for small gradients is a massless field ``with the wrong sign, i.e.\ it is a
+phantom''; ``non-trivial potentials are forbidden'' \citep[p.~5]{Thiemann2006}.
+The phantom's negative energy must be compensated by other matter, and
+Thiemann's concrete model recollapses \citep[pp.~9--10]{Thiemann2006}. He
+expects that ``whatever matter is used for deparametrisation, there will be
+corrections to the standard FRW equations'' \citep[p.~9]{Thiemann2006}.
+
+That expectation is too strong as an empirical cost. Using pressureless dust as
+the clock, in the manner of \citet{BrownKuchar1995}, Giesel, Hofmann, Thiemann
+and Winkler obtain a physical Hamiltonian that ``is simply the spatial integral
+of the energy density,'' with evolution equations that match Einstein's ``up to
+modifications proportional to the energy momentum density'' of the dust, so that
+``the influence of the dust can be tuned away arbitrarily''
+\citep[p.~4]{GHTW2007a}. On a flat Friedmann--Lemaître--Robertson--Walker
+background the resulting equations ``formally agree with the standard FRW
+equations'' \citep[p.~11]{GHTW2007b}. What survives is the character of the
+clock. The dust ``must be a `phantom dust','' since with ordinary dust ``the
+physical Hamiltonian would come out negative definite rather than positive
+definite. Or equivalently, physical time would run backwards rather than
+forward''; its energy density can be arbitrarily small but ``must not vanish''
+\citep[p.~4]{GHTW2007a}. None of this depends on spatial flatness.\footnote{The
+framework of Giesel and co-authors is set up for a three-manifold ``of arbitrary
+topology,'' and the case without boundary, which includes the spatially closed
+universe, is their default \citep[pp.~12, 36]{GHTW2007a}; Thiemann's phantom
+scalar likewise works for compact space without boundary
+\citep[p.~26]{Thiemann2006}. In Isham's closed model the point is elementary. Add
+homogeneous comoving dust with proper time $T$ and conjugate momentum $P_T$. For
+homogeneous dust the Brown--Kuchař energy density reduces to $|P_T|$, so the
+constraint (5.2.5) becomes $C(a,\pi_a,\phi,\pi_\phi)\pm P_T=0$, where $C$ is
+Isham's left-hand side, curvature term included. The physical Hamiltonian
+$\mp P_T=C$ contains no $T$, for $k=1$ as for $k=0$, and the sign is the one
+Giesel and co-authors show forces phantom dust. This extension to the closed
+case is mine; it covers the homogeneous background, not perturbations.}
+
+This answer gives a unique time with a conserved generator, but it fails (T1).
+The time is proper to the universe \emph{together with} a reference medium of
+negative energy, posited to serve as clocks and rods, whose observable trace can
+be made as small as one likes. Brading's question was whether the system of the
+world has a true time; this answer gives one to a different system. The analogy
+with Newton is exact: one does not discover the true time of the solar system by
+adding a body whose motion is uniform by construction.
+
+The answer has an honest empirical form, and Brading's empiricism should take it
+seriously. If such a medium existed, it would simply be part of the material
+universe, and the universe would then have a true time. The route therefore
+turns into an empirical hypothesis: there is a pervasive phantom reference
+medium. Nothing in current cosmology supports it, and because its influence can
+be tuned away, observation constrains it only weakly. A presentism that needs it
+has acquired a specific and unusual empirical commitment.
+
+\subsection{Cosmic time: a mathematical time from an idealized model}\label{sec:cosmic}
+
+Bamonti and Thébault defend a conservative alternative. They read the time in
+the Friedmann equations as proper time along the Hubble flow, in synchronous
+gauge, so that the equations describe the correlation between two partial
+observables, the Hubble parameter and cosmic time
+\citep[secs.~4--5]{BamontiThebault2025}. On their own account, ``there is no
 physical system which even approximately measures proper time along the Hubble
 flow'' \citep[p.~5]{BamontiThebault2025}. Cosmic time is recovered as a
-model-based global average, with the clock hypothesis acting as a coordinative
-definition in Reichenbach's sense \citep[pp.~19--20]{BamontiThebault2025}. They
-do not address whether the universe passes a conservation test in this gauge,
-and nothing here is a criticism of their proposal. On the energy reading the
-answer depends on implementation. Taken as a gauge fixing, as they take it, the
-evolution in cosmic time is generated by the Hamiltonian constraint itself,
-which vanishes, so the test has no non-trivial content. Implemented instead by
-deparametrising with the comoving matter, whose proper time is cosmic time,
-route (c) becomes an instance of route (b) with dust as the clock. The actual
-cosmological matter cannot play that role directly: it has positive energy, and
-ordinary dust would make physical time run backwards \citep[p.~4]{GHTW2007a}.
-The point is narrower. If
-the universe's present is a slice of constant cosmic time, it is fixed by an
-idealised homogeneous model and a coordinative definition. It is not ``the
-region necessary to sustain the dynamical system'' in Brading's sense, since no
-actual system's dynamics singles it out.
+model-based global average, with the clock hypothesis functioning as a
+coordinative definition in Reichenbach's sense
+\citep[pp.~19--20]{BamontiThebault2025}. Nothing here criticizes their proposal,
+which is about the interpretation of cosmology, not about presentism.
 
-\paragraph{(d) No time.} If no time is extracted, the constraints are imposed on
-the states and the universe is described by a solution of the Wheeler--DeWitt
-equation with no evolution parameter \citep[\S5.3]{Isham1991}. The universe may
-then count as a conserved whole, but it has no present. This is option (4) of
-\S\ref{sec:sr}, now physically motivated, and P1\textsuperscript{**} must be
-restricted to subsystems with internal clocks.
+In Brading's taxonomy, cosmic time is a \emph{mathematical} time: a metrical
+parameter constructed, by idealization, for the purposes of theory, as the
+astronomers' equation of time corrected apparent solar time. That it is kept by
+no material clock does not disqualify it. Brading is explicit that ``there may be
+no material clock that ticks precisely in accordance with the metric of time,''
+while ``we have good empirical reasons'' for holding that time flows equably
+\citep[p.~37]{Brading2017}; the time of astronomy ``is mathematical, and is
+neither relative nor apparent'' \citep[p.~25]{Brading2017}.
+So this answer is the defender's strongest. What it still owes is an argument that
+the time is proper to the actual universe and unique: that the idealization and
+global averaging by which cosmic time is recovered from an inhomogeneous universe
+are fixed by its dynamics rather than chosen, which is what Bamonti and Thébault's
+description of the clock hypothesis as a coordinative definition calls into
+question. I take this to be open. Implemented instead by deparametrizing with the comoving matter, whose
+proper time is cosmic time, this answer becomes an instance of
+\S\ref{sec:reference}; the actual comoving matter cannot play the role directly,
+since it has positive energy and ordinary dust would make physical time run
+backwards \citep[p.~4]{GHTW2007a}.
+
+\subsection{Gödel, Newton and contingency}\label{sec:godel}
+
+It is worth separating this objection from Gödel's. Gödel argued that since some
+general-relativistic universes admit no cosmic time, anyone who holds that time
+lapses in ours ``accepts as a consequence that, whether or not an objective lapse
+of time exists \ldots\ depends on the particular way in which matter and its
+motion are arranged in the world,'' a consequence that ``can hardly be considered
+as satisfactory'' \citep[p.~562]{Godel1949}, as quoted by \citet[sec.~6]{Monton2006}.
+Monton replies that a presentist need not hold that the same foliation exists in
+all physically possible worlds, and he cites Belot and Earman's observation that,
+in constant-mean-curvature quantum gravity, ``the time which results \ldots\ is
+certainly not the absolute time of Newton'' \citep[sec.~6]{Monton2006}.
+
+Brading can say more than Monton. Her view is empirical through and through: that
+the present depends on the dynamics is its thesis, and that true time might not
+exist is, for her, a contingent matter to be settled empirically. So Gödel's
+contingency is no objection to her. The objection of this section is different.
+It does not say that cosmic time is contingent on the arrangement of matter. It
+says that, on the best current account of it, cosmic time is not kept by the
+matter at all, and that the times that are kept by matter belong either to many
+competing clocks or to an added reference medium.
+
+\subsection{No time}\label{sec:notime}
+
+If no time is extracted, the constraints are imposed on the states and the
+universe is described by a solution of the Wheeler--DeWitt equation with no
+evolution parameter \citep[sec.~5.3]{Isham1991}. The universe may then count as a
+conserved whole, but it has no stages. P1\textsuperscript{**} is then false or
+undefined for it: there is no proper region that is its present. Whether such a
+formalism leaves room for change at all is a separate and contested question; see
+\citet{Earman2002} and the reply by \citet{Maudlin2002}.
 
 \medskip
 \begin{center}
-\begin{tabular}{@{}llll@{}}
+\small
+\begin{tabular}{@{}llp{6.2cm}@{}}
 \toprule
-Route & Global present & Conservation test & Cost for Brading\\
+Answer & Kind of time (Brading 2017) & What fails\\
 \midrule
-(a) internal time & yes & fails & universe is not a unity\\
-(b) ideal clock & yes & passes & present fixed by added phantom reference matter\\
-(c) cosmic time & yes & trivial or as (b) & present fixed by model and convention\\
-(d) no time & no & passes trivially & P1\textsuperscript{**} restricted\\
+Internal times & apparent; several, disagreeing & (T2); on the energy reading, also the unity test\\
+CMC time & internal, but geometrically fixed & on the energy reading, the unity test; otherwise a candidate\\
+Reference matter & true, of an enlarged system & (T1), unless a phantom medium is actual\\
+Cosmic time & mathematical, from an idealized model & open: needs uniqueness of the idealization\\
+No time & none & the universe has no stages\\
 \bottomrule
 \end{tabular}
 \end{center}
 \medskip
 
-The argument has the following structure. Grant that the universe is a genuine
-unity and a thing (\S\ref{sec:unity}). Then, for a spatially closed universe in
-canonical general relativity, either the universe has no present (d), or its
-present is a global slice fixed by a choice of time. On any reading of the unity
-test, that choice is not made by the dynamics of a sustaining system: there is
-``no natural choice for the time variable'' (a), the clock must be special matter
-added for the purpose (b), or the slice is fixed by an idealised model and a
-coordinative definition (c). On the energy reading of
-Definition~\ref{def:test} there are further costs: route (a) loses the
-universe's unity, and route (b) keeps it only by adding a phantom reference
-medium. The note does not claim the
-four routes are exhaustive of all possible physics, only that they are the
-routes in the cited literature and that the text gives the defender none of
-them for free.
+The answers are those in the cited literature, not an exhaustive survey of
+possible physics. Two of them are not refuted here: constant-mean-curvature time on
+the momentum reading, and cosmic time if its idealization can be shown to be fixed
+by the dynamics. The others do not supply a time that is unique and proper to the
+material universe.
 
 \section{Monton, Wüthrich and the local present}\label{sec:mw}
 
-The debate over presentism in quantum gravity has concerned a global present.
+The debate over presentism and quantum gravity has concerned a global present.
 Monton grants that presentism is incompatible with special and general
-relativity, and argues that it is compatible with quantum theories of gravity
-that use a fixed foliation, such as constant-mean-curvature canonical gravity,
-on a theoretical hypothesis that one leaf represents the existing events
+relativity and argues that it is compatible with quantum theories of gravity that
+use a fixed foliation, such as constant-mean-curvature canonical gravity, on a
+theoretical hypothesis that one leaf represents the existing events
 \citep{Monton2006}. Wüthrich replies that fixed-foliation theories break a
 Lorentz symmetry that is ``fantastically well confirmed,'' and that the
 constant-mean-curvature approach is limited in scope and does not by itself
-supply a present that underwrites becoming \citep[pp.~269--275]{Wuthrich2010}.
+supply a present that underwrites becoming \citep[pp.~269--275]{Wuthrich2010}. He
+also notes the time dependence of the reduced Hamiltonian for this choice of time
+\citep[p.~274]{Wuthrich2010}; constant-mean-curvature time is an internal time in
+the sense of \S\ref{sec:internal}.
 
-Brading's view is designed to avoid that exchange. It does not posit a
-foliation; presents are local, dynamically individuated and not common to all
-systems. Wüthrich's classification of presentist responses to special relativity
-covers frame-relative existence, the point present and the past-light-cone
-present \citep[pp.~263--264]{Wuthrich2010}; it does not cover a present fixed by
-a system's dynamics. So the Lorentz-symmetry objection does not apply to
-Brading's subsystems.
+Brading's view is designed to stay out of that exchange. It posits no foliation,
+and Wüthrich's classification of presentist responses to special
+relativity---frame-relative existence, the point present and the past-light-cone
+present \citep[pp.~263--264]{Wuthrich2010}---does not include a present fixed by a
+system's dynamics. For subsystems, the Lorentz-symmetry objection does not apply.
+Does it apply to the universe? Not automatically. Every answer of
+\S\ref{sec:routes} that gives the universe stages gives it a global time function,
+but a dynamical reference frame is not a violation of Lorentz symmetry. In the
+Brown--Kuchař construction the dust selects a frame within a generally covariant
+theory \citep{BrownKuchar1995}, and the laws violate no symmetry that GR respects.
+What carries over from the Monton--Wüthrich exchange is narrower: if the universe's
+present is tied to the stages of such a frame, the present has a preferred global
+foliation at the level of ontology, though not of law. The empirical objection
+then lapses, and the philosophical question Wüthrich presses about fixed foliations
+remains: why should that frame's stages, rather than the representation-dependent
+stages of any other, mark what exists?
 
-It applies, in effect, to the universe. Routes (a) to (c) of \S\ref{sec:gr} all
-give the universe a global slice, and route (b) is precisely a fixed-foliation
-theory of the kind Monton relies on. Brading's local presentism therefore
-inherits the Monton--Wüthrich problem at exactly one scale, the scale at which
-her principle of unity is said to apply ``all the way up.''
+\section{The exits}\label{sec:exits}
 
-\section{The defeat condition, relocated}\label{sec:defeat}
+\paragraph{The universe's present is its whole history.} A defender may accept the
+constitutive reading. Then clause (a) is false of the universe, and in Brading's
+words ``we are back to the block universe'' \citep[p.~17]{Brading2015}. This is
+not her defeat condition, which describes the case in which ``the only dynamical
+system that there is, is this entirety, and there are no genuine subsystems''
+\citep[p.~1109]{Brading2013}. It is compatible with genuine subsystems. The block
+returns at the top: every event belongs to the universe's history, so every event
+lies within the present of an existing thing, and P1\textsuperscript{**} excludes
+no event from what exists.
 
-Brading's 2013 defeat condition describes one scenario:
+\paragraph{Restrict P1\textsuperscript{**} to proper subsystems.} A defender may
+instead deny (U), or deny that the universe is the kind of thing that has a
+present, and confine P1\textsuperscript{**} to proper subsystems. This is
+coherent, and I think it is the defender's best option. Its cost is what it leaves
+standing. The universe is either not a unity or a unity that is not confined to a
+present. If it is not a unity, Brading needs another account of what makes the
+world one, since it is the dynamical unity of ``the whole (consisting of
+interacting parts)'' that keeps the local present from collapsing into solipsism
+\citep[p.~1110]{Brading2013}. If it is a unity not confined to a present, then
+among the things that exist is a four-dimensional whole whose extent is the
+entire history. Either way, ``all we need is (a)'' no longer suffices to avoid
+the block universe. Clause (a) for subsystems says that no proper subsystem is
+present throughout the block. That is compatible with an eternalist ontology of
+events on which every subsystem is temporally bounded, and it is compatible with
+the union of the subsystems' presents being the whole history.\footnote{For any
+two proper regions whose union is $\W$, a system with each as its present satisfies
+(a) and, with histories chosen accordingly, (b); per-system properness says
+nothing about the union.} What survives is a dynamical account of the temporal
+extent of subsystems: valuable, but, in Savitt's phrase, ``a characterization of a
+relativistic present, not relativistic presentism.''
 
-\begin{quote}
-It might turn out that, for whatever system we try to consider, the size of the
-spatiotemporal region necessary to sustain it is the entire history of the
-universe, encompassing all that ever has been and ever will be. In other words,
-the only dynamical system that there is, is this entirety, and there are no
-genuine subsystems of the universe. If that turns out to be the case, then this
-version of presentism is defeated and the block universe triumphs
-\citep[p.~1109]{Brading2013}.
-\end{quote}
-
-The universe case is independent of it. Even if there are genuine subsystems
-with proper presents, the universe remains a candidate unity with a present to
-fix. Brading's empirical question, whether there are genuine subsystems, does not
-decide what that present is. Section~\ref{sec:gr} shows that the universe case
-has a different character. Its empirical exposure is limited: Thiemann's phantom
-scalar alters late-time cosmology, but a phantom-dust clock can be tuned to
-observational insignificance, and cosmic time keeps standard cosmology. What
-the universe case exposes is rather a gap in the law-constitutive account
-itself. On routes (b) and (c) the universe's present is fixed by an added
-reference medium or by an idealised model; on routes (a) and (d) the universe
-loses its unity or its present. Brading calls her view an empirical
-hypothesis. Applied to the totality, its burden is less a prediction than an
-account of what fixes the present of the whole.
-
-\section{The retreat to subsystems and the coverage model}\label{sec:coverage}
-
-The natural reply is to restrict P1\textsuperscript{**} to proper subsystems
-(option 3b, or route (d)). The restricted view no longer says that every
-existing thing exists only presently. A defender who instead keeps the global
-claim and tries to secure it through clauses (a) and (b) for the subsystems
-faces a further, independent problem: the clauses do not imply that any event
-lies outside every present.
-
-\begin{proposition}[(a) and (b) do not imply a proper union]\label{prop:two}
-There is a model in which (a) and (b) hold for every system and
-$\bigcup_i\U_i=\W$.
-\end{proposition}
-\begin{proof}
-Let $\W=\{a,b,c,d\}$. Let system 1 have history $\Hh_1=\{a,b,c\}$ and present
-$\U_1=\{a,b\}$, and system 2 have history $\Hh_2=\{b,c,d\}$ and present
-$\U_2=\{c,d\}$. Then $\U_i\subsetneq\W$ and $\U_i\subsetneq\Hh_i$ for $i=1,2$,
-but $\U_1\cup\U_2=\W$.
-\end{proof}
-
-The model is set-theoretic, not dynamical; it regiments ``less than'' as proper
-inclusion; and it uses a common event domain $\W$. Brading's 2013 note 7 denies
-determinate ontological spatial or temporal relations between systems: ``All the
-ontology is carried by the dynamics, and we frame the dynamics spatiotemporally,
-but ontologically, the dynamics requires no such spatiotemporal underpinning''
-\citep[p.~1109, n.~7]{Brading2013}. The model therefore treats $\W$ as the common
-epistemic representation in which the comparison is stated. With those
-assumptions, per-system properness is coverage-neutral, a formal counterpart of
-Savitt's observation that every dynamical system has a sustaining region
-\citep[\S3.3]{Savitt2021}.
+\paragraph{Find the true time.} The most interesting exit is Brading's own
+empiricism. Perhaps the true time of the system of the world is yet to be found:
+in a fixed-foliation quantum gravity, in an actual reference medium, or in
+something not yet proposed. Brading suggests Brown's dynamical approach to the
+chronometric significance of the metric as a natural starting point for a
+law-constitutive presentism beyond special relativity \citep[p.~18]{Brading2015};
+see \citet{Brown2005}. That approach explains the behaviour of local rods and
+clocks from the dynamics of matter. It does not, so far as I can see, select
+global stages for a closed universe, but that is a question worth pursuing on
+Brading's behalf. If this exit is taken, the universe case does not refute the
+view; it relocates its decisive test. The empirical hypothesis then depends not
+only on whether there are genuine subsystems, as Brading says, but on whether the
+system of the world has a true time.
 
 \section{Objections and limits}\label{sec:limits}
 
 \paragraph{Brading's view is special-relativistic.} Her texts work in Minkowski
-spacetime, and P1\textsuperscript{**} is stated there. Section~\ref{sec:sr} is
-internal to that setting. Section~\ref{sec:gr} is an extension, and its bridge
-premise, Definition~\ref{def:test}, is ours. A defender may reject it, for
-instance by holding that the universe's unity does not require a conserved
-generator of its evolution. That is a substantive revision of the criterion
-Brading takes from Newton, and the note's claim is that some such revision, or
-one of the costs in the table, is required.
+spacetime, and the argument agrees that there the universe case is manageable
+(\S\ref{sec:shape}). The general-relativistic step is an extension. Its bridge
+premises are the stage reading of ``sufficient dynamical ground'' for the
+universe, and the conditions (T1)--(T3) drawn from her 2017 account of true time.
+A defender may reject either. Rejecting the first returns the constitutive
+reading and the block at the top; rejecting the second requires a different
+account of when a time belongs to a system.
+
+\paragraph{The present is a region, not a slice.} Agreed. Nothing above requires
+the universe's present to be thin or to be a leaf of a foliation. It requires
+only that the dynamics determine what a stage of the whole is. A slab is a region;
+the question is what bounds it.
 
 \paragraph{Momentum, not energy.} If the unity test is read as momentum
-conservation, as Brading's Newtonian source suggests, the universe passes it
-trivially, and the failure recorded for route (a) in the table disappears.
-The selection cost remains: on no route examined does the dynamics of a
-sustaining system fix the universe's present. The argument is weaker on this
-reading but does not lapse.
+conservation, the subsidiary point about time-dependent Hamiltonians lapses. The
+main point, that no time is unique and proper to the material universe, does not
+depend on it.
 
-\paragraph{The routes may not be exhaustive.} The note claims only that the
-routes in the cited literature each carry a cost, not that no other route exists.
+\paragraph{The answers may not be exhaustive.} The argument claims only that the
+answers in the cited literature each fail to supply a true time of the material
+universe. A new answer would meet the argument's own standard, and would count, on
+Brading's empiricism, as evidence for her view.
 
 \paragraph{Scope of the physics.} Isham's examples are closed minisuperspace
 models. The dust and phantom-scalar constructions hold for closed spatial
-topology, but their cosmological comparisons use spatially flat backgrounds,
-and our closed-model extension (\S\ref{sec:gr}) covers only the homogeneous
-background, not perturbations; and the dust analysis shows that
-Thiemann's claim of observable corrections for every clock does not hold in an
-empirically significant form. Bamonti and Thébault do not discuss
-conservation in synchronous gauge. Each of these is a point at which the
-argument could be weakened by further physics.
+topology, but their cosmological comparisons use flat backgrounds, and the
+closed-model extension above covers only the homogeneous background. Bamonti and
+Thébault do not discuss conservation in synchronous gauge. Each is a point at
+which further physics could weaken the argument.
 
-\paragraph{Universe and representation.} Brading's note 7 suggests that the
-spatiotemporal representation carries no ontology of its own. If so, the global
-slice of routes (a) to (c) is a representational device, and the universe's
-present is not a region at all. Then route (d) or option (4) holds, and the
-restriction of P1\textsuperscript{**} follows.
+\paragraph{Priority.} No published statement of this argument was found in the
+sources read: Brading 2013, 2015 and 2017; Savitt 2021; Monton 2006 (2005
+preprint); Wüthrich 2010; Isham 1991 (pp.~192--202); Thiemann 2006; and Bamonti
+and Thébault 2025, all at full-text depth. Balaguer's \emph{How to Be a Presentist}
+\citep{Balaguer2026} and Mason's empirical presentism \citep{Mason2026} were read
+only at abstract depth, as were Earman 2002 and Maudlin 2002; Giesel, Hofmann,
+Thiemann and Winkler \citep{GHTW2007a,GHTW2007b} at the passages cited; Gödel 1949
+and Belot and Earman 2001 only as quoted by Monton. A prior statement would defeat
+the priority claim, not the argument.
 
-\paragraph{Priority.} No published statement of this argument was found in
-the sources read: Brading 2013 and 2015, Savitt 2021, Monton 2006 (2005
-preprint), Wüthrich 2010, Isham 1991 (pp.~192--202), Thiemann 2006 and Bamonti
-and Thébault 2025, all at full-text depth; Balaguer's \emph{How to Be a
-Presentist} \citep{Balaguer2026} and Mason's empirical presentism
-\citep{Mason2026} only at abstract depth, as is Brown and Kuchař
-\citep{BrownKuchar1995}; Giesel, Hofmann, Thiemann and Winkler
-\citep{GHTW2007a,GHTW2007b} at the introductions and passages cited. Balaguer's chapter on special
-relativity is the main unread risk. A prior statement would defeat the priority
-claim, not the argument.
-
-\paragraph{What the note does not show.} It does not show that presentism is
-false, that eternalism is true, or that Brading's subsystem presents are
-incoherent. It does not show that the universe's present is $\W$, and it takes
-no position on the cosmology of routes (b) and (c).
-
-\section{Conclusion}
+\section{Conclusion}\label{sec:conclusion}
 
 Brading's principle of unity is offered for the whole of what exists, up to the
-material universe. Taken at that scale, P1\textsuperscript{**} needs an account
-of the universe's own present. In special relativity the options are the whole
-history, a global slice of the kind she elsewhere rejects, an unexplained local region, exclusion from
-the domain, or no present at all. In general relativity the global-slice option
-becomes the problem of time. The universe can have a present and fail the
-conservation test (internal time), have a present and pass it by adding a
-phantom reference medium whose observable trace can be made arbitrarily small
-(ideal clock), have a present fixed by
-an idealised model and a coordinative definition (cosmic time), or have no
-present and leave P1\textsuperscript{**} restricted to subsystems. Brading's
-local presentism escapes the Lorentz-symmetry objection to foliation presentism
-for every system except the universe. There, on every route examined, the
-present is fixed by something other than the region needed to sustain the
-universe's own dynamics, or there is no present at all. Her hypothesis remains
-empirical about subsystems; about the whole it owes an account that the
-law-constitutive principle does not yet give.
+material universe. Taken at that scale, P1\textsuperscript{**} needs an account of
+the universe's own present, and the universe's present needs an account of what a
+stage of the universe is. In special relativity the universe's total
+energy--momentum supplies one, at the modest price of a global present for the
+whole alone. In a spatially closed general-relativistic universe the stages of the
+whole must be fixed by a time that is, in Brading's own terms, unique and proper to
+the system of the world. The answers in the literature give apparent times that
+disagree, a true time for the universe plus a posited phantom medium, a
+mathematical time whose claim to be the universe's own is open, a
+constant-mean-curvature time that survives if the unity test is read as momentum
+conservation, or no time. Unless one of the open candidates succeeds, or the
+defender rejects premise (S) and says which proper region is the universe's
+present, the only reading that selects a region gives the whole history, and by
+Brading's criterion that is the block. Restricting P1\textsuperscript{**} to subsystems
+avoids the block for the parts but not for the whole. The law-constitutive account
+therefore owes what it does not yet give: a true time for the universe, or an
+account of the world's unity that does without one.
 
 \bibliographystyle{plainnat}
 \bibliography{references}

@@ -17,7 +17,17 @@ explicit assumptions and observables. Choose a narrow contribution only after
 an independent novelty audit. A literature collection is infrastructure, not
 evidence that a new result has been discovered.
 
-## Current phase: novelty sprint
+## Current research state
+
+The [current integrated synthesis](research/CURRENT_SYNTHESIS.md) and
+[claim-status ledger](research/CLAIM_STATUS.md) connect the causal-set, observer,
+Stein--GR, horizons, future-truth and lawful-completion programmes. They include
+the 28 October screening repair and distinguish reviewed results from open
+coupled-matter, regularity and philosophical premises. Older notes retain their
+dates; the current synthesis records what supersedes them. No temporal ontology
+is selected by this integration.
+
+## Earlier selection and novelty sprint
 
 The first selection gate is complete: a primary target and a fallback are
 recorded in `research/redteam/selection-gate/`, and the baseline, extension,

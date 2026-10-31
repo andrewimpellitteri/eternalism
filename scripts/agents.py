@@ -52,7 +52,8 @@ def tasks():
         if not re.fullmatch(r"[a-z][a-z0-9-]*", row["id"]):
             raise ValueError("invalid task ID")
         for name in row["owns"]:
-            if Path(name).is_absolute() or ".." in Path(name).parts or not name.strip("/"):
+            if (Path(name).is_absolute() or ".." in Path(name).parts or not name.strip("/")
+                    or "." in name.split("/") or "//" in name):
                 raise ValueError(f"unsafe owned path: {name}")
         for dep in row["blocked_by"]:
             if dep not in book:
@@ -75,6 +76,14 @@ def atomic_json(destination, value):
     with tempfile.NamedTemporaryFile(mode="w", dir=destination.parent, delete=False) as handle:
         json.dump(value, handle, indent=2)
         handle.write("\n")
+        temp = handle.name
+    os.replace(temp, destination)
+
+
+def atomic_text(destination, text):
+    """Replace destination in one step so concurrent workers never tear it."""
+    with tempfile.NamedTemporaryFile(mode="w", dir=destination.parent, delete=False) as handle:
+        handle.write(text)
         temp = handle.name
     os.replace(temp, destination)
 
@@ -115,8 +124,8 @@ def assert_claimable(tid, book, state):
     if state_of(tid, book, state) != "open":
         raise ValueError(f"{tid} is {state_of(tid, book, state)}")
     for other, record in state.items():
-        if record.get("status") not in {"claimed", "review"}:
-            continue
+        if other not in book or record.get("status") not in {"claimed", "review"}:
+            continue  # a claim for a task no longer on the board cannot be overlap-checked
         if any(overlaps(a, b) for a in book[tid]["owns"] for b in book[other]["owns"]):
             raise ValueError(f"file ownership overlaps {other}, held by {record['agent']}")
 
@@ -186,7 +195,7 @@ def render_board():
                      f"{state.get(tid, {}).get('agent', '—')} |")
     lines += ["", "Agent delivery enters review. Only integrated, reviewed work becomes done.",
               "", "See scripts/agents/README.md for launch, recovery, and review commands.", ""]
-    (main_root() / "WORKBOARD.md").write_text("\n".join(lines))
+    atomic_text(main_root() / "WORKBOARD.md", "\n".join(lines))
 
 
 def launch_baseline(book, task_ids, from_committed_head=False):
@@ -327,15 +336,9 @@ def worker(args):
             time.sleep(30)
     slot.close()
     report = wt / "AGENT_REPORT.md"
-    delivered = report.is_file() and committed_and_clean(wt, "AGENT_REPORT.md")
-    if code == 0 and report.is_file():
-        outcome, reason = "review", "exit 0 with report"
-    elif delivered:
-        outcome, reason = "review", f"exit {code} after a committed report and clean tree"
-    else:
-        outcome = "failed"
-        reason = (f"provider usage quota exhausted: {quota}" if quota else
-                  "provider rate limit, retries exhausted" if limited else f"exit {code}")
+    record = snapshot().get(tid, {})
+    outcome, reason = worker_outcome(wt, record.get("base"), tasks()[tid]["owns"],
+                                     code, quota, limited)
     atomic_json(run / "result.json", {"exit_code": code, "outcome": outcome, "reason": reason,
                                       "attempts": attempt, "finished_at": timestamp()})
     if outcome == "review":
@@ -399,10 +402,44 @@ def scan_events(path, start, session):
     return session, limited, quota
 
 
-def committed_and_clean(wt, name):
-    tracked = git("ls-files", "--error-unmatch", name, cwd=wt, check=False).returncode == 0
-    dirty = git("status", "--porcelain", cwd=wt, check=False).stdout.strip()
-    return tracked and not dirty
+def submission_problem(wt, base, owns):
+    """Fail closed unless this task, not its baseline, supplied a clean handback."""
+    if not base or not re.fullmatch(r"[0-9a-f]{40,64}", base):
+        return "missing or invalid launch base"
+    ancestor = git("merge-base", "--is-ancestor", base, "HEAD", cwd=wt, check=False)
+    if ancestor.returncode:
+        return "launch base is not an ancestor of the submission"
+    status = git("status", "--porcelain", "--untracked-files=all", cwd=wt, check=False)
+    if status.returncode or status.stdout.strip():
+        return "worktree is dirty or its status is unavailable"
+    diff = git("diff", "--name-only", "-z", base, "HEAD", "--", cwd=wt, check=False)
+    if diff.returncode:
+        return "submission diff is unavailable"
+    changed = [name for name in diff.stdout.split("\0") if name]
+    if "AGENT_REPORT.md" not in changed or not (wt / "AGENT_REPORT.md").is_file():
+        return "no fresh committed AGENT_REPORT.md relative to launch base"
+    outputs = [name for name in changed if name != "AGENT_REPORT.md"]
+    if not outputs:
+        return "no task-owned output changed relative to launch base"
+    if any(not any(name == own.rstrip("/") or
+                   (own.endswith("/") and name.startswith(own)) for own in owns)
+           for name in outputs):
+        return "submission includes out-of-scope files"
+    if not any((wt / name).is_file() for name in outputs):
+        return "submission has no surviving task-owned output file"
+    return None
+
+
+def worker_outcome(wt, base, owns, code, quota=None, limited=False):
+    problem = submission_problem(wt, base, owns)
+    if problem is None:
+        reason = f"exit {code} after fresh committed task output and report; clean tree"
+        if quota:
+            reason += f"; provider quota reported after handback: {quota}"
+        return "review", reason
+    failure = (f"provider usage quota exhausted: {quota}" if quota else
+               "provider rate limit, retries exhausted" if limited else f"exit {code}")
+    return "failed", f"{failure}; incomplete submission: {problem}"
 
 
 def status():

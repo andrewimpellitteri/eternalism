@@ -1,0 +1,16 @@
+complex percolation p=(1+i)/2, labelled counts: [1, 2, 7, 40, 357, 4824]
+  n=2: classes=2 selected=1 proper_subset=True |sum|^2=1/2
+  n=3: classes=5 selected=2 proper_subset=True |sum|^2=1/2
+  n=4: classes=16 selected=5 proper_subset=True |sum|^2=205/64
+  n=5: classes=63 selected=16 proper_subset=True |sum|^2=461/32
+  n=6: classes=318 selected=85 proper_subset=True |sum|^2=4938221/32768
+binary register (permutation orbits = word count):
+  n=2: selected k=[1] reps=2 |sum|^2=1
+  n=4: selected k=[2] reps=6 |sum|^2=9/4
+  n=6: selected k=[3] reps=20 |sum|^2=25/4
+  n=8: selected k=[0, 4, 8] reps=72 |sum|^2=81/4
+  n=12: selected k=[2, 6, 10] reps=1056 |sum|^2=1089/4
+  n=20: selected k=[2, 6, 10, 14, 18] reps=262656 |sum|^2=263169/4
+PASS: finite event membership is a proper union of classes in both models
+NOTE: class membership does not imply coherent-filter access or completed-history covariance.
+      Independent counterexamples: research/observer-access-audit/check.py

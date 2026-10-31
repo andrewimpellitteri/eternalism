@@ -94,6 +94,34 @@ class WorkboardTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsafe"):
             agents.tasks()
 
+    def test_owns_paths_must_be_plain_relative(self):
+        # Dot and empty components normalize to ordinary paths; reject the
+        # spellings outright so ownership comparisons always see one form.
+        for bad in (["./escape"], ["a//b"], ["a/./b"], ["//share/x"], ["a/b//"]):
+            self.book[0]["owns"] = bad
+            self.write_book()
+            with self.assertRaisesRegex(ValueError, "unsafe"):
+                agents.tasks()
+
+    def test_stale_claim_for_retired_task_neither_crashes_nor_blocks(self):
+        agents.transition("claim", "first", "one")
+        state_path = self.root / ".agent-runtime/coordination/state.json"
+        state = json.loads(state_path.read_text())
+        state["retired"] = {"status": "claimed", "agent": "gone"}  # task left the board
+        state_path.write_text(json.dumps(state))
+        self.assertEqual(len(agents.tasks()), len(self.book))  # no KeyError from the stale record
+        with self.assertRaisesRegex(ValueError, "overlaps"):
+            agents.transition("claim", "collision", "two")  # live claims still guard
+        agents.transition("release", "first", "one", "Stopped and outputs preserved.")
+        agents.transition("claim", "collision", "two")  # stale record is skipped, not fatal
+        self.assertEqual(agents.snapshot()["collision"]["status"], "claimed")
+
+    def test_render_board_rewrites_generated_file(self):
+        agents.render_board()
+        text = (self.root / "WORKBOARD.md").read_text()
+        self.assertIn("`first`", text)
+        self.assertIn("`second`", text)
+
     def test_dry_run_does_not_claim_or_create_runtime(self):
         agents.launch(argparse.Namespace(tasks=["first"], dry_run=True, model=agents.DEFAULT_MODEL))
         self.assertFalse((self.root / ".agent-runtime").exists())
@@ -191,6 +219,95 @@ class WorkboardTests(unittest.TestCase):
         run_git("merge", "--ff-only", "worker")
         agents.transition("accept", "first", "glm-first", "Reviewed and integrated fixture")
         self.assertEqual(agents.snapshot()["first"]["status"], "done")
+
+
+class FreshSubmissionTests(unittest.TestCase):
+    """Use actual Git history: an inherited report must never imply delivery."""
+
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = Path(self.temp.name)
+        self.git("init", "-b", "main")
+        (self.root / "AGENT_REPORT.md").write_text("Report inherited from another task\n")
+        (self.root / "owned").mkdir()
+        (self.root / "owned/old.md").write_text("Inherited owned output\n")
+        self.commit("Baseline", "AGENT_REPORT.md", "owned/old.md")
+        self.base = self.git("rev-parse", "HEAD").stdout.strip()
+
+    def tearDown(self):
+        self.temp.cleanup()
+
+    def git(self, *args):
+        return subprocess.run(["git", *args], cwd=self.root, check=True,
+                              capture_output=True, text=True)
+
+    def commit(self, message, *files):
+        if files:
+            self.git("add", *files)
+        self.git("-c", "user.name=Test", "-c", "user.email=test@example.invalid",
+                 "commit", "-m", message)
+
+    def deliver(self):
+        (self.root / "AGENT_REPORT.md").write_text("This task's fresh report\n")
+        (self.root / "owned/result.md").write_text("This task's result\n")
+        self.commit("Deliver", "AGENT_REPORT.md", "owned/result.md")
+
+    def outcome(self, code=0, quota=None):
+        return agents.worker_outcome(self.root, self.base, ["owned/"], code, quota)
+
+    def test_inherited_report_rejected_after_zero_exit_and_quota_failure(self):
+        for code, quota in ((0,None),(1,"Usage limit reached for 5 hour")):
+            outcome, reason = self.outcome(code,quota)
+            self.assertEqual(outcome, "failed")
+            self.assertIn("no fresh committed", reason)
+            if quota:
+                self.assertIn(quota,reason)
+
+    def test_fresh_handback_survives_zero_nonzero_and_post_commit_quota(self):
+        self.deliver()
+        for code, quota in ((0,None),(1,None),(1,"quota after commit")):
+            outcome,reason = self.outcome(code,quota)
+            self.assertEqual(outcome,"review")
+            self.assertIn(f"exit {code}",reason)
+            if quota:
+                self.assertIn(quota,reason)
+
+    def test_fresh_report_without_owned_output_does_not_deliver(self):
+        (self.root / "AGENT_REPORT.md").write_text("New report only\n")
+        self.commit("Report only", "AGENT_REPORT.md")
+        self.assertIn("no task-owned output",self.outcome()[1])
+
+    def test_owned_output_with_inherited_report_does_not_deliver(self):
+        (self.root / "owned/result.md").write_text("New result\n")
+        self.commit("Output only", "owned/result.md")
+        self.assertIn("no fresh committed",self.outcome()[1])
+
+    def test_dirty_fresh_report_and_untracked_output_do_not_deliver(self):
+        self.deliver()
+        (self.root / "owned/incomplete.md").write_text("Interrupted work\n")
+        self.assertEqual(self.outcome()[0],"failed")
+        self.assertIn("dirty",self.outcome()[1])
+
+    def test_out_of_scope_committed_file_does_not_deliver(self):
+        self.deliver()
+        (self.root / "rogue.md").write_text("Unowned change\n")
+        self.commit("Unowned change", "rogue.md")
+        self.assertIn("out-of-scope",self.outcome()[1])
+
+    def test_missing_or_unavailable_launch_base_fails_closed(self):
+        self.deliver()
+        for base in (None,"main","0"*40):
+            outcome,_ = agents.worker_outcome(self.root,base,["owned/"],0)
+            self.assertEqual(outcome,"failed")
+
+    def test_deleted_report_or_deletion_only_output_does_not_deliver(self):
+        (self.root / "AGENT_REPORT.md").write_text("New report\n")
+        self.git("rm","owned/old.md")
+        self.commit("Deletion only", "AGENT_REPORT.md")
+        self.assertIn("no surviving",self.outcome()[1])
+        self.git("rm","AGENT_REPORT.md")
+        self.commit("Remove report")
+        self.assertIn("no fresh committed",self.outcome()[1])
 
 
 class ProjectContractTests(unittest.TestCase):

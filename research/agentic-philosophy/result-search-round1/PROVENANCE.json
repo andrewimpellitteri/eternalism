@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-31",
+  "question_card_base": "cb64c0a85d2016aed39719751419efdf63475a46",
+  "branching_candidate_origin": "Rational dense-comb stress test supplied in coordinator QUESTION.md before GLM launch.",
+  "worker_submissions": {
+    "occurrence": "f98641ce90108e83198937041e2b59b8e2136c94",
+    "modal": "7e58c31e449a19f7b6d66b4fb00247e8da466b5f"
+  },
+  "coordinator_additions": [
+    "Atomless regular-open occurrence fragment with explicit P4-denial and event-P5 closure.",
+    "General arbitrary-D comb classification, direct corrected offshoot CC, source and scope narrowing."
+  ],
+  "native_reviews": {
+    "occurrence": "01a19250-b73c-7bf1-8015-849cb5ed4aa3 (GPT-6 Luna)",
+    "modal": "01a19254-1fcf-72b3-a988-0e6b94b2db63 (GPT-6 Luna)"
+  },
+  "correction": "GLM and first modal native review shared offshoot existential-quantifier error. Coordinator supplied explicit h0/h1 witness and requested correction. No agreement-based truth criterion used.",
+  "limits": "Internally checked arguments; no proof assistant, numerical density test, external correspondence, novelty verdict or whole temporal ontology."
+}

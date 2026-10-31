@@ -1,0 +1,182 @@
+{
+  "status": "pass",
+  "normalization_and_image_controls": [
+    {
+      "duration": 1.4,
+      "support": [
+        0.35,
+        0.95
+      ],
+      "constant_potential": 0.0,
+      "kernel_pairing": 0.0,
+      "spectral_pairing": 4.347803403411851e-11,
+      "absolute_error": 4.347803403411851e-11,
+      "spectral_and_quadrature_refinement": 1.1772260891787106e-08
+    },
+    {
+      "duration": 1.4,
+      "support": [
+        0.35,
+        0.95
+      ],
+      "constant_potential": 0.1,
+      "kernel_pairing": -0.0026273574682032087,
+      "spectral_pairing": -0.0026273574247276314,
+      "absolute_error": 4.3475577304885604e-11,
+      "spectral_and_quadrature_refinement": 1.1770791170755135e-08
+    },
+    {
+      "duration": 1.4,
+      "support": [
+        0.35,
+        0.95
+      ],
+      "constant_potential": 1.0,
+      "kernel_pairing": -0.02213510040317651,
+      "spectral_pairing": -0.022135100359723884,
+      "absolute_error": 4.345262691329843e-11,
+      "spectral_and_quadrature_refinement": 1.1757553788210862e-08
+    },
+    {
+      "duration": 1.4,
+      "support": [
+        0.35,
+        0.95
+      ],
+      "constant_potential": 3.0,
+      "kernel_pairing": -0.04348553725259177,
+      "spectral_pairing": -0.043485537209190024,
+      "absolute_error": 4.340174747374803e-11,
+      "spectral_and_quadrature_refinement": 1.1728073776029468e-08
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        0.5,
+        1.2
+      ],
+      "constant_potential": 0.0,
+      "kernel_pairing": 0.0,
+      "spectral_pairing": 4.371060753122969e-12,
+      "absolute_error": 4.371060753122969e-12,
+      "spectral_and_quadrature_refinement": 1.2722595515481744e-09
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        0.5,
+        1.2
+      ],
+      "constant_potential": 0.1,
+      "kernel_pairing": -0.0041190433749408555,
+      "spectral_pairing": -0.0041190433705699785,
+      "absolute_error": 4.370876924286726e-12,
+      "spectral_and_quadrature_refinement": 1.2719452262277553e-09
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        0.5,
+        1.2
+      ],
+      "constant_potential": 1.0,
+      "kernel_pairing": 0.0006721760982659348,
+      "spectral_pairing": 0.0006721761026339642,
+      "absolute_error": 4.36802937570091e-12,
+      "spectral_and_quadrature_refinement": 1.2691075926708068e-09
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        0.5,
+        1.2
+      ],
+      "constant_potential": 3.0,
+      "kernel_pairing": 0.0035715782052479395,
+      "spectral_pairing": 0.003571578209609878,
+      "absolute_error": 4.361938327895887e-12,
+      "spectral_and_quadrature_refinement": 1.262745829774814e-09
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        2.45,
+        3.0
+      ],
+      "constant_potential": 0.0,
+      "kernel_pairing": 0.0,
+      "spectral_pairing": -1.160852348186814e-10,
+      "absolute_error": 1.160852348186814e-10,
+      "spectral_and_quadrature_refinement": 5.5631515725527076e-08
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        2.45,
+        3.0
+      ],
+      "constant_potential": 0.1,
+      "kernel_pairing": 0.0025348107935869906,
+      "spectral_pairing": 0.002534810677454261,
+      "absolute_error": 1.161327297348469e-10,
+      "spectral_and_quadrature_refinement": 5.564187339004989e-08
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        2.45,
+        3.0
+      ],
+      "constant_potential": 1.0,
+      "kernel_pairing": 0.04198778853368426,
+      "spectral_pairing": 0.04198778841712296,
+      "absolute_error": 1.1656130227688521e-10,
+      "spectral_and_quadrature_refinement": 5.57347163768207e-08
+    },
+    {
+      "duration": 4.0,
+      "support": [
+        2.45,
+        3.0
+      ],
+      "constant_potential": 3.0,
+      "kernel_pairing": 0.08459552068768812,
+      "spectral_pairing": 0.0845955205701758,
+      "absolute_error": 1.1751231931977912e-10,
+      "spectral_and_quadrature_refinement": 5.593860630259684e-08
+    }
+  ],
+  "constant_potential_corner_controls": [
+    {
+      "constant_potential": 0.1,
+      "predicted_corner": 0.009921242563088389,
+      "errors_for_alpha_004_002_001_0005": [
+        2.855535756513851e-05,
+        1.4416717040622792e-05,
+        7.243195104072314e-06,
+        3.6303164508474234e-06
+      ]
+    },
+    {
+      "constant_potential": 1.0,
+      "predicted_corner": 0.27592701239530976,
+      "errors_for_alpha_004_002_001_0005": [
+        0.0065580866831497775,
+        0.003292569351855401,
+        0.0016496797004802444,
+        0.0008256903051687692
+      ]
+    },
+    {
+      "constant_potential": 3.0,
+      "predicted_corner": 2.0058782822821017,
+      "errors_for_alpha_004_002_001_0005": [
+        0.13035661598520987,
+        0.0659677487701229,
+        0.0331829821696672,
+        0.01664148768739615
+      ]
+    }
+  ],
+  "scope": "Exact constant-potential series against smooth-data spectral pairings. No claim of full dust support or exact past vanishing follows from truncation; classification depends on the analytic proof."
+}

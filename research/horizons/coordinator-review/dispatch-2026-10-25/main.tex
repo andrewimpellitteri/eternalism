@@ -1,0 +1,472 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Is}{I^-_{\mathrm s}}
+\newcommand{\Isp}{I^+_{\mathrm s}}
+\newcommand{\Det}{\mathrm{Det}}
+
+\title{Unreal Is Not Open:\\ prediction, horizons and the future in
+relativistic becoming}
+\author{Andrew Impellitteri}
+\date{25 October 2026 (draft 3)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Local theories of relativistic becoming make what is real from an event its
+causal past. Does the unreality of the future from an event make the future
+open from it? We separate the two questions. Call an event guaranteed from
+$b$ if every past-inextendible causal curve from it meets $b$'s chronological
+past; then every deterministic law with the domain-of-dependence property
+fixes it from what is real from $b$. The notion is essentially Geroch's
+domain of prediction. We characterize it by a condition on the slices of any
+Cauchy time function, show that it is conformally invariant, and compute it
+for the standard cosmological models. In Minkowski spacetime, spatially flat
+and open big-bang universes, the closed radiation universe and de Sitter
+spacetime, nothing outside an event's past is guaranteed; in Minkowski
+spacetime and the flat universes the bound is attained, since a conformally
+coupled scalar field is fixed from an event exactly on its causal past. In
+the closed dust model everything is guaranteed from every event after
+maximum expansion, the known moment at which the particle horizon
+disappears; before it, the same scalar field is already fixed on an
+antipodal echo of the past. Other local laws fix more: one with a preferred
+flow fixes everything even in Minkowski spacetime. So unreality does not
+entail openness, and how much of the unreal future is fixed from an event
+depends on global causal structure, which can change with cosmic epoch, and
+on the fields, which relativity alone does not decide. A closing remark
+records what the corresponding standpoint logic does and does not show about
+cosmological horizons.
+\end{abstract}
+
+\section{Introduction}
+
+Stein's theorem says that in Minkowski spacetime a transitive,
+symmetry-invariant relation of becoming that makes some past event definite
+is the causal order or trivial \citep{Stein1968,Stein1991,CH1995}. A
+companion paper \citep{SteinGR} extends this to general relativity under a
+locality principle: what has become for an event $b$ always includes its
+chronological past and never goes beyond its causal past. On views that read
+``has become for $b$'' as ``is real from $b$'' \citep{Fine2005,Lipman2023},
+the future of $b$ is not real from $b$.
+
+It is tempting to infer that the future is \emph{open} from $b$. The
+inference fails, and the way it fails is instructive. Openness in the sense
+relevant here is a matter of what the real fixes, and that depends on the
+laws and on the global causal structure. The point is old in outline: a
+growing block \citep{Broad1923} combined with deterministic laws makes the
+future unreal yet fixed, and Rak\'ic's sea-fight case turns on an event
+outside an observer's past that a decision inside it appears to settle
+\citep{Rakic1997}. What is missing is a precise account, for relativistic
+spacetimes, of when what is real from an event fixes anything beyond itself.
+Geroch's domain of prediction supplies the tool \citep{Geroch1977}, and
+Manchak's work on prediction its limits \citep{Manchak2008}. We use them to
+answer three questions:
+\begin{enumerate}
+\item Which events does every deterministic local law fix from what is real
+from $b$ (Theorem~\ref{thm:char})?
+\item In the standard cosmological models, how much is that, and how much
+more can a particular field fix (Section~\ref{sec:examples})?
+\item What follows for the relation between unreality and openness
+(Section~\ref{sec:phil})?
+\end{enumerate}
+
+\paragraph{Conventions.} Spacetimes are smooth, connected, time-oriented and
+globally hyperbolic. $\Is(p)$ is the strict chronological past (via timelike
+curves), $J^-(p)$ the causal past; $x\le y$ means $x\in J^-(y)$, and $x\ll y$
+means $x\in\Is(y)$. We use that $\le$ is closed, that $J^-(x)\cap S$ is
+compact for every Cauchy surface $S$, push-up ($y\le z\ll b$ implies $y\ll b$),
+and that $M=\Is(S)\cup S\cup\Isp(S)$ for a Cauchy surface $S$ \citep{MS2008}.
+A \emph{Cauchy time function} is a continuous surjection $t:M\to(\alpha,\beta)$,
+$-\infty\le\alpha<\beta\le\infty$, strictly increasing along future-directed
+causal curves, whose level sets $S_c=t^{-1}(c)$ are Cauchy surfaces
+\citep{BS2005}.
+
+\section{Determined from an event}\label{sec:det}
+
+\begin{definition}
+An event $x$ is \emph{guaranteed from} $b$ if every past-inextendible causal
+curve from $x$ meets $\Is(b)$. Write $\Det(b)$ for the set of such events.
+Clearly $\Is(b)\subseteq\Det(b)$.
+\end{definition}
+
+$\Det(b)$ is a property of the spacetime and the event. To connect it with
+what the laws fix, let $\mathcal L$ be the set of solutions of some field
+equations on $M$. Say that $x$ is \emph{fixed from $b$ under $\mathcal L$},
+and write $x\in F_{\mathcal L}(b)$, if any two solutions in $\mathcal L$ that
+agree on $\Is(b)$ agree at $x$. Say that $\mathcal L$ has the
+\emph{domain-of-dependence property} if, for every open $U\subseteq M$, any two
+solutions that agree on $U$ agree at every event all of whose
+past-inextendible causal curves meet $U$. This is a locality assumption on
+the dynamics: nothing propagates outside the light cones.
+
+\begin{remark}[What is guaranteed and what is fixed]\label{rem:laws}
+If $\mathcal L$ has the domain-of-dependence property and consists of
+continuous fields, then
+\[\Det(b)\cup J^-(b)\subseteq F_{\mathcal L}(b),\]
+since $J^-(b)$ is the closure of $\Is(b)$ in a globally hyperbolic spacetime
+\citep{MS2008}. So $\Det(b)$ is fixed under every such law: it is what the
+causal structure guarantees, whatever the fields. The inclusion is in general
+strict, and nothing about $F_{\mathcal L}(b)$ beyond it follows from $\Det(b)$
+being small. For example, on Minkowski spacetime with the unit timelike
+field $u=\partial_t$, the local equations $u\cdot\nabla Q=P$,
+$u\cdot\nabla P=0$ have the solutions $Q=A(\vec X)+tB(\vec X)$, $P=B(\vec X)$
+for arbitrary smooth $A,B$. Their characteristics are the integral curves of
+$u$, so they have the domain-of-dependence property; and every integral curve
+of $u$ enters $\Is(b)$, so $F_{\mathcal L}(b)=M$ for every $b$. A law of this
+kind uses background structure beyond the metric, but nothing in the
+domain-of-dependence property excludes it. Neither notion is Belnap's
+settledness, on which a proposition is settled at a point event if it holds
+in every possible history through it \citep{Belnap1992}; under
+indeterministic laws they come apart from it, and we say nothing about such
+laws. We use $\Is(b)$, which every local becoming theory counts as real from
+$b$, rather than $J^-(b)$; the characterization below uses that $\Is(b)$ is
+open.
+\end{remark}
+
+\paragraph{Relation to Geroch.} Geroch's domain of prediction $P(q)$ is the set
+of $x$ such that every past-directed timelike curve from $x$ without past
+endpoint enters $I^-(q)$, but $I^-(x)\not\subseteq I^-(q)$ \citep[sec.~3]{Geroch1977}.
+$\Det(b)$ is the causal-curve analogue of the union of $P(b)$ with the
+events whose pasts lie in that of $b$; the two differ at most on null
+boundaries. Geroch gives an equivalent form by achronal surfaces in $I^-(q)$
+\citep[sec.~3]{Geroch1977}; Theorem~\ref{thm:char} is a slicing form for
+globally hyperbolic spacetimes.
+
+\begin{theorem}\label{thm:char}
+Let $t:M\to(\alpha,\beta)$ be a Cauchy time function. Then $x\in\Det(b)$ if
+and only if there is $c\in(\alpha,t(x))$ with $J^-(x)\cap S_c\subseteq\Is(b)$.
+\end{theorem}
+
+\begin{proof}
+($\Leftarrow$) A past-inextendible causal curve from $x$ crosses the Cauchy
+surface $S_c$, at a point of $J^-(x)\cap S_c\subseteq\Is(b)$.
+
+($\Rightarrow$) Suppose that for every $c\in(\alpha,t(x))$ the set
+$K_c=(J^-(x)\cap S_c)\setminus\Is(b)$ is nonempty; it is compact, since
+$\Is(b)$ is open. Fix $t(x)>c_1>c_2>\dots$ with $c_n\to\alpha$, and let
+\[P_n=\{(z_1,\dots,z_n)\in K_{c_1}\times\dots\times K_{c_n}:
+x\ge z_1\ge z_2\ge\dots\ge z_n\}.\]
+$P_n$ is compact, since $\le$ is closed. It is nonempty: pick $y\in K_{c_n}$
+and a causal curve from $x$ to $y$; it crosses each $S_{c_i}$, $i<n$, at some
+$z_i\le x$, and $z_i\notin\Is(b)$, for otherwise $y\le z_i\ll b$ would give
+$y\ll b$. The maps $P_{n+1}\to P_n$ forgetting the last coordinate are
+continuous, so the inverse limit of the nonempty compact spaces $P_n$ is
+nonempty, giving $x\ge z_1\ge z_2\ge\cdots$ with $z_n\in K_{c_n}$. Join
+consecutive terms by causal curves and concatenate. Each segment avoids
+$\Is(b)$ by push-up, as before. Along the concatenation $t\to\alpha$, so it has
+no past endpoint in $M$: it is a past-inextendible causal curve from $x$
+missing $\Is(b)$.
+\end{proof}
+
+\begin{corollary}\label{cor:cauchy}
+If $\Is(b)$ contains a Cauchy surface $S$, then $\Det(b)=M$.
+\end{corollary}
+
+\begin{proof}
+If $x\in\Is(S)\cup S$, then $x\le s\ll b$ for some $s\in S$, so $x\in\Is(b)$.
+If $x\in\Isp(S)$, extend a past-inextendible causal curve from $x$ to an
+inextendible one; it meets $S$, and not to the future of $x$, since then
+$s'\ll x\le s$ for some $s,s'\in S$, contradicting achronality. So the curve
+from $x$ meets $S\subseteq\Is(b)$.
+\end{proof}
+
+Since $\Det(b)$ is defined by causal curves alone, it depends only on the
+conformal class of the metric; conformal diagrams decide it.
+
+\section{The standard models}\label{sec:examples}
+
+\begin{lemma}\label{lem:balls}
+Let $(\Sigma,d)$ be $\mathbb R^3$, hyperbolic space $H^3$, or the unit sphere
+$S^3$ with $r_2\le\pi$. Then the closed ball $\bar B(X,r_1)$ lies in the open
+ball $B(Y,r_2)$ if and only if $d(X,Y)+r_1<r_2$.
+\end{lemma}
+
+\begin{proof}
+($\Leftarrow$) is the triangle inequality. ($\Rightarrow$) Let $r_1\ge0$ and suppose
+$d(X,Y)+r_1\ge r_2$. On $\mathbb R^3$ and $H^3$, where geodesics extend
+indefinitely and minimize, or on $S^3$ when $d(X,Y)+r_1\le\pi$, follow a minimizing geodesic from $Y$ through $X$ (any geodesic from
+$X$ if $X=Y$) a further distance $r_1$; the endpoint lies in $\bar B(X,r_1)$ at
+distance $d(X,Y)+r_1\ge r_2$ from $Y$. If $d(X,Y)+r_1>\pi$ on $S^3$, the
+antipode of $Y$ is at distance $\pi-d(X,Y)<r_1$ from $X$ and $\pi\ge r_2$ from
+$Y$.
+\end{proof}
+
+\begin{proposition}\label{prop:conformal}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times\Sigma$ with metric
+$-d\eta^2+d\Sigma^2$, where $\Sigma$ is $\mathbb R^3$, $H^3$, or the unit $S^3$
+with $\eta_+-\eta_-\le\pi$. Then $\Det(b)=\Is(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+Use $t=\eta$. For $x=(\eta_x,X)$, $b=(\eta_b,Y)$: $x\ll b$ iff
+$d(X,Y)<\eta_b-\eta_x$ (on $S^3$, $\eta_b-\eta_x<\pi$). For $\eta_-<c<\eta_x$,
+$J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ and $\Is(b)\cap S_c=B(Y,\eta_b-c)$, with
+$\eta_b-c<\pi$ on $S^3$. By Lemma~\ref{lem:balls} the inclusion holds iff
+$d(X,Y)<\eta_b-\eta_x$, i.e.\ iff $x\ll b$. Apply Theorem~\ref{thm:char}.
+\end{proof}
+
+This covers Minkowski spacetime, spatially flat and open FLRW universes with
+a big bang (conformal to $\eta>0$), the closed radiation universe
+($a\propto\sin\eta$, $\eta\in(0,\pi)$) and global de Sitter spacetime ($\Sigma=S^3$,
+$\eta\in(-\pi/2,\pi/2)$) \citep{HE1973}. In none of them is anything outside an
+event's chronological past guaranteed from it. In Minkowski spacetime and the
+spatially flat universes this bound is attained by a natural field.
+
+\begin{proposition}\label{prop:sharp}
+Let $M=(\eta_-,\eta_+)\times\mathbb R^3$ with $g=a(\eta)^2(-d\eta^2+d\vec X^2)$,
+$a>0$ smooth, and let $\mathcal L$ be the smooth solutions of the conformally
+coupled scalar equation $\Box_g\phi-\tfrac16R\phi=0$. Then
+$F_{\mathcal L}(b)=J^-(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+$J^-(b)\subseteq F_{\mathcal L}(b)$ by continuity, as in
+Remark~\ref{rem:laws}. Conversely, $\phi$ is a solution iff $\psi=a\phi$
+solves the flat wave equation $\partial_\eta^2\psi=\Delta\psi$ on $M$
+\citep[app.~D]{Wald1984}. Let $b=(\eta_b,\vec Y)$ and $x=(\eta_x,\vec X)\notin
+J^-(b)$, so $\eta_x-\eta_b+|\vec X-\vec Y|>0$, since the causal curves of $M$
+are those of the conformal Minkowski metric. Choose a unit vector $\hat k$
+with $\hat k\cdot(\vec X-\vec Y)=-|\vec X-\vec Y|$, a smooth $f$ vanishing on
+$(-\infty,0]$ and positive on $(0,\infty)$, and put $\psi=f(u)$ with
+$u=\eta-\eta_b-\hat k\cdot(\vec Z-\vec Y)$ at $(\eta,\vec Z)$. This solves the
+wave equation. On $\Is(b)$, $\eta-\eta_b<-|\vec Z-\vec Y|$, so $u<0$ and
+$\psi=0$; at $x$, $u>0$ and $\psi\neq0$. So $\psi/a$ and $0$ are solutions that
+agree on $\Is(b)$ but not at $x$.
+\end{proof}
+
+
+\begin{proposition}\label{prop:dust}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times S^3$ with $\eta_+-\eta_->\pi$.
+Then $\Det(b)=\Is(b)$ if $\eta_b\le\eta_-+\pi$, and $\Det(b)=M$ if
+$\eta_b>\eta_-+\pi$. In the Einstein static universe ($\eta_\pm=\pm\infty$),
+$\Det(b)=M$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+If $\eta_b>\eta_-+\pi$, take $c\in(\eta_-,\eta_b-\pi)$: $\Is(b)\cap S_c$ is an open
+ball of radius greater than $\pi$, hence all of $S_c$, and
+Corollary~\ref{cor:cauchy} applies. If $\eta_b\le\eta_-+\pi$, every $c>\eta_-$
+has $\eta_b-c<\pi$, and the proof of Proposition~\ref{prop:conformal} applies.
+\end{proof}
+
+For the closed dust FLRW model, $a(\eta)=\tfrac12a_m(1-\cos\eta)$ with
+$\eta\in(0,2\pi)$, the threshold is $\eta=\pi$, the moment of maximum
+expansion. That the particle horizon of the closed dust model disappears at
+maximum expansion, so that an observer can then in principle see the whole
+universe, is known \citep{GronJohannesen2011,BolotinTanatarov2013}; the
+Einstein static case is Geroch's \citep[Fig.~5]{Geroch1977}. What
+Proposition~\ref{prop:dust} adds is the consequence for determination: with
+Corollary~\ref{cor:cauchy}, the vanishing of the particle horizon is exactly
+the condition under which everything is guaranteed from $b$, so that every
+law with the domain-of-dependence property fixes everything from what is real
+from $b$. This is consistent with Manchak's result that prediction of events
+to the future of an observer requires a compact Cauchy surface
+\citep{Manchak2008}.
+
+Before maximum expansion a particular field can fix more than is guaranteed.
+Light leaving a point of the closed model refocuses at its antipode after
+conformal time $\pi$, and the conformally coupled scalar carries its value
+there exactly.
+
+\begin{proposition}\label{prop:echo}
+Let $M$ be the closed dust model, $g=a(\eta)^2(-d\eta^2+d\Omega_3^2)$ with
+$a=\tfrac12a_m(1-\cos\eta)$, $\eta\in(0,2\pi)$, and $\mathcal L$ as in
+Proposition~\ref{prop:sharp}. Let $A(\eta,X)=(\eta+\pi,-X)$, where $-X$ is the
+antipode of $X$. Then $J^-(b)\cup\bigl(A(J^-(b))\cap M\bigr)\subseteq
+F_{\mathcal L}(b)$. If $\eta_b<\pi$, the set $A(J^-(b))\cap M$ is nonempty and
+disjoint from $\Det(b)$.
+\end{proposition}
+
+\begin{proof}
+Here $\psi=a\phi$ solves the conformally invariant equation of the Einstein
+static universe, $\partial_\eta^2\psi=\Delta\psi-\psi$ on the unit $S^3$
+\citep[app.~D]{Wald1984}, and extends uniquely to $\mathbb R\times S^3$.
+Expanding in spherical harmonics of degree $n$, which have frequency $n+1$
+and parity $(-1)^n$ under the antipodal map, each mode, and so every smooth
+solution, satisfies $\psi(\eta+\pi,-X)=-\psi(\eta,X)$. Hence two solutions
+that agree on $J^-(b)$ agree on $A(J^-(b))\cap M$. If $\eta_b<\pi$, then
+$\Det(b)=\Is(b)$ by Proposition~\ref{prop:dust}, which lies in
+$\{\eta<\eta_b\}$, while $A(J^-(b))$ lies in $\{\eta>\pi\}$ and meets $M$, for
+instance at $A(\eta_b/2,Y)$ when $b=(\eta_b,Y)$.
+\end{proof}
+
+So the geometric threshold at maximum expansion marks when everything is
+guaranteed, not when this field first fixes anything beyond the past.
+Whether $F_{\mathcal L}(b)$ is exactly the set in Proposition~\ref{prop:echo}
+for $\eta_b\le\pi$, and whether in the closed models some local law fixes no
+more than $\Det(b)\cup J^-(b)$, we leave open.
+
+\section{Unreality and openness}\label{sec:phil}
+
+Put together with the companion theorem, these results separate three
+properties of an event $x$ relative to a standpoint $b$:
+\begin{itemize}
+\item \emph{real from $b$}: $x$ is in $b$'s fragment, which a local becoming
+theory fixes to lie between $\Is(b)$ and $J^-(b)$;
+\item \emph{guaranteed from $b$}: $x\in\Det(b)$, so that every law with the
+domain-of-dependence property fixes $x$ from what is real from $b$;
+\item \emph{fixed from $b$ under given laws}: $x\in F_{\mathcal L}(b)$.
+\end{itemize}
+Every real event is fixed under any continuous law with the
+domain-of-dependence property, and every guaranteed event is fixed under
+each such law. The standard models exhibit two geometric regimes: in the
+flat, open, radiation and de Sitter models nothing beyond the fragment is
+guaranteed; in the closed dust model after maximum expansion, and in the
+Einstein static universe, everything is. So:
+
+\begin{enumerate}
+\item \emph{Unreality does not entail openness.} An event can be unreal from
+$b$ and guaranteed from $b$: in the closed dust model, every future event is
+so from every event after maximum expansion. For particular fields this
+happens more widely: the conformal scalar in the closed dust model before
+maximum expansion (Proposition~\ref{prop:echo}), and the flow law of
+Remark~\ref{rem:laws} even in Minkowski spacetime. This is the relativistic
+form of the growing block combined with determinism, and on our reading it is
+also where Rak\'ic's intuition belongs \citep{Rakic1997}: her sea-fight is, at
+most, fixed from the observer, not real from her.
+\item \emph{Determinism does not entail fixedness from each event.} Under
+deterministic laws the whole spacetime is fixed by data on any Cauchy
+surface, but no single event's past contains a Cauchy surface in the flat,
+open, radiation or de Sitter models. For the conformal scalar in Minkowski
+spacetime and the flat universes, what is fixed from $b$ is then exactly
+$J^-(b)$ (Proposition~\ref{prop:sharp}): from each standpoint the future is
+unfixed as well as unreal. In the open, closed radiation and de Sitter models
+we have shown only that nothing beyond the past is guaranteed.
+\item \emph{How much of the unreal future is fixed depends on two things.}
+Global causal structure decides what is guaranteed, and that can change with
+cosmic epoch, so that the answer to ``is the future open from here?'' can
+differ between two events of the same spacetime. The fields decide what is
+fixed beyond that. Relativity settles the first; it does not settle the
+second.
+\end{enumerate}
+
+Three limits. First, this openness is relational and informational: an event
+outside $\Det(b)$ is still fixed by its own past, and a determinist eternalist
+can accept everything in this section. What the section shows is that the
+standpoint theorist's claim that the future is unreal from $b$ neither
+secures nor excludes its being fixed from $b$; an ontically open future needs
+indeterministic laws, about which $\Det(b)$ and $F_{\mathcal L}(b)$ are
+silent. Second, the closed
+dust result concerns an idealized model with deterministic, classical
+dynamics; it is not a claim about our universe, which on current evidence is
+not of that kind. Third, Manchak shows that an observer who does not already
+know the spacetime cannot verify such predictions \citep{Manchak2008};
+$\Det(b)$ and $F_{\mathcal L}(b)$ are nomological notions given $M$, not
+epistemic ones.
+
+\section{A remark on standpoint logic}\label{sec:logic}
+
+Read $\Box A$ at $b$ as ``at every event $x\le b$, $A$'' on the frame $(M,R)$
+with $bRx$ iff $x\le b$. If $A$ is a tenseless claim about what occurs at $x$,
+this is the reflexive past modality of Diodorean tense logic, and the
+standpoint reading of Fine and Lipman \citep{Fine2005,Lipman2023} adds no
+formal content. $R$ is reflexive and transitive, so S4 is valid, and in
+Minkowski spacetime the valid formulas are exactly those of S4.2
+\citep{Goldblatt1980}. The axiom .2, $\Diamond\Box A\to\Box\Diamond A$, is valid at a
+world for all valuations iff any two of its successors have a common
+successor \citep{BdRV2001}. So .2 is valid at $b$ iff the subframe generated
+by $b$ is directed, that is, iff any two events in $J^-(b)$ have a common
+causal past.
+
+In a model conformal to $(\eta_-,\eta_+)\times\mathbb R^3$, two events have a
+common past iff $|X-Y|<\eta_x+\eta_y-2\eta_-$, so if $\eta_->-\infty$ the
+directedness fails in the past of every event and .2 is valid at no event. This is the particle-horizon structure of Rindler
+\citep{Rindler1956} in modal form, and it holds equally with or without an
+inflationary era of finite conformal duration. The horizon problem of
+cosmology \citep{Guth1981} is therefore not the failure of .2, which occurs
+with and without inflation, but the failure of particular instances: pairs of points
+on our last-scattering surface, at comoving separation up to
+$2(\eta_0-\eta_{\rm ls})$, have no common past unless
+$\eta_0-\eta_{\rm ls}<\eta_{\rm ls}-\eta_-$, which fails without inflation and
+holds with enough of it. Two cautions. Under the view's persistence principle,
+on which what holds from an event holds from every later one, valuations are
+constrained along the future direction, and the frame property that matters
+may concern common futures, which these models have when $\eta_+=\infty$; the logic of persistent
+valuations is a separate question. And Lewis and van der Schaaf study causal
+modal logics of general spacetimes \citep{vdSchaaf2026}; we have not checked
+how their results bear on the past-directed frames used here. Whether S4 is
+exactly the logic of all past-directed globally hyperbolic frames we leave
+open.
+
+\section{Conclusion}
+
+The unreality of the future from an event, which local theories of
+relativistic becoming deliver, neither implies nor excludes its being fixed
+from that event. What every local deterministic law fixes is decided by a
+slicing condition on Geroch's domain of prediction (Theorem~\ref{thm:char}),
+computable from conformal diagrams. In most standard models nothing beyond an
+event's past is guaranteed, and in Minkowski spacetime and the flat universes
+a conformal scalar field shows that nothing more need be fixed; in the closed
+dust model everything is guaranteed from every event after maximum
+expansion. Particular fields can fix more than is guaranteed, in the closed
+dust model before maximum expansion and, with a preferred flow, even in
+Minkowski spacetime. The question whether the future is open from a
+standpoint thus divides into a question about global causal structure, which
+relativity settles, and a question about the fields, which it does not.
+
+\begin{thebibliography}{99}
+\bibitem{BdRV2001} P. Blackburn, M. de Rijke and Y. Venema, \emph{Modal Logic}
+(Cambridge University Press, 2001).
+\bibitem{Belnap1992} N. Belnap, Branching space-time, \emph{Synthese} 92 (1992)
+385--434, doi:10.1007/BF00414289.
+\bibitem{BolotinTanatarov2013} Yu. L. Bolotin and I. V. Tanatarov, A thousand
+problems in cosmology: horizons, arXiv:1310.6329 (2013).
+\bibitem{Broad1923} C. D. Broad, \emph{Scientific Thought} (Kegan Paul, 1923).
+\bibitem{BS2005} A. N. Bernal and M. S\'anchez, Smoothness of time functions
+and the metric splitting of globally hyperbolic spacetimes, \emph{Commun.\
+Math.\ Phys.} 257 (2005) 43--50.
+\bibitem{CH1995} R. Clifton and M. Hogarth, The definability of objective
+becoming in Minkowski spacetime, \emph{Synthese} 103 (1995) 355--387.
+\bibitem{Fine2005} K. Fine, Tense and reality, in \emph{Modality and Tense}
+(Oxford University Press, 2005) 261--320.
+\bibitem{Geroch1977} R. Geroch, Prediction in general relativity, in J. Earman,
+C. Glymour and J. Stachel (eds.), \emph{Foundations of Space-Time Theories},
+Minnesota Studies in the Philosophy of Science 8 (University of Minnesota
+Press, 1977) 81--93.
+\bibitem{Goldblatt1980} R. Goldblatt, Diodorean modality in Minkowski
+spacetime, \emph{Studia Logica} 39 (1980) 219--236, doi:10.1007/BF00370321.
+\bibitem{GronJohannesen2011} \O. Gr\o n and S. Johannesen, FRW universe models in
+conformally flat spacetime coordinates. III: universe models with positive
+spatial curvature, \emph{Eur.\ Phys.\ J. Plus} 126 (2011) 30,
+arXiv:1103.4753.
+\bibitem{Guth1981} A. H. Guth, Inflationary universe: a possible solution to
+the horizon and flatness problems, \emph{Phys.\ Rev.\ D} 23 (1981) 347--356.
+\bibitem{HE1973} S. W. Hawking and G. F. R. Ellis, \emph{The Large Scale
+Structure of Space-Time} (Cambridge University Press, 1973).
+\bibitem{Lipman2023} M. A. Lipman, Standpoints: a study of a metaphysical
+picture, \emph{J.\ Phil.} 120 (2023) 117--138.
+\bibitem{Manchak2008} J. B. Manchak, Is prediction possible in general
+relativity?, \emph{Found.\ Phys.} 38 (2008) 317--321,
+doi:10.1007/s10701-008-9204-6.
+\bibitem{MS2008} E. Minguzzi and M. S\'anchez, The causal hierarchy of
+spacetimes, in \emph{Recent Developments in Pseudo-Riemannian Geometry}
+(EMS, 2008) 299--358, arXiv:gr-qc/0609119.
+\bibitem{Rakic1997} N. Raki\'c, Past, present, future, and special relativity,
+\emph{Brit.\ J. Phil.\ Sci.} 48 (1997) 257--280.
+\bibitem{Rindler1956} W. Rindler, Visual horizons in world-models,
+\emph{Mon.\ Not.\ R. Astron.\ Soc.} 116 (1956) 662--677.
+\bibitem{Stein1968} H. Stein, On Einstein--Minkowski space--time, \emph{J.\
+Phil.} 65 (1968) 5--23.
+\bibitem{Stein1991} H. Stein, On relativity theory and openness of the future,
+\emph{Phil.\ Sci.} 58 (1991) 147--167.
+\bibitem{SteinGR} A. Impellitteri, Stein's theorem in general relativity:
+locality, not symmetry, fixes what has become, preprint (2026).
+\bibitem{Wald1984} R. M. Wald, \emph{General Relativity} (University of
+Chicago Press, 1984).
+\bibitem{vdSchaaf2026} M. Lewis and N. van der Schaaf, Some results on causal
+modalities in general spacetimes, arXiv:2601.14029v2 (2026).
+\end{thebibliography}
+
+\end{document}

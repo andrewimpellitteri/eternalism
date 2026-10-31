@@ -44,7 +44,20 @@ per Bamonti and Thébault) or no time (P1** restricted). The four-event coverage
 model is retained. Supporting notes and source records are in
 `research/brading-universe-frontier/`.
 
-**Build status:** this redraft has not been compiled. The cloud session that
-wrote it has no TeX installation; `verification.json` describes the previous
-version and is stale. Rebuild with the commands above, then update
-`verification.json`. The submission gates in `READINESS.md` remain open.
+**Build status:** compiled locally on 21 October 2026 with pdfTeX (TeX Live
+2026): 10 pages, all citations and references resolved on the final pass. The
+one warning, an overfull box in the routes table, was fixed afterwards by
+narrowing the table; rebuild to confirm. `verification.json` still describes
+the previous version and should be regenerated from the next local build. The submission gates in `READINESS.md` remain open.
+
+## Relation to the integrated research state, 28 October 2026
+
+The [current project synthesis](../research/CURRENT_SYNTHESIS.md) and
+[claim ledger](../research/CLAIM_STATUS.md) connect this article to the causal-set,
+observer, Stein--GR, horizons and rival-grounding work. The article's constitutive
+versus stage reading of dynamical sufficiency must keep determination separate
+from existence: a region that fixes future values is not thereby shown to
+constitute a unity or to make future events currently exist. The new screening
+and common-extension results constrain that inference; they do not resolve
+Brading's constitutive question or the article's submission gates. This article's
+source and existing PDF have not been rewritten by that integration.

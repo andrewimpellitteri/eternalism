@@ -1,5 +1,7 @@
 # Coordinator review — 2026-10-19
 
+> Current integration (28 October 2026): see [research synthesis](../research/CURRENT_SYNTHESIS.md) and [claim ledger](../research/CLAIM_STATUS.md). The dated review history below is preserved; it does not by itself represent every current gate or source disposition.
+
 This is an audit log, not an accepted research conclusion. Initial lane files
 were checked for parseable source records and explicit limitations. A second
 pass is checking primary arguments, source code, and exact clock assumptions.

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "exact_field_recovery_cases": 625,
+  "field_law": "dQ/dt=P; dP/dt=0 on fixed Minkowski background",
+  "controls": [
+    "future target",
+    "null escape ray",
+    "disjoint .2-valid frame",
+    "fork .2-invalid frame"
+  ],
+  "scope": "bounded exact controls; analytical universal arguments in REVIEW.md"
+}
