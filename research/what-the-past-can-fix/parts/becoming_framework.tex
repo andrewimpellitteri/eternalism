@@ -1,0 +1,52 @@
+\begin{definition}
+$\GH$ is the category whose objects are globally hyperbolic spacetimes and
+whose morphisms $\psi:M\to M'$ are smooth isometric embeddings preserving
+orientation and time orientation, with $\psi(M)$ open and causally convex in
+$M'$. This is the category $\mathsf{Loc}$ of locally covariant quantum field
+theory \citep[\S2]{BFV2003}, \citep[\S2.2]{FV2012}.
+\end{definition}
+
+\begin{definition}
+A \emph{becoming theory} assigns to each $M\in\GH$ a relation
+$B_M\subseteq M\times M$ (read $x\,B_M\,b$ as ``$x$ has become for $b$'') such
+that, for every $M$:
+\begin{enumerate}
+\item[(LC)] for every morphism $\psi:M\to M'$, $x\,B_M\,b\iff
+\psi(x)\,B_{M'}\,\psi(b)$;
+\item[(T)] $B_M$ is transitive;
+\item[(CB)] $\Ichr_M\subseteq B_M$.
+\end{enumerate}
+\end{definition}
+
+(CB) is Clifton and Hogarth's chronological becoming; they derive it from
+``worldline becoming'' and ``worldline transitivity'' \citep[Lemma,
+p.~364]{CH1995}, and the derivation carries over verbatim to curved
+spacetime. (LC) contains invariance under every orientation- and
+time-orientation-preserving isometry of each $M$, which on Minkowski spacetime
+$\Mink$ is the proper orthochronous Poincaré group. Its further content is
+\emph{locality}: if $N\subseteq M$ is open, causally convex and contains $x$
+and $b$, then whether $x$ has become for $b$ is settled by $N$ alone.
+
+\begin{remark}[What (LC) contains]\label{rem:lc}
+Three premises should be kept apart. \emph{Naturality}: one rule for all
+objects, preserved by every morphism. \emph{Reflection}: the converse
+direction of (LC), by which every causally convex region containing $x$ and
+$b$ settles the verdict; the proof of Theorem~\ref{thm:main} uses it along $N\hookrightarrow M$ and $N''\hookrightarrow M'$ in part (a), and along $\psi|_N:N\to M'$ and $N''\hookrightarrow\Mink$ in part (b), and functoriality in quantum
+field theory supplies no such direction. \emph{Off-shell universality}:
+Remark~\ref{rem:offshell}. ``Local'' here is geometric: independence of what
+lies around a region, the sense of \citet[\S1]{BFV2003}. It is not
+no-signalling or microcausality, and neither of those implies it. The case for
+(LC) is that a relation defined from geometry alone should not depend on what
+lies outside a causally convex region containing the related events. That is
+a premise about becoming, not a consequence of relativity.
+\end{remark}
+
+\begin{remark}[The off-shell premise]\label{rem:offshell}
+$\GH$ contains every globally hyperbolic metric, not only solutions of
+Einstein's equations; the category is defined kinematically in
+\citep{BFV2003,FV2012}. Theorem~\ref{thm:main} uses this: its proof builds
+auxiliary spacetimes that need not satisfy any field equation with reasonable
+matter. This is natural for a kinematic notion of becoming, defined (as Stein
+and Clifton--Hogarth define theirs) from geometry alone, but it is a premise.
+Section~\ref{sec:energy} examines what happens without it.
+\end{remark}

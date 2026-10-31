@@ -1,0 +1,42 @@
+\begin{proposition}\label{prop:single}
+Let $M$ be globally hyperbolic and $x,b\in M$ spacelike-separated. Then
+$R=\Jm\cup(\Jm(x)\times\Jp(b))$, where $(e,z)$ in the second set means $e$
+has become for $z$, is reflexive and transitive, contains $\Ichr$, relates $x$
+to $b$, and is neither $\Ichr$, $\Jm$ nor $\U$. If $M$ has no nontrivial
+isometries, $R$ is invariant under all of them.
+\end{proposition}
+
+\begin{proof}
+Write $P=\Jm(x)\times\Jp(b)$. Compositions $\Jm\circ\Jm$, $\Jm\circ P$ and
+$P\circ\Jm$ land in $\Jm$ or $P$ because $\le$ is transitive. A composition
+$P\circ P$ would need some $q$ with $b\le q\le x$, which is impossible. The
+pair $(b,x)$ is not in $R$, so $R\neq\U$.
+\end{proof}
+
+So for a single generic spacetime, Stein-type uniqueness fails completely. The
+next example shows that
+uniformity across spacetimes is still not enough without locality.
+
+\begin{proposition}\label{prop:nonlocal}
+Let $\tau_M(p)$ be the supremum of the lengths of past-directed causal curves
+from $p$ (the cosmological time of Andersson, Galloway and Howard
+\citep{AGH1998}). Put $B_M=\{(x,b):\tau_M(x)\le\tau_M(b)\}$ if $\tau_M$ is
+finite on $M$, and $B_M=\Jm_M$ otherwise. Then $B$ is invariant under all
+isometries, each $B_M$ is
+reflexive and transitive and satisfies (CB), and $B$ relates spacelike pairs
+in every spacetime where $\tau$ is finite (e.g.\ big-bang
+Friedmann--Lemaître--Robertson--Walker models). It is not a becoming theory:
+it violates (LC).
+\end{proposition}
+
+\begin{proof}
+Isometries preserve lengths of causal curves. If $x\ll b$, concatenating
+past curves from $x$ with a timelike curve from $x$ to $b$ gives
+$\tau(b)\ge\tau(x)+d(x,b)>\tau(x)$, so (CB) holds; transitivity is that of
+$\le$ on the reals. Failure of (LC): the Milne wedge $W=\Ifut_\Mink(0)$ is open,
+causally convex and globally hyperbolic, and its inclusion into $\Mink$ is a
+morphism. On $W$, $\tau_W(p)$ is the proper time from the origin, finite, so
+$B_W$ relates distinct points of the same hyperboloid $\{\tau_W=c\}$, which are
+spacelike-separated; on $\Mink$, $\tau=\infty$ and $B_\Mink=\Jm$ does not relate
+them.
+\end{proof}

@@ -1,0 +1,213 @@
+\begin{lemma}\label{lem:balls}
+Let $(\Sigma,d)$ be $\mathbb R^3$, hyperbolic space $H^3$, or the unit sphere
+$S^3$ with $r_2\le\pi$. Then the closed ball $\bar B(X,r_1)$ lies in the open
+ball $B(Y,r_2)$ if and only if $d(X,Y)+r_1<r_2$.
+\end{lemma}
+
+\begin{proof}
+($\Leftarrow$) is the triangle inequality. ($\Rightarrow$) Let $r_1\ge0$ and suppose
+$d(X,Y)+r_1\ge r_2$. On $\mathbb R^3$ and $H^3$, where geodesics extend
+indefinitely and minimize, or on $S^3$ when $d(X,Y)+r_1\le\pi$, follow a minimizing geodesic from $Y$ through $X$ (any geodesic from
+$X$ if $X=Y$) a further distance $r_1$; the endpoint lies in $\bar B(X,r_1)$ at
+distance $d(X,Y)+r_1\ge r_2$ from $Y$. If $d(X,Y)+r_1>\pi$ on $S^3$, the
+antipode of $Y$ is at distance $\pi-d(X,Y)<r_1$ from $X$ and $\pi\ge r_2$ from
+$Y$.
+\end{proof}
+
+\begin{proposition}\label{prop:conformal}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times\Sigma$ with metric
+$-d\eta^2+d\Sigma^2$, where $\Sigma$ is $\mathbb R^3$, $H^3$, or the unit $S^3$
+with $\eta_+-\eta_-\le\pi$. Then $\Det(b)=\Is(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+Use $t=\eta$. For $x=(\eta_x,X)$, $b=(\eta_b,Y)$: $x\ll b$ iff
+$d(X,Y)<\eta_b-\eta_x$ (on $S^3$, $\eta_b-\eta_x<\pi$). For $\eta_-<c<\eta_x$,
+$J^-(x)\cap S_c=\bar B(X,\eta_x-c)$ and $\Is(b)\cap S_c=B(Y,\eta_b-c)$, with
+$\eta_b-c<\pi$ on $S^3$. By Lemma~\ref{lem:balls} the inclusion holds iff
+$d(X,Y)<\eta_b-\eta_x$, i.e.\ iff $x\ll b$. Apply Theorem~\ref{thm:char}.
+\end{proof}
+
+This covers Minkowski spacetime, spatially flat and open FLRW universes with
+a big bang (conformal to $\eta>0$), the closed radiation universe
+($a\propto\sin\eta$, $\eta\in(0,\pi)$) and global de Sitter spacetime ($\Sigma=S^3$,
+$\eta\in(-\pi/2,\pi/2)$) \citep{HE1973}. In none of them is anything outside an
+event's chronological past guaranteed from it. In Minkowski spacetime and the
+spatially flat universes this bound is attained by a natural field.
+
+\begin{proposition}\label{prop:sharp}
+Let $M=(\eta_-,\eta_+)\times\mathbb R^3$ with $g=a(\eta)^2(-d\eta^2+d\vec X^2)$,
+$a>0$ smooth, and let $\mathcal L$ be the smooth solutions of the conformally
+coupled scalar equation $\Box_g\phi-\tfrac16R\phi=0$. Then
+$F_{\mathcal L}(b)=J^-(b)$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+$J^-(b)\subseteq F_{\mathcal L}(b)$ by continuity, as in
+Remark~\ref{rem:laws}. Conversely, $\phi$ is a solution iff $\psi=a\phi$
+solves the flat wave equation $\partial_\eta^2\psi=\Delta\psi$ on $M$
+\citep[app.~D]{Wald1984}. Let $b=(\eta_b,\vec Y)$ and $x=(\eta_x,\vec X)\notin
+J^-(b)$, so $\eta_x-\eta_b+|\vec X-\vec Y|>0$, since the causal curves of $M$
+are those of the conformal Minkowski metric and the slab is causally convex in
+Minkowski spacetime. Choose a unit vector $\hat k$
+with $\hat k\cdot(\vec X-\vec Y)=-|\vec X-\vec Y|$, a smooth $f$ vanishing on
+$(-\infty,0]$ and positive on $(0,\infty)$, and put $\psi=f(u)$ with
+$u=\eta-\eta_b-\hat k\cdot(\vec Z-\vec Y)$ at $(\eta,\vec Z)$. This solves the
+wave equation. On $\Is(b)$, $\eta-\eta_b<-|\vec Z-\vec Y|$, so $u<0$ and
+$\psi=0$; at $x$, $u>0$ and $\psi\neq0$. So $\psi/a$ and $0$ are solutions that
+agree on $\Is(b)$ but not at $x$.
+\end{proof}
+
+
+\begin{proposition}\label{prop:dust}
+Let $M$ be conformal to $(\eta_-,\eta_+)\times S^3$ with $\eta_+-\eta_->\pi$.
+Then $\Det(b)=\Is(b)$ if $\eta_b\le\eta_-+\pi$, and $\Det(b)=M$ if
+$\eta_b>\eta_-+\pi$. In the Einstein static universe ($\eta_\pm=\pm\infty$),
+$\Det(b)=M$ for every $b$.
+\end{proposition}
+
+\begin{proof}
+If $\eta_b>\eta_-+\pi$, take $c\in(\eta_-,\eta_b-\pi)$: $\Is(b)\cap S_c$ is an open
+ball of radius greater than $\pi$, hence all of $S_c$, and
+Corollary~\ref{cor:cauchy} applies. If $\eta_b\le\eta_-+\pi$, every $c>\eta_-$
+has $\eta_b-c<\pi$, and the proof of Proposition~\ref{prop:conformal} applies.
+\end{proof}
+
+For the closed dust FLRW model, $a(\eta)=\tfrac12a_m(1-\cos\eta)$ with
+$\eta\in(0,2\pi)$, the threshold is $\eta=\pi$, the moment of maximum
+expansion. That the particle horizon of the closed dust model disappears at
+maximum expansion, so that an observer can then in principle see the whole
+universe, is known \citep{GronJohannesen2011,BolotinTanatarov2013}; the
+Einstein static case is Geroch's \citep[Fig.~5]{Geroch1977}. What
+Proposition~\ref{prop:dust} adds is the consequence for determination: with
+Corollary~\ref{cor:cauchy}, once the particle horizon has vanished
+($\eta_b>\pi$), everything is guaranteed from $b$, so that every law with the
+domain-of-dependence property fixes everything from what is real from $b$.
+This fits Manchak's theorem that if some event of $b$'s timelike future lies
+in Geroch's domain of prediction of $b$, the spacetime admits a compact
+spacelike slice \citep[p.~319]{Manchak2008}. That theorem concerns the
+geometric notion. The flow law of Remark~\ref{rem:laws} shows that it has no
+analogue for what a particular law fixes: in Minkowski spacetime, which has no
+compact slice, that law fixes all of $b$'s timelike future. Manchak also
+records the view that ``Maxwell's equations constrain some spacetimes in such
+a way as to allow for prediction'' \citep[p.~321 and n.~15]{Manchak2008}, so
+the law-relative notion has antecedents. Earman's discussion explicitly
+includes the Cauchy-surface exception and an electromagnetic-constraint
+example citing Ellis and Sciama \citep[pp.~125--130]{Earman1995}. We have checked
+these selected original Earman pages; Ellis and Sciama (1972, pp.~41--42)
+remain unread here and enter this comparison through Earman's discussion.
+The model-specific characterization below may overlap with those sources;
+we make no priority claim for it.
+
+Before maximum expansion a particular field can fix more than is guaranteed.
+Light leaving a point of the closed model refocuses at its antipode after
+conformal time $\pi$, and the rescaled conformal scalar $\psi=a\phi$ returns
+there with its sign reversed.
+
+\begin{proposition}\label{prop:echo}
+Let $M$ be the closed dust model, $g=a(\eta)^2(-d\eta^2+d\Omega_3^2)$ with
+$a=\tfrac12a_m(1-\cos\eta)$, $\eta\in(0,2\pi)$, and $\mathcal L$ as in
+Proposition~\ref{prop:sharp}. Let $A(\eta,X)=(\eta+\pi,-X)$, where $-X$ is the
+antipode of $X$. Then $J^-(b)\cup\bigl(A(J^-(b))\cap M\bigr)\subseteq
+F_{\mathcal L}(b)$. The set $A(J^-(b))\cap M$ is disjoint from $\Isp(b)$, and if
+$\eta_b\le\pi$ it is nonempty and disjoint from $\Det(b)$.
+\end{proposition}
+
+\begin{proof}
+Here $\psi=a\phi$ solves the conformally invariant equation of the Einstein
+static universe, $\partial_\eta^2\psi=\Delta\psi-\psi$ on the unit $S^3$
+\citep[app.~D]{Wald1984}, and by global well-posedness extends uniquely to
+$\mathbb R\times S^3$.
+Expanding in spherical harmonics of degree $n$, which have frequency $n+1$
+and parity $(-1)^n$ under the antipodal map, each mode, and so every smooth
+solution, satisfies $\psi(\eta+\pi,-X)=-\psi(\eta,X)$. Two solutions that agree on $\Is(b)$ agree, by continuity, on $J^-(b)$, and
+hence on $A(J^-(b))\cap M$. If $(\eta,X)\in J^-(b)$ and $\eta+\pi<2\pi$, then
+$d(X,Y)\le\eta_b-\eta$, so $d(-X,Y)=\pi-d(X,Y)\ge(\eta+\pi)-\eta_b$;
+thus $A(\eta,X)\notin\Isp(b)$. If $\eta_b\le\pi$, then
+$\Det(b)=\Is(b)$ by Proposition~\ref{prop:dust}, which lies in
+$\{\eta<\eta_b\}$, while $A(J^-(b))$ lies in $\{\eta>\pi\}$ and meets $M$, for
+instance at $A(\eta_b/2,Y)$ when $b=(\eta_b,Y)$.
+\end{proof}
+
+For $\eta_b\le\pi$, the echo events are unreal from $b$ and fixed from $b$,
+but they lie beside $b$ or on its future light cone, not in its timelike
+future. The field fixes
+more than the echo, including part of $b$'s timelike future. Let
+$\Diamond_b=\{(\eta,X)\in\mathbb R\times S^3:d(X,Y)+|\eta|<\eta_b\}$, the double
+cone in the Einstein static universe between $b$ and its mirror image
+$(-\eta_b,Y)$, and $U_b=\Diamond_b\cup A\Diamond_b\cup A^2\Diamond_b$.
+
+\begin{theorem}\label{thm:diamonds}
+In the setting of Proposition~\ref{prop:echo}, let $0<\eta_b<\pi$. Then
+$F_{\mathcal L}(b)=M\cap\overline{U_b}$. In
+particular $F_{\mathcal L}(b)$ contains the nonempty set
+$\{(\eta,X)\in M:d(X,Y)\le\eta+\eta_b-2\pi\}$, which lies in $\Isp(b)$.
+\end{theorem}
+
+\begin{proof}
+For data $(f,g)$ at $\eta=0$, the Einstein static solution is
+$\psi(\eta,X)=\partial_\eta[\sin\eta\,M_f(X,\eta)]+\sin\eta\,M_g(X,\eta)$, where
+$M_h(X,r)$ is the mean of $h$ over the geodesic sphere of radius $r$ about
+$X$; one checks this on each mode, using that the zonal function of degree $n$
+on $S^3$ is $\sin((n+1)r)/((n+1)\sin r)$. So $\psi(x)$ depends on the data only
+near the sphere $\Sigma_x=S(X,\eta_x)$, which is the point $-X$ when $\eta_x=\pi$.
+
+\emph{Sufficiency.} Solutions agreeing on $\Is(b)$ agree on the ball
+$B(Y,\eta_b-\epsilon)$ in the slice $\eta=\epsilon$, hence on its domain of
+dependence in the Einstein static universe; the union over $\epsilon>0$ is
+$\Diamond_b$. The identities $\psi\circ A=-\psi$ and $\psi\circ A^2=\psi$ carry
+the agreement to $A\Diamond_b$ and $A^2\Diamond_b$.
+Moreover, $F_{\mathcal L}(b)$ is relatively closed in $M$: it is the
+intersection of the zero sets of all smooth difference solutions vanishing
+on $\Is(b)$. Since $M$ is open in the Einstein cylinder, taking the relative
+closure gives $M\cap\overline{U_b}\subseteq F_{\mathcal L}(b)$.
+
+\emph{Necessity.} Let $x\in M\setminus\overline{U_b}$. Replacing $x$ by
+$A^{-1}x$ if $\eta_x>\pi$, assume $\eta_x\le\pi$. Let $C=\bar B(Y,\eta_b)$.
+Data supported off $C$ give a solution vanishing on $\Is(b)$: if $z\in\Is(b)$
+lay in its support, then $w\le z\ll b$ for some $w$ in the support of the data,
+so $d(w,Y)<\eta_b$. If $\eta_x=\pi$, then $d(-X,Y)>\eta_b$, and data
+$(f,0)$ with $f$ a bump at $-X$ off $C$ give $\psi(x)=-f(-X)\neq0$. If
+$\eta_x<\pi$, then $\Sigma_x\not\subseteq C$: otherwise the connected set
+$S^3\setminus C$ lies in one of the two open balls bounded by $\Sigma_x$, so
+the other closed ball lies in $C$, which by the argument of
+Lemma~\ref{lem:balls} means
+$d(X,Y)+\eta_x\le\eta_b$ or $d(-X,Y)+\pi-\eta_x\le\eta_b$, that is,
+$x\in\overline{\Diamond_b}\cup\overline{A\Diamond_b}$. Take $p\in\Sigma_x\setminus C$
+and data $(0,g)$ with $g\ge0$ supported near $p$ off $C$ and $g(p)>0$; then
+$\psi(x)=\sin\eta_x\,M_g(X,\eta_x)>0$.
+
+Finally, if $d(X,Y)\le\eta+\eta_b-2\pi$, then $d(X,Y)<\eta-\eta_b$ because
+$\eta_b<\pi$, so $(\eta,X)\in\Isp(b)$; the set contains $(\eta,Y)$ for
+$\eta\ge2\pi-\eta_b$.
+\end{proof}
+
+On $b$'s comoving geodesic $X=Y$, the field is fixed from $b$ exactly for
+$\eta\le\eta_b$ and for $\eta\ge2\pi-\eta_b$, and open in between: the end is
+fixed before the middle. The reason is that the past light cone of an event
+just before the crunch wraps around the universe and refocuses near $Y$ at the
+big bang, inside what is real from $b$. The same sphere argument shows that,
+up to boundary, $M\cap U_b$ is the set
+of events all of whose past-inextendible null geodesics meet $\Is(b)$, so for
+this field, which propagates on light rays alone, the null geodesics decide
+what is fixed. The same argument applies to global de Sitter spacetime,
+conformal to the slab $(-\pi/2,\pi/2)$, where the field is fixed from $b$ on the
+antipodal comoving geodesic for all $\eta>-\eta_b$, although no signal from that
+geodesic ever reaches the comoving geodesic of $b$. So the geometric threshold
+at maximum expansion marks when everything is guaranteed, not when this field
+first fixes anything beyond the past.
+
+For a law whose fixed set itself changes at the threshold, take the comoving
+flow $u=a^{-1}\partial_\eta$ of the closed dust model with the equations of
+Remark~\ref{rem:laws}; here $u$ is the dust's own four-velocity, so the law
+adds no structure the model lacks. The comoving line through $X$ meets $\Is(b)$ iff
+$d(X,Y)<\eta_b$, so, by continuity in $X$ and by choosing data supported off
+the closed ball, $F_{\mathcal L}(b)=(0,2\pi)\times\bar B(Y,\eta_b)$. This is a
+proper subset of $M$, containing events in $b$'s timelike future, if
+$\eta_b<\pi$, and all of $M$ if $\eta_b\ge\pi$. Under this law the answer to
+``is the future fixed from here?'' differs between events before and after
+maximum expansion.
+
+Theorem~\ref{thm:massive} shows that on closed dust a local law can fix exactly
+$\Det(b)\cup J^-(b)$ for every $\tau\neq\pi$. Whether some local law does so at
+$\tau=\pi$, or in other closed models, we leave open.

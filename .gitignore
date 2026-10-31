@@ -9,3 +9,7 @@ tmp/
 
 # Copyrighted primary-source scans: keep locally, never commit.
 knowledge/**/primary/*.pdf
+*.pdf
+
+# Our own compiled manuscripts.
+!research/what-the-past-can-fix/what-the-past-can-fix.pdf

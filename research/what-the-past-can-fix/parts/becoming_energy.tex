@@ -1,0 +1,63 @@
+\subsection{Energy conditions}\label{sec:energy}
+
+Let $\GH_{\mathrm{DEC}}$ be the full subcategory of spacetimes whose Einstein
+tensor satisfies the dominant energy condition. It is closed under restriction
+to causally convex open subsets and contains $\Mink$.
+
+\begin{proposition}[The auxiliary spacetime is unavailable]\label{prop:dec}
+If $M\in\GH_{\mathrm{DEC}}$ is flat on a neighbourhood of some totally geodesic
+Cauchy surface, then $M$ is flat. In particular the spacetime $M'$ of Appendix~\ref{sec:proofs} lies in $\GH_{\mathrm{DEC}}$ only if
+$g$ is flat on $T_{2r}$.
+\end{proposition}
+
+\begin{proof}
+On the Cauchy surface $S$ the metric is flat and the Einstein tensor vanishes. By the conservation theorem
+for matter obeying the dominant energy condition \citep[\S4.3]{HE1973}, the
+Einstein tensor vanishes on its domain of dependence, i.e.\ everywhere. In the
+form we use: let $t$ be a Cauchy temporal function with $S=t^{-1}(0)$
+\citep[Thm.~1.2]{BS2006} and $p\in J^+(S)$. The set $J^-(p)\cap J^+(S)$ is compact, and
+it is the union of the segments of integral curves of $\nabla t$ that run from
+$S$ to $\partial J^-(p)$ (a future-directed curve that leaves the past set
+$J^-(p)$ does not return). Minguzzi's form of the theorem \citep[Thm.~1]{Minguzzi2015},
+which needs no time function, then gives $G=0$ at $p$ from $G=0$ on $S$;
+$J^-(S)$ is the time reverse. For
+$M'$, any slice $\{t=c\}$ with $c<-3r$ is totally geodesic and has a flat
+neighbourhood.
+A vacuum globally hyperbolic spacetime with flat data $(\Sigma,h,0)$ on a
+Cauchy surface is a development of those data and so embeds isometrically in
+their maximal development \citep[Thm.~3]{CBG1969}. That maximal development is
+the flat static spacetime $\mathbb R\times\Sigma$, $-dt^2+h$ (not Minkowski in
+general; e.g.\ $\Sigma=T^3$): it is a development, and if a development
+properly extended it, a point $p$ outside its image would lie on a timelike
+geodesic from $\Sigma$ whose image under the extension coincides with the
+corresponding complete geodesic of $\mathbb R\times\Sigma$, so $p$ would lie in
+the image. Hence the spacetime is flat.
+\end{proof}
+
+The same reasoning constrains any repair that keeps the original spacetime and
+inserts small flat pockets near the points $w$, $v$ and the detour of the proof of Theorem~\ref{thm:main}: in a vacuum region
+whose causal past on some Cauchy surface is vacuum and unmodified, the
+conservation theorem forces the modified spacetime to be vacuum there with the
+same data, so no such pocket can be inserted there. Pockets must be fed by matter brought
+in from the past and routed around $D(\Sigma)$ afterwards. The proof of
+Theorem~\ref{thm:main} goes through verbatim in $\GH_{\mathrm{DEC}}$ given
+the following sufficient condition, which we leave open.
+
+\begin{quote}
+\textbf{Pocket problem.} Given $M\in\GH_{\mathrm{DEC}}$ and $\Sigma$ as in Lemma~\ref{lem:D},
+find $M''\in\GH_{\mathrm{DEC}}$ containing an isometric copy of a neighbourhood
+of $D_M(\Sigma)$ whose image is a domain of dependence, and exactly flat
+causally convex regions containing points $w\ll x$ and $v\gg b$ joined by the
+flat domain of dependence of a slab.
+\end{quote}
+
+The constraint is an inequality, not a field equation, so constructions can be
+kinematic, and explicit models with flat regions chronologically adjacent to
+curved dominant-energy regions exist (Vaidya spacetimes before an incoming, or
+after an outgoing, null-dust shell). Thin shells will not suffice in general,
+since null junctions require matching intrinsic geometry. A solution would
+give Theorem~\ref{thm:main} for spacetimes with physically reasonable matter;
+a vacuum version would require bounded interior flat regions adjacent to
+arbitrary curved vacuum regions, which we have not found in the gluing
+literature (an abstract-level survey: Carlotto--Schoen, Corvino--Schoen,
+Aretakis--Czimek--Rodnianski, Czimek--Rodnianski).

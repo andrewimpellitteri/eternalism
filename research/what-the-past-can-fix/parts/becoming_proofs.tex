@@ -1,0 +1,329 @@
+\section{Proofs for Part I}\label{sec:proofs}
+
+\subsection{Theorem \ref{thm:class}, Theorem \ref{thm:weyl}, Proposition \ref{prop:reg}}
+
+We use: $\Ifut_{\mathrm s}$ is open in $M\times M$ (MS Prop.~2.16);
+$\overline{\Jp}=\overline{\Ifut_{\mathrm s}}$ and $\operatorname{Int}\Jp=
+\Ifut_{\mathrm s}$ (MS Prop.~2.17), and likewise for the pasts; if $p\ll r\le q$
+or $p\le r\ll q$ then $p\ll q$, and if $r\in E^+(p)$, $q\in E^+(r)$ then
+$q\in E^+(p)$ or $p\ll q$ (MS Prop.~2.31); two events joined by a causal
+curve that is not a maximizing lightlike curve are joined by a timelike curve,
+and a maximizing lightlike curve is a lightlike geodesic (MS Thm.~2.30(i),
+(ii)); so a causal curve between horismotically related events is a lightlike
+geodesic.
+
+\begin{proof}[Proof of Theorem \ref{thm:class}]
+By Theorem~\ref{thm:main}(a), $B=\Ichr\cup N$. Timelike and causal curves
+between points of a causally convex set stay in it, so $\Ichr$, $\Jm$ and $E^-$
+are locally covariant and $N$ inherits (LC); (NC) is transitivity restricted
+to horismotic pairs. Conversely, $\Ichr\cup N$ is reflexive and satisfies (CB);
+for transitivity, a composition with a chronological step is chronological by
+MS 2.31, and a composition of two $N$-steps is chronological or horismotic, in
+which case (NC) applies. The last claim is Theorem~\ref{thm:flat}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{thm:weyl}]
+(NC): if $x\to y\to b$ along lightlike segments $\gamma_1,\gamma_2$ and
+$x\in E^-(b)$, then $\gamma_1\gamma_2$ is a causal curve between horismotic
+points, hence an unbroken lightlike pregeodesic (MS Thm.~2.30), and it
+contains the Weyl point of $\gamma_1$. (LC): lightlike geodesics between points
+of a causally convex image stay in it, and isometries preserve the Weyl
+tensor. On $\Mink$ the Weyl tensor vanishes. If it vanishes nowhere, every
+horismotic pair is in $N$. If $M$ is flat on an open causally convex $V$ and
+the Weyl tensor is nonzero at some point $z$, horismotic pairs inside $V$ are
+not in $N$ (every causal curve between them stays in $V$), while a horismotic
+pair joined by a lightlike segment through a neighbourhood of $z$ is. The Weyl
+tensor, as a $(1,3)$ tensor, is invariant under conformal rescaling (standard),
+and unparametrized lightlike pregeodesics are conformally invariant (MS
+\S2.6). The last case is not vacuous: the spacetime $M'$ of
+Section~\ref{sec:proofs}, built from a $g$ with nonzero Weyl tensor at $x$, is
+flat on the open causally convex set $\{t<-3r\}$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition \ref{prop:reg}]
+If $B_M$ is closed and contains $\Ichr$, it contains
+$\overline{\Ichr}=\overline{\Ichr_{\mathrm s}}=\overline{\Jm}\supseteq\Jm$, so
+$B=\Jm$ by Theorem~\ref{thm:main}(a). If $B_M\setminus\Delta$ is open and
+contained in $\Jm$, it lies in $\operatorname{Int}\Jm=\Ichr_{\mathrm s}$, so
+$B_M\subseteq\Ichr_{\mathrm s}\cup\Delta=\Ichr$, and (CB) gives $B=\Ichr$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary \ref{cor:worldline}]
+By worldline becoming, $b\in B_{M,\lambda'}(b)$ for every $\lambda'\ni b$; with
+$c=b$, worldline transitivity gives $B_{M,\lambda}(b)\subseteq B_{M,\lambda'}(b)$,
+and by symmetry they are equal. Call the common set $B_M(b)$. Transitivity: if
+$a\in B_M(b)$ and $b\in B_M(c)$, choose $\lambda\ni b$, $\lambda'\ni c$ and apply
+worldline transitivity. (CB): if $a\ll b$, a timelike curve from $a$ to $b$
+extends to an inextendible timelike curve $\lambda$, and $a\in\Ichr(b)\cap\lambda
+\subseteq B_M(b)$. (LC): for $\psi:N\to M$ take $\lambda_N\ni b$ and an
+inextendible extension $\lambda$ of $\psi\circ\lambda_N$; then $a\in B_N(b)\iff
+a\in B_{N,\lambda_N}(b)\iff\psi(a)\in B_{M,\lambda}(\psi(b))\iff\psi(a)\in
+B_M(\psi(b))$.
+\end{proof}
+
+\subsection{Theorem \ref{thm:main}}
+
+The idea: a forbidden pair in a curved spacetime is moved, by local
+covariance, into an auxiliary spacetime that agrees with the original near
+the pair and is flat elsewhere; chronological becoming and transitivity then
+produce a forbidden pair in a flat region, contradicting
+Theorem~\ref{thm:flat}.
+
+\begin{lemma}[Future pairs reduce to spacelike pairs]\label{lem:R}
+If $x\in\Jp(b)\setminus\{b\}$, there is $e\ll x$ spacelike to $b$.
+\end{lemma}
+
+\begin{proof}
+Let $U$ be a convex normal neighbourhood of $b$ and $V\subseteq U$ an open
+neighbourhood of $b$ that is causally convex in $M$ ($M$ is strongly causal;
+MS Remark~2.12 and the construction following it). Causal relations in $U$,
+regarded as a spacetime, are read off $\exp^{-1}$ (MS Prop.~2.10), and for
+points of $V$ they agree with those of $M$ (MS Remark~2.12). A future causal
+curve from $b$ to $x$ is nonconstant ($M$ is causal), so it contains some
+$b_1\in V\setminus\{b\}$; then $b\le b_1\le x$ and $u=\exp_b^{-1}(b_1)$ is
+a nonzero future causal vector. Choose a spacelike $a\in T_bM$ with
+$g(u,a)>0$ and put $q_\varepsilon=\exp_b(\varepsilon a)$. Synge's world
+function $\sigma$ is smooth on $U\times U$ with $\nabla_q\sigma(q,b_1)|_{q=b}=-u$,
+so $2\sigma(q_\varepsilon,b_1)=g(u,u)-2\varepsilon g(u,a)+O(\varepsilon^2)<0$ for
+small $\varepsilon>0$. The vector $\exp^{-1}_{q_\varepsilon}(b_1)$ depends
+continuously on $\varepsilon$ and tends to $u\neq0$, so for small $\varepsilon$
+it is future-directed timelike: $q_\varepsilon\ll b_1$. Also
+$2\sigma(q_\varepsilon,b)=\varepsilon^2g(a,a)>0$, so $q_\varepsilon$ is spacelike
+to $b$. By MS Prop.~2.31(i), $e=q_\varepsilon\ll x$.
+\end{proof}
+
+The same local argument shows that every point has spacelike-separated
+points arbitrarily close to it.
+
+\begin{lemma}[Spacelike chains]\label{lem:E}
+In connected globally hyperbolic $M$, any two points are joined by a finite
+chain of consecutively spacelike-separated points.
+\end{lemma}
+
+\begin{proof}
+Globally hyperbolic spacetimes (MS Def.~3.70) are causally simple (MS
+Prop.~3.71), so $\Jp(z)$ and $\Jm(z)$ are closed and the set of points
+spacelike to $z$ is open. Fix $p$ and let $S$ be the set of points reachable
+from $p$. $S$ is open: if $q\in S$, pick $z$ spacelike to $q$; a
+neighbourhood of $q$ is spacelike to $z$ and reachable via $q,z$.
+$M\setminus S$ is open: if $q\notin S$ and $c$ is spacelike to $q$, a
+neighbourhood $W$ of $q$ is spacelike to $c$; were some $q''\in W$ in $S$, then
+$c\in S$ and $q\in S$. $M$ is connected.
+\end{proof}
+
+The example $M=\mathbb R\times S^3$, $b=(0,p)$, $x=(3\pi,p)$ shows that a single
+point spacelike to two causally related points need not exist; the chain is
+needed.
+
+\paragraph{Set-up.} Fix spacelike-separated $x,b\in M$. Since $J^+\subseteq
+M\times M$ is closed (MS Prop.~3.68(iii), 3.71), there are small closed
+spacelike embedded $3$-discs $D_x\ni x$, $D_b\ni b$, each acausal, with no causal
+curve between them; so $D_x\cup D_b$ is a compact acausal spacelike
+submanifold with boundary, and Bernal and Sánchez give a smooth spacelike
+Cauchy hypersurface $S\supseteq D_x\cup D_b$ \citep[Thm.~1.1, Rem.~4.14]{BS2006}.
+Choose $\delta_0>0$ and a smooth embedded curve $c:[-\delta_0,L+\delta_0]\to S$,
+unit speed for the induced metric $h$, with $c(0)=x$, $c(L)=b$.
+
+\begin{lemma}[Adapted coordinates]\label{lem:B}
+Let $n$ be the future unit normal to $S$, $(e_1=c',e_2,e_3)$ an $h$-orthonormal
+frame along $c$ with $(n,e_1,e_2,e_3)$ positively oriented,
+$\sigma(s,y)=\exp^h_{c(s)}(y_2e_2+y_3e_3)$, and
+$\Phi(t,s,y)=\exp^g_{\sigma(s,y)}(t\,n)$. Write
+$T_\rho=\{|t|<\rho,\ -\rho<s<L+\rho,\ |y|<\rho\}$. For some $\rho_0\le\delta_0$,
+$\Phi$ is a diffeomorphism from $\overline{T_{\rho_0}}$ onto a closed
+neighbourhood of $c([0,L])$, orientation- and time-orientation-preserving;
+$\Phi(\{t=0\})\subseteq S$ while $\Phi(t,\cdot)\in\Ifut(S)$ for $t>0$ and
+$\in\Ichr(S)$ for $t<0$; $\Phi^*g=-dt^2+h_t(s,y)$; and
+$\|\Phi^*g-\eta\|\le K(|t|+|y|)$ on $\overline{T_{\rho_0}}$.
+\end{lemma}
+
+\begin{proof}
+Gaussian normal coordinates to $S$ composed with Riemannian normal
+coordinates of $S$ along the compact embedded arc; points $\Phi(t,\cdot)$ lie
+on the normal timelike geodesic through a point of the acausal $S$. At
+$(t,y)=(0,0)$ the metric is exactly $\eta$ because the frame is orthonormal on
+$c$; the estimate is smoothness on a compact set.
+\end{proof}
+
+\begin{lemma}[Cone control]\label{lem:C}
+Let $\eta_c=-c^2dt^2+ds^2+|dy|^2$, $\tfrac12<\mu<1<\lambda$, and let $k$ be a
+symmetric bilinear form on $\mathbb R^4$. If
+$\|k-\eta_1\|\le\varepsilon<\min\{(1-\mu^2)/(1+\mu^2),(\lambda^2-1)/(\lambda^2+1)\}$
+(operator norm), then $k$ is Lorentzian with $\partial_t$ timelike, and for
+$v=(1,u)$: $|u|\le\mu\Rightarrow k(v,v)<0$, $|u|\ge\lambda\Rightarrow
+k(v,v)>0$. The bound is preserved by $\chi k+(1-\chi)\eta_1$, $0\le\chi\le1$.
+\end{lemma}
+
+\begin{proof}
+$k(v,v)\le-1+|u|^2+\varepsilon(1+|u|^2)$ and $k(v,v)\ge(1-\varepsilon)|u|^2-
+(1+\varepsilon)$. The spatial block is $\ge(1-\varepsilon)I>0$ and
+$k(\partial_t,\partial_t)<0$, which forces signature $(-,+,+,+)$.
+\end{proof}
+
+\paragraph{Constants and the auxiliary spacetime.} In this order: fix
+$\mu,\lambda,\varepsilon$ as in Lemma~\ref{lem:C}; Lemma~\ref{lem:B} gives
+$\rho_0$ and $K$; choose $r>0$ with $3r<\rho_0$, $6Kr\le\varepsilon$ and
+$8\lambda r<L$. Then $\overline{T_{2r}}\subset T_{3r}$; let $\chi$ be smooth,
+$\chi=1$ on a neighbourhood of $\overline{T_{2r}}$,
+$\operatorname{supp}\chi\subset T_{3r}$, and on
+$\mathbb R^4$ put $g'=\chi\,\Phi^*g+(1-\chi)\eta$. On $T_{3r}$,
+$\|\Phi^*g-\eta\|\le6Kr\le\varepsilon$, so Lemma~\ref{lem:C} applies to $g'$
+everywhere and to $\Phi^*g$ on $T_{3r}$. Every $g'$-causal vector therefore
+has $|d(s,y)/dt|\le\lambda$; $t$ increases strictly along future causal
+curves; and an inextendible causal curve along which $t$ had a finite limit
+would have convergent spatial coordinates and extend. Hence every level
+$\{t=c\}$ is a Cauchy hypersurface and $M'=(\mathbb R^4,g')$ is globally
+hyperbolic (MS Thm.~3.75), flat outside $T_{3r}$, and
+$\psi=\Phi^{-1}:\Phi(T_{2r})\to T_{2r}$ is an isometry preserving orientation
+and time orientation.
+
+\begin{lemma}[The slab region is self-determined]\label{lem:D}
+Let $B_0=\{s\in[-r/2,L+r/2],\ |y|\le r/2\}$, $\Sigma=\Phi(\{0\}\times B_0)\subset
+S$ and $\Sigma'=\{0\}\times B_0$. Then:
+\begin{enumerate}
+\item[(i)] $D_M(\Sigma)\subseteq\Phi(T_{2r})$ and $D_{M'}(\Sigma')\subseteq T_{2r}$;
+\item[(ii)] $\psi(D_M(\Sigma))=D_{M'}(\Sigma')$;
+\item[(iii)] $N=\operatorname{int}D_M(\Sigma)$ is causally convex in $M$,
+globally hyperbolic, connected, and contains $x,b$; likewise
+$\psi(N)=\operatorname{int}D_{M'}(\Sigma')$ in $M'$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\emph{Escape paths.} Let $q\in\partial T_{2r}$ with $0<t(q)\le2r$. If the
+projection $(s_q,y_q)$ is not in $B_0$, follow the vertical segment down to
+$t=0$. Otherwise $q$ lies on the lid $t=2r$ with $|y_q|\le r/2$; move with
+velocity $(dt,dy)=(-1,\tfrac\mu2\hat y)$ for coordinate time $2r$, where $\hat y$
+is a unit vector ($y_q/|y_q|$ if $y_q\neq0$), ending at $|y|\in(r/2,3r)$
+because $\mu r>r/2$ and $r/2+\mu r<3r$. Either path lies in $T_{3r}$, has
+coordinate speed $<\mu$, so is timelike for $\Phi^*g$ and for $g'$
+(Lemma~\ref{lem:C}), and ends at a point of $\{t=0\}$ outside $\Sigma'$, i.e.\ on
+$S\setminus\Sigma$ in $M$ ($\Phi$ is injective). A past-directed causal curve
+starting on a Cauchy hypersurface never returns to it. The time-reversed paths
+serve points with $t(q)<0$.
+
+(i) Let $p\in D^+_M(\Sigma)$ with $p\notin\Phi(T_{2r})$, and let $\gamma$ be a
+past-inextendible causal curve from $p$. It meets $\Sigma$; let $\sigma_1$ be
+its first point on $\Sigma$, and $q$ the last point of $\partial\Phi(T_{2r})$ on
+the segment from $p$ to $\sigma_1$. After $q$ the segment lies in
+$\Phi(T_{2r})$, where $t$ increases along future causal curves, so $t(q)>0$.
+The segment $p\to q$, the escape path from $q$, and any past-inextendible
+continuation form a past-inextendible causal curve from $p$ missing $\Sigma$, a
+contradiction. Time-reverse for $D^-$. The same argument works in $M'$, where
+$\{t=0\}$ is a Cauchy hypersurface.
+
+(ii) Let $p\in D^+_M(\Sigma)$, so $p\in\Phi(T_{2r})$ by (i), and let
+$\gamma'$ be a past-inextendible $g'$-causal curve from $\psi(p)$. If
+$\psi(p)\in\Sigma'$ there is nothing to prove; otherwise $t(\psi(p))>0$. Along
+$\gamma'$, $t\to-\infty$; let $\tau_0$ be the first parameter at which $t=0$ and
+$\tau_{\rm exit}$ the first at which $\gamma'$ meets $\partial T_{2r}$. The chart
+and the agreement $g'=\Phi^*g$ extend to a neighbourhood of
+$\overline{T_{2r}}$, so segments of $\gamma'$ up to either time pull back by
+$\Phi$. If $\tau_0\le\tau_{\rm exit}$ (equality included): were
+$\gamma'(\tau_0)\notin\Sigma'$, the pulled-back segment ends on $S\setminus\Sigma$
+and, continued past $S$, is a past-inextendible $M$-curve from $p$ missing
+$\Sigma$ (points with $t>0$ are not on $S$). If $\tau_{\rm exit}<\tau_0$, then
+$t>0$ at the exit point, and the pulled-back segment followed by the escape
+path in $M$ again misses $\Sigma$. Both contradict $p\in D^+_M(\Sigma)$, so $\gamma'$
+meets $\Sigma'$. The reverse inclusion is the same argument with $M$ and $M'$
+exchanged, using $D_{M'}(\Sigma')\subseteq T_{2r}$: no global coordinate $t$ on
+$M$ is needed, since a past-inextendible $M$-curve from a point of
+$\Phi(T_{2r})$ either leaves $\Phi(T_{2r})$ or reaches the Cauchy surface $S$,
+and the same two cases apply. $D^-$ is time-reversed.
+
+(iii) For $q\in D^+(\Sigma)$, $\Jm(q)\cap\Jp(\Sigma)\subseteq D^+(\Sigma)$: a
+past-inextendible curve from $r$ in this set, prefixed by a causal curve
+$q\to r$, meets $\Sigma$; if only on the prefix, at $z$, then $\sigma\le r\le z$
+for some $\sigma\in\Sigma$, and acausality gives $r=z\in\Sigma$. Hence $D(\Sigma)$
+is causally convex: if $p,q\in D(\Sigma)$, $r$ lies on a causal curve $p\to q$,
+and an inextendible causal curve $\lambda$ through $r$ misses $\Sigma$, then in
+the mixed case $p\in D^-$, $q\in D^+$ the curves $(p\to r)\cdot\lambda^+$ and
+$\lambda^-\cdot(r\to q)$ meet $\Sigma$ on $p\to r$ and on $r\to q$, and
+acausality forces both meeting points to be $r$; the cases $p,q\in D^\pm$
+follow from the inclusion just proved. For interior points choose $p^-\ll p$
+and $q^+\gg q$ in $\operatorname{int}D$; then
+$J(p,q)\subseteq\Ifut_{\mathrm s}(p^-)\cap\Ichr_{\mathrm s}(q^+)\subseteq
+D(\Sigma)$, an open set (MS Props.~2.16, 2.31), so $N$ is causally convex, its causal diamonds are the
+compact diamonds of $M$, and $N$ is globally hyperbolic (MS Def.~3.70). In
+$M'$,
+$D_{\eta_\lambda}(\Sigma')\subseteq D_{g'}(\Sigma')\subseteq D_{\eta_\mu}(\Sigma')$
+(narrower cones give larger domains of dependence). The first inclusion puts
+every relative-interior point of $\Sigma'$, in particular $x$ and $b$, in the
+interior; the second puts the projection of every interior point with $t\neq0$
+into $\operatorname{int}B_0$, so its vertical segment to $\{t=0\}$ lies in
+$\Ichr(q^+)\cap\Ifut(z^-)\subseteq N'$ for suitable $q^+$, $z^-$, joining it
+inside $N'$ to the connected set $\operatorname{int}\Sigma'$. Transfer by (ii).
+\end{proof}
+
+By Lemma~\ref{lem:D}, $N$ is an object of $\GH$ and the inclusion $N\hookrightarrow
+M$ and $\psi|_N:N\to M'$ are morphisms. By (LC),
+\begin{equation}\label{eq:transfer}
+x\,B_M\,b\iff x\,B_N\,b\iff\psi(x)\,B_{M'}\,\psi(b).
+\end{equation}
+
+\begin{lemma}[Flat detour]\label{lem:F}
+Let $P,Q$ lie in the flat region of $M'$, be $\eta_\lambda$-spacelike, and be
+joined by a smooth embedded arc $\kappa$ contained in a hyperplane
+$H=\{t=f(s)\}$ with $f$ affine, $|f'|<1/\lambda$, and at positive distance from
+$\overline{T_{3r}}$. Then $P,Q$ are spacelike-separated in $M'$, and there is a
+compact acausal slab $\Sigma''\subset H$, containing $P,Q$ in its relative
+interior, such that $N''=\operatorname{int}D_{M'}(\Sigma'')$ lies in the flat
+region, equals $\operatorname{int}D_\Mink(\Sigma'')$ under the identity, and is
+an object of $\GH$ whose inclusions into $M'$ and $\Mink$ are morphisms. Hence
+$P\,B_{M'}\,Q\iff P\,B_\Mink\,Q$.
+\end{lemma}
+
+\begin{proof}
+A $g'$-causal curve between $P,Q$ would be $\eta_\lambda$-causal. Along
+$g'$-causal curves $\tfrac{d}{d\tau}(t-f(s))\ge\dot t(1-\lambda|f'|)>0$ and
+$t-f(s)\to\pm\infty$, so $H$ is a Cauchy hypersurface for $g'$ and for $\eta$,
+crossed exactly once by every inextendible causal curve of either metric.
+Extend $\kappa$ slightly past $P$ and $Q$ inside $H$, keeping it embedded and off $\overline{T_{3r}}$, and let $\Sigma''$ be its closed
+$\delta$-neighbourhood in $H$. A boost along $s$ followed by a time translation, an isometry of $\eta$ preserving time orientation, makes $H$ horizontal: in the new coordinates $(\tilde t,z)$, $\eta=-d\tilde t^2+|dz|^2$ and
+$H=\{\tilde t=0\}$. Put
+\[
+W^\pm=\{(\tilde t,z):\pm\tilde t\ge0,\ \overline B(z,|\tilde t|)\subseteq\Sigma''\},
+\]
+the two halves of $D_\Mink(\Sigma'')$. As $\delta\downarrow0$ the sets $\Sigma''$ decrease to the extended arc, which is compact with empty interior in $H$. So the largest radius $h(\delta)$ of a closed ball in $\Sigma''$ tends to $0$: a limit of balls of radius bounded below would lie in the arc. Take $\delta$ with $\delta+h(\delta)$ small compared with the $(\tilde t,z)$-distance from the extended arc to $\overline{T_{3r}}$. Every point of $W=W^+\cup W^-$ has $z\in\Sigma''$ and $|\tilde t|\le h(\delta)$, so $W$ is compact and has an open neighbourhood $U$ on which $g'=\eta$.
+For $p$ with $\tilde t(p)\ge0$ let $C(p)=\Jm_\eta(p)\cap\{\tilde t\ge0\}$. If $p\in
+W^+$ then $C(p)\subseteq W^+$, because the balls are nested.
+
+$W^+\subseteq D^+_{M'}(\Sigma'')$: while a past-inextendible $g'$-causal curve from
+$p\in W^+$ stays in $U$ and above $H$ it is $\eta$-causal, so it lies in the
+compact set $C(p)\subset U$. Hence it reaches $H$ inside $C(p)\cap H\subseteq\Sigma''$.
+
+$D^+_{M'}(\Sigma'')\subseteq W^+$: suppose $p\in D^+_{M'}(\Sigma'')\setminus W^+$, and let
+$\gamma$ be a past-inextendible $g'$-causal curve from $p$. It crosses $H$ at a
+point of $\Sigma''\subseteq W^+$. As $W^+$ is closed there is a last point of $\gamma$
+before which it lies outside $W^+$, so we can take $q$ on $\gamma$ above $H$, with
+$q\notin W^+$ and so close to $W^+$ that $C(q)\subset U$. Since $q\notin W^+$, a
+straight $\eta$-causal segment in $C(q)$ runs from $q$ to a point of
+$H\setminus\Sigma''$, and it is $g'$-causal. Then $\gamma$ up to $q$, this segment
+and any past-inextendible continuation form a past-inextendible $g'$-causal curve
+from $p$ that crosses $H$ only outside $\Sigma''$, a contradiction.
+
+Time reversal handles $W^-$, so $D_{M'}(\Sigma'')=W=D_\Mink(\Sigma'')$. Its interior
+$N''=\{|\tilde t|<\operatorname{dist}(z,H\setminus\Sigma'')\}$ lies in $U$, is connected
+and contains $P,Q$. The argument of Lemma~\ref{lem:D}(iii) shows that it is causally
+convex and globally hyperbolic in $M'$ and in $\Mink$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{thm:main}]
+(a) Suppose $B_\Mink\neq\U$; by Theorem~\ref{thm:flat}, $B_\Mink\subseteq\Jm$
+relates no spacelike pair. Let $x\,B_M\,b$ with $x,b$ spacelike-separated, and
+transfer by \eqref{eq:transfer}. Take $w=(-4r,0,0,0)$, $v=(4r,L,0,0)$ and the arc
+$t(s)=-4r+(8r/L)s$, $y(s)=(10r\sin(\pi s/L),0)$, $0\le s\le L$: where $|t|\le3r$,
+$s/L\in[1/8,7/8]$ and $|y|\ge10r\sin(\pi/8)>3r$, elsewhere $|t|>3r$, and the
+slope $8r/L<1/\lambda$. Vertical segments are $\eta_\mu$-timelike, so
+$w\ll'\psi(x)$ and $\psi(b)\ll'v$; (CB) gives $w\,B'\,\psi(x)$ and
+$\psi(b)\,B'\,v$, and (T) gives $w\,B'\,v$. Lemma~\ref{lem:F} gives $w\,B_\Mink\,v$
+with $w,v$ spacelike, a contradiction. If $x\,B_M\,b$ with
+$x\in\Jp(b)\setminus\{b\}$, Lemma~\ref{lem:R} gives $e\ll x$ spacelike to $b$, and
+$e\,B_M\,b$ by (CB) and (T), reducing to the previous case.
+
+(b) Suppose $B_\Mink=\U$. For spacelike $x,b\in M$, transfer to $M'$ and use
+$x'=(4r,0,0,0)$, $b'=(-4r,L,0,0)$ with the arc $t(s)=4r-(8r/L)s$, same $y(s)$:
+$\psi(x)\,B'\,x'$ and $b'\,B'\,\psi(b)$ by (CB), and $x'\,B'\,b'$ by
+Lemma~\ref{lem:F}, since $B_\Mink=\U$; so $x\,B_M\,b$. By Lemma~\ref{lem:E} and
+(T), every pair is related.
+\end{proof}
