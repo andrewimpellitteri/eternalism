@@ -1,5 +1,9 @@
 # Article working draft
 
+> **This is not the project's main paper.** It is the earlier admissibility article. The main output
+> is [What the Past Can Fix](../research/what-the-past-can-fix/). This folder stays here because
+> records and issue text refer to its paths.
+
 Main source: `main.tex`; bibliography: `references.bib`. The article advances a
 provisional philosophical burden-of-proof argument, not a new physical result
 or a completed novelty claim. It is separate from the final synthesis task.

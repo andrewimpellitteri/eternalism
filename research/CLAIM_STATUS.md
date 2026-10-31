@@ -1,5 +1,8 @@
 # Current claim and dependency ledger
 
+The [unified paper](what-the-past-can-fix/) restates the proved results. This ledger still governs
+their status. Files listed in [REVIEW_QUEUE.md](REVIEW_QUEUE.md) gain no status by being in the tree.
+
 ## 31 October: completed source-hinge round
 
 The [round disposition](agentic-philosophy/result-search-round1/DISPOSITION.md)
@@ -73,6 +76,7 @@ Updated 31 October 2026. Integration ledger; status is inherited from the named 
 | Local equations and Cauchy data force actual maximal continuation | Extra bridge required | Same-data nonmaximal smooth restriction remains a solution; maximal-world admissibility is a methodological premise, not eternalism | [Maximality argument](ontology-reconstruction/coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md) |
 | A nontrivial nomological box forces maximal-world admissibility | Rejected worker inference; submission remains in review | Failure of all complete future-state determination claims need not trivialize local laws. C&R p114 bans future information in present descriptions, not all cessation alternatives | [Modal submission review](ontology-reconstruction/coordinator/MODAL_CATEGORY_REVIEW.md) |
 | Predictive sufficiency establishes constitutive unity or a concrete present | Not established | Separate two bridges; coordinator argument, not covered by the bounded philosophy audit | [Constitution test](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md) |
+| Unfinished, interruptible processes require a growing inventory for their explanation | Displayed exclusive-advantage argument rejected at bounded scope | A material feedback/participation account preserves input dependence under either inventory; counterpart criterion is explicit, sufficient metaphysical unity is not proved | [Controlled comparison and review](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md) |
 | Exact material autonomy and robust subsystem behaviour have the same boundary | Refuted for the specified Hamiltonian family; bounded audit integrated | Four-mass spring graph changes at zero coupling; compact-time trajectories converge. Different κ means different Hamiltonians, not same-law control; no refutation of interacting or approximate unity | [Unity test](ontology-reconstruction/coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md) |
 | Restriction-hereditary unity tests select a smallest thick present | Rejected under explicit interval assumptions; bounded audit integrated | Nonempty qualifying family of open intervals containing a mark, hereditary under narrowing; no singleton or whole-history conclusion. Nonhereditary activity criteria survive | [Interval argument and review](ontology-reconstruction/unity-robustness-review/RESULT.md) |
 | Lawful-alternative necessity is nonvacuous with any chosen fixed background | Rejected as a generic inference; new coordinator argument | Absence cases can be excluded by complete data/maximal category. Physical deletion differs from existence-at denial; no complete counterfactual theory or ontology selection | [Constitution §8](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md) |

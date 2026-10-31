@@ -1,0 +1,1170 @@
+{
+  "checked_at_utc": "2026-10-31T17:11:37.642441+00:00",
+  "head": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8",
+  "task_count": 33,
+  "tasks": [
+    {
+      "task": "horizons-echo-exactness",
+      "branch": "agent/horizons-echo-exactness",
+      "branch_head": "d675767f608ce9c5e7c343293c6fa03a3f684767",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "bc39a62117ffd05921d3960cecae50192ae4fe0ce3c934c36b58c5e2c1d247cd",
+          "bytes": 7687,
+          "matching_report_copies": [
+            "research/horizons/glm/echo-exactness/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/horizons/glm/echo-exactness/RESULT.md",
+          "branch_sha256": "193e4fbae058469faa49df3dd901cc3fd80f9697fe15d86b105bf4786ff17851",
+          "bytes": 18761,
+          "main_sha256": "193e4fbae058469faa49df3dd901cc3fd80f9697fe15d86b105bf4786ff17851",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/echo-exactness/sources.jsonl",
+          "branch_sha256": "c55b9843707800c1e5156c8ea52eb4b86574ce2dd9bb628795b125f04bd4eaae",
+          "bytes": 6398,
+          "main_sha256": "c55b9843707800c1e5156c8ea52eb4b86574ce2dd9bb628795b125f04bd4eaae",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/echo-exactness/verify_echo_exactness.py",
+          "branch_sha256": "b0b910785edfda329d124b0b3699019b28aedea6b43a661a141885032a65c457",
+          "bytes": 9848,
+          "main_sha256": "b0b910785edfda329d124b0b3699019b28aedea6b43a661a141885032a65c457",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/echo-exactness/verify_output.txt",
+          "branch_sha256": "f4b5fc73657be74fb5306bdffc6ddcafd1b5de409ee9059972f4a3eaf602b925",
+          "bytes": 1593,
+          "main_sha256": "f4b5fc73657be74fb5306bdffc6ddcafd1b5de409ee9059972f4a3eaf602b925",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "horizons-echo-robustness",
+      "branch": "agent/horizons-echo-robustness",
+      "branch_head": "85bce8c7ddc24cbc8af8b66b2d052ce611a2efca",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "876b080f3a8c8157be38a12f04ed6e39a3a50e16ed459445b04ccfc7327073b2",
+          "bytes": 7434,
+          "matching_report_copies": [
+            "research/horizons/glm/echo-robustness/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/horizons/glm/echo-robustness/RESULT.md",
+          "branch_sha256": "d0bc31ce7b96de0aae969e3a45951da4861b2bb900866eb22a9dbb26ac112617",
+          "bytes": 19858,
+          "main_sha256": "d0bc31ce7b96de0aae969e3a45951da4861b2bb900866eb22a9dbb26ac112617",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/echo-robustness/check_modes.py",
+          "branch_sha256": "6a4f3d5308b09822280bbbe7b11511797e7139247c5e486f0403c0dc9d7526c9",
+          "bytes": 4827,
+          "main_sha256": "6a4f3d5308b09822280bbbe7b11511797e7139247c5e486f0403c0dc9d7526c9",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/echo-robustness/sources.jsonl",
+          "branch_sha256": "a95ed97d131e575766233f256c5ffa1192d295de283ea3a5e627b29d2842c787",
+          "bytes": 12866,
+          "main_sha256": "a95ed97d131e575766233f256c5ffa1192d295de283ea3a5e627b29d2842c787",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "horizons-perturbation-referee",
+      "branch": "agent/horizons-perturbation-referee",
+      "branch_head": "87240790e06df773702d26608f66ddf9f301c4eb",
+      "status": "claimed",
+      "files": [],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "horizons-scalar-priority",
+      "branch": "agent/horizons-scalar-priority",
+      "branch_head": "ab6ba9d1ef7e53e45e56f60b1a27fa619480241f",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "cf737622534059473e19d9a44163550465e105d362f208de796429e46e5fdc7e",
+          "bytes": 8829,
+          "matching_report_copies": [
+            "research/horizons/glm/scalar-priority/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/horizons/glm/scalar-priority/PRIOR_WORK.md",
+          "branch_sha256": "84234c899e7ce727eba22adbbd9ea65f7d1148bd9343da0172e329fa02059712",
+          "bytes": 20483,
+          "main_sha256": "84234c899e7ce727eba22adbbd9ea65f7d1148bd9343da0172e329fa02059712",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/scalar-priority/SEARCH_LOG.md",
+          "branch_sha256": "4651eddbd4a4e2132bc585407c7e256472c92e0ef95e5381e6f14592be83b0ec",
+          "bytes": 5287,
+          "main_sha256": "4651eddbd4a4e2132bc585407c7e256472c92e0ef95e5381e6f14592be83b0ec",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/scalar-priority/echo_mode_check.py",
+          "branch_sha256": "57db08fa101e3b91d7dc01d06968727f36176897a9eae1e95eb089c9470cd272",
+          "bytes": 3817,
+          "main_sha256": "57db08fa101e3b91d7dc01d06968727f36176897a9eae1e95eb089c9470cd272",
+          "result": "identical"
+        },
+        {
+          "path": "research/horizons/glm/scalar-priority/sources.jsonl",
+          "branch_sha256": "38c2d9336e4d0f0f66dc6adfdf1fed99d70b114fc78e660cc949cbb3700bc9c2",
+          "bytes": 15267,
+          "main_sha256": "38c2d9336e4d0f0f66dc6adfdf1fed99d70b114fc78e660cc949cbb3700bc9c2",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-central-history-review",
+      "branch": "agent/lawful-central-history-review",
+      "branch_head": "3c50bd980327e0cb84ba90299ac06fe8fff0392c",
+      "status": "claimed",
+      "files": [],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-completions-constraints",
+      "branch": "agent/lawful-completions-constraints",
+      "branch_head": "9d265a69b2d9d075c3bd0165c67ba9e518408f65",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "15aca5cc5db61f061fb29c2ffc414a5bd1f062dc645c516f873b5927d36c72a8",
+          "bytes": 6636,
+          "matching_report_copies": [
+            "research/lawful-completions/constraints/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/constraints/RESULT.md",
+          "branch_sha256": "5c15566faad59ab91cd5a9e1ca9d537210c6bd68c6510d87e9ed99eed8f9ab41",
+          "bytes": 20029,
+          "main_sha256": "5c15566faad59ab91cd5a9e1ca9d537210c6bd68c6510d87e9ed99eed8f9ab41",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/constraints/sources.jsonl",
+          "branch_sha256": "18ebf90d0c215f167ef726714a81eec9da7eee5a1a62d4e4b4f3b4f316a620af",
+          "bytes": 17280,
+          "main_sha256": "18ebf90d0c215f167ef726714a81eec9da7eee5a1a62d4e4b4f3b4f316a620af",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-completions-priority",
+      "branch": "agent/lawful-completions-priority",
+      "branch_head": "5b8fbb6c9e9cc23cfc470cee950c0d233e329cd2",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "c0bb30c1b420857de980830626aaf9dde23ba05772645ad0f99f4294915d7fdb",
+          "bytes": 3939,
+          "matching_report_copies": [
+            "research/lawful-completions/priority/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/priority/AGENT_REPORT.md",
+          "branch_sha256": "6e4d4ec5fc37fc447890419c4c8c6b1b05d3ed79185756849b8782a2345e8f13",
+          "bytes": 8728,
+          "main_sha256": "6e4d4ec5fc37fc447890419c4c8c6b1b05d3ed79185756849b8782a2345e8f13",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/priority/RESULT.md",
+          "branch_sha256": "bf1fc6033f27dfa0891487fb90890bf66c295027459d6ab595e24c68d435b6dd",
+          "bytes": 39735,
+          "main_sha256": "bf1fc6033f27dfa0891487fb90890bf66c295027459d6ab595e24c68d435b6dd",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/priority/sources.jsonl",
+          "branch_sha256": "73dfd27eca2409c27644c02adba629047f292244129a16a82c555dfbc0e83446",
+          "bytes": 23463,
+          "main_sha256": "73dfd27eca2409c27644c02adba629047f292244129a16a82c555dfbc0e83446",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-finite-cone-continuity",
+      "branch": "agent/lawful-finite-cone-continuity",
+      "branch_head": "b8087295e95aa2fa610aba0e30e6d89639b22ae3",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "b395f50dfd12548f0a3a088f46f936d6e0142b6b0a5548bf25d199b750753913",
+          "bytes": 4659,
+          "matching_report_copies": [
+            "research/lawful-completions/finite-cone-continuity/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/finite-cone-continuity/AGENT_REPORT.md",
+          "branch_sha256": "fd1f47454265fa59c735014dbde38068b35cf08bdba688afb834cd9444e38597",
+          "bytes": 6888,
+          "main_sha256": "fd1f47454265fa59c735014dbde38068b35cf08bdba688afb834cd9444e38597",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/finite-cone-continuity/RESULT.md",
+          "branch_sha256": "58d7ea2a1453a75f2cbaf0cf66c47a4aa6a06ce3589428eabb4c7288d22e5390",
+          "bytes": 22501,
+          "main_sha256": "58d7ea2a1453a75f2cbaf0cf66c47a4aa6a06ce3589428eabb4c7288d22e5390",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/finite-cone-continuity/sources.jsonl",
+          "branch_sha256": "4438770bb005d15d7f75680968938c586c4e42e9ab09e5123352d0eeb196757e",
+          "bytes": 5178,
+          "main_sha256": "4438770bb005d15d7f75680968938c586c4e42e9ab09e5123352d0eeb196757e",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-higher-regularity-audit",
+      "branch": "agent/lawful-higher-regularity-audit",
+      "branch_head": "141930628bc4064f39e44eae2513f93405373e56",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "8d6c1851912ffca90777db1b58501acd6713990b5256ae77914ecccd8f2dd60c",
+          "bytes": 3320,
+          "matching_report_copies": [
+            "research/lawful-completions/higher-regularity-review/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/higher-regularity-review/AGENT_REPORT.md",
+          "branch_sha256": "e743c30325df4318a7aa4e427e8930ca297619c16487617d3afd1ccb89609452",
+          "bytes": 8416,
+          "main_sha256": "e743c30325df4318a7aa4e427e8930ca297619c16487617d3afd1ccb89609452",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/higher-regularity-review/RESULT.md",
+          "branch_sha256": "ac79876f86d3bba033115d5226b31243f4ebd43fea1fe8aea54041edb60d0a80",
+          "bytes": 20767,
+          "main_sha256": "ac79876f86d3bba033115d5226b31243f4ebd43fea1fe8aea54041edb60d0a80",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/higher-regularity-review/sources.jsonl",
+          "branch_sha256": "fd81152f98bddf85f6d86bc35c54a094832ebeef4b57337cf9efe4534b0dfb5f",
+          "bytes": 12439,
+          "main_sha256": "fd81152f98bddf85f6d86bc35c54a094832ebeef4b57337cf9efe4534b0dfb5f",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "lawful-scalar-common-extension",
+      "branch": "agent/lawful-scalar-common-extension",
+      "branch_head": "779cc918d67e52198d43c97cda3e80e9807f2f43",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "76682618e8b4cfbc34a823759c25010b50713d570e901f7e525d527185748d71",
+          "bytes": 9772,
+          "matching_report_copies": [
+            "research/lawful-completions/scalar-common-extension/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/scalar-common-extension/RESULT.md",
+          "branch_sha256": "10959c69089d5bc417ee8d024842e98275d4d4dc6a57aff919f59d3f51198d98",
+          "bytes": 27361,
+          "main_sha256": "10959c69089d5bc417ee8d024842e98275d4d4dc6a57aff919f59d3f51198d98",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/scalar-common-extension/sources.jsonl",
+          "branch_sha256": "48383cee2a8c1c493ff92caff74f6379b1cc0e5f0a8c87662d41c071ddf10470",
+          "bytes": 15561,
+          "main_sha256": "48383cee2a8c1c493ff92caff74f6379b1cc0e5f0a8c87662d41c071ddf10470",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-bridge-premises",
+      "branch": "agent/ontology-bridge-premises",
+      "branch_head": "c15901c3197044c557dc968ffd5e6851f61e283b",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "41521d45bfc2fb6acbebab83a1d7a12740ee386412eacc77e10225580874d14b",
+          "bytes": 8851,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/bridges/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/bridges/RESULT.md",
+          "branch_sha256": "b406113e56ecfaa20893d45500a371e91a6a1b1eefb37a259d2e58ec88aa4b78",
+          "bytes": 39679,
+          "main_sha256": "b406113e56ecfaa20893d45500a371e91a6a1b1eefb37a259d2e58ec88aa4b78",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/bridges/sources.jsonl",
+          "branch_sha256": "523db96a1d73731a252f238f529242e120751569f0355d013c84727959d2647b",
+          "bytes": 23146,
+          "main_sha256": "523db96a1d73731a252f238f529242e120751569f0355d013c84727959d2647b",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-bridges-repair",
+      "branch": "agent/ontology-bridges-repair",
+      "branch_head": "55cf9619c6a10288912aebe0845e520ab9d72099",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "5897aa159035f31d99d8fc06e9b09d3e460b61be6ea261c4847149f5336c853f",
+          "bytes": 7943,
+          "matching_report_copies": [],
+          "result": "no identical report found by report filename",
+          "disposition": "All non-link-target text identical; only Markdown link destinations repaired.",
+          "main_copy": "research/ontology-reconstruction/repairs/bridges/AGENT_REPORT.md",
+          "main_sha256": "e4698a2427c4960cf83ef54637a6f974592e3b5f6f99188c2ddcf695bbfd8332"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/bridges/REPAIR_LOG.md",
+          "branch_sha256": "0bc2226437714ca24a6f7df138a4bfc8fc2551229439d454e02cace44a55503e",
+          "bytes": 11312,
+          "main_sha256": "0bc2226437714ca24a6f7df138a4bfc8fc2551229439d454e02cace44a55503e",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/bridges/RESULT.md",
+          "branch_sha256": "f4e1ac0311d5f358cb8c14533f6a246a0db2a2eccc98a0ecc3e7941c724b9d04",
+          "bytes": 34881,
+          "main_sha256": "f4e1ac0311d5f358cb8c14533f6a246a0db2a2eccc98a0ecc3e7941c724b9d04",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/bridges/checks/expansion_enum.py",
+          "branch_sha256": "12c32ef7d11f4d29bbbbcda3a19741dc49338d6531fcd9f5b67d13f98b9ecb1a",
+          "bytes": 13714,
+          "main_sha256": "12c32ef7d11f4d29bbbbcda3a19741dc49338d6531fcd9f5b67d13f98b9ecb1a",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/bridges/sources.jsonl",
+          "branch_sha256": "07be56bb37fb1e49dde0191a1a5841a849a47e1659d982ebec7a7e5c3cab17a4",
+          "bytes": 25285,
+          "main_sha256": "07be56bb37fb1e49dde0191a1a5841a849a47e1659d982ebec7a7e5c3cab17a4",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-constitutive-bridge-pilot",
+      "branch": "agent/ontology-constitutive-bridge-pilot",
+      "branch_head": "ccb40b501abd64603fdb60bdfa438f83c367b87b",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "5d5dba50d2087e32e9e5a2b40842c385f80af715513def1ce86e1a6995f0bf3e",
+          "bytes": 7022,
+          "matching_report_copies": [
+            "research/agentic-philosophy/constitutive-bridge-pilot/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/agentic-philosophy/constitutive-bridge-pilot/AGENT_REPORT.md",
+          "branch_sha256": "5d5dba50d2087e32e9e5a2b40842c385f80af715513def1ce86e1a6995f0bf3e",
+          "bytes": 7022,
+          "main_sha256": "5d5dba50d2087e32e9e5a2b40842c385f80af715513def1ce86e1a6995f0bf3e",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/constitutive-bridge-pilot/RESULT.md",
+          "branch_sha256": "515ed0e2987ce74ef378bda838511cf3fe930e5b109e08ee7f0730bac9ed96dc",
+          "bytes": 30092,
+          "main_sha256": "515ed0e2987ce74ef378bda838511cf3fe930e5b109e08ee7f0730bac9ed96dc",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/constitutive-bridge-pilot/SOURCES_OR_LIMITS.md",
+          "branch_sha256": "32e7b6d2dde6385ecf222495673143947c5276c66316a902c8367bdce6d5ab9f",
+          "bytes": 6390,
+          "main_sha256": "32e7b6d2dde6385ecf222495673143947c5276c66316a902c8367bdce6d5ab9f",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/constitutive-bridge-pilot/sources.jsonl",
+          "branch_sha256": "0c4a5b40c765afe14a8101f3d160aab5faa0cb1dc383c36f586ed1c60222427b",
+          "bytes": 3268,
+          "main_sha256": "0c4a5b40c765afe14a8101f3d160aab5faa0cb1dc383c36f586ed1c60222427b",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-constitutive-extent-test",
+      "branch": "agent/ontology-constitutive-extent-test",
+      "branch_head": "98422593302e1095e7a541676f847bba8ab338a6",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "58ce6d793bc0709f160eea87ca9d507f010dddfb1f19dbe3195d3723712ff903",
+          "bytes": 3958,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/constitutive-extent/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/constitutive-extent/AGENT_REPORT.md",
+          "branch_sha256": "70177a4e457196024a43eeaba1ccc30c9da582114f62cde653032e3515d0351b",
+          "bytes": 9406,
+          "main_sha256": "70177a4e457196024a43eeaba1ccc30c9da582114f62cde653032e3515d0351b",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/constitutive-extent/RESULT.md",
+          "branch_sha256": "4b676627f4d1913d0b76745e7d0b7072131721340e2c7c40517cc7ada6625189",
+          "bytes": 32478,
+          "main_sha256": "4b676627f4d1913d0b76745e7d0b7072131721340e2c7c40517cc7ada6625189",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/constitutive-extent/check_constitutive_extent.py",
+          "branch_sha256": "43a7054a8641107cfb2a16fb874a0ebbbca4d7f9935f58e85ea81977d0067d9f",
+          "bytes": 14190,
+          "main_sha256": "43a7054a8641107cfb2a16fb874a0ebbbca4d7f9935f58e85ea81977d0067d9f",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/constitutive-extent/sources.jsonl",
+          "branch_sha256": "e72d924fd15e8a1e0ecbba525cbf0435a01743217f67d710a294450074982cf6",
+          "bytes": 16164,
+          "main_sha256": "e72d924fd15e8a1e0ecbba525cbf0435a01743217f67d710a294450074982cf6",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-coordination-unity",
+      "branch": "agent/ontology-coordination-unity",
+      "branch_head": "2009f3a8c7efc7102d2c1b2d6be3e5856525eb5e",
+      "status": "review",
+      "files": [
+        {
+          "path": "research/ontology-reconstruction/coordination-unity/AGENT_REPORT.md",
+          "branch_sha256": "9b8d63f2ed2b9230c153dde2efd97fa476336dc9e0ffcd53b639d997bdb13175",
+          "bytes": 11214,
+          "main_sha256": "9b8d63f2ed2b9230c153dde2efd97fa476336dc9e0ffcd53b639d997bdb13175",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/coordination-unity/RESULT.md",
+          "branch_sha256": "646d48534b27d933a13083634afe6a29eeea774bc6e365cc9e61e651a601851b",
+          "bytes": 19233,
+          "main_sha256": "646d48534b27d933a13083634afe6a29eeea774bc6e365cc9e61e651a601851b",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/coordination-unity/check_unity_interventions.py",
+          "branch_sha256": "199ceee1a7e8b2a00fee7a1e988969d4625ff31ba331fea4b7d334dc76f80099",
+          "bytes": 7140,
+          "main_sha256": "199ceee1a7e8b2a00fee7a1e988969d4625ff31ba331fea4b7d334dc76f80099",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/coordination-unity/sources.jsonl",
+          "branch_sha256": "adec4486c1839754e2708c298e1dee78ae51ec7edcb738725e1343ab3ed9a96a",
+          "bytes": 14383,
+          "main_sha256": "adec4486c1839754e2708c298e1dee78ae51ec7edcb738725e1343ab3ed9a96a",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-cycle-recovery-test",
+      "branch": "agent/ontology-cycle-recovery-test",
+      "branch_head": "6fae66bc5d6c10fc7422a4b203867f3278b94f16",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "75b7aec820e3f5285eb510c0196522980e86b3c82ca36c00edc93e587c913907",
+          "bytes": 4736,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/cycle-recovery/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/cycle-recovery/AGENT_REPORT.md",
+          "branch_sha256": "42932bd51940f9547dc000bcddd36c3ba199fd83cdc6d6ba2b2f78f5ae587f28",
+          "bytes": 12234,
+          "main_sha256": "42932bd51940f9547dc000bcddd36c3ba199fd83cdc6d6ba2b2f78f5ae587f28",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/cycle-recovery/RESULT.md",
+          "branch_sha256": "2c3693fa0bdd8a11c6da3643688b0247a9a34818045a4b3bc81ab277acdd816d",
+          "bytes": 23080,
+          "main_sha256": "2c3693fa0bdd8a11c6da3643688b0247a9a34818045a4b3bc81ab277acdd816d",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/cycle-recovery/sources.jsonl",
+          "branch_sha256": "e101f61822ad407d527aa7dd6762c33209e05047999b5393b10729abb444f1d5",
+          "bytes": 32587,
+          "main_sha256": "e101f61822ad407d527aa7dd6762c33209e05047999b5393b10729abb444f1d5",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-equivalence-repair",
+      "branch": "agent/ontology-equivalence-repair",
+      "branch_head": "5bb8c3a7fcf143f188e0b24a9a7887822570e633",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "6c45094553737d719d0bba9aef3b39a776ac2266d4158f976039919f11ff70a5",
+          "bytes": 10275,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/repairs/equivalence/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/equivalence/REPAIR_LOG.md",
+          "branch_sha256": "be3fe8e6dd13c8baa3464a058f0f8a9230716ebc1aad49fbffd04847747311bc",
+          "bytes": 10755,
+          "main_sha256": "be3fe8e6dd13c8baa3464a058f0f8a9230716ebc1aad49fbffd04847747311bc",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/equivalence/RESULT.md",
+          "branch_sha256": "84d1c9bb39ec94354ccef8f17832531ce20848359e34353aaef03765f86581a4",
+          "bytes": 39089,
+          "main_sha256": "cd88a069f037ebefc43d112b1c2b904e630291dadf8935508c0eaeaff562c777",
+          "result": "main differs; requires disposition, not overwrite",
+          "disposition": "All non-link-target text identical; only Markdown link destinations repaired.",
+          "main_copy": "research/ontology-reconstruction/repairs/equivalence/RESULT.md"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/equivalence/check_repairs.py",
+          "branch_sha256": "edd677d94be2d1ff54c650d357d3d30010edc8db6576e8d0e229e2294898776f",
+          "bytes": 14270,
+          "main_sha256": "edd677d94be2d1ff54c650d357d3d30010edc8db6576e8d0e229e2294898776f",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/equivalence/sources.jsonl",
+          "branch_sha256": "b654ed3896c9ad95f2589476d468ef774445d1d7f9126ca0ff617045f64dfd47",
+          "bytes": 24466,
+          "main_sha256": "b654ed3896c9ad95f2589476d468ef774445d1d7f9126ca0ff617045f64dfd47",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-expansion-equivalence",
+      "branch": "agent/ontology-expansion-equivalence",
+      "branch_head": "d26520bf3b1580f8f2cb3345083db4a3518c7c92",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "6516ded0a37dbd454315c6b788913025a99d2f40281f251b9961fbb53ea1838c",
+          "bytes": 8656,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/equivalence/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/equivalence/RESULT.md",
+          "branch_sha256": "7128c0b7a90e8a6152a6946ed7758b5ab1dc5799d6ecba4a40e9a456b8e3e0a0",
+          "bytes": 39994,
+          "main_sha256": "7128c0b7a90e8a6152a6946ed7758b5ab1dc5799d6ecba4a40e9a456b8e3e0a0",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/equivalence/check_poset_expansion.py",
+          "branch_sha256": "6afdf88042f27823f9187d60e3e822d4ea924c1f14d40b3ea043047a1bd080ab",
+          "bytes": 3267,
+          "main_sha256": "6afdf88042f27823f9187d60e3e822d4ea924c1f14d40b3ea043047a1bd080ab",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/equivalence/sources.jsonl",
+          "branch_sha256": "39e9ba9fd1ba1896f99bf79dd2c39d0ef08b5bff5903699f65956d3ea1e3a6cc",
+          "bytes": 22648,
+          "main_sha256": "39e9ba9fd1ba1896f99bf79dd2c39d0ef08b5bff5903699f65956d3ea1e3a6cc",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-modal-category-bridge",
+      "branch": "agent/ontology-modal-category-bridge",
+      "branch_head": "5ddb63de9b66090ae3a8c7bc10f31f543194f916",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "c1dfd6da359ed0ef26a5bd405afecd080ca9883d746b43ac382b6d8950333443",
+          "bytes": 8299,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/modal-category/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/modal-category/RESULT.md",
+          "branch_sha256": "362ce88ea31d363e0e5ffb17f546bef439bbd07deee21b37c7722d48450b0bf8",
+          "bytes": 31618,
+          "main_sha256": "362ce88ea31d363e0e5ffb17f546bef439bbd07deee21b37c7722d48450b0bf8",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/modal-category/check_modal_witnesses.py",
+          "branch_sha256": "4e701f27e0158aa62892a1774cd648314d9d8c0866e2df45e260a411a60c407e",
+          "bytes": 4869,
+          "main_sha256": "4e701f27e0158aa62892a1774cd648314d9d8c0866e2df45e260a411a60c407e",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/modal-category/sources.jsonl",
+          "branch_sha256": "d05e7df9f09b561c68618fd3fa72bdfa9a914eba796e2f501ecfee7470664b11",
+          "bytes": 16562,
+          "main_sha256": "d05e7df9f09b561c68618fd3fa72bdfa9a914eba796e2f501ecfee7470664b11",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-modal-density-search",
+      "branch": "agent/ontology-modal-density-search",
+      "branch_head": "7e58c31e449a19f7b6d66b4fb00247e8da466b5f",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "accfd87ef11e11f5e71bc2e4f33a434c7cd1eb079f3be09652c094333e687eb2",
+          "bytes": 8743,
+          "matching_report_copies": [
+            "research/agentic-philosophy/result-search-round1/modal-density/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/modal-density/AGENT_REPORT.md",
+          "branch_sha256": "accfd87ef11e11f5e71bc2e4f33a434c7cd1eb079f3be09652c094333e687eb2",
+          "bytes": 8743,
+          "main_sha256": "accfd87ef11e11f5e71bc2e4f33a434c7cd1eb079f3be09652c094333e687eb2",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/modal-density/CANDIDATE.md",
+          "branch_sha256": "ad432180c72678d04c8f86def8f7b03dd09b41858cc25e5e3bd6d909dc2e9c5c",
+          "bytes": 19015,
+          "main_sha256": "ad432180c72678d04c8f86def8f7b03dd09b41858cc25e5e3bd6d909dc2e9c5c",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/modal-density/sources.jsonl",
+          "branch_sha256": "1b0dd32f8f5e7000457b3da2e5af75a604098503df509ec3117cda77b51fc547",
+          "bytes": 15493,
+          "main_sha256": "1b0dd32f8f5e7000457b3da2e5af75a604098503df509ec3117cda77b51fc547",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-natural-assignments",
+      "branch": "agent/ontology-natural-assignments",
+      "branch_head": "3abcacb3b87283c0786fa5f572e7f85ae27b8481",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "448fa9ab759803e9adc71c17a61b3bcaeec774cd39f3f16287596c2d2ba72579",
+          "bytes": 7509,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/classification/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/classification/RESULT.md",
+          "branch_sha256": "511e83ddb5925e26abcf7286c0ac59e47d772aa63fa3cba9fb5f6d078f665be3",
+          "bytes": 22004,
+          "main_sha256": "511e83ddb5925e26abcf7286c0ac59e47d772aa63fa3cba9fb5f6d078f665be3",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/classification/checks/countermodels.py",
+          "branch_sha256": "e00c9436376e332889e0498673a5ae3ac62b817af91603a252f549a9ca864821",
+          "bytes": 13822,
+          "main_sha256": "e00c9436376e332889e0498673a5ae3ac62b817af91603a252f549a9ca864821",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/classification/sources.jsonl",
+          "branch_sha256": "3d501665a6da5786fb7106688ee6eecdf0a2c9d54321789bb0ea66188bbec9ca",
+          "bytes": 15360,
+          "main_sha256": "3d501665a6da5786fb7106688ee6eecdf0a2c9d54321789bb0ea66188bbec9ca",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-null-refinements-review",
+      "branch": "agent/ontology-null-refinements-review",
+      "branch_head": "4ec5c9db0b3335e6d9c3d2323243af5c5e0f0277",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "3aa6a447f1a4aaa77cfc33f8e5cb4a586f3226227ac565766c7559f9c168c190",
+          "bytes": 3750,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/null-refinement-review/AGENT_REPORT.worker.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/null-refinement-review/AGENT_REPORT.md",
+          "branch_sha256": "89b66b095a44fd4bfa2d2cc4bc3b7664e5c9202a66255dfa8dd0ae90e0c3920c",
+          "bytes": 6959,
+          "main_sha256": "89b66b095a44fd4bfa2d2cc4bc3b7664e5c9202a66255dfa8dd0ae90e0c3920c",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/null-refinement-review/RESULT.md",
+          "branch_sha256": "0c2af4e47844c8291eae2c318b73bdd0e0f5da2eb11ff973234ac3d17b60e342",
+          "bytes": 18785,
+          "main_sha256": "0c2af4e47844c8291eae2c318b73bdd0e0f5da2eb11ff973234ac3d17b60e342",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/null-refinement-review/check_null_refinement_review.py",
+          "branch_sha256": "36df84a3c56ff779a7d9542983b8b44308310e71445ddb7f8d84b2d31c543709",
+          "bytes": 16924,
+          "main_sha256": "36df84a3c56ff779a7d9542983b8b44308310e71445ddb7f8d84b2d31c543709",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/null-refinement-review/sources.jsonl",
+          "branch_sha256": "7d5ea9a86920964365837b423d95f57b16207e403e2f5295574a2e098013d401",
+          "bytes": 3710,
+          "main_sha256": "7d5ea9a86920964365837b423d95f57b16207e403e2f5295574a2e098013d401",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-occurrence-warrant-search",
+      "branch": "agent/ontology-occurrence-warrant-search",
+      "branch_head": "f98641ce90108e83198937041e2b59b8e2136c94",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "b0e68e3d0adcc7807242afc85ac11a366c07ec16e4d57e42e91d2336b27b8bb5",
+          "bytes": 7484,
+          "matching_report_copies": [
+            "research/agentic-philosophy/result-search-round1/occurrence/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/occurrence/AGENT_REPORT.md",
+          "branch_sha256": "b0e68e3d0adcc7807242afc85ac11a366c07ec16e4d57e42e91d2336b27b8bb5",
+          "bytes": 7484,
+          "main_sha256": "b0e68e3d0adcc7807242afc85ac11a366c07ec16e4d57e42e91d2336b27b8bb5",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/occurrence/CANDIDATE.md",
+          "branch_sha256": "d7fbedc38eb13962e3ab860d5d5e0e20bb93dbbdf56cd3b37d8945b540f9a33a",
+          "bytes": 18101,
+          "main_sha256": "d7fbedc38eb13962e3ab860d5d5e0e20bb93dbbdf56cd3b37d8945b540f9a33a",
+          "result": "identical"
+        },
+        {
+          "path": "research/agentic-philosophy/result-search-round1/occurrence/sources.jsonl",
+          "branch_sha256": "4dcedc363ca1b3b83f265dacd46e928af4e5c9ee270b9cfa801c2e269095d05e",
+          "bytes": 12209,
+          "main_sha256": "4dcedc363ca1b3b83f265dacd46e928af4e5c9ee270b9cfa801c2e269095d05e",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-persistence-priorart",
+      "branch": "agent/ontology-persistence-priorart",
+      "branch_head": "b8c086e0254e7f60f371cf6a027914113cfc685d",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "549469cfa0b865cb2763f7e41c24e5ba9ca6608214fef98660d8565a0add4588",
+          "bytes": 8441,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/persistence-priorart/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/persistence-priorart/AGENT_REPORT.md",
+          "branch_sha256": "549469cfa0b865cb2763f7e41c24e5ba9ca6608214fef98660d8565a0add4588",
+          "bytes": 8441,
+          "main_sha256": "549469cfa0b865cb2763f7e41c24e5ba9ca6608214fef98660d8565a0add4588",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/persistence-priorart/RESULT.md",
+          "branch_sha256": "cbb6eaad302d9f1dd63f397ac7e45fa8a0c4290bb01fa3ce27220e75ed85b6e4",
+          "bytes": 20267,
+          "main_sha256": "cbb6eaad302d9f1dd63f397ac7e45fa8a0c4290bb01fa3ce27220e75ed85b6e4",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/persistence-priorart/check_order_skeleton.py",
+          "branch_sha256": "10661a60cf8f20752afec705d48246a0a1a23c1fbb9a7a7ff1fcf31b9f2169e4",
+          "bytes": 8900,
+          "main_sha256": "10661a60cf8f20752afec705d48246a0a1a23c1fbb9a7a7ff1fcf31b9f2169e4",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/persistence-priorart/sources.jsonl",
+          "branch_sha256": "5ab4d81fa3366f620a6e7fbc6d203d35594e742c26b82f6b659d6d27987d7552",
+          "bytes": 20221,
+          "main_sha256": "5ab4d81fa3366f620a6e7fbc6d203d35594e742c26b82f6b659d6d27987d7552",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-rival-contracts",
+      "branch": "agent/ontology-rival-contracts",
+      "branch_head": "1fb23fdf6fb85de05b627b04b7bb648dd394c140",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "d6857b0170055a845d1df945d722f71e1114c89a3a0735dc78ab1f0535096cd0",
+          "bytes": 7160,
+          "matching_report_copies": [
+            "research/ontology-reconstruction/rivals/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/ontology-reconstruction/rivals/RESULT.md",
+          "branch_sha256": "0e20841344e04f6f1d488872e6e249bf7a14c9b7b9aae721ba22833a280dce7f",
+          "bytes": 39331,
+          "main_sha256": "0e20841344e04f6f1d488872e6e249bf7a14c9b7b9aae721ba22833a280dce7f",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/rivals/sources.jsonl",
+          "branch_sha256": "43b0eacd072fb11d91a47ad80d2f8a374cc1b4e41733fca775be99b8a71004fd",
+          "bytes": 26389,
+          "main_sha256": "43b0eacd072fb11d91a47ad80d2f8a374cc1b4e41733fca775be99b8a71004fd",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "ontology-rivals-repair",
+      "branch": "agent/ontology-rivals-repair",
+      "branch_head": "948945fae2e6c3dc708547f07519ee8a2baca311",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "a01083e7e8ac411712efe628e9fafa84b3d9705324402171c184721490bbb187",
+          "bytes": 8858,
+          "matching_report_copies": [],
+          "result": "no identical report found by report filename",
+          "disposition": "All non-link-target text identical; only Markdown link destinations repaired.",
+          "main_copy": "research/ontology-reconstruction/repairs/rivals/AGENT_REPORT.md",
+          "main_sha256": "4e4a172ddef33b67cd8ef2e3c6fdb7beebc76153a95d9375ff9d09eb1c2fd220"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/rivals/REPAIR_LOG.md",
+          "branch_sha256": "30b12dd9ccac87c37a00647e1242d3267f8c8acc9ac4a9057c12db6c7f16c5b2",
+          "bytes": 10888,
+          "main_sha256": "30b12dd9ccac87c37a00647e1242d3267f8c8acc9ac4a9057c12db6c7f16c5b2",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/rivals/RESULT.md",
+          "branch_sha256": "302a0c3aae3f1e924a62fd9ab45db952331f508b70c4083a1fb7bbcc53f6f7ec",
+          "bytes": 45275,
+          "main_sha256": "9182aea2568842c53874c60e36fc3bab611e3724a642eaadf4c6bbfa0c4d06e1",
+          "result": "main differs; requires disposition, not overwrite",
+          "disposition": "All non-link-target text identical; only Markdown link destinations repaired.",
+          "main_copy": "research/ontology-reconstruction/repairs/rivals/RESULT.md"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/rivals/checks/grounding_translation_check.py",
+          "branch_sha256": "4719ec1dd2f9d5281d99604c5915a4b1d18e789d96cf8659df907381da80db12",
+          "bytes": 10747,
+          "main_sha256": "4719ec1dd2f9d5281d99604c5915a4b1d18e789d96cf8659df907381da80db12",
+          "result": "identical"
+        },
+        {
+          "path": "research/ontology-reconstruction/repairs/rivals/sources.jsonl",
+          "branch_sha256": "a74559dd355f02fba19f672589a52e34be1c2e1682d0a814d3438b74f219318e",
+          "bytes": 41260,
+          "main_sha256": "a74559dd355f02fba19f672589a52e34be1c2e1682d0a814d3438b74f219318e",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "past-shadow-ltb-sources",
+      "branch": "agent/past-shadow-ltb-sources",
+      "branch_head": "7862332f53c577dd8d1584c771a6d08237a31575",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "e7793a1025ee7f8f6a5043ae64801bccd9011be79918baa51f95f414b202a405",
+          "bytes": 7915,
+          "matching_report_copies": [
+            "research/lawful-completions/past-shadow/sources/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/lawful-completions/past-shadow/sources/RESULT.md",
+          "branch_sha256": "2304b1ceba661c627abe4dfe7e2c715f9bccacf30628cccea30bf3ef443db535",
+          "bytes": 17219,
+          "main_sha256": "2304b1ceba661c627abe4dfe7e2c715f9bccacf30628cccea30bf3ef443db535",
+          "result": "identical"
+        },
+        {
+          "path": "research/lawful-completions/past-shadow/sources/sources.jsonl",
+          "branch_sha256": "659ed1ee105bd094d8052263a9ffa0aa8ce8d11da73b0ce2d1abec8e55ec558b",
+          "bytes": 21347,
+          "main_sha256": "659ed1ee105bd094d8052263a9ffa0aa8ce8d11da73b0ce2d1abec8e55ec558b",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "prior-art-becoming",
+      "branch": "agent/prior-art-becoming",
+      "branch_head": "ab5528dde62f33c4a77fba78a9e0bf17f76410f1",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "54650e7ba4b0d7c0cdf8dedfe55a68f45bb0ebe7a72bbf72fc1febb06fedc4c3",
+          "bytes": 6453,
+          "matching_report_copies": [
+            "research/bowtie-horizons-prior-art/becoming/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/bowtie-horizons-prior-art/becoming/RESULT.md",
+          "branch_sha256": "e1c821e8617927a412d4acaa82d050e5ed34000d26c339aad52a3dbf69892da2",
+          "bytes": 20321,
+          "main_sha256": "e1c821e8617927a412d4acaa82d050e5ed34000d26c339aad52a3dbf69892da2",
+          "result": "identical"
+        },
+        {
+          "path": "research/bowtie-horizons-prior-art/becoming/sources.jsonl",
+          "branch_sha256": "acf4e2c6ccf42dbf5a6e03db5bfa30e3c899ed4bddd53c1ceb3ac7c67a5f322c",
+          "bytes": 21464,
+          "main_sha256": "acf4e2c6ccf42dbf5a6e03db5bfa30e3c899ed4bddd53c1ceb3ac7c67a5f322c",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "screening-review",
+      "branch": "agent/screening-review",
+      "branch_head": "ef924b1f38591ef19d0a9996664b986115844ad7",
+      "status": "review",
+      "files": [
+        {
+          "path": "AGENT_REPORT.md",
+          "branch_sha256": "d339fbda09f6cd27699e9a4ff2b9ed483cb851ffc161f7f1dc79de73738dea18",
+          "bytes": 8456,
+          "matching_report_copies": [
+            "research/bowtie-horizons-screening-review/AGENT_REPORT.md"
+          ],
+          "result": "report copied with identical bytes"
+        },
+        {
+          "path": "research/bowtie-horizons-screening-review/RESULT.md",
+          "branch_sha256": "26f9c678b9013d331826ce5b6c7324bf1395f245be730b7f81d08f109cc9545c",
+          "bytes": 27180,
+          "main_sha256": "26f9c678b9013d331826ce5b6c7324bf1395f245be730b7f81d08f109cc9545c",
+          "result": "identical"
+        },
+        {
+          "path": "research/bowtie-horizons-screening-review/sources.jsonl",
+          "branch_sha256": "2bafe6ed910e9bf7748d43cb089aad1b47b84b416ac1f41f5222b7aeb47167e0",
+          "bytes": 7693,
+          "main_sha256": "2bafe6ed910e9bf7748d43cb089aad1b47b84b416ac1f41f5222b7aeb47167e0",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "stein-core-repairs",
+      "branch": "agent/stein-core-repairs",
+      "branch_head": "3b04dbef193dcceb395b08d0815996cf08a3b9fc",
+      "status": "review",
+      "files": [
+        {
+          "path": "research/stein-gr/tasks/core-repairs/AGENT_REPORT.md",
+          "branch_sha256": "7b138b666d560bbcb6c77d07408f69762c9a185c61c8478cf3592adb29ac4c0c",
+          "bytes": 9631,
+          "main_sha256": "7b138b666d560bbcb6c77d07408f69762c9a185c61c8478cf3592adb29ac4c0c",
+          "result": "identical"
+        },
+        {
+          "path": "research/stein-gr/tasks/core-repairs/PATCH.md",
+          "branch_sha256": "bb1f7d0dc02cdfa06f9aea6590755235526ef982022c0a4c808e636b7e3c1249",
+          "bytes": 23677,
+          "main_sha256": "bb1f7d0dc02cdfa06f9aea6590755235526ef982022c0a4c808e636b7e3c1249",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "stein-interpretation-audit",
+      "branch": "agent/stein-interpretation-audit",
+      "branch_head": "e30a37294c8fabf0a1f7b22c17d854091729e633",
+      "status": "claimed",
+      "files": [],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "stein-null-boundary-audit",
+      "branch": "agent/stein-null-boundary-audit",
+      "branch_head": "0c6d2c59c651c0d97edd9f769c8bb949d5f65c82",
+      "status": "claimed",
+      "files": [],
+      "selection": "changed since recorded base"
+    },
+    {
+      "task": "stein-priority-audit",
+      "branch": "agent/stein-priority-audit",
+      "branch_head": "2ab31b3b69782b9b1fc1d12b7e24d8e2daf04797",
+      "status": "review",
+      "files": [
+        {
+          "path": "research/stein-gr/tasks/priority-audit/AGENT_REPORT.md",
+          "branch_sha256": "b15c026321fa39c9452027e40d6253a81f888f46e6b7e607a1dc40736f6e095f",
+          "bytes": 7524,
+          "main_sha256": "b15c026321fa39c9452027e40d6253a81f888f46e6b7e607a1dc40736f6e095f",
+          "result": "identical"
+        },
+        {
+          "path": "research/stein-gr/tasks/priority-audit/SEARCH_LOG.md",
+          "branch_sha256": "1ac25e7c6fc00928a707c306db8eb1ced3b05704092283fb24921ca2d9fc9fa9",
+          "bytes": 6380,
+          "main_sha256": "1ac25e7c6fc00928a707c306db8eb1ced3b05704092283fb24921ca2d9fc9fa9",
+          "result": "identical"
+        },
+        {
+          "path": "research/stein-gr/tasks/priority-audit/VERDICT.md",
+          "branch_sha256": "e77bbe4ccea23193c11c791ff9697bd2132ac374f1e5d27b89a6bc2e6f0ae350",
+          "bytes": 15987,
+          "main_sha256": "e77bbe4ccea23193c11c791ff9697bd2132ac374f1e5d27b89a6bc2e6f0ae350",
+          "result": "identical"
+        },
+        {
+          "path": "research/stein-gr/tasks/priority-audit/sources.jsonl",
+          "branch_sha256": "1595e93fef38513929e5985dd2174921f31c25dd746e081e8937a4dd0098e2ca",
+          "bytes": 18431,
+          "main_sha256": "1595e93fef38513929e5985dd2174921f31c25dd746e081e8937a4dd0098e2ca",
+          "result": "identical"
+        }
+      ],
+      "selection": "changed since recorded base"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "checked_on": "2026-10-31",
+  "audit_role": "direct coordinator; no spawned worker",
+  "source_read_depth": "selected full-text primary HTML; statement/proof fragments as registered, not the full paper",
+  "inputs": [
+    {
+      "path": "research/lawful-completions/claude-central-history/RESULT.md",
+      "sha256": "d34aa658ddd2f64004a285dccd2c27bb7f83c824ff8e01d525fbf42d48be3fb2",
+      "bytes": 8866,
+      "repository_commit": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8"
+    },
+    {
+      "path": "research/lawful-completions/claude-central-history/REVIEW.md",
+      "sha256": "ac171ac174fe52bf031a2f6a16b4457a09eea5b635b54fe7d1d176c10fbc04a5",
+      "bytes": 14572,
+      "repository_commit": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8"
+    },
+    {
+      "path": "research/lawful-completions/central-history-review/RESULT.md",
+      "sha256": "217e10bdc07cdfade681538ea6560c0cff7aa671012c05ae7422f4d11c75b8a5",
+      "bytes": 21745,
+      "repository_commit": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8"
+    },
+    {
+      "path": "research/lawful-completions/central-history-review/AGENT_REPORT.md",
+      "sha256": "a1476d015356874b7ad90dd54d279a69c9de0b69a39d2cf017868f7d5f0a88fe",
+      "bytes": 8574,
+      "repository_commit": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8"
+    },
+    {
+      "path": "research/lawful-completions/coordinator/INCOMING_MASS.md",
+      "sha256": "c6bbd2e372ea8ae38df2457fe72a20ced9509ad6d1770d17ba673eb7f1351fac",
+      "bytes": 2962,
+      "repository_commit": "781ee9088e0b02e34cb35e15e0249d7cf2a1d8b8"
+    }
+  ],
+  "central_worktree_rescue": [
+    {
+      "path": "research/lawful-completions/central-history-review/RESULT.md",
+      "main_exists": true,
+      "worktree_exists": true,
+      "main_sha256": "217e10bdc07cdfade681538ea6560c0cff7aa671012c05ae7422f4d11c75b8a5",
+      "main_bytes": 21745,
+      "worktree_sha256": "217e10bdc07cdfade681538ea6560c0cff7aa671012c05ae7422f4d11c75b8a5",
+      "worktree_bytes": 21745,
+      "byte_identical": true
+    },
+    {
+      "path": "research/lawful-completions/central-history-review/AGENT_REPORT.md",
+      "main_exists": true,
+      "worktree_exists": true,
+      "main_sha256": "a1476d015356874b7ad90dd54d279a69c9de0b69a39d2cf017868f7d5f0a88fe",
+      "main_bytes": 8574,
+      "worktree_sha256": "a1476d015356874b7ad90dd54d279a69c9de0b69a39d2cf017868f7d5f0a88fe",
+      "worktree_bytes": 8574,
+      "byte_identical": true
+    },
+    {
+      "path": "research/lawful-completions/central-history-review/sources.jsonl",
+      "main_exists": false,
+      "worktree_exists": false
+    }
+  ],
+  "private_audit_location": "/private/tmp/codex-cleanup-audit-2026-10-31",
+  "limitations": [
+    "No complete ignored-file census",
+    "No full reconstruction of external bootstrap",
+    "No complete interpolation acceptance",
+    "No novelty or temporal ontology inferred"
+  ]
+}

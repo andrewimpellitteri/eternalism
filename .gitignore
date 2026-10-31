@@ -7,9 +7,14 @@ __pycache__/
 
 tmp/
 
-# Copyrighted primary-source scans: keep locally, never commit.
+# Copyrighted books and scans: keep locally, never commit.
+sources-local/
 knowledge/**/primary/*.pdf
 *.pdf
 
 # Our own compiled manuscripts.
 !research/what-the-past-can-fix/what-the-past-can-fix.pdf
+!research/stein-gr/stein-gr.pdf
+!research/horizons/horizons.pdf
+!research/paper-novel/output/pdf/complex-percolation-note.pdf
+!output/pdf/*.pdf
