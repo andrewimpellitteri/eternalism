@@ -4,9 +4,9 @@ March the SSESF first-order system of SMOOTHNESS_BOOTSTRAP.md s1 on the finite
 cone from u0, with the axis at u=v, and report at central proper time T:
     e(eps) = |phi(t(T),t(T)) - Phi(T)|.
 CUBIC_TRACE.md predicts e = O(eps^3), so e doubles by a factor near 8.
-Two grids separate this scaling from the O(h^2) discretization error.
-A second run adds a late tail G, to show the reading does not depend on it,
-and reports the mass received by readout time against the total.
+Two grids separate this scaling from the discretization error.
+A second run adds a tail after readout. Its unchanged reading is forced by the
+marching order, so that line illustrates decoupling and does not test it.
 """
 import math
 import signal

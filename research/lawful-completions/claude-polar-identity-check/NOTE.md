@@ -126,8 +126,9 @@ run of the script had a clock off-by-one, and its numbers were discarded.
 
 **Scope point, not an error.** G lies after the readout window, so by domain of
 dependence H_n does not depend on G or β(x). The energy lane already uses this
-late-tail decoupling. C11_FINITE_CONTROL.md and PHILOSOPHICAL_SCOPE.md do not
-draw the consequence: E is fixed only as the total. The mass received by readout
+late-tail decoupling. C11_FINITE_CONTROL.md and PHILOSOPHICAL_SCOPE.md did not
+then draw the consequence, and the coordinator has since added it: E is fixed
+only as the total. The mass received by readout
 time, m_-(V) for V before supp G, varies with the target. So "R does not factor
 through (P,E)" holds with E including radiation that reaches the center after
 every reading. Any claim phrased as readings varying at fixed energy should say

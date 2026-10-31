@@ -43,11 +43,19 @@ Checked by hand: [∂_v,D]=−K′D, all three transport identities, M_v=K′(φ
 M=φ+rDφ, rD²φ=DM−2Dφ, rD³φ=D²M−3D²φ and D²φ=∫₀¹t²D²M(tr)dt. In flat space
 p=g(v)−g(u) gives DM=−λ⁻¹L_v and D²M=(λ⁻¹∂_v)³p on Γ, as claimed.
 
-Not checked: the bound |D²K′|≤C(1+Y), the closure Y(δ)≤a+C∫₀^δ(1+Y), the curved
-axis identity Λ_uu=(log λ)_vv, and the C³-up-to-Γ regularity it assumes. Repair B
-remains single-reader work. Until it is checked, or the published version settles
-the point, the compact limit in C²/C¹ and the C¹,¹ metric still depend on the
-sketched u-side of Proposition 3.18.
+REPAIR_B_REVIEW.md then attacked what this read left open. The curved axis
+identities, |D²K′|≤C(1+Y), the closure and the uniformity all held, with three
+wrong reasons in RESULT.md corrected there and the algebra passing an exact
+series check on one germ family.
+
+It also found the real hole. Y<∞ is assumed, Gronwall is empty without it, and
+RESULT.md's only support is LOY's omitted §3.8 persistence sentence. So Repair B
+removes the quantitative u-side sketch, not the qualitative one. In RESULT.md's
+dependency table "none (B)" should read "none quantitative; qualitative k=2 via
+R1 or R2". R1 and R2 are one reader's unreviewed proposals, and R2's outgoing
+step is the place to attack. Until one is checked, or the published version
+settles the point, the compact limit in C²/C¹ and the C¹,¹ metric still depend
+on an unproved u-side regularity statement.
 
 ## State of the theorem
 
