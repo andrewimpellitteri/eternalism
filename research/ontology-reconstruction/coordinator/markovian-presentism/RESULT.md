@@ -1,248 +1,259 @@
 # Markovian laws and presentism: what the likelihood-one claim covers
 
-7 November 2026. Coordinator session (Claude Code, Opus 5.5), at the user's request.
-It follows up the [6 November intake](../../../../knowledge/frontier/INTAKE_2026-11-06.md),
-which found that the repo had never engaged this argument. This is a bounded
-reconstruction with elementary observations. It claims no novelty and selects no
-temporal ontology. No outside expert has read it. Sources and read depths are in
-[sources.jsonl](sources.jsonl). Page numbers for Builes–Impagnatiello are those of
-the 2022 author preprint. Lettie also cites that version. The published OSM 14 text
-was not compared.
+7 November 2026, revised the same day. Coordinator session (Claude Code, Opus 5.5), at
+the user's request. It follows up the
+[6 November intake](../../../../knowledge/frontier/INTAKE_2026-11-06.md). This is a
+bounded reconstruction with elementary observations. It claims no novelty and selects
+no temporal ontology. No outside expert has read it. Sources and read depths are in
+[sources.jsonl](sources.jsonl). Page numbers for Builes–Impagnatiello are those of the
+2022 author preprint. Lettie also cites that version. The published OSM 14 text was
+not compared.
+
+**What the revision changed.** The first version said that a repaired argument
+would have to cite backward determination, and that this would expose it to the
+interpretation of quantum mechanics. That inference was wrong. Suppose the
+evidence E is single-time determinism. E entails the Markov property, so
+P(E | H) = P(Markov | H) · P(E | Markov, H). The Markov likelihood ratio therefore
+survives inside any likelihood ratio for E. Observation O2 below stays true, but it
+does not defeat the Bayesian argument. §4 is restated. §§5–6 are new. They follow a
+citation sweep, Markosian's semantics, and a check of Horvat's proof.
 
 ## 1. The rival argument, stated as its authors give it
 
-Builes and Impagnatiello (B&I) set up the argument in three steps.
+Builes and Impagnatiello (B&I) set up the argument as follows.
+- **Markovian Determination (p. 2).** If the history H_t nomically necessitates a
+  property of the future t+, so does the present intrinsic state T.
+- **Markovian Chance (p. 3).** Ch_L(P | T) = Ch_L(P | H_t).
+- **Relativistic version (pp. 3–4).** Each principle holds relative to every inertial
+  slicing, and relative to every Cauchy foliation of a globally hyperbolic spacetime.
+- **"Markovian\*" (p. 6).** Compatible with being Markovian, perhaps subject to
+  debates about whether vector quantities such as velocity are intrinsic. Quantum
+  theory is said to be "uncontroversially Markovian" (p. 6). Footnote 5 says the
+  same of Bohm and orthodox collapse.
 
-- **Markovian Determination (p. 2).** For every time t, if the whole history
-  H_t up to t nomically necessitates that the future t+ has an intrinsic
-  property P, then the intrinsic state T at t already necessitates it.
-- **Markovian Chance (p. 3).** This is the chance analogue:
-  Ch_L(P | T) = Ch_L(P | H_t).
-- **Relativistic version (pp. 3–4).** Each principle holds relative to every
-  inertial slicing in special relativity, and relative to every Cauchy foliation
-  of a globally hyperbolic spacetime in general relativity.
+The core moves:
+- **§3.** Neither Humean nor non-Humean eternalism predicts Markovianism\*.
+- **§4.1.** Presentism plus Aristotelian causal powers entails it.
+- **§4.2.** Nomic Presentism with any non-Humeanism entails it. Nomic Presentism says
+  a tensed claim is true iff, and because, the present state and the laws
+  necessitate it. The derivation uses the schema on p. 14 and the nomic equivalence
+  of T and H_t on p. 15.
+- **(∗) (p. 16).** Cr(M\* | ¬NHP) ≪ Cr(M\* | NHP) = 1, where NHP is non-Humean
+  presentism.
+- **Footnote 20.** Discovering non-Markovianity would falsify these views.
+- **Second moral (p. 18).** Markovianism\* is a "perfectly precise datum".
 
-"Near" versions replace the instant by an arbitrarily short interval (p. 5).
-"Markovian*" means compatible with being Markovian, given suitable intrinsic
-quantities such as velocities (p. 6).
+## 2. Literature located (citation sweep, 7 November)
 
-- **§3 (eternalism lacks a reason).** Humean eternalism gives no reason to expect
-  Markovian* laws. Non-Humean eternalism doesn't either. Universals and primitive
-  laws are too restrictive or too permissive. Local causal powers come closest, but
-  face a dilemma. If locality is necessary, the necessity needs explaining. If it is
-  contingent, its holding needs explaining. Their toy world is the periodic sequence
-  …0011… with a simple second-order law.
-- **§4 (presentism alone is not enough).** Presentism with primitive tensed laws can
-  still violate Markovianism (pp. 10–11). Two packages entail it:
-  - **§4.1:** presentism plus Aristotelian causal powers. Every constraint on the
-    future is grounded in concrete present reality.
-  - **§4.2:** Nomic Presentism. A tensed claim is true iff, and because, it is
-    nomologically necessary given the present state. From this they derive
-    Markovian Determination by a valid-argument schema (p. 14). If T necessitates
-    Q, then whatever T∧Q necessitates, T necessitates. They derive Markovian Chance
-    because T and H_t are nomically equivalent (p. 15).
-- **Footnote 18.** Standard growing-block and moving-spotlight theories cannot use
-  either strategy, because they contain concrete past entities.
-- **§5 (the Bayesian claim).** Cr(Markovian* | ¬NHP) ≪ Cr(Markovian* | NHP) = 1,
-  where NHP is non-Humean presentism. Footnote 20 adds that discovering
-  non-Markovianity would falsify these presentisms.
+The sweep used OpenAlex's list of citing works (five indexed) and Exa searches.
+Semantic Scholar was rate-limited. The papers that engage the argument:
+- **Lettie (2024), read in full.** Rational priors can keep NHP improbable.
+  Markovianism is one improbable member of a probable class.
+- **Ryoo (2026).** The mirror argument for eternalism from non-Markovianity.
+- **Howarth (2026).** Markovianity underdetermines existence. A Markovian embedding on
+  an enlarged state is possible "under suitable conditions".
+- **Mariani (2025, JGPS), §4.1 read.** For non-Markovian collapse models with
+  coloured noise, whether properties of the laws bear on ontology depends on the
+  Humean/non-Humean divide.
+- **Builes (2026, *Phil. Studies*), preprint searched; Markovianism never
+  mentioned.** He treats temporally symmetric determinism as a live possibility. He
+  presents Nomic Presentism as escaping the redundancy of fundamental facts. He
+  concedes that it implies a possibly open past.
+- **Olsen (2025).** Cites B&I only in a footnote.
 
-## 2. What the existing replies already cover
+None of these examines what the §4.2 derivation proves. None asks in which state
+Markovianity is a datum. None connects the argument to Bell-type results. That is
+not a priority claim. The search was limited, and the published OSM text is unread.
 
-- **Lettie (2024, preprint read in full).** He accepts the likelihood claim (∗). He
-  denies that it fixes a high posterior, because a rational prior can make NHP very
-  improbable. He offers an explanation that needs no temporal ontology: Markovianism
-  is one of many "Markovian-like" universe-wide properties, each improbable, but
-  some member of the class is probable.
-- **Ryoo (2026, §§1–5 read).** He builds the mirror argument: non-Markovian
-  foundations (Barandes, thermal time, open systems) would favour eternalism. He
-  argues that the growing block faces a symmetry problem.
-- **Howarth (2026, read through §5.2).** He separates reduced-state, embedding,
-  fundamental-law and metaphysical screening-off. He names the needed bridge
-  (BP1/TDEB). He notes that higher-order and memory dynamics can be embedded in
-  Markovian dynamics on an enlarged state. His conclusion is that Markovianity
-  underdetermines existence claims.
+## 3. Elementary observations (deterministic case)
 
-None of these replies examines what exactly B&I's derivation in §4.2 makes
-certain. None connects the argument to relativistic locality or to Bell-type
-results. §§3–5 below address those points.
-
-## 3. Elementary observations about the deterministic principle
-
-Represent a deterministic law over a fixed foliation by its solution set 𝓛. Each
-history s ∈ 𝓛 assigns an intrinsic state s(t) to each time t. Two sets of futures
-matter: those compatible with the whole history up to t, and those compatible with
-the state at t alone.
-
-    Fut_H(s,t) = { s′|_{>t} : s′ ∈ 𝓛, s′|_{≤t} = s|_{≤t} }
-    Fut_T(s,t) = { s′|_{>t} : s′ ∈ 𝓛, s′(t) = s(t) }
+Represent a law over a fixed foliation by its solution set 𝓛 of histories s.
 
 **(O1) The principle is a splicing property.** Suppose every set of future segments
-counts as an "intrinsic property of t+". Then Markovian Determination is
-equivalent to two statements:
-- Fut_T = Fut_H for all s and t.
-- Equivalently, 𝓛 is closed under splicing at equal states: if s(t) = s′(t), then
-  the history that follows s up to t and s′ afterwards is in 𝓛.
+counts as an intrinsic property. Then Markovian Determination is equivalent to closure
+of 𝓛 under splicing at equal states. If s(t) = s′(t), then s up to t followed by s′
+after t is in 𝓛.
 
-*Proof.* Fut_H ⊆ Fut_T always holds. If a segment lies in Fut_T but not in Fut_H,
-take P = "t+ ∈ Fut_H(s,t)". H_t necessitates P, but T does not. If the principle
-holds, every segment of Fut_T lies in Fut_H, so the splice is a solution. The
+*Proof.* The futures compatible with the history are always among those compatible
+with the present state. If some future fits the state but not the history, take P =
+"the future is one of those compatible with the history". The history necessitates P
+and the state does not. If the principle holds, every splice is a solution. The
 converse is immediate. ∎
 
-If admissible properties are restricted, the principle is weaker. That restriction
-is B&I's to state. The splicing form is the standard behavioural-systems notion of
-a Markovian system or "axiom of state". See Rapisarda & Willems, §3, read at
-excerpt depth. We claim no novelty for it.
+This is the behavioural-systems notion of a Markovian system, or the "axiom of state"
+(Rapisarda–Willems §3, excerpt depth). We claim no novelty for it.
 
-**(O2) Backward single-time determination entails it.** Suppose s(t) = s′(t)
-implies s|_{≤t} = s′|_{≤t}. Then every splice is s′ itself, so 𝓛 has the Markovian
-property. The step mirrors B&I's own schema on p. 14, with the laws in place of
-Nomic Presentism's grounding claim. Horvat makes the parallel point (footnote 10):
-time-symmetric deterministic theories leave no room for history to matter. So
-unitary Schrödinger evolution, Hamiltonian flow and well-posed reversible
-hyperbolic systems with Cauchy data are Markovian because they are backward
-deterministic from a single time. No temporal ontology is needed. GRW-type and
-other chancy laws are not covered, and there the chance principle carries the weight.
+**(O2) Backward single-time determination entails it.** If s(t) = s′(t) implies the two
+pasts agree, every splice is s′ itself. Horvat's footnote 10 makes the parallel point.
+As the revision note explains, this does not weaken (∗). It shows only where
+deterministic Markovianism sits relative to determinism.
 
-**(O3) The "Markovian\*" qualifier needs an independent criterion of intrinsic
-state.** For any 𝓛, take as state the class of pasts with the same set of possible
-continuations. This is the past-induced, Nerode-style state in behavioural theory.
-The enlarged system is Markovian by construction.
-- B&I's footnote 10 accepts such an enlargement for …0011…, through "coming from a
-  0/1" properties.
-- It then calls …000111… "clearly neither" Markovian nor nearly Markovian. But the
-  same construction gives …000111… a three-valued phase state.
-- So "Markovian\*" constrains anything only once B&I say which latent quantities
-  count as intrinsic: velocities and the wavefunction yes, phase counters no.
-- The paper raises the velocity debate (pp. 4–5) and then sets it aside by
-  appealing to quantum theory. Whether the wavefunction is intrinsic to a time is
-  itself disputed. Howarth makes the general embedding point. Applying it to the
-  footnote-10 example is our elementary step.
+**(O3) Markovianity is relative to a choice of state.** For any 𝓛, the
+past-induced state is the class of pasts with the same continuations. On that
+state, 𝓛 is Markovian by construction. Its stochastic analogue is the predictive
+state, which has the same continuation distributions.
+- B&I's footnote 10 accepts a "coming from a 0/1" enlargement for …0011… but calls
+  …000111… "clearly" non-Markovian.
+- A three-valued phase state makes …000111… Markovian in exactly the same way.
 
-## 4. What Nomic Presentism makes certain
+## 4. What the §4.2 derivation proves, on its source's own semantics
 
-On p. 14, B&I restate Markovian Determination for presentism with "the history" =
-the present state plus all true WAS-claims. Call this MD_pres. Under Nomic
-Presentism, the true WAS-claims are exactly those that L∧T necessitates. So MD_pres
-follows by the schema *for every law L*. That includes the …0011… law, which
-fails splicing.
+Under Nomic Presentism, the restated principle on p. 14 (MD_pres) follows from the
+schema *for every law L*. MD_pres takes "the history" to mean the present plus the true
+WAS-claims. B&I's own …0011… law shows Nomic Presentism is consistent with laws that
+are not Markovian on their stated state.
+- **Markosian's semantics (2013, §6, pp. 13–14).** Markosian is one of the view's named
+  sources. A tense-operator sentence is true at p iff it is true on every route of
+  nomically possible history through p. Atomic tensed claims that fail on some route
+  are false; he prefers bivalence (p. 10).
+- **The routes.** With present state 1, two of the law's routes pass through p. So
+  every WAS₁ and WILL₁ atom is false.
+- **The law.** The tensed law (∗∗) begins with "always" and holds on every route, so it
+  is true at p.
+- **So:** Nomic Presentism (with Markosian's ADT laws, p. 9) is consistent with a law
+  that is non-Markovian on the stated state, and MD_pres holds. The past and future it
+  makes true are thin, as Markosian accepts for indeterministic laws (p. 15).
 
-The point is worth checking concretely for the footnote example under a
-supervaluational reading. Thomason (1970), whom B&I list among the sources of Nomic
-Presentism, gives one, though B&I do not commit to a semantics.
-- With present state 1, two of the law's histories fit: the present is either the
-  first 1 or the second.
-- No WAS₁ or WILL₁ atom is necessitated, so each is gappy.
-- The tensed law is true on every fitting history, so it is supertrue.
-- So Nomic Presentism is consistent with this non-Markovian law, and MD_pres still
-  holds.
+The derivation therefore establishes MD_pres, a theorem of Nomic Presentism for any
+law. It does not establish that the laws are Markovian on any state physics specifies.
+To reach the laws, B&I need one more premise. Call it **governance from the present**:
+a governing law can take as input only what obtains at the present.
+- That is the Aristotelian premise of §4.1 in a different form. So §4.2 does not hold
+  "together with any version of Non-Humeanism" (p. 13).
+- The claim fails for constraint-type non-Humeanism, which constrains whole
+  histories (Chen–Goldstein minimal primitivism; Adlam). B&I note both in their
+  footnote 28.
+- On the more plausible reading, the two strategies converge on one premise.
 
-On a classical compositional reading, the same iff-form law instance comes out
-false at the present. Then Nomic Presentism's consistency depends on how tensed
-laws are written. Either way, Nomic Presentism alone does not entail the property
-of the *laws* (O1) that physics reports.
+**Consequence.** This is an inferential correction, not a refutation. The confirmation
+in (∗) can be credited only to NHP packages that include governance from the present.
 
-Therefore the proposition B&I make certain in (∗) is not the empirical datum.
-- **What NHP makes certain:** MD_pres, which holds whatever the dynamics.
-- **What physics reports (pp. 3, 6):** a property of 𝓛, namely splicing or
-  single-time forward determination of the future or its chances.
+## 5. Markovian in which state? The datum depends on interpretation
 
-There is a route from Nomic Presentism to the datum. Add that the past-tense
-claims we take ourselves to know are true. Under Nomic Presentism they must then be
-necessitated by L∧T. That is backward determination from the present, restricted
-to those truths, and by (O2) it delivers the matching restricted Markov property.
+The second moral calls Markovianism\* a precise datum. By (O3) it has content only
+relative to an independently fixed state. Physics fixes the state in more than one way.
+- **Wavefunction state.** Schrödinger and GRW evolution of ψ is Markov.
+  Goldstein–Tumulka–Zanghì (§ on the conditional probability formula, excerpt depth)
+  state the Markov property of the GRW ψ-process. B&I's datum is true for this state.
+- **Primitive-ontology state.** In GRW with flash ontology:
+  - ψ_s is a function of the flashes before s and the initial ψ (same source).
+  - Esfeld and Gisin argue ψ is nomological there, not part of what exists in
+    spacetime. An initial flash configuration does not fix ψ (§2, excerpt depth).
+  - On that reading, the chance of the next flash depends on the whole flash history.
+    The ontic state is not Markov.
+  - Footnote 5's claim that collapse theories are Markovian therefore holds only if ψ
+    is intrinsic to the present, which is contested.
+- **Local event state (Horvat, arXiv:2610.41944v1).** We checked his proof of
+  Proposition 3 (statement and steps read, not formalised).
+  - The translation clause in his Principle 4 only moves the conditioning surface Σ
+    to the initial surface Σ_{t0}, where his measures are defined.
+  - B&I's chance functions are defined at every time. So their Markovian Chance can
+    play that role directly: Ch(a | e on Σ and history) = Ch(a | e).
+  - His Probabilistic Locality, applied to the chance conditioned on the complete event
+    state e at Σ, then gives the Bell-type contradiction in his equations (14)–(17).
+  - So, adapting Horvat's argument (credit his), Markovian Chance on a complete
+    local-beable state plus probabilistic locality implies Bell's local causality,
+    which Bell violations falsify. GRWf is a concrete case of that failure.
 
-**Consequence for the rival (a conditional assessment, not a refutation).** A
-repaired argument would cite backward single-time determination of the
-record-relevant past as its datum, not Markovianism. That changes its exposure.
-- Backward determination fails for collapse and other chancy laws. Under Nomic
-  Presentism they open the past, as B&I's own footnote 17 concedes.
-- Markovian Chance does not fail for those laws.
-- So the repaired argument depends on the interpretation of quantum mechanics in a
-  way the stated argument does not.
+**Upshot (our assessment).** B&I's datum holds when the present intrinsic state is the
+global wavefunction on a Cauchy surface. That needs both wavefunction realism and a
+global foliation. It fails, or is contested, for the two other states physics supplies:
+primitive-ontology states and local event states.
+- **Footnote 20.** Discovering non-Markovianity would falsify NHP, they say. On
+  primitive-ontology readings, that discovery has arguably already been made.
+- **Footnote 24.** For the local presentisms they cite (Emery, Balaguer), a local
+  Markov-chance datum conflicts with Bell, given Horvat's locality principle.
+- **What stays open.** None of this shows presentism is false. It shows the evidence
+  for (∗) is interpretation-relative, and the interpretation needed is a substantive
+  extra commitment.
 
-The §4.1 causal-powers route is untouched by this section. It entails the principle
-because there are no past bearers of power. It still needs the further claim that
-present powers cannot respond to irreducible tensed facts, which B&I defend on
-pp. 12–13.
+## 5b. The foliation surplus
 
-This is the inferential revision a knowledgeable opponent would have reason to
-make, as `research/agentic-philosophy/BREAKTHROUGH_TEST.md` requires. The point is
-logically elementary, and we found no earlier statement of it in the three replies
-read. That is not a priority claim: the search was limited, and the published OSM
-text and later citers remain unread.
+Added 7 November in the second pass. B&I state the relativistic datum as Markovianism
+relative to *every* inertial slicing or *every* Cauchy foliation (pp. 3–4). Call this
+D_all. Their presentist answer to relativity supplements physics with a privileged
+foliation F\* (p. 17).
 
-## 5. Relativity, locality and Bell
+1. **NHP delivers Markovianity relative to F\* at most.** Both §4 strategies reason
+   about "the present". Under a privileged foliation the present is an F\*-slice. Neither
+   says anything about Markovianity relative to slices that mix the presentist's past,
+   present and future. So NHP entails D_F\* (with the §4 caveat) and nothing about D_all.
+2. **Markovianity on one foliation does not give it on all.** Here is a toy model
+   (ours, elementary).
+   - Two sites, A and B, are two lattice units apart. A signal speed of one unit per
+     step defines the cones.
+   - The law swaps them: A(t+1) = B(t) and B(t+1) = A(t). This law is Markov
+     (deterministic) on the slices t = const.
+   - Take the tilted spacelike slices S_k = {A_k, B_{k+1}}. They are achronal for the
+     cones. On every solution B_{k+1} = A_k, so S_k carries only A_k.
+   - But A_{k+1} = A_{k−1}. That is fixed by the history before S_k and not by S_k.
+   - So the law is Markovian on F\* and not on the tilted foliation. The failure needs
+     the cone-violating link from B_k to A_{k+1}.
+3. **Locality gives D_all.** Suppose influence runs only through chains of intermediate
+   events along causal curves. That is B&I's own statement of locality (p. 9),
+   restricted to the light cones. Every Cauchy surface meets every inextendible causal
+   curve, so the state on any Cauchy surface mediates all influence. In QFT this is the
+   time-slice property. Chilian & Fredenhagen (arXiv:0802.1642, abstract read) treat
+   it in perturbative QFT on globally hyperbolic spacetimes.
+4. **The surplus favours locality, not presentism.** The part of the relativistic datum
+   that goes beyond the F\* slices (all foliations) is entailed by relativistic locality.
+   NHP does not entail it.
+   - On the full datum, Cr(D_all | NHP) < 1. Meanwhile Cr(D_all | local causal powers
+     with causal-curve mediation) = 1, and that is the eternalist option B&I call most
+     promising (p. 9).
+   - B&I's dilemma against that option ("why is locality necessary, or why does it
+     hold?") is about the prior. It is not about the likelihood.
+   - NHP with locality also predicts D_all, but there presentism does no work for the
+     surplus.
+   - The theories B&I cite as Markovian\* despite non-locality need an absolute or
+     privileged foliation. That covers Newtonian gravity, Bohm, and relativistic
+     Bohmian models with a privileged foliation (Dürr, Goldstein, Norsen, Struyve &
+     Zanghì, arXiv:1307.1714v2, abstract read).
+   - Those theories satisfy D_F\* and not, in general, D_all. So the examples B&I use to
+     separate Markovianism from locality are exactly the ones that fail their own
+     relativistic datum.
+5. **Loops.** Jäger (2025, NYU dissertation; abstract, introduction and §1 definitions
+   read) argues that local dynamics give "Boundary Markov". A thick boundary screens a
+   region off from everything outside it, including in spacetimes with closed causal
+   curves. Such spacetimes have no global present, so neither presentist strategy can
+   be stated there. Jäger does not discuss presentism or B&I. The application is ours.
+   If he is right, screening-off is a consequence of locality that reaches well beyond
+   any foliation.
 
-B&I's relativistic datum quantifies over global Cauchy foliations (pp. 3–4). Two
-project-relevant results bear on how far it extends.
+**Status.** Items 1–4 are elementary and checked here by hand. Item 2 is a toy, not a
+physical counterexample. Whether some physical theory is Markovian on a privileged
+foliation, empirically adequate, and fails D_all depends on the interpretation. Item 4
+is our assessment. We found no prior statement of the surplus point in the six citers
+read. That is not a priority claim.
 
-- **Local presents.** Some presentisms avoid global simultaneity: Stein-type
-  pointed presents, and the views B&I cite in footnote 24 (Emery, Balaguer). For
-  them, the natural local analogue compares what the causal past J⁻(b) fixes with
-  what a local present fixes. The
-  [finite-prefix corollary](../../../lawful-completions/coordinator/prefix-mass-audit/RESULT.md)
-  bears on this.
-  - It has internal acceptance and depends on named inputs.
-  - In its Einstein–massless-scalar model class, the whole pointed J⁻(b) can agree
-    while finitely many future scalar readings along γ vary.
-  - So in that class the local deterministic principle cannot discriminate between
-    rivals on those readings. Neither the history nor a local present fixes them.
-  - The non-vacuous datum needs data on a global Cauchy surface. That is the
-    structure a footnote-24 presentist declines to privilege.
-  - This is a scope observation about one model class. It is not a theorem about
-    all local presentisms.
-- **Bell-type tension (our conjecture).** This rests on Horvat (arXiv:2610.41944v1),
-  whose Proposition 3 we read as a statement only; its proof was not checked.
-  - His Principle 4, "Irrelevance of History", is a surface-relative Markov-chance
-    condition. It also carries a time-translation clause that B&I's principle lacks.
-  - Proposition 3: his Probabilistic Locality plus Irrelevance of History imply
-    Bell's Local Causality.
-  - So anyone who keeps his local principle must accept that history is relevant,
-    given Bell violations.
-  - B&I's Markovian Chance is satisfied by quantum theory through a global state on
-    Cauchy surfaces, which is not a local event-wise condition.
-  - We conjecture that B&I's datum survives only in a global-state form. In
-    Horvat's local event form, Bell violations count against it, and B&I's footnote
-    20 treats that kind of failure as falsifying.
-  - Whether Horvat's principle and B&I's principle are close enough for the
-    transfer, given the translation clause, is open. Horvat does not cite B&I.
+## 6. Local presents and the finite-prefix result
 
-## 6. Bearing on the repo's causal-production lane
+The [finite-prefix corollary](../../../lawful-completions/coordinator/prefix-mass-audit/RESULT.md)
+bears on the deterministic local analogue. It has internal acceptance and named inputs.
+In its Einstein–massless-scalar class, the whole pointed J⁻(b) can agree while
+finitely many future readings along γ vary. So the local deterministic principle cannot
+tell rivals apart on those readings, because neither history nor present fixes them. The
+non-vacuous datum needs global Cauchy data. This is a scope observation about one model
+class only.
 
-The [Tooley reconstruction](../causal-production/RESULT.md) leaves open whether
-temporal actuality, or a real directed governing relation, better grounds the
-asymmetry when laws vary. B&I bear on both sides of that dispute.
+## 7. Bearing on the causal-production lane
 
-- **Their dilemma hits our rival.** The repo's strongest rival to Tooley is a
-  non-Humean directed governing relation. B&I's §3 dilemma about local causal
-  powers targets exactly this kind of rival. The repo has not answered that
-  dilemma.
-- **Their footnote 18 hits Tooley's view.** A standard growing block contains
-  concrete past entities. So it cannot use either presentist route to the Markov
-  property. A growing theorist who borrows Tooley's explanatory ambition inherits
-  the question of why an existing past adds no constraint beyond the present.
-- **Neither side wins.** By (O2), backward-deterministic physics supplies the Markov
-  property to every ontology. So this pressure is real only for chancy or
-  non-reversible laws. It does not decide between the two sides.
+This is unchanged from the first version.
+- **B&I's dilemma hits our rival.** Their dilemma about local causal powers targets the
+  repo's preferred rival to Tooley, a non-Humean directed governing relation.
+- **Their footnote 18 hits Tooley's growing block.** It says a standard growing block
+  cannot use either presentist route.
+- **New: governance from the present.** By §4, the presentist explanation itself needs
+  this premise. A growing theorist could adopt "governance from the latest edge" and
+  inherit the same explanation. That would weaken footnote 18. This is our conjecture.
+  It is not tested.
 
-## 7. Limits and next tests
+## 8. Limits
 
-- **Sources.** The B&I text is the 2022 preprint. The published version, its
-  citing literature beyond Lettie, Ryoo and Howarth, Markosian (2013) and Thomason
-  (1970) are unread. Horvat and Rapisarda–Willems are partial or excerpt reads.
-- **Proofs.** O1–O3 are elementary set-theoretic observations. No proof assistant
-  was used. The supervaluational check in §4 uses one reading of Nomic Presentism.
-  B&I may intend another.
-- **Undecided.** Nothing here decides between presentism and eternalism. It
-  locates which datum each package predicts.
-- **Next test 1.** State the chance version of §4 precisely. Under Nomic
-  Presentism, Markovian Chance is again immediate for every chance law. Check
-  whether a records-based repair needs backward determination of chances, and
-  whether GRW supplies it.
-- **Next test 2.** Read Horvat's proofs, and test whether Principle 4 without the
-  translation clause still yields Proposition 3.
-- **Next test 3.** An observability question, recorded as a conjecture only.
-  Dependence on a past event that leaves no present trace cannot be measured
-  directly, since any measured correlation runs through present records. How much
-  of observed Markovianism this selection effect explains is open.
+- **Unread.** Thomason (1970); Chen–Goldstein; Adlam (2022). The published text of
+  B&I and the body of Builes (2026) beyond the searched passages.
+- **Partial reads.** Goldstein–Tumulka–Zanghì and Esfeld–Gisin at excerpt depth. Their
+  claims are cited as theirs.
+- **Nothing formalised or reproduced.** The Horvat adaptation is a proof sketch, and
+  needs a careful statement of which chance functions Probabilistic Locality governs.
+- **No outside reader.** Same-model review is not independent.

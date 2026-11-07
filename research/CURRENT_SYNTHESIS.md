@@ -17,6 +17,19 @@
 > It also records that the authors' locality dilemma for non-Humean causal powers is a standing
 > objection to the causal-production lane's preferred rival. Elementary observations only, with no
 > priority claim and no ontology verdict. Coordinator work, not independently reviewed.
+>
+> **Revised the same day.** After a citation sweep, Markosian's semantics and a check of Horvat's
+> proof:
+> - **Withdrawn:** the backward-determinism repair. It does not weaken the authors' Bayesian claim.
+> - **Now the core point:** on Markosian's route semantics, Nomic Presentism is consistent with the
+>   authors' own non-Markovian law. Getting to Markovian *laws* needs a premise that governing laws
+>   take only present input, so "any version of non-Humeanism" fails.
+> - **New:** the Markovian datum depends on which state counts as present. It holds for the global
+>   wavefunction, is contested for GRW flashes with a nomological wavefunction, and, adapting
+>   Horvat, conflicts with Bell for local event states.
+>
+> A [reply outline](ontology-reconstruction/coordinator/markovian-presentism/REPLY_DRAFT.md) lists
+> its gates. Nothing has been sent.
 
 > **31 October causal-production investigation:** the
 > [selected Tooley1997 reconstruction](ontology-reconstruction/coordinator/causal-production/RESULT.md)
