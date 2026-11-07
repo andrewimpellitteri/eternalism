@@ -58,3 +58,13 @@ Read-only inspection of OpenCode's config confirmed `web-search-prime` is
 enabled. Credentials and remote headers were not printed or copied. This checks
 the connector in the coordinator's session; it is not an authenticated OpenCode
 worker smoke test. Workers must record their own search capability check.
+
+## 2026-11-06 — coordinator intake since 19 October
+
+arXiv API (hist-ph listing plus phrase searches), alphaXiv recency discovery, and
+Exa/WebSearch for PhilSci-Archive, PhilArchive and journals. The Z.ai quota was exhausted,
+and PhilSci-Archive blocked automated fetches. Results, read depths and proposed next steps
+are in [frontier/INTAKE_2026-11-06.md](frontier/INTAKE_2026-11-06.md). Headline: the
+Builes–Impagnatiello Markovian argument for presentism (2025) and its replies were never
+recorded. Chataignier–Smith (arXiv:2610.28732) heavily narrows the frontier clock candidate.
+Horvat (arXiv:2610.41944) has the same supervenience form as Part II's fixing relation.

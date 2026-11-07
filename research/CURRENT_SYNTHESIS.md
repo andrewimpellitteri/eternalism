@@ -1,5 +1,23 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **7 November Markovian-presentism read:** this is the first engagement with Builes and
+> Impagnatiello's (2025) argument that Markovian laws favour presentism. Their 2022 preprint and
+> Lettie's reply were read in full; Ryoo's and Howarth's replies were read in part. The
+> [bounded reconstruction](ontology-reconstruction/coordinator/markovian-presentism/RESULT.md)
+> makes three points:
+> - **What Nomic Presentism makes certain:** the probability-one proposition in the authors'
+>   derivation is the presentist restatement of Markovianism. That restatement holds for any law,
+>   so it is not the property of the laws that physics reports.
+> - **Where Markovianism comes from:** single-time backward determinism already entails it,
+>   whatever the ontology.
+> - **Scope:** the datum, as the authors state it, depends on a global Cauchy foliation. The
+>   finite-prefix corollary bears on local versions. Linking it to Horvat's Bell-type locality
+>   result is only a conjecture.
+>
+> It also records that the authors' locality dilemma for non-Humean causal powers is a standing
+> objection to the causal-production lane's preferred rival. Elementary observations only, with no
+> priority claim and no ontology verdict. Coordinator work, not independently reviewed.
+
 > **31 October causal-production investigation:** the
 > [selected Tooley1997 reconstruction](ontology-reconstruction/coordinator/causal-production/RESULT.md)
 > tests the actual causal-law/logical-probability argument rather than the
