@@ -6,7 +6,7 @@ question, not an answer: this project has no preferred temporal ontology.
 ## Read this first
 
 **[What the Past Can Fix](research/what-the-past-can-fix/what-the-past-can-fix.pdf)** is the main
-output, a 42-page paper in four parts. Its thesis is that what has become, what is fixed, what
+output, a 46-page paper in four parts. Its thesis is that what has become, what is fixed, what
 exists and what is true are four different relations.
 
 | Part | Subject | State |
@@ -15,6 +15,9 @@ exists and what is true are four different relations.
 | II | What a law can fix from the past | Reviewed internally |
 | III | Same past and whole-realm rigidity, conditional on published inputs | Reviewed internally |
 | IV | Stages, truth policies, totality and persistence | Report-depth survey |
+
+Statements added on 10 November (no spacelike scale, the curvature clock, reciprocity and balance, the
+epoch arrow) have been checked only by the session that drafted them; the paper's status appendix marks them.
 
 All review so far is by models from the same family, so none of it is independent. No outside
 expert has read this work, and the paper claims no novelty and selects no ontology. The paper's
