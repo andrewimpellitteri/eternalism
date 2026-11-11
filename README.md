@@ -6,7 +6,7 @@ question, not an answer: this project has no preferred temporal ontology.
 ## Read this first
 
 **[What the Past Can Fix](research/what-the-past-can-fix/what-the-past-can-fix.pdf)** is the main
-output, a 46-page paper in four parts. Its thesis is that what has become, what is fixed, what
+output, a 48-page paper in four parts. Its thesis is that what has become, what is fixed, what
 exists and what is true are four different relations.
 
 | Part | Subject | State |

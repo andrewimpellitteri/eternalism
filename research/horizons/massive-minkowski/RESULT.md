@@ -4,7 +4,7 @@
 session that wrote it. The mathematics is known or an immediate corollary of known
 results. What is offered is its bearing on the paper. No temporal ontology is selected.
 Sources: [sources.jsonl](sources.jsonl). Illustration: [cone_energy.py](cone_energy.py).
-Proposed paper edits, not applied: [PATCH.md](PATCH.md).
+Paper edits, applied 11 November: [PATCH.md](PATCH.md).
 
 ## The claim
 

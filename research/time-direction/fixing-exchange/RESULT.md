@@ -85,7 +85,10 @@ something non-nomic is untouched.
   is not treated here.
 - **Price**, *Time's Arrow* (three passages read): the fixed past and open future
   belong to the agent's perspective. He gives no measure of it.
-- **Markosian**, "The Open Past" (not read): the qualitative open-past point.
+- **Markosian**, "The Open Past" (read by the agency reading lane, not by me): an open
+  past on the side of truth. His argument needs indeterminism and a semantic premise, and
+  concludes that some past-tensed claims lack a truth value. Nothing here yields that
+  without a truth policy.
 
 What this note adds: the comparison of regions that carry unequal amounts, the closed
 dust reading, and the use of Proposition 4 against nomic grounding of the past.

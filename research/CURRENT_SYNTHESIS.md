@@ -1,5 +1,18 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **10–11 November, coordinator session, not independently reviewed.** Three things changed
+> the picture; details and statuses are in the [claim ledger](CLAIM_STATUS.md).
+> - **A lawful shared present is a clock.** A local rule for a shared present exists exactly
+>   when some local quantity is monotone along every timelike curve of every admissible world.
+> - **Fixing has no arrow of its own.** What two regions fix about each other is the same;
+>   an imbalance comes from beginnings, horizons, lossy descriptions or non-stationary chances.
+> - **Every verdict depends on the class.** Whether a past fixes a future changes with the
+>   solutions admitted, the mass of the field and the presence of a horizon.
+>
+> The [essay](agentic-philosophy/ESSAY_2026-11-11.md) draws the philosophical reading and the
+> [settling note](agentic-philosophy/settling/RESULT.md) tests what could break the stalemate.
+> No ontology is selected.
+
 > **7 November Markovian-presentism read:** this is the first engagement with Builes and
 > Impagnatiello's (2025) argument that Markovian laws favour presentism. Their 2022 preprint and
 > Lettie's reply were read in full; Ryoo's and Howarth's replies were read in part. The

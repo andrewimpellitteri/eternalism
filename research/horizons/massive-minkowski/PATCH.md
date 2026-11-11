@@ -1,7 +1,7 @@
 # PATCH.md — proposed edits from the massive-Minkowski note
 
 10 November 2026. Coordinator session (Claude Code, Fable 5.2), at the user's request.
-**Draft only. Nothing here has been applied.** The note behind it,
+**Applied 11 November 2026** under the user's instruction to improve the repository. The pinned hashes below are those of the draft date. The note behind it,
 [RESULT.md](RESULT.md), has only its own self-attack as review.
 
 ## Pinned sources

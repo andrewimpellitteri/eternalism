@@ -10,7 +10,7 @@ Sources: [sources.jsonl](sources.jsonl). Check: [collapse_reversal.py](collapse_
 
 | Route | Outcome |
 |---|---|
-| A fundamental law that is not time-symmetric | **Contested for collapse, and narrowed to an exact target.** On Bedingham and Maroney's argument collapse does not qualify; Tumulka is reported to say his model does break the symmetry (§5). A lawful arrow needs a class of worlds with no time-reversing symmetry of any kind. A lawful *present* needs less, and can exist under ordinary symmetric laws |
+| A fundamental law that is not time-symmetric | **Narrowed to an exact target.** Collapse qualifies only if the wavefunction is counted as a thing and not as part of the law (§5). A lawful arrow needs a class of worlds with no time-reversing symmetry of any kind. A lawful *present* needs less, and can exist under ordinary symmetric laws |
 | An argument from experience, agency or value | **Reduces to the first route or fails.** A present that makes a physical difference is a physical field and falls under the first route. One that makes none cannot be evidenced by a subject |
 | A theory without spacetime | **Makes it harder, not easier.** The symmetric relations survive without spacetime. The one oriented relation does not |
 
@@ -132,15 +132,19 @@ problem-of-time literature, and the reading lane on it is running.
 Added the same day, after six of ten reading lanes returned. They are worker
 submissions; I spot-checked scope and two abstracts, not their sources.
 
-- **Against §1.** The quantum lane reports that Tumulka's relativistic flash model
-  (arXiv:quant-ph/0406094) lists time-reversal invariance as broken, and reads this as
-  a lawful direction with no boundary condition. The abstract does not say it, and I
-  have not read the body. If Tumulka says so, the literature holds two positions:
-  the law as written is asymmetric (Tumulka), and the flash distribution it produces
-  is symmetric apart from boundary conditions (Bedingham and Maroney). Proposition 1
-  supports the second in finite dimensions only. So §1 is one side of a live
-  dispute and not a closed question. The same lane names causal-set sequential
-  growth as a second lawful direction, at abstract depth.
+- **Against §1, now read.** The quantum lane reports that Tumulka's relativistic
+  flash model (arXiv:quant-ph/0406094v2) breaks time-reversal invariance by law. I
+  read the passage. It is one item in a list of features shared with the original
+  model, on page 2: "time reversal invariance is broken". No argument is given and
+  the paper does not return to it. Its feature (i) counts the wavefunction among the
+  objects in the universe. Bedingham and Maroney treat the wavefunction as part of
+  the law and ask about the flashes alone. So the two do not contradict each other.
+  The pair of wavefunction and flashes is not reversal-symmetric, and the flashes
+  alone are, up to boundary conditions, if their conjecture holds. Whether collapse
+  gives a lawful arrow therefore turns on whether the wavefunction is a thing or a
+  law. That is a known dispute, and it moves the question and does not settle it. The
+  same lane names causal-set sequential growth as a second lawful direction, at
+  abstract depth; I have not looked at it.
 - **For §2.** Barbour, Koslowski and Mercati (2014, abstract depth in the lane) get
   an arrow from a time-symmetric law with no special initial condition: typical
   solutions have one past and two futures. That is an orientation-independent
@@ -180,4 +184,4 @@ theories exclude by symmetry.
 - The expansion clock is monotone along all timelike curves only in homogeneous
   models. In general it is monotone along the matter flow alone.
 - The CPT step is unchecked. The dilemma in §3 is recalled, not read by me.
-- §1 conflicts with a reported statement of Tumulka's that I have not read.
+- Tumulka's paper was read for one passage only. Proposition 1 does not cover his model.
