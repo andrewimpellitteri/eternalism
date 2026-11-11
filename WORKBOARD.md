@@ -235,6 +235,16 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `longshot-entanglement-present` — Test whether quantum entanglement can define a spatially thick present | 20 | — | glm-longshot-entanglement-present |
 | done | `longshot-cohomology-of-time` — Test whether shared presents and local clocks are cohomology classes of the category of spacetimes | 20 | — | glm-longshot-cohomology-of-time |
 | done | `longshot-bell-for-passage` — Search for a Bell-type theorem for objective passage | 20 | — | glm-longshot-bell-for-passage |
+| open | `read-temporal-experience` — Read the literature on temporal experience | 15 | — | — |
+| open | `read-direction-of-causation` — Read the literature on the direction of causation | 15 | — | — |
+| open | `read-problem-of-time` — Read the literature on the problem of time in quantum gravity | 15 | — | — |
+| open | `read-thermodynamic-arrow` — Read the literature on the thermodynamic arrow of time | 15 | — | — |
+| open | `read-quantum-theory-and-time` — Read the literature on quantum theory and temporal ontology | 15 | — | — |
+| open | `read-agency-fatalism-open-future` — Read the literature on agency, fatalism and the open future | 15 | — | — |
+| open | `read-tense-and-language` — Read the literature on tense, aspect and temporal language | 15 | — | — |
+| open | `read-persistence` — Read the literature on persistence through time | 15 | — | — |
+| open | `read-value-and-time-bias` — Read the literature on time bias and the value of time | 15 | — | — |
+| open | `read-history-of-time` — Read the history of the philosophy of time | 15 | — | — |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
