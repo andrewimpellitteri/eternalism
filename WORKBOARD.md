@@ -230,11 +230,11 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `temporal-arrow-contract-review` — Audit the new time-reversal fixing contract and its philosophical scope | 10 | — | native-temporal-arrow-review |
 | done | `ontology-causal-production-test` — Reconstruct and test the causal-law argument for temporal actuality | 10 | — | codex-causal-production |
 | done | `ontology-causal-production-review` — Red-team the causal-law to temporal-actuality comparison | 10 | — | native-causal-production-review |
-| open | `longshot-monadic-principle` — Test the monadic principle: every event's past fixes the universe | 20 | — | — |
-| open | `longshot-finite-openness` — Test the claim that the open future is a finite resource in a universe with dark energy | 20 | — | — |
-| open | `longshot-entanglement-present` — Test whether quantum entanglement can define a spatially thick present | 20 | — | — |
-| open | `longshot-cohomology-of-time` — Test whether shared presents and local clocks are cohomology classes of the category of spacetimes | 20 | — | — |
-| open | `longshot-bell-for-passage` — Search for a Bell-type theorem for objective passage | 20 | — | — |
+| done | `longshot-monadic-principle` — Test the monadic principle: every event's past fixes the universe | 20 | — | glm-longshot-monadic-principle |
+| done | `longshot-finite-openness` — Test the claim that the open future is a finite resource in a universe with dark energy | 20 | — | glm-longshot-finite-openness |
+| done | `longshot-entanglement-present` — Test whether quantum entanglement can define a spatially thick present | 20 | — | glm-longshot-entanglement-present |
+| done | `longshot-cohomology-of-time` — Test whether shared presents and local clocks are cohomology classes of the category of spacetimes | 20 | — | glm-longshot-cohomology-of-time |
+| done | `longshot-bell-for-passage` — Search for a Bell-type theorem for objective passage | 20 | — | glm-longshot-bell-for-passage |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
