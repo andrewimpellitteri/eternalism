@@ -1,5 +1,7 @@
 # Draft reply: "Markovian in which state?"
 
+> **8 November audit:** Several conclusions below are overstated. Read [the adversarial audit](AUDIT_2026-11-08.md) before relying on the semantic, Bell, wavefunction-realism or foliation claims. The reply is not yet validated.
+
 Status: an internal draft outline, 7 November 2026. It has not been reviewed,
 submitted or sent. Before any outside contact it needs the user's go-ahead and the
 gates in [RESULT.md §8](RESULT.md#8-limits). Target format: a discussion note of about

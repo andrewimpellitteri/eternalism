@@ -1,5 +1,7 @@
 # Markovian laws and presentism: what the likelihood-one claim covers
 
+> **8 November audit:** Several conclusions below are overstated. Read [the adversarial audit](AUDIT_2026-11-08.md) before relying on the semantic, Bell, wavefunction-realism or foliation claims. The reply is not yet validated.
+
 7 November 2026, revised the same day. Coordinator session (Claude Code, Opus 5.5), at
 the user's request. It follows up the
 [6 November intake](../../../../knowledge/frontier/INTAKE_2026-11-06.md). This is a
