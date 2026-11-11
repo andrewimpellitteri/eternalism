@@ -86,5 +86,7 @@ Fraction of energy outside the past cone, one space dimension, Gaussian data:
 - The fixing uses the arbitrarily remote past. At m = 0.3 a quarter of the energy is
   still outside the cone 200 time units back.
 - With a beginning or a cosmological horizon, massive matter stays outside past cones.
-  In a universe like ours it can be news.
-- The tempered class and the thin-tube version were not examined.
+  In a universe like ours it can be news. See [horizons and news](../horizons-and-news/RESULT.md).
+- The tempered class was not examined. The thin-tube version is supported by Holmgren
+  uniqueness as stated by Strohmaier and Witten; see the
+  [quantum companion](../cone-algebras/RESULT.md).
