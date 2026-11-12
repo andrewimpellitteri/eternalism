@@ -236,20 +236,20 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `longshot-cohomology-of-time` — Test whether shared presents and local clocks are cohomology classes of the category of spacetimes | 20 | — | glm-longshot-cohomology-of-time |
 | done | `longshot-bell-for-passage` — Search for a Bell-type theorem for objective passage | 20 | — | glm-longshot-bell-for-passage |
 | done | `read-temporal-experience` — Read the literature on temporal experience | 15 | — | glm-read-temporal-experience |
-| claimed | `read-direction-of-causation` — Read the literature on the direction of causation | 15 | — | glm-read-direction-of-causation |
+| review | `read-direction-of-causation` — Read the literature on the direction of causation | 15 | — | claude-native-read-direction-of-causation |
 | claimed | `read-problem-of-time` — Read the literature on the problem of time in quantum gravity | 15 | — | glm-read-problem-of-time |
 | done | `read-thermodynamic-arrow` — Read the literature on the thermodynamic arrow of time | 15 | — | glm-read-thermodynamic-arrow |
 | done | `read-quantum-theory-and-time` — Read the literature on quantum theory and temporal ontology | 15 | — | glm-read-quantum-theory-and-time |
 | done | `read-agency-fatalism-open-future` — Read the literature on agency, fatalism and the open future | 15 | — | glm-read-agency-fatalism-open-future |
 | claimed | `read-tense-and-language` — Read the literature on tense, aspect and temporal language | 15 | — | glm-read-tense-and-language |
-| claimed | `read-persistence` — Read the literature on persistence through time | 15 | — | glm-read-persistence |
-| claimed | `read-value-and-time-bias` — Read the literature on time bias and the value of time | 15 | — | glm-read-value-and-time-bias |
-| claimed | `read-history-of-time` — Read the history of the philosophy of time | 15 | — | glm-read-history-of-time |
-| review | `novel-massive-higher-dim` — Extend massive past-cone fixing to higher dimensions | 20 | — | claude-native-massive-higher-dim |
-| review | `novel-cpt-arrow` — Check the CPT step in the lawful-arrow argument | 20 | — | claude-native-cpt-arrow |
-| review | `novel-massive-cone-algebra` — Settle the massive entry in the cone-algebra note | 20 | — | claude-native-massive-cone-algebra |
-| review | `novel-growth-arrow` — Is the direction in causal-set sequential growth lawful or gauge? | 20 | — | claude-native-growth-arrow |
-| review | `novel-stochastic-fixing` — Define what a stochastic law fixes and test the mirror result | 20 | — | claude-native-stochastic-fixing |
+| review | `read-persistence` — Read the literature on persistence through time | 15 | — | claude-native-read-persistence |
+| review | `read-value-and-time-bias` — Read the literature on time bias and the value of time | 15 | — | claude-native-read-value-and-time-bias |
+| review | `read-history-of-time` — Read the history of the philosophy of time | 15 | — | claude-native-read-history-of-time |
+| done | `novel-massive-higher-dim` — Extend massive past-cone fixing to higher dimensions | 20 | — | claude-native-massive-higher-dim |
+| done | `novel-cpt-arrow` — Check the CPT step in the lawful-arrow argument | 20 | — | claude-native-cpt-arrow |
+| done | `novel-massive-cone-algebra` — Settle the massive entry in the cone-algebra note | 20 | — | claude-native-massive-cone-algebra |
+| done | `novel-growth-arrow` — Is the direction in causal-set sequential growth lawful or gauge? | 20 | — | claude-native-growth-arrow |
+| done | `novel-stochastic-fixing` — Define what a stochastic law fixes and test the mirror result | 20 | — | claude-native-stochastic-fixing |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 
