@@ -40,6 +40,95 @@ By Theorem~\ref{thm:main}(a), $x\le b$ and $b\le x$, and globally hyperbolic
 spacetimes are causal, so $x=b$.
 \end{proof}
 
+The next three statements use (LC) alone. Call an assignment $M\mapsto R_M
+\subseteq M\times M$ satisfying (LC) a \emph{local relation}; no transitivity
+and no (CB) is assumed. Write $d_M(x,b)$ for the supremum of the lengths of
+future causal curves from $x$ to $b$.
+
+\begin{proposition}[No spacelike scale]\label{prop:noscale}
+For every local relation $R$, $R_\Mink$ contains no pair of spacelike-separated
+events or every such pair.
+\end{proposition}
+
+\begin{proof}
+By (LC), $R_\Mink$ is invariant under the proper orthochronous Poincaré group,
+which is transitive on ordered spacelike pairs of a given interval. So there is
+$f:(0,\infty)\to\{0,1\}$ with $x\,R_\Mink\,b\iff f(s)=1$, $s$ the interval.
+
+Let $C_\ell=\mathbb R_t\times\mathbb R^2\times S^1_\ell$ be the flat cylinder
+with circle of length $\ell$; it lies in $\GH$, and $\{t=0\}$ is a Cauchy
+hypersurface. Fix $0<a<\ell$ and $0<2\rho<\min\{a,\ell-a\}$. Let $x=(0,0,0)$,
+$b=(0,0,a)$ in coordinates $(t,y,\theta)$, and
+\[
+S_1=\{t=0,\ |y|<\rho,\ \theta\in(-\rho,a+\rho)\},\qquad
+S_2=\{t=0,\ |y|<\rho,\ \theta\in(a-\rho,\ell+\rho)\}.
+\]
+Each $S_i$ is acausal and contains $x$ and $b$. Put $N_i=\operatorname{int}
+D(S_i)$. Let $\pi:\Mink\to C_\ell$ be the covering map and $\tilde S_i$ a lift
+of $S_i$, a straight tube in $\{t=0\}$. We claim $\pi$ maps
+$\operatorname{int}D_\Mink(\tilde S_i)$ isometrically onto $N_i$. Inextendible
+causal curves lift, so $\pi(D_\Mink(\tilde S_i))\subseteq D(S_i)$. Conversely
+let $p\in D^+(S_i)$ at height $\tau$ over $q\in S_i$, and let $\tilde q\in
+\tilde S_i$ lift $q$. The straight past causal rays from $p$ meet $\{t=0\}$
+once, in $\pi(\bar B(\tilde q,\tau))$, which therefore lies in $S_i$. The
+preimage of $S_i$ is a disjoint union of translates of $\tilde S_i$, and the
+ball is connected and contains $\tilde q$, so $\bar B(\tilde q,\tau)\subseteq
+\tilde S_i$ and $(\tau,\tilde q)\in D^+_\Mink(\tilde S_i)$ projects to $p$.
+The case of $D^-$ is the mirror image, and $\pi$ is injective over $\tilde S_i$.
+
+$N_i$ is causally convex: if $p,q\in D(S_i)$, $p\le r\le q$ and $\lambda$ is an
+inextendible causal curve through $r$, then the curve back from $q$ to $r$
+followed by the past half of $\lambda$ meets $S_i$, and so does the curve from
+$p$ to $r$ followed by the future half of $\lambda$; if neither meeting point
+is on $\lambda$ there are $s_2\le r\le s_1$ in $S_i$, and acausality gives
+$s_1=s_2=r$. Interiors follow by moving $p,q$ slightly. $N_i$ is connected,
+and it is globally hyperbolic because it is isometric to
+$\operatorname{int}D_\Mink(\tilde S_i)$, whose causal diamonds are compact
+diamonds of $\Mink$. So $N_i\hookrightarrow C_\ell$ and
+$N_i\cong\operatorname{int}D_\Mink(\tilde S_i)\hookrightarrow\Mink$ are
+morphisms. In the first lift the endpoints are at interval $a$, in the second
+at interval $\ell-a$. Applying (LC) four times,
+\[
+f(a)=[x\,R_{N_1}\,b]=[x\,R_{C_\ell}\,b]=[x\,R_{N_2}\,b]=f(\ell-a).
+\]
+Given $s,s'>0$ take $a=s$, $\ell=s+s'$. So $f$ is constant.
+\end{proof}
+
+The proof uses only flat spacetimes, so it holds on any full subcategory of
+$\GH$ that contains $\Mink$ and the cylinders and is closed under restriction
+to causally convex open subsets, including the vacuum and dominant-energy
+subcategories.
+
+\begin{corollary}[Local relations on Minkowski spacetime]\label{cor:localrel}
+For a local relation $R$, $R_\Mink$ is a union of: the diagonal or nothing;
+all future lightlike pairs or none; all past lightlike pairs or none; all
+spacelike pairs or none; and the future (respectively past) timelike pairs
+whose proper time lies in an arbitrary set $T_+$ (respectively $T_-$)
+$\subseteq(0,\infty)$. Every such union is the restriction to $\Mink$ of a
+local relation.
+\end{corollary}
+
+\begin{proof}
+$R_\Mink$ is a union of orbits of the proper orthochronous Poincaré group, and
+Proposition~\ref{prop:noscale} treats the spacelike orbits. Conversely,
+equality, the horismos relations, the absence of any causal relation, and the
+conditions $d_M(x,b)\in T_+$, $d_M(b,x)\in T_-$ are preserved and reflected by
+morphisms, because causal curves between points of a causally convex set stay
+in it.
+\end{proof}
+
+\begin{corollary}[Local presents]\label{cor:localpresent}
+Let $R$ be a symmetric local relation that relates no two distinct causally
+related events. Then for each $b\in\Mink$ the set of events $R$-related to $b$
+is contained in $\{b\}$, or is the set of all events spacelike to $b$,
+possibly together with $b$.
+\end{corollary}
+
+So a proper-time threshold survives locality and a spacelike one does not.
+The causal hull of a timelike pair is the diamond between them, which every
+causally convex region containing the pair contains and which fixes their
+proper time. The causal hull of a spacelike pair is the two points.
+
 \begin{corollary}[Worldline-dependent becoming]\label{cor:worldline}
 Suppose that for each $M\in\GH$, each inextendible timelike curve $\lambda$ in
 $M$ and each $b\in\lambda$ a set $B_{M,\lambda}(b)$ is given, satisfying

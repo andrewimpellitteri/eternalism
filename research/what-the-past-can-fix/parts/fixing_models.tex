@@ -58,6 +58,63 @@ $\psi=0$; at $x$, $u>0$ and $\psi\neq0$. So $\psi/a$ and $0$ are solutions that
 agree on $\Is(b)$ but not at $x$.
 \end{proof}
 
+\begin{remark}[The class matters]\label{rem:class}
+The witness in this proof is a plane wave, which has infinite energy. The verdict
+$F_{\mathcal L}(b)=J^-(b)$ belongs to the class of all smooth solutions as well as
+to the equation. The next proposition shows the verdict changing with the class
+for one equation on one spacetime.
+\end{remark}
+
+\begin{proposition}[Massive fields on Minkowski spacetime]\label{prop:massmink}
+On Minkowski spacetime $\mathbb R^{1+n}$ let $m>0$ and consider real solutions
+of $\partial_t^2\phi-\Delta\phi+m^2\phi=0$.
+\begin{enumerate}
+\item[(a)] For the class of all smooth solutions, $F(b)=J^-(b)$ for every $b$.
+\item[(b)] For the class of finite-energy solutions (Cauchy data in
+$H^1\times L^2$), $F(b)$ is the whole spacetime for every $b$, and the same holds
+with the strict chronological future of $b$ as base.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(a) $J^-(b)\subseteq F(b)$ by continuity. Let $x\notin J^-(b)$, with $b=(t_b,\vec Y)$.
+As in the proof of Proposition~\ref{prop:sharp} choose a unit vector $\hat k$
+such that $u=t-t_b-\hat k\cdot(\vec Z-\vec Y)$ is negative on $\Is(b)$ and positive
+at $x$, and put $v=t-t_b+\hat k\cdot(\vec Z-\vec Y)$. For functions of $(u,v)$ the
+equation reads $4\phi_{uv}+m^2\phi=0$. The function $j(z)=J_0(m\sqrt z)$ is entire
+and satisfies $zj''+j'+\tfrac{m^2}{4}j=0$, so $R=j((u-s)(v-c))$ satisfies
+$R_{uv}=-\tfrac{m^2}{4}R$ for all real $s,c$. Let $h\ge0$ be smooth with support in
+$(0,\infty)$ and put
+\[
+\phi(u,v)=\int_0^u h(s)\,j\bigl((u-s)(v-c)\bigr)\,ds\quad(u>0),\qquad \phi=0\quad(u\le0).
+\]
+Since $R=1$ at $s=u$, $\phi_u=h(u)+\int_0^uhR_u\,ds$, and so
+$\phi_{uv}=\int_0^uhR_{uv}\,ds=-\tfrac{m^2}{4}\phi$. Thus $\phi$ is a smooth solution
+vanishing on $\Is(b)$. Taking $c$ close to $v(x)$ and $h$ a bump supported below
+$u(x)$ gives $\phi(x)>0$.
+
+(b) Take $b$ at the origin and let $\phi$ have finite energy and vanish on
+$\Is(b)=\{t<-|x|\}$. At each $t<0$ the energy density vanishes on $|x|<|t|$, so all
+of the conserved energy lies in $|x|\ge|t|$. For a finite-energy solution that
+portion tends to zero as $t\to-\infty$: for $n=1$ by \citet[Theorem~1, with time
+reversed]{Burnol2006}, and for every $n$ by \citet[Remark~1.10]{Yang2023}, who states it for $m=1$, to which
+the general case reduces by scaling. Hence the energy is zero, and $\phi=0$ because $m>0$. The
+future base is the time reverse.
+\end{proof}
+
+The solutions used in (a) grow like a modified Bessel function where
+$(u-s)(v-c)<0$ and have infinite energy. The argument for (b) uses only the decay
+of energy outside the light cone, which fails at zero mass.
+A massive field carries nothing in from null infinity: its energy arrives from
+past timelike infinity, which lies in the closure of every past light cone. So on
+this background the past of an event fails to fix a finite-energy field only when
+the field is massless. Weinstein argues that prediction from a past light cone in
+electromagnetism needs the added assumption of no incoming radiation
+\citep{Weinstein2011}; part (b) says that for a massive field of finite energy the
+corresponding statement is a theorem, and a time-symmetric one. The fixing in (b)
+uses the arbitrarily remote past, so it does not make such a field practically
+predictable (compare Section~\ref{sec:mass}).
+
 
 \begin{proposition}\label{prop:dust}
 Let $M$ be conformal to $(\eta_-,\eta_+)\times S^3$ with $\eta_+-\eta_->\pi$.

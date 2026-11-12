@@ -1,5 +1,51 @@
 # Current claim and dependency ledger
 
+The [unified paper](what-the-past-can-fix/) restates the proved results. This ledger still governs
+their status. Files listed in [REVIEW_QUEUE.md](REVIEW_QUEUE.md) gain no status by being in the tree.
+
+## 10–11 November: coordinator results, none independently reviewed
+
+Everything in this section was produced and checked by one coordinator session
+(Claude Code, Fable 5.2). No worker, second model or outside reader has reviewed it.
+The mathematical cores mostly belong to the cited authors; what is offered is the
+transfer to the paper's questions.
+
+| Claim | Status | Where | In the paper |
+|---|---|---|---|
+| No local, transitive becoming rule selects among spacelike-related events; a lawful shared present exists exactly when the class has a local clock | Proved; self-checked. Builds on Fewster–Verch and on an earlier remark in the Stein draft | [local-clock](stein-gr/local-clock/RESULT.md) | Yes |
+| What one region fixes about another is what the other fixes about it; the two differ only in what each leaves open, by H(c)−H(a) | Elementary; self-checked. The balance is in Albert | [fixing-exchange](time-direction/fixing-exchange/RESULT.md) | Yes |
+| The closed-dust arrow of fixing reverses at maximum expansion | Proved; corrects an earlier sentence of the paper | Same | Yes |
+| On Minkowski spacetime a massive field of finite energy is fixed everywhere by any past cone; for all smooth solutions it is fixed only on the causal past | (a) proved in every dimension; (b) in every dimension from the decay of exterior energy (Burnol for one dimension, Yang for all, both checked). A worker's proof extends (b) to tempered solutions | [massive-minkowski](horizons/massive-minkowski/RESULT.md) | Yes, 11 November |
+| The freedom in the same-past theorem is the incoming mass profile | Self-checked; part (c) of the rigidity question open | [massive-same-past](lawful-completions/massive-same-past/RESULT.md) | No |
+| A region hidden from an event defeats fixing for every linear hyperbolic law; so the massive result fails with a particle or cosmological horizon | Elementary; self-checked | [horizons-and-news](horizons/horizons-and-news/RESULT.md) | No |
+| An observer's past worldline generates the algebra of the past cone; cone algebras commute for massless fields | Cited authors' results. The massive entry rests on an unread paper | [cone-algebras](horizons/cone-algebras/RESULT.md) | No |
+| Collapse records are time-symmetric from a maximally mixed state; a clock on a reversal-invariant class is odd under reversal | Elementary; the first is a case of Bedingham–Maroney's conjecture. Whether collapse gives a lawful arrow turns on the status of the wavefunction | [settling](agentic-philosophy/settling/RESULT.md) | No |
+
+Native research lanes of 11 November, reviewed by the coordinator only: see the
+[review](NOVEL_REVIEW_2026-11-11.md). They correct the settling note on CPT and on
+causal-set growth.
+
+Closed without a result: the [clock-content contract](time-direction/clock-content/CLAIM_CONTRACT.md)
+and four of five [longshot lanes](longshots/REVIEW_2026-11-10.md).
+
+Reading maps, not results: six [reading lanes](../knowledge/reading/REVIEW_2026-11-11.md).
+Their requests were applied to the paper on 11 November after four citations were
+checked at source ([patch](what-the-past-can-fix/PATCH_READING_2026-11-11.md)). Four
+lanes produced nothing and are still to run.
+
+## Current roadmap and latest bounded acceptance, 31 October
+
+The [current roadmap](ontology-reconstruction/ROADMAP.md) separates the reviewed
+physical results from the unresolved philosophical selection. The
+[finite-prefix corollary](lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md)
+is now accepted at its named conditional scope: it matches total incoming mass
+and finitely many geometric cumulative incoming masses while retaining an open
+range of future scalar readings. It is not yet integrated into the unified
+manuscript. Whole central-history control remains in review; the coordinator
+[audit](lawful-completions/coordinator/central-history-audit/RESULT.md) rejects
+two worker objections without accepting the full theorem. Earlier dated updates
+below retain their historical scope.
+
 ## 31 October: completed source-hinge round
 
 The [round disposition](agentic-philosophy/result-search-round1/DISPOSITION.md)
@@ -43,10 +89,13 @@ Updated 31 October 2026. Integration ledger; status is inherited from the named 
 | Closed-dust massless determination/refocusing | Reviewed fixed-background result | Conformal scalar, exact stated global class and boundary conventions; priority gate | [Horizons](horizons/main.tex), [verification](where-openness-lives/VERIFY.md) |
 | Closed-dust positive-mass classification | Accepted research sidecar | All smooth real solutions, physical m>0; F=Jpast for tau<pi, F=M for tau>=pi; not yet new manuscript theorem | [Review disposition](horizons/mass-classification/REVIEW_STATUS.md) |
 | Exact nonfixing implies practical unpredictability | Rejected implication | O(m^2) bounded ambiguity and noisy records require separate norm/measurement contracts | [Bounded ambiguity](horizons/bounded-ambiguity/RESULT.md) |
+| Law-relative fixing has a time-reversal mirror | Precise contract and scope have bounded analytic review | Entire admissible class must be transported bijectively; relates b to theta(b). A symmetry fixing b still transports the fixing set. This does not establish symmetry at an arbitrary unchanged base; boundary-conditioned physical and chance claims need separate analysis. Manuscript clarification pending | [Audit and handoff](ontology-reconstruction/coordinator/roadmap-audit-2026-10-31/ARROW_DISPOSITION.md) |
 | Bivalent GBT secretly requires present concrete future grounds | Rejected as a generic critique | Strong rival allows later grounds and additional future-directed facts | [Disagreement](future-truth-rivals/coordinator/POINT_OF_DISAGREEMENT.md) |
 | Same causal past means same existing bow-tie realm | Rejected | Spacelike exterior matter can differ and already belong to that realm | [Philosophical scope](lawful-completions/coordinator/PHILOSOPHICAL_SCOPE.md) |
 | Smooth coupled same-past finite-reading interpolation at fixed incoming mass | Corollary of bounded reviewed components | Separate smooth-category and finite-control audits; inherited external inputs, no new whole-theorem audit; priority comparison open | [Smooth category and control corollary](lawful-completions/coordinator/SMOOTH_FINITE_CONTROL.md) |
 | C¹,¹ coupled finite readout range at fixed incoming mass | Finite-control audit accepted at bounded scope, 31 October | Same full pointed causal past; open ball of radius c√E at each fixed finite schedule; actual total incoming mass, not prefix or ADM equality; external LOY inputs retained | [Acceptance and corrections](lawful-completions/coordinator/FINITE_CONTROL_ACCEPTANCE.md) |
+| Finite scalar readout range at fixed total and sampled cumulative incoming masses | Conditional finite-prefix corollary accepted at bounded internal scope, 31 October | Same entire pointed causal past; fixed finite proper-time schedule and strictly increasing mass fractions; radius c√E with schedule/fraction-dependent constants. Geometric incoming null cuts, not local energy, ADM, full mass function or Cauchy data. Smooth MGHD category inherits its separate bridge | [Proof](lawful-completions/coordinator/prefix-mass-audit/RESULT.md), [review disposition](lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md) |
+| Whole prescribed central scalar history at fixed incoming mass | Incomplete conditional candidate; task remains in review | Coordinator repairs two worker objections and expands derivative/mass estimates; combined function-space limit and category obligations remain. Finite samples do not imply this theorem | [Current audit](lawful-completions/coordinator/central-history-audit/RESULT.md) |
 | Every finite sign pattern of those scalar readouts | Corollary of the bounded reviewed finite-control chain | N-dependent smallness and amplitudes; no exchange of finite-N and fixed-resolution quantifiers | [Quantifiers and corollary](lawful-completions/coordinator/C11_FINITE_CONTROL.md) |
 | Actual incoming boundary mass equals quarter profile norm | Independently reviewed deduction in reduced scattering class | Exact pre-pulse flatness and source uniform estimates; no ADM identification | [Mass proof](lawful-completions/coordinator/INCOMING_MASS.md), [review](lawful-completions/energy/REVIEW_INCOMING_MASS.md) |
 | Finite control needs a differentiable global scattering selection | Superseded proof requirement | Sufficient for IFT route, not necessary for degree-before-limit route | [Degree route](lawful-completions/coordinator/DEGREE_ROUTE.md) |
@@ -67,12 +116,14 @@ Updated 31 October 2026. Integration ledger; status is inherited from the named 
 | Smooth Einstein–scalar common-duration readings | Coordinator source check/corollary, review pending | Field-preserving common larger GHD, corrected open-domain argument; smooth category only | [Correction](lawful-completions/coordinator/SMOOTH_SCALAR_REPAIR.md) |
 | Restricted partial-data domains are always maximal developments | Separate unresolved premise | Lprime not needed for repaired common-duration theorem; do not mark it proved | [Claude draft](bowtie-horizons/SCREENING.md) |
 | Physics here selects eternalism, GBT or fragmentalism | Not established | Existence/truth/grounding bridges remain defended philosophical premises | [Current synthesis](CURRENT_SYNTHESIS.md) |
+| Tooley's causal-law asymmetry selects a growing inventory | Explanatory necessity remains open after a bounded source-led test | Selected1997 argument directly reconstructed. Finite ordinary-probability model permits displayed C1/C3/C4 while C4* fails, but stipulates directed autonomy and is not his logical-probability theory. Within-history growth alone does not fix the cross-law comparison; neither full refutation nor explanatory parity established | [Argument and limits](ontology-reconstruction/coordinator/causal-production/RESULT.md), [law-variation test](ontology-reconstruction/coordinator/causal-production/LAW_VARIATION_TEST.md), [audit](ontology-reconstruction/causal-production-review/RESULT.md) |
 | Every pair in the selected smooth scattering class shares a chronological future | Bounded analytic audit integrated | Uses global F,A cone bounds; no claim for arbitrary complete spacetimes | [Smooth-class realm contrast](lawful-completions/coordinator/REALM_CONTRAST_IN_SMOOTH_CLASS.md) |
 | Whole open bow-tie matching fixes that smooth scalar development | Bounded specialization audited | Onto metric-and-scalar realm isometry, marked extension/germ, ambient Cauchy transport and scalar MGHD uniqueness; not causal-past matching | [Proof and review](ontology-reconstruction/coordinator/ARGUMENT_REVIEW_2026_10_30.md) |
 | Eventual resolution plus inventory growth entails truth now | Rejected inference in restricted counterinterpretation | L/S policies differ at fixed occurrence/growth pattern; no full named semantics or bivalence refutation | [Passage test](ontology-reconstruction/coordinator/PASSAGE_AND_EARLIER_TRUTH.md) |
 | Local equations and Cauchy data force actual maximal continuation | Extra bridge required | Same-data nonmaximal smooth restriction remains a solution; maximal-world admissibility is a methodological premise, not eternalism | [Maximality argument](ontology-reconstruction/coordinator/MAXIMALITY_AND_EXISTENTIAL_OPENNESS.md) |
 | A nontrivial nomological box forces maximal-world admissibility | Rejected worker inference; submission remains in review | Failure of all complete future-state determination claims need not trivialize local laws. C&R p114 bans future information in present descriptions, not all cessation alternatives | [Modal submission review](ontology-reconstruction/coordinator/MODAL_CATEGORY_REVIEW.md) |
 | Predictive sufficiency establishes constitutive unity or a concrete present | Not established | Separate two bridges; coordinator argument, not covered by the bounded philosophy audit | [Constitution test](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md) |
+| Unfinished, interruptible processes require a growing inventory for their explanation | Displayed exclusive-advantage argument rejected at bounded scope | A material feedback/participation account preserves input dependence under either inventory; counterpart criterion is explicit, sufficient metaphysical unity is not proved | [Controlled comparison and review](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md) |
 | Exact material autonomy and robust subsystem behaviour have the same boundary | Refuted for the specified Hamiltonian family; bounded audit integrated | Four-mass spring graph changes at zero coupling; compact-time trajectories converge. Different κ means different Hamiltonians, not same-law control; no refutation of interacting or approximate unity | [Unity test](ontology-reconstruction/coordinator/WEAK_COUPLING_AND_TEMPORAL_EXTENT.md) |
 | Restriction-hereditary unity tests select a smallest thick present | Rejected under explicit interval assumptions; bounded audit integrated | Nonempty qualifying family of open intervals containing a mark, hereditary under narrowing; no singleton or whole-history conclusion. Nonhereditary activity criteria survive | [Interval argument and review](ontology-reconstruction/unity-robustness-review/RESULT.md) |
 | Lawful-alternative necessity is nonvacuous with any chosen fixed background | Rejected as a generic inference; new coordinator argument | Absence cases can be excluded by complete data/maximal category. Physical deletion differs from existence-at denial; no complete counterfactual theory or ontology selection | [Constitution §8](ontology-reconstruction/coordinator/CONSTITUTION_IS_NOT_PREDICTION.md) |

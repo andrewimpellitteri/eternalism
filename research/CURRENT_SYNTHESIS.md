@@ -1,5 +1,99 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **10–11 November, coordinator session, not independently reviewed.** Three things changed
+> the picture; details and statuses are in the [claim ledger](CLAIM_STATUS.md).
+> - **A lawful shared present is a clock.** A local rule for a shared present exists exactly
+>   when some local quantity is monotone along every timelike curve of every admissible world.
+> - **Fixing has no arrow of its own.** What two regions fix about each other is the same;
+>   an imbalance comes from beginnings, horizons, lossy descriptions or non-stationary chances.
+> - **Every verdict depends on the class.** Whether a past fixes a future changes with the
+>   solutions admitted, the mass of the field and the presence of a horizon.
+>
+> The [essay](agentic-philosophy/ESSAY_2026-11-11.md) draws the philosophical reading and the
+> [settling note](agentic-philosophy/settling/RESULT.md) tests what could break the stalemate.
+> No ontology is selected.
+
+> **7 November Markovian-presentism read:** this is the first engagement with Builes and
+> Impagnatiello's (2025) argument that Markovian laws favour presentism. Their 2022 preprint and
+> Lettie's reply were read in full; Ryoo's and Howarth's replies were read in part. The
+> [bounded reconstruction](ontology-reconstruction/coordinator/markovian-presentism/RESULT.md)
+> makes three points:
+> - **What Nomic Presentism makes certain:** the probability-one proposition in the authors'
+>   derivation is the presentist restatement of Markovianism. That restatement holds for any law,
+>   so it is not the property of the laws that physics reports.
+> - **Where Markovianism comes from:** single-time backward determinism already entails it,
+>   whatever the ontology.
+> - **Scope:** the datum, as the authors state it, depends on a global Cauchy foliation. The
+>   finite-prefix corollary bears on local versions. Linking it to Horvat's Bell-type locality
+>   result is only a conjecture.
+>
+> It also records that the authors' locality dilemma for non-Humean causal powers is a standing
+> objection to the causal-production lane's preferred rival. Elementary observations only, with no
+> priority claim and no ontology verdict. Coordinator work, not independently reviewed.
+>
+> **Revised the same day.** After a citation sweep, Markosian's semantics and a check of Horvat's
+> proof:
+> - **Withdrawn:** the backward-determinism repair. It does not weaken the authors' Bayesian claim.
+> - **Now the core point:** on Markosian's route semantics, Nomic Presentism is consistent with the
+>   authors' own non-Markovian law. Getting to Markovian *laws* needs a premise that governing laws
+>   take only present input, so "any version of non-Humeanism" fails.
+> - **New:** the Markovian datum depends on which state counts as present. It holds for the global
+>   wavefunction, is contested for GRW flashes with a nomological wavefunction, and, adapting
+>   Horvat, conflicts with Bell for local event states.
+>
+> A [reply outline](ontology-reconstruction/coordinator/markovian-presentism/REPLY_DRAFT.md) lists
+> its gates. Nothing has been sent.
+
+> **31 October causal-production investigation:** the
+> [selected Tooley1997 reconstruction](ontology-reconstruction/coordinator/causal-production/RESULT.md)
+> tests the actual causal-law/logical-probability argument rather than the
+> simple production gloss. A finite model and its
+> [bounded audit](ontology-reconstruction/causal-production-review/RESULT.md)
+> check the ordinary probability identities; their assumed directional
+> independence prevents a full countermodel claim. A stronger
+> [law-variation comparison](ontology-reconstruction/coordinator/causal-production/LAW_VARIATION_TEST.md)
+> distinguishes persistence within a history from invariance across law
+> changes. Whether temporal actuality or a non-Humean governing relation better
+> explains the privileged comparison remains open. The source-led route is a
+> live alternative to the previously stopped constitution-to-inventory route,
+> not a selecting argument already won. Later Tooley treatments remain
+> abstract-depth gates; no external expert or priority verdict is supplied.
+
+> **Current position, 31 October:** use the revised
+> [roadmap](ontology-reconstruction/ROADMAP.md) for present milestones and next
+> decisions. The dated launch/status notices below are historical where they
+> conflict with this update. The conditional
+> [finite-prefix corollary](lawful-completions/coordinator/prefix-mass-audit/RESULT.md)
+> now has bounded internal acceptance: the entire pointed causal past, total
+> incoming mass and a finite list of geometric cumulative incoming masses can
+> agree while future scalar readings vary over a small open ball. This result
+> is not yet in the unified manuscript. It supplies neither a whole incoming
+> mass function nor an ontological verdict. The separate
+> [whole central-history audit](lawful-completions/coordinator/central-history-audit/RESULT.md)
+> repairs two objections but leaves that theorem in review. The
+> [process-explanation disposition](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md)
+> retains no exclusive inventory advantage. The new
+> [time-direction audit and handoff](ontology-reconstruction/coordinator/roadmap-audit-2026-10-31/ARROW_DISPOSITION.md)
+> retain the model-class-invariant reversal formula, correct its fixed-base
+> scope, and leave the physical Past-Hypothesis question open. Its manuscript
+> corrections await the source owner; earlier manuscript reviews do not accept
+> that new discussion automatically.
+
+> **31 October consolidation:** the proved results are now gathered in one paper,
+> [What the Past Can Fix](what-the-past-can-fix/). Read it first. This file remains the dated
+> narrative. [REVIEW_QUEUE.md](REVIEW_QUEUE.md) lists worker results with no sign-off, including
+> results rescued from local branches, none of which this synthesis accepts by being adjacent to them.
+
+> **31 October process-explanation test:** a
+> [controlled operation and its timed replay](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_TEST.md)
+> share an actual output history but differ under changed inputs. The
+> organizing mechanism supplies explanatory content that both a growing
+> account and a stronger event-realist account can retain. The bounded
+> [review and disposition](ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md)
+> reject the displayed exclusive-inventory-advantage argument; sufficient
+> metaphysical unity remains open. Direct Stout/Steward reading also locates
+> predecessors of the interruption and happening/presence distinctions.
+
 > **31 October metaontology check:** the
 > [review of Claude's new reading](agentic-philosophy/CLAUDE_METAONTOLOGY_REVIEW.md)
 > retains the need to specify E_b's content, but rejects the inference that a

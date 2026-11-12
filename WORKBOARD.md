@@ -212,19 +212,44 @@ First milestone: prior work → theory map → independent novelty audit.
 | done | `ontology-actuality-maximality-review` — Red-team passage, earlier truth and maximal-world openness arguments | 10 | — | native-actuality-maximality |
 | review | `ontology-modal-category-bridge` — Map existential openness to explicit physical and metaphysical model categories | 10 | ontology-actuality-maximality-review | glm-ontology-modal-category-bridge |
 | review | `ontology-constitutive-extent-test` — Test one constitutive temporal extent beyond predictive sufficiency | 10 | — | glm-ontology-constitutive-extent-test |
-| claimed | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | glm-lawful-prefix-energy-control |
+| done | `lawful-prefix-energy-control` — Test fixed cumulative incoming masses at each proper-time scalar reading | 9 | lawful-finite-control-review | native-prefix-energy-recovery |
 | done | `ontology-unity-robustness-review` — Audit weak-coupling, temporal refinement and exact-existence argument | 10 | — | native-unity-robustness |
 | done | `ontology-response-memory-priorart` — Challenge novelty of response-memory support versus small-mass norm contrast | 10 | — | glm-ontology-response-memory-priorart |
 | done | `ontology-response-memory-review` — Red-team retarded response support, norm limit and transport-window benchmark | 10 | — | native-response-memory |
 | review | `ontology-coordination-unity` — Test physical carrier organization as a constitutive unity criterion | 10 | ontology-response-memory-review | glm-ontology-coordination-unity |
 | review | `ontology-cycle-recovery-test` — Compare intrinsic cycle and recovery durations as candidate constitutive extents | 9 | ontology-response-memory-review | glm-ontology-cycle-recovery-test |
-| claimed | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | glm-lawful-central-history-review |
+| review | `lawful-central-history-review` — Audit conditional whole central scalar-history control beyond finite samples | 10 | lawful-finite-control-review | native-central-history-recovery |
 | review | `ontology-constitutive-bridge-pilot` — Execute one philosophical bridge argument and one adversarial revision | 11 | — | glm-ontology-constitutive-bridge-pilot |
 | done | `ontology-grounding-inclusion-review` — Audit the constitutive-grounding argument and its exact counterexample | 9 | — | native-grounding-inclusion |
 | review | `ontology-occurrence-warrant-search` — Find an independently warranted bridge from process occurrence to temporal presence | 11 | — | glm-ontology-occurrence-warrant-search |
 | review | `ontology-modal-density-search` — Test dense branching against the nontrivial dynamic-present inference | 12 | — | glm-ontology-modal-density-search |
 | done | `ontology-occurrence-countermodel-review` — Audit the explicit rival to occurrence-to-current-concreteness | 12 | — | native-occurrence-countermodel-review |
 | done | `ontology-modal-counterexample-review` — Independently test the dense-comb counterexample to modal nontriviality | 12 | — | native-modal-counterexample-review |
+| done | `ontology-process-explanation-review` — Audit the controlled-process explanatory comparison and its modal scope | 10 | — | native-process-explanation-review |
+| done | `research-roadmap-audit-2026-10-31` — Reconcile the current roadmap with accepted scope and substantive research gaps | 10 | — | codex-roadmap-audit |
+| done | `temporal-arrow-contract-review` — Audit the new time-reversal fixing contract and its philosophical scope | 10 | — | native-temporal-arrow-review |
+| done | `ontology-causal-production-test` — Reconstruct and test the causal-law argument for temporal actuality | 10 | — | codex-causal-production |
+| done | `ontology-causal-production-review` — Red-team the causal-law to temporal-actuality comparison | 10 | — | native-causal-production-review |
+| done | `longshot-monadic-principle` — Test the monadic principle: every event's past fixes the universe | 20 | — | glm-longshot-monadic-principle |
+| done | `longshot-finite-openness` — Test the claim that the open future is a finite resource in a universe with dark energy | 20 | — | glm-longshot-finite-openness |
+| done | `longshot-entanglement-present` — Test whether quantum entanglement can define a spatially thick present | 20 | — | glm-longshot-entanglement-present |
+| done | `longshot-cohomology-of-time` — Test whether shared presents and local clocks are cohomology classes of the category of spacetimes | 20 | — | glm-longshot-cohomology-of-time |
+| done | `longshot-bell-for-passage` — Search for a Bell-type theorem for objective passage | 20 | — | glm-longshot-bell-for-passage |
+| done | `read-temporal-experience` — Read the literature on temporal experience | 15 | — | glm-read-temporal-experience |
+| review | `read-direction-of-causation` — Read the literature on the direction of causation | 15 | — | claude-native-read-direction-of-causation |
+| claimed | `read-problem-of-time` — Read the literature on the problem of time in quantum gravity | 15 | — | glm-read-problem-of-time |
+| done | `read-thermodynamic-arrow` — Read the literature on the thermodynamic arrow of time | 15 | — | glm-read-thermodynamic-arrow |
+| done | `read-quantum-theory-and-time` — Read the literature on quantum theory and temporal ontology | 15 | — | glm-read-quantum-theory-and-time |
+| done | `read-agency-fatalism-open-future` — Read the literature on agency, fatalism and the open future | 15 | — | glm-read-agency-fatalism-open-future |
+| claimed | `read-tense-and-language` — Read the literature on tense, aspect and temporal language | 15 | — | glm-read-tense-and-language |
+| review | `read-persistence` — Read the literature on persistence through time | 15 | — | claude-native-read-persistence |
+| review | `read-value-and-time-bias` — Read the literature on time bias and the value of time | 15 | — | claude-native-read-value-and-time-bias |
+| review | `read-history-of-time` — Read the history of the philosophy of time | 15 | — | claude-native-read-history-of-time |
+| done | `novel-massive-higher-dim` — Extend massive past-cone fixing to higher dimensions | 20 | — | claude-native-massive-higher-dim |
+| done | `novel-cpt-arrow` — Check the CPT step in the lawful-arrow argument | 20 | — | claude-native-cpt-arrow |
+| done | `novel-massive-cone-algebra` — Settle the massive entry in the cone-algebra note | 20 | — | claude-native-massive-cone-algebra |
+| done | `novel-growth-arrow` — Is the direction in causal-set sequential growth lawful or gauge? | 20 | — | claude-native-growth-arrow |
+| done | `novel-stochastic-fixing` — Define what a stochastic law fixes and test the mirror result | 20 | — | claude-native-stochastic-fixing |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

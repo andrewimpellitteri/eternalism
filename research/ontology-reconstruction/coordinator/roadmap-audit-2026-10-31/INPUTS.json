@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-10-31",
+  "input_sha256": {
+    "research/ontology-reconstruction/ROADMAP.md": "df8fbd2736a7bdccf165aedb673a2a0df0211fd2b3fa85192375efe159f57ba5",
+    "research/CLAIM_STATUS.md": "a4d3498fd167b508ef9dc1ffeac55920f68c107e0f5921a4507e160868dbbb99",
+    "research/CURRENT_SYNTHESIS.md": "9e4e064cb54566dc01e9777e6a5b3d0de0f3bd7f40930159d20dd2448b36e018",
+    "research/what-the-past-can-fix/main.tex": "9d103bb5b71d6e573ec97a471fa7136849962705bf13aee912d2a172715804b9",
+    "research/what-the-past-can-fix/REVIEW.md": "4d6255a0cdf88e1b4bcd25e007a902c28bc41b37982fa6894a3f8b1a5cbc6713",
+    "research/time-direction/ARROW_READ.md": "4f71d21314fabf6314fec60c98f6908adddf7d93710021400eb85016ebba0a4b",
+    "research/agentic-philosophy/claude-literature-gaps/LITERATURE_AUDIT.md": "1eef803ddb775967e791119467a3bf4458f3b9c4c103254ef72070462d052111",
+    "research/agentic-philosophy/claude-literature-gaps/TOTALITY_READ.md": "fa76331c9188a05f51c4c35b7ec11e54e854ede8ec34a7249cd1ad4bcda7f45a",
+    "research/PARITY_MAP.md": "87df41f952bb48b21c6e442827d1efb4528f2c093aa594273019499f35ac9223",
+    "research/REVIEW_QUEUE.md": "f381f1fd7ed348028717b502b5b27813253354e6d1f87bb3c12501d4953af40f",
+    "GATES.md": "c202bc98cc2a82dd27527c979996691e486651fdc7ace4fd80a0d1241f346dcf",
+    "research/lawful-completions/coordinator/prefix-mass-audit/RESULT.md": "8c7496d90cc485ec7d68271f50e405029589d9464b8f84629efc9f9824c63da1",
+    "research/lawful-completions/coordinator/prefix-mass-audit/REVIEW_DISPOSITION.md": "0210b9b735bbdc41a055f893255637a82800c80635c4d947513a1e4095629587",
+    "research/ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md": "9d437f24fc060dc51baac599c62d9363d09d1427cafadd7ae1fede7280a44abf",
+    "research/agentic-philosophy/result-search-round1/DISPOSITION.md": "7cd5f142b38f9a357dd110058211c5a392d4992f7b485e4f79f4e62cfc33baa7"
+  },
+  "limits": "Local repository audit. No fresh literature verification, PDE reproof, external referee or historical priority verdict."
+}
