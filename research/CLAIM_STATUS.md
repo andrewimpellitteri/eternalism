@@ -15,11 +15,15 @@ transfer to the paper's questions.
 | No local, transitive becoming rule selects among spacelike-related events; a lawful shared present exists exactly when the class has a local clock | Proved; self-checked. Builds on Fewster–Verch and on an earlier remark in the Stein draft | [local-clock](stein-gr/local-clock/RESULT.md) | Yes |
 | What one region fixes about another is what the other fixes about it; the two differ only in what each leaves open, by H(c)−H(a) | Elementary; self-checked. The balance is in Albert | [fixing-exchange](time-direction/fixing-exchange/RESULT.md) | Yes |
 | The closed-dust arrow of fixing reverses at maximum expansion | Proved; corrects an earlier sentence of the paper | Same | Yes |
-| On Minkowski spacetime a massive field of finite energy is fixed everywhere by any past cone; for all smooth solutions it is fixed only on the causal past | (a) proved in every dimension; (b) in one space dimension from Burnol's Theorem 1. Higher dimensions rest on an unchecked estimate | [massive-minkowski](horizons/massive-minkowski/RESULT.md) | Yes, 11 November |
+| On Minkowski spacetime a massive field of finite energy is fixed everywhere by any past cone; for all smooth solutions it is fixed only on the causal past | (a) proved in every dimension; (b) in every dimension from the decay of exterior energy (Burnol for one dimension, Yang for all, both checked). A worker's proof extends (b) to tempered solutions | [massive-minkowski](horizons/massive-minkowski/RESULT.md) | Yes, 11 November |
 | The freedom in the same-past theorem is the incoming mass profile | Self-checked; part (c) of the rigidity question open | [massive-same-past](lawful-completions/massive-same-past/RESULT.md) | No |
 | A region hidden from an event defeats fixing for every linear hyperbolic law; so the massive result fails with a particle or cosmological horizon | Elementary; self-checked | [horizons-and-news](horizons/horizons-and-news/RESULT.md) | No |
 | An observer's past worldline generates the algebra of the past cone; cone algebras commute for massless fields | Cited authors' results. The massive entry rests on an unread paper | [cone-algebras](horizons/cone-algebras/RESULT.md) | No |
 | Collapse records are time-symmetric from a maximally mixed state; a clock on a reversal-invariant class is odd under reversal | Elementary; the first is a case of Bedingham–Maroney's conjecture. Whether collapse gives a lawful arrow turns on the status of the wavefunction | [settling](agentic-philosophy/settling/RESULT.md) | No |
+
+Native research lanes of 11 November, reviewed by the coordinator only: see the
+[review](NOVEL_REVIEW_2026-11-11.md). They correct the settling note on CPT and on
+causal-set growth.
 
 Closed without a result: the [clock-content contract](time-direction/clock-content/CLAIM_CONTRACT.md)
 and four of five [longshot lanes](longshots/REVIEW_2026-11-10.md).

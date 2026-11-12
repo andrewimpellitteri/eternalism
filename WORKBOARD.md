@@ -245,6 +245,11 @@ First milestone: prior work → theory map → independent novelty audit.
 | claimed | `read-persistence` — Read the literature on persistence through time | 15 | — | glm-read-persistence |
 | claimed | `read-value-and-time-bias` — Read the literature on time bias and the value of time | 15 | — | glm-read-value-and-time-bias |
 | claimed | `read-history-of-time` — Read the history of the philosophy of time | 15 | — | glm-read-history-of-time |
+| review | `novel-massive-higher-dim` — Extend massive past-cone fixing to higher dimensions | 20 | — | claude-native-massive-higher-dim |
+| review | `novel-cpt-arrow` — Check the CPT step in the lawful-arrow argument | 20 | — | claude-native-cpt-arrow |
+| review | `novel-massive-cone-algebra` — Settle the massive entry in the cone-algebra note | 20 | — | claude-native-massive-cone-algebra |
+| review | `novel-growth-arrow` — Is the direction in causal-set sequential growth lawful or gauge? | 20 | — | claude-native-growth-arrow |
+| review | `novel-stochastic-fixing` — Define what a stochastic law fixes and test the mirror result | 20 | — | claude-native-stochastic-fixing |
 
 Agent delivery enters review. Only integrated, reviewed work becomes done.
 

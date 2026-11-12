@@ -10,7 +10,7 @@ Sources: [sources.jsonl](sources.jsonl). Check: [collapse_reversal.py](collapse_
 
 | Route | Outcome |
 |---|---|
-| A fundamental law that is not time-symmetric | **Narrowed to an exact target.** Collapse qualifies only if the wavefunction is counted as a thing and not as part of the law (§5). A lawful arrow needs a class of worlds with no time-reversing symmetry of any kind. A lawful *present* needs less, and can exist under ordinary symmetric laws |
+| A fundamental law that is not time-symmetric | **Open in two places, closed in none.** Collapse qualifies only if the wavefunction is a thing and not part of the law. Generic causal-set growth is a lawful arrow in a toy model. The Standard Model has one if the matter label is primitive (§2, §5). A lawful arrow needs a class of worlds with no time-reversing symmetry of any kind. A lawful *present* needs less, and can exist under ordinary symmetric laws |
 | An argument from experience, agency or value | **Reduces to the first route or fails.** A present that makes a physical difference is a physical field and falls under the first route. One that makes none cannot be evidenced by a subject |
 | A theory without spacetime | **Makes it harder, not easier.** The symmetric relations survive without spacetime. The one oriented relation does not |
 
@@ -83,13 +83,29 @@ What an odd clock gives and does not give:
 - **No direction.** The clock increases toward whichever direction is called the
   future. It reads back the orientation it is given.
 
-**So a lawful arrow needs the class of admissible worlds to break every time-reversing
-symmetry.** For local, Lorentz-invariant quantum field theories the CPT theorem
-supplies such a symmetry. On that basis an arrow is either a boundary condition, or it
-needs a failure of locality or of Lorentz invariance. That is a precise target, and it
-is the same failure that a primitive preferred foliation would be. I have not checked
-how the CPT theorem's reversal acts on the classes used in the project's theorems, so
-this last step is an argument and not a result.
+**So a lawful arrow needs a class of admissible worlds that is not closed under
+reversal.** I first wrote that the CPT theorem closes every local, Lorentz-invariant
+class, so that an arrow needs a failure of locality or of Lorentz invariance. A worker
+[checked that step](../../time-direction/cpt-arrow/RESULT.md) and it does not stand as
+written. The corrected claim:
+
+- For general relativity and classical tensor fields no CPT theorem is needed. The
+  class is closed under reversal whenever the laws do not mention the time
+  orientation.
+- Local, covariant classical laws can mention it. The project's own curvature-clock
+  class does, and so does a fluid whose viscosity is positive by law. So "local and
+  Lorentz-invariant" does not exclude an arrow.
+- For quantum fields the reversal is supplied by the CPT theorem, in curved spacetime
+  in Hollands and Wald's form, under the hypotheses of that theorem.
+- CPT closes the class only if a world and its charge-conjugate with reversed time
+  count as the same content. If which things are matter is a primitive fact, the
+  violation of T in the weak interaction already fixes a direction relative to it.
+  The laws fix the product of time orientation and matter label, and neither alone.
+  That is a known dispute (Roberts against Arntzenius and Greaves) and physics does
+  not settle it.
+
+So an arrow by law needs one of three things: a boundary condition, the failure of a
+premise of the relevant theorem, or content that reversal does not preserve.
 
 ## 3. Experience, agency and value
 
@@ -142,9 +158,13 @@ submissions; I spot-checked scope and two abstracts, not their sources.
   The pair of wavefunction and flashes is not reversal-symmetric, and the flashes
   alone are, up to boundary conditions, if their conjecture holds. Whether collapse
   gives a lawful arrow therefore turns on whether the wavefunction is a thing or a
-  law. That is a known dispute, and it moves the question and does not settle it. The
-  same lane names causal-set sequential growth as a second lawful direction, at
-  abstract depth; I have not looked at it.
+  law. That is a known dispute, and it moves the question and does not settle it. The same lane names causal-set sequential growth as a second lawful direction. A
+  worker [tested it](../../time-direction/growth-arrow/RESULT.md): transitive
+  percolation gives every causal set the same probability as its reverse, exactly,
+  and its only asymmetry is having a beginning; generic growth does not, and its
+  measure is reversal-invariant only for percolation. So generic growth is a lawful
+  arrow, in a classical toy model. Birth order is gauge on the authors' own account,
+  so it is an arrow and not a passage.
 - **For §2.** Barbour, Koslowski and Mercati (2014, abstract depth in the lane) get
   an arrow from a time-symmetric law with no special initial condition: typical
   solutions have one past and two futures. That is an orientation-independent
@@ -166,14 +186,17 @@ submissions; I spot-checked scope and two abstracts, not their sources.
 
 ## What is left that could settle anything
 
-1. A fundamental law with no time-reversing symmetry at all, and with a quantity that
-   is monotone along timelike curves. Tests of CPT and Lorentz invariance bear on it.
+1. A fundamental law whose class of worlds is not closed under reversal, with a
+   quantity that is monotone along timelike curves. Generic causal-set growth shows
+   such laws can be written down. Whether the Standard Model is one turns on whether
+   the matter label is primitive.
 2. An argument from experience, agency or value that escapes the dilemma of §3.
 3. Nothing else that I can see.
 
-On present knowledge the stalemate is stable, and the reason is now specific: every
-route to a primitive present or arrow runs through physics of a kind that current
-theories exclude by symmetry.
+On present knowledge the stalemate is stable, but less tidy than I first wrote. Current
+theories exclude an arrow by symmetry only relative to content that reversal
+preserves. What counts as such content (the wavefunction, the matter label) is a
+philosophical choice, and it is where the question now sits.
 
 ## Limits
 
@@ -183,5 +206,5 @@ theories exclude by symmetry.
   limits.
 - The expansion clock is monotone along all timelike curves only in homogeneous
   models. In general it is monotone along the matter flow alone.
-- The CPT step is unchecked. The dilemma in §3 is recalled, not read by me.
+- The CPT correction and the growth result are worker submissions; I read both notes and reran the growth check, and did not re-read their sources. The dilemma in §3 is recalled, not read by me.
 - Tumulka's paper was read for one passage only. Proposition 1 does not cover his model.

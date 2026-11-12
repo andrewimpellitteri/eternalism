@@ -28,9 +28,9 @@ timelike infinity, which lies inside every past light cone.
 the past of the origin. At each t < 0 its energy lies in |x| ≥ |t|. By Burnol's
 Theorem 1, time-reversed, that energy tends to zero as t → −∞. Energy is conserved and
 is a norm, so the solution is zero. The same argument works on the tail of the cone
-alone, and in the future direction. In higher dimensions it needs the same decay of
-energy outside the light cone, which is standard and which I did not check at a
-source. The spherically symmetric case in three dimensions reduces exactly to one
+alone, and in the future direction. In higher dimensions the same decay holds (Yang, arXiv:2309.15282v1, Remark 1.10,
+checked), and a worker's [follow-up](../massive-higher-dim/RESULT.md) proves the result
+for all tempered solutions in every dimension. The spherically symmetric case in three dimensions reduces exactly to one
 dimension (see the [same-past note](../../lawful-completions/massive-same-past/RESULT.md)).
 
 **All smooth solutions, m > 0.** Let x lie outside the causal past of b. Choose null

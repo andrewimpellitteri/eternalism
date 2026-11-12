@@ -20,7 +20,7 @@ light cone". Three known results answer it for free fields on Minkowski spacetim
 | Timelike tube theorem (Borchers 1961; Araki 1963; Strohmaier and Witten 2023) | The algebra of an open set equals the algebra of its timelike envelope. It holds for interacting theories. Its classical form is Holmgren uniqueness: a solution vanishing on the set vanishes on the envelope | Strohmaier–Witten, arXiv:2303.16380, in full |
 | Timelike commutativity for massless free fields in even dimensions (Buchholz 1977) | The commutator vanishes off the light cone, so the algebras of the future and past cones of a point commute. They are independent systems | Through Olson–Ralph and Jiang–Yang, both in full. Buchholz not read |
 | Vacuum entanglement across time (Olson and Ralph 2011) | For a massless field the vacuum is an entangled state of the future-cone and past-cone systems, mode for mode the same entanglement as between Rindler wedges. Restricted to one cone it is thermal in a conformal time | arXiv:1003.0720, in full |
-| Cone algebra for massive fields (Sadowski and Woronowicz 1971) | The algebra of the open past light cone coincides with that of a larger set | Abstract-level snippet only. Whether the larger set is everything is **not verified** |
+| Cone algebra for massive fields (Sadowski and Woronowicz 1971) | With a mass gap the algebra of a light cone is all of B(H); with massless particles it is a proper type III₁ factor | Not read. Stated with that credit by Buchholz and Roberts (arXiv:1304.2794v4, p. 10), which I checked. See the [follow-up](../massive-cone-algebra/RESULT.md) |
 
 ## What follows for an observer
 
@@ -72,7 +72,7 @@ Two things are new in the quantum column.
 
 ## Open questions
 
-- Read Sadowski and Woronowicz and settle the massive entry.
+- Settled at second hand in the [follow-up](../massive-cone-algebra/RESULT.md): the cone algebra is everything, and so is the algebra of a thin tube around a past half-worldline. The 1971 paper itself is still unread.
 - For a massive field the past-cone algebra is presumably everything. Is the same true
   of the algebra of a thin tube around a past worldline, by the two results together?
   If so, a single inertial observer's past measurements generate every observable of a
