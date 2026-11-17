@@ -1,6 +1,6 @@
 # Where does the direction of records come from?
 
-*Coordinator draft, 17 November 2026. Finite reversible bit models, checked by exact enumeration in [check_records.py](check_records.py). Not independently reviewed. No priority claim: the observations are elementary and are probably known in the statistical-mechanics literature on records and counterfactuals. That literature has not yet been read for this lane.*
+*Coordinator draft, 17 November 2026. Finite reversible bit models, checked by exact enumeration in [check_records.py](check_records.py) (Results 1–4) and [trail_records.py](trail_records.py) (Results 5–7). Not independently reviewed. No priority claim: the observations are elementary and are probably known in the statistical-mechanics literature on records and counterfactuals. That literature has not yet been read for this lane.*
 
 ## The question
 
@@ -69,11 +69,63 @@ Take n = 5 reduced gadgets with the uniform measure on microstates whose total H
 
 Records point toward the conditioned time, with an exact mirror. The effect vanishes at k = 0, where the event is fixed too, and when the cell is the whole space. A low-weight cell works because it is low in marginal entropy, as in Result 2. It also lowers the entropy of the event, so the informative regime is intermediate. In this toy the thermodynamic account passes its fair test: under the conditioned uniform measure, past-directed records are typical rather than exceptional. That holds only because the weight macrostate makes device blankness typical. A cell of the same size defined by `D=S` would reverse the verdict.
 
+## A walker that leaves footprints: Results 5–7
+
+*Added the same day. The model is in [trail_records.py](trail_records.py), checked by exact enumeration.*
+
+![Footprints, entropy and record direction](trail_figure.svg)
+
+Gadgets 1–4 are static. This model adds motion, unpredictability and a picture. A walker moves on a ring of 12 sites. Each site has two bits that couple to the walker in exactly the same way: each toggles when the walker arrives.
+
+- **Rotors** steer the walker. On arrival the walker reverses direction if the rotor is set, and then the rotor toggles.
+- The **substrate** takes footprints. It toggles when the walker arrives.
+
+Every substep is invertible. The ensemble is uniform over 4,096 microstates. At t = 0 the walker is at site 0 heading right, the substrate is blank, and the rotors are uniform. The ensemble is evolved both forward and backward. For each site, "footprints point to the past" is measured as I(substrate bit at t; parity of walker arrivals at that site during (t−4, t]). "Point to the future" uses (t, t+4].
+
+**Result 5: a Janus point.** In panel B, substrate entropy rises in both directions away from t = 0. In panel C, footprints carry information about where the walker was for t > 0 and about where it will be for t < 0. The values mirror exactly: 0.167, 0.385, 0.468, 0.496 at t = +1…+4 against the same values at t = −1…−4. Panel A shows one history. Read downward, the trail grows after t = 0. Before t = 0, the walker erases a pre-existing trail exactly as it reaches each site, which is what a record looks like when it is read in the anti-record direction. An observer at either t = −5 or t = +5 finds that their footprints point toward t = 0. Each of them calls that direction "the past".
+
+**Result 6: identical coupling, no record.** The rotors toggle on every visit, just as the substrate does, but they start uniform. At t = 6 they carry 0.017 bits per site about past visits, against 0.325 for the substrate. This is Result 1 in dynamic form. The coupling is shared; what differs is the preparation. Locally prepared blankness is what makes the difference.
+
+**Result 7: present-only conditioning makes the footprints untrustworthy.** Condition only on what an observer sees at T = 6: the walker's position and the substrate pattern. The direction and the rotors are uniform, and nothing is imposed at t = 0.
+
+- For the most common observation, a short back-and-forth trail, 512 of 8,192 compatible microstates (1/16) evolve back to a blank substrate at t = 0.
+- For the longest trail, `111110000001`, the count is 256 of 8,192 (1/32). Only 128 of those (1/64) come from the actual boundary cell.
+
+In every other compatible microstate, the trail was already partly present before the walker passed. It is a fluctuation, not a trace of where the walker went. The footprints are reliable only because of the boundary condition imposed at t = 0. They are not reliable given the present observation together with a uniform measure. This is the toy form of the Boltzmann-brain worry, and of the reason the Past Hypothesis is posited as an extra assumption. The ratio falls as the trail grows here, but this run does not establish how it scales.
+
+**A dropped attempt.** I first tried a generic scrambling circuit: 15 bits, random 3-bit involution layers, and a time-reversal-invariant step U = A·B. That gave no usable record signal. The entropy saturated within about two steps. Spurious single-bit correlations in the 576-state ensemble, about 0.08 bits, swamped any lagged-information asymmetry. Records need a dedicated recording structure, which a generic scrambler does not provide.
+
+## Pushing further: Results 8–10
+
+*Added the same day. Result 8 is a short proof. Results 9 and 10 are computed exactly in [push_records.py](push_records.py), which uses the same dynamics as the trail model written with bitmasks.*
+
+**Result 8: the record ledger (elementary lemma).** Let a recorder R be updated by a permutation of its states chosen by an event E: R₁ = f_E(R₀), with each f_e a bijection. If R₀ is independent of E, then
+
+  I(R₁; E) = H(R₁) − H(R₀).
+
+*Proof.* H(R₁ | E) = H(f_E(R₀) | E) = H(R₀ | E) = H(R₀). The first equality holds because each f_e is a bijection. The second holds by independence. Subtract from H(R₁). ∎
+
+Read the same dynamics backward and the mirror holds: if R₁ is independent of E, then I(R₀; E) = H(R₀) − H(R₁). So a recorder carries information about an event in the direction in which its own entropy rises from a state independent of that event, and by exactly that amount. The maximum is log|R| − H(R₀): blankness is the resource, measured in bits. Results 2 and 6 are instances. The blank substrate gains entropy and records. The uniform rotors cannot gain entropy and record nothing. The lemma assumes that R₀ does not influence E. The rotors violate this, because they steer the walker, so their 0.017 bits are not covered by it. This is presumably standard, and close to Landauer-style accounting. It is stated here because it turns "locally prepared blank bit" into a quantity.
+
+**Result 9: how fast fake records outnumber real ones.** Condition only on the present observation (walker position and footprint pattern) at elapsed time T. The table gives the probability, averaged over observations drawn from the boundary ensemble, that the compatible microstate had a blank substrate at t = 0.
+
+| T | Mean trail (sites) | P(blank at 0 \| observation) | P(exact boundary cell \| observation) | Straight trail of T sites: P(blank) |
+|---|---|---|---|---|
+| 2 | 2.0 | 0.500 | 0.125 | 2⁻¹ |
+| 4 | 2.0 | 0.188 | 0.070 | 2⁻³ |
+| 6 | 2.5 | 0.086 | 0.036 | 2⁻⁵ |
+| 8 | 3.0 | 0.038 | 0.019 | 2⁻⁷ |
+
+The values are identical for rings of 10, 12 and 14 sites; only sites within reach of the walker matter. A ring of 8 differs at T = 8 because the walker can wrap around. For a straight trail of k sites, the probability that it is a genuine trace is exactly 2^−(k−1): every rotor along the path has to happen to point the walker the right way. Given only the present, the trustworthiness of a footprint record falls exponentially with how much it records. This is the finite form of the Boltzmann-brain point. It makes clear that the Past Hypothesis has to supply far more than the present macrostate does.
+
+**Result 10: two blank boundaries make records ambiguous.** Impose a blank substrate at both t = 0 and t = 8 (L = 12, which leaves 256 of 4,096 microstates). Then every site is visited an even number of times over (0, 8]. Each footprint equals both the parity of past visits since t = 0 and the parity of future visits until t = 8. With a 2-step window, past- and future-directed information are equal at every interior time: 0.333, 0.167, 0, 0.167, 0.333 for t = 2…6. The one-boundary ensemble gives 0.385 against 0.071 at t = 2. The asymmetry is gone, not reduced. With two low-entropy boundaries, the same local state is equally a trace and a forecast, and only a context-dependent reader could treat it as one rather than the other. This is the finite analogue of Schulman's two-time boundary conditions (a lead, not read).
+
 ## Where direction enters in these models
 
 1. **The boundary cell.** One boundary is low in marginal entropy (Results 2 and 4). Which time carries the cell is an input. The dynamics are symmetric.
 2. **The held-fixed set for counterfactuals.** Robustness is decided by which boundary an intervention must respect (Result 3). If the held-fixed set is identified with the conditioned low-entropy boundary, one assumption carries both. Then no independent causal direction is needed in these models. Without that identification, holding the past fixed is a separate stipulation. That stipulation is exactly where an independent causal direction would enter.
-3. **Location, not quantity.** No global entropy number locates the traces (Result 1). The explanation needs the distribution of correlations over subsystems, which is more than an entropy profile.
+3. **Location, not quantity.** No global entropy number locates the traces (Result 1). The explanation needs the distribution of correlations over subsystems, which is more than an entropy profile. The ledger (Result 8) gives the right local quantity: the recorder's own entropy rise from an event-independent state.
+4. **One boundary, not two.** A single low-entropy boundary gives records a direction. Two such boundaries remove it (Result 10). The present alone gives records that are exponentially unlikely to be genuine (Result 9).
 
 For the project's question: if the identification in item 2 can be defended, the everyday sense that the past is settled by traces gets an explanation that is neutral between temporal ontologies. That explanation is a boundary condition plus a matching convention for counterfactuals. The models do not show that the identification is forced.
 
@@ -92,6 +144,6 @@ For the project's question: if the identification in item 2 can be defended, the
    - Albert's *Time and Chance* (2000), Elga (2001) on statistical mechanics and the asymmetry of counterfactual dependence, and Loewer on counterfactuals and the second law. These are leads from background knowledge. They are expected to state versions of item 2.
 
    Then position Results 1–4 against them, or retract them as known.
-2. **Present-only conditioning.** Condition on the present macrostate alone, which is the Boltzmann-brain form of the typicality test. This needs a mixing reversible model with entropy growth on both sides of a fluctuation, such as a Kac ring or a reversible cellular automaton. In the present toy, a low present weight trivially implies a low past weight.
+2. **Present-only conditioning.** Results 7 and 9 give finite versions, with exact 2^−(k−1) scaling for straight trails. Still open: a model in which the observer is itself a record-bearing subsystem rather than an external reader, and a check that a reader inside the model would draw the same inference.
 3. **Connect to the noisy-threshold theorem.** Add a preparation stage with a dissipation cost to the [noisy-record model](../horizons/noisy-past-and-future-averages.md), whose error model is time-symmetric. Ask whether the D(T)/√T threshold acquires a direction.
 4. **Connect to the steering note.** The no-bypass premise of the [steering note](../agentic-philosophy/when-does-a-decision-steer.md) plays the role here of "the coupling, not a pre-existing correlation, produced the match" (Result 1, ensemble B). Check whether its four-actuator identification analysis transfers to record identification.
