@@ -1,6 +1,6 @@
 # Where does the direction of records come from?
 
-*Coordinator draft, 17 November 2026. Finite reversible bit models, checked by exact enumeration in [check_records.py](check_records.py) (Results 1–4) and [trail_records.py](trail_records.py) (Results 5–7). Not independently reviewed. No priority claim: the observations are elementary and are probably known in the statistical-mechanics literature on records and counterfactuals. That literature has not yet been read for this lane.*
+*Coordinator draft, 17 November 2026. Finite reversible bit models, checked by exact enumeration in [check_records.py](check_records.py) (Results 1–4) and [trail_records.py](trail_records.py) (Results 5–7). Not independently reviewed. No priority claim: the observations are elementary. The literature check is in "Literature position" below. Most results are known in substance.*
 
 ## The question
 
@@ -129,6 +129,31 @@ The values are identical for rings of 10, 12 and 14 sites; only sites within rea
 
 For the project's question: if the identification in item 2 can be defended, the everyday sense that the past is settled by traces gets an explanation that is neutral between temporal ontologies. That explanation is a boundary condition plus a matching convention for counterfactuals. The models do not show that the identification is forced.
 
+## Literature position (checked 17 November 2026)
+
+Source records, with exact versions and read depths, are in [sources.jsonl](sources.jsonl). Three sources were read in full text through a fetch tool that summarizes, so their locators are not line-checked: Mlodinow–Brun 2014, Wolpert–Kipper 2024 and Rovelli 2022. Elga 2001 and Stradis 2024 were read at abstract depth. Schulman, Barbour–Koslowski–Mercati and Loewer 2007 are at discovery depth only. Albert's *Time and Chance* has not been checked.
+
+| Result | Nearest prior work | Verdict |
+|---|---|---|
+| 1. Profile does not locate records | Wolpert–Kipper argue against Albert–Loewer that the entropy gradient of the objects we know about is not enough. Rovelli requires systems to be separated. | Known in substance. The equal-profile pair is only an illustration. |
+| 2. Equal count, different residence | Wolpert–Kipper's Type-3 memory requires an initialized "ready" state with low *marginal* entropy. | Known. |
+| 3. Robustness needs a held-fixed boundary | Mlodinow–Brun's "generality" condition varies the system's initial state while holding the memory's initial state fixed, and requires the reference time to be a thermodynamic initial condition. The literature on Lewis and Elga treats the counterfactual asymmetry. | Known in substance. Mlodinow–Brun build the choice into the definition. The toy shows that the choice alone breaks the symmetry. |
+| 4. Typicality under a conditioned cell | The Albert–Loewer program. Stradis argues that its explanation of the record asymmetry is circular. | Known program. The toy succeeds only because its cell already makes the devices blank, which may bear on Stradis's worry. That has not been checked against his full text. |
+| 5. Janus point | Barbour–Koslowski–Mercati's two-sided arrows. Carroll–Chen is a known lead, not looked up. | Known picture. The toy illustrates it. |
+| 6. Same coupling, random preparation | Wolpert–Kipper's distinction between Type-3 and other memory types. | Illustration. |
+| 7, 9. Present-only conditioning | The standard argument that records are unreliable without the Past Hypothesis, as in Albert and Loewer. Mlodinow–Brun's future read-outs are unstable states. | Known. The 2^−(k−1) figure is plain counting in this toy. |
+| 8. Record ledger I = H(R₁) − H(R₀) | Rovelli states the heuristic bound I < ΔS/k from heat flow. Wolpert–Kipper give only a maximum value, min(ln\|M*\|, ln\|W\|). | No exact statement located in these three. It is an elementary information identity and is presumably known elsewhere, so no priority claim. |
+| 10. Two boundaries cancel the direction | Wolpert–Kipper §6 condition on two times under the Past Hypothesis (a Brownian-bridge "turnover"). Schulman works with two-time boundary conditions. | Known in substance. The toy shows exact cancellation in one model. |
+
+**A tension that turns out to be apparent.** Mlodinow–Brun say that initializing a reversible memory to 00…0 is "not necessary". Their rotor's reference position is arbitrary, but it is known, and their read-out subtracts it. In ledger terms, what matters is that H(R₀) is low and that R₀ is independent of the event, not that R₀ takes any particular value. "Blank" should therefore be read as "in a known state, uncorrelated with what it will record". Result 2's pre-correlated cell is known, but it fails the independence condition. Their view and Results 2, 6 and 8 agree on this reading.
+
+**What survives as this lane's contribution.** There is no new physics and no priority claim. Three things remain:
+- exact, runnable toy models that make the known positions concrete, including the figure;
+- the exact ledger (Result 8) as the quantitative form of Wolpert–Kipper's ready-state requirement, so long as no prior statement turns up;
+- the diagnosis that the counterfactual criterion and the boundary condition are two separate places where direction enters. Mlodinow–Brun build the first into their definition of a memory, and Albert–Loewer derive it from the second.
+
+The remaining philosophical question is whether that derivation is circular. Stradis's paper is where to test it.
+
 ## Limits
 
 - The models are finite, deterministic bit models with hand-chosen gates. There is no mixing, no macroscopic number of degrees of freedom, and no spacetime structure.
@@ -138,7 +163,7 @@ For the project's question: if the identification in item 2 can be defended, the
 
 ## Next steps
 
-1. **Read the literature.** None of these has been read for this lane, so read depth is discovery or none:
+1. **Read the literature.** *Partly done; see "Literature position". Still to do: Stradis 2024 in full text, Albert 2000 (the chapters on records and counterfactuals), Loewer 2007, Elga 2001 in full text (the fetched PDF was an image scan), and a search for a prior statement of the ledger.* The original list: None of these has been read for this lane, so read depth is discovery or none:
    - Mlodinow and Brun, [Phys. Rev. E 89, 052102](https://doi.org/10.1103/PhysRevE.89.052102), on robustness and fine-tuning.
    - Wolpert et al., [Memory Systems, the Epistemic Arrow of Time, and the Second Law](https://pmc.ncbi.nlm.nih.gov/articles/PMC10888154/), for its taxonomy of memory systems.
    - Albert's *Time and Chance* (2000), Elga (2001) on statistical mechanics and the asymmetry of counterfactual dependence, and Loewer on counterfactuals and the second law. These are leads from background knowledge. They are expected to state versions of item 2.
