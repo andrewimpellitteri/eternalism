@@ -3,6 +3,12 @@
 The [unified paper](what-the-past-can-fix/) restates the proved results. This ledger still governs
 their status. Files listed in [REVIEW_QUEUE.md](REVIEW_QUEUE.md) gain no status by being in the tree.
 
+## 18 November: M-arrows, coordinator result, not independently reviewed
+
+| Claim | Status | Where | In the paper |
+|---|---|---|---|
+| For a strictly positive Markov kernel, the backward description is homogeneous at two consecutive steps iff the distribution is stationary. So under the bridge premises of homogeneity, Markov and propensity, a homogeneous producing law cannot point against the relative-entropy gradient. For permutation dynamics it can | Lemma elementary, proved and checked exactly; almost certainly known. The bearing on Loewer's sufficiency objection to Maudlin rests on bridge premises. Maudlin is unread at first hand | [m-arrows](time-direction/m-arrows/RESULT.md) | No |
+
 ## 10–11 November: coordinator results, none independently reviewed
 
 Everything in this section was produced and checked by one coordinator session

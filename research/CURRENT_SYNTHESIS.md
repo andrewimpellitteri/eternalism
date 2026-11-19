@@ -1,5 +1,14 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **18 November, M-arrows, coordinator session, not independently reviewed.** The first
+> engagement with Maudlin's primitive direction of time is through Loewer's 2012 reconstruction,
+> because Maudlin's book is unread. In finite Markov worlds with strictly positive kernels, a law
+> with the same propensities at every time can run in only one direction, the one in which
+> relative entropy to equilibrium falls. Loewer's claim that M-arrows can point against the arrows
+> therefore needs restricting to deterministic laws or to improbable histories. The same fact makes
+> the arrow recoverable from statistics, so it gives no support to a *primitive* direction.
+> [Result](time-direction/m-arrows/RESULT.md).
+
 > **10–11 November, coordinator session, not independently reviewed.** Three things changed
 > the picture; details and statuses are in the [claim ledger](CLAIM_STATUS.md).
 > - **A lawful shared present is a clock.** A local rule for a shared present exists exactly

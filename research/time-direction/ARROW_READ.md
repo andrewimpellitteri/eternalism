@@ -107,7 +107,9 @@ are the live ones. It is not a refutation of growth. It removes one support.
 
 **Anyone who treats thermodynamics as settling the direction of time.** The Past-Hypothesis is a boundary
 posit whose status is disputed, and I have read only the opening of Albert's account of intervention.
-Maudlin-style primitive direction, unread here, remains a rival.
+Maudlin-style primitive direction, unread here, remains a rival. (18 November: see
+[m-arrows/RESULT.md](m-arrows/RESULT.md), which tests Loewer's objection to M-arrows in finite Markov
+worlds, still without a first-hand read of Maudlin.)
 
 ## 5. Open question
 
