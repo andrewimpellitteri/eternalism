@@ -1,5 +1,31 @@
 # Current synthesis: completion, access, becoming and determination
 
+> **18 November, consolidation of the arrow lanes, coordinator, not independently reviewed.**
+> [Two kinds of arrow](time-direction/consolidation/RESULT.md):
+> - Boundaries give arrows of *amount*: openness, entropy, records.
+> - Laws give arrows of *value*: which states follow which.
+> - Exact fixing is reciprocal in every class, so it sees neither.
+> - The direction of production is a boundary arrow. It runs away from a single boundary; with no
+>   boundary or with two, there is none, even when the law is asymmetric.
+> - Of the amount arrows, only relative entropy has a guaranteed sign. The open-future asymmetry can
+>   point toward the boundary.
+>
+> In scope, "began and grows" and "has an edge" differ only in whether the edge is a beginning of being.
+>
+> **Revised the same day by [chance records](records-asymmetry/chance/RESULT.md).** In stochastic
+> worlds the record arrow is carried by the law: it is who copies whom, and it needs no boundary. It
+> can therefore point against the production direction, which still comes only from the boundary.
+> The claim that law arrows leave every amount symmetric now holds only for whole time slices.
+>
+> **[Macro bridge](time-direction/macro-bridge/RESULT.md), same day.** Take a deterministic micro law
+> that is exactly time-reversal symmetric, with no boundary. Coarse-grain it by labels that the
+> reversal map does not preserve. The result is a non-reversible macro chance law with records,
+> and with an end boundary the records point against production. By Friedman–Ornstein (secondary
+> depth), every mixing finite Markov chain is time-reversal symmetric as a deterministic system. So
+> within scope, arrows have two sources:
+> - **boundaries**, which give amounts and production;
+> - **labels or coarse-grainings**, which give values and records.
+
 > **18 November, M-arrows, coordinator session, not independently reviewed.** The first
 > engagement with Maudlin's primitive direction of time is through Loewer's 2012 reconstruction,
 > because Maudlin's book is unread. In finite Markov worlds with strictly positive kernels, a law
