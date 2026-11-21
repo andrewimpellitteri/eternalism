@@ -12,7 +12,7 @@ at the status that lane gives it.
 |---|---|---|---|---|---|
 | Orientation-free laws, class closed under reversal (GR, classical fields, massive fields) | Mirrors exactly | Mirrors | Mirrors | None | [ARROW_READ](../ARROW_READ.md) §1, [review](../review/RESULT.md) |
 | Same, but the geometry has an edge (closed dust) | Arrow toward the larger side, reversing at maximum expansion | — | — | — | [fixing-exchange](../fixing-exchange/RESULT.md) §2 |
-| Deterministic reversible (finite permutations) | Reciprocal | Global entropy constant; an arrow appears only in the marginals of parts | Mirrors | **None, even with a boundary**: both directions are homogeneous | [m-arrows](../m-arrows/RESULT.md) check 2, [records](../../records-asymmetry/RESULT.md) Results 1–2 |
+| Deterministic reversible (finite permutations) | Reciprocal | Global entropy constant; an arrow appears only in the marginals of parts | Mirrors | **None at micro level, even with a boundary**: both directions are homogeneous. Macro: generically neither (audit A2) | [m-arrows](../m-arrows/RESULT.md) check 2, [records](../../records-asymmetry/RESULT.md) Results 1–2 |
 | Stationary chain, reversible kernel | Reciprocal | Mirrors (C1) | Mirrors | None | [stochastic-fixing](../stochastic-fixing/RESULT.md) |
 | Stationary chain, non-reversible kernel (biased cycle) | Reciprocal | **Whole slices mirror (C1); records between parts do not** | **Arrow**: the two-time joint law is not symmetric | **None**: K forward and K* backward are both homogeneous (C2) | stochastic-fixing; C1, C2 |
 | One boundary, positive kernel (reversible or not) | Reciprocal | Arrow. Relative entropy to equilibrium falls away from the boundary; Shannon entropy rises away from it only if the kernel is doubly stochastic; **openness has no fixed sign** (C4) | If the kernel is non-reversible | **Away from the boundary, uniquely** | m-arrows lemma; C4 |
@@ -43,13 +43,29 @@ to four claims. Two more were added the same day, and claim 6 replaces the "law"
    symmetric. In stationary non-reversible worlds a device records an event's past and not its future,
    with no boundary present ([chance records](../../records-asymmetry/chance/RESULT.md), R0 and R1).
    Exact fixing is reciprocal in every class, so it sees neither kind of arrow.
-3. **The direction of production is a boundary arrow, not a law arrow.** A chance law can be
-   described homogeneously in exactly one direction, the one leading away from a single boundary.
+
+   **Corrected 19 November ([claim audit](../claim-audit/RESULT.md), A3).** Whole-slice symmetry
+   holds for *Markov* descriptions only. A stationary process that is not Markov, which includes
+   generic coarse-grained images, can give a set of times a different entropy from its mirror image,
+   with no boundary. The smallest case found is a 6-cycle with three labels: 2.585 bits against
+   2.252. Under stationarity alone, only single contiguous stretches of time are guaranteed to
+   mirror.
+3. **The direction of production is a boundary arrow, not a law arrow.** A chance law *with a
+   strictly positive kernel* can be described homogeneously in exactly one direction, the one leading
+   away from a single boundary. **Scope corrected 19 November** ([claim audit](../claim-audit/RESULT.md),
+   A1). With zero entries, the backward description of a world with a sharp start was homogeneous
+   over the whole run in 56 of 400 random kernels. In 65, it was homogeneous at some step while the
+   distribution was still changing.
    - In a stationary world, even with a non-reversible kernel, both directions are homogeneous. So
      the asymmetric law fixes *no* production direction.
    - With two boundaries neither direction is homogeneous.
    - At a Janus point production runs outward, in both directions.
-   - Under deterministic reversible laws homogeneity never picks a direction.
+   - Under deterministic reversible laws homogeneity never picks a direction *at the micro level*.
+     At the macro level it picks one only in special cases where the macro process is exactly
+     Markov, as in [macro bridge](../macro-bridge/RESULT.md) B3–B4. Take 300 random coarse-grainings
+     of reversal-symmetric permutations, each started from a macro boundary: 291 are homogeneous in
+     neither direction, 9 in both, and none in exactly one (audit A2). So for generic coarse
+     descriptions the homogeneity criterion gives no production direction at all.
 4. **Boundary arrows are located, but most of them are not signed.** Stationarity forces every amount
    arrow to vanish. A boundary guarantees only one monotone quantity: relative entropy to equilibrium,
    which falls away from the boundary. Shannon entropy rises away from it only if the equilibrium is
@@ -73,6 +89,17 @@ to four claims. Two more were added the same day, and claim 6 replaces the "law"
    - **labels or coarse-grainings**, which give values and records.
 
    Claim 2's "law" row should be read as "labels".
+
+   **Revised 19 November ([claim audit](../claim-audit/RESULT.md)).** The amount/value split does
+   not line up with the two sources. Labels can also give amount arrows: whole-slice entropies of
+   non-contiguous time sets, in stationary non-Markov descriptions (A3). What remains specific to
+   boundaries, within scope, has two parts:
+   - the relative-entropy gradient, which needs non-stationarity by definition and never rises away
+     from the boundary, kernels with zero entries included (A6);
+   - the production direction, for positive Markov descriptions.
+
+   If the reversal map preserves the coarse-graining, every macro arrow tested vanishes (A4: 149 of
+   149). That confirms claim 1 at the macro level.
 
 ## What follows for the ontologies
 

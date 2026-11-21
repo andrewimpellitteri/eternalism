@@ -3,10 +3,11 @@
 The [unified paper](what-the-past-can-fix/) restates the proved results. This ledger still governs
 their status. Files listed in [REVIEW_QUEUE.md](REVIEW_QUEUE.md) gain no status by being in the tree.
 
-## 18 November: M-arrows, coordinator result, not independently reviewed
+## 18–19 November: M-arrows to claim audit, coordinator results, not independently reviewed
 
 | Claim | Status | Where | In the paper |
 |---|---|---|---|
+| Claim audit, 19 November. (1) Claim 3's production direction requires a strictly positive kernel. (2) The deterministic "no production direction" is micro-level; generic coarse descriptions are homogeneous in neither direction. (3) Stationary non-Markov processes, coarse-grained images included, can have whole-slice entropies of non-contiguous time sets that differ from their mirror images; this corrects consolidation claim 2. (4) Claim 1, the chance-records reversibility claim and relative-entropy monotonicity survive | Random finite corpora (A1, A2, A4–A6); (3) has an exact hand-checkable 6-state example (A3′). Elementary; no priority claimed | [claim audit](time-direction/claim-audit/RESULT.md) | No |
 | Macro bridge: a deterministic, exactly time-reversal-symmetric micro law with a uniform ensemble yields exactly the delay-line macro chance law; the arrow comes from the coarse-graining; an end boundary misaligns records and production. Every mixing finite Markov chain is time-reversal symmetric as a measure-preserving system | Model exact (N=8, T=6). The general claim is our inference from Friedman–Ornstein at secondary depth | [macro-bridge](time-direction/macro-bridge/RESULT.md) | No |
 | Chance records: a stationary non-reversible law alone gives devices that record and do not forecast; reversible stationary laws give no record arrow; with an end boundary, records and production point opposite ways | Finite checks R0–R4, two one-bit parts, lag 1; one record measure | [chance records](records-asymmetry/chance/RESULT.md) | No |
 | Consolidation (whole-slice amounts only, as revised): stationary chains of any kernel have mirror-symmetric amounts. A non-reversible stationary chain is homogeneous in both directions. A bridge is homogeneous in neither. The sign of the openness imbalance is not fixed by a single boundary, even for doubly stochastic kernels | Finite checks (C1–C4), 3-state chains; C1 and C2 also follow from known facts about stationarity and the reversed kernel | [consolidation](time-direction/consolidation/RESULT.md) | No |

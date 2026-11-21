@@ -25,6 +25,20 @@
 > within scope, arrows have two sources:
 > - **boundaries**, which give amounts and production;
 > - **labels or coarse-grainings**, which give values and records.
+>
+> **19 November, [claim audit](time-direction/claim-audit/RESULT.md), coordinator, not independently
+> reviewed.** Six claims were restated as predicates and run on one shared corpus that no lane had
+> used. Three held: claim 1 at macro level, reversible chances give no records, and relative entropy
+> is monotone. Two needed scope:
+> - production direction needs a *positive* kernel;
+> - the deterministic "no direction" is micro-level only, since generic coarse descriptions give no
+>   direction either way.
+>
+> One failed. In stationary non-Markov descriptions, such as coarse-grained images, the amounts of
+> sets of times with gaps can differ from their mirror images with no boundary present. The
+> smallest case is a 6-cycle read through the word 2 0 0 1 1 1: 2.585 bits against 2.252. So
+> labels can give amount arrows too. Within scope, what remains specific to boundaries is the
+> relative-entropy gradient and production in positive Markov descriptions.
 
 > **18 November, M-arrows, coordinator session, not independently reviewed.** The first
 > engagement with Maudlin's primitive direction of time is through Loewer's 2012 reconstruction,

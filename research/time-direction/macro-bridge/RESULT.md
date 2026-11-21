@@ -53,6 +53,13 @@ B2: ε exchanges D with tape[m], so the reversal map does not preserve the macro
 
 ## The revised source list
 
+**Qualified 19 November ([claim audit](../claim-audit/RESULT.md)).** Two qualifications to the list
+below:
+- labels can also give amount arrows for whole slices, when the coarse description is not Markov
+  (A3);
+- the macro production direction of B3 and B4 depends on the macro process being exactly Markov.
+  Generic coarse-grainings give none (A2).
+
 Within scope, the arrows have two sources, not three:
 
 - **Boundaries:** where the measure is not invariant in time. These give amount arrows for whole
