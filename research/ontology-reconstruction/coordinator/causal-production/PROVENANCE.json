@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-10-31",
+  "input_sha256": {
+    "sources-local/Time, Tense, and Causation -- Michael Tooley; Oxford University Press -- Oxford University Press USA, Oxford, 1997 -- Oxford University Press, USA -- isbn13 9780191518980 -- 0f4fef8a7e614a19e3ecc4b8715019b1 -- Anna’s Archive.pdf": "d93d34399cea72ac52817dde1ff4ecba71a80ac0fe9623fa904e78f024b6fe4a",
+    "research/ontology-reconstruction/ROADMAP.md": "9a878a8a4bc64e4cc6890ba1f998db38459d23f86042370b1f15c8d904e94727",
+    "research/ontology-reconstruction/coordinator/PROCESS_EXPLANATION_REPORT.md": "9d437f24fc060dc51baac599c62d9363d09d1427cafadd7ae1fede7280a44abf",
+    "research/agentic-philosophy/result-search-round1/DISPOSITION.md": "7cd5f142b38f9a357dd110058211c5a392d4992f7b485e4f79f4e62cfc33baa7",
+    "research/time-direction/ARROW_READ.md": "4f71d21314fabf6314fec60c98f6908adddf7d93710021400eb85016ebba0a4b"
+  },
+  "local_book_page_offset": 17,
+  "source_register": "sources.jsonl",
+  "limits": "Public source metadata and selected original passages only. No full book, later treatment or external review certified."
+}

@@ -121,4 +121,5 @@ Not independently reviewed in this pass: the Douglas repository internals, the T
 
 The handoff contract, role definitions, and audit procedure that follow from
 these conclusions are in `handoff-contract.md`; the evaluation pilot is in
-`pilot-design.md`.
+`pilot-design.md`. Lessons drawn from Anthropic's 2026 black-hole physics post
+(discovery depth only) are in `anthropic-physics-2026-lessons.md`.

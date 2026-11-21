@@ -114,7 +114,13 @@ openness of the relation selects $\Jm$ or $\Ichr$.
 \item \textbf{Locality is indispensable} (Propositions~\ref{prop:single} and
 \ref{prop:nonlocal}). Natural but non-local rules, such as ordering by a
 canonical cosmological time, satisfy every other condition and make spacelike
-events become.
+events become. Locality alone already forbids any relation that distinguishes
+among spacelike-separated events of Minkowski spacetime
+(Proposition~\ref{prop:noscale}).
+\item \textbf{So is the range of spacetimes} (Proposition~\ref{prop:clock}).
+On the class of spacetimes whose Ricci scalar does not increase to the future,
+ordering by that scalar is local and transitive, contains the chronological
+past, and has shared presents in dust cosmologies.
 \item \textbf{Causal sets} (Proposition~\ref{prop:causets}). Under the same
 hypothesis Stein's theorem holds exactly: becoming is the causal order or
 universal. Discreteness removes the light-cone freedom.
@@ -185,7 +191,13 @@ lies around a region, the sense of \citet[\S1]{BFV2003}. It is not
 no-signalling or microcausality, and neither of those implies it. The case for
 (LC) is that a relation defined from geometry alone should not depend on what
 lies outside a causally convex region containing the related events. That is
-a premise about becoming, not a consequence of relativity.
+a premise about becoming, not a consequence of relativity. Reflection is
+strong on its own. Before transitivity or (CB) is used, it excludes every
+relation that depends on the separation of spacelike events
+(Proposition~\ref{prop:noscale}). For example, the relation ``$x$ and $b$ lie
+in a common diamond $\Ifut(z_1)\cap\Ichr(z_2)$ with $d(z_1,z_2)<\ell_0$'' is
+defined from the metric in every spacetime and violates Reflection, since a
+thin causally convex tube from $x$ to $b$ need not contain $z_1$ or $z_2$.
 \end{remark}
 
 \begin{remark}[The off-shell premise]\label{rem:offshell}
@@ -195,7 +207,9 @@ Einstein's equations; the category is defined kinematically in
 auxiliary spacetimes that need not satisfy any field equation with reasonable
 matter. This is natural for a kinematic notion of becoming, defined (as Stein
 and Clifton--Hogarth define theirs) from geometry alone, but it is a premise.
-Section~\ref{sec:energy} examines what happens without it.
+Section~\ref{sec:energy} examines what happens without it. On some natural
+classes of spacetimes the conclusion then fails
+(Proposition~\ref{prop:clock}).
 \end{remark}
 
 \section{Why one spacetime is not enough}\label{sec:single}
@@ -286,6 +300,95 @@ admits two distinct co-present events in some globally hyperbolic spacetime.
 By Theorem~\ref{thm:main}(a), $x\le b$ and $b\le x$, and globally hyperbolic
 spacetimes are causal, so $x=b$.
 \end{proof}
+
+The next three statements use (LC) alone. Call an assignment $M\mapsto R_M
+\subseteq M\times M$ satisfying (LC) a \emph{local relation}; no transitivity
+and no (CB) is assumed. Write $d_M(x,b)$ for the supremum of the lengths of
+future causal curves from $x$ to $b$.
+
+\begin{proposition}[No spacelike scale]\label{prop:noscale}
+For every local relation $R$, $R_\Mink$ contains no pair of spacelike-separated
+events or every such pair.
+\end{proposition}
+
+\begin{proof}
+By (LC), $R_\Mink$ is invariant under the proper orthochronous Poincaré group,
+which is transitive on ordered spacelike pairs of a given interval. So there is
+$f:(0,\infty)\to\{0,1\}$ with $x\,R_\Mink\,b\iff f(s)=1$, $s$ the interval.
+
+Let $C_\ell=\mathbb R_t\times\mathbb R^2\times S^1_\ell$ be the flat cylinder
+with circle of length $\ell$; it lies in $\GH$, and $\{t=0\}$ is a Cauchy
+hypersurface. Fix $0<a<\ell$ and $0<2\rho<\min\{a,\ell-a\}$. Let $x=(0,0,0)$,
+$b=(0,0,a)$ in coordinates $(t,y,\theta)$, and
+\[
+S_1=\{t=0,\ |y|<\rho,\ \theta\in(-\rho,a+\rho)\},\qquad
+S_2=\{t=0,\ |y|<\rho,\ \theta\in(a-\rho,\ell+\rho)\}.
+\]
+Each $S_i$ is acausal and contains $x$ and $b$. Put $N_i=\operatorname{int}
+D(S_i)$. Let $\pi:\Mink\to C_\ell$ be the covering map and $\tilde S_i$ a lift
+of $S_i$, a straight tube in $\{t=0\}$. We claim $\pi$ maps
+$\operatorname{int}D_\Mink(\tilde S_i)$ isometrically onto $N_i$. Inextendible
+causal curves lift, so $\pi(D_\Mink(\tilde S_i))\subseteq D(S_i)$. Conversely
+let $p\in D^+(S_i)$ at height $\tau$ over $q\in S_i$, and let $\tilde q\in
+\tilde S_i$ lift $q$. The straight past causal rays from $p$ meet $\{t=0\}$
+once, in $\pi(\bar B(\tilde q,\tau))$, which therefore lies in $S_i$. The
+preimage of $S_i$ is a disjoint union of translates of $\tilde S_i$, and the
+ball is connected and contains $\tilde q$, so $\bar B(\tilde q,\tau)\subseteq
+\tilde S_i$ and $(\tau,\tilde q)\in D^+_\Mink(\tilde S_i)$ projects to $p$.
+The case of $D^-$ is the mirror image, and $\pi$ is injective over $\tilde S_i$.
+
+$N_i$ is causally convex: if $p,q\in D(S_i)$, $p\le r\le q$ and $\lambda$ is an
+inextendible causal curve through $r$, then the curve back from $q$ to $r$
+followed by the past half of $\lambda$ meets $S_i$, and so does the curve from
+$p$ to $r$ followed by the future half of $\lambda$; if neither meeting point
+is on $\lambda$ there are $s_2\le r\le s_1$ in $S_i$, and acausality gives
+$s_1=s_2=r$. Interiors follow by moving $p,q$ slightly. $N_i$ is connected,
+and it is globally hyperbolic because it is isometric to
+$\operatorname{int}D_\Mink(\tilde S_i)$, whose causal diamonds are compact
+diamonds of $\Mink$. So $N_i\hookrightarrow C_\ell$ and
+$N_i\cong\operatorname{int}D_\Mink(\tilde S_i)\hookrightarrow\Mink$ are
+morphisms. In the first lift the endpoints are at interval $a$, in the second
+at interval $\ell-a$. Applying (LC) four times,
+\[
+f(a)=[x\,R_{N_1}\,b]=[x\,R_{C_\ell}\,b]=[x\,R_{N_2}\,b]=f(\ell-a).
+\]
+Given $s,s'>0$ take $a=s$, $\ell=s+s'$. So $f$ is constant.
+\end{proof}
+
+The proof uses only flat spacetimes, so it holds on any full subcategory of
+$\GH$ that contains $\Mink$ and the cylinders and is closed under restriction
+to causally convex open subsets, including the vacuum and dominant-energy
+subcategories.
+
+\begin{corollary}[Local relations on Minkowski spacetime]\label{cor:localrel}
+For a local relation $R$, $R_\Mink$ is a union of: the diagonal or nothing;
+all future lightlike pairs or none; all past lightlike pairs or none; all
+spacelike pairs or none; and the future (respectively past) timelike pairs
+whose proper time lies in an arbitrary set $T_+$ (respectively $T_-$)
+$\subseteq(0,\infty)$. Every such union is the restriction to $\Mink$ of a
+local relation.
+\end{corollary}
+
+\begin{proof}
+$R_\Mink$ is a union of orbits of the proper orthochronous Poincaré group, and
+Proposition~\ref{prop:noscale} treats the spacelike orbits. Conversely,
+equality, the horismos relations, the absence of any causal relation, and the
+conditions $d_M(x,b)\in T_+$, $d_M(b,x)\in T_-$ are preserved and reflected by
+morphisms, because causal curves between points of a causally convex set stay
+in it.
+\end{proof}
+
+\begin{corollary}[Local presents]\label{cor:localpresent}
+Let $R$ be a symmetric local relation that relates no two distinct causally
+related events. Then for each $b\in\Mink$ the set of events $R$-related to $b$
+is contained in $\{b\}$, or is the set of all events spacelike to $b$,
+possibly together with $b$.
+\end{corollary}
+
+So a proper-time threshold survives locality and a spacelike one does not.
+The causal hull of a timelike pair is the diamond between them, which every
+causally convex region containing the pair contains and which fixes their
+proper time. The causal hull of a spacelike pair is the two points.
 
 \begin{corollary}[Worldline-dependent becoming]\label{cor:worldline}
 Suppose that for each $M\in\GH$, each inextendible timelike curve $\lambda$ in
@@ -805,6 +908,66 @@ arbitrary curved vacuum regions, which we have not found in the gluing
 literature (an abstract-level survey: Carlotto--Schoen, Corvino--Schoen,
 Aretakis--Czimek--Rodnianski, Czimek--Rodnianski).
 
+\paragraph{A class on which the theorem fails.} The off-shell premise cannot be
+dropped in general. Let $\GH_{\mathrm{Scal}}$ be the full subcategory of spacetimes whose
+Ricci scalar $\mathrm{Scal}$ is non-increasing along every future-directed causal curve.
+It is closed under restriction to causally convex open subsets, and contains
+$\Mink$, every vacuum spacetime, and the spatially flat expanding dust
+Friedmann--Lemaître--Robertson--Walker models, where $\mathrm{Scal}$ is a positive
+multiple of the density.
+
+\begin{proposition}[A curvature clock]\label{prop:clock}
+On $\GH_{\mathrm{Scal}}$ each of the following satisfies (LC), is transitive and contains
+$\Ichr$:
+\begin{enumerate}
+\item[(i)] $\Jm_M\cup\{(x,b):\mathrm{Scal}(x)>\mathrm{Scal}(b)\}$;
+\item[(ii)] $\Jm_M\cup\{(x,b):\mathrm{Scal}(x)\ge \mathrm{Scal}(b),\ \mathrm{Scal}(x)>0\}$;
+\item[(iii)] $\{(x,b):\mathrm{Scal}(x)\ge \mathrm{Scal}(b)\}$.
+\end{enumerate}
+On $\Mink$, (i) and (ii) are $\Jm$ and (iii) is $\U$. On expanding dust models
+(i) relates every event to every event of lower density, (ii) and (iii) are
+the cosmic-time preorder, and the constant-density hypersurfaces are shared
+presents for (ii). Hence Theorem~\ref{thm:main}(a) and (b) and
+Corollary~\ref{cor:nopresent} all fail with $\GH_{\mathrm{Scal}}$ in place of $\GH$.
+\end{proposition}
+
+\begin{proof}
+Morphisms preserve $\mathrm{Scal}$ and preserve and reflect $\Jm$, which gives (LC). In
+$\GH_{\mathrm{Scal}}$, $x\le y$ implies $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)$, which gives (CB) and the mixed cases
+of transitivity. For (ii): if $x\le y$, $\mathrm{Scal}(y)\ge \mathrm{Scal}(b)$ and $\mathrm{Scal}(y)>0$, then
+$\mathrm{Scal}(x)\ge \mathrm{Scal}(y)>0$ and $\mathrm{Scal}(x)\ge \mathrm{Scal}(b)$; if $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)$, $\mathrm{Scal}(x)>0$ and $y\le b$,
+then $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)\ge \mathrm{Scal}(b)$. The remaining claims are read off.
+\end{proof}
+
+None of these is a becoming theory on $\GH$, where transitivity fails. The
+third is the rule $\mathrm{Scal}(x)\ge \mathrm{Scal}(b)$ that locality alone does not exclude; what
+excludes it on $\GH$ is that (T) and (CB) are demanded on every globally
+hyperbolic geometry. The Milne wedge of Proposition~\ref{prop:nonlocal} is no
+objection to it: the wedge is flat, and the rule returns $\Jm$ there and on
+$\Mink$ alike. $\GH_{\mathrm{Scal}}$ is not a realistic class (a star has a spacelike
+density gradient), and which class a becoming rule must cover is a premise we
+do not argue. Fewster and Verch use a threshold on the supremum of the scalar
+curvature to build order-valued functors on spacetimes, for a different purpose
+\citep[\S4.3]{FV2012}; the present rule is pointwise and is monotone along causal
+curves only on the subcategory.
+
+\begin{remark}[Local clocks]\label{rem:clock}
+More generally, let $\mathcal C\subseteq\GH$ be a full subcategory closed
+under restriction and containing $\Mink$, and let $\kappa$ be a two-valued
+isometry invariant of germs of the metric that is non-decreasing along
+timelike curves in every member of $\mathcal C$ and non-constant on some
+member $M$. Then $\Ichr\cup\{(x,b):\kappa(x)<\kappa(b)\}$ is a becoming theory
+on $\mathcal C$ that equals $\Ichr$ on $\Mink$ and relates a spacelike pair of
+$M$, by Lemma~\ref{lem:E}. So Theorem~\ref{thm:main}(a) can hold on
+$\mathcal C$ only if $\mathcal C$ has no such local clock. If disconnected
+spacetimes are admitted as objects, as in \citep[\S\S2.1--2.2]{FV2012}, the converse
+holds too, and the theorem on $\mathcal C$ is equivalent to the statement that
+every germ of $\mathcal C$ occurs chronologically after and before a flat
+region, through finite chains of members of $\mathcal C$. That criterion is
+weaker than the pocket problem: no slab is transported. We do not know whether
+$\GH_{\mathrm{DEC}}$ satisfies it.
+\end{remark}
+
 \section{What this shows about becoming}\label{sec:phil}
 
 \paragraph{The robust part of Stein's theorem.} In general relativity, under
@@ -843,7 +1006,13 @@ Putnam's premise leads to ``a peculiarly extreme (but pluralistic!) form of
 solipsism'' \citep[p.~18]{Stein1968}; and giving up non-triviality is the
 block. Other notions of a present, for instance a set of events none of which
 has become for another, are not addressed by the corollary. The corollary
-says nothing about which horn to take.
+says nothing about which horn to take. Rejecting transitivity buys a definite
+thing in flat spacetime. By Corollary~\ref{cor:localpresent}, a local
+symmetric relation among causally unrelated events of $\Mink$ is empty or is
+spacelike separation itself, so the only local shared present there is the
+whole elsewhere. Changing the category need not mean adding structure: a
+restriction of the admissible spacetimes can suffice
+(Proposition~\ref{prop:clock}).
 
 \paragraph{The fragile part.} Uniqueness does not survive. Minkowskian
 symmetry forced a choice between $\Ichr$ and $\Jm$; general relativity leaves
@@ -855,9 +1024,14 @@ regularity requirement (Proposition~\ref{prop:reg}).
 
 \paragraph{Locality does the work symmetry did.} In a single curved spacetime,
 definability-style invariance constrains almost nothing
-(Proposition~\ref{prop:single}); natural global rules such as cosmological
-time violate only locality (Proposition~\ref{prop:nonlocal}). So the
-curved-spacetime case for ``only the past has become'' rests on a locality
+(Proposition~\ref{prop:single}); cosmological time defined by proper time
+from the past boundary violates only locality
+(Proposition~\ref{prop:nonlocal}), while cosmic time read off a curvature
+scalar is local and violates only the demand that the rule be a becoming
+theory on every globally hyperbolic geometry
+(Proposition~\ref{prop:clock}). So the
+curved-spacetime case for ``only the past has become'' rests on the off-shell
+premise of Remark~\ref{rem:offshell} together with a locality
 principle of the kind locally covariant field theory takes for granted and
 akin to Viglione's Causal Connection Condition \citep{Viglione2026} (which is
 stricter: (LC) allows dependence on spacelike events inside the convex region). Rejecting

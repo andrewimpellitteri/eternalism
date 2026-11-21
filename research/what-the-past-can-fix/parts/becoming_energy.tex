@@ -61,3 +61,63 @@ a vacuum version would require bounded interior flat regions adjacent to
 arbitrary curved vacuum regions, which we have not found in the gluing
 literature (an abstract-level survey: Carlotto--Schoen, Corvino--Schoen,
 Aretakis--Czimek--Rodnianski, Czimek--Rodnianski).
+
+\paragraph{A class on which the theorem fails.} The off-shell premise cannot be
+dropped in general. Let $\GH_{\mathrm{Scal}}$ be the full subcategory of spacetimes whose
+Ricci scalar $\mathrm{Scal}$ is non-increasing along every future-directed causal curve.
+It is closed under restriction to causally convex open subsets, and contains
+$\Mink$, every vacuum spacetime, and the spatially flat expanding dust
+Friedmann--Lemaître--Robertson--Walker models, where $\mathrm{Scal}$ is a positive
+multiple of the density.
+
+\begin{proposition}[A curvature clock]\label{prop:clock}
+On $\GH_{\mathrm{Scal}}$ each of the following satisfies (LC), is transitive and contains
+$\Ichr$:
+\begin{enumerate}
+\item[(i)] $\Jm_M\cup\{(x,b):\mathrm{Scal}(x)>\mathrm{Scal}(b)\}$;
+\item[(ii)] $\Jm_M\cup\{(x,b):\mathrm{Scal}(x)\ge \mathrm{Scal}(b),\ \mathrm{Scal}(x)>0\}$;
+\item[(iii)] $\{(x,b):\mathrm{Scal}(x)\ge \mathrm{Scal}(b)\}$.
+\end{enumerate}
+On $\Mink$, (i) and (ii) are $\Jm$ and (iii) is $\U$. On expanding dust models
+(i) relates every event to every event of lower density, (ii) and (iii) are
+the cosmic-time preorder, and the constant-density hypersurfaces are shared
+presents for (ii). Hence Theorem~\ref{thm:main}(a) and (b) and
+Corollary~\ref{cor:nopresent} all fail with $\GH_{\mathrm{Scal}}$ in place of $\GH$.
+\end{proposition}
+
+\begin{proof}
+Morphisms preserve $\mathrm{Scal}$ and preserve and reflect $\Jm$, which gives (LC). In
+$\GH_{\mathrm{Scal}}$, $x\le y$ implies $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)$, which gives (CB) and the mixed cases
+of transitivity. For (ii): if $x\le y$, $\mathrm{Scal}(y)\ge \mathrm{Scal}(b)$ and $\mathrm{Scal}(y)>0$, then
+$\mathrm{Scal}(x)\ge \mathrm{Scal}(y)>0$ and $\mathrm{Scal}(x)\ge \mathrm{Scal}(b)$; if $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)$, $\mathrm{Scal}(x)>0$ and $y\le b$,
+then $\mathrm{Scal}(x)\ge \mathrm{Scal}(y)\ge \mathrm{Scal}(b)$. The remaining claims are read off.
+\end{proof}
+
+None of these is a becoming theory on $\GH$, where transitivity fails. The
+third is the rule $\mathrm{Scal}(x)\ge \mathrm{Scal}(b)$ that locality alone does not exclude; what
+excludes it on $\GH$ is that (T) and (CB) are demanded on every globally
+hyperbolic geometry. The Milne wedge of Proposition~\ref{prop:nonlocal} is no
+objection to it: the wedge is flat, and the rule returns $\Jm$ there and on
+$\Mink$ alike. $\GH_{\mathrm{Scal}}$ is not a realistic class (a star has a spacelike
+density gradient), and which class a becoming rule must cover is a premise we
+do not argue. Fewster and Verch use a threshold on the supremum of the scalar
+curvature to build order-valued functors on spacetimes, for a different purpose
+\citep[\S4.3]{FV2012}; the present rule is pointwise and is monotone along causal
+curves only on the subcategory.
+
+\begin{remark}[Local clocks]\label{rem:clock}
+More generally, let $\mathcal C\subseteq\GH$ be a full subcategory closed
+under restriction and containing $\Mink$, and let $\kappa$ be a two-valued
+isometry invariant of germs of the metric that is non-decreasing along
+timelike curves in every member of $\mathcal C$ and non-constant on some
+member $M$. Then $\Ichr\cup\{(x,b):\kappa(x)<\kappa(b)\}$ is a becoming theory
+on $\mathcal C$ that equals $\Ichr$ on $\Mink$ and relates a spacelike pair of
+$M$, by Lemma~\ref{lem:E}. So Theorem~\ref{thm:main}(a) can hold on
+$\mathcal C$ only if $\mathcal C$ has no such local clock. If disconnected
+spacetimes are admitted as objects, as in \citep[\S\S2.1--2.2]{FV2012}, the converse
+holds too, and the theorem on $\mathcal C$ is equivalent to the statement that
+every germ of $\mathcal C$ occurs chronologically after and before a flat
+region, through finite chains of members of $\mathcal C$. That criterion is
+weaker than the pocket problem: no slab is transported. We do not know whether
+$\GH_{\mathrm{DEC}}$ satisfies it.
+\end{remark}

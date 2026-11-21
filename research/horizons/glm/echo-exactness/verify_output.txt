@@ -1,0 +1,37 @@
+
+=== 1  echo identity psi(t+pi, pi-d) = -psi(t,d) ===
+max residual over grid: 2.6645352591003757e-15
+
+=== 2  mode sums vs exact Poisson-data closed forms ===
+max |mode sum - closed form|, g-data: 6.439293542825908e-15
+max |mode sum - closed form|, f-data: 1.0658141036401503e-14
+max |psi(t,0) - sin t/D(t)|          : 1.199040866595169e-14
+
+=== 3  witness b1=(2pi/5,Y), x0=(tau+0.9, Y): annulus point unfixed ===
+tau=1.2566  u=v=2.1566  annulus (1.2566,5.0265): True
+vertex eta1=-0.01  c=d(P,Y)=2.1666  psi0=0.01  avoidance margin=0.9000 > cap 0.15
+  |g_300| = 5.90e-03
+  |g_600| = 1.05e-03
+  |g_900| = 2.21e-05
+  |g_1200| = 2.35e-05
+  |g_1499| = 6.46e-06
+cap coefficients (scale-normalized), max |g_n| for n>1200: 2.70e-05
+max |psi| on sampled U(b1) points : 2.320e-03
+psi(x0)  [annulus target, timelike future of b1] : +0.6497
+psi(x_W) [W-point, outside J- u AJ-]: +4.332e-04
+
+=== 4  b2=(3pi/4,Y): admissible solution hits x' but vanishes at x* ===
+x' annulus membership: u=2.900 v=2.700 in (2.356,3.927): True
+vertex margin=0.4138, spatial triangle feasible: True
+psi(x') [own annulus target] : +3.9939
+psi(x*) [timelike future of b2, in F(b2) by theorem]: +1.342e-03
+
+=== 5  geometry controls ===
+x* vs b1                       fixed=False J-(b):0 J-(Ab):0 W:0 What:0
+x_W vs b1                      fixed=True  J-(b):0 J-(Ab):0 W:1 What:1
+x* vs b2                       fixed=True  J-(b):0 J-(Ab):0 W:1 What:1
+echo pt (pi+tau/2, -Y) vs b1   fixed=True  J-(b):0 J-(Ab):1 W:0 What:1
+tau=pi: grid points outside the four-region union: 0
+tau=2pi/5: unfixed-annulus grid points: 288/1560
+
+DONE

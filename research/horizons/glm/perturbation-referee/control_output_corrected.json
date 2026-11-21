@@ -1,0 +1,85 @@
+{
+  "weights_midpoint": {
+    "1": 0.9817477042468049,
+    "2": 0.2945243112740395,
+    "3": 0.1308996938995787,
+    "5": 0.047123889803847574,
+    "7": 0.024042800920330235
+  },
+  "kernel_min_on_grid": 0.01989436788537273,
+  "green_normalization": 0.9999999999999999,
+  "h_identity": {
+    "h_radial": 0.03732654898505963,
+    "h_spectral_fine": 0.037325164191635105,
+    "h_spectral_coarse": 0.037335491833708545,
+    "abs_error_fine": 1.384793424527575e-06,
+    "abs_error_coarse": 8.942848648912927e-06
+  },
+  "constant_delta": {
+    "unperturbed_residual_fine": 1.5956200588832553e-05,
+    "unperturbed_residual_coarse": 8.682510696050818e-05,
+    "derivative_central_rk4": 0.1172603249511413,
+    "derivative_closed_form_same_truncation": 0.11726032679374411,
+    "predicted_pi_h_spectral": 0.11726046161847366,
+    "predicted_pi_h_radial": 0.11726481207532288,
+    "samples": [
+      {
+        "delta": 0.001,
+        "value": 0.0001331921021972858,
+        "sign_ok": true
+      },
+      {
+        "delta": -0.001,
+        "value": -0.0001013281711082578,
+        "sign_ok": true
+      },
+      {
+        "delta": 0.0001,
+        "value": 2.768199073146043e-05,
+        "sign_ok": true
+      },
+      {
+        "delta": -0.0001,
+        "value": 4.229925741232168e-06,
+        "sign_ok": false
+      }
+    ]
+  },
+  "dust_mass": {
+    "lam_samples": [
+      {
+        "lam": 0.01,
+        "value": 0.0003672917486496663,
+        "positive": true
+      },
+      {
+        "lam": 0.001,
+        "value": 5.0922282396914255e-05,
+        "positive": true
+      },
+      {
+        "lam": 0.0001,
+        "value": 1.9451117039095955e-05,
+        "positive": true
+      }
+    ],
+    "w_period_rk4": 0.03355128407303844,
+    "w_period_operator_identity": 0.03355128420318395,
+    "w_tstar_rk4": 0.03494728269658577,
+    "relative_shift_tstar_vs_period": 0.04160790045912299
+  },
+  "resolution_probe": {
+    "w_period_coarse": 0.03356345096345565,
+    "solver_abs_change": 1.2166890417213139e-05,
+    "modes": [
+      48,
+      96
+    ],
+    "steps": [
+      4096,
+      8192
+    ]
+  },
+  "runtime_seconds": 9.6,
+  "scope": "RK4 modal time-stepping controls of signs, derivative values and closed identities at fixed truncation; exact past vanishing and kernel positivity are analytic results, not numerical ones"
+}

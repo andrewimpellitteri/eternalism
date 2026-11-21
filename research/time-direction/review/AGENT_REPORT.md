@@ -1,0 +1,8 @@
+# Agent report: temporal-arrow contract review
+
+- **Files changed:** `research/time-direction/review/RESULT.md` and this report only.
+- **Evidence:** Reviewed `ARROW_READ.md` and `what-the-past-can-fix/main.tex`, including the fixing definition in `parts/fixing_guaranteed.tex`; exact input SHA-256 hashes are recorded in `RESULT.md`.
+- **Strongest finding:** The mirror identity is valid for the full globally admissible solution class only when pullback carries that class bijectively to itself. The prose also shifts from the transformed event `theta(b)` to the same base `b` without an extra fixed-point symmetry. The proposed inference that a macro boundary condition barely changes exact fixing is unsupported; the report gives a bounded toy class where a coarse boundary bin selects one exact value, while explicitly noting this does not itself establish a changed fixing set.
+- **Checks:** Read-only definition and quantifier audit; checked that `q'=0` and `q(q-1)=0` admit exactly the two constant histories `q=0` and `q=1`, and that the boundary bin selects `q=0`. No external research, builds, installs, or source-depth upgrades.
+- **Limitations:** No audit of physical-model hypotheses behind the cited Einstein–scalar theorem or closed-dust computations. No primary-source review of the partial book attributions; depth limits are stated in `RESULT.md`.
+- **Unresolved question / first obligation:** Specify an actual Past-Hypothesis dynamical model, its full admissible class and boundary set, then compute the exact fixing relation; add a measure and conditioning rule before making a chance claim.
